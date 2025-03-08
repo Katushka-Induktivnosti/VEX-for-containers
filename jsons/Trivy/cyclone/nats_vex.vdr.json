@@ -1,0 +1,2217 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.6",
+    "serialNumber": "urn:uuid:f6268fa8-95ed-46d5-a928-b4d2d01ec04f",
+    "version": 2,
+    "metadata": {
+        "timestamp": "2025-02-18T08:49:22+00:00",
+        "tools": {
+            "components": [
+                {
+                    "type": "application",
+                    "group": "aquasecurity",
+                    "name": "trivy",
+                    "version": "0.57.0"
+                },
+                {
+                    "type": "application",
+                    "name": "owasp-depscan",
+                    "version": "5.3.4",
+                    "purl": "pkg:pypi/owasp-depscan@5.3.4",
+                    "bom-ref": "pkg:pypi/owasp-depscan@5.3.4"
+                }
+            ]
+        },
+        "component": {
+            "bom-ref": "pkg:oci/nats@sha256%3Ad3a72168a1fa10ffbe471c2cb4da9485168999964053bf9986d7412477b7e90a?arch=amd64&repository_url=index.docker.io%2Flibrary%2Fnats",
+            "type": "container",
+            "name": "nats",
+            "purl": "pkg:oci/nats@sha256%3Ad3a72168a1fa10ffbe471c2cb4da9485168999964053bf9986d7412477b7e90a?arch=amd64&repository_url=index.docker.io%2Flibrary%2Fnats",
+            "properties": [
+                {
+                    "name": "aquasecurity:trivy:DiffID",
+                    "value": "sha256:0920563801a07da6e85e60486c6909fa74ea66c5b8dac089f2baa2c1017293d3"
+                },
+                {
+                    "name": "aquasecurity:trivy:DiffID",
+                    "value": "sha256:a320bbbb90e4758e007c2a75df2027594cf8a25b5e10a90b219962f262fa666e"
+                },
+                {
+                    "name": "aquasecurity:trivy:ImageID",
+                    "value": "sha256:e0adf374ee8949cadaebd08ad86e992523bcb3b988aaeabd23a0f982b42962ad"
+                },
+                {
+                    "name": "aquasecurity:trivy:RepoDigest",
+                    "value": "nats@sha256:d3a72168a1fa10ffbe471c2cb4da9485168999964053bf9986d7412477b7e90a"
+                },
+                {
+                    "name": "aquasecurity:trivy:RepoTag",
+                    "value": "nats:latest"
+                },
+                {
+                    "name": "aquasecurity:trivy:SchemaVersion",
+                    "value": "2"
+                }
+            ]
+        }
+    },
+    "components": [
+        {
+            "bom-ref": "7ad523a1-cbec-494d-a75e-96e71d90e08a",
+            "type": "application",
+            "name": "nats-server",
+            "properties": [
+                {
+                    "name": "aquasecurity:trivy:Class",
+                    "value": "lang-pkgs"
+                },
+                {
+                    "name": "aquasecurity:trivy:Type",
+                    "value": "gobinary"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/github.com/klauspost/compress@v1.17.11",
+            "type": "library",
+            "name": "github.com/klauspost/compress",
+            "version": "v1.17.11",
+            "purl": "pkg:golang/github.com/klauspost/compress@v1.17.11",
+            "properties": [
+                {
+                    "name": "aquasecurity:trivy:LayerDiffID",
+                    "value": "sha256:0920563801a07da6e85e60486c6909fa74ea66c5b8dac089f2baa2c1017293d3"
+                },
+                {
+                    "name": "aquasecurity:trivy:LayerDigest",
+                    "value": "sha256:b0ab7b6cbd4f04e3ccfc7e43007f7265c99112ffd21d84d3216eb8066171328c"
+                },
+                {
+                    "name": "aquasecurity:trivy:PkgType",
+                    "value": "gobinary"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/github.com/minio/highwayhash@v1.0.3",
+            "type": "library",
+            "name": "github.com/minio/highwayhash",
+            "version": "v1.0.3",
+            "purl": "pkg:golang/github.com/minio/highwayhash@v1.0.3",
+            "properties": [
+                {
+                    "name": "aquasecurity:trivy:LayerDiffID",
+                    "value": "sha256:0920563801a07da6e85e60486c6909fa74ea66c5b8dac089f2baa2c1017293d3"
+                },
+                {
+                    "name": "aquasecurity:trivy:LayerDigest",
+                    "value": "sha256:b0ab7b6cbd4f04e3ccfc7e43007f7265c99112ffd21d84d3216eb8066171328c"
+                },
+                {
+                    "name": "aquasecurity:trivy:PkgType",
+                    "value": "gobinary"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/github.com/nats-io/jwt/v2@v2.7.3",
+            "type": "library",
+            "name": "github.com/nats-io/jwt/v2",
+            "version": "v2.7.3",
+            "purl": "pkg:golang/github.com/nats-io/jwt/v2@v2.7.3",
+            "properties": [
+                {
+                    "name": "aquasecurity:trivy:LayerDiffID",
+                    "value": "sha256:0920563801a07da6e85e60486c6909fa74ea66c5b8dac089f2baa2c1017293d3"
+                },
+                {
+                    "name": "aquasecurity:trivy:LayerDigest",
+                    "value": "sha256:b0ab7b6cbd4f04e3ccfc7e43007f7265c99112ffd21d84d3216eb8066171328c"
+                },
+                {
+                    "name": "aquasecurity:trivy:PkgType",
+                    "value": "gobinary"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/github.com/nats-io/nats-server/v2",
+            "type": "library",
+            "name": "github.com/nats-io/nats-server/v2",
+            "purl": "pkg:golang/github.com/nats-io/nats-server/v2",
+            "properties": [
+                {
+                    "name": "aquasecurity:trivy:LayerDiffID",
+                    "value": "sha256:0920563801a07da6e85e60486c6909fa74ea66c5b8dac089f2baa2c1017293d3"
+                },
+                {
+                    "name": "aquasecurity:trivy:LayerDigest",
+                    "value": "sha256:b0ab7b6cbd4f04e3ccfc7e43007f7265c99112ffd21d84d3216eb8066171328c"
+                },
+                {
+                    "name": "aquasecurity:trivy:PkgType",
+                    "value": "gobinary"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/github.com/nats-io/nkeys@v0.4.9",
+            "type": "library",
+            "name": "github.com/nats-io/nkeys",
+            "version": "v0.4.9",
+            "purl": "pkg:golang/github.com/nats-io/nkeys@v0.4.9",
+            "properties": [
+                {
+                    "name": "aquasecurity:trivy:LayerDiffID",
+                    "value": "sha256:0920563801a07da6e85e60486c6909fa74ea66c5b8dac089f2baa2c1017293d3"
+                },
+                {
+                    "name": "aquasecurity:trivy:LayerDigest",
+                    "value": "sha256:b0ab7b6cbd4f04e3ccfc7e43007f7265c99112ffd21d84d3216eb8066171328c"
+                },
+                {
+                    "name": "aquasecurity:trivy:PkgType",
+                    "value": "gobinary"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/github.com/nats-io/nuid@v1.0.1",
+            "type": "library",
+            "name": "github.com/nats-io/nuid",
+            "version": "v1.0.1",
+            "purl": "pkg:golang/github.com/nats-io/nuid@v1.0.1",
+            "properties": [
+                {
+                    "name": "aquasecurity:trivy:LayerDiffID",
+                    "value": "sha256:0920563801a07da6e85e60486c6909fa74ea66c5b8dac089f2baa2c1017293d3"
+                },
+                {
+                    "name": "aquasecurity:trivy:LayerDigest",
+                    "value": "sha256:b0ab7b6cbd4f04e3ccfc7e43007f7265c99112ffd21d84d3216eb8066171328c"
+                },
+                {
+                    "name": "aquasecurity:trivy:PkgType",
+                    "value": "gobinary"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/go.uber.org/automaxprocs@v1.6.0",
+            "type": "library",
+            "name": "go.uber.org/automaxprocs",
+            "version": "v1.6.0",
+            "purl": "pkg:golang/go.uber.org/automaxprocs@v1.6.0",
+            "properties": [
+                {
+                    "name": "aquasecurity:trivy:LayerDiffID",
+                    "value": "sha256:0920563801a07da6e85e60486c6909fa74ea66c5b8dac089f2baa2c1017293d3"
+                },
+                {
+                    "name": "aquasecurity:trivy:LayerDigest",
+                    "value": "sha256:b0ab7b6cbd4f04e3ccfc7e43007f7265c99112ffd21d84d3216eb8066171328c"
+                },
+                {
+                    "name": "aquasecurity:trivy:PkgType",
+                    "value": "gobinary"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/golang.org/x/crypto@v0.32.0",
+            "type": "library",
+            "name": "golang.org/x/crypto",
+            "version": "v0.32.0",
+            "purl": "pkg:golang/golang.org/x/crypto@v0.32.0",
+            "properties": [
+                {
+                    "name": "aquasecurity:trivy:LayerDiffID",
+                    "value": "sha256:0920563801a07da6e85e60486c6909fa74ea66c5b8dac089f2baa2c1017293d3"
+                },
+                {
+                    "name": "aquasecurity:trivy:LayerDigest",
+                    "value": "sha256:b0ab7b6cbd4f04e3ccfc7e43007f7265c99112ffd21d84d3216eb8066171328c"
+                },
+                {
+                    "name": "aquasecurity:trivy:PkgType",
+                    "value": "gobinary"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/golang.org/x/sys@v0.29.0",
+            "type": "library",
+            "name": "golang.org/x/sys",
+            "version": "v0.29.0",
+            "purl": "pkg:golang/golang.org/x/sys@v0.29.0",
+            "properties": [
+                {
+                    "name": "aquasecurity:trivy:LayerDiffID",
+                    "value": "sha256:0920563801a07da6e85e60486c6909fa74ea66c5b8dac089f2baa2c1017293d3"
+                },
+                {
+                    "name": "aquasecurity:trivy:LayerDigest",
+                    "value": "sha256:b0ab7b6cbd4f04e3ccfc7e43007f7265c99112ffd21d84d3216eb8066171328c"
+                },
+                {
+                    "name": "aquasecurity:trivy:PkgType",
+                    "value": "gobinary"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/golang.org/x/time@v0.9.0",
+            "type": "library",
+            "name": "golang.org/x/time",
+            "version": "v0.9.0",
+            "purl": "pkg:golang/golang.org/x/time@v0.9.0",
+            "properties": [
+                {
+                    "name": "aquasecurity:trivy:LayerDiffID",
+                    "value": "sha256:0920563801a07da6e85e60486c6909fa74ea66c5b8dac089f2baa2c1017293d3"
+                },
+                {
+                    "name": "aquasecurity:trivy:LayerDigest",
+                    "value": "sha256:b0ab7b6cbd4f04e3ccfc7e43007f7265c99112ffd21d84d3216eb8066171328c"
+                },
+                {
+                    "name": "aquasecurity:trivy:PkgType",
+                    "value": "gobinary"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/stdlib@v1.23.5",
+            "type": "library",
+            "name": "stdlib",
+            "version": "v1.23.5",
+            "purl": "pkg:golang/stdlib@v1.23.5",
+            "properties": [
+                {
+                    "name": "aquasecurity:trivy:LayerDiffID",
+                    "value": "sha256:0920563801a07da6e85e60486c6909fa74ea66c5b8dac089f2baa2c1017293d3"
+                },
+                {
+                    "name": "aquasecurity:trivy:LayerDigest",
+                    "value": "sha256:b0ab7b6cbd4f04e3ccfc7e43007f7265c99112ffd21d84d3216eb8066171328c"
+                },
+                {
+                    "name": "aquasecurity:trivy:PkgType",
+                    "value": "gobinary"
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "ref": "7ad523a1-cbec-494d-a75e-96e71d90e08a",
+            "dependsOn": [
+                "pkg:golang/github.com/nats-io/nats-server/v2"
+            ]
+        },
+        {
+            "ref": "pkg:golang/github.com/klauspost/compress@v1.17.11",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:golang/github.com/minio/highwayhash@v1.0.3",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:golang/github.com/nats-io/jwt/v2@v2.7.3",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:golang/github.com/nats-io/nats-server/v2",
+            "dependsOn": [
+                "pkg:golang/github.com/klauspost/compress@v1.17.11",
+                "pkg:golang/github.com/minio/highwayhash@v1.0.3",
+                "pkg:golang/github.com/nats-io/jwt/v2@v2.7.3",
+                "pkg:golang/github.com/nats-io/nkeys@v0.4.9",
+                "pkg:golang/github.com/nats-io/nuid@v1.0.1",
+                "pkg:golang/go.uber.org/automaxprocs@v1.6.0",
+                "pkg:golang/golang.org/x/crypto@v0.32.0",
+                "pkg:golang/golang.org/x/sys@v0.29.0",
+                "pkg:golang/golang.org/x/time@v0.9.0",
+                "pkg:golang/stdlib@v1.23.5"
+            ]
+        },
+        {
+            "ref": "pkg:golang/github.com/nats-io/nkeys@v0.4.9",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:golang/github.com/nats-io/nuid@v1.0.1",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:golang/go.uber.org/automaxprocs@v1.6.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:golang/golang.org/x/crypto@v0.32.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:golang/golang.org/x/sys@v0.29.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:golang/golang.org/x/time@v0.9.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:golang/stdlib@v1.23.5",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:oci/nats@sha256%3Ad3a72168a1fa10ffbe471c2cb4da9485168999964053bf9986d7412477b7e90a?arch=amd64&repository_url=index.docker.io%2Flibrary%2Fnats",
+            "dependsOn": [
+                "7ad523a1-cbec-494d-a75e-96e71d90e08a"
+            ]
+        }
+    ],
+    "vulnerabilities": [
+        {
+            "bom-ref": "CVE-2019-13126/:nats-server:None",
+            "id": "CVE-2019-13126",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-13126"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-jp4j-47f9-2vc3/:nats-server:None",
+            "id": "GHSA-jp4j-47f9-2vc3",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-jp4j-47f9-2vc3"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2020-26521/:nats-server:None",
+            "id": "CVE-2020-26521",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-26521"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-h2fg-54x9-5qhq/:nats-server:None",
+            "id": "GHSA-h2fg-54x9-5qhq",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-h2fg-54x9-5qhq"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2020-26892/:nats-server:None",
+            "id": "CVE-2020-26892",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-26892"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-4w5x-x539-ppf5/:nats-server:None",
+            "id": "GHSA-4w5x-x539-ppf5",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-4w5x-x539-ppf5"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2020-28466/:nats-server:None",
+            "id": "CVE-2020-28466",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-28466"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-m4jx-6526-vvhm/:nats-server:None",
+            "id": "GHSA-m4jx-6526-vvhm",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-m4jx-6526-vvhm"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2021-3127/:nats-server:None",
+            "id": "CVE-2021-3127",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3127"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-9r5x-fjv3-q6h4/:nats-server:None",
+            "id": "GHSA-9r5x-fjv3-q6h4",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-9r5x-fjv3-q6h4"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-45283/:nats-server:None",
+            "id": "CVE-2023-45283",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-45283"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-vvjp-q62m-2vph/:nats-server:None",
+            "id": "GHSA-vvjp-q62m-2vph",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-vvjp-q62m-2vph"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-45284/:nats-server:None",
+            "id": "CVE-2023-45284",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-45284"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-rq3x-83w4-p28c/:nats-server:None",
+            "id": "GHSA-rq3x-83w4-p28c",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-rq3x-83w4-p28c"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-2c64-vj8g-vwrq/:nats-server:None",
+            "id": "GHSA-2c64-vj8g-vwrq",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-2c64-vj8g-vwrq"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-gwj5-3vfq-q992/:nats-server:None",
+            "id": "GHSA-gwj5-3vfq-q992",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-gwj5-3vfq-q992"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-hmm9-r2m2-qg9w/:nats-server:None",
+            "id": "GHSA-hmm9-r2m2-qg9w",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-hmm9-r2m2-qg9w"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-j756-f273-xhp4/:nats-server:None",
+            "id": "GHSA-j756-f273-xhp4",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-j756-f273-xhp4"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":nats-server:None",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-45283/os:nats:",
+            "id": "CVE-2023-45283",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-45283"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-vvjp-q62m-2vph/os:nats:",
+            "id": "GHSA-vvjp-q62m-2vph",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-vvjp-q62m-2vph"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-45284/os:nats:",
+            "id": "CVE-2023-45284",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-45284"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-rq3x-83w4-p28c/os:nats:",
+            "id": "GHSA-rq3x-83w4-p28c",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-rq3x-83w4-p28c"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2019-13126/os:nats-server:",
+            "id": "CVE-2019-13126",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-13126"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-jp4j-47f9-2vc3/os:nats-server:",
+            "id": "GHSA-jp4j-47f9-2vc3",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-jp4j-47f9-2vc3"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2020-26521/os:nats-server:",
+            "id": "CVE-2020-26521",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-26521"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-h2fg-54x9-5qhq/os:nats-server:",
+            "id": "GHSA-h2fg-54x9-5qhq",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-h2fg-54x9-5qhq"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2020-26892/os:nats-server:",
+            "id": "CVE-2020-26892",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-26892"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-4w5x-x539-ppf5/os:nats-server:",
+            "id": "GHSA-4w5x-x539-ppf5",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-4w5x-x539-ppf5"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2020-28466/os:nats-server:",
+            "id": "CVE-2020-28466",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-28466"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-m4jx-6526-vvhm/os:nats-server:",
+            "id": "GHSA-m4jx-6526-vvhm",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-m4jx-6526-vvhm"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2021-3127/os:nats-server:",
+            "id": "CVE-2021-3127",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3127"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-9r5x-fjv3-q6h4/os:nats-server:",
+            "id": "GHSA-9r5x-fjv3-q6h4",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-9r5x-fjv3-q6h4"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-45283/os:nats-server:",
+            "id": "CVE-2023-45283",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-45283"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-vvjp-q62m-2vph/os:nats-server:",
+            "id": "GHSA-vvjp-q62m-2vph",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-vvjp-q62m-2vph"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-45284/os:nats-server:",
+            "id": "CVE-2023-45284",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-45284"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-rq3x-83w4-p28c/os:nats-server:",
+            "id": "GHSA-rq3x-83w4-p28c",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-rq3x-83w4-p28c"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-2c64-vj8g-vwrq/os:nats-server:",
+            "id": "GHSA-2c64-vj8g-vwrq",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-2c64-vj8g-vwrq"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-gwj5-3vfq-q992/os:nats-server:",
+            "id": "GHSA-gwj5-3vfq-q992",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-gwj5-3vfq-q992"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-hmm9-r2m2-qg9w/os:nats-server:",
+            "id": "GHSA-hmm9-r2m2-qg9w",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-hmm9-r2m2-qg9w"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "GHSA-j756-f273-xhp4/os:nats-server:",
+            "id": "GHSA-j756-f273-xhp4",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-j756-f273-xhp4"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "URL Prefix: https://packages.wolfi.dev. Affected arch: x86_64, aarch64",
+            "recommendation": "Update to 0 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "os:nats-server:",
+                    "versions": [
+                        {
+                            "version": "<0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,380 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/grype/sboms/nats_sbom.json",
+  "ArtifactType": "cyclonedx",
+  "Metadata": {
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2020-26892",
+          "PkgName": "github.com/nats-io/nats-server/v2",
+          "InstalledVersion": "v0.0.0-20240111053235-a5298e2a18a5",
+          "FixedVersion": "2.1.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-26892",
+          "PkgRef": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5?package-id=c6b2022459a2c237",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "The JWT library in NATS nats-server before 2.1.9 has Incorrect Access  ...",
+          "Description": "The JWT library in NATS nats-server before 2.1.9 has Incorrect Access Control because of how expired credentials are handled.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-798"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://advisories.nats.io/CVE/CVE-2020-26892.txt",
+            "https://github.com/nats-io/jwt/commit/e11ce317263cef69619fc1ca743b195d02aa1d8a",
+            "https://github.com/nats-io/jwt/security/advisories/GHSA-4w5x-x539-ppf5",
+            "https://github.com/nats-io/nats-server/commit/1e08b67f08e18cd844dce833a265aaa72500a12f",
+            "https://github.com/nats-io/nats-server/commits/master",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VT67XCLIIBYRT762SVFBYFFTQFVSM3SI/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VT67XCLIIBYRT762SVFBYFFTQFVSM3SI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-26892",
+            "https://pkg.go.dev/vuln/GO-2022-0380",
+            "https://www.openwall.com/lists/oss-security/2020/11/02/2"
+          ],
+          "PublishedDate": "2020-11-06T08:15:13.61Z",
+          "LastModifiedDate": "2023-11-07T03:20:46.007Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-13126",
+          "PkgName": "github.com/nats-io/nats-server/v2",
+          "InstalledVersion": "v0.0.0-20240111053235-a5298e2a18a5",
+          "FixedVersion": "2.2.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-13126",
+          "PkgRef": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5?package-id=c6b2022459a2c237",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "Integer Overflow or Wraparound in NATS Server",
+          "Description": "An integer overflow in NATS Server before 2.0.2 allows a remote attacker to crash the server by sending a crafted request. If authentication is enabled, then the remote attacker must have first authenticated.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/nats-io/nats-server/commit/07ef71ff98f45f8c2711be4aeaf484610d891dda",
+            "https://github.com/nats-io/nats-server/commits/master",
+            "https://github.com/nats-io/nats-server/pull/1053",
+            "https://github.com/nats-io/nats-server/pull/1441",
+            "https://nvd.nist.gov/vuln/detail/CVE-2019-13126",
+            "https://www.twistlock.com/labs-blog/finding-dos-vulnerability-nats-go-fuzz-cve-2019-13126",
+            "https://www.twistlock.com/labs-blog/finding-dos-vulnerability-nats-go-fuzz-cve-2019-13126/"
+          ],
+          "PublishedDate": "2019-07-29T17:15:11.467Z",
+          "LastModifiedDate": "2023-03-03T19:13:24.967Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-26521",
+          "PkgName": "github.com/nats-io/nats-server/v2",
+          "InstalledVersion": "v0.0.0-20240111053235-a5298e2a18a5",
+          "FixedVersion": "2.1.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-26521",
+          "PkgRef": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5?package-id=c6b2022459a2c237",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "The JWT library in NATS nats-server before 2.1.9 allows a denial of se ...",
+          "Description": "The JWT library in NATS nats-server before 2.1.9 allows a denial of service (a nil dereference in Go code).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2020/11/02/2",
+            "https://advisories.nats.io/CVE/CVE-2020-26521.txt",
+            "https://github.com/nats-io/jwt/pull/107",
+            "https://github.com/nats-io/jwt/security/advisories/GHSA-h2fg-54x9-5qhq",
+            "https://github.com/nats-io/nats-server/commit/9ff8bcde2e46009e98bd9e88f598af355f62c168",
+            "https://github.com/nats-io/nats-server/commits/master",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VT67XCLIIBYRT762SVFBYFFTQFVSM3SI/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VT67XCLIIBYRT762SVFBYFFTQFVSM3SI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-26521",
+            "https://pkg.go.dev/vuln/GO-2022-0402"
+          ],
+          "PublishedDate": "2020-11-06T08:15:13.563Z",
+          "LastModifiedDate": "2023-11-07T03:20:36.94Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-28466",
+          "PkgName": "github.com/nats-io/nats-server/v2",
+          "InstalledVersion": "v0.0.0-20240111053235-a5298e2a18a5",
+          "FixedVersion": "2.2.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-28466",
+          "PkgRef": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5?package-id=c6b2022459a2c237",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "Denial of service in github.com/nats-io/nats-server/server",
+          "Description": "This affects all versions of package github.com/nats-io/nats-server/server. Untrusted accounts are able to crash the server using configs that represent a service export/import cycles. Disclaimer from the maintainers: Running a NATS service which is exposed to untrusted users presents a heightened risk. Any remote execution flaw or equivalent seriousness, or denial-of-service by unauthenticated users, will lead to prompt releases by the NATS maintainers. Fixes for denial of service issues with no threat of remote execution, when limited to account holders, are likely to just be committed to the main development branch with no special attention. Those who are running such services are encouraged to build regularly from git.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/03/16/1",
+            "http://www.openwall.com/lists/oss-security/2021/03/16/2",
+            "https://github.com/nats-io/nats-server/pull/1731",
+            "https://github.com/nats-io/nats-server/pull/1731/commits/2e3c22672936f4980d343fb1d328b38919e74796",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-28466",
+            "https://snyk.io/vuln/SNYK-GOLANG-GITHUBCOMNATSIONATSSERVERSERVER-1042967"
+          ],
+          "PublishedDate": "2021-03-07T10:15:12.957Z",
+          "LastModifiedDate": "2021-03-25T00:21:15.43Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3127",
+          "PkgName": "github.com/nats-io/nats-server/v2",
+          "InstalledVersion": "v0.0.0-20240111053235-a5298e2a18a5",
+          "FixedVersion": "2.2.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3127",
+          "PkgRef": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5?package-id=c6b2022459a2c237",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "nats-server: mishandling Import Token bindings may lead to Incorrect Access Control",
+          "Description": "NATS Server 2.x before 2.2.0 and JWT library before 2.0.1 have Incorrect Access Control because Import Token bindings are mishandled.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-755"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-3127",
+            "https://advisories.nats.io/CVE/CVE-2021-3127.txt",
+            "https://github.com/nats-io/jwt",
+            "https://github.com/nats-io/jwt/pull/149/commits/a826c77dc9d2671c961b75ceefdb439c41029866",
+            "https://github.com/nats-io/nats-server/commit/423b79440c80c863de9f4e20548504e6c5d5e403",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-3127"
+          ],
+          "PublishedDate": "2021-03-16T20:15:13.3Z",
+          "LastModifiedDate": "2022-07-12T17:42:04.277Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-2c64-vj8g-vwrq",
+          "PkgName": "github.com/nats-io/nats-server/v2",
+          "InstalledVersion": "v0.0.0-20240111053235-a5298e2a18a5",
+          "FixedVersion": "2.1.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-2c64-vj8g-vwrq",
+          "PkgRef": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5?package-id=c6b2022459a2c237",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "Incorrect handling of credential expiry by /nats-io/nats-server",
+          "Description": "(This advisory is canonically https://advisories.nats.io/CVE/CVE-2020-26892.txt )\n\n## Problem Description\n\nNATS nats-server through 2020-10-07 has Incorrect Access Control because of how expired credentials are handled.\n\nThe NATS accounts system has expiration timestamps on credentials; the \u003chttps://github.com/nats-io/jwt\u003e library had an API which encouraged misuse and an `IsRevoked()` method which misused its own API.\n\nA new `IsClaimRevoked()` method has correct handling and the nats-server has been updated to use this.  The old `IsRevoked()` method now always returns true and other client code will have to be updated to avoid calling it.\n\nThe CVE identifier should cover any application using the old JWT API, where the nats-server is one of those applications.\n\n\n## Affected versions\n\n#### JWT library\n\n * all versions prior to 1.1.0\n * fixed after nats-io/jwt PR 103 landed (2020-10-06)\n\n#### NATS Server\n\n * Version 2 prior to 2.1.9\n   + 2.0.0 through and including 2.1.8 are vulnerable.\n * fixed with nats-io/nats-server PRs 1632, 1635, 1645\n\n\n## Impact\n\nTime-based credential expiry did not work.\n\n\n## Workaround\n\nHave credentials which only expire after fixes can be deployed.\n\n\n## Solution\n\nUpgrade the JWT dependency in any application using it.\n\nUpgrade the NATS server if using NATS Accounts.",
+          "Severity": "HIGH",
+          "References": [
+            "https://advisories.nats.io/CVE/CVE-2020-26892.txt",
+            "https://github.com/nats-io/jwt/commit/e11ce317263cef69619fc1ca743b195d02aa1d8a",
+            "https://github.com/nats-io/nats-server/security/advisories/GHSA-2c64-vj8g-vwrq"
+          ]
+        },
+        {
+          "VulnerabilityID": "GHSA-hmm9-r2m2-qg9w",
+          "PkgName": "github.com/nats-io/nats-server/v2",
+          "InstalledVersion": "v0.0.0-20240111053235-a5298e2a18a5",
+          "FixedVersion": "2.1.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-hmm9-r2m2-qg9w",
+          "PkgRef": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5?package-id=c6b2022459a2c237",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "Nil dereference in NATS JWT causing DoS of nats-server",
+          "Description": "(This advisory is canonically \u003chttps://advisories.nats.io/CVE/CVE-2020-26521.txt\u003e)\n\n## Problem Description\n\nThe NATS account system has an Operator trusted by the servers, which signs Accounts, and each Account can then create and sign Users within their account.  The Operator should be able to safely issue Accounts to other entities which it does not fully trust.\n\nA malicious Account could create and sign a User JWT with a state not created by the normal tooling, such that decoding by the NATS JWT library (written in Go) would attempt a nil dereference, aborting execution.\n\nThe NATS Server is known to be impacted by this.\n\n\n## Affected versions\n\n#### JWT library\n\n * all versions prior to 1.1.0\n\n#### NATS Server\n\n * Version 2 prior to 2.1.9\n\n\n## Impact\n\n#### JWT library\n\n * Programs would nil dereference and panic, aborting execution by default.\n\n#### NATS server\n\n * Denial of Service caused by process termination\n\n\n## Workaround\n\nIf your NATS servers do not trust any accounts which are managed by untrusted entities, then malformed User credentials are unlikely to be encountered.\n\n\n## Solution\n\nUpgrade the JWT dependency in any application using it.\n\nUpgrade the NATS server if using NATS Accounts.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://advisories.nats.io/CVE/CVE-2020-26521.txt",
+            "https://github.com/nats-io/jwt/pull/107",
+            "https://github.com/nats-io/nats-server/security/advisories/GHSA-hmm9-r2m2-qg9w",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VT67XCLIIBYRT762SVFBYFFTQFVSM3SI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-26521",
+            "https://www.openwall.com/lists/oss-security/2020/11/02/2"
+          ]
+        },
+        {
+          "VulnerabilityID": "GHSA-j756-f273-xhp4",
+          "PkgName": "github.com/nats-io/nats-server/v2",
+          "InstalledVersion": "v0.0.0-20240111053235-a5298e2a18a5",
+          "FixedVersion": "2.2.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-j756-f273-xhp4",
+          "PkgRef": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5?package-id=c6b2022459a2c237",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "github.com/nats-io/nats-server/ Import token permissions checking not enforced",
+          "Description": "(This advisory is canonically \u003chttps://advisories.nats.io/CVE/CVE-2021-3127.txt\u003e)\n\n## Problem Description\n\nThe NATS server provides for Subjects which are namespaced by Account; all Subjects are supposed to be private to an account, with an Export/Import system used to grant cross-account access to some Subjects.  Some Exports are public, such that anyone can import the relevant subjects, and some Exports are private, such that the Import requires a token JWT to prove permission.\n\nThe JWT library's validation of the bindings in the Import Token incorrectly warned on mismatches, instead of outright rejecting the token.\n\nAs a result, any account can take an Import token used by any other account and re-use it for themselves because the binding to the importing account is not rejected, and use it to import *any* Subject from the Exporting account, not just the Subject referenced in the Import Token.\n\nThe NATS account-server system treats account JWTs as semi-public information, such that an attacker can easily enumerate all account JWTs and retrieve all Import Tokens from those account JWTs.\n\nThe CVE identifier should cover the JWT library repair and the nats-server containing the fixed JWT library, and any other application depending upon the fixed JWT library.\n\n\n## Affected versions\n\n#### JWT library\n\n * all versions prior to 2.0.1\n * fixed after nats-io/jwt#149 landed (2021-03-14)\n\n#### NATS Server\n\n * Version 2 prior to 2.2.0\n   + 2.0.0 through and including 2.1.9 are vulnerable\n * fixed with nats-io/nats-server@423b79440c (2021-03-14)\n\n\n## Impact\n\nIn deployments with untrusted accounts able to update the Account Server with imports, a malicious account can access any Subject from an account which provides Exported Subjects.\n\nAbuse of this facility requires the malicious actor to upload their tampered Account JWT to the Account Server, providing the service operator with a data-store which can be scanned for signs of abuse.\n\n\n## Workaround\n\nDeny access to clients to update their account JWT in the account server.\n\n\n## Solution\n\nUpgrade the JWT dependency in any application using it.\n\nUpgrade the NATS server if using NATS Accounts (with private Exports; Account owners can create those at any time though).\n\nAudit all accounts JWTs to scan for exploit attempts; a Python script to audit the accounts can be found at \u003chttps://gist.github.com/philpennock/09d49524ad98043ff11d8a40c2bb0d5a\u003e.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://advisories.nats.io/CVE/CVE-2021-3127.txt",
+            "https://github.com/nats-io/jwt/pull/149",
+            "https://github.com/nats-io/nats-server/security/advisories/GHSA-j756-f273-xhp4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-3127"
+          ]
+        },
+        {
+          "VulnerabilityID": "GHSA-gwj5-3vfq-q992",
+          "PkgName": "github.com/nats-io/nats-server/v2",
+          "InstalledVersion": "v0.0.0-20240111053235-a5298e2a18a5",
+          "FixedVersion": "2.2.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-gwj5-3vfq-q992",
+          "PkgRef": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5?package-id=c6b2022459a2c237",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "Import loops in account imports, nats-server DoS",
+          "Description": "(This advisory is canonically \u003chttps://advisories.nats.io/CVE/CVE-2020-28466.txt\u003e)\n\n## Problem Description\n\nAn export/import cycle between accounts could crash the nats-server, after consuming CPU and memory.\n\nThis issue was fixed publicly in \u003chttps://github.com/nats-io/nats-server/pull/1731\u003e in November 2020.\n\nThe need to call this out as a security issue was highlighted by `snyk.io` and we are grateful for their assistance in doing so.\n\nOrganizations which run a NATS service providing access to accounts run by untrusted third parties are affected.\nSee below for an important caveat if running such a service.\n\n\n## Affected versions\n\n#### NATS Server\n\n * Version 2 prior to 2.2.0\n   + 2.0.0 through and including 2.1.9 are vulnerable.\n * fixed with nats-io/nats-server PR 1731, commit 2e3c226729\n\n\n## Impact\n\nThe nats-server could be killed, after consuming resources.\n\n\n## Workaround\n\nThe import cycle requires at least two accounts to work; if you have open account sign-up, then restricting new account sign-up might hinder an attacker.\n\n\n## Solution\n\nUpgrade the nats-server.\n\n\n## Caveat on NATS with untrusted users\n\nRunning a NATS service which is exposed to untrusted users presents a heightened risk.\n\nAny remote execution flaw or equivalent seriousness, or denial-of-service by unauthenticated users, will lead to prompt releases by the NATS maintainers.\n\nFixes for denial of service issues with no threat of remote execution, when limited to account holders, are likely to just be committed to the main development branch with no special attention.\n\nThose who are running such services are encouraged to build regularly from git.",
+          "Severity": "LOW",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/nats-io/nats-server/security/advisories/GHSA-gwj5-3vfq-q992"
+          ]
+        }
+      ]
+    }
+  ]
+}

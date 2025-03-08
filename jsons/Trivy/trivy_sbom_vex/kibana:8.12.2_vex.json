@@ -1,0 +1,3066 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/trivy/sboms/kibana:8.12.2_sbom.json",
+  "ArtifactType": "spdx",
+  "Metadata": {
+    "OS": {
+      "Family": "ubuntu",
+      "Name": "20.04"
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "jsons/trivy/sboms/kibana:8.12.2_sbom.json (ubuntu 20.04)",
+      "Class": "os-pkgs",
+      "Type": "ubuntu",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-28085",
+          "PkgID": "bsdutils@1:2.34-0.1ubuntu9.4",
+          "PkgName": "bsdutils",
+          "InstalledVersion": "1:2.34-0.1ubuntu9.4",
+          "FixedVersion": "2.34-0.1ubuntu9.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28085",
+          "PkgRef": "pkg:deb/ubuntu/bsdutils@2.34-0.1ubuntu9.4?arch=arm64\u0026distro=ubuntu-20.04\u0026epoch=1",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "util-linux: CVE-2024-28085: wall: escape sequence injection",
+          "Description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28085",
+            "https://github.com/skyler-ferrante/CVE-2024-28085",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+            "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+            "https://ubuntu.com/security/notices/USN-6719-1",
+            "https://ubuntu.com/security/notices/USN-6719-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28085",
+            "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+          ],
+          "PublishedDate": "2024-03-27T19:15:48.367Z",
+          "LastModifiedDate": "2024-04-07T12:15:08.903Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2016-2781",
+          "PkgID": "coreutils@8.30-3ubuntu2",
+          "PkgName": "coreutils",
+          "InstalledVersion": "8.30-3ubuntu2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-2781",
+          "PkgRef": "pkg:deb/ubuntu/coreutils@8.30-3ubuntu2?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "coreutils: Non-privileged session can escape to the parent session in chroot",
+          "Description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+              "V2Score": 2.1,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V2Score": 6.2,
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "http://seclists.org/oss-sec/2016/q1/452",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+            "https://access.redhat.com/security/cve/CVE-2016-2781",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+            "https://lore.kernel.org/patchwork/patch/793178/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+            "https://www.cve.org/CVERecord?id=CVE-2016-2781"
+          ],
+          "PublishedDate": "2017-02-07T15:59:00.333Z",
+          "LastModifiedDate": "2023-11-07T02:32:03.347Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2398",
+          "PkgID": "curl@7.68.0-1ubuntu2.21",
+          "PkgName": "curl",
+          "InstalledVersion": "7.68.0-1ubuntu2.21",
+          "FixedVersion": "7.68.0-1ubuntu2.22",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2398",
+          "PkgRef": "pkg:deb/ubuntu/curl@7.68.0-1ubuntu2.21?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "curl: HTTP/2 push headers memory-leak",
+          "Description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2398",
+            "https://curl.se/docs/CVE-2024-2398.html",
+            "https://curl.se/docs/CVE-2024-2398.json",
+            "https://hackerone.com/reports/2402845",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GMD6UYKCCRCYETWQZUJ65ZRFULT6SHLI/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2398",
+            "https://ubuntu.com/security/notices/USN-6718-1",
+            "https://ubuntu.com/security/notices/USN-6718-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2398"
+          ],
+          "PublishedDate": "2024-03-27T08:15:41.283Z",
+          "LastModifiedDate": "2024-04-19T23:15:10.867Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28085",
+          "PkgID": "fdisk@2.34-0.1ubuntu9.4",
+          "PkgName": "fdisk",
+          "InstalledVersion": "2.34-0.1ubuntu9.4",
+          "FixedVersion": "2.34-0.1ubuntu9.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28085",
+          "PkgRef": "pkg:deb/ubuntu/fdisk@2.34-0.1ubuntu9.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "util-linux: CVE-2024-28085: wall: escape sequence injection",
+          "Description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28085",
+            "https://github.com/skyler-ferrante/CVE-2024-28085",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+            "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+            "https://ubuntu.com/security/notices/USN-6719-1",
+            "https://ubuntu.com/security/notices/USN-6719-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28085",
+            "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+          ],
+          "PublishedDate": "2024-03-27T19:15:48.367Z",
+          "LastModifiedDate": "2024-04-07T12:15:08.903Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-3219",
+          "PkgID": "gpgv@2.2.19-3ubuntu2.2",
+          "PkgName": "gpgv",
+          "InstalledVersion": "2.2.19-3ubuntu2.2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3219",
+          "PkgRef": "pkg:deb/ubuntu/gpgv@2.2.19-3ubuntu2.2?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "gnupg: denial of service issue (resource consumption) using compressed packets",
+          "Description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.2
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-3219",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+            "https://dev.gnupg.org/D556",
+            "https://dev.gnupg.org/T5993",
+            "https://marc.info/?l=oss-security\u0026m=165696590211434\u0026w=4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+            "https://security.netapp.com/advisory/ntap-20230324-0001/",
+            "https://www.cve.org/CVERecord?id=CVE-2022-3219"
+          ],
+          "PublishedDate": "2023-02-23T20:15:12.393Z",
+          "LastModifiedDate": "2023-05-26T16:31:34.07Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28085",
+          "PkgID": "libblkid1@2.34-0.1ubuntu9.4",
+          "PkgName": "libblkid1",
+          "InstalledVersion": "2.34-0.1ubuntu9.4",
+          "FixedVersion": "2.34-0.1ubuntu9.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28085",
+          "PkgRef": "pkg:deb/ubuntu/libblkid1@2.34-0.1ubuntu9.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "util-linux: CVE-2024-28085: wall: escape sequence injection",
+          "Description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28085",
+            "https://github.com/skyler-ferrante/CVE-2024-28085",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+            "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+            "https://ubuntu.com/security/notices/USN-6719-1",
+            "https://ubuntu.com/security/notices/USN-6719-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28085",
+            "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+          ],
+          "PublishedDate": "2024-03-27T19:15:48.367Z",
+          "LastModifiedDate": "2024-04-07T12:15:08.903Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2961",
+          "PkgID": "libc-bin@2.31-0ubuntu9.14",
+          "PkgName": "libc-bin",
+          "InstalledVersion": "2.31-0ubuntu9.14",
+          "FixedVersion": "2.31-0ubuntu9.15",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2961",
+          "PkgRef": "pkg:deb/ubuntu/libc-bin@2.31-0ubuntu9.14?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "glibc: Out of bounds write in iconv may lead to remote code execution",
+          "Description": "The iconv() function in the GNU C Library versions 2.39 and older may overflow the output buffer passed to it by up to 4 bytes when converting strings to the ISO-2022-CN-EXT character set, which may be used to crash an application or overwrite a neighbouring variable.\n",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2961",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BTJFBGHDYG5PEIFD5WSSSKSFZ2AZWC5N/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P3I4KYS6EU6S7QZ47WFNTPVAHFIUQNEL/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YAMJQI3Y6BHWV3CUTYBXOZONCUJNOB2Z/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2961",
+            "https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2024-0004",
+            "https://ubuntu.com/security/notices/USN-6737-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2961",
+            "https://www.openwall.com/lists/oss-security/2024/04/17/9"
+          ],
+          "PublishedDate": "2024-04-17T18:15:15.833Z",
+          "LastModifiedDate": "2024-04-20T03:15:07.047Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2016-20013",
+          "PkgID": "libc-bin@2.31-0ubuntu9.14",
+          "PkgName": "libc-bin",
+          "InstalledVersion": "2.31-0ubuntu9.14",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-20013",
+          "PkgRef": "pkg:deb/ubuntu/libc-bin@2.31-0ubuntu9.14?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://akkadia.org/drepper/SHA-crypt.txt",
+            "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+            "https://twitter.com/solardiz/status/795601240151457793",
+            "https://www.cve.org/CVERecord?id=CVE-2016-20013"
+          ],
+          "PublishedDate": "2022-02-19T05:15:09.413Z",
+          "LastModifiedDate": "2022-03-03T16:43:19.667Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2961",
+          "PkgID": "libc6@2.31-0ubuntu9.14",
+          "PkgName": "libc6",
+          "InstalledVersion": "2.31-0ubuntu9.14",
+          "FixedVersion": "2.31-0ubuntu9.15",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2961",
+          "PkgRef": "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.14?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "glibc: Out of bounds write in iconv may lead to remote code execution",
+          "Description": "The iconv() function in the GNU C Library versions 2.39 and older may overflow the output buffer passed to it by up to 4 bytes when converting strings to the ISO-2022-CN-EXT character set, which may be used to crash an application or overwrite a neighbouring variable.\n",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2961",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BTJFBGHDYG5PEIFD5WSSSKSFZ2AZWC5N/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P3I4KYS6EU6S7QZ47WFNTPVAHFIUQNEL/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YAMJQI3Y6BHWV3CUTYBXOZONCUJNOB2Z/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2961",
+            "https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2024-0004",
+            "https://ubuntu.com/security/notices/USN-6737-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2961",
+            "https://www.openwall.com/lists/oss-security/2024/04/17/9"
+          ],
+          "PublishedDate": "2024-04-17T18:15:15.833Z",
+          "LastModifiedDate": "2024-04-20T03:15:07.047Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2016-20013",
+          "PkgID": "libc6@2.31-0ubuntu9.14",
+          "PkgName": "libc6",
+          "InstalledVersion": "2.31-0ubuntu9.14",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-20013",
+          "PkgRef": "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.14?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://akkadia.org/drepper/SHA-crypt.txt",
+            "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+            "https://twitter.com/solardiz/status/795601240151457793",
+            "https://www.cve.org/CVERecord?id=CVE-2016-20013"
+          ],
+          "PublishedDate": "2022-02-19T05:15:09.413Z",
+          "LastModifiedDate": "2022-03-03T16:43:19.667Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2398",
+          "PkgID": "libcurl4@7.68.0-1ubuntu2.21",
+          "PkgName": "libcurl4",
+          "InstalledVersion": "7.68.0-1ubuntu2.21",
+          "FixedVersion": "7.68.0-1ubuntu2.22",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2398",
+          "PkgRef": "pkg:deb/ubuntu/libcurl4@7.68.0-1ubuntu2.21?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "curl: HTTP/2 push headers memory-leak",
+          "Description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2398",
+            "https://curl.se/docs/CVE-2024-2398.html",
+            "https://curl.se/docs/CVE-2024-2398.json",
+            "https://hackerone.com/reports/2402845",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GMD6UYKCCRCYETWQZUJ65ZRFULT6SHLI/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2398",
+            "https://ubuntu.com/security/notices/USN-6718-1",
+            "https://ubuntu.com/security/notices/USN-6718-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2398"
+          ],
+          "PublishedDate": "2024-03-27T08:15:41.283Z",
+          "LastModifiedDate": "2024-04-19T23:15:10.867Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28085",
+          "PkgID": "libfdisk1@2.34-0.1ubuntu9.4",
+          "PkgName": "libfdisk1",
+          "InstalledVersion": "2.34-0.1ubuntu9.4",
+          "FixedVersion": "2.34-0.1ubuntu9.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28085",
+          "PkgRef": "pkg:deb/ubuntu/libfdisk1@2.34-0.1ubuntu9.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "util-linux: CVE-2024-28085: wall: escape sequence injection",
+          "Description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28085",
+            "https://github.com/skyler-ferrante/CVE-2024-28085",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+            "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+            "https://ubuntu.com/security/notices/USN-6719-1",
+            "https://ubuntu.com/security/notices/USN-6719-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28085",
+            "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+          ],
+          "PublishedDate": "2024-03-27T19:15:48.367Z",
+          "LastModifiedDate": "2024-04-07T12:15:08.903Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2236",
+          "PkgID": "libgcrypt20@1.8.5-5ubuntu1.1",
+          "PkgName": "libgcrypt20",
+          "InstalledVersion": "1.8.5-5ubuntu1.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2236",
+          "PkgRef": "pkg:deb/ubuntu/libgcrypt20@1.8.5-5ubuntu1.1?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "libgcrypt: vulnerable to Marvin Attack",
+          "Description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-208"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2236",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2268268",
+            "https://github.com/tomato42/marvin-toolkit/tree/master/example/libgcrypt",
+            "https://lists.gnupg.org/pipermail/gcrypt-devel/2024-March/005607.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2236",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2236"
+          ],
+          "PublishedDate": "2024-03-06T22:15:57.977Z",
+          "LastModifiedDate": "2024-03-07T13:52:27.11Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28834",
+          "PkgID": "libgnutls30@3.6.13-2ubuntu1.10",
+          "PkgName": "libgnutls30",
+          "InstalledVersion": "3.6.13-2ubuntu1.10",
+          "FixedVersion": "3.6.13-2ubuntu1.11",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28834",
+          "PkgRef": "pkg:deb/ubuntu/libgnutls30@3.6.13-2ubuntu1.10?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "gnutls: vulnerable to Minerva side-channel information leak",
+          "Description": "A flaw was found in GnuTLS. The Minerva attack is a cryptographic vulnerability that exploits deterministic behavior in systems like GnuTLS, leading to side-channel leaks. In specific scenarios, such as when using the GNUTLS_PRIVKEY_FLAG_REPRODUCIBLE flag, it can result in a noticeable step in nonce size from 513 to 512 bits, exposing a potential timing side-channel.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1784",
+            "https://access.redhat.com/errata/RHSA-2024:1879",
+            "https://access.redhat.com/security/cve/CVE-2024-28834",
+            "https://bugzilla.redhat.com/2269228",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2269228",
+            "https://errata.almalinux.org/8/ALSA-2024-1784.html",
+            "https://linux.oracle.com/cve/CVE-2024-28834.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1879.html",
+            "https://lists.gnupg.org/pipermail/gnutls-help/2024-March/004845.html",
+            "https://minerva.crocs.fi.muni.cz/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28834",
+            "https://people.redhat.com/~hkario/marvin/",
+            "https://ubuntu.com/security/notices/USN-6733-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28834",
+            "https://www.gnutls.org/security-new.html#GNUTLS-SA-2023-12-04"
+          ],
+          "PublishedDate": "2024-03-21T14:15:07.547Z",
+          "LastModifiedDate": "2024-04-18T05:15:48.167Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26458",
+          "PkgID": "libgssapi-krb5-2@1.17-6ubuntu4.4",
+          "PkgName": "libgssapi-krb5-2",
+          "InstalledVersion": "1.17-6ubuntu4.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26458",
+          "PkgRef": "pkg:deb/ubuntu/libgssapi-krb5-2@1.17-6ubuntu4.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c",
+          "Description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-26458",
+            "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26458",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26458"
+          ],
+          "PublishedDate": "2024-02-29T01:44:18.78Z",
+          "LastModifiedDate": "2024-02-29T13:49:29.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26461",
+          "PkgID": "libgssapi-krb5-2@1.17-6ubuntu4.4",
+          "PkgName": "libgssapi-krb5-2",
+          "InstalledVersion": "1.17-6ubuntu4.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26461",
+          "PkgRef": "pkg:deb/ubuntu/libgssapi-krb5-2@1.17-6ubuntu4.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c",
+          "Description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-26461",
+            "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26461",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26461"
+          ],
+          "PublishedDate": "2024-02-29T01:44:18.82Z",
+          "LastModifiedDate": "2024-02-29T13:49:29.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26462",
+          "PkgID": "libgssapi-krb5-2@1.17-6ubuntu4.4",
+          "PkgName": "libgssapi-krb5-2",
+          "InstalledVersion": "1.17-6ubuntu4.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26462",
+          "PkgRef": "pkg:deb/ubuntu/libgssapi-krb5-2@1.17-6ubuntu4.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "krb5: Memory leak at /krb5/src/kdc/ndr.c",
+          "Description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-26462",
+            "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_3.md",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26462",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26462"
+          ],
+          "PublishedDate": "2024-02-29T01:44:18.857Z",
+          "LastModifiedDate": "2024-02-29T13:49:29.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26458",
+          "PkgID": "libk5crypto3@1.17-6ubuntu4.4",
+          "PkgName": "libk5crypto3",
+          "InstalledVersion": "1.17-6ubuntu4.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26458",
+          "PkgRef": "pkg:deb/ubuntu/libk5crypto3@1.17-6ubuntu4.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c",
+          "Description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-26458",
+            "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26458",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26458"
+          ],
+          "PublishedDate": "2024-02-29T01:44:18.78Z",
+          "LastModifiedDate": "2024-02-29T13:49:29.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26461",
+          "PkgID": "libk5crypto3@1.17-6ubuntu4.4",
+          "PkgName": "libk5crypto3",
+          "InstalledVersion": "1.17-6ubuntu4.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26461",
+          "PkgRef": "pkg:deb/ubuntu/libk5crypto3@1.17-6ubuntu4.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c",
+          "Description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-26461",
+            "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26461",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26461"
+          ],
+          "PublishedDate": "2024-02-29T01:44:18.82Z",
+          "LastModifiedDate": "2024-02-29T13:49:29.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26462",
+          "PkgID": "libk5crypto3@1.17-6ubuntu4.4",
+          "PkgName": "libk5crypto3",
+          "InstalledVersion": "1.17-6ubuntu4.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26462",
+          "PkgRef": "pkg:deb/ubuntu/libk5crypto3@1.17-6ubuntu4.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "krb5: Memory leak at /krb5/src/kdc/ndr.c",
+          "Description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-26462",
+            "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_3.md",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26462",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26462"
+          ],
+          "PublishedDate": "2024-02-29T01:44:18.857Z",
+          "LastModifiedDate": "2024-02-29T13:49:29.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26458",
+          "PkgID": "libkrb5-3@1.17-6ubuntu4.4",
+          "PkgName": "libkrb5-3",
+          "InstalledVersion": "1.17-6ubuntu4.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26458",
+          "PkgRef": "pkg:deb/ubuntu/libkrb5-3@1.17-6ubuntu4.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c",
+          "Description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-26458",
+            "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26458",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26458"
+          ],
+          "PublishedDate": "2024-02-29T01:44:18.78Z",
+          "LastModifiedDate": "2024-02-29T13:49:29.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26461",
+          "PkgID": "libkrb5-3@1.17-6ubuntu4.4",
+          "PkgName": "libkrb5-3",
+          "InstalledVersion": "1.17-6ubuntu4.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26461",
+          "PkgRef": "pkg:deb/ubuntu/libkrb5-3@1.17-6ubuntu4.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c",
+          "Description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-26461",
+            "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26461",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26461"
+          ],
+          "PublishedDate": "2024-02-29T01:44:18.82Z",
+          "LastModifiedDate": "2024-02-29T13:49:29.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26462",
+          "PkgID": "libkrb5-3@1.17-6ubuntu4.4",
+          "PkgName": "libkrb5-3",
+          "InstalledVersion": "1.17-6ubuntu4.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26462",
+          "PkgRef": "pkg:deb/ubuntu/libkrb5-3@1.17-6ubuntu4.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "krb5: Memory leak at /krb5/src/kdc/ndr.c",
+          "Description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-26462",
+            "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_3.md",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26462",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26462"
+          ],
+          "PublishedDate": "2024-02-29T01:44:18.857Z",
+          "LastModifiedDate": "2024-02-29T13:49:29.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26458",
+          "PkgID": "libkrb5support0@1.17-6ubuntu4.4",
+          "PkgName": "libkrb5support0",
+          "InstalledVersion": "1.17-6ubuntu4.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26458",
+          "PkgRef": "pkg:deb/ubuntu/libkrb5support0@1.17-6ubuntu4.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c",
+          "Description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-26458",
+            "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26458",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26458"
+          ],
+          "PublishedDate": "2024-02-29T01:44:18.78Z",
+          "LastModifiedDate": "2024-02-29T13:49:29.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26461",
+          "PkgID": "libkrb5support0@1.17-6ubuntu4.4",
+          "PkgName": "libkrb5support0",
+          "InstalledVersion": "1.17-6ubuntu4.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26461",
+          "PkgRef": "pkg:deb/ubuntu/libkrb5support0@1.17-6ubuntu4.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c",
+          "Description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-26461",
+            "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26461",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26461"
+          ],
+          "PublishedDate": "2024-02-29T01:44:18.82Z",
+          "LastModifiedDate": "2024-02-29T13:49:29.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26462",
+          "PkgID": "libkrb5support0@1.17-6ubuntu4.4",
+          "PkgName": "libkrb5support0",
+          "InstalledVersion": "1.17-6ubuntu4.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26462",
+          "PkgRef": "pkg:deb/ubuntu/libkrb5support0@1.17-6ubuntu4.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "krb5: Memory leak at /krb5/src/kdc/ndr.c",
+          "Description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-26462",
+            "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_3.md",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26462",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26462"
+          ],
+          "PublishedDate": "2024-02-29T01:44:18.857Z",
+          "LastModifiedDate": "2024-02-29T13:49:29.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-22916",
+          "PkgID": "liblzma5@5.2.4-1ubuntu1.1",
+          "PkgName": "liblzma5",
+          "InstalledVersion": "5.2.4-1ubuntu1.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-22916",
+          "PkgRef": "pkg:deb/ubuntu/liblzma5@5.2.4-1ubuntu1.1?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "Denial of service via decompression of crafted file",
+          "Description": "An issue discovered in XZ 5.2.5 allows attackers to cause a denial of service via decompression of a crafted file. NOTE: the vendor disputes the claims of \"endless output\" and \"denial of service\" because decompression of the 17,486 bytes always results in 114,881,179 bytes, which is often a reasonable size increase.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://web.archive.org/web/20230918084612/https://github.com/snappyJack/CVE-request-XZ-5.2.5-has-denial-of-service-vulnerability",
+            "https://access.redhat.com/security/cve/CVE-2020-22916",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2234987",
+            "https://bugzilla.suse.com/show_bug.cgi?id=1214590",
+            "https://github.com/snappyJack/CVE-request-XZ-5.2.5-has-denial-of-service-vulnerability",
+            "https://github.com/tukaani-project/xz/issues/61",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-22916",
+            "https://security-tracker.debian.org/tracker/CVE-2020-22916",
+            "https://tukaani.org/xz/",
+            "https://www.cve.org/CVERecord?id=CVE-2020-22916"
+          ],
+          "PublishedDate": "2023-08-22T19:16:19.407Z",
+          "LastModifiedDate": "2024-04-11T01:07:48.443Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28085",
+          "PkgID": "libmount1@2.34-0.1ubuntu9.4",
+          "PkgName": "libmount1",
+          "InstalledVersion": "2.34-0.1ubuntu9.4",
+          "FixedVersion": "2.34-0.1ubuntu9.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28085",
+          "PkgRef": "pkg:deb/ubuntu/libmount1@2.34-0.1ubuntu9.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "util-linux: CVE-2024-28085: wall: escape sequence injection",
+          "Description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28085",
+            "https://github.com/skyler-ferrante/CVE-2024-28085",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+            "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+            "https://ubuntu.com/security/notices/USN-6719-1",
+            "https://ubuntu.com/security/notices/USN-6719-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28085",
+            "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+          ],
+          "PublishedDate": "2024-03-27T19:15:48.367Z",
+          "LastModifiedDate": "2024-04-07T12:15:08.903Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-45918",
+          "PkgID": "libncurses6@6.2-0ubuntu2.1",
+          "PkgName": "libncurses6",
+          "InstalledVersion": "6.2-0ubuntu2.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45918",
+          "PkgRef": "pkg:deb/ubuntu/libncurses6@6.2-0ubuntu2.1?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinf ...",
+          "Description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+          "Severity": "LOW",
+          "References": [
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html",
+            "https://security.netapp.com/advisory/ntap-20240315-0006/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-45918"
+          ],
+          "PublishedDate": "2024-02-16T22:15:07.88Z",
+          "LastModifiedDate": "2024-03-15T11:15:08.51Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-50495",
+          "PkgID": "libncurses6@6.2-0ubuntu2.1",
+          "PkgName": "libncurses6",
+          "InstalledVersion": "6.2-0ubuntu2.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-50495",
+          "PkgRef": "pkg:deb/ubuntu/libncurses6@6.2-0ubuntu2.1?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: segmentation fault via _nc_wrap_entry()",
+          "Description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+          "Severity": "LOW",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-50495",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+            "https://security.netapp.com/advisory/ntap-20240119-0008/",
+            "https://ubuntu.com/security/notices/USN-6684-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-50495"
+          ],
+          "PublishedDate": "2023-12-12T15:15:07.867Z",
+          "LastModifiedDate": "2024-01-31T03:15:08.49Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-45918",
+          "PkgID": "libncursesw6@6.2-0ubuntu2.1",
+          "PkgName": "libncursesw6",
+          "InstalledVersion": "6.2-0ubuntu2.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45918",
+          "PkgRef": "pkg:deb/ubuntu/libncursesw6@6.2-0ubuntu2.1?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinf ...",
+          "Description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+          "Severity": "LOW",
+          "References": [
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html",
+            "https://security.netapp.com/advisory/ntap-20240315-0006/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-45918"
+          ],
+          "PublishedDate": "2024-02-16T22:15:07.88Z",
+          "LastModifiedDate": "2024-03-15T11:15:08.51Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-50495",
+          "PkgID": "libncursesw6@6.2-0ubuntu2.1",
+          "PkgName": "libncursesw6",
+          "InstalledVersion": "6.2-0ubuntu2.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-50495",
+          "PkgRef": "pkg:deb/ubuntu/libncursesw6@6.2-0ubuntu2.1?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: segmentation fault via _nc_wrap_entry()",
+          "Description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+          "Severity": "LOW",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-50495",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+            "https://security.netapp.com/advisory/ntap-20240119-0008/",
+            "https://ubuntu.com/security/notices/USN-6684-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-50495"
+          ],
+          "PublishedDate": "2023-12-12T15:15:07.867Z",
+          "LastModifiedDate": "2024-01-31T03:15:08.49Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-4421",
+          "PkgID": "libnss3@2:3.49.1-1ubuntu1.9",
+          "PkgName": "libnss3",
+          "InstalledVersion": "2:3.49.1-1ubuntu1.9",
+          "FixedVersion": "2:3.98-0ubuntu0.20.04.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-4421",
+          "PkgRef": "pkg:deb/ubuntu/libnss3@3.49.1-1ubuntu1.9?arch=arm64\u0026distro=ubuntu-20.04\u0026epoch=2",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "nss: new tlsfuzzer code can still detect timing issues in RSA operations",
+          "Description": "The NSS code used for checking PKCS#1 v1.5 was leaking information useful in mounting Bleichenbacher-like attacks. Both the overall correctness of the padding as well as the length of the encrypted message was leaking through timing side-channel. By sending large number of attacker-selected ciphertexts, the attacker would be able to decrypt a previously intercepted PKCS#1 v1.5 ciphertext (for example, to decrypt a TLS session that used RSA key exchange), or forge a signature using the victim's key. The issue was fixed by implementing the implicit rejection algorithm, in which the NSS returns a deterministic random message in case invalid padding is detected, as proposed in the Marvin Attack paper. This vulnerability affects NSS \u003c 3.61.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-203"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-4421",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1651411",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-4421",
+            "https://people.redhat.com/~hkario/marvin/",
+            "https://ubuntu.com/security/notices/USN-6727-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-4421",
+            "https://www.mozilla.org/en-US/security/advisories/mfsa2023-53/",
+            "https://www.mozilla.org/security/advisories/mfsa2023-53/"
+          ],
+          "PublishedDate": "2023-12-12T17:15:08.347Z",
+          "LastModifiedDate": "2023-12-20T18:40:25.117Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5388",
+          "PkgID": "libnss3@2:3.49.1-1ubuntu1.9",
+          "PkgName": "libnss3",
+          "InstalledVersion": "2:3.49.1-1ubuntu1.9",
+          "FixedVersion": "2:3.98-0ubuntu0.20.04.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5388",
+          "PkgRef": "pkg:deb/ubuntu/libnss3@3.49.1-1ubuntu1.9?arch=arm64\u0026distro=ubuntu-20.04\u0026epoch=2",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "nss: timing attack against RSA decryption",
+          "Description": "NSS was susceptible to a timing side-channel attack when performing RSA decryption. This attack could potentially allow an attacker to recover the private data. This vulnerability affects Firefox \u003c 124, Firefox ESR \u003c 115.9, and Thunderbird \u003c 115.9.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1494",
+            "https://access.redhat.com/security/cve/CVE-2023-5388",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1780432",
+            "https://bugzilla.redhat.com/2243644",
+            "https://bugzilla.redhat.com/2260012",
+            "https://bugzilla.redhat.com/2268171",
+            "https://bugzilla.redhat.com/2270660",
+            "https://bugzilla.redhat.com/2270661",
+            "https://bugzilla.redhat.com/2270663",
+            "https://bugzilla.redhat.com/2270664",
+            "https://bugzilla.redhat.com/2270665",
+            "https://bugzilla.redhat.com/2270666",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2243644",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2260012",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2268171",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2270660",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2270661",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2270663",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2270664",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2270665",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2270666",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5388",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0743",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1936",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2607",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2608",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2610",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2611",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2612",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2614",
+            "https://errata.almalinux.org/8/ALSA-2024-1494.html",
+            "https://errata.rockylinux.org/RLSA-2024:1494",
+            "https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_90_2.html",
+            "https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_98.html",
+            "https://linux.oracle.com/cve/CVE-2023-5388.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1498.html",
+            "https://lists.debian.org/debian-lts-announce/2024/03/msg00022.html",
+            "https://lists.debian.org/debian-lts-announce/2024/03/msg00028.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5388",
+            "https://people.redhat.com/~hkario/marvin/",
+            "https://ubuntu.com/security/notices/USN-6703-1",
+            "https://ubuntu.com/security/notices/USN-6717-1",
+            "https://ubuntu.com/security/notices/USN-6727-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-5388",
+            "https://www.mozilla.org/en-US/security/advisories/mfsa2024-13/#CVE-2023-5388",
+            "https://www.mozilla.org/en-US/security/advisories/mfsa2024-14/#CVE-2023-5388",
+            "https://www.mozilla.org/security/advisories/mfsa2024-12/",
+            "https://www.mozilla.org/security/advisories/mfsa2024-13/",
+            "https://www.mozilla.org/security/advisories/mfsa2024-14/"
+          ],
+          "PublishedDate": "2024-03-19T12:15:07.537Z",
+          "LastModifiedDate": "2024-03-25T17:15:51.337Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6135",
+          "PkgID": "libnss3@2:3.49.1-1ubuntu1.9",
+          "PkgName": "libnss3",
+          "InstalledVersion": "2:3.49.1-1ubuntu1.9",
+          "FixedVersion": "2:3.98-0ubuntu0.20.04.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6135",
+          "PkgRef": "pkg:deb/ubuntu/libnss3@3.49.1-1ubuntu1.9?arch=arm64\u0026distro=ubuntu-20.04\u0026epoch=2",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "nss: vulnerable to Minerva side-channel information leak",
+          "Description": "Multiple NSS NIST curves were susceptible to a side-channel attack known as \"Minerva\". This attack could potentially allow an attacker to recover the private key. This vulnerability affects Firefox \u003c 121.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-203"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+              "V3Score": 4.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+              "V3Score": 4.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0786",
+            "https://access.redhat.com/security/cve/CVE-2023-6135",
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1853908",
+            "https://bugzilla.redhat.com/2249906",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2249906",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6135",
+            "https://errata.almalinux.org/8/ALSA-2024-0786.html",
+            "https://errata.rockylinux.org/RLSA-2024:0786",
+            "https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_95.html",
+            "https://linux.oracle.com/cve/CVE-2023-6135.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0790.html",
+            "https://minerva.crocs.fi.muni.cz/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6135",
+            "https://people.redhat.com/~hkario/marvin/",
+            "https://security.gentoo.org/glsa/202401-10",
+            "https://ubuntu.com/security/notices/USN-6562-1",
+            "https://ubuntu.com/security/notices/USN-6727-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6135",
+            "https://www.mozilla.org/en-US/security/advisories/mfsa2023-56/#CVE-2023-6135",
+            "https://www.mozilla.org/security/advisories/mfsa2023-56/"
+          ],
+          "PublishedDate": "2023-12-19T14:15:07.143Z",
+          "LastModifiedDate": "2024-01-07T11:15:14.493Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2017-11164",
+          "PkgID": "libpcre3@2:8.39-12ubuntu0.1",
+          "PkgName": "libpcre3",
+          "InstalledVersion": "2:8.39-12ubuntu0.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-11164",
+          "PkgRef": "pkg:deb/ubuntu/libpcre3@8.39-12ubuntu0.1?arch=arm64\u0026distro=ubuntu-20.04\u0026epoch=2",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "pcre: OP_KETRMAX feature in the match function in pcre_exec.c",
+          "Description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-674"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 7.8,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://openwall.com/lists/oss-security/2017/07/11/3",
+            "http://www.openwall.com/lists/oss-security/2023/04/11/1",
+            "http://www.openwall.com/lists/oss-security/2023/04/12/1",
+            "http://www.securityfocus.com/bid/99575",
+            "https://access.redhat.com/security/cve/CVE-2017-11164",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2017-11164",
+            "https://www.cve.org/CVERecord?id=CVE-2017-11164"
+          ],
+          "PublishedDate": "2017-07-11T03:29:00.277Z",
+          "LastModifiedDate": "2023-11-07T02:38:10.98Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-3857",
+          "PkgID": "libpng16-16@1.6.37-2",
+          "PkgName": "libpng16-16",
+          "InstalledVersion": "1.6.37-2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3857",
+          "PkgRef": "pkg:deb/ubuntu/libpng16-16@1.6.37-2?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "libpng: Null pointer dereference leads to segmentation fault",
+          "Description": "A flaw was found in libpng 1.6.38. A crafted PNG image can lead to a segmentation fault and denial of service in png_setup_paeth_row() function.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-3857",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-3857",
+            "https://security.netapp.com/advisory/ntap-20230406-0004/",
+            "https://sourceforge.net/p/libpng/bugs/300/",
+            "https://www.cve.org/CVERecord?id=CVE-2022-3857"
+          ],
+          "PublishedDate": "2023-03-06T23:15:11.087Z",
+          "LastModifiedDate": "2023-04-06T13:15:08.467Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28085",
+          "PkgID": "libsmartcols1@2.34-0.1ubuntu9.4",
+          "PkgName": "libsmartcols1",
+          "InstalledVersion": "2.34-0.1ubuntu9.4",
+          "FixedVersion": "2.34-0.1ubuntu9.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28085",
+          "PkgRef": "pkg:deb/ubuntu/libsmartcols1@2.34-0.1ubuntu9.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "util-linux: CVE-2024-28085: wall: escape sequence injection",
+          "Description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28085",
+            "https://github.com/skyler-ferrante/CVE-2024-28085",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+            "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+            "https://ubuntu.com/security/notices/USN-6719-1",
+            "https://ubuntu.com/security/notices/USN-6719-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28085",
+            "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+          ],
+          "PublishedDate": "2024-03-27T19:15:48.367Z",
+          "LastModifiedDate": "2024-04-07T12:15:08.903Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5678",
+          "PkgID": "libssl1.1@1.1.1f-1ubuntu2.20",
+          "PkgName": "libssl1.1",
+          "InstalledVersion": "1.1.1f-1ubuntu2.20",
+          "FixedVersion": "1.1.1f-1ubuntu2.21",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5678",
+          "PkgRef": "pkg:deb/ubuntu/libssl1.1@1.1.1f-1ubuntu2.20?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "openssl: Generating excessively long X9.42 DH keys or checking excessively long X9.42 DH keys or parameters may be very slow",
+          "Description": "Issue summary: Generating excessively long X9.42 DH keys or checking\nexcessively long X9.42 DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_generate_key() to\ngenerate an X9.42 DH key may experience long delays.  Likewise, applications\nthat use DH_check_pub_key(), DH_check_pub_key_ex() or EVP_PKEY_public_check()\nto check an X9.42 DH key or X9.42 DH parameters may experience long delays.\nWhere the key or parameters that are being checked have been obtained from\nan untrusted source this may lead to a Denial of Service.\n\nWhile DH_check() performs all the necessary checks (as of CVE-2023-3817),\nDH_check_pub_key() doesn't make any of these checks, and is therefore\nvulnerable for excessively large P and Q parameters.\n\nLikewise, while DH_generate_key() performs a check for an excessively large\nP, it doesn't check for an excessively large Q.\n\nAn application that calls DH_generate_key() or DH_check_pub_key() and\nsupplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nDH_generate_key() and DH_check_pub_key() are also called by a number of\nother OpenSSL functions.  An application calling any of those other\nfunctions may similarly be affected.  The other functions affected by this\nare DH_check_pub_key_ex(), EVP_PKEY_public_check(), and EVP_PKEY_generate().\n\nAlso vulnerable are the OpenSSL pkey command line application when using the\n\"-pubcheck\" option, as well as the OpenSSL genpkey command line application.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n\n",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-754"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:7877",
+            "https://access.redhat.com/security/cve/CVE-2023-5678",
+            "https://bugzilla.redhat.com/2224962",
+            "https://bugzilla.redhat.com/2227852",
+            "https://bugzilla.redhat.com/2248616",
+            "https://errata.almalinux.org/8/ALSA-2023-7877.html",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=34efaef6c103d636ab507a0cc34dca4d3aecc055",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=710fee740904b6290fef0dd5536fbcedbc38ff0c",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=db925ae2e65d0d925adef429afc37f75bd1c2017",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ddeb4b6c6d527e54ce9a99cba785c0f7776e54b6",
+            "https://linux.oracle.com/cve/CVE-2023-5678.html",
+            "https://linux.oracle.com/errata/ELSA-2024-12056.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5678",
+            "https://security.netapp.com/advisory/ntap-20231130-0010/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://ubuntu.com/security/notices/USN-6632-1",
+            "https://ubuntu.com/security/notices/USN-6709-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-5678",
+            "https://www.openssl.org/news/secadv/20231106.txt"
+          ],
+          "PublishedDate": "2023-11-06T16:15:42.67Z",
+          "LastModifiedDate": "2023-11-30T22:15:09.723Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-0727",
+          "PkgID": "libssl1.1@1.1.1f-1ubuntu2.20",
+          "PkgName": "libssl1.1",
+          "InstalledVersion": "1.1.1f-1ubuntu2.20",
+          "FixedVersion": "1.1.1f-1ubuntu2.21",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-0727",
+          "PkgRef": "pkg:deb/ubuntu/libssl1.1@1.1.1f-1ubuntu2.20?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "openssl: denial of service via null dereference",
+          "Description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "LOW",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-0727",
+            "https://github.com/alexcrichton/openssl-src-rs/commit/add20f73b6b42be7451af2e1044d4e0e778992b2",
+            "https://github.com/github/advisory-database/pull/3472",
+            "https://github.com/openssl/openssl/commit/09df4395b5071217b76dc7d3d2e630eb8c5a79c2",
+            "https://github.com/openssl/openssl/commit/775acfdbd0c6af9ac855f34969cdab0c0c90844a",
+            "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
+            "https://github.com/openssl/openssl/pull/23362",
+            "https://github.com/pyca/cryptography/commit/3519591d255d4506fbcd0d04037d45271903c64d",
+            "https://github.openssl.org/openssl/extended-releases/commit/03b3941d60c4bce58fab69a0c22377ab439bc0e8",
+            "https://github.openssl.org/openssl/extended-releases/commit/aebaa5883e31122b404e450732dc833dc9dee539",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-0727",
+            "https://security.netapp.com/advisory/ntap-20240208-0006",
+            "https://security.netapp.com/advisory/ntap-20240208-0006/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://ubuntu.com/security/notices/USN-6632-1",
+            "https://ubuntu.com/security/notices/USN-6709-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-0727",
+            "https://www.openssl.org/news/secadv/20240125.txt"
+          ],
+          "PublishedDate": "2024-01-26T09:15:07.637Z",
+          "LastModifiedDate": "2024-02-08T10:15:13.91Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-26604",
+          "PkgID": "libsystemd0@245.4-4ubuntu3.23",
+          "PkgName": "libsystemd0",
+          "InstalledVersion": "245.4-4ubuntu3.23",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-26604",
+          "PkgRef": "pkg:deb/ubuntu/libsystemd0@245.4-4ubuntu3.23?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "systemd: privilege escalation via the less pager",
+          "Description": "systemd before 247 does not adequately block local privilege escalation for some Sudo configurations, e.g., plausible sudoers files in which the \"systemctl status\" command may be executed. Specifically, systemd does not set LESSSECURE to 1, and thus other programs may be launched from the less program. This presents a substantial security risk when running systemctl from Sudo, because less executes as root when the terminal size is too small to show the complete systemctl output.",
+          "Severity": "LOW",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.1
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/174130/systemd-246-Local-Root-Privilege-Escalation.html",
+            "https://access.redhat.com/errata/RHSA-2023:3837",
+            "https://access.redhat.com/security/cve/CVE-2023-26604",
+            "https://blog.compass-security.com/2012/10/dangerous-sudoers-entries-part-2-insecure-functionality/",
+            "https://bugzilla.redhat.com/2175611",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2175611",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2190153",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-26604",
+            "https://errata.almalinux.org/8/ALSA-2023-3837.html",
+            "https://errata.rockylinux.org/RLSA-2023:3837",
+            "https://github.com/systemd/systemd/blob/main/NEWS#L4335-L4340",
+            "https://github.com/systemd/systemd/issues/5666",
+            "https://linux.oracle.com/cve/CVE-2023-26604.html",
+            "https://linux.oracle.com/errata/ELSA-2023-3837.html",
+            "https://lists.debian.org/debian-lts-announce/2023/03/msg00032.html",
+            "https://medium.com/%40zenmoviefornotification/saidov-maxim-cve-2023-26604-c1232a526ba7",
+            "https://medium.com/@zenmoviefornotification/saidov-maxim-cve-2023-26604-c1232a526ba7",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-26604",
+            "https://security.netapp.com/advisory/ntap-20230505-0009/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-26604"
+          ],
+          "PublishedDate": "2023-03-03T16:15:10.607Z",
+          "LastModifiedDate": "2023-11-07T04:09:41.293Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-7008",
+          "PkgID": "libsystemd0@245.4-4ubuntu3.23",
+          "PkgName": "libsystemd0",
+          "InstalledVersion": "245.4-4ubuntu3.23",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-7008",
+          "PkgRef": "pkg:deb/ubuntu/libsystemd0@245.4-4ubuntu3.23?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "systemd-resolved: Unsigned name response in signed zone is not refused when DNSSEC=yes",
+          "Description": "A vulnerability was found in systemd-resolved. This issue may allow systemd-resolved to accept records of DNSSEC-signed domains even when they have no signature, allowing man-in-the-middles (or the upstream DNS resolver) to manipulate records.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-300"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-7008",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2222261",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2222672",
+            "https://github.com/systemd/systemd/issues/25676",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4GMDEG5PKONWNHOEYSUDRT6JEOISRMN2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QHNBXGKJWISJETTTDTZKTBFIBJUOSLKL/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-7008",
+            "https://www.cve.org/CVERecord?id=CVE-2023-7008"
+          ],
+          "PublishedDate": "2023-12-23T13:15:07.573Z",
+          "LastModifiedDate": "2024-01-27T03:15:07.933Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-45918",
+          "PkgID": "libtinfo6@6.2-0ubuntu2.1",
+          "PkgName": "libtinfo6",
+          "InstalledVersion": "6.2-0ubuntu2.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45918",
+          "PkgRef": "pkg:deb/ubuntu/libtinfo6@6.2-0ubuntu2.1?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinf ...",
+          "Description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+          "Severity": "LOW",
+          "References": [
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html",
+            "https://security.netapp.com/advisory/ntap-20240315-0006/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-45918"
+          ],
+          "PublishedDate": "2024-02-16T22:15:07.88Z",
+          "LastModifiedDate": "2024-03-15T11:15:08.51Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-50495",
+          "PkgID": "libtinfo6@6.2-0ubuntu2.1",
+          "PkgName": "libtinfo6",
+          "InstalledVersion": "6.2-0ubuntu2.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-50495",
+          "PkgRef": "pkg:deb/ubuntu/libtinfo6@6.2-0ubuntu2.1?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: segmentation fault via _nc_wrap_entry()",
+          "Description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+          "Severity": "LOW",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-50495",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+            "https://security.netapp.com/advisory/ntap-20240119-0008/",
+            "https://ubuntu.com/security/notices/USN-6684-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-50495"
+          ],
+          "PublishedDate": "2023-12-12T15:15:07.867Z",
+          "LastModifiedDate": "2024-01-31T03:15:08.49Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-26604",
+          "PkgID": "libudev1@245.4-4ubuntu3.23",
+          "PkgName": "libudev1",
+          "InstalledVersion": "245.4-4ubuntu3.23",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-26604",
+          "PkgRef": "pkg:deb/ubuntu/libudev1@245.4-4ubuntu3.23?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "systemd: privilege escalation via the less pager",
+          "Description": "systemd before 247 does not adequately block local privilege escalation for some Sudo configurations, e.g., plausible sudoers files in which the \"systemctl status\" command may be executed. Specifically, systemd does not set LESSSECURE to 1, and thus other programs may be launched from the less program. This presents a substantial security risk when running systemctl from Sudo, because less executes as root when the terminal size is too small to show the complete systemctl output.",
+          "Severity": "LOW",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.1
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/174130/systemd-246-Local-Root-Privilege-Escalation.html",
+            "https://access.redhat.com/errata/RHSA-2023:3837",
+            "https://access.redhat.com/security/cve/CVE-2023-26604",
+            "https://blog.compass-security.com/2012/10/dangerous-sudoers-entries-part-2-insecure-functionality/",
+            "https://bugzilla.redhat.com/2175611",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2175611",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2190153",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-26604",
+            "https://errata.almalinux.org/8/ALSA-2023-3837.html",
+            "https://errata.rockylinux.org/RLSA-2023:3837",
+            "https://github.com/systemd/systemd/blob/main/NEWS#L4335-L4340",
+            "https://github.com/systemd/systemd/issues/5666",
+            "https://linux.oracle.com/cve/CVE-2023-26604.html",
+            "https://linux.oracle.com/errata/ELSA-2023-3837.html",
+            "https://lists.debian.org/debian-lts-announce/2023/03/msg00032.html",
+            "https://medium.com/%40zenmoviefornotification/saidov-maxim-cve-2023-26604-c1232a526ba7",
+            "https://medium.com/@zenmoviefornotification/saidov-maxim-cve-2023-26604-c1232a526ba7",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-26604",
+            "https://security.netapp.com/advisory/ntap-20230505-0009/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-26604"
+          ],
+          "PublishedDate": "2023-03-03T16:15:10.607Z",
+          "LastModifiedDate": "2023-11-07T04:09:41.293Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-7008",
+          "PkgID": "libudev1@245.4-4ubuntu3.23",
+          "PkgName": "libudev1",
+          "InstalledVersion": "245.4-4ubuntu3.23",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-7008",
+          "PkgRef": "pkg:deb/ubuntu/libudev1@245.4-4ubuntu3.23?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "systemd-resolved: Unsigned name response in signed zone is not refused when DNSSEC=yes",
+          "Description": "A vulnerability was found in systemd-resolved. This issue may allow systemd-resolved to accept records of DNSSEC-signed domains even when they have no signature, allowing man-in-the-middles (or the upstream DNS resolver) to manipulate records.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-300"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-7008",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2222261",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2222672",
+            "https://github.com/systemd/systemd/issues/25676",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4GMDEG5PKONWNHOEYSUDRT6JEOISRMN2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QHNBXGKJWISJETTTDTZKTBFIBJUOSLKL/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-7008",
+            "https://www.cve.org/CVERecord?id=CVE-2023-7008"
+          ],
+          "PublishedDate": "2023-12-23T13:15:07.573Z",
+          "LastModifiedDate": "2024-01-27T03:15:07.933Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28085",
+          "PkgID": "libuuid1@2.34-0.1ubuntu9.4",
+          "PkgName": "libuuid1",
+          "InstalledVersion": "2.34-0.1ubuntu9.4",
+          "FixedVersion": "2.34-0.1ubuntu9.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28085",
+          "PkgRef": "pkg:deb/ubuntu/libuuid1@2.34-0.1ubuntu9.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "util-linux: CVE-2024-28085: wall: escape sequence injection",
+          "Description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28085",
+            "https://github.com/skyler-ferrante/CVE-2024-28085",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+            "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+            "https://ubuntu.com/security/notices/USN-6719-1",
+            "https://ubuntu.com/security/notices/USN-6719-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28085",
+            "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+          ],
+          "PublishedDate": "2024-03-27T19:15:48.367Z",
+          "LastModifiedDate": "2024-04-07T12:15:08.903Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2013-4235",
+          "PkgID": "login@1:4.8.1-1ubuntu5.20.04.4",
+          "PkgName": "login",
+          "InstalledVersion": "1:4.8.1-1ubuntu5.20.04.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2013-4235",
+          "PkgRef": "pkg:deb/ubuntu/login@4.8.1-1ubuntu5.20.04.4?arch=arm64\u0026distro=ubuntu-20.04\u0026epoch=1",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "shadow-utils: TOCTOU race conditions by copying and removing directory trees",
+          "Description": "shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-367"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:N/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 3.3,
+              "V3Score": 4.7
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:H/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N",
+              "V2Score": 3.7,
+              "V3Score": 4.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2013-4235",
+            "https://access.redhat.com/security/cve/cve-2013-4235",
+            "https://bugs.launchpad.net/ubuntu/+source/shadow/+bug/1998169",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
+            "https://github.com/shadow-maint/shadow/issues/317",
+            "https://github.com/shadow-maint/shadow/pull/545",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2013-4235",
+            "https://security-tracker.debian.org/tracker/CVE-2013-4235",
+            "https://security.gentoo.org/glsa/202210-26",
+            "https://ubuntu.com/security/notices/USN-5745-1",
+            "https://ubuntu.com/security/notices/USN-5745-2",
+            "https://www.cve.org/CVERecord?id=CVE-2013-4235"
+          ],
+          "PublishedDate": "2019-12-03T15:15:10.963Z",
+          "LastModifiedDate": "2023-02-13T00:28:41.337Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-29383",
+          "PkgID": "login@1:4.8.1-1ubuntu5.20.04.4",
+          "PkgName": "login",
+          "InstalledVersion": "1:4.8.1-1ubuntu5.20.04.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-29383",
+          "PkgRef": "pkg:deb/ubuntu/login@4.8.1-1ubuntu5.20.04.4?arch=arm64\u0026distro=ubuntu-20.04\u0026epoch=1",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "shadow: Improper input validation in shadow-utils package utility chfn",
+          "Description": "In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that \"cat /etc/passwd\" shows a rogue user account.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-74"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 3.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-29383",
+            "https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d",
+            "https://github.com/shadow-maint/shadow/pull/687",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-29383",
+            "https://www.cve.org/CVERecord?id=CVE-2023-29383",
+            "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/",
+            "https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797"
+          ],
+          "PublishedDate": "2023-04-14T22:15:07.68Z",
+          "LastModifiedDate": "2023-04-24T18:05:30.313Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-4641",
+          "PkgID": "login@1:4.8.1-1ubuntu5.20.04.4",
+          "PkgName": "login",
+          "InstalledVersion": "1:4.8.1-1ubuntu5.20.04.4",
+          "FixedVersion": "1:4.8.1-1ubuntu5.20.04.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-4641",
+          "PkgRef": "pkg:deb/ubuntu/login@4.8.1-1ubuntu5.20.04.4?arch=arm64\u0026distro=ubuntu-20.04\u0026epoch=1",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "shadow-utils: possible password leak during passwd(1) change",
+          "Description": "A flaw was found in shadow-utils. When asking for a new password, shadow-utils asks the password twice. If the password fails on the second attempt, shadow-utils fails in cleaning the buffer used to store the first entry. This may allow an attacker with enough access to retrieve the password from the memory.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-287",
+            "CWE-303"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 4.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:6632",
+            "https://access.redhat.com/errata/RHSA-2023:7112",
+            "https://access.redhat.com/security/cve/CVE-2023-4641",
+            "https://bugzilla.redhat.com/2215945",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2215945",
+            "https://errata.almalinux.org/8/ALSA-2023-7112.html",
+            "https://linux.oracle.com/cve/CVE-2023-4641.html",
+            "https://linux.oracle.com/errata/ELSA-2023-7112.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-4641",
+            "https://ubuntu.com/security/notices/USN-6640-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-4641"
+          ],
+          "PublishedDate": "2023-12-27T16:15:13.363Z",
+          "LastModifiedDate": "2024-01-04T17:06:55.393Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28085",
+          "PkgID": "mount@2.34-0.1ubuntu9.4",
+          "PkgName": "mount",
+          "InstalledVersion": "2.34-0.1ubuntu9.4",
+          "FixedVersion": "2.34-0.1ubuntu9.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28085",
+          "PkgRef": "pkg:deb/ubuntu/mount@2.34-0.1ubuntu9.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "util-linux: CVE-2024-28085: wall: escape sequence injection",
+          "Description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28085",
+            "https://github.com/skyler-ferrante/CVE-2024-28085",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+            "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+            "https://ubuntu.com/security/notices/USN-6719-1",
+            "https://ubuntu.com/security/notices/USN-6719-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28085",
+            "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+          ],
+          "PublishedDate": "2024-03-27T19:15:48.367Z",
+          "LastModifiedDate": "2024-04-07T12:15:08.903Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-45918",
+          "PkgID": "ncurses-base@6.2-0ubuntu2.1",
+          "PkgName": "ncurses-base",
+          "InstalledVersion": "6.2-0ubuntu2.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45918",
+          "PkgRef": "pkg:deb/ubuntu/ncurses-base@6.2-0ubuntu2.1?arch=all\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinf ...",
+          "Description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+          "Severity": "LOW",
+          "References": [
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html",
+            "https://security.netapp.com/advisory/ntap-20240315-0006/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-45918"
+          ],
+          "PublishedDate": "2024-02-16T22:15:07.88Z",
+          "LastModifiedDate": "2024-03-15T11:15:08.51Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-50495",
+          "PkgID": "ncurses-base@6.2-0ubuntu2.1",
+          "PkgName": "ncurses-base",
+          "InstalledVersion": "6.2-0ubuntu2.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-50495",
+          "PkgRef": "pkg:deb/ubuntu/ncurses-base@6.2-0ubuntu2.1?arch=all\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: segmentation fault via _nc_wrap_entry()",
+          "Description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+          "Severity": "LOW",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-50495",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+            "https://security.netapp.com/advisory/ntap-20240119-0008/",
+            "https://ubuntu.com/security/notices/USN-6684-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-50495"
+          ],
+          "PublishedDate": "2023-12-12T15:15:07.867Z",
+          "LastModifiedDate": "2024-01-31T03:15:08.49Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-45918",
+          "PkgID": "ncurses-bin@6.2-0ubuntu2.1",
+          "PkgName": "ncurses-bin",
+          "InstalledVersion": "6.2-0ubuntu2.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45918",
+          "PkgRef": "pkg:deb/ubuntu/ncurses-bin@6.2-0ubuntu2.1?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinf ...",
+          "Description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+          "Severity": "LOW",
+          "References": [
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html",
+            "https://security.netapp.com/advisory/ntap-20240315-0006/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-45918"
+          ],
+          "PublishedDate": "2024-02-16T22:15:07.88Z",
+          "LastModifiedDate": "2024-03-15T11:15:08.51Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-50495",
+          "PkgID": "ncurses-bin@6.2-0ubuntu2.1",
+          "PkgName": "ncurses-bin",
+          "InstalledVersion": "6.2-0ubuntu2.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-50495",
+          "PkgRef": "pkg:deb/ubuntu/ncurses-bin@6.2-0ubuntu2.1?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: segmentation fault via _nc_wrap_entry()",
+          "Description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+          "Severity": "LOW",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-50495",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+            "https://security.netapp.com/advisory/ntap-20240119-0008/",
+            "https://ubuntu.com/security/notices/USN-6684-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-50495"
+          ],
+          "PublishedDate": "2023-12-12T15:15:07.867Z",
+          "LastModifiedDate": "2024-01-31T03:15:08.49Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5678",
+          "PkgID": "openssl@1.1.1f-1ubuntu2.20",
+          "PkgName": "openssl",
+          "InstalledVersion": "1.1.1f-1ubuntu2.20",
+          "FixedVersion": "1.1.1f-1ubuntu2.21",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5678",
+          "PkgRef": "pkg:deb/ubuntu/openssl@1.1.1f-1ubuntu2.20?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "openssl: Generating excessively long X9.42 DH keys or checking excessively long X9.42 DH keys or parameters may be very slow",
+          "Description": "Issue summary: Generating excessively long X9.42 DH keys or checking\nexcessively long X9.42 DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_generate_key() to\ngenerate an X9.42 DH key may experience long delays.  Likewise, applications\nthat use DH_check_pub_key(), DH_check_pub_key_ex() or EVP_PKEY_public_check()\nto check an X9.42 DH key or X9.42 DH parameters may experience long delays.\nWhere the key or parameters that are being checked have been obtained from\nan untrusted source this may lead to a Denial of Service.\n\nWhile DH_check() performs all the necessary checks (as of CVE-2023-3817),\nDH_check_pub_key() doesn't make any of these checks, and is therefore\nvulnerable for excessively large P and Q parameters.\n\nLikewise, while DH_generate_key() performs a check for an excessively large\nP, it doesn't check for an excessively large Q.\n\nAn application that calls DH_generate_key() or DH_check_pub_key() and\nsupplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nDH_generate_key() and DH_check_pub_key() are also called by a number of\nother OpenSSL functions.  An application calling any of those other\nfunctions may similarly be affected.  The other functions affected by this\nare DH_check_pub_key_ex(), EVP_PKEY_public_check(), and EVP_PKEY_generate().\n\nAlso vulnerable are the OpenSSL pkey command line application when using the\n\"-pubcheck\" option, as well as the OpenSSL genpkey command line application.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n\n",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-754"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:7877",
+            "https://access.redhat.com/security/cve/CVE-2023-5678",
+            "https://bugzilla.redhat.com/2224962",
+            "https://bugzilla.redhat.com/2227852",
+            "https://bugzilla.redhat.com/2248616",
+            "https://errata.almalinux.org/8/ALSA-2023-7877.html",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=34efaef6c103d636ab507a0cc34dca4d3aecc055",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=710fee740904b6290fef0dd5536fbcedbc38ff0c",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=db925ae2e65d0d925adef429afc37f75bd1c2017",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ddeb4b6c6d527e54ce9a99cba785c0f7776e54b6",
+            "https://linux.oracle.com/cve/CVE-2023-5678.html",
+            "https://linux.oracle.com/errata/ELSA-2024-12056.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5678",
+            "https://security.netapp.com/advisory/ntap-20231130-0010/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://ubuntu.com/security/notices/USN-6632-1",
+            "https://ubuntu.com/security/notices/USN-6709-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-5678",
+            "https://www.openssl.org/news/secadv/20231106.txt"
+          ],
+          "PublishedDate": "2023-11-06T16:15:42.67Z",
+          "LastModifiedDate": "2023-11-30T22:15:09.723Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-0727",
+          "PkgID": "openssl@1.1.1f-1ubuntu2.20",
+          "PkgName": "openssl",
+          "InstalledVersion": "1.1.1f-1ubuntu2.20",
+          "FixedVersion": "1.1.1f-1ubuntu2.21",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-0727",
+          "PkgRef": "pkg:deb/ubuntu/openssl@1.1.1f-1ubuntu2.20?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "openssl: denial of service via null dereference",
+          "Description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "LOW",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-0727",
+            "https://github.com/alexcrichton/openssl-src-rs/commit/add20f73b6b42be7451af2e1044d4e0e778992b2",
+            "https://github.com/github/advisory-database/pull/3472",
+            "https://github.com/openssl/openssl/commit/09df4395b5071217b76dc7d3d2e630eb8c5a79c2",
+            "https://github.com/openssl/openssl/commit/775acfdbd0c6af9ac855f34969cdab0c0c90844a",
+            "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
+            "https://github.com/openssl/openssl/pull/23362",
+            "https://github.com/pyca/cryptography/commit/3519591d255d4506fbcd0d04037d45271903c64d",
+            "https://github.openssl.org/openssl/extended-releases/commit/03b3941d60c4bce58fab69a0c22377ab439bc0e8",
+            "https://github.openssl.org/openssl/extended-releases/commit/aebaa5883e31122b404e450732dc833dc9dee539",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-0727",
+            "https://security.netapp.com/advisory/ntap-20240208-0006",
+            "https://security.netapp.com/advisory/ntap-20240208-0006/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://ubuntu.com/security/notices/USN-6632-1",
+            "https://ubuntu.com/security/notices/USN-6709-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-0727",
+            "https://www.openssl.org/news/secadv/20240125.txt"
+          ],
+          "PublishedDate": "2024-01-26T09:15:07.637Z",
+          "LastModifiedDate": "2024-02-08T10:15:13.91Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2013-4235",
+          "PkgID": "passwd@1:4.8.1-1ubuntu5.20.04.4",
+          "PkgName": "passwd",
+          "InstalledVersion": "1:4.8.1-1ubuntu5.20.04.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2013-4235",
+          "PkgRef": "pkg:deb/ubuntu/passwd@4.8.1-1ubuntu5.20.04.4?arch=arm64\u0026distro=ubuntu-20.04\u0026epoch=1",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "shadow-utils: TOCTOU race conditions by copying and removing directory trees",
+          "Description": "shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-367"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:N/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 3.3,
+              "V3Score": 4.7
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:H/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N",
+              "V2Score": 3.7,
+              "V3Score": 4.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2013-4235",
+            "https://access.redhat.com/security/cve/cve-2013-4235",
+            "https://bugs.launchpad.net/ubuntu/+source/shadow/+bug/1998169",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
+            "https://github.com/shadow-maint/shadow/issues/317",
+            "https://github.com/shadow-maint/shadow/pull/545",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2013-4235",
+            "https://security-tracker.debian.org/tracker/CVE-2013-4235",
+            "https://security.gentoo.org/glsa/202210-26",
+            "https://ubuntu.com/security/notices/USN-5745-1",
+            "https://ubuntu.com/security/notices/USN-5745-2",
+            "https://www.cve.org/CVERecord?id=CVE-2013-4235"
+          ],
+          "PublishedDate": "2019-12-03T15:15:10.963Z",
+          "LastModifiedDate": "2023-02-13T00:28:41.337Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-29383",
+          "PkgID": "passwd@1:4.8.1-1ubuntu5.20.04.4",
+          "PkgName": "passwd",
+          "InstalledVersion": "1:4.8.1-1ubuntu5.20.04.4",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-29383",
+          "PkgRef": "pkg:deb/ubuntu/passwd@4.8.1-1ubuntu5.20.04.4?arch=arm64\u0026distro=ubuntu-20.04\u0026epoch=1",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "shadow: Improper input validation in shadow-utils package utility chfn",
+          "Description": "In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that \"cat /etc/passwd\" shows a rogue user account.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-74"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 3.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-29383",
+            "https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d",
+            "https://github.com/shadow-maint/shadow/pull/687",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-29383",
+            "https://www.cve.org/CVERecord?id=CVE-2023-29383",
+            "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/",
+            "https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797"
+          ],
+          "PublishedDate": "2023-04-14T22:15:07.68Z",
+          "LastModifiedDate": "2023-04-24T18:05:30.313Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-4641",
+          "PkgID": "passwd@1:4.8.1-1ubuntu5.20.04.4",
+          "PkgName": "passwd",
+          "InstalledVersion": "1:4.8.1-1ubuntu5.20.04.4",
+          "FixedVersion": "1:4.8.1-1ubuntu5.20.04.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-4641",
+          "PkgRef": "pkg:deb/ubuntu/passwd@4.8.1-1ubuntu5.20.04.4?arch=arm64\u0026distro=ubuntu-20.04\u0026epoch=1",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "shadow-utils: possible password leak during passwd(1) change",
+          "Description": "A flaw was found in shadow-utils. When asking for a new password, shadow-utils asks the password twice. If the password fails on the second attempt, shadow-utils fails in cleaning the buffer used to store the first entry. This may allow an attacker with enough access to retrieve the password from the memory.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-287",
+            "CWE-303"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 4.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:6632",
+            "https://access.redhat.com/errata/RHSA-2023:7112",
+            "https://access.redhat.com/security/cve/CVE-2023-4641",
+            "https://bugzilla.redhat.com/2215945",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2215945",
+            "https://errata.almalinux.org/8/ALSA-2023-7112.html",
+            "https://linux.oracle.com/cve/CVE-2023-4641.html",
+            "https://linux.oracle.com/errata/ELSA-2023-7112.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-4641",
+            "https://ubuntu.com/security/notices/USN-6640-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-4641"
+          ],
+          "PublishedDate": "2023-12-27T16:15:13.363Z",
+          "LastModifiedDate": "2024-01-04T17:06:55.393Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28085",
+          "PkgID": "util-linux@2.34-0.1ubuntu9.4",
+          "PkgName": "util-linux",
+          "InstalledVersion": "2.34-0.1ubuntu9.4",
+          "FixedVersion": "2.34-0.1ubuntu9.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28085",
+          "PkgRef": "pkg:deb/ubuntu/util-linux@2.34-0.1ubuntu9.4?arch=arm64\u0026distro=ubuntu-20.04",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "util-linux: CVE-2024-28085: wall: escape sequence injection",
+          "Description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28085",
+            "https://github.com/skyler-ferrante/CVE-2024-28085",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+            "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+            "https://ubuntu.com/security/notices/USN-6719-1",
+            "https://ubuntu.com/security/notices/USN-6719-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28085",
+            "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+          ],
+          "PublishedDate": "2024-03-27T19:15:48.367Z",
+          "LastModifiedDate": "2024-04-07T12:15:08.903Z"
+        }
+      ]
+    },
+    {
+      "Target": "Node.js",
+      "Class": "lang-pkgs",
+      "Type": "node-pkg",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "GHSA-36jr-mh4h-2g58",
+          "PkgID": "d3-color@2.0.0",
+          "PkgName": "d3-color",
+          "PkgPath": "usr/share/kibana/node_modules/d3-color/package.json",
+          "InstalledVersion": "2.0.0",
+          "FixedVersion": "3.1.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-36jr-mh4h-2g58",
+          "PkgRef": "pkg:npm/d3-color@2.0.0",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "d3-color vulnerable to ReDoS",
+          "Description": "The d3-color module provides representations for various color spaces in the browser. Versions prior to 3.1.0 are vulnerable to a Regular expression Denial of Service. This issue has been patched in version 3.1.0. There are no known workarounds.",
+          "Severity": "HIGH",
+          "References": [
+            "https://github.com/d3/d3-color",
+            "https://github.com/d3/d3-color/pull/100",
+            "https://github.com/d3/d3-color/releases/tag/v3.1.0",
+            "https://security.snyk.io/vuln/SNYK-JS-D3COLOR-1076592"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2024-27088",
+          "PkgID": "es5-ext@0.10.46",
+          "PkgName": "es5-ext",
+          "PkgPath": "usr/share/kibana/node_modules/es5-ext/package.json",
+          "InstalledVersion": "0.10.46",
+          "FixedVersion": "0.10.63",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-27088",
+          "PkgRef": "pkg:npm/es5-ext@0.10.46",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "es5-ext contains ECMAScript 5 extensions. Passing functions with very  ...",
+          "Description": "es5-ext contains ECMAScript 5 extensions. Passing functions with very long names or complex default argument names into `function#copy` or `function#toStringTokens` may cause the script to stall. The vulnerability is patched in v0.10.63.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-1333",
+            "CWE-400"
+          ],
+          "References": [
+            "https://github.com/medikoo/es5-ext",
+            "https://github.com/medikoo/es5-ext/commit/3551cdd7b2db08b1632841f819d008757d28e8e2",
+            "https://github.com/medikoo/es5-ext/commit/a52e95736690ad1d465ebcd9791d54570e294602",
+            "https://github.com/medikoo/es5-ext/issues/201",
+            "https://github.com/medikoo/es5-ext/security/advisories/GHSA-4gmj-3p3h-gm8h",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-27088"
+          ],
+          "PublishedDate": "2024-02-26T17:15:11Z",
+          "LastModifiedDate": "2024-02-26T22:10:40.463Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-26159",
+          "PkgID": "follow-redirects@1.15.2",
+          "PkgName": "follow-redirects",
+          "PkgPath": "usr/share/kibana/node_modules/follow-redirects/package.json",
+          "InstalledVersion": "1.15.2",
+          "FixedVersion": "1.15.4",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-26159",
+          "PkgRef": "pkg:npm/follow-redirects@1.15.2",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "follow-redirects: Improper Input Validation due to the improper handling of URLs by the url.parse()",
+          "Description": "Versions of the package follow-redirects before 1.15.4 are vulnerable to Improper Input Validation due to the improper handling of URLs by the url.parse() function. When new URL() throws an error, it can be manipulated to misinterpret the hostname. An attacker could exploit this weakness to redirect traffic to a malicious site, potentially leading to information disclosure, phishing attacks, or other security breaches.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-601",
+            "CWE-20"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-26159",
+            "https://github.com/follow-redirects/follow-redirects",
+            "https://github.com/follow-redirects/follow-redirects/commit/7a6567e16dfa9ad18a70bfe91784c28653fbf19d",
+            "https://github.com/follow-redirects/follow-redirects/issues/235",
+            "https://github.com/follow-redirects/follow-redirects/pull/236",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZZ425BFKNBQ6AK7I5SAM56TWON5OF2XM",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZZ425BFKNBQ6AK7I5SAM56TWON5OF2XM/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-26159",
+            "https://security.snyk.io/vuln/SNYK-JS-FOLLOWREDIRECTS-6141137",
+            "https://www.cve.org/CVERecord?id=CVE-2023-26159"
+          ],
+          "PublishedDate": "2024-01-02T05:15:08.63Z",
+          "LastModifiedDate": "2024-01-23T03:15:11.38Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28849",
+          "PkgID": "follow-redirects@1.15.2",
+          "PkgName": "follow-redirects",
+          "PkgPath": "usr/share/kibana/node_modules/follow-redirects/package.json",
+          "InstalledVersion": "1.15.2",
+          "FixedVersion": "1.15.6",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28849",
+          "PkgRef": "pkg:npm/follow-redirects@1.15.2",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "follow-redirects: Possible credential leak",
+          "Description": "follow-redirects is an open source, drop-in replacement for Node's `http` and `https` modules that automatically follows redirects. In affected versions follow-redirects only clears authorization header during cross-domain redirect, but keep the proxy-authentication header which contains credentials too. This vulnerability may lead to credentials leak, but has been addressed in version 1.15.6. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28849",
+            "https://fetch.spec.whatwg.org/#authentication-entries",
+            "https://github.com/follow-redirects/follow-redirects",
+            "https://github.com/follow-redirects/follow-redirects/commit/c4f847f85176991f95ab9c88af63b1294de8649b",
+            "https://github.com/follow-redirects/follow-redirects/security/advisories/GHSA-cxjh-pqwp-8mfp",
+            "https://github.com/psf/requests/issues/1885",
+            "https://hackerone.com/reports/2390009",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VOIF4EPQUCKDBEVTGRQDZ3CGTYQHPO7Z",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VOIF4EPQUCKDBEVTGRQDZ3CGTYQHPO7Z/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28849",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28849"
+          ],
+          "PublishedDate": "2024-03-14T17:15:52.097Z",
+          "LastModifiedDate": "2024-03-23T03:15:11.97Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-42282",
+          "PkgID": "ip@1.1.8",
+          "PkgName": "ip",
+          "PkgPath": "usr/share/kibana/node_modules/ip/package.json",
+          "InstalledVersion": "1.1.8",
+          "FixedVersion": "2.0.1, 1.1.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-42282",
+          "PkgRef": "pkg:npm/ip@1.1.8",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-ip: arbitrary code execution via the isPublic() function",
+          "Description": "The ip package before 1.1.9 for Node.js might allow SSRF because some IP addresses (such as 0x7f.1) are improperly categorized as globally routable via isPublic.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-918"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-42282",
+            "https://cosmosofcyberspace.github.io/npm_ip_cve/npm_ip_cve.html",
+            "https://github.com/JoshGlazebrook/socks/issues/93#issue-2128357447",
+            "https://github.com/github/advisory-database/pull/3504#issuecomment-1937179999",
+            "https://github.com/indutny/node-ip",
+            "https://github.com/indutny/node-ip/commit/32f468f1245574785ec080705737a579be1223aa",
+            "https://github.com/indutny/node-ip/commit/6a3ada9b471b09d5f0f5be264911ab564bf67894",
+            "https://github.com/indutny/node-ip/pull/138",
+            "https://huntr.com/bounties/bfc3b23f-ddc0-4ee7-afab-223b07115ed3/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-42282",
+            "https://security.netapp.com/advisory/ntap-20240315-0008/",
+            "https://ubuntu.com/security/notices/USN-6643-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-42282"
+          ],
+          "PublishedDate": "2024-02-08T17:15:10.84Z",
+          "LastModifiedDate": "2024-03-15T19:25:07.84Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-9h6g-pr28-7cqp",
+          "PkgID": "nodemailer@6.6.2",
+          "PkgName": "nodemailer",
+          "PkgPath": "usr/share/kibana/node_modules/nodemailer/package.json",
+          "InstalledVersion": "6.6.2",
+          "FixedVersion": "6.9.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-9h6g-pr28-7cqp",
+          "PkgRef": "pkg:npm/nodemailer@6.6.2",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodemailer ReDoS when trying to send a specially crafted email",
+          "Description": "### Summary\nA ReDoS vulnerability occurs when nodemailer tries to parse img files with the parameter `attachDataUrls` set, causing the stuck of event loop. \nAnother flaw was found when nodemailer tries to parse an attachments with a embedded file, causing the stuck of event loop. \n\n### Details\n\nRegex: /^data:((?:[^;]*;)*(?:[^,]*)),(.*)$/\n\nPath: compile -\u003e getAttachments -\u003e _processDataUrl\n\nRegex: /(\u003cimg\\b[^\u003e]* src\\s*=[\\s\"']*)(data:([^;]+);[^\"'\u003e\\s]+)/\n\nPath: _convertDataImages\n\n### PoC\n\nhttps://gist.github.com/francoatmega/890dd5053375333e40c6fdbcc8c58df6\nhttps://gist.github.com/francoatmega/9aab042b0b24968d7b7039818e8b2698\n\n### Impact\n\nReDoS causes the event loop to stuck a specially crafted evil email can cause this problem.\n",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://gist.github.com/francoatmega/890dd5053375333e40c6fdbcc8c58df6",
+            "https://gist.github.com/francoatmega/9aab042b0b24968d7b7039818e8b2698",
+            "https://github.com/nodemailer/nodemailer",
+            "https://github.com/nodemailer/nodemailer/commit/dd8f5e8a4ddc99992e31df76bcff9c590035cd4a",
+            "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-9h6g-pr28-7cqp"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2023-36665",
+          "PkgID": "protobufjs@7.2.4",
+          "PkgName": "protobufjs",
+          "PkgPath": "usr/share/kibana/node_modules/protobufjs/package.json",
+          "InstalledVersion": "7.2.4",
+          "FixedVersion": "7.2.5, 6.11.4",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-36665",
+          "PkgRef": "pkg:npm/protobufjs@7.2.4",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "protobufjs: prototype pollution using user-controlled protobuf message",
+          "Description": "\"protobuf.js (aka protobufjs) 6.10.0 through 7.x before 7.2.5 allows Prototype Pollution, a different vulnerability than CVE-2022-25878. A user-controlled protobuf message can be used by an attacker to pollute the prototype of Object.prototype by adding and overwriting its data and functions. Exploitation can involve: (1) using the function parse to parse protobuf messages on the fly, (2) loading .proto files by using load/loadSync functions, or (3) providing untrusted input to the functions ReflectionObject.setParsedOption and util.setProperty.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-1321"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-36665",
+            "https://github.com/protobufjs/protobuf.js",
+            "https://github.com/protobufjs/protobuf.js/commit/e66379f451b0393c27d87b37fa7d271619e16b0d",
+            "https://github.com/protobufjs/protobuf.js/commits/release-6.11.4",
+            "https://github.com/protobufjs/protobuf.js/compare/protobufjs-v7.2.3...protobufjs-v7.2.4",
+            "https://github.com/protobufjs/protobuf.js/issues/1918#issuecomment-1723500294",
+            "https://github.com/protobufjs/protobuf.js/pull/1899",
+            "https://github.com/protobufjs/protobuf.js/releases/tag/protobufjs-v7.2.4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-36665",
+            "https://www.code-intelligence.com/blog/cve-protobufjs-prototype-pollution-cve-2023-36665",
+            "https://www.cve.org/CVERecord?id=CVE-2023-36665"
+          ],
+          "PublishedDate": "2023-07-05T14:15:09.41Z",
+          "LastModifiedDate": "2023-09-07T22:15:07.643Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28863",
+          "PkgID": "tar@6.1.15",
+          "PkgName": "tar",
+          "PkgPath": "usr/share/kibana/node_modules/tar/package.json",
+          "InstalledVersion": "6.1.15",
+          "FixedVersion": "6.2.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28863",
+          "PkgRef": "pkg:npm/tar@6.1.15",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "node-tar is a Tar for Node.js. node-tar prior to version 6.2.1 has no  ...",
+          "Description": "node-tar is a Tar for Node.js. node-tar prior to version 6.2.1 has no limit on the number of sub-folders created in the folder creation process. An attacker who generates a large number of sub-folders can consume memory on the system running node-tar and even crash the Node.js client within few seconds of running it using a path with too many sub-folders inside. Version 6.2.1 fixes this issue by preventing extraction in excessively deep sub-folders.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://github.com/isaacs/node-tar",
+            "https://github.com/isaacs/node-tar/commit/fe8cd57da5686f8695415414bda49206a545f7f7",
+            "https://github.com/isaacs/node-tar/commit/fe8cd57da5686f8695415414bda49206a545f7f7 (v6.2.1)",
+            "https://github.com/isaacs/node-tar/security/advisories/GHSA-f5x3-32g6-xq36",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28863",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28863"
+          ],
+          "PublishedDate": "2024-03-21T23:15:10.91Z",
+          "LastModifiedDate": "2024-03-22T12:45:36.13Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-24758",
+          "PkgID": "undici@5.26.3",
+          "PkgName": "undici",
+          "PkgPath": "usr/share/kibana/node_modules/undici/package.json",
+          "InstalledVersion": "5.26.3",
+          "FixedVersion": "5.28.3, 6.6.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-24758",
+          "PkgRef": "pkg:npm/undici@5.26.3",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "undici: sensitive information exposure",
+          "Description": "Undici is an HTTP/1.1 client, written from scratch for Node.js. Undici already cleared Authorization headers on cross-origin redirects, but did not clear `Proxy-Authentication` headers. This issue has been patched in versions 5.28.3 and 6.6.1. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:L/I:L/A:L",
+              "V3Score": 3.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:L/I:L/A:L",
+              "V3Score": 3.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-24758",
+            "https://github.com/nodejs/undici",
+            "https://github.com/nodejs/undici/commit/b9da3e40f1f096a06b4caedbb27c2568730434ef",
+            "https://github.com/nodejs/undici/commit/d3aa574b1259c1d8d329a0f0f495ee82882b1458",
+            "https://github.com/nodejs/undici/releases/tag/v5.28.3",
+            "https://github.com/nodejs/undici/releases/tag/v6.6.1",
+            "https://github.com/nodejs/undici/security/advisories/GHSA-3787-6prv-h9w3",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-24758",
+            "https://security.netapp.com/advisory/ntap-20240419-0007",
+            "https://security.netapp.com/advisory/ntap-20240419-0007/",
+            "https://www.cve.org/CVERecord?id=CVE-2024-24758"
+          ],
+          "PublishedDate": "2024-02-16T22:15:08.16Z",
+          "LastModifiedDate": "2024-04-19T07:15:09.5Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-30260",
+          "PkgID": "undici@5.26.3",
+          "PkgName": "undici",
+          "PkgPath": "usr/share/kibana/node_modules/undici/package.json",
+          "InstalledVersion": "5.26.3",
+          "FixedVersion": "5.28.4, 6.11.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-30260",
+          "PkgRef": "pkg:npm/undici@5.26.3",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-undici: proxy-authorization header not cleared on cross-origin redirect for dispatch, request, stream, pipeline",
+          "Description": "Undici is an HTTP/1.1 client, written from scratch for Node.js. Undici cleared Authorization and Proxy-Authorization headers for `fetch()`, but did not clear them for `undici.request()`. This vulnerability was patched in version(s) 5.28.4 and 6.11.1.\n",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-285"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:L/I:L/A:L",
+              "V3Score": 3.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:L/I:L/A:L",
+              "V3Score": 3.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-30260",
+            "https://github.com/nodejs/undici",
+            "https://github.com/nodejs/undici/commit/64e3402da4e032e68de46acb52800c9a06aaea3f",
+            "https://github.com/nodejs/undici/commit/6805746680d27a5369d7fb67bc05f95a28247d75",
+            "https://github.com/nodejs/undici/security/advisories/GHSA-m4v8-wqvr-p9f7",
+            "https://hackerone.com/reports/2408074",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HQVHWAS6WDXXIU7F72XI55VZ2LTZUB33",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HQVHWAS6WDXXIU7F72XI55VZ2LTZUB33/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NC3V3HFZ5MOJRZDY5ZELL6REIRSPFROJ",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NC3V3HFZ5MOJRZDY5ZELL6REIRSPFROJ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P6Q4RGETHVYVHDIQGTJGU5AV6NJEI67E",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P6Q4RGETHVYVHDIQGTJGU5AV6NJEI67E/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-30260",
+            "https://www.cve.org/CVERecord?id=CVE-2024-30260"
+          ],
+          "PublishedDate": "2024-04-04T16:15:08.877Z",
+          "LastModifiedDate": "2024-04-19T23:15:11.047Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-30261",
+          "PkgID": "undici@5.26.3",
+          "PkgName": "undici",
+          "PkgPath": "usr/share/kibana/node_modules/undici/package.json",
+          "InstalledVersion": "5.26.3",
+          "FixedVersion": "5.28.4, 6.11.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-30261",
+          "PkgRef": "pkg:npm/undici@5.26.3",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-undici: fetch() with integrity option is too lax when algorithm is specified but hash value is in incorrect",
+          "Description": "Undici is an HTTP/1.1 client, written from scratch for Node.js. An attacker can alter the `integrity` option passed to `fetch()`, allowing `fetch()` to accept requests as valid even if they have been tampered. This vulnerability was patched in version(s) 5.28.4 and 6.11.1.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-284"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:N/I:L/A:N",
+              "V3Score": 2.6
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:N/I:L/A:N",
+              "V3Score": 2.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-30261",
+            "https://github.com/nodejs/undici",
+            "https://github.com/nodejs/undici/commit/2b39440bd9ded841c93dd72138f3b1763ae26055",
+            "https://github.com/nodejs/undici/commit/d542b8cd39ec1ba303f038ea26098c3f355974f3",
+            "https://github.com/nodejs/undici/security/advisories/GHSA-9qxr-qj54-h672",
+            "https://hackerone.com/reports/2377760",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HQVHWAS6WDXXIU7F72XI55VZ2LTZUB33",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HQVHWAS6WDXXIU7F72XI55VZ2LTZUB33/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NC3V3HFZ5MOJRZDY5ZELL6REIRSPFROJ",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NC3V3HFZ5MOJRZDY5ZELL6REIRSPFROJ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P6Q4RGETHVYVHDIQGTJGU5AV6NJEI67E",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P6Q4RGETHVYVHDIQGTJGU5AV6NJEI67E/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-30261",
+            "https://www.cve.org/CVERecord?id=CVE-2024-30261"
+          ],
+          "PublishedDate": "2024-04-04T15:15:39.46Z",
+          "LastModifiedDate": "2024-04-19T23:15:11.137Z"
+        }
+      ]
+    }
+  ]
+}

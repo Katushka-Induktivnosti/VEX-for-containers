@@ -1,0 +1,61 @@
+{
+ "spdxVersion": "SPDX-2.3",
+ "dataLicense": "CC0-1.0",
+ "SPDXID": "SPDXRef-DOCUMENT",
+ "name": "busybox",
+ "documentNamespace": "https://docker.com/docker-scout/image/busybox-3088777d-1672-452d-a326-37236824e236",
+ "creationInfo": {
+  "creators": [
+   "Organization: Docker, Inc",
+   "Tool: docker-scout-1.6.3"
+  ],
+  "created": "2024-04-20T18:59:04Z"
+ },
+ "packages": [
+  {
+   "name": "busybox",
+   "SPDXID": "SPDXRef-Package-dc094d46e32d143e486b0c4baa69b1c5",
+   "versionInfo": "1.36.1",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:generic/busybox@1.36.1"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "fileName": "/bin/[",
+   "SPDXID": "SPDXRef-File-2662196b7597d7a6633d0c425cffd8c5",
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "0000000000000000000000000000000000000000"
+    }
+   ],
+   "licenseConcluded": "NOASSERTION",
+   "copyrightText": "",
+   "comment": "layerID: sha256:2e112031b4b923a873c8b3d685d48037e4d5ccd967b658743d93a6e56c3064b9"
+  }
+ ],
+ "relationships": [
+  {
+   "spdxElementId": "SPDXRef-DOCUMENT",
+   "relatedSpdxElement": "SPDXRef-DOCUMENT",
+   "relationshipType": "DESCRIBES"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-dc094d46e32d143e486b0c4baa69b1c5",
+   "relatedSpdxElement": "SPDXRef-File-2662196b7597d7a6633d0c425cffd8c5",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  }
+ ]
+}

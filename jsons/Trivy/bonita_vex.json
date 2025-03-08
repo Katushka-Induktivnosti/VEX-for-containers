@@ -1,0 +1,1585 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "bonita",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.18.6"
+    },
+    "ImageID": "sha256:dd72ab76e24a7dde05b5e89119f0bc84aef546a3e62aa49f485465cf28c35168",
+    "DiffIDs": [
+      "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef",
+      "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec",
+      "sha256:695a83352ddab63fc4cafeaf1447ac99ece3e45af8e1ecb460ea555f888c970c",
+      "sha256:0d7a7060fbf95b0902c6355252341a4625df453cd3a2dc48431fb59d6b302856",
+      "sha256:cc0e02e24656ade9fa19932532511a51d93337cb68a15d0d2ae2ee4f79375134",
+      "sha256:9f06fcd762c270cbe24f6dca87c0ccd089d244ef2a8f7c94b1c52ff2f1297a13",
+      "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8",
+      "sha256:22c04748317d961328be41dd6dc6ed28a2a0f86d78961fbd33bbfe6d1f373f72"
+    ],
+    "RepoTags": [
+      "bonita:latest"
+    ],
+    "RepoDigests": [
+      "bonita@sha256:0bedee63b0d734d177ce304454e3cee8ce837fea6c9abcc5c4e366c2ded7bb76"
+    ],
+    "ImageConfig": {
+      "architecture": "arm64",
+      "container": "091380581b32d7557dc35337b3e21dbc8774bed8c651dcb7d234f02aea3f83a2",
+      "created": "2024-01-27T03:42:28.966440528Z",
+      "docker_version": "20.10.23",
+      "history": [
+        {
+          "created": "2024-01-26T23:44:55Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:6dc287a22d6cc7723b0576dd3a9a644468d133c54d42c8a8eda403e3117648f7 in / "
+        },
+        {
+          "created": "2024-01-26T23:44:55Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:14Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Bonitasoft Runtime team \u003crd.engine@bonitasoft.com\u003e",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:18Z",
+          "created_by": "/bin/sh -c apk add --no-cache tzdata curl unzip bash su-exec jattach openjdk11-jre gnupg"
+        },
+        {
+          "created": "2024-01-27T03:42:19Z",
+          "created_by": "/bin/sh -c mkdir /opt/custom-init.d/"
+        },
+        {
+          "created": "2024-01-27T03:42:20Z",
+          "created_by": "/bin/sh -c addgroup -S -g 1000 bonita  \u0026\u0026 adduser -u 1000 -S  -G bonita -h /opt/bonita/ -s /sbin/nologin  bonita"
+        },
+        {
+          "created": "2024-01-27T03:42:20Z",
+          "created_by": "/bin/sh -c #(nop)  ARG BONITA_VERSION",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:20Z",
+          "created_by": "/bin/sh -c #(nop)  ARG BRANDING_VERSION",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:20Z",
+          "created_by": "/bin/sh -c #(nop)  ARG BONITA_SHA256",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:20Z",
+          "created_by": "/bin/sh -c #(nop)  ARG BASE_URL",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:20Z",
+          "created_by": "/bin/sh -c #(nop)  ARG BONITA_URL",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:20Z",
+          "created_by": "/bin/sh -c #(nop)  ENV BONITA_VERSION=9.0.0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:20Z",
+          "created_by": "/bin/sh -c #(nop)  ENV BRANDING_VERSION=2023.2-u0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:20Z",
+          "created_by": "/bin/sh -c #(nop)  ENV BONITA_SHA256=c37be3ca64a07810609c97f75c47acb7fea2d29bafff181b447987514b53d140",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:20Z",
+          "created_by": "/bin/sh -c #(nop)  ENV ZIP_FILE=BonitaCommunity-2023.2-u0.zip",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:20Z",
+          "created_by": "/bin/sh -c #(nop)  ENV BASE_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:21Z",
+          "created_by": "/bin/sh -c #(nop)  ENV BONITA_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download/2023.2-u0/BonitaCommunity-2023.2-u0.zip",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:21Z",
+          "created_by": "/bin/sh -c mkdir /opt/files"
+        },
+        {
+          "created": "2024-01-27T03:42:21Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:6f895475e79bd870a1a9724f932a63f7aedb797824886234839cf6eaa2841312 in /opt/files "
+        },
+        {
+          "created": "2024-01-27T03:42:27Z",
+          "created_by": "/bin/sh -c if [ -f \"/opt/files/BonitaCommunity-${BRANDING_VERSION}.zip\" ]; then echo \"File already present in /opt/files\"; else curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip   \u0026\u0026 echo \"$BONITA_SHA256 */opt/files/$ZIP_FILE\" | sha256sum -c - ; fi   \u0026\u0026 unzip -q /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip -d /opt/bonita/   \u0026\u0026 mv /opt/bonita/BonitaCommunity-${BRANDING_VERSION}/* /opt/bonita   \u0026\u0026 rmdir /opt/bonita/BonitaCommunity-${BRANDING_VERSION}   \u0026\u0026 rm -f /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip   \u0026\u0026 mkdir -p /opt/bonita/conf/logs/   \u0026\u0026 mkdir -p /opt/bonita/logs/   \u0026\u0026 mv /opt/files/log4j2/log4j2-appenders.xml /opt/bonita/conf/logs/   \u0026\u0026 mv /opt/bonita/server/conf/log4j2-loggers.xml /opt/bonita/conf/logs/   \u0026\u0026 chown -R bonita:bonita /opt/bonita   \u0026\u0026 chmod go+w /opt/   \u0026\u0026 chmod -R +rX /opt   \u0026\u0026 chmod go+w /opt/bonita   \u0026\u0026 chmod 777 /opt/bonita/server/logs   \u0026\u0026 chmod 777 /opt/bonita/logs/   \u0026\u0026 chmod 777 /opt/bonita/server/temp   \u0026\u0026 chmod 777 /opt/bonita/server/work   \u0026\u0026 chmod -R go+w /opt/bonita/server/conf   \u0026\u0026 chmod -R go+w /opt/bonita/server/bin   \u0026\u0026 chmod -R go+w /opt/bonita/server/lib/bonita   \u0026\u0026 chmod -R go+w /opt/bonita/setup"
+        },
+        {
+          "created": "2024-01-27T03:42:27Z",
+          "created_by": "/bin/sh -c #(nop)  ENV HTTP_API=false",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:27Z",
+          "created_by": "/bin/sh -c #(nop)  ENV HTTP_API_USERNAME=http-api",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:27Z",
+          "created_by": "/bin/sh -c #(nop)  ENV HTTP_API_PASSWORD=",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:27Z",
+          "created_by": "/bin/sh -c #(nop)  ENV MONITORING_USERNAME=monitoring",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:27Z",
+          "created_by": "/bin/sh -c #(nop)  ENV MONITORING_PASSWORD=mon1tor1ng_adm1n",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:27Z",
+          "created_by": "/bin/sh -c #(nop)  ENV JMX_REMOTE_ACCESS=false",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:28Z",
+          "created_by": "/bin/sh -c #(nop)  ENV REMOTE_IP_VALVE_ENABLED=false",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:28Z",
+          "created_by": "/bin/sh -c #(nop)  ENV ACCESSLOGS_STDOUT_ENABLED=false",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:28Z",
+          "created_by": "/bin/sh -c #(nop)  ENV ACCESSLOGS_FILES_ENABLED=false",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:28Z",
+          "created_by": "/bin/sh -c #(nop)  ENV ACCESSLOGS_PATH=/opt/bonita/logs",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:28Z",
+          "created_by": "/bin/sh -c #(nop)  ENV ACCESSLOGS_PATH_APPEND_HOSTNAME=false",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:28Z",
+          "created_by": "/bin/sh -c #(nop)  ENV ACCESSLOGS_MAX_DAYS=30",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:28Z",
+          "created_by": "/bin/sh -c #(nop)  ENV HTTP_MAX_THREADS=20",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:28Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:521b895ad8a8708c79537daa0d77e6bec7578da53370df65b17697ee0035eee6 in /opt/templates "
+        },
+        {
+          "created": "2024-01-27T03:42:28Z",
+          "created_by": "/bin/sh -c #(nop)  VOLUME [/opt/bonita/conf/logs]",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:28Z",
+          "created_by": "/bin/sh -c #(nop)  EXPOSE 8080 9000",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:28Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/opt/files/startup.sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:42:28Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/opt/bonita/server/bin/catalina.sh\" \"run\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef",
+          "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec",
+          "sha256:695a83352ddab63fc4cafeaf1447ac99ece3e45af8e1ecb460ea555f888c970c",
+          "sha256:0d7a7060fbf95b0902c6355252341a4625df453cd3a2dc48431fb59d6b302856",
+          "sha256:cc0e02e24656ade9fa19932532511a51d93337cb68a15d0d2ae2ee4f79375134",
+          "sha256:9f06fcd762c270cbe24f6dca87c0ccd089d244ef2a8f7c94b1c52ff2f1297a13",
+          "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8",
+          "sha256:22c04748317d961328be41dd6dc6ed28a2a0f86d78961fbd33bbfe6d1f373f72"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "/opt/bonita/server/bin/catalina.sh",
+          "run"
+        ],
+        "Entrypoint": [
+          "/opt/files/startup.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "BONITA_VERSION=9.0.0",
+          "BRANDING_VERSION=2023.2-u0",
+          "BONITA_SHA256=c37be3ca64a07810609c97f75c47acb7fea2d29bafff181b447987514b53d140",
+          "ZIP_FILE=BonitaCommunity-2023.2-u0.zip",
+          "BASE_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download",
+          "BONITA_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download/2023.2-u0/BonitaCommunity-2023.2-u0.zip",
+          "HTTP_API=false",
+          "HTTP_API_USERNAME=http-api",
+          "HTTP_API_PASSWORD=",
+          "MONITORING_USERNAME=monitoring",
+          "MONITORING_PASSWORD=mon1tor1ng_adm1n",
+          "JMX_REMOTE_ACCESS=false",
+          "REMOTE_IP_VALVE_ENABLED=false",
+          "ACCESSLOGS_STDOUT_ENABLED=false",
+          "ACCESSLOGS_FILES_ENABLED=false",
+          "ACCESSLOGS_PATH=/opt/bonita/logs",
+          "ACCESSLOGS_PATH_APPEND_HOSTNAME=false",
+          "ACCESSLOGS_MAX_DAYS=30",
+          "HTTP_MAX_THREADS=20"
+        ],
+        "Image": "sha256:b8eda9ad889255f109f0083ee88922b89b2fe7f3bc457fa3bc982e6e75c3a35d",
+        "Labels": {
+          "maintainer": "Bonitasoft Runtime team \u003crd.engine@bonitasoft.com\u003e"
+        },
+        "Volumes": {
+          "/opt/bonita/conf/logs": {}
+        }
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "bonita (alpine 3.18.6)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    },
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-6378",
+          "PkgName": "ch.qos.logback:logback-classic",
+          "PkgPath": "opt/bonita/setup/lib/logback-classic-1.2.12.jar",
+          "InstalledVersion": "1.2.12",
+          "FixedVersion": "1.3.12, 1.4.12, 1.2.13",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6378",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "logback: serialization vulnerability in logback receiver",
+          "Description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.11 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+              "V3Score": 7.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6378",
+            "https://github.com/qos-ch/logback",
+            "https://github.com/qos-ch/logback/commit/9c782b45be4abdafb7e17481e24e7354c2acd1eb",
+            "https://github.com/qos-ch/logback/commit/b8eac23a9de9e05fb6d51160b3f46acd91af9731",
+            "https://github.com/qos-ch/logback/commit/bb095154be011267b64e37a1d401546e7cc2b7c3",
+            "https://github.com/qos-ch/logback/issues/745#issuecomment-1836227158",
+            "https://logback.qos.ch/manual/receivers.html",
+            "https://logback.qos.ch/news.html#1.2.13",
+            "https://logback.qos.ch/news.html#1.3.12",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6378",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6378"
+          ],
+          "PublishedDate": "2023-11-29T12:15:07.543Z",
+          "LastModifiedDate": "2023-12-05T21:00:10.557Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6378",
+          "PkgName": "ch.qos.logback:logback-core",
+          "PkgPath": "opt/bonita/setup/lib/logback-core-1.2.12.jar",
+          "InstalledVersion": "1.2.12",
+          "FixedVersion": "1.3.12, 1.4.12, 1.2.13",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6378",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "logback: serialization vulnerability in logback receiver",
+          "Description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.11 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+              "V3Score": 7.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6378",
+            "https://github.com/qos-ch/logback",
+            "https://github.com/qos-ch/logback/commit/9c782b45be4abdafb7e17481e24e7354c2acd1eb",
+            "https://github.com/qos-ch/logback/commit/b8eac23a9de9e05fb6d51160b3f46acd91af9731",
+            "https://github.com/qos-ch/logback/commit/bb095154be011267b64e37a1d401546e7cc2b7c3",
+            "https://github.com/qos-ch/logback/issues/745#issuecomment-1836227158",
+            "https://logback.qos.ch/manual/receivers.html",
+            "https://logback.qos.ch/news.html#1.2.13",
+            "https://logback.qos.ch/news.html#1.3.12",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6378",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6378"
+          ],
+          "PublishedDate": "2023-11-29T12:15:07.543Z",
+          "LastModifiedDate": "2023-12-05T21:00:10.557Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6481",
+          "PkgName": "ch.qos.logback:logback-core",
+          "PkgPath": "opt/bonita/setup/lib/logback-core-1.2.12.jar",
+          "InstalledVersion": "1.2.12",
+          "FixedVersion": "1.4.14, 1.3.14, 1.2.13",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6481",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "logback: A serialization vulnerability in logback receiver",
+          "Description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.13, 1.3.13 and 1.2.12 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
+          "Severity": "HIGH",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+              "V3Score": 7.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6481",
+            "https://github.com/qos-ch/logback",
+            "https://github.com/qos-ch/logback/commit/7018a3609c7bcc9dc7bf5903509901a986e5f578",
+            "https://github.com/qos-ch/logback/commit/c612b2fa3caf6eef3c75f1cd5859438451d0fd6f",
+            "https://logback.qos.ch/news.html#1.3.12",
+            "https://logback.qos.ch/news.html#1.3.14",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6481",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6481"
+          ],
+          "PublishedDate": "2023-12-04T09:15:37.25Z",
+          "LastModifiedDate": "2023-12-07T19:57:46.02Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42392",
+          "PkgName": "com.h2database:h2",
+          "PkgPath": "opt/bonita/server/lib/bonita/h2-1.4.199.jar",
+          "InstalledVersion": "1.4.199",
+          "FixedVersion": "2.0.206",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42392",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "h2: Remote Code Execution in Console",
+          "Description": "The org.h2.util.JdbcUtils.getConnection method of the H2 database takes as parameters the class name of the driver and URL of the database. An attacker may pass a JNDI driver name and a URL leading to a LDAP or RMI servers, causing remote code execution. This can be exploited through various attack vectors, most notably through the H2 Console which leads to unauthenticated remote code execution.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 10,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-42392",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42392",
+            "https://github.com/h2database/h2database",
+            "https://github.com/h2database/h2database/releases/tag/version-2.0.206",
+            "https://github.com/h2database/h2database/security/advisories/GHSA-h376-j262-vhq6",
+            "https://jfrog.com/blog/the-jndi-strikes-back-unauthenticated-rce-in-h2-database-console",
+            "https://jfrog.com/blog/the-jndi-strikes-back-unauthenticated-rce-in-h2-database-console/",
+            "https://lists.debian.org/debian-lts-announce/2022/02/msg00017.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-42392",
+            "https://security.netapp.com/advisory/ntap-20220119-0001",
+            "https://security.netapp.com/advisory/ntap-20220119-0001/",
+            "https://ubuntu.com/security/notices/USN-5365-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-42392",
+            "https://www.debian.org/security/2022/dsa-5076",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.secpod.com/blog/log4shell-critical-remote-code-execution-vulnerability-in-h2database-console",
+            "https://www.secpod.com/blog/log4shell-critical-remote-code-execution-vulnerability-in-h2database-console/"
+          ],
+          "PublishedDate": "2022-01-10T14:10:23.643Z",
+          "LastModifiedDate": "2023-02-24T22:15:10.563Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42392",
+          "PkgName": "com.h2database:h2",
+          "PkgPath": "opt/bonita/setup/lib/h2-1.4.199.jar",
+          "InstalledVersion": "1.4.199",
+          "FixedVersion": "2.0.206",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42392",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "h2: Remote Code Execution in Console",
+          "Description": "The org.h2.util.JdbcUtils.getConnection method of the H2 database takes as parameters the class name of the driver and URL of the database. An attacker may pass a JNDI driver name and a URL leading to a LDAP or RMI servers, causing remote code execution. This can be exploited through various attack vectors, most notably through the H2 Console which leads to unauthenticated remote code execution.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 10,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-42392",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42392",
+            "https://github.com/h2database/h2database",
+            "https://github.com/h2database/h2database/releases/tag/version-2.0.206",
+            "https://github.com/h2database/h2database/security/advisories/GHSA-h376-j262-vhq6",
+            "https://jfrog.com/blog/the-jndi-strikes-back-unauthenticated-rce-in-h2-database-console",
+            "https://jfrog.com/blog/the-jndi-strikes-back-unauthenticated-rce-in-h2-database-console/",
+            "https://lists.debian.org/debian-lts-announce/2022/02/msg00017.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-42392",
+            "https://security.netapp.com/advisory/ntap-20220119-0001",
+            "https://security.netapp.com/advisory/ntap-20220119-0001/",
+            "https://ubuntu.com/security/notices/USN-5365-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-42392",
+            "https://www.debian.org/security/2022/dsa-5076",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.secpod.com/blog/log4shell-critical-remote-code-execution-vulnerability-in-h2database-console",
+            "https://www.secpod.com/blog/log4shell-critical-remote-code-execution-vulnerability-in-h2database-console/"
+          ],
+          "PublishedDate": "2022-01-10T14:10:23.643Z",
+          "LastModifiedDate": "2023-02-24T22:15:10.563Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-23221",
+          "PkgName": "com.h2database:h2",
+          "PkgPath": "opt/bonita/server/lib/bonita/h2-1.4.199.jar",
+          "InstalledVersion": "1.4.199",
+          "FixedVersion": "2.1.210",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23221",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "Loading of custom classes from remote servers through JNDI",
+          "Description": "H2 Console before 2.1.210 allows remote attackers to execute arbitrary code via a jdbc:h2:mem JDBC URL containing the IGNORE_UNKNOWN_SETTINGS=TRUE;FORBID_CREATION=FALSE;INIT=RUNSCRIPT substring, a different vulnerability than CVE-2021-42392.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-88"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 10,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/165676/H2-Database-Console-Remote-Code-Execution.html",
+            "http://seclists.org/fulldisclosure/2022/Jan/39",
+            "https://access.redhat.com/security/cve/CVE-2022-23221",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23221",
+            "https://github.com/advisories/GHSA-45hx-wfhj-473x",
+            "https://github.com/h2database/h2database",
+            "https://github.com/h2database/h2database/releases/tag/version-2.1.210",
+            "https://github.com/h2database/h2database/security/advisories",
+            "https://lists.debian.org/debian-lts-announce/2022/02/msg00017.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-23221",
+            "https://security.netapp.com/advisory/ntap-20230818-0011",
+            "https://security.netapp.com/advisory/ntap-20230818-0011/",
+            "https://twitter.com/d0nkey_man/status/1483824727936450564",
+            "https://ubuntu.com/security/notices/USN-5365-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-23221",
+            "https://www.debian.org/security/2022/dsa-5076",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html"
+          ],
+          "PublishedDate": "2022-01-19T17:15:09Z",
+          "LastModifiedDate": "2023-08-18T14:15:20.417Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-23221",
+          "PkgName": "com.h2database:h2",
+          "PkgPath": "opt/bonita/setup/lib/h2-1.4.199.jar",
+          "InstalledVersion": "1.4.199",
+          "FixedVersion": "2.1.210",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23221",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "Loading of custom classes from remote servers through JNDI",
+          "Description": "H2 Console before 2.1.210 allows remote attackers to execute arbitrary code via a jdbc:h2:mem JDBC URL containing the IGNORE_UNKNOWN_SETTINGS=TRUE;FORBID_CREATION=FALSE;INIT=RUNSCRIPT substring, a different vulnerability than CVE-2021-42392.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-88"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 10,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/165676/H2-Database-Console-Remote-Code-Execution.html",
+            "http://seclists.org/fulldisclosure/2022/Jan/39",
+            "https://access.redhat.com/security/cve/CVE-2022-23221",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23221",
+            "https://github.com/advisories/GHSA-45hx-wfhj-473x",
+            "https://github.com/h2database/h2database",
+            "https://github.com/h2database/h2database/releases/tag/version-2.1.210",
+            "https://github.com/h2database/h2database/security/advisories",
+            "https://lists.debian.org/debian-lts-announce/2022/02/msg00017.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-23221",
+            "https://security.netapp.com/advisory/ntap-20230818-0011",
+            "https://security.netapp.com/advisory/ntap-20230818-0011/",
+            "https://twitter.com/d0nkey_man/status/1483824727936450564",
+            "https://ubuntu.com/security/notices/USN-5365-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-23221",
+            "https://www.debian.org/security/2022/dsa-5076",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html"
+          ],
+          "PublishedDate": "2022-01-19T17:15:09Z",
+          "LastModifiedDate": "2023-08-18T14:15:20.417Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-23463",
+          "PkgName": "com.h2database:h2",
+          "PkgPath": "opt/bonita/server/lib/bonita/h2-1.4.199.jar",
+          "InstalledVersion": "1.4.199",
+          "FixedVersion": "2.0.202",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23463",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XXE injection vulnerability",
+          "Description": "The package com.h2database:h2 from 1.4.198 and before 2.0.202 are vulnerable to XML External Entity (XXE) Injection via the org.h2.jdbc.JdbcSQLXML class object, when it receives parsed string data from org.h2.jdbc.JdbcResultSet.getSQLXML() method. If it executes the getSource() method when the parameter is DOMSource.class it will trigger the vulnerability.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-611"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 8.1
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V2Score": 6.4,
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 6.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-23463",
+            "https://github.com/boris-unckel/h2database/commit/f9ad6aef2bfa59eba2b4d3e7c4c32d2cce8e8b05",
+            "https://github.com/h2database/h2database",
+            "https://github.com/h2database/h2database/commit/d83285fd2e48fb075780ee95badee6f5a15ea7f8%23diff-008c2e4462609982199cd83e7cf6f1d6b41296b516783f6752c44b9f15dc7bc3",
+            "https://github.com/h2database/h2database/issues/3195",
+            "https://github.com/h2database/h2database/pull/3199",
+            "https://github.com/h2database/h2database/pull/3199#issuecomment-1002830390",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-23463",
+            "https://security.netapp.com/advisory/ntap-20230818-0010",
+            "https://security.netapp.com/advisory/ntap-20230818-0010/",
+            "https://snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-1769238",
+            "https://www.cve.org/CVERecord?id=CVE-2021-23463",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html"
+          ],
+          "PublishedDate": "2021-12-10T20:15:07.917Z",
+          "LastModifiedDate": "2023-08-18T14:15:19.227Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-23463",
+          "PkgName": "com.h2database:h2",
+          "PkgPath": "opt/bonita/setup/lib/h2-1.4.199.jar",
+          "InstalledVersion": "1.4.199",
+          "FixedVersion": "2.0.202",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23463",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "XXE injection vulnerability",
+          "Description": "The package com.h2database:h2 from 1.4.198 and before 2.0.202 are vulnerable to XML External Entity (XXE) Injection via the org.h2.jdbc.JdbcSQLXML class object, when it receives parsed string data from org.h2.jdbc.JdbcResultSet.getSQLXML() method. If it executes the getSource() method when the parameter is DOMSource.class it will trigger the vulnerability.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-611"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 8.1
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V2Score": 6.4,
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 6.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-23463",
+            "https://github.com/boris-unckel/h2database/commit/f9ad6aef2bfa59eba2b4d3e7c4c32d2cce8e8b05",
+            "https://github.com/h2database/h2database",
+            "https://github.com/h2database/h2database/commit/d83285fd2e48fb075780ee95badee6f5a15ea7f8%23diff-008c2e4462609982199cd83e7cf6f1d6b41296b516783f6752c44b9f15dc7bc3",
+            "https://github.com/h2database/h2database/issues/3195",
+            "https://github.com/h2database/h2database/pull/3199",
+            "https://github.com/h2database/h2database/pull/3199#issuecomment-1002830390",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-23463",
+            "https://security.netapp.com/advisory/ntap-20230818-0010",
+            "https://security.netapp.com/advisory/ntap-20230818-0010/",
+            "https://snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-1769238",
+            "https://www.cve.org/CVERecord?id=CVE-2021-23463",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html"
+          ],
+          "PublishedDate": "2021-12-10T20:15:07.917Z",
+          "LastModifiedDate": "2023-08-18T14:15:19.227Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-45868",
+          "PkgName": "com.h2database:h2",
+          "PkgPath": "opt/bonita/server/lib/bonita/h2-1.4.199.jar",
+          "InstalledVersion": "1.4.199",
+          "FixedVersion": "2.2.220",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-45868",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "The web-based admin console in H2 Database Engine through 2.1.214 can  ...",
+          "Description": "The web-based admin console in H2 Database Engine through 2.1.214 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states \"This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that.\"",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-312"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            }
+          },
+          "References": [
+            "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
+            "https://github.com/h2database/h2database",
+            "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347",
+            "https://github.com/h2database/h2database/commit/581ed18ff9d6b3761d851620ed88a3994a351a0d",
+            "https://github.com/h2database/h2database/issues/3686",
+            "https://github.com/h2database/h2database/pull/3833",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-45868",
+            "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243"
+          ],
+          "PublishedDate": "2022-11-23T21:15:11.36Z",
+          "LastModifiedDate": "2023-11-07T03:54:55.227Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-45868",
+          "PkgName": "com.h2database:h2",
+          "PkgPath": "opt/bonita/setup/lib/h2-1.4.199.jar",
+          "InstalledVersion": "1.4.199",
+          "FixedVersion": "2.2.220",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-45868",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "The web-based admin console in H2 Database Engine through 2.1.214 can  ...",
+          "Description": "The web-based admin console in H2 Database Engine through 2.1.214 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states \"This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that.\"",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-312"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            }
+          },
+          "References": [
+            "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
+            "https://github.com/h2database/h2database",
+            "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347",
+            "https://github.com/h2database/h2database/commit/581ed18ff9d6b3761d851620ed88a3994a351a0d",
+            "https://github.com/h2database/h2database/issues/3686",
+            "https://github.com/h2database/h2database/pull/3833",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-45868",
+            "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243"
+          ],
+          "PublishedDate": "2022-11-23T21:15:11.36Z",
+          "LastModifiedDate": "2023-11-07T03:54:55.227Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-46589",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgPath": "opt/bonita/server/lib/bonita/tomcat-embed-core-9.0.81.jar",
+          "InstalledVersion": "9.0.81",
+          "FixedVersion": "11.0.0-M11, 10.1.16, 9.0.83, 8.5.96",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-46589",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "tomcat: HTTP request smuggling via malformed trailer headers",
+          "Description": "Improper Input Validation vulnerability in Apache Tomcat.Tomcat from 11.0.0-M1 through 11.0.0-M10, from 10.1.0-M1 through 10.1.15, from 9.0.0-M1 through 9.0.82 and from 8.5.0 through 8.5.95 did not correctly parse HTTP trailer headers. A trailer header that exceeded the header size limit could cause Tomcat to treat a single \nrequest as multiple requests leading to the possibility of request \nsmuggling when behind a reverse proxy.\n\nUsers are recommended to upgrade to version 11.0.0-M11 onwards, 10.1.16 onwards, 9.0.83 onwards or 8.5.96 onwards, which fix the issue.\n\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/11/28/2",
+            "https://access.redhat.com/errata/RHSA-2024:0539",
+            "https://access.redhat.com/security/cve/CVE-2023-46589",
+            "https://bugzilla.redhat.com/2252050",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2252050",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-46589",
+            "https://errata.almalinux.org/8/ALSA-2024-0539.html",
+            "https://errata.rockylinux.org/RLSA-2024:0539",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/6f181e1062a472bc5f0234980f66cbde42c1041b",
+            "https://github.com/apache/tomcat/commit/7a2d8818fcea0b51747a67af9510ce7977245ebd",
+            "https://github.com/apache/tomcat/commit/aa92971e879a519384c517febc39fd04c48d4642",
+            "https://github.com/apache/tomcat/commit/b5776d769bffeade865061bc8ecbeb2b56167b08",
+            "https://linux.oracle.com/cve/CVE-2023-46589.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0539.html",
+            "https://lists.apache.org/thread/0rqq6ktozqc42ro8hhxdmmdjm1k1tpxr",
+            "https://lists.debian.org/debian-lts-announce/2024/01/msg00001.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-46589",
+            "https://security.netapp.com/advisory/ntap-20231214-0009",
+            "https://security.netapp.com/advisory/ntap-20231214-0009/",
+            "https://tomcat.apache.org/security-10.html",
+            "https://tomcat.apache.org/security-11.html",
+            "https://tomcat.apache.org/security-8.html",
+            "https://tomcat.apache.org/security-9.html",
+            "https://www.cve.org/CVERecord?id=CVE-2023-46589",
+            "https://www.openwall.com/lists/oss-security/2023/11/28/2"
+          ],
+          "PublishedDate": "2023-11-28T16:15:06.943Z",
+          "LastModifiedDate": "2024-01-05T11:15:09.847Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-46589",
+          "PkgName": "org.apache.tomcat:tomcat-catalina",
+          "PkgPath": "opt/bonita/server/lib/catalina.jar",
+          "InstalledVersion": "9.0.81",
+          "FixedVersion": "11.0.0-M11, 10.1.16, 9.0.83, 8.5.96",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-46589",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "tomcat: HTTP request smuggling via malformed trailer headers",
+          "Description": "Improper Input Validation vulnerability in Apache Tomcat.Tomcat from 11.0.0-M1 through 11.0.0-M10, from 10.1.0-M1 through 10.1.15, from 9.0.0-M1 through 9.0.82 and from 8.5.0 through 8.5.95 did not correctly parse HTTP trailer headers. A trailer header that exceeded the header size limit could cause Tomcat to treat a single \nrequest as multiple requests leading to the possibility of request \nsmuggling when behind a reverse proxy.\n\nUsers are recommended to upgrade to version 11.0.0-M11 onwards, 10.1.16 onwards, 9.0.83 onwards or 8.5.96 onwards, which fix the issue.\n\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/11/28/2",
+            "https://access.redhat.com/errata/RHSA-2024:0539",
+            "https://access.redhat.com/security/cve/CVE-2023-46589",
+            "https://bugzilla.redhat.com/2252050",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2252050",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-46589",
+            "https://errata.almalinux.org/8/ALSA-2024-0539.html",
+            "https://errata.rockylinux.org/RLSA-2024:0539",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/6f181e1062a472bc5f0234980f66cbde42c1041b",
+            "https://github.com/apache/tomcat/commit/7a2d8818fcea0b51747a67af9510ce7977245ebd",
+            "https://github.com/apache/tomcat/commit/aa92971e879a519384c517febc39fd04c48d4642",
+            "https://github.com/apache/tomcat/commit/b5776d769bffeade865061bc8ecbeb2b56167b08",
+            "https://linux.oracle.com/cve/CVE-2023-46589.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0539.html",
+            "https://lists.apache.org/thread/0rqq6ktozqc42ro8hhxdmmdjm1k1tpxr",
+            "https://lists.debian.org/debian-lts-announce/2024/01/msg00001.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-46589",
+            "https://security.netapp.com/advisory/ntap-20231214-0009",
+            "https://security.netapp.com/advisory/ntap-20231214-0009/",
+            "https://tomcat.apache.org/security-10.html",
+            "https://tomcat.apache.org/security-11.html",
+            "https://tomcat.apache.org/security-8.html",
+            "https://tomcat.apache.org/security-9.html",
+            "https://www.cve.org/CVERecord?id=CVE-2023-46589",
+            "https://www.openwall.com/lists/oss-security/2023/11/28/2"
+          ],
+          "PublishedDate": "2023-11-28T16:15:06.943Z",
+          "LastModifiedDate": "2024-01-05T11:15:09.847Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-40167",
+          "PkgName": "org.eclipse.jetty:jetty-http",
+          "PkgPath": "opt/bonita/server/webapps/bonita/WEB-INF/lib/ehcache-2.10.10.12.7.jar",
+          "InstalledVersion": "9.4.48.v20220622",
+          "FixedVersion": "9.4.52, 10.0.16, 11.0.16, 12.0.1",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-40167",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "jetty: Improper validation of HTTP/1 content-length",
+          "Description": "Jetty is a Java based web server and servlet engine. Prior to versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1, Jetty accepts the `+` character proceeding the content-length value in a HTTP/1 header field.  This is more permissive than allowed by the RFC and other servers routinely reject such requests with 400 responses.  There is no known exploit scenario, but it is conceivable that request smuggling could result if jetty is used in combination with a server that does not close the connection after sending such a 400 response. Versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1 contain a patch for this issue. There is no workaround as there is no known exploit scenario.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-130"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-40167",
+            "https://github.com/eclipse/jetty.project",
+            "https://github.com/eclipse/jetty.project/security/advisories/GHSA-hmr7-m48g-48f6",
+            "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-40167",
+            "https://www.cve.org/CVERecord?id=CVE-2023-40167",
+            "https://www.debian.org/security/2023/dsa-5507",
+            "https://www.rfc-editor.org/rfc/rfc9110#section-8.6"
+          ],
+          "PublishedDate": "2023-09-15T20:15:09.827Z",
+          "LastModifiedDate": "2023-10-13T01:59:32.977Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-26048",
+          "PkgName": "org.eclipse.jetty:jetty-server",
+          "PkgPath": "opt/bonita/server/webapps/bonita/WEB-INF/lib/ehcache-2.10.10.12.7.jar",
+          "InstalledVersion": "9.4.48.v20220622",
+          "FixedVersion": "9.4.51.v20230217, 10.0.14, 11.0.14",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-26048",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "jetty-server: OutOfMemoryError for large multipart without filename read via request.getParameter()",
+          "Description": "Jetty is a java based web server and servlet engine. In affected versions servlets with multipart support (e.g. annotated with `@MultipartConfig`) that call `HttpServletRequest.getParameter()` or `HttpServletRequest.getParts()` may cause `OutOfMemoryError` when the client sends a multipart request with a part that has a name but no filename and very large content. This happens even with the default settings of `fileSizeThreshold=0` which should stream the whole part content to disk. An attacker client may send a large multipart request and cause the server to throw `OutOfMemoryError`. However, the server may be able to recover after the `OutOfMemoryError` and continue its service -- although it may take some time. This issue has been patched in versions 9.4.51, 10.0.14, and 11.0.14. Users are advised to upgrade. Users unable to upgrade may set the multipart parameter `maxRequestSize` which must be set to a non-negative value, so the whole multipart content is limited (although still read into memory).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-26048",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-26048",
+            "https://github.com/eclipse/jetty.project",
+            "https://github.com/eclipse/jetty.project/issues/9076",
+            "https://github.com/eclipse/jetty.project/pull/9344",
+            "https://github.com/eclipse/jetty.project/pull/9345",
+            "https://github.com/eclipse/jetty.project/releases/tag/jetty-9.4.51.v20230217",
+            "https://github.com/eclipse/jetty.project/security/advisories/GHSA-qw69-rqj8-6qw8",
+            "https://github.com/jakartaee/servlet/blob/6.0.0/spec/src/main/asciidoc/servlet-spec-body.adoc#32-file-upload",
+            "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-26048",
+            "https://security.netapp.com/advisory/ntap-20230526-0001",
+            "https://security.netapp.com/advisory/ntap-20230526-0001/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-26048",
+            "https://www.debian.org/security/2023/dsa-5507"
+          ],
+          "PublishedDate": "2023-04-18T21:15:08.977Z",
+          "LastModifiedDate": "2023-09-30T15:15:09.71Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-26049",
+          "PkgName": "org.eclipse.jetty:jetty-server",
+          "PkgPath": "opt/bonita/server/webapps/bonita/WEB-INF/lib/ehcache-2.10.10.12.7.jar",
+          "InstalledVersion": "9.4.48.v20220622",
+          "FixedVersion": "9.4.51.v20230217, 10.0.14, 11.0.14, 12.0.0.beta0",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-26049",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "jetty-server: Cookie parsing of quoted values can exfiltrate values from other cookies",
+          "Description": "Jetty is a java based web server and servlet engine. Nonstandard cookie parsing in Jetty may allow an attacker to smuggle cookies within other cookies, or otherwise perform unintended behavior by tampering with the cookie parsing mechanism. If Jetty sees a cookie VALUE that starts with `\"` (double quote), it will continue to read the cookie string until it sees a closing quote -- even if a semicolon is encountered. So, a cookie header such as: `DISPLAY_LANGUAGE=\"b; JSESSIONID=1337; c=d\"` will be parsed as one cookie, with the name DISPLAY_LANGUAGE and a value of b; JSESSIONID=1337; c=d instead of 3 separate cookies. This has security implications because if, say, JSESSIONID is an HttpOnly cookie, and the DISPLAY_LANGUAGE cookie value is rendered on the page, an attacker can smuggle the JSESSIONID cookie into the DISPLAY_LANGUAGE cookie and thereby exfiltrate it. This is significant when an intermediary is enacting some policy based on cookies, so a smuggled cookie can bypass that policy yet still be seen by the Jetty server or its logging system. This issue has been addressed in versions 9.4.51, 10.0.14, 11.0.14, and 12.0.0.beta0 and users are advised to upgrade. There are no known workarounds for this issue.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:L/I:N/A:N",
+              "V3Score": 2.4
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-26049",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-26049",
+            "https://github.com/eclipse/jetty.project",
+            "https://github.com/eclipse/jetty.project/pull/9339",
+            "https://github.com/eclipse/jetty.project/pull/9352",
+            "https://github.com/eclipse/jetty.project/releases/tag/jetty-9.4.51.v20230217",
+            "https://github.com/eclipse/jetty.project/security/advisories/GHSA-p26g-97m4-6q7c",
+            "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-26049",
+            "https://security.netapp.com/advisory/ntap-20230526-0001",
+            "https://security.netapp.com/advisory/ntap-20230526-0001/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-26049",
+            "https://www.debian.org/security/2023/dsa-5507",
+            "https://www.rfc-editor.org/rfc/rfc2965",
+            "https://www.rfc-editor.org/rfc/rfc6265"
+          ],
+          "PublishedDate": "2023-04-18T21:15:09.043Z",
+          "LastModifiedDate": "2024-02-01T15:36:15.433Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-1597",
+          "PkgName": "org.postgresql:postgresql",
+          "PkgPath": "opt/bonita/setup/lib/postgresql-42.4.3.jar",
+          "InstalledVersion": "42.4.3",
+          "FixedVersion": "42.2.28, 42.3.9, 42.4.4, 42.5.5, 42.6.1, 42.7.2",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-1597",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "pgjdbc: PostgreSQL JDBC Driver allows attacker to inject SQL if using PreferQueryMode=SIMPLE",
+          "Description": "pgjdbc, the PostgreSQL JDBC Driver, allows attacker to inject SQL if using PreferQueryMode=SIMPLE. Note this is not the default. In the default mode there is no vulnerability. A placeholder for a numeric value must be immediately preceded by a minus. There must be a second placeholder for a string value after the first placeholder; both must be on the same line. By constructing a matching string payload, the attacker can inject SQL to alter the query,bypassing the protections that parameterized queries bring against SQL Injection attacks. Versions before 42.7.2, 42.6.1, 42.5.5, 42.4.4, 42.3.9, and 42.2.8 are affected.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-89"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-1597",
+            "https://github.com/pgjdbc/pgjdbc",
+            "https://github.com/pgjdbc/pgjdbc/commit/06abfb78a627277a580d4df825f210e96a4e14ee",
+            "https://github.com/pgjdbc/pgjdbc/commit/93b0fcb2711d9c1e3a2a03134369738a02a58b40",
+            "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-24rp-q3w6-vc56",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-1597",
+            "https://www.cve.org/CVERecord?id=CVE-2024-1597",
+            "https://www.enterprisedb.com/docs/jdbc_connector/latest/01_jdbc_rel_notes/",
+            "https://www.enterprisedb.com/docs/security/assessments/cve-2024-1597/"
+          ],
+          "PublishedDate": "2024-02-19T13:15:07.74Z",
+          "LastModifiedDate": "2024-02-28T02:15:24.2Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-34055",
+          "PkgName": "org.springframework.boot:spring-boot",
+          "PkgPath": "opt/bonita/server/webapps/bonita/WEB-INF/lib/spring-boot-2.7.12.jar",
+          "InstalledVersion": "2.7.12",
+          "FixedVersion": "2.7.18, 3.0.13, 3.1.6",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-34055",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "spring-boot: org.springframework.boot:spring-boot-actuator class vulnerable to denial of service",
+          "Description": "In Spring Boot versions 2.7.0 - 2.7.17, 3.0.0-3.0.12 and 3.1.0-3.1.5, it is possible for a user to provide specially crafted HTTP requests that may cause a denial-of-service (DoS) condition.\n\nSpecifically, an application is vulnerable when all of the following are true:\n\n  *  the application uses Spring MVC or Spring WebFlux\n  *  org.springframework.boot:spring-boot-actuator is on the classpath\n\n\n\n",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-34055",
+            "https://github.com/spring-projects/spring-boot",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-34055",
+            "https://security.netapp.com/advisory/ntap-20231221-0010",
+            "https://security.netapp.com/advisory/ntap-20231221-0010/",
+            "https://spring.io/security/cve-2023-34055",
+            "https://www.cve.org/CVERecord?id=CVE-2023-34055"
+          ],
+          "PublishedDate": "2023-11-28T09:15:07.303Z",
+          "LastModifiedDate": "2023-12-21T22:15:13.76Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-34055",
+          "PkgName": "org.springframework.boot:spring-boot",
+          "PkgPath": "opt/bonita/setup/lib/spring-boot-2.7.12.jar",
+          "InstalledVersion": "2.7.12",
+          "FixedVersion": "2.7.18, 3.0.13, 3.1.6",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-34055",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "spring-boot: org.springframework.boot:spring-boot-actuator class vulnerable to denial of service",
+          "Description": "In Spring Boot versions 2.7.0 - 2.7.17, 3.0.0-3.0.12 and 3.1.0-3.1.5, it is possible for a user to provide specially crafted HTTP requests that may cause a denial-of-service (DoS) condition.\n\nSpecifically, an application is vulnerable when all of the following are true:\n\n  *  the application uses Spring MVC or Spring WebFlux\n  *  org.springframework.boot:spring-boot-actuator is on the classpath\n\n\n\n",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-34055",
+            "https://github.com/spring-projects/spring-boot",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-34055",
+            "https://security.netapp.com/advisory/ntap-20231221-0010",
+            "https://security.netapp.com/advisory/ntap-20231221-0010/",
+            "https://spring.io/security/cve-2023-34055",
+            "https://www.cve.org/CVERecord?id=CVE-2023-34055"
+          ],
+          "PublishedDate": "2023-11-28T09:15:07.303Z",
+          "LastModifiedDate": "2023-12-21T22:15:13.76Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2016-1000027",
+          "PkgName": "org.springframework:spring-web",
+          "PkgPath": "opt/bonita/server/webapps/bonita/WEB-INF/lib/spring-web-5.3.27.jar",
+          "InstalledVersion": "5.3.27",
+          "FixedVersion": "6.0.0",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-1000027",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "spring: HttpInvokerServiceExporter readRemoteInvocation method untrusted java deserialization",
+          "Description": "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2016-1000027",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-1000027",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/2b051b8b321768a4cfef83077db65c6328ffd60f",
+            "https://github.com/spring-projects/spring-framework/commit/5cbe90b2cd91b866a5a9586e460f311860e11cfa",
+            "https://github.com/spring-projects/spring-framework/issues/21680",
+            "https://github.com/spring-projects/spring-framework/issues/24434",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-1231625331",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-579669626",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-582313417",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-744519525",
+            "https://jira.spring.io/browse/SPR-17143?redirect=false",
+            "https://nvd.nist.gov/vuln/detail/CVE-2016-1000027",
+            "https://raw.githubusercontent.com/distributedweaknessfiling/cvelist/master/2016/1000xxx/CVE-2016-1000027.json",
+            "https://security-tracker.debian.org/tracker/CVE-2016-1000027",
+            "https://security.netapp.com/advisory/ntap-20230420-0009",
+            "https://security.netapp.com/advisory/ntap-20230420-0009/",
+            "https://spring.io/blog/2022/05/11/spring-framework-5-3-20-and-5-2-22-available-now",
+            "https://support.contrastsecurity.com/hc/en-us/articles/4402400830612-Spring-web-Java-Deserialization-CVE-2016-1000027",
+            "https://www.cve.org/CVERecord?id=CVE-2016-1000027",
+            "https://www.tenable.com/security/research/tra-2016-20"
+          ],
+          "PublishedDate": "2020-01-02T23:15:11.857Z",
+          "LastModifiedDate": "2023-04-20T09:15:07.047Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-22243",
+          "PkgName": "org.springframework:spring-web",
+          "PkgPath": "opt/bonita/server/webapps/bonita/WEB-INF/lib/spring-web-5.3.27.jar",
+          "InstalledVersion": "5.3.27",
+          "FixedVersion": "6.1.4, 6.0.17, 5.3.32",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-22243",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "springframework: URL Parsing with Host Validation",
+          "Description": "Applications that use UriComponentsBuilder to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.\n",
+          "Severity": "HIGH",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:L/A:N",
+              "V3Score": 3.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-22243",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/util/UriComponentsBuilder.java",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-22243",
+            "https://spring.io/security/cve-2024-22243",
+            "https://www.cve.org/CVERecord?id=CVE-2024-22243"
+          ],
+          "PublishedDate": "2024-02-23T05:15:08.143Z",
+          "LastModifiedDate": "2024-02-23T16:14:43.447Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-1471",
+          "PkgName": "org.yaml:snakeyaml",
+          "PkgPath": "opt/bonita/server/webapps/bonita/WEB-INF/lib/snakeyaml-1.32.jar",
+          "InstalledVersion": "1.32",
+          "FixedVersion": "2.0",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1471",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "SnakeYaml: Constructor Deserialization Remote Code Execution",
+          "Description": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization. We recommend upgrading to version 2.0 and beyond.\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502",
+            "CWE-20"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+              "V3Score": 8.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/175095/PyTorch-Model-Server-Registration-Deserialization-Remote-Code-Execution.html",
+            "http://www.openwall.com/lists/oss-security/2023/11/19/1",
+            "https://access.redhat.com/errata/RHSA-2022:9058",
+            "https://access.redhat.com/security/cve/CVE-2022-1471",
+            "https://bitbucket.org/snakeyaml/snakeyaml",
+            "https://bitbucket.org/snakeyaml/snakeyaml/commits/5014df1a36f50aca54405bb8433bc99a8847f758",
+            "https://bitbucket.org/snakeyaml/snakeyaml/commits/acc44099f5f4af26ff86b4e4e4cc1c874e2dc5c4",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64581479",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64634374",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64876314",
+            "https://bitbucket.org/snakeyaml/snakeyaml/wiki/CVE-2022-1471",
+            "https://bugzilla.redhat.com/2150009",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2150009",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1471",
+            "https://errata.almalinux.org/8/ALSA-2022-9058.html",
+            "https://errata.rockylinux.org/RLSA-2022:9058",
+            "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2",
+            "https://github.com/mbechler/marshalsec",
+            "https://groups.google.com/g/kubernetes-security-announce/c/mwrakFaEdnc",
+            "https://linux.oracle.com/cve/CVE-2022-1471.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9058-1.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-1471",
+            "https://security.netapp.com/advisory/ntap-20230818-0015",
+            "https://security.netapp.com/advisory/ntap-20230818-0015/",
+            "https://snyk.io/blog/unsafe-deserialization-snakeyaml-java-cve-2022-1471",
+            "https://www.cve.org/CVERecord?id=CVE-2022-1471",
+            "https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true"
+          ],
+          "PublishedDate": "2022-12-01T11:15:10.553Z",
+          "LastModifiedDate": "2023-11-19T15:15:20.877Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-1471",
+          "PkgName": "org.yaml:snakeyaml",
+          "PkgPath": "opt/bonita/setup/lib/snakeyaml-1.32.jar",
+          "InstalledVersion": "1.32",
+          "FixedVersion": "2.0",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1471",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "SnakeYaml: Constructor Deserialization Remote Code Execution",
+          "Description": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization. We recommend upgrading to version 2.0 and beyond.\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502",
+            "CWE-20"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+              "V3Score": 8.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/175095/PyTorch-Model-Server-Registration-Deserialization-Remote-Code-Execution.html",
+            "http://www.openwall.com/lists/oss-security/2023/11/19/1",
+            "https://access.redhat.com/errata/RHSA-2022:9058",
+            "https://access.redhat.com/security/cve/CVE-2022-1471",
+            "https://bitbucket.org/snakeyaml/snakeyaml",
+            "https://bitbucket.org/snakeyaml/snakeyaml/commits/5014df1a36f50aca54405bb8433bc99a8847f758",
+            "https://bitbucket.org/snakeyaml/snakeyaml/commits/acc44099f5f4af26ff86b4e4e4cc1c874e2dc5c4",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64581479",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64634374",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64876314",
+            "https://bitbucket.org/snakeyaml/snakeyaml/wiki/CVE-2022-1471",
+            "https://bugzilla.redhat.com/2150009",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2150009",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1471",
+            "https://errata.almalinux.org/8/ALSA-2022-9058.html",
+            "https://errata.rockylinux.org/RLSA-2022:9058",
+            "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2",
+            "https://github.com/mbechler/marshalsec",
+            "https://groups.google.com/g/kubernetes-security-announce/c/mwrakFaEdnc",
+            "https://linux.oracle.com/cve/CVE-2022-1471.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9058-1.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-1471",
+            "https://security.netapp.com/advisory/ntap-20230818-0015",
+            "https://security.netapp.com/advisory/ntap-20230818-0015/",
+            "https://snyk.io/blog/unsafe-deserialization-snakeyaml-java-cve-2022-1471",
+            "https://www.cve.org/CVERecord?id=CVE-2022-1471",
+            "https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true"
+          ],
+          "PublishedDate": "2022-12-01T11:15:10.553Z",
+          "LastModifiedDate": "2023-11-19T15:15:20.877Z"
+        }
+      ]
+    }
+  ]
+}

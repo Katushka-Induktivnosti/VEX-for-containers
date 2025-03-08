@@ -1,0 +1,51 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "busybox",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "ImageID": "sha256:3f57d9401f8d42f986df300f0c69192fc41da28ccc8d797829467780db3dd741",
+    "DiffIDs": [
+      "sha256:2e112031b4b923a873c8b3d685d48037e4d5ccd967b658743d93a6e56c3064b9"
+    ],
+    "RepoTags": [
+      "busybox:latest"
+    ],
+    "RepoDigests": [
+      "busybox@sha256:6d9ac9237a84afe1516540f40a0fafdc86859b2141954b4d643af7066d598b74"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2024-01-17T21:49:12Z",
+      "history": [
+        {
+          "created": "2024-01-17T21:49:12Z",
+          "created_by": "ADD busybox.tar.xz / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-01-17T21:49:12Z",
+          "created_by": "CMD [\"sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:2e112031b4b923a873c8b3d685d48037e4d5ccd967b658743d93a6e56c3064b9"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "WorkingDir": "/",
+        "ArgsEscaped": true
+      }
+    }
+  }
+}

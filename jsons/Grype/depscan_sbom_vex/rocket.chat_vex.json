@@ -1,0 +1,1039 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-93q8-gq69-wqmw",
+    "dataSource": "https://github.com/advisories/GHSA-93q8-gq69-wqmw",
+    "namespace": "github:language:javascript",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-93q8-gq69-wqmw"
+    ],
+    "description": "Inefficient Regular Expression Complexity in chalk/ansi-regex",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "3.0.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-3807",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-3807",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/chalk/ansi-regex/commit/8d1d7cdb586269882c4bdc1b7325d0c58c8f76f9",
+      "https://huntr.dev/bounties/5b3cf33b-ede0-4398-9974-800876dfd994",
+      "https://security.netapp.com/advisory/ntap-20221014-0002/",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html"
+     ],
+     "description": "ansi-regex is vulnerable to Inefficient Regular Expression Complexity",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 10,
+        "impactScore": 6.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@huntr.dev",
+       "type": "Secondary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "ansi-regex",
+       "version": "3.0.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=3.0.0,<3.0.1 (unknown)",
+      "vulnerabilityID": "GHSA-93q8-gq69-wqmw"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "3f255cc520b77e08",
+    "name": "ansi-regex",
+    "version": "3.0.0",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/ansi-regex@3.0.0",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-93q8-gq69-wqmw",
+    "dataSource": "https://github.com/advisories/GHSA-93q8-gq69-wqmw",
+    "namespace": "github:language:javascript",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-93q8-gq69-wqmw"
+    ],
+    "description": "Inefficient Regular Expression Complexity in chalk/ansi-regex",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "4.1.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-3807",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-3807",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/chalk/ansi-regex/commit/8d1d7cdb586269882c4bdc1b7325d0c58c8f76f9",
+      "https://huntr.dev/bounties/5b3cf33b-ede0-4398-9974-800876dfd994",
+      "https://security.netapp.com/advisory/ntap-20221014-0002/",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html"
+     ],
+     "description": "ansi-regex is vulnerable to Inefficient Regular Expression Complexity",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 10,
+        "impactScore": 6.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@huntr.dev",
+       "type": "Secondary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "ansi-regex",
+       "version": "4.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=4.0.0,<4.1.1 (unknown)",
+      "vulnerabilityID": "GHSA-93q8-gq69-wqmw"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "50e4bba17c8202c7",
+    "name": "ansi-regex",
+    "version": "4.1.0",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/ansi-regex@4.1.0",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-pfrx-2q88-qq97",
+    "dataSource": "https://github.com/advisories/GHSA-pfrx-2q88-qq97",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-pfrx-2q88-qq97"
+    ],
+    "description": "Got allows a redirect to a UNIX socket",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "11.8.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-33987",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-33987",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/sindresorhus/got/compare/v12.0.3...v12.1.0",
+      "https://github.com/sindresorhus/got/pull/2047",
+      "https://github.com/sindresorhus/got/releases/tag/v11.8.5"
+     ],
+     "description": "The got package before 12.1.0 (also fixed in 11.8.5) for Node.js allows a redirect to a UNIX socket.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "got",
+       "version": "6.7.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "<11.8.5 (unknown)",
+      "vulnerabilityID": "GHSA-pfrx-2q88-qq97"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5e74a8c7e7310d08",
+    "name": "got",
+    "version": "6.7.1",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/got@6.7.1",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-rc47-6667-2j5j",
+    "dataSource": "https://github.com/advisories/GHSA-rc47-6667-2j5j",
+    "namespace": "github:language:javascript",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-rc47-6667-2j5j"
+    ],
+    "description": "http-cache-semantics vulnerable to Regular Expression Denial of Service",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "4.1.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-25881",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-25881",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/kornelski/http-cache-semantics/blob/master/index.js%23L83",
+      "https://security.netapp.com/advisory/ntap-20230622-0008/",
+      "https://security.snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-3253332",
+      "https://security.snyk.io/vuln/SNYK-JS-HTTPCACHESEMANTICS-3248783"
+     ],
+     "description": "This affects versions of the package http-cache-semantics before 4.1.1. The issue can be exploited via malicious request header values sent to a server, when that server reads the cache policy from the request using this library.\r\r",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "report@snyk.io",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "http-cache-semantics",
+       "version": "3.8.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "<4.1.1 (unknown)",
+      "vulnerabilityID": "GHSA-rc47-6667-2j5j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a92a72ed19ec6a62",
+    "name": "http-cache-semantics",
+    "version": "3.8.1",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/http-cache-semantics@3.8.1",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-78xj-cgh5-2h22",
+    "dataSource": "https://github.com/advisories/GHSA-78xj-cgh5-2h22",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-78xj-cgh5-2h22"
+    ],
+    "description": "NPM IP package incorrectly identifies some private IP addresses as public",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.9"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42282",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42282",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://cosmosofcyberspace.github.io/npm_ip_cve/npm_ip_cve.html",
+      "https://github.com/indutny/node-ip/commit/6a3ada9b471b09d5f0f5be264911ab564bf67894",
+      "https://huntr.com/bounties/bfc3b23f-ddc0-4ee7-afab-223b07115ed3/",
+      "https://security.netapp.com/advisory/ntap-20240315-0008/"
+     ],
+     "description": "The ip package before 1.1.9 for Node.js might allow SSRF because some IP addresses (such as 0x7f.1) are improperly categorized as globally routable via isPublic.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "ip",
+       "version": "1.1.5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.1.9 (unknown)",
+      "vulnerabilityID": "GHSA-78xj-cgh5-2h22"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d61e89d9574e97c4",
+    "name": "ip",
+    "version": "1.1.5",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/ip@1.1.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-p8p7-x288-28g6",
+    "dataSource": "https://github.com/advisories/GHSA-p8p7-x288-28g6",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-p8p7-x288-28g6"
+    ],
+    "description": "Server-Side Request Forgery in Request",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-28155",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-28155",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://doyensec.com/resources/Doyensec_Advisory_RequestSSRF_Q12023.pdf",
+      "https://github.com/request/request/issues/3442",
+      "https://github.com/request/request/pull/3444",
+      "https://security.netapp.com/advisory/ntap-20230413-0007/"
+     ],
+     "description": "The Request package through 2.88.1 for Node.js allows a bypass of SSRF mitigations via an attacker-controller server that does a cross-protocol redirect (HTTP to HTTPS, or HTTPS to HTTP). NOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "request",
+       "version": "2.88.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=2.88.2 (unknown)",
+      "vulnerabilityID": "GHSA-p8p7-x288-28g6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "df51765caed87789",
+    "name": "request",
+    "version": "2.88.2",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "Apache-2.0"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/request@2.88.2",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-c2qf-rxjj-qqgw",
+    "dataSource": "https://github.com/advisories/GHSA-c2qf-rxjj-qqgw",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-c2qf-rxjj-qqgw"
+    ],
+    "description": "semver vulnerable to Regular Expression Denial of Service",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "5.7.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-25883",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-25883",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/npm/node-semver/blob/main/classes/range.js%23L97-L104",
+      "https://github.com/npm/node-semver/blob/main/internal/re.js%23L138",
+      "https://github.com/npm/node-semver/blob/main/internal/re.js%23L160",
+      "https://github.com/npm/node-semver/commit/717534ee353682f3bcf33e60a8af4292626d4441",
+      "https://github.com/npm/node-semver/pull/564",
+      "https://security.snyk.io/vuln/SNYK-JS-SEMVER-3247795"
+     ],
+     "description": "Versions of the package semver before 7.5.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the function new Range, when untrusted user data is provided as a range.\r\r\r",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "report@snyk.io",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "semver",
+       "version": "5.7.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "<5.7.2 (unknown)",
+      "vulnerabilityID": "GHSA-c2qf-rxjj-qqgw"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "3c8b29ef918353d8",
+    "name": "semver",
+    "version": "5.7.1",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "ISC"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/semver@5.7.1",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-f5x3-32g6-xq36",
+    "dataSource": "https://github.com/advisories/GHSA-f5x3-32g6-xq36",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-f5x3-32g6-xq36"
+    ],
+    "description": "Denial of service while parsing a tar file due to lack of folders count validation",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "6.2.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28863",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28863",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/isaacs/node-tar/commit/fe8cd57da5686f8695415414bda49206a545f7f7",
+      "https://github.com/isaacs/node-tar/security/advisories/GHSA-f5x3-32g6-xq36"
+     ],
+     "description": "node-tar is a Tar for Node.js. node-tar prior to version 6.2.1 has no limit on the number of sub-folders created in the folder creation process. An attacker who generates a large number of sub-folders can consume memory on the system running node-tar and even crash the Node.js client within few seconds of running it using a path with too many sub-folders inside. Version 6.2.1 fixes this issue by preventing extraction in excessively deep sub-folders.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "tar",
+       "version": "4.4.19"
+      }
+     },
+     "found": {
+      "versionConstraint": "<6.2.1 (unknown)",
+      "vulnerabilityID": "GHSA-f5x3-32g6-xq36"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1954b2377a1c2d3b",
+    "name": "tar",
+    "version": "4.4.19",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "ISC"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/tar@4.4.19",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-72xf-g2v4-qvf3",
+    "dataSource": "https://github.com/advisories/GHSA-72xf-g2v4-qvf3",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-72xf-g2v4-qvf3"
+    ],
+    "description": "tough-cookie Prototype Pollution vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.5
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "4.1.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-26136",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-26136",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/salesforce/tough-cookie/commit/12d474791bb856004e858fdb1c47b7608d09cf6e",
+      "https://github.com/salesforce/tough-cookie/issues/282",
+      "https://github.com/salesforce/tough-cookie/releases/tag/v4.1.3",
+      "https://lists.debian.org/debian-lts-announce/2023/07/msg00010.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3HUE6ZR5SL73KHL7XUPAOEL6SB7HUDT2/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6PVVPNSAGSDS63HQ74PJ7MZ3MU5IYNVZ/",
+      "https://security.snyk.io/vuln/SNYK-JS-TOUGHCOOKIE-5672873"
+     ],
+     "description": "Versions of the package tough-cookie before 4.1.3 are vulnerable to Prototype Pollution due to improper handling of Cookies when using CookieJar in rejectPublicSuffixes=false mode. This issue arises from the manner in which the objects are initialized.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "report@snyk.io",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.5
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "tough-cookie",
+       "version": "2.5.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<4.1.3 (unknown)",
+      "vulnerabilityID": "GHSA-72xf-g2v4-qvf3"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6e4c02fb2a1a3c68",
+    "name": "tough-cookie",
+    "version": "2.5.0",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/tough-cookie@2.5.0",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "unknown",
+  "target": "unknown"
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-05-15T01:28:06Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:ae6d37ab4724e50bf25d76152f0f93f5f4f2c063e77806b540ec818920592692",
+   "error": null
+  },
+  "timestamp": "2024-05-15T13:34:00.88363+02:00"
+ }
+}

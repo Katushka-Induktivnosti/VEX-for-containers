@@ -1,0 +1,463 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-xv3h-4844-9h36",
+    "dataSource": "https://github.com/advisories/GHSA-xv3h-4844-9h36",
+    "namespace": "github:language:php",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-xv3h-4844-9h36"
+    ],
+    "description": "HTTP Multiline Header Termination",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.18.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-29530",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-29530",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/advisories/GHSA-wxmh-65f7-jcvw",
+      "https://github.com/laminas/laminas-diactoros/security/advisories/GHSA-xv3h-4844-9h36",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BPW54QK7ISDALPLP2CKODU4ZIVRYS336/"
+     ],
+     "description": "Laminas Diactoros provides PSR HTTP Message implementations. In versions 2.18.0 and prior, 2.19.0, 2.20.0, 2.21.0, 2.22.0, 2.23.0, 2.24.0, and 2.25.0, users who create HTTP requests or responses using laminas/laminas-diactoros, when providing a newline at the start or end of a header key or value, can cause an invalid message. This can lead to denial of service vectors or application errors. The problem has been patched in following versions 2.18.1, 2.19.1, 2.20.1, 2.21.1, 2.22.1, 2.23.1, 2.24.1, and 2.25.1. As a workaround, validate HTTP header keys and/or values, and if using user-supplied values, filter them to strip off leading or trailing newline characters before calling `withHeader()`.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "language": "php",
+      "namespace": "github:language:php",
+      "package": {
+       "name": "laminas/laminas-diactoros",
+       "version": "2.4.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.18.1 (unknown)",
+      "vulnerabilityID": "GHSA-xv3h-4844-9h36"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "435181d8ce9e2a38",
+    "name": "laminas/laminas-diactoros",
+    "version": "2.4.1",
+    "type": "php-composer",
+    "locations": [],
+    "language": "php",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:composer/laminas/laminas-diactoros@2.4.1",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-8274-h5jp-97vr",
+    "dataSource": "https://github.com/advisories/GHSA-8274-h5jp-97vr",
+    "namespace": "github:language:php",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-8274-h5jp-97vr"
+    ],
+    "description": "Diactoros before 2.11.1 vulnerable to HTTP Host Header Attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.11.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-31109",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-31109",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/laminas/laminas-diactoros/commit/25b11d422c2e5dad868f68619888763b30f91e2d",
+      "https://github.com/laminas/laminas-diactoros/security/advisories/GHSA-8274-h5jp-97vr",
+      "https://portswigger.net/web-security/host-header"
+     ],
+     "description": "laminas-diactoros is a PHP package containing implementations of the PSR-7 HTTP message interfaces and PSR-17 HTTP message factory interfaces. Applications that use Diactoros, and are either not behind a proxy, or can be accessed via untrusted proxies, can potentially have the host, protocol, and/or port of a `Laminas\\Diactoros\\Uri` instance associated with the incoming server request modified to reflect values from `X-Forwarded-*` headers. Such changes can potentially lead to XSS attacks (if a fully-qualified URL is used in links) and/or URL poisoning. Since the `X-Forwarded-*` headers do have valid use cases, particularly in clustered environments using a load balancer, the library offers mitigation measures only in the v2 releases, as doing otherwise would break these use cases immediately. Users of v2 releases from 2.11.1 can provide an additional argument to `Laminas\\Diactoros\\ServerRequestFactory::fromGlobals()` in the form of a `Laminas\\Diactoros\\RequestFilter\\RequestFilterInterface` instance, including the shipped `Laminas\\Diactoros\\RequestFilter\\NoOpRequestFilter` implementation which ignores the `X-Forwarded-*` headers. Starting in version 3.0, the library will reverse behavior to use the `NoOpRequestFilter` by default, and require users to opt-in to `X-Forwarded-*` header usage via a configured `Laminas\\Diactoros\\RequestFilter\\LegacyXForwardedHeaderFilter` instance. Users are advised to upgrade to version 2.11.1 or later to resolve this issue. Users unable to upgrade may configure web servers to reject `X-Forwarded-*` headers at the web server level.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 7.2,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "language": "php",
+      "namespace": "github:language:php",
+      "package": {
+       "name": "laminas/laminas-diactoros",
+       "version": "2.4.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.11.1 (unknown)",
+      "vulnerabilityID": "GHSA-8274-h5jp-97vr"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "435181d8ce9e2a38",
+    "name": "laminas/laminas-diactoros",
+    "version": "2.4.1",
+    "type": "php-composer",
+    "locations": [],
+    "language": "php",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:composer/laminas/laminas-diactoros@2.4.1",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-jr22-8qgm-4q87",
+    "dataSource": "https://github.com/advisories/GHSA-jr22-8qgm-4q87",
+    "namespace": "github:language:php",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-jr22-8qgm-4q87"
+    ],
+    "description": "phpseclib does not properly limit the ASN1 OID length",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.0.36"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-27355",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-27355",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://gist.github.com/katzj/ee72f3c2a00590812b2ea3c0c8890e0b",
+      "https://github.com/phpseclib/phpseclib/blob/978d081fe50ff92879c50ff143c62a143edb0117/phpseclib/File/ASN1.php#L1129",
+      "https://lists.debian.org/debian-lts-announce/2024/03/msg00002.html",
+      "https://lists.debian.org/debian-lts-announce/2024/03/msg00003.html"
+     ],
+     "description": "An issue was discovered in phpseclib 1.x before 1.0.23, 2.x before 2.0.47, and 3.x before 3.0.36. When processing the ASN.1 object identifier of a certificate, a sub identifier may be provided that leads to a denial of service (CPU consumption for decodeOID).",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "language": "php",
+      "namespace": "github:language:php",
+      "package": {
+       "name": "phpseclib/phpseclib",
+       "version": "3.0.34"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=3.0.0,<3.0.36 (unknown)",
+      "vulnerabilityID": "GHSA-jr22-8qgm-4q87"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "b6dcbffab292b47a",
+    "name": "phpseclib/phpseclib",
+    "version": "3.0.34",
+    "type": "php-composer",
+    "locations": [],
+    "language": "php",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:composer/phpseclib/phpseclib@3.0.34",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hg35-mp25-qf6h",
+    "dataSource": "https://github.com/advisories/GHSA-hg35-mp25-qf6h",
+    "namespace": "github:language:php",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-hg35-mp25-qf6h"
+    ],
+    "description": "phpseclib a large prime can cause a denial of service ",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.0.36"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-27354",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-27354",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://gist.github.com/katzj/ee72f3c2a00590812b2ea3c0c8890e0b",
+      "https://github.com/phpseclib/phpseclib/blob/master/phpseclib/Math/PrimeField.php#L49",
+      "https://lists.debian.org/debian-lts-announce/2024/03/msg00002.html",
+      "https://lists.debian.org/debian-lts-announce/2024/03/msg00003.html"
+     ],
+     "description": "An issue was discovered in phpseclib 1.x before 1.0.23, 2.x before 2.0.47, and 3.x before 3.0.36. An attacker can construct a malformed certificate containing an extremely large prime to cause a denial of service (CPU consumption for an isPrime primality check). NOTE: this issue was introduced when attempting to fix CVE-2023-27560.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "language": "php",
+      "namespace": "github:language:php",
+      "package": {
+       "name": "phpseclib/phpseclib",
+       "version": "3.0.34"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=3.0.0,<3.0.36 (unknown)",
+      "vulnerabilityID": "GHSA-hg35-mp25-qf6h"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "b6dcbffab292b47a",
+    "name": "phpseclib/phpseclib",
+    "version": "3.0.34",
+    "type": "php-composer",
+    "locations": [],
+    "language": "php",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:composer/phpseclib/phpseclib@3.0.34",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "",
+   "imageID": "",
+   "manifestDigest": "",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-04-20T01:25:41Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:16b261c20c43828088d3530bdb10577ad87b9d33cfbfcaf051c3af61ba7e53ca",
+   "error": null
+  },
+  "timestamp": "2024-04-20T21:50:34.113223+02:00"
+ }
+}

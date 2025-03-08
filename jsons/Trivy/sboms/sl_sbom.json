@@ -1,0 +1,5435 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "sl",
+  "documentNamespace": "http://aquasecurity.github.io/trivy/container_image/sl-fd398de1-d5cf-4495-8670-c9e293742e31",
+  "creationInfo": {
+    "licenseListVersion": "",
+    "creators": [
+      "Organization: aquasecurity",
+      "Tool: trivy-0.46.0"
+    ],
+    "created": "2024-04-20T17:46:37Z"
+  },
+  "packages": [
+    {
+      "name": "Python",
+      "SPDXID": "SPDXRef-Package-fb5aa3ef4a659f3a",
+      "versionInfo": "2.7.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "PSF-license",
+      "licenseDeclared": "PSF-license",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/python@2.7.5"
+        }
+      ],
+      "attributionTexts": [
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "acl",
+      "SPDXID": "SPDXRef-Package-ce4d2fc80698cd84",
+      "versionInfo": "2.2.51-15.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "4df747411cb6afc9b141187a311967f4"
+        }
+      ],
+      "sourceInfo": "built package from: acl 2.2.51-15.el7",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/acl@2.2.51-15.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: acl@2.2.51-15.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "audit-libs",
+      "SPDXID": "SPDXRef-Package-45e956b3d525b749",
+      "versionInfo": "2.8.5-4.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "6f3a34f310867027630f7bcc9367850d"
+        }
+      ],
+      "sourceInfo": "built package from: audit 2.8.5-4.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/audit-libs@2.8.5-4.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: audit-libs@2.8.5-4.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "basesystem",
+      "SPDXID": "SPDXRef-Package-a76db2140c065c84",
+      "versionInfo": "10.0-7.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "45d35d675d9ccce4a20150e175e316e9"
+        }
+      ],
+      "sourceInfo": "built package from: basesystem 10.0-7.el7",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/basesystem@10.0-7.el7?arch=noarch\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: basesystem@10.0-7.el7.noarch",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "bash",
+      "SPDXID": "SPDXRef-Package-3f12e69cc17b4bcd",
+      "versionInfo": "4.2.46-35.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "15b975a8846f1c060c084606b8644fbf"
+        }
+      ],
+      "sourceInfo": "built package from: bash 4.2.46-35.el7_9",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/bash@4.2.46-35.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: bash@4.2.46-35.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "bc",
+      "SPDXID": "SPDXRef-Package-98eabf81bf6f3c6e",
+      "versionInfo": "1.06.95-13.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1422f3c272b5ae586004c787f6923fec"
+        }
+      ],
+      "sourceInfo": "built package from: bc 1.06.95-13.el7",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/bc@1.06.95-13.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: bc@1.06.95-13.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "bind-export-libs",
+      "SPDXID": "SPDXRef-Package-cbe42caa84778ccd",
+      "versionInfo": "32:9.11.4-26.P2.el7_9.15",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "3c866eaaabf77e350a36186c23e2a4a9"
+        }
+      ],
+      "sourceInfo": "built package from: bind 32:9.11.4-26.P2.el7_9.15",
+      "licenseConcluded": "MPLv2.0",
+      "licenseDeclared": "MPLv2.0",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/bind-export-libs@9.11.4-26.P2.el7_9.15?arch=x86_64\u0026distro=redhat-7.9\u0026epoch=32"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: bind-export-libs@9.11.4-26.P2.el7_9.15.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "bind-license",
+      "SPDXID": "SPDXRef-Package-af3a1985e6b58a71",
+      "versionInfo": "32:9.11.4-26.P2.el7_9.15",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "bb0a0ee0236d855e80807f43203b8f0a"
+        }
+      ],
+      "sourceInfo": "built package from: bind 32:9.11.4-26.P2.el7_9.15",
+      "licenseConcluded": "MPLv2.0",
+      "licenseDeclared": "MPLv2.0",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/bind-license@9.11.4-26.P2.el7_9.15?arch=noarch\u0026distro=redhat-7.9\u0026epoch=32"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: bind-license@9.11.4-26.P2.el7_9.15.noarch",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "binutils",
+      "SPDXID": "SPDXRef-Package-2bdc1401366ffbd9",
+      "versionInfo": "2.27-44.base.el7_9.1",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "2d9ef4b770ad383fb7ef36dc9c9652e3"
+        }
+      ],
+      "sourceInfo": "built package from: binutils 2.27-44.base.el7_9.1",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/binutils@2.27-44.base.el7_9.1?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: binutils@2.27-44.base.el7_9.1.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "bzip2",
+      "SPDXID": "SPDXRef-Package-d262d917689e1df1",
+      "versionInfo": "1.0.6-13.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "207eb7aef4a62bcf733303070dc8e5ed"
+        }
+      ],
+      "sourceInfo": "built package from: bzip2 1.0.6-13.el7",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/bzip2@1.0.6-13.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: bzip2@1.0.6-13.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "bzip2-libs",
+      "SPDXID": "SPDXRef-Package-c326dfc6e7fe1678",
+      "versionInfo": "1.0.6-13.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "75b7fd469121b2af5d6219abf0aa7f2e"
+        }
+      ],
+      "sourceInfo": "built package from: bzip2 1.0.6-13.el7",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/bzip2-libs@1.0.6-13.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: bzip2-libs@1.0.6-13.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "ca-certificates",
+      "SPDXID": "SPDXRef-Package-90ae8fe531e33a16",
+      "versionInfo": "2023.2.60_v7.0.306-72.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "30562eac0ee17b1a940e014a9d2d5048"
+        }
+      ],
+      "sourceInfo": "built package from: ca-certificates 2023.2.60_v7.0.306-72.el7_9",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/ca-certificates@2023.2.60_v7.0.306-72.el7_9?arch=noarch\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: ca-certificates@2023.2.60_v7.0.306-72.el7_9.noarch",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "chkconfig",
+      "SPDXID": "SPDXRef-Package-f652973e86df5b34",
+      "versionInfo": "1.7.6-1.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "55d77d12ab3e4d01c3bb86cdae255d19"
+        }
+      ],
+      "sourceInfo": "built package from: chkconfig 1.7.6-1.el7",
+      "licenseConcluded": "GPL-2.0-only",
+      "licenseDeclared": "GPL-2.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/chkconfig@1.7.6-1.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: chkconfig@1.7.6-1.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "coreutils",
+      "SPDXID": "SPDXRef-Package-6fb70e8416a3e2b0",
+      "versionInfo": "8.22-24.el7_9.2",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "bcb65bc4bb8916d9f9f2fcb8ee32d412"
+        }
+      ],
+      "sourceInfo": "built package from: coreutils 8.22-24.el7_9.2",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/coreutils@8.22-24.el7_9.2?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: coreutils@8.22-24.el7_9.2.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "cpio",
+      "SPDXID": "SPDXRef-Package-b421b40430b4365a",
+      "versionInfo": "2.11-28.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "6accac684baa8ca502fbcd4de605d039"
+        }
+      ],
+      "sourceInfo": "built package from: cpio 2.11-28.el7",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/cpio@2.11-28.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: cpio@2.11-28.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "cracklib",
+      "SPDXID": "SPDXRef-Package-9468ce3b90588689",
+      "versionInfo": "2.9.0-11.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "5b211ec5e70e6670c0d2ade99b7ab616"
+        }
+      ],
+      "sourceInfo": "built package from: cracklib 2.9.0-11.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/cracklib@2.9.0-11.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: cracklib@2.9.0-11.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "cracklib-dicts",
+      "SPDXID": "SPDXRef-Package-e247ae1c2a876845",
+      "versionInfo": "2.9.0-11.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "236baee2bc6a40bf636a5f2b4b2c7944"
+        }
+      ],
+      "sourceInfo": "built package from: cracklib 2.9.0-11.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/cracklib-dicts@2.9.0-11.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: cracklib-dicts@2.9.0-11.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "cryptsetup-libs",
+      "SPDXID": "SPDXRef-Package-b4a70788ed4225",
+      "versionInfo": "2.0.3-6.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "2ba231c92510b54107416d3f27618301"
+        }
+      ],
+      "sourceInfo": "built package from: cryptsetup 2.0.3-6.el7",
+      "licenseConcluded": "GPL-2.0-or-later AND LGPLv2+",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/cryptsetup-libs@2.0.3-6.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: cryptsetup-libs@2.0.3-6.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "curl",
+      "SPDXID": "SPDXRef-Package-dbf0e278d5046b3",
+      "versionInfo": "7.29.0-59.el7_9.2",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "89a441e48cd128766d1527262d95a8f7"
+        }
+      ],
+      "sourceInfo": "built package from: curl 7.29.0-59.el7_9.2",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/curl@7.29.0-59.el7_9.2?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: curl@7.29.0-59.el7_9.2.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "cyrus-sasl-lib",
+      "SPDXID": "SPDXRef-Package-c65259e04b0936e6",
+      "versionInfo": "2.1.26-24.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "fd05c983f4f3c880f24551b1cdfa9d4f"
+        }
+      ],
+      "sourceInfo": "built package from: cyrus-sasl 2.1.26-24.el7_9",
+      "licenseConcluded": "BSD-3-Clause WITH advertising",
+      "licenseDeclared": "BSD-3-Clause WITH advertising",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/cyrus-sasl-lib@2.1.26-24.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: cyrus-sasl-lib@2.1.26-24.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "dbus",
+      "SPDXID": "SPDXRef-Package-bcb1ba8d44a85a62",
+      "versionInfo": "1:1.10.24-15.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "77cd1761689830d99d1c7b8d9146f3b9"
+        }
+      ],
+      "sourceInfo": "built package from: dbus 1:1.10.24-15.el7",
+      "licenseConcluded": "(GPL-2.0-or-later OR AFL) AND GPL-2.0-or-later",
+      "licenseDeclared": "(GPL-2.0-or-later OR AFL) AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/dbus@1.10.24-15.el7?arch=x86_64\u0026distro=redhat-7.9\u0026epoch=1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: dbus@1.10.24-15.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "dbus-libs",
+      "SPDXID": "SPDXRef-Package-a0438cd176ac5f8",
+      "versionInfo": "1:1.10.24-15.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "fc9eaa67d62258ca74b818b439e340ed"
+        }
+      ],
+      "sourceInfo": "built package from: dbus 1:1.10.24-15.el7",
+      "licenseConcluded": "(GPL-2.0-or-later OR AFL) AND GPL-2.0-or-later",
+      "licenseDeclared": "(GPL-2.0-or-later OR AFL) AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/dbus-libs@1.10.24-15.el7?arch=x86_64\u0026distro=redhat-7.9\u0026epoch=1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: dbus-libs@1.10.24-15.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "device-mapper",
+      "SPDXID": "SPDXRef-Package-910344236c8cf6c",
+      "versionInfo": "7:1.02.170-6.el7_9.5",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "a7233433c7fdca96a9db81e9362a6f40"
+        }
+      ],
+      "sourceInfo": "built package from: lvm2 7:2.02.187-6.el7_9.5",
+      "licenseConcluded": "GPL-2.0-only",
+      "licenseDeclared": "GPL-2.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/device-mapper@1.02.170-6.el7_9.5?arch=x86_64\u0026distro=redhat-7.9\u0026epoch=7"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: device-mapper@1.02.170-6.el7_9.5.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "device-mapper-libs",
+      "SPDXID": "SPDXRef-Package-bf9199c1d271707c",
+      "versionInfo": "7:1.02.170-6.el7_9.5",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1017df087a4c53f8751d956432165593"
+        }
+      ],
+      "sourceInfo": "built package from: lvm2 7:2.02.187-6.el7_9.5",
+      "licenseConcluded": "LGPLv2",
+      "licenseDeclared": "LGPLv2",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/device-mapper-libs@1.02.170-6.el7_9.5?arch=x86_64\u0026distro=redhat-7.9\u0026epoch=7"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: device-mapper-libs@1.02.170-6.el7_9.5.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "diffutils",
+      "SPDXID": "SPDXRef-Package-dd20c56639d8abde",
+      "versionInfo": "3.3-6.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "054fb9e02b48a319f876980f8f9791a1"
+        }
+      ],
+      "sourceInfo": "built package from: diffutils 3.3-6.el7_9",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/diffutils@3.3-6.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: diffutils@3.3-6.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "dracut",
+      "SPDXID": "SPDXRef-Package-9010db4264d3c520",
+      "versionInfo": "033-572.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "3fbc5c520ffceaeb1f6bb7bc128fb9fb"
+        }
+      ],
+      "sourceInfo": "built package from: dracut 033-572.el7",
+      "licenseConcluded": "GPL-2.0-or-later AND LGPLv2+",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/dracut@033-572.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: dracut@033-572.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "elfutils-default-yama-scope",
+      "SPDXID": "SPDXRef-Package-a7d97dcbef17b685",
+      "versionInfo": "0.176-5.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "62028b3064dffee2e487123a9dbcfada"
+        }
+      ],
+      "sourceInfo": "built package from: elfutils 0.176-5.el7",
+      "licenseConcluded": "GPL-2.0-or-later OR LGPLv3+",
+      "licenseDeclared": "GPL-2.0-or-later OR LGPLv3+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/elfutils-default-yama-scope@0.176-5.el7?arch=noarch\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: elfutils-default-yama-scope@0.176-5.el7.noarch",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "elfutils-libelf",
+      "SPDXID": "SPDXRef-Package-9ca0cadf69a4052b",
+      "versionInfo": "0.176-5.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "75f1042302341b0aeeb724bb1e62aeb0"
+        }
+      ],
+      "sourceInfo": "built package from: elfutils 0.176-5.el7",
+      "licenseConcluded": "GPL-2.0-or-later OR LGPLv3+",
+      "licenseDeclared": "GPL-2.0-or-later OR LGPLv3+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/elfutils-libelf@0.176-5.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: elfutils-libelf@0.176-5.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "elfutils-libs",
+      "SPDXID": "SPDXRef-Package-b9da8bee4c920961",
+      "versionInfo": "0.176-5.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "75e029964d1f59d5c6ae2ca9ec6993d5"
+        }
+      ],
+      "sourceInfo": "built package from: elfutils 0.176-5.el7",
+      "licenseConcluded": "GPL-2.0-or-later OR LGPLv3+",
+      "licenseDeclared": "GPL-2.0-or-later OR LGPLv3+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/elfutils-libs@0.176-5.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: elfutils-libs@0.176-5.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "expat",
+      "SPDXID": "SPDXRef-Package-be3d46fd35cffa1",
+      "versionInfo": "2.1.0-15.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "955da8a8a9d2fd970970ce3050127dd9"
+        }
+      ],
+      "sourceInfo": "built package from: expat 2.1.0-15.el7_9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/expat@2.1.0-15.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: expat@2.1.0-15.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "file",
+      "SPDXID": "SPDXRef-Package-632c26d7659f1b12",
+      "versionInfo": "5.11-37.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "eeb698f0fece2940e358f369152fdd13"
+        }
+      ],
+      "sourceInfo": "built package from: file 5.11-37.el7",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/file@5.11-37.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: file@5.11-37.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "file-libs",
+      "SPDXID": "SPDXRef-Package-7969f9bdb2abd428",
+      "versionInfo": "5.11-37.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "2f39976878a07f9afabe621447505e9b"
+        }
+      ],
+      "sourceInfo": "built package from: file 5.11-37.el7",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/file-libs@5.11-37.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: file-libs@5.11-37.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "filesystem",
+      "SPDXID": "SPDXRef-Package-b51d564818b9e038",
+      "versionInfo": "3.2-25.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "45369011a16cdf166b747ffd820892b1"
+        }
+      ],
+      "sourceInfo": "built package from: filesystem 3.2-25.el7",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/filesystem@3.2-25.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: filesystem@3.2-25.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "findutils",
+      "SPDXID": "SPDXRef-Package-813237416f4d8c3e",
+      "versionInfo": "1:4.5.11-6.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "fa199ea82bd01a555c37a2586813483d"
+        }
+      ],
+      "sourceInfo": "built package from: findutils 1:4.5.11-6.el7",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/findutils@4.5.11-6.el7?arch=x86_64\u0026distro=redhat-7.9\u0026epoch=1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: findutils@4.5.11-6.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gawk",
+      "SPDXID": "SPDXRef-Package-5ced1be851ec0425",
+      "versionInfo": "4.0.2-4.el7_3.1",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "081d175c46c6f635264ac9dc0be25f43"
+        }
+      ],
+      "sourceInfo": "built package from: gawk 4.0.2-4.el7_3.1",
+      "licenseConcluded": "GPL-3.0-or-later AND GPL-3.0-only AND LGPLv3+ AND LGPL-3.0-only AND BSD-3-Clause",
+      "licenseDeclared": "GPL-3.0-or-later AND GPL-3.0-only AND LGPLv3+ AND LGPL-3.0-only AND BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/gawk@4.0.2-4.el7_3.1?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gawk@4.0.2-4.el7_3.1.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gdbm",
+      "SPDXID": "SPDXRef-Package-a2c2c65da04a3532",
+      "versionInfo": "1.10-8.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "94a375ac56889241674527474b1d9c56"
+        }
+      ],
+      "sourceInfo": "built package from: gdbm 1.10-8.el7",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/gdbm@1.10-8.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gdbm@1.10-8.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "geoipupdate",
+      "SPDXID": "SPDXRef-Package-f7903b37c5cdfe6",
+      "versionInfo": "2.5.0-2.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "5ad973936cba11bb645ae43c49f64f34"
+        }
+      ],
+      "sourceInfo": "built package from: geoipupdate 2.5.0-2.el7",
+      "licenseConcluded": "GPL-2.0-only",
+      "licenseDeclared": "GPL-2.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/geoipupdate@2.5.0-2.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: geoipupdate@2.5.0-2.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "glib2",
+      "SPDXID": "SPDXRef-Package-b1f213f0e126eeeb",
+      "versionInfo": "2.56.1-9.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "16f479173b73db6c7f83ae605132e231"
+        }
+      ],
+      "sourceInfo": "built package from: glib2 2.56.1-9.el7_9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/glib2@2.56.1-9.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: glib2@2.56.1-9.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "glibc",
+      "SPDXID": "SPDXRef-Package-e9d692fb054e96fa",
+      "versionInfo": "2.17-326.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "6b536a3fcd541b093bec3278b99a174a"
+        }
+      ],
+      "sourceInfo": "built package from: glibc 2.17-326.el7_9",
+      "licenseConcluded": "LGPLv2+ AND LGPLv2+ WITH exceptions AND GPL-2.0-or-later",
+      "licenseDeclared": "LGPLv2+ AND LGPLv2+ WITH exceptions AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/glibc@2.17-326.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: glibc@2.17-326.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "glibc-common",
+      "SPDXID": "SPDXRef-Package-70d328d403131406",
+      "versionInfo": "2.17-326.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "fb7b1cc97c016e3132520d887f08fe05"
+        }
+      ],
+      "sourceInfo": "built package from: glibc 2.17-326.el7_9",
+      "licenseConcluded": "LGPLv2+ AND LGPLv2+ WITH exceptions AND GPL-2.0-or-later",
+      "licenseDeclared": "LGPLv2+ AND LGPLv2+ WITH exceptions AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/glibc-common@2.17-326.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: glibc-common@2.17-326.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gmp",
+      "SPDXID": "SPDXRef-Package-78437ff9a7fecfcb",
+      "versionInfo": "1:6.0.0-15.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "ed76c2bc97921290b14210c0034fa3d5"
+        }
+      ],
+      "sourceInfo": "built package from: gmp 1:6.0.0-15.el7",
+      "licenseConcluded": "LGPLv3+ OR GPL-2.0-or-later",
+      "licenseDeclared": "LGPLv3+ OR GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/gmp@6.0.0-15.el7?arch=x86_64\u0026distro=redhat-7.9\u0026epoch=1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gmp@6.0.0-15.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gnupg2",
+      "SPDXID": "SPDXRef-Package-78ae96c64126ff23",
+      "versionInfo": "2.0.22-5.el7_5",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f716813e998d3dcfc85a6ad6a691f3a1"
+        }
+      ],
+      "sourceInfo": "built package from: gnupg2 2.0.22-5.el7_5",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/gnupg2@2.0.22-5.el7_5?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gnupg2@2.0.22-5.el7_5.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gpg-pubkey",
+      "SPDXID": "SPDXRef-Package-13169994c88dd562",
+      "versionInfo": "192a7d7d-4a5769d0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "pubkey",
+      "licenseDeclared": "pubkey",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/gpg-pubkey@192a7d7d-4a5769d0?arch=None\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gpg-pubkey@192a7d7d-4a5769d0.",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gpg-pubkey",
+      "SPDXID": "SPDXRef-Package-95450a84623975ae",
+      "versionInfo": "1aa2f65c-53c583c0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "pubkey",
+      "licenseDeclared": "pubkey",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/gpg-pubkey@1aa2f65c-53c583c0?arch=None\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gpg-pubkey@1aa2f65c-53c583c0.",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gpgme",
+      "SPDXID": "SPDXRef-Package-a38844e258f7fb65",
+      "versionInfo": "1.3.2-5.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "4a592c0fdcd591d14dd59457b9a0aff1"
+        }
+      ],
+      "sourceInfo": "built package from: gpgme 1.3.2-5.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/gpgme@1.3.2-5.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gpgme@1.3.2-5.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "grep",
+      "SPDXID": "SPDXRef-Package-faefa59cd5b37682",
+      "versionInfo": "2.20-3.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "6996b83fc8d2312dd80176966305df38"
+        }
+      ],
+      "sourceInfo": "built package from: grep 2.20-3.el7",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/grep@2.20-3.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: grep@2.20-3.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gzip",
+      "SPDXID": "SPDXRef-Package-c213e9c9234920e8",
+      "versionInfo": "1.5-11.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "2dd4302f8946d6a29aaa95e5b943a546"
+        }
+      ],
+      "sourceInfo": "built package from: gzip 1.5-11.el7_9",
+      "licenseConcluded": "GPL-3.0-or-later AND GFDL",
+      "licenseDeclared": "GPL-3.0-or-later AND GFDL",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/gzip@1.5-11.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gzip@1.5-11.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "hardlink",
+      "SPDXID": "SPDXRef-Package-e4b226cbc4c3eea9",
+      "versionInfo": "1:1.0-19.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "41eef83efbdc3e9d693fadb1600a5840"
+        }
+      ],
+      "sourceInfo": "built package from: hardlink 1:1.0-19.el7",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/hardlink@1.0-19.el7?arch=x86_64\u0026distro=redhat-7.9\u0026epoch=1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: hardlink@1.0-19.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "hostname",
+      "SPDXID": "SPDXRef-Package-fcaeb8974fef86c7",
+      "versionInfo": "3.13-3.el7_7.1",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "a3e66c2af27d46171f770f6077f88466"
+        }
+      ],
+      "sourceInfo": "built package from: hostname 3.13-3.el7_7.1",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/hostname@3.13-3.el7_7.1?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: hostname@3.13-3.el7_7.1.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "info",
+      "SPDXID": "SPDXRef-Package-f1f45531d1bbc0ab",
+      "versionInfo": "5.1-5.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7e152118ac4ebc952e1a90ce13be6068"
+        }
+      ],
+      "sourceInfo": "built package from: texinfo 5.1-5.el7",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/info@5.1-5.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: info@5.1-5.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "iniparse",
+      "SPDXID": "SPDXRef-Package-dc8e97050b80a6ff",
+      "versionInfo": "0.4",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/iniparse@0.4"
+        }
+      ],
+      "attributionTexts": [
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "iputils",
+      "SPDXID": "SPDXRef-Package-3d0bd45f51b9635b",
+      "versionInfo": "20160308-10.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "62ee47db1548018dca1fbe2c309a5856"
+        }
+      ],
+      "sourceInfo": "built package from: iputils 20160308-10.el7",
+      "licenseConcluded": "BSD-3-Clause AND GPL-2.0-or-later",
+      "licenseDeclared": "BSD-3-Clause AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/iputils@20160308-10.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: iputils@20160308-10.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "json-c",
+      "SPDXID": "SPDXRef-Package-8ada038ebb8dca1d",
+      "versionInfo": "0.11-4.el7_0",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "79be66b70c6948bdd8eb9bfc55e772f1"
+        }
+      ],
+      "sourceInfo": "built package from: json-c 0.11-4.el7_0",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/json-c@0.11-4.el7_0?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: json-c@0.11-4.el7_0.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "keyutils-libs",
+      "SPDXID": "SPDXRef-Package-509185300cbbb3f",
+      "versionInfo": "1.5.8-3.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "d40d61444ac1b13e54923e2e7c3e2c27"
+        }
+      ],
+      "sourceInfo": "built package from: keyutils 1.5.8-3.el7",
+      "licenseConcluded": "GPL-2.0-or-later AND LGPLv2+",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/keyutils-libs@1.5.8-3.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: keyutils-libs@1.5.8-3.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "kmod",
+      "SPDXID": "SPDXRef-Package-fd4f3f828d9f4caf",
+      "versionInfo": "20-28.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "b928d9744a533e3655df871d5a42680e"
+        }
+      ],
+      "sourceInfo": "built package from: kmod 20-28.el7",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/kmod@20-28.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: kmod@20-28.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "kmod-libs",
+      "SPDXID": "SPDXRef-Package-a71d1a75715f2f58",
+      "versionInfo": "20-28.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "ccb3fe34d68023f94992f544bb3d7777"
+        }
+      ],
+      "sourceInfo": "built package from: kmod 20-28.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/kmod-libs@20-28.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: kmod-libs@20-28.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "kpartx",
+      "SPDXID": "SPDXRef-Package-f5734c6e72efe327",
+      "versionInfo": "0.4.9-136.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "0eba0875e9bf3f07cc568db903465c37"
+        }
+      ],
+      "sourceInfo": "built package from: device-mapper-multipath 0.4.9-136.el7_9",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/kpartx@0.4.9-136.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: kpartx@0.4.9-136.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "krb5-libs",
+      "SPDXID": "SPDXRef-Package-967e6edb66f41cf6",
+      "versionInfo": "1.15.1-55.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "2080307eb0ec6e1f713724ad85e99b53"
+        }
+      ],
+      "sourceInfo": "built package from: krb5 1.15.1-55.el7_9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/krb5-libs@1.15.1-55.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: krb5-libs@1.15.1-55.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libacl",
+      "SPDXID": "SPDXRef-Package-9cb8d07e87aaabb0",
+      "versionInfo": "2.2.51-15.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "eb6fa5573497221e41c856096965af7f"
+        }
+      ],
+      "sourceInfo": "built package from: acl 2.2.51-15.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libacl@2.2.51-15.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libacl@2.2.51-15.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libassuan",
+      "SPDXID": "SPDXRef-Package-485f54de0077f82",
+      "versionInfo": "2.1.0-3.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "aca86d91b03a18953d63f8b7a9d9e367"
+        }
+      ],
+      "sourceInfo": "built package from: libassuan 2.1.0-3.el7",
+      "licenseConcluded": "LGPLv2+ AND GPL-3.0-or-later",
+      "licenseDeclared": "LGPLv2+ AND GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libassuan@2.1.0-3.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libassuan@2.1.0-3.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libattr",
+      "SPDXID": "SPDXRef-Package-23297b02057c1bef",
+      "versionInfo": "2.4.46-13.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "3f1c23d7d21099c85a8071f5f1df3028"
+        }
+      ],
+      "sourceInfo": "built package from: attr 2.4.46-13.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libattr@2.4.46-13.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libattr@2.4.46-13.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libblkid",
+      "SPDXID": "SPDXRef-Package-8f2ce10cd35b8360",
+      "versionInfo": "2.23.2-65.el7_9.1",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "b9ac0a2ce68a22c7a395e56b0be62ecb"
+        }
+      ],
+      "sourceInfo": "built package from: util-linux 2.23.2-65.el7_9.1",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libblkid@2.23.2-65.el7_9.1?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libblkid@2.23.2-65.el7_9.1.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libcap",
+      "SPDXID": "SPDXRef-Package-ff3170fbd25142d8",
+      "versionInfo": "2.22-11.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "2859a0685bd9c2ad21566493ac7374a0"
+        }
+      ],
+      "sourceInfo": "built package from: libcap 2.22-11.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libcap@2.22-11.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libcap@2.22-11.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libcap-ng",
+      "SPDXID": "SPDXRef-Package-3d45623b1234b785",
+      "versionInfo": "0.7.5-4.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "26f035eb2c4c652cb7915a4f45ec56d7"
+        }
+      ],
+      "sourceInfo": "built package from: libcap-ng 0.7.5-4.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libcap-ng@0.7.5-4.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libcap-ng@0.7.5-4.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libcom_err",
+      "SPDXID": "SPDXRef-Package-d698087e09dc7b8e",
+      "versionInfo": "1.42.9-19.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "71a420b7fef3feede9f9871080fe59dd"
+        }
+      ],
+      "sourceInfo": "built package from: e2fsprogs 1.42.9-19.el7",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libcom_err@1.42.9-19.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libcom_err@1.42.9-19.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libcurl",
+      "SPDXID": "SPDXRef-Package-50d1fe865da5332b",
+      "versionInfo": "7.29.0-59.el7_9.2",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1da046d7c27bac8d7f4c1ce1c278fff1"
+        }
+      ],
+      "sourceInfo": "built package from: curl 7.29.0-59.el7_9.2",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libcurl@7.29.0-59.el7_9.2?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libcurl@7.29.0-59.el7_9.2.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libdb",
+      "SPDXID": "SPDXRef-Package-f08937e5dd54560b",
+      "versionInfo": "5.3.21-25.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "b1444047655343dc45bb957e00cca641"
+        }
+      ],
+      "sourceInfo": "built package from: libdb 5.3.21-25.el7",
+      "licenseConcluded": "BSD-3-Clause AND LGPLv2 AND Sleepycat",
+      "licenseDeclared": "BSD-3-Clause AND LGPLv2 AND Sleepycat",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libdb@5.3.21-25.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libdb@5.3.21-25.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libdb-utils",
+      "SPDXID": "SPDXRef-Package-8185848b2833e255",
+      "versionInfo": "5.3.21-25.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "17dfca1063a96f47846ecaa20be217ff"
+        }
+      ],
+      "sourceInfo": "built package from: libdb 5.3.21-25.el7",
+      "licenseConcluded": "BSD-3-Clause AND LGPLv2 AND Sleepycat",
+      "licenseDeclared": "BSD-3-Clause AND LGPLv2 AND Sleepycat",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libdb-utils@5.3.21-25.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libdb-utils@5.3.21-25.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libffi",
+      "SPDXID": "SPDXRef-Package-fad6ee292a8f4dac",
+      "versionInfo": "3.0.13-19.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "ec7c412ad5fd848a727aa302a1eab9ea"
+        }
+      ],
+      "sourceInfo": "built package from: libffi 3.0.13-19.el7",
+      "licenseConcluded": "MIT AND Unlicense",
+      "licenseDeclared": "MIT AND Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libffi@3.0.13-19.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libffi@3.0.13-19.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libgcc",
+      "SPDXID": "SPDXRef-Package-eb2999c8f1d76a00",
+      "versionInfo": "4.8.5-44.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "87a847cd8db64ee4dc0569d6018c978b"
+        }
+      ],
+      "sourceInfo": "built package from: gcc 4.8.5-44.el7",
+      "licenseConcluded": "GPL-3.0-or-later AND GPL-3.0-or-later WITH exceptions AND GPL-2.0-or-later WITH exceptions AND LGPLv2+ AND BSD-3-Clause",
+      "licenseDeclared": "GPL-3.0-or-later AND GPL-3.0-or-later WITH exceptions AND GPL-2.0-or-later WITH exceptions AND LGPLv2+ AND BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libgcc@4.8.5-44.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libgcc@4.8.5-44.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libgcrypt",
+      "SPDXID": "SPDXRef-Package-d379ac3bfc3189bb",
+      "versionInfo": "1.5.3-14.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "3cd9463770e1f02708cf9586e5175716"
+        }
+      ],
+      "sourceInfo": "built package from: libgcrypt 1.5.3-14.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libgcrypt@1.5.3-14.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libgcrypt@1.5.3-14.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libgpg-error",
+      "SPDXID": "SPDXRef-Package-83af5b284c839801",
+      "versionInfo": "1.12-3.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "075084a8f61b3685b4bb076ab3cf5cb5"
+        }
+      ],
+      "sourceInfo": "built package from: libgpg-error 1.12-3.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libgpg-error@1.12-3.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libgpg-error@1.12-3.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libidn",
+      "SPDXID": "SPDXRef-Package-b3b6da42a48c1188",
+      "versionInfo": "1.28-4.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "09fdb4e2a9ec7a1be1ed2fdf2402ed6a"
+        }
+      ],
+      "sourceInfo": "built package from: libidn 1.28-4.el7",
+      "licenseConcluded": "LGPLv2+ AND GPL-3.0-or-later AND GFDL",
+      "licenseDeclared": "LGPLv2+ AND GPL-3.0-or-later AND GFDL",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libidn@1.28-4.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libidn@1.28-4.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libmount",
+      "SPDXID": "SPDXRef-Package-dc114322ac95af62",
+      "versionInfo": "2.23.2-65.el7_9.1",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1ef9faa6bdfa55652690c874446bbacd"
+        }
+      ],
+      "sourceInfo": "built package from: util-linux 2.23.2-65.el7_9.1",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libmount@2.23.2-65.el7_9.1?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libmount@2.23.2-65.el7_9.1.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libpwquality",
+      "SPDXID": "SPDXRef-Package-4474a1907c45054b",
+      "versionInfo": "1.2.3-5.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "fdf0427295b7ddfbc1e091bc0fb9970f"
+        }
+      ],
+      "sourceInfo": "built package from: libpwquality 1.2.3-5.el7",
+      "licenseConcluded": "BSD-3-Clause OR GPL-2.0-or-later",
+      "licenseDeclared": "BSD-3-Clause OR GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libpwquality@1.2.3-5.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libpwquality@1.2.3-5.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libselinux",
+      "SPDXID": "SPDXRef-Package-11db11e6b2bccf9f",
+      "versionInfo": "2.5-15.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "c3c5763dbe45405f0d6443c248f0cd75"
+        }
+      ],
+      "sourceInfo": "built package from: libselinux 2.5-15.el7",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libselinux@2.5-15.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libselinux@2.5-15.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libsemanage",
+      "SPDXID": "SPDXRef-Package-7d437d3159818b66",
+      "versionInfo": "2.5-14.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "12944b7cbfc432d1df75698c19940eee"
+        }
+      ],
+      "sourceInfo": "built package from: libsemanage 2.5-14.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libsemanage@2.5-14.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libsemanage@2.5-14.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libsepol",
+      "SPDXID": "SPDXRef-Package-41746c369640afd2",
+      "versionInfo": "2.5-10.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "044cc383cfce84bd3546cb2d389324b1"
+        }
+      ],
+      "sourceInfo": "built package from: libsepol 2.5-10.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libsepol@2.5-10.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libsepol@2.5-10.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libsmartcols",
+      "SPDXID": "SPDXRef-Package-f7afca4dd24d671c",
+      "versionInfo": "2.23.2-65.el7_9.1",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "bff0e733f27b65fad2436ddd8dade0e7"
+        }
+      ],
+      "sourceInfo": "built package from: util-linux 2.23.2-65.el7_9.1",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libsmartcols@2.23.2-65.el7_9.1?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libsmartcols@2.23.2-65.el7_9.1.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libssh2",
+      "SPDXID": "SPDXRef-Package-238095d117ca3c24",
+      "versionInfo": "1.8.0-4.el7_9.1",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "daa8a3001eca06eec9199316aa11a53e"
+        }
+      ],
+      "sourceInfo": "built package from: libssh2 1.8.0-4.el7_9.1",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libssh2@1.8.0-4.el7_9.1?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libssh2@1.8.0-4.el7_9.1.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libstdc++",
+      "SPDXID": "SPDXRef-Package-ca102867d6fba3b5",
+      "versionInfo": "4.8.5-44.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "221b8d0077ceb187ca84e52758c6fe58"
+        }
+      ],
+      "sourceInfo": "built package from: gcc 4.8.5-44.el7",
+      "licenseConcluded": "GPL-3.0-or-later AND GPL-3.0-or-later WITH exceptions AND GPL-2.0-or-later WITH exceptions AND LGPLv2+ AND BSD-3-Clause",
+      "licenseDeclared": "GPL-3.0-or-later AND GPL-3.0-or-later WITH exceptions AND GPL-2.0-or-later WITH exceptions AND LGPLv2+ AND BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libstdc%2B%2B@4.8.5-44.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libstdc++@4.8.5-44.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libtasn1",
+      "SPDXID": "SPDXRef-Package-a1efd8e292694470",
+      "versionInfo": "4.10-1.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "31254ed182b94abf497b3d85802708df"
+        }
+      ],
+      "sourceInfo": "built package from: libtasn1 4.10-1.el7",
+      "licenseConcluded": "GPL-3.0-or-later AND LGPLv2+",
+      "licenseDeclared": "GPL-3.0-or-later AND LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libtasn1@4.10-1.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libtasn1@4.10-1.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libuser",
+      "SPDXID": "SPDXRef-Package-1e6bc5e756966989",
+      "versionInfo": "0.60-9.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "6de8fcd51259bc55d3c734fc2a17dea4"
+        }
+      ],
+      "sourceInfo": "built package from: libuser 0.60-9.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libuser@0.60-9.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libuser@0.60-9.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libutempter",
+      "SPDXID": "SPDXRef-Package-6c5097825349aa72",
+      "versionInfo": "1.1.6-4.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "6d2c318f0650086fdc599fb1a33191f5"
+        }
+      ],
+      "sourceInfo": "built package from: libutempter 1.1.6-4.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libutempter@1.1.6-4.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libutempter@1.1.6-4.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libuuid",
+      "SPDXID": "SPDXRef-Package-ab8a2ebeb97ec3ca",
+      "versionInfo": "2.23.2-65.el7_9.1",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "2af52a448ccb0e10373b922bdf046d37"
+        }
+      ],
+      "sourceInfo": "built package from: util-linux 2.23.2-65.el7_9.1",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libuuid@2.23.2-65.el7_9.1?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libuuid@2.23.2-65.el7_9.1.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libverto",
+      "SPDXID": "SPDXRef-Package-5f987f66f99ba3e5",
+      "versionInfo": "0.2.5-4.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "d2ee9eb7a65a0d3373ea58cdb8a0bf49"
+        }
+      ],
+      "sourceInfo": "built package from: libverto 0.2.5-4.el7",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libverto@0.2.5-4.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libverto@0.2.5-4.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libxml2",
+      "SPDXID": "SPDXRef-Package-58da8adc86d7ae0d",
+      "versionInfo": "2.9.1-6.el7_9.6",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "be21a8d7e8b5a1a7d9e675bf5f388367"
+        }
+      ],
+      "sourceInfo": "built package from: libxml2 2.9.1-6.el7_9.6",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/libxml2@2.9.1-6.el7_9.6?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libxml2@2.9.1-6.el7_9.6.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "lua",
+      "SPDXID": "SPDXRef-Package-b75a0224c1d44641",
+      "versionInfo": "5.1.4-15.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "79d03b7dd9c7d470dbc81f5ee149b737"
+        }
+      ],
+      "sourceInfo": "built package from: lua 5.1.4-15.el7",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/lua@5.1.4-15.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: lua@5.1.4-15.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "lz4",
+      "SPDXID": "SPDXRef-Package-98ca7ee4753c0df",
+      "versionInfo": "1.8.3-1.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f22c92f55cc153c56ebcae699a7d7522"
+        }
+      ],
+      "sourceInfo": "built package from: lz4 1.8.3-1.el7",
+      "licenseConcluded": "GPL-2.0-or-later AND BSD-3-Clause",
+      "licenseDeclared": "GPL-2.0-or-later AND BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/lz4@1.8.3-1.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: lz4@1.8.3-1.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "lzo",
+      "SPDXID": "SPDXRef-Package-d13bed9e4ca190c3",
+      "versionInfo": "2.06-8.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "47546ed42aef4804e3e8d177e84fdd30"
+        }
+      ],
+      "sourceInfo": "built package from: lzo 2.06-8.el7",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/lzo@2.06-8.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: lzo@2.06-8.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "ncurses",
+      "SPDXID": "SPDXRef-Package-7c34bfe1faef2e1f",
+      "versionInfo": "5.9-14.20130511.el7_4",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "e04e7a333d55516d841dba7440b38723"
+        }
+      ],
+      "sourceInfo": "built package from: ncurses 5.9-14.20130511.el7_4",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/ncurses@5.9-14.20130511.el7_4?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: ncurses@5.9-14.20130511.el7_4.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "ncurses-base",
+      "SPDXID": "SPDXRef-Package-c736ea1d91f85604",
+      "versionInfo": "5.9-14.20130511.el7_4",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "e575df6e8345ef6bd31d8ba6c486290e"
+        }
+      ],
+      "sourceInfo": "built package from: ncurses 5.9-14.20130511.el7_4",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/ncurses-base@5.9-14.20130511.el7_4?arch=noarch\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: ncurses-base@5.9-14.20130511.el7_4.noarch",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "ncurses-libs",
+      "SPDXID": "SPDXRef-Package-3a36f65c138527a8",
+      "versionInfo": "5.9-14.20130511.el7_4",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "8f2712f05883ccef66c355a21bda772e"
+        }
+      ],
+      "sourceInfo": "built package from: ncurses 5.9-14.20130511.el7_4",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/ncurses-libs@5.9-14.20130511.el7_4?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: ncurses-libs@5.9-14.20130511.el7_4.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "nspr",
+      "SPDXID": "SPDXRef-Package-6b3c87ffc5b82a49",
+      "versionInfo": "4.35.0-1.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "cfd9f710094d4bf796005660c41dca04"
+        }
+      ],
+      "sourceInfo": "built package from: nspr 4.35.0-1.el7_9",
+      "licenseConcluded": "MPLv2.0",
+      "licenseDeclared": "MPLv2.0",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/nspr@4.35.0-1.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: nspr@4.35.0-1.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "nss",
+      "SPDXID": "SPDXRef-Package-b252145b7c341034",
+      "versionInfo": "3.90.0-2.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "a65b0d109ee1e9a15f2e7934e291a8b0"
+        }
+      ],
+      "sourceInfo": "built package from: nss 3.90.0-2.el7_9",
+      "licenseConcluded": "MPLv2.0",
+      "licenseDeclared": "MPLv2.0",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/nss@3.90.0-2.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: nss@3.90.0-2.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "nss-pem",
+      "SPDXID": "SPDXRef-Package-d724b11d8f3d6dbf",
+      "versionInfo": "1.0.3-7.el7_9.1",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7259fb54bb30c98265fea26b21e846b9"
+        }
+      ],
+      "sourceInfo": "built package from: nss-pem 1.0.3-7.el7_9.1",
+      "licenseConcluded": "MPLv1.1",
+      "licenseDeclared": "MPLv1.1",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/nss-pem@1.0.3-7.el7_9.1?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: nss-pem@1.0.3-7.el7_9.1.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "nss-softokn",
+      "SPDXID": "SPDXRef-Package-7cc6ccfaec46f2ff",
+      "versionInfo": "3.90.0-6.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "b0ea469d54af9bf3016fc793bb99ee7a"
+        }
+      ],
+      "sourceInfo": "built package from: nss-softokn 3.90.0-6.el7_9",
+      "licenseConcluded": "MPLv2.0",
+      "licenseDeclared": "MPLv2.0",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/nss-softokn@3.90.0-6.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: nss-softokn@3.90.0-6.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "nss-softokn-freebl",
+      "SPDXID": "SPDXRef-Package-eb092afb57ec687f",
+      "versionInfo": "3.90.0-6.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "530eea0fad8e5eb43892d096ee9c92d8"
+        }
+      ],
+      "sourceInfo": "built package from: nss-softokn 3.90.0-6.el7_9",
+      "licenseConcluded": "MPLv2.0",
+      "licenseDeclared": "MPLv2.0",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/nss-softokn-freebl@3.90.0-6.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: nss-softokn-freebl@3.90.0-6.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "nss-sysinit",
+      "SPDXID": "SPDXRef-Package-6b2ff96fae55beb9",
+      "versionInfo": "3.90.0-2.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "900b3caecb2990a7fc471b5a01afeeac"
+        }
+      ],
+      "sourceInfo": "built package from: nss 3.90.0-2.el7_9",
+      "licenseConcluded": "MPLv2.0",
+      "licenseDeclared": "MPLv2.0",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/nss-sysinit@3.90.0-2.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: nss-sysinit@3.90.0-2.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "nss-tools",
+      "SPDXID": "SPDXRef-Package-b0d92135adeaa7af",
+      "versionInfo": "3.90.0-2.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "c620a73d80c866b54cecdacc90888fbf"
+        }
+      ],
+      "sourceInfo": "built package from: nss 3.90.0-2.el7_9",
+      "licenseConcluded": "MPLv2.0",
+      "licenseDeclared": "MPLv2.0",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/nss-tools@3.90.0-2.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: nss-tools@3.90.0-2.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "nss-util",
+      "SPDXID": "SPDXRef-Package-25da728ee4cf0f76",
+      "versionInfo": "3.90.0-1.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "bbefa1a36ab94dbcc6be04d148ef2bb1"
+        }
+      ],
+      "sourceInfo": "built package from: nss-util 3.90.0-1.el7_9",
+      "licenseConcluded": "MPLv2.0",
+      "licenseDeclared": "MPLv2.0",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/nss-util@3.90.0-1.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: nss-util@3.90.0-1.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "openldap",
+      "SPDXID": "SPDXRef-Package-e0c6c0a9f988741e",
+      "versionInfo": "2.4.44-25.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "3a20290a5f12a974488e7b38fd135d12"
+        }
+      ],
+      "sourceInfo": "built package from: openldap 2.4.44-25.el7_9",
+      "licenseConcluded": "OpenLDAP",
+      "licenseDeclared": "OpenLDAP",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/openldap@2.4.44-25.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: openldap@2.4.44-25.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "openssl-libs",
+      "SPDXID": "SPDXRef-Package-50b992a4019dc612",
+      "versionInfo": "1:1.0.2k-26.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "8da6b338a44c9bba81a8d4c6b9225ed0"
+        }
+      ],
+      "sourceInfo": "built package from: openssl 1:1.0.2k-26.el7_9",
+      "licenseConcluded": "OpenSSL",
+      "licenseDeclared": "OpenSSL",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/openssl-libs@1.0.2k-26.el7_9?arch=x86_64\u0026distro=redhat-7.9\u0026epoch=1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: openssl-libs@1.0.2k-26.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "p11-kit",
+      "SPDXID": "SPDXRef-Package-a19e822be9a06b66",
+      "versionInfo": "0.23.5-3.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "99c8763e83cb7206cb3ee3507e3bc62e"
+        }
+      ],
+      "sourceInfo": "built package from: p11-kit 0.23.5-3.el7",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/p11-kit@0.23.5-3.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: p11-kit@0.23.5-3.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "p11-kit-trust",
+      "SPDXID": "SPDXRef-Package-dad78dc139afeb3",
+      "versionInfo": "0.23.5-3.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "603b2fcedc83af9b2aed6bd4b44c8c55"
+        }
+      ],
+      "sourceInfo": "built package from: p11-kit 0.23.5-3.el7",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/p11-kit-trust@0.23.5-3.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: p11-kit-trust@0.23.5-3.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pam",
+      "SPDXID": "SPDXRef-Package-5a68a4e8a60f4d8d",
+      "versionInfo": "1.1.8-23.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "04610a8b727722ba3b1a1cab81f18de0"
+        }
+      ],
+      "sourceInfo": "built package from: pam 1.1.8-23.el7",
+      "licenseConcluded": "BSD-3-Clause AND GPL-2.0-or-later",
+      "licenseDeclared": "BSD-3-Clause AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/pam@1.1.8-23.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: pam@1.1.8-23.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "passwd",
+      "SPDXID": "SPDXRef-Package-598cf48c6d51360f",
+      "versionInfo": "0.79-6.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "3d2408a7cb27d7a117c86a6904114980"
+        }
+      ],
+      "sourceInfo": "built package from: passwd 0.79-6.el7",
+      "licenseConcluded": "BSD-3-Clause OR GPL-3.0-or-later",
+      "licenseDeclared": "BSD-3-Clause OR GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/passwd@0.79-6.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: passwd@0.79-6.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pcre",
+      "SPDXID": "SPDXRef-Package-5bb7e5b10ae943c0",
+      "versionInfo": "8.32-17.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "778977329d31f5a6ddb10c1dd3e8caa5"
+        }
+      ],
+      "sourceInfo": "built package from: pcre 8.32-17.el7",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/pcre@8.32-17.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: pcre@8.32-17.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pinentry",
+      "SPDXID": "SPDXRef-Package-d9684f945422df3a",
+      "versionInfo": "0.8.1-17.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "05b676dc478c2186eb3f0f3688fb1313"
+        }
+      ],
+      "sourceInfo": "built package from: pinentry 0.8.1-17.el7",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/pinentry@0.8.1-17.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: pinentry@0.8.1-17.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pkgconfig",
+      "SPDXID": "SPDXRef-Package-484dc19a7d47d741",
+      "versionInfo": "1:0.27.1-4.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1573d8fcb939a3bee0d3de9ce92be4fe"
+        }
+      ],
+      "sourceInfo": "built package from: pkgconfig 1:0.27.1-4.el7",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/pkgconfig@0.27.1-4.el7?arch=x86_64\u0026distro=redhat-7.9\u0026epoch=1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: pkgconfig@0.27.1-4.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "popt",
+      "SPDXID": "SPDXRef-Package-5005df2f38d64bd7",
+      "versionInfo": "1.13-16.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f82a7d95977221834999c5ed7fb2e9e8"
+        }
+      ],
+      "sourceInfo": "built package from: popt 1.13-16.el7",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/popt@1.13-16.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: popt@1.13-16.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "procps-ng",
+      "SPDXID": "SPDXRef-Package-326905adde66024d",
+      "versionInfo": "3.3.10-28.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "998467e544e72c3747ecc11714609b61"
+        }
+      ],
+      "sourceInfo": "built package from: procps-ng 3.3.10-28.el7",
+      "licenseConcluded": "GPL-3.0-or-later AND GPL-2.0-only AND GPL-2.0-or-later AND GPL-3.0-or-later AND LGPLv2+",
+      "licenseDeclared": "GPL-3.0-or-later AND GPL-2.0-only AND GPL-2.0-or-later AND GPL-3.0-or-later AND LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/procps-ng@3.3.10-28.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: procps-ng@3.3.10-28.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pth",
+      "SPDXID": "SPDXRef-Package-42966f2b3ee6300e",
+      "versionInfo": "2.0.7-23.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "fb3d88415a95635c4a910c13b0c1ada8"
+        }
+      ],
+      "sourceInfo": "built package from: pth 2.0.7-23.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/pth@2.0.7-23.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: pth@2.0.7-23.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pycurl",
+      "SPDXID": "SPDXRef-Package-162794a3664b8e7d",
+      "versionInfo": "7.19.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "LGPL-MIT",
+      "licenseDeclared": "LGPL-MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pycurl@7.19.0"
+        }
+      ],
+      "attributionTexts": [
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pygpgme",
+      "SPDXID": "SPDXRef-Package-1fd31bf3c5b2dc8f",
+      "versionInfo": "0.3-9.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "a25a6186941dbcbc69687286d6a9c8cd"
+        }
+      ],
+      "sourceInfo": "built package from: pygpgme 0.3-9.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/pygpgme@0.3-9.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: pygpgme@0.3-9.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pygpgme",
+      "SPDXID": "SPDXRef-Package-2d6e3f2c500e3f30",
+      "versionInfo": "0.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "LGPL-3.0-only",
+      "licenseDeclared": "LGPL-3.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pygpgme@0.3"
+        }
+      ],
+      "attributionTexts": [
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pyliblzma",
+      "SPDXID": "SPDXRef-Package-6648c206339908cb",
+      "versionInfo": "0.5.3-11.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "dcce77e810aec761582e40e9dcd479ea"
+        }
+      ],
+      "sourceInfo": "built package from: pyliblzma 0.5.3-11.el7",
+      "licenseConcluded": "LGPLv3+",
+      "licenseDeclared": "LGPLv3+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/pyliblzma@0.5.3-11.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: pyliblzma@0.5.3-11.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pyliblzma",
+      "SPDXID": "SPDXRef-Package-ca2404c3d78fe395",
+      "versionInfo": "0.5.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "LGPL-3.0-only",
+      "licenseDeclared": "LGPL-3.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pyliblzma@0.5.3"
+        }
+      ],
+      "attributionTexts": [
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python",
+      "SPDXID": "SPDXRef-Package-9c80ba4ea4924143",
+      "versionInfo": "2.7.5-94.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7f408ea237ff2bdfc7063b886aa6601a"
+        }
+      ],
+      "sourceInfo": "built package from: python 2.7.5-94.el7_9",
+      "licenseConcluded": "Python",
+      "licenseDeclared": "Python",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/python@2.7.5-94.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python@2.7.5-94.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python-iniparse",
+      "SPDXID": "SPDXRef-Package-a70467379d7d5444",
+      "versionInfo": "0.4-9.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "28914f742651083309f1832fa5cad644"
+        }
+      ],
+      "sourceInfo": "built package from: python-iniparse 0.4-9.el7",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/python-iniparse@0.4-9.el7?arch=noarch\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python-iniparse@0.4-9.el7.noarch",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python-libs",
+      "SPDXID": "SPDXRef-Package-33a869ee4632d3bd",
+      "versionInfo": "2.7.5-94.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "915b1d22e887829d24f0ce4cedf9a1bc"
+        }
+      ],
+      "sourceInfo": "built package from: python 2.7.5-94.el7_9",
+      "licenseConcluded": "Python",
+      "licenseDeclared": "Python",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/python-libs@2.7.5-94.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python-libs@2.7.5-94.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python-pkg",
+      "SPDXID": "SPDXRef-Application-ace32df0b6bdbf7",
+      "downloadLocation": "NONE",
+      "sourceInfo": "Python",
+      "copyrightText": "",
+      "primaryPackagePurpose": "APPLICATION"
+    },
+    {
+      "name": "python-pycurl",
+      "SPDXID": "SPDXRef-Package-fcdbfe153410090b",
+      "versionInfo": "7.19.0-19.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "18d691925ade593d4f51dc91fe799229"
+        }
+      ],
+      "sourceInfo": "built package from: python-pycurl 7.19.0-19.el7",
+      "licenseConcluded": "LGPLv2+ OR MIT",
+      "licenseDeclared": "LGPLv2+ OR MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/python-pycurl@7.19.0-19.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python-pycurl@7.19.0-19.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python-urlgrabber",
+      "SPDXID": "SPDXRef-Package-adee92363deb579d",
+      "versionInfo": "3.10-10.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "cb9db21a1709049e1f6f1680411e87b8"
+        }
+      ],
+      "sourceInfo": "built package from: python-urlgrabber 3.10-10.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/python-urlgrabber@3.10-10.el7?arch=noarch\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python-urlgrabber@3.10-10.el7.noarch",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pyxattr",
+      "SPDXID": "SPDXRef-Package-757544309873d03e",
+      "versionInfo": "0.5.1-5.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "bf4d2e5b579ba6678d93d7e4f6fb3e88"
+        }
+      ],
+      "sourceInfo": "built package from: pyxattr 0.5.1-5.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/pyxattr@0.5.1-5.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: pyxattr@0.5.1-5.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pyxattr",
+      "SPDXID": "SPDXRef-Package-9baa35f1c5e12c75",
+      "versionInfo": "0.5.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "LGPL-3.0-only",
+      "licenseDeclared": "LGPL-3.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pyxattr@0.5.1"
+        }
+      ],
+      "attributionTexts": [
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "qrencode-libs",
+      "SPDXID": "SPDXRef-Package-861e703226e811d9",
+      "versionInfo": "3.4.1-3.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1e16ed7c3ff8dff0db6a43880b7d7052"
+        }
+      ],
+      "sourceInfo": "built package from: qrencode 3.4.1-3.el7",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/qrencode-libs@3.4.1-3.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: qrencode-libs@3.4.1-3.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "readline",
+      "SPDXID": "SPDXRef-Package-d727f14169d8c7e7",
+      "versionInfo": "6.2-11.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "4052ae3dc16f990498e3e2d055308646"
+        }
+      ],
+      "sourceInfo": "built package from: readline 6.2-11.el7",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/readline@6.2-11.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: readline@6.2-11.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "redhat",
+      "SPDXID": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "versionInfo": "7.9",
+      "downloadLocation": "NONE",
+      "copyrightText": "",
+      "primaryPackagePurpose": "OPERATING-SYSTEM"
+    },
+    {
+      "name": "rootfiles",
+      "SPDXID": "SPDXRef-Package-dcbd42af71106d8f",
+      "versionInfo": "8.1-11.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "ee76b222f8ec3d36b7fec614cf0812b4"
+        }
+      ],
+      "sourceInfo": "built package from: rootfiles 8.1-11.el7",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/rootfiles@8.1-11.el7?arch=noarch\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rootfiles@8.1-11.el7.noarch",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "rpm",
+      "SPDXID": "SPDXRef-Package-63f333e8a7a48225",
+      "versionInfo": "4.11.3-48.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f1579de08deccaeadb9db9e87519fea8"
+        }
+      ],
+      "sourceInfo": "built package from: rpm 4.11.3-48.el7_9",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/rpm@4.11.3-48.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rpm@4.11.3-48.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "rpm-build-libs",
+      "SPDXID": "SPDXRef-Package-ea68f4ddbeec40e0",
+      "versionInfo": "4.11.3-48.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "06cd5d9a5373d76e17073db2704c70ff"
+        }
+      ],
+      "sourceInfo": "built package from: rpm 4.11.3-48.el7_9",
+      "licenseConcluded": "GPL-2.0-or-later AND LGPLv2+ WITH exceptions",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPLv2+ WITH exceptions",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/rpm-build-libs@4.11.3-48.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rpm-build-libs@4.11.3-48.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "rpm-libs",
+      "SPDXID": "SPDXRef-Package-ce84f556602320df",
+      "versionInfo": "4.11.3-48.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "9da395f643d8de43f53ff613a5d9f27a"
+        }
+      ],
+      "sourceInfo": "built package from: rpm 4.11.3-48.el7_9",
+      "licenseConcluded": "GPL-2.0-or-later AND LGPLv2+ WITH exceptions",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPLv2+ WITH exceptions",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/rpm-libs@4.11.3-48.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rpm-libs@4.11.3-48.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "rpm-python",
+      "SPDXID": "SPDXRef-Package-becbbcd890aa389e",
+      "versionInfo": "4.11.3-48.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "15e57e04fc9ac7806c6d12ffb1d7bedf"
+        }
+      ],
+      "sourceInfo": "built package from: rpm 4.11.3-48.el7_9",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/rpm-python@4.11.3-48.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rpm-python@4.11.3-48.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "sed",
+      "SPDXID": "SPDXRef-Package-2c8311989b9594f6",
+      "versionInfo": "4.2.2-7.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "21037d08d70fb866faaa4bdb842d6666"
+        }
+      ],
+      "sourceInfo": "built package from: sed 4.2.2-7.el7",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/sed@4.2.2-7.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: sed@4.2.2-7.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "setup",
+      "SPDXID": "SPDXRef-Package-a8e38fa31ca578e0",
+      "versionInfo": "2.8.71-11.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "e5c5a5702a2646903c866d8ab38b48b1"
+        }
+      ],
+      "sourceInfo": "built package from: setup 2.8.71-11.el7",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/setup@2.8.71-11.el7?arch=noarch\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: setup@2.8.71-11.el7.noarch",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "shadow-utils",
+      "SPDXID": "SPDXRef-Package-ba232b704654ade7",
+      "versionInfo": "2:4.6-5.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1893b12828013caf582beb3e00e51552"
+        }
+      ],
+      "sourceInfo": "built package from: shadow-utils 2:4.6-5.el7",
+      "licenseConcluded": "BSD-3-Clause AND GPL-2.0-or-later",
+      "licenseDeclared": "BSD-3-Clause AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/shadow-utils@4.6-5.el7?arch=x86_64\u0026distro=redhat-7.9\u0026epoch=2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: shadow-utils@4.6-5.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "shared-mime-info",
+      "SPDXID": "SPDXRef-Package-fd797cb5b8b1a677",
+      "versionInfo": "1.8-5.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "dc56fcec721b3179ab0740a0bbda6f12"
+        }
+      ],
+      "sourceInfo": "built package from: shared-mime-info 1.8-5.el7",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/shared-mime-info@1.8-5.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: shared-mime-info@1.8-5.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "sl",
+      "SPDXID": "SPDXRef-ContainerImage-19a0469b2f46b0bc",
+      "downloadLocation": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:oci/sl@sha256%3A8c01130b092a1cc656f3697449cb19d0d5887b3353345f06bb46c26af3c6255a?arch=amd64\u0026repository_url=index.docker.io%2Flibrary%2Fsl"
+        }
+      ],
+      "attributionTexts": [
+        "SchemaVersion: 2",
+        "ImageID: sha256:0c8d46a63b76ad1eaaf3fb469b002a067e7f91e4d1289aab204f019c1bcd5efe",
+        "RepoDigest: sl@sha256:8c01130b092a1cc656f3697449cb19d0d5887b3353345f06bb46c26af3c6255a",
+        "DiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96",
+        "RepoTag: sl:latest"
+      ],
+      "primaryPackagePurpose": "CONTAINER"
+    },
+    {
+      "name": "sl-release",
+      "SPDXID": "SPDXRef-Package-79e09fc53b751193",
+      "versionInfo": "7.9-1.sl7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "207dbd19724f50dfb14a02b6b5560502"
+        }
+      ],
+      "sourceInfo": "built package from: sl-release 7.9-1.sl7",
+      "licenseConcluded": "GPL-2.0-only",
+      "licenseDeclared": "GPL-2.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/sl-release@7.9-1.sl7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: sl-release@7.9-1.sl7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "sqlite",
+      "SPDXID": "SPDXRef-Package-9f7efbff352ac1e1",
+      "versionInfo": "3.7.17-8.el7_7.1",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "de16c67497ee49e6980ac0b5864ab817"
+        }
+      ],
+      "sourceInfo": "built package from: sqlite 3.7.17-8.el7_7.1",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/sqlite@3.7.17-8.el7_7.1?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: sqlite@3.7.17-8.el7_7.1.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "systemd",
+      "SPDXID": "SPDXRef-Package-a00c08a8480af19d",
+      "versionInfo": "219-78.el7_9.9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "8a048842e57fd332e652ab4267d32e5c"
+        }
+      ],
+      "sourceInfo": "built package from: systemd 219-78.el7_9.9",
+      "licenseConcluded": "LGPLv2+ AND MIT AND GPL-2.0-or-later",
+      "licenseDeclared": "LGPLv2+ AND MIT AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/systemd@219-78.el7_9.9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: systemd@219-78.el7_9.9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "systemd-libs",
+      "SPDXID": "SPDXRef-Package-d40684b183c55833",
+      "versionInfo": "219-78.el7_9.9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "fc18fc4271a1d1f6be32e46f7cd425ea"
+        }
+      ],
+      "sourceInfo": "built package from: systemd 219-78.el7_9.9",
+      "licenseConcluded": "LGPLv2+ AND MIT",
+      "licenseDeclared": "LGPLv2+ AND MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/systemd-libs@219-78.el7_9.9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: systemd-libs@219-78.el7_9.9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "tar",
+      "SPDXID": "SPDXRef-Package-1f1806273bbf6655",
+      "versionInfo": "2:1.26-35.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1c44f33ceccda6f1c283274610ca88f3"
+        }
+      ],
+      "sourceInfo": "built package from: tar 2:1.26-35.el7",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/tar@1.26-35.el7?arch=x86_64\u0026distro=redhat-7.9\u0026epoch=2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: tar@1.26-35.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "tzdata",
+      "SPDXID": "SPDXRef-Package-ea79fe2a18953953",
+      "versionInfo": "2023c-1.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "697d5a794ba97b7f345078c7102fbd05"
+        }
+      ],
+      "sourceInfo": "built package from: tzdata 2023c-1.el7",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/tzdata@2023c-1.el7?arch=noarch\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: tzdata@2023c-1.el7.noarch",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "urlgrabber",
+      "SPDXID": "SPDXRef-Package-12ea32cf256294d8",
+      "versionInfo": "3.10",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "LGPL-3.0-only",
+      "licenseDeclared": "LGPL-3.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/urlgrabber@3.10"
+        }
+      ],
+      "attributionTexts": [
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "ustr",
+      "SPDXID": "SPDXRef-Package-aed6c266e2d69a6d",
+      "versionInfo": "1.0.4-16.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "829f65a2b46527b8034706d36a9a671e"
+        }
+      ],
+      "sourceInfo": "built package from: ustr 1.0.4-16.el7",
+      "licenseConcluded": "MIT OR LGPLv2+ OR BSD-3-Clause",
+      "licenseDeclared": "MIT OR LGPLv2+ OR BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/ustr@1.0.4-16.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: ustr@1.0.4-16.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "util-linux",
+      "SPDXID": "SPDXRef-Package-b2aad6f2169ad7e7",
+      "versionInfo": "2.23.2-65.el7_9.1",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "a71c52cf9d2c28fb95ddcaaaa8af0e67"
+        }
+      ],
+      "sourceInfo": "built package from: util-linux 2.23.2-65.el7_9.1",
+      "licenseConcluded": "GPL-2.0-only AND GPL-2.0-or-later AND LGPLv2+ AND BSD-3-Clause WITH advertising AND Unlicense",
+      "licenseDeclared": "GPL-2.0-only AND GPL-2.0-or-later AND LGPLv2+ AND BSD-3-Clause WITH advertising AND Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/util-linux@2.23.2-65.el7_9.1?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: util-linux@2.23.2-65.el7_9.1.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "vim-minimal",
+      "SPDXID": "SPDXRef-Package-d39f184682c22e9f",
+      "versionInfo": "2:7.4.629-8.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "9f2eba0b8226e36e08105fcdb8579e71"
+        }
+      ],
+      "sourceInfo": "built package from: vim 2:7.4.629-8.el7_9",
+      "licenseConcluded": "Vim",
+      "licenseDeclared": "Vim",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/vim-minimal@7.4.629-8.el7_9?arch=x86_64\u0026distro=redhat-7.9\u0026epoch=2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: vim-minimal@7.4.629-8.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "which",
+      "SPDXID": "SPDXRef-Package-ffa40c3fa1482a5f",
+      "versionInfo": "2.20-7.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "26f066950dae8c71b78e92decff399ca"
+        }
+      ],
+      "sourceInfo": "built package from: which 2.20-7.el7",
+      "licenseConcluded": "GPL-3.0-only",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/which@2.20-7.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: which@2.20-7.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "wsgiref",
+      "SPDXID": "SPDXRef-Package-7d8d20ca1ce123b6",
+      "versionInfo": "0.1.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "PSF AND ZPL",
+      "licenseDeclared": "PSF AND ZPL",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/wsgiref@0.1.2"
+        }
+      ],
+      "attributionTexts": [
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "xz",
+      "SPDXID": "SPDXRef-Package-247fdcb09411d496",
+      "versionInfo": "5.2.2-2.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7587be3903adba8f3364c63f85781c8b"
+        }
+      ],
+      "sourceInfo": "built package from: xz 5.2.2-2.el7_9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/xz@5.2.2-2.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: xz@5.2.2-2.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "xz-libs",
+      "SPDXID": "SPDXRef-Package-8270145a280051a",
+      "versionInfo": "5.2.2-2.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "9a6aec721baaae1ecd10fdf1dc63532f"
+        }
+      ],
+      "sourceInfo": "built package from: xz 5.2.2-2.el7_9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/xz-libs@5.2.2-2.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: xz-libs@5.2.2-2.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "yum",
+      "SPDXID": "SPDXRef-Package-3450fcaaa3e17fe8",
+      "versionInfo": "3.4.3-168.sl7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "cff0364116e47c368a923db0238f4fd0"
+        }
+      ],
+      "sourceInfo": "built package from: yum 3.4.3-168.sl7",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/yum@3.4.3-168.sl7?arch=noarch\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: yum@3.4.3-168.sl7.noarch",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "yum-conf-repos",
+      "SPDXID": "SPDXRef-Package-ffd70075fd498dd2",
+      "versionInfo": "1.0-1.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7facd5a7e2d409b4f6addb21dae8722b"
+        }
+      ],
+      "sourceInfo": "built package from: yum-conf-repos 1.0-1.el7",
+      "licenseConcluded": "GPL-3.0-only",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/yum-conf-repos@1.0-1.el7?arch=noarch\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: yum-conf-repos@1.0-1.el7.noarch",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "yum-metadata-parser",
+      "SPDXID": "SPDXRef-Package-97ceece4210e8ca0",
+      "versionInfo": "1.1.4-10.el7",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "c02fa2f6cc17b67c863c6442c71d3c53"
+        }
+      ],
+      "sourceInfo": "built package from: yum-metadata-parser 1.1.4-10.el7",
+      "licenseConcluded": "GPL-2.0-only",
+      "licenseDeclared": "GPL-2.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/yum-metadata-parser@1.1.4-10.el7?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: yum-metadata-parser@1.1.4-10.el7.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "yum-metadata-parser",
+      "SPDXID": "SPDXRef-Package-cb9066a7dec353a",
+      "versionInfo": "1.1.4",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "UNKNOWN",
+      "licenseDeclared": "UNKNOWN",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/yum-metadata-parser@1.1.4"
+        }
+      ],
+      "attributionTexts": [
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "yum-plugin-ovl",
+      "SPDXID": "SPDXRef-Package-8db631f42ad098bb",
+      "versionInfo": "1.1.31-54.el7_8",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "2b2cd9154b168eef69a9a616865044aa"
+        }
+      ],
+      "sourceInfo": "built package from: yum-utils 1.1.31-54.el7_8",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/yum-plugin-ovl@1.1.31-54.el7_8?arch=noarch\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: yum-plugin-ovl@1.1.31-54.el7_8.noarch",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "zlib",
+      "SPDXID": "SPDXRef-Package-36d9ce8956e07827",
+      "versionInfo": "1.2.7-21.el7_9",
+      "supplier": "Organization: Scientific Linux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f42edea40f8afa603dc70fda7184f367"
+        }
+      ],
+      "sourceInfo": "built package from: zlib 1.2.7-21.el7_9",
+      "licenseConcluded": "Zlib AND Boost",
+      "licenseDeclared": "Zlib AND Boost",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/redhat/zlib@1.2.7-21.el7_9?arch=x86_64\u0026distro=redhat-7.9"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: zlib@1.2.7-21.el7_9.x86_64",
+        "LayerDiffID: sha256:ec318773da5e401926ab275d1ab8c525fc17a3ee81aa80ea89f7bd4be03c1f96"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    }
+  ],
+  "files": [
+    {
+      "fileName": "usr/lib/python2.7/site-packages/iniparse-0.4-py2.7.egg-info",
+      "SPDXID": "SPDXRef-File-481385c5529b8d05",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b34dd18d9a06993bdf4f3157122f66d992e1f192"
+        }
+      ],
+      "copyrightText": ""
+    },
+    {
+      "fileName": "usr/lib/python2.7/site-packages/urlgrabber-3.10-py2.7.egg-info",
+      "SPDXID": "SPDXRef-File-a44c1d29a01cef38",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1eb1f3f60ea670029cc1bd5805e89986bf6e6bab"
+        }
+      ],
+      "copyrightText": ""
+    },
+    {
+      "fileName": "usr/lib64/python2.7/lib-dynload/Python-2.7.5-py2.7.egg-info",
+      "SPDXID": "SPDXRef-File-dec2db9f3fe8cd1c",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a7bf7a7dea32484d954e633dc429eb1c5de22d4f"
+        }
+      ],
+      "copyrightText": ""
+    },
+    {
+      "fileName": "usr/lib64/python2.7/site-packages/pycurl-7.19.0-py2.7.egg-info",
+      "SPDXID": "SPDXRef-File-df7cc54bbaababd0",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8dda5fbffd2d20e56515c4e76e97fa469b4e2d90"
+        }
+      ],
+      "copyrightText": ""
+    },
+    {
+      "fileName": "usr/lib64/python2.7/site-packages/pygpgme-0.3-py2.7.egg-info",
+      "SPDXID": "SPDXRef-File-b4f0cdd43892e3c4",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "fe83c7680e88ac6ea955cf05dcaf77cf461ab080"
+        }
+      ],
+      "copyrightText": ""
+    },
+    {
+      "fileName": "usr/lib64/python2.7/site-packages/pyliblzma-0.5.3-py2.7.egg-info/PKG-INFO",
+      "SPDXID": "SPDXRef-File-e1559a8bd10954ac",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1d3cc0e3cffedc9e32c93ee4040bea23391608ee"
+        }
+      ],
+      "copyrightText": ""
+    },
+    {
+      "fileName": "usr/lib64/python2.7/site-packages/pyxattr-0.5.1-py2.7.egg-info/PKG-INFO",
+      "SPDXID": "SPDXRef-File-54d6386c1f01aa92",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "80e53585c7496917a202c88754f1f25b09751eef"
+        }
+      ],
+      "copyrightText": ""
+    },
+    {
+      "fileName": "usr/lib64/python2.7/site-packages/yum_metadata_parser-1.1.4-py2.7.egg-info",
+      "SPDXID": "SPDXRef-File-9264599f1e5fb39b",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cf33ac371ac154d9ccc96d1f862abb9953a7f421"
+        }
+      ],
+      "copyrightText": ""
+    },
+    {
+      "fileName": "usr/lib64/python2.7/wsgiref.egg-info",
+      "SPDXID": "SPDXRef-File-9571d862f0f26ec3",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cc54c2d17fd0540477a4de3f222972ef9a9f6862"
+        }
+      ],
+      "copyrightText": ""
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-ContainerImage-19a0469b2f46b0bc",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-ContainerImage-19a0469b2f46b0bc",
+      "relatedSpdxElement": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-ce4d2fc80698cd84",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-45e956b3d525b749",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-a76db2140c065c84",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-3f12e69cc17b4bcd",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-98eabf81bf6f3c6e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-cbe42caa84778ccd",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-af3a1985e6b58a71",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-2bdc1401366ffbd9",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-d262d917689e1df1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-c326dfc6e7fe1678",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-90ae8fe531e33a16",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-f652973e86df5b34",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-6fb70e8416a3e2b0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-b421b40430b4365a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-9468ce3b90588689",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-e247ae1c2a876845",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-b4a70788ed4225",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-dbf0e278d5046b3",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-c65259e04b0936e6",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-bcb1ba8d44a85a62",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-a0438cd176ac5f8",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-910344236c8cf6c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-bf9199c1d271707c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-dd20c56639d8abde",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-9010db4264d3c520",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-a7d97dcbef17b685",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-9ca0cadf69a4052b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-b9da8bee4c920961",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-be3d46fd35cffa1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-632c26d7659f1b12",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-7969f9bdb2abd428",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-b51d564818b9e038",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-813237416f4d8c3e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-5ced1be851ec0425",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-a2c2c65da04a3532",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-f7903b37c5cdfe6",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-b1f213f0e126eeeb",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-e9d692fb054e96fa",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-70d328d403131406",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-78437ff9a7fecfcb",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-78ae96c64126ff23",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-13169994c88dd562",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-95450a84623975ae",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-a38844e258f7fb65",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-faefa59cd5b37682",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-c213e9c9234920e8",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-e4b226cbc4c3eea9",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-fcaeb8974fef86c7",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-f1f45531d1bbc0ab",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-3d0bd45f51b9635b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-8ada038ebb8dca1d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-509185300cbbb3f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-fd4f3f828d9f4caf",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-a71d1a75715f2f58",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-f5734c6e72efe327",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-967e6edb66f41cf6",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-9cb8d07e87aaabb0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-485f54de0077f82",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-23297b02057c1bef",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-8f2ce10cd35b8360",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-ff3170fbd25142d8",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-3d45623b1234b785",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-d698087e09dc7b8e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-50d1fe865da5332b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-f08937e5dd54560b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-8185848b2833e255",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-fad6ee292a8f4dac",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-eb2999c8f1d76a00",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-d379ac3bfc3189bb",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-83af5b284c839801",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-b3b6da42a48c1188",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-dc114322ac95af62",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-4474a1907c45054b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-11db11e6b2bccf9f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-7d437d3159818b66",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-41746c369640afd2",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-f7afca4dd24d671c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-238095d117ca3c24",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-ca102867d6fba3b5",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-a1efd8e292694470",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-1e6bc5e756966989",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-6c5097825349aa72",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-ab8a2ebeb97ec3ca",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-5f987f66f99ba3e5",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-58da8adc86d7ae0d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-b75a0224c1d44641",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-98ca7ee4753c0df",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-d13bed9e4ca190c3",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-7c34bfe1faef2e1f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-c736ea1d91f85604",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-3a36f65c138527a8",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-6b3c87ffc5b82a49",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-b252145b7c341034",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-d724b11d8f3d6dbf",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-7cc6ccfaec46f2ff",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-eb092afb57ec687f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-6b2ff96fae55beb9",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-b0d92135adeaa7af",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-25da728ee4cf0f76",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-e0c6c0a9f988741e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-50b992a4019dc612",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-a19e822be9a06b66",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-dad78dc139afeb3",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-5a68a4e8a60f4d8d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-598cf48c6d51360f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-5bb7e5b10ae943c0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-d9684f945422df3a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-484dc19a7d47d741",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-5005df2f38d64bd7",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-326905adde66024d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-42966f2b3ee6300e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-1fd31bf3c5b2dc8f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-6648c206339908cb",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-9c80ba4ea4924143",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-a70467379d7d5444",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-33a869ee4632d3bd",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-fcdbfe153410090b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-adee92363deb579d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-757544309873d03e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-861e703226e811d9",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-d727f14169d8c7e7",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-dcbd42af71106d8f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-63f333e8a7a48225",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-ea68f4ddbeec40e0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-ce84f556602320df",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-becbbcd890aa389e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-2c8311989b9594f6",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-a8e38fa31ca578e0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-ba232b704654ade7",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-fd797cb5b8b1a677",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-79e09fc53b751193",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-9f7efbff352ac1e1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-a00c08a8480af19d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-d40684b183c55833",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-1f1806273bbf6655",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-ea79fe2a18953953",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-aed6c266e2d69a6d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-b2aad6f2169ad7e7",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-d39f184682c22e9f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-ffa40c3fa1482a5f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-247fdcb09411d496",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-8270145a280051a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-3450fcaaa3e17fe8",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-ffd70075fd498dd2",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-97ceece4210e8ca0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-8db631f42ad098bb",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-e7d36b96dc4dec5a",
+      "relatedSpdxElement": "SPDXRef-Package-36d9ce8956e07827",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-ContainerImage-19a0469b2f46b0bc",
+      "relatedSpdxElement": "SPDXRef-Application-ace32df0b6bdbf7",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7",
+      "relatedSpdxElement": "SPDXRef-Package-dc8e97050b80a6ff",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-dc8e97050b80a6ff",
+      "relatedSpdxElement": "SPDXRef-File-481385c5529b8d05",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7",
+      "relatedSpdxElement": "SPDXRef-Package-12ea32cf256294d8",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-12ea32cf256294d8",
+      "relatedSpdxElement": "SPDXRef-File-a44c1d29a01cef38",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7",
+      "relatedSpdxElement": "SPDXRef-Package-fb5aa3ef4a659f3a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-fb5aa3ef4a659f3a",
+      "relatedSpdxElement": "SPDXRef-File-dec2db9f3fe8cd1c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7",
+      "relatedSpdxElement": "SPDXRef-Package-162794a3664b8e7d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-162794a3664b8e7d",
+      "relatedSpdxElement": "SPDXRef-File-df7cc54bbaababd0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7",
+      "relatedSpdxElement": "SPDXRef-Package-2d6e3f2c500e3f30",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-2d6e3f2c500e3f30",
+      "relatedSpdxElement": "SPDXRef-File-b4f0cdd43892e3c4",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7",
+      "relatedSpdxElement": "SPDXRef-Package-ca2404c3d78fe395",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ca2404c3d78fe395",
+      "relatedSpdxElement": "SPDXRef-File-e1559a8bd10954ac",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7",
+      "relatedSpdxElement": "SPDXRef-Package-9baa35f1c5e12c75",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-9baa35f1c5e12c75",
+      "relatedSpdxElement": "SPDXRef-File-54d6386c1f01aa92",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7",
+      "relatedSpdxElement": "SPDXRef-Package-cb9066a7dec353a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-cb9066a7dec353a",
+      "relatedSpdxElement": "SPDXRef-File-9264599f1e5fb39b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7",
+      "relatedSpdxElement": "SPDXRef-Package-7d8d20ca1ce123b6",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-7d8d20ca1ce123b6",
+      "relatedSpdxElement": "SPDXRef-File-9571d862f0f26ec3",
+      "relationshipType": "CONTAINS"
+    }
+  ]
+}

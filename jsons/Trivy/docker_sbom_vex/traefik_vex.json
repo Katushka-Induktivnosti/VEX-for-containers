@@ -1,0 +1,710 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/docker_scout/sboms/traefik_sbom.json",
+  "ArtifactType": "spdx",
+  "Metadata": {
+    "OS": {
+      "Family": "none",
+      "Name": ""
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-24557",
+          "PkgName": "github.com/docker/docker",
+          "InstalledVersion": "24.0.7+incompatible",
+          "FixedVersion": "25.0.2, 24.0.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-24557",
+          "PkgRef": "pkg:golang/github.com/docker/docker@24.0.7+incompatible",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "moby: classic builder cache poisoning",
+          "Description": "Moby is an open-source project created by Docker to enable software containerization. The classic builder cache system is prone to cache poisoning if the image is built FROM scratch. Also, changes to some instructions (most important being HEALTHCHECK and ONBUILD) would not cause a cache miss. An attacker with the knowledge of the Dockerfile someone is using could poison their cache by making them pull a specially crafted image that would be considered as a valid cache candidate for some build steps. 23.0+ users are only affected if they explicitly opted out of Buildkit (DOCKER_BUILDKIT=0 environment variable) or are using the /build API endpoint. All users on versions older than 23.0 could be impacted. Image build API endpoint (/build) and ImageBuild function from github.com/docker/docker/client is also affected as it the uses classic builder by default. Patches are included in 24.0.9 and 25.0.2 releases.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-346",
+            "CWE-345"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:L/I:H/A:L",
+              "V3Score": 6.9
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:L/I:H/A:L",
+              "V3Score": 6.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-24557",
+            "https://github.com/moby/moby",
+            "https://github.com/moby/moby/commit/3e230cfdcc989dc524882f6579f9e0dac77400ae",
+            "https://github.com/moby/moby/commit/fca702de7f71362c8d103073c7e4a1d0a467fadd",
+            "https://github.com/moby/moby/commit/fce6e0ca9bc000888de3daa157af14fa41fcd0ff",
+            "https://github.com/moby/moby/security/advisories/GHSA-xw73-rw38-6vjc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-24557",
+            "https://www.cve.org/CVERecord?id=CVE-2024-24557"
+          ],
+          "PublishedDate": "2024-02-01T17:15:10.953Z",
+          "LastModifiedDate": "2024-02-09T20:21:32.97Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-7218",
+          "PkgName": "github.com/hashicorp/nomad",
+          "InstalledVersion": "0.0.0-20231213195942-64e3dca9274b",
+          "FixedVersion": "0.10.3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-7218",
+          "PkgRef": "pkg:golang/github.com/hashicorp/nomad@0.0.0-20231213195942-64e3dca9274b#api",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "Allocation of Resources Without Limits or Throttling in HashiCorp Nomad",
+          "Description": "HashiCorp Nomad and Nonad Enterprise up to 0.10.2 HTTP/RPC services allowed unbounded resource usage, and were susceptible to unauthenticated denial of service. Fixed in 0.10.3.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/hashicorp/nomad",
+            "https://github.com/hashicorp/nomad/issues/7002",
+            "https://github.com/hashicorp/nomad/pull/7022",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-7218",
+            "https://www.hashicorp.com/blog/category/nomad",
+            "https://www.hashicorp.com/blog/category/nomad/"
+          ],
+          "PublishedDate": "2020-01-31T13:15:10.533Z",
+          "LastModifiedDate": "2022-02-20T07:01:03.77Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-7956",
+          "PkgName": "github.com/hashicorp/nomad",
+          "InstalledVersion": "0.0.0-20231213195942-64e3dca9274b",
+          "FixedVersion": "0.10.3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-7956",
+          "PkgRef": "pkg:golang/github.com/hashicorp/nomad@0.0.0-20231213195942-64e3dca9274b#api",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "Improper Certificate Validation in HashiCorp Nomad",
+          "Description": "HashiCorp Nomad and Nomad Enterprise up to 0.10.2 incorrectly validated role/region associated with TLS certificates used for mTLS RPC, and were susceptible to privilege escalation. Fixed in 0.10.3.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://github.com/hashicorp/nomad/issues/7003",
+            "https://github.com/hashicorp/nomad/pull/7023",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-7956",
+            "https://www.hashicorp.com/blog/category/nomad",
+            "https://www.hashicorp.com/blog/category/nomad/"
+          ],
+          "PublishedDate": "2020-01-31T13:15:10.877Z",
+          "LastModifiedDate": "2020-02-04T14:19:18.977Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3283",
+          "PkgName": "github.com/hashicorp/nomad",
+          "InstalledVersion": "0.0.0-20231213195942-64e3dca9274b",
+          "FixedVersion": "1.0.3, 0.12.10",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3283",
+          "PkgRef": "pkg:golang/github.com/hashicorp/nomad@0.0.0-20231213195942-64e3dca9274b#api",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "Improper Privilege Management in HashiCorp Nomad",
+          "Description": "HashiCorp Nomad and Nomad Enterprise up to 0.12.9 exec and java task drivers can access processes associated with other tasks on the same node. Fixed in 0.12.10, and 1.0.3.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://discuss.hashicorp.com/t/hcsec-2021-01-nomad-s-exec-and-java-task-drivers-did-not-isolate-processes/20332",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-3283"
+          ],
+          "PublishedDate": "2021-02-01T16:15:13.357Z",
+          "LastModifiedDate": "2021-02-04T20:53:55.447Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-37218",
+          "PkgName": "github.com/hashicorp/nomad",
+          "InstalledVersion": "0.0.0-20231213195942-64e3dca9274b",
+          "FixedVersion": "1.0.10, 1.1.4",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-37218",
+          "PkgRef": "pkg:golang/github.com/hashicorp/nomad@0.0.0-20231213195942-64e3dca9274b#api",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "nomad: Raft RPC privilege escalation",
+          "Description": "HashiCorp Nomad and Nomad Enterprise Raft RPC layer allows non-server agents with a valid certificate signed by the same CA to access server-only functionality, enabling privilege escalation. Fixed in 1.0.10 and 1.1.4.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-37218",
+            "https://discuss.hashicorp.com/t/hcsec-2021-21-nomad-raft-rpc-privilege-escalation/29023",
+            "https://github.com/hashicorp/nomad",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-37218",
+            "https://www.cve.org/CVERecord?id=CVE-2021-37218",
+            "https://www.hashicorp.com/blog/category/nomad"
+          ],
+          "PublishedDate": "2021-09-07T12:15:07.68Z",
+          "LastModifiedDate": "2021-09-13T14:39:22.797Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-43415",
+          "PkgName": "github.com/hashicorp/nomad",
+          "InstalledVersion": "0.0.0-20231213195942-64e3dca9274b",
+          "FixedVersion": "1.0.14, 1.1.8, 1.2.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-43415",
+          "PkgRef": "pkg:golang/github.com/hashicorp/nomad@0.0.0-20231213195942-64e3dca9274b#api",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "nomad: QEMU task driver allowed paths bypass with job args",
+          "Description": "HashiCorp Nomad and Nomad Enterprise up to 1.0.13, 1.1.7, and 1.2.0, with the QEMU task driver enabled, allowed authenticated users with job submission capabilities to bypass the configured allowed image paths. Fixed in 1.0.14, 1.1.8, and 1.2.1.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-43415",
+            "https://discuss.hashicorp.com/t/hcsec-2021-31-nomad-qemu-task-driver-allowed-paths-bypass-with-job-args/32288",
+            "https://github.com/hashicorp/nomad",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-43415",
+            "https://www.cve.org/CVERecord?id=CVE-2021-43415",
+            "https://www.hashicorp.com/blog/category/nomad"
+          ],
+          "PublishedDate": "2021-12-03T22:15:07.757Z",
+          "LastModifiedDate": "2023-08-08T14:22:24.967Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-14802",
+          "PkgName": "github.com/hashicorp/nomad",
+          "InstalledVersion": "0.0.0-20231213195942-64e3dca9274b",
+          "FixedVersion": "0.9.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-14802",
+          "PkgRef": "pkg:golang/github.com/hashicorp/nomad@0.0.0-20231213195942-64e3dca9274b#api",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "hashicorp/nomad: Information Exposure Through Environmental Variables",
+          "Description": "HashiCorp Nomad 0.5.0 through 0.9.4 (fixed in 0.9.5) reveals unintended environment variables to the rendering task during template rendering, aka GHSA-6hv3-7c34-4hx8. This applies to nomad/client/allocrunner/taskrunner/template.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2019-14802",
+            "https://advisories.gitlab.com/advisory/advgo_github_com_hashicorp_nomad_client_allocrunner_taskrunner_template_GMS_2022_818.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14802",
+            "https://github.com/hashicorp/nomad",
+            "https://github.com/hashicorp/nomad/commit/e8238305ef0b9ef37be3efd86a8d34bfbed5f63f",
+            "https://github.com/hashicorp/nomad/pull/6055",
+            "https://github.com/hashicorp/nomad/releases/tag/v0.9.5",
+            "https://nvd.nist.gov/vuln/detail/CVE-2019-14802",
+            "https://www.cve.org/CVERecord?id=CVE-2019-14802",
+            "https://www.hashicorp.com/blog/category/nomad"
+          ],
+          "PublishedDate": "2022-12-26T21:15:10.327Z",
+          "LastModifiedDate": "2023-01-05T18:19:38.297Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-32575",
+          "PkgName": "github.com/hashicorp/nomad",
+          "InstalledVersion": "0.0.0-20231213195942-64e3dca9274b",
+          "FixedVersion": "1.0.5, 0.12.12",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-32575",
+          "PkgRef": "pkg:golang/github.com/hashicorp/nomad@0.0.0-20231213195942-64e3dca9274b#api",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "nomad: bridge networking mode allows ARP spoofing from other bridged tasks on same node",
+          "Description": "HashiCorp Nomad and Nomad Enterprise up to version 1.0.4 bridge networking mode allows ARP spoofing from other bridged tasks on the same node. Fixed in 0.12.12, 1.0.5, and 1.1.0 RC1.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 6.5
+            },
+            "nvd": {
+              "V2Vector": "AV:A/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 3.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-32575",
+            "https://discuss.hashicorp.com/t/hcsec-2021-14-nomad-bridge-networking-mode-allows-arp-spoofing-from-other-bridged-tasks-on-same-node/24296",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-32575",
+            "https://www.cve.org/CVERecord?id=CVE-2021-32575",
+            "https://www.hashicorp.com/blog/category/nomad"
+          ],
+          "PublishedDate": "2021-06-17T19:15:07.933Z",
+          "LastModifiedDate": "2021-06-22T19:08:46.353Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-41606",
+          "PkgName": "github.com/hashicorp/nomad",
+          "InstalledVersion": "0.0.0-20231213195942-64e3dca9274b",
+          "FixedVersion": "1.2.13, 1.3.6",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41606",
+          "PkgRef": "pkg:golang/github.com/hashicorp/nomad@0.0.0-20231213195942-64e3dca9274b#api",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "Nomad Panics On Job Submission With Bad Artifact Stanza Source URL",
+          "Description": "HashiCorp Nomad and Nomad Enterprise 1.0.2 up to 1.2.12, and 1.3.5 jobs submitted with an artifact stanza using invalid S3 or GCS URLs can be used to crash client agents. Fixed in 1.2.13, 1.3.6, and 1.4.0.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://discuss.hashicorp.com",
+            "https://discuss.hashicorp.com/t/hcsec-2022-22-nomad-panics-on-job-submission-with-bad-artifact-stanza-source-url/45420",
+            "https://github.com/hashicorp/nomad",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41606"
+          ],
+          "PublishedDate": "2022-10-12T00:15:10.537Z",
+          "LastModifiedDate": "2022-10-13T17:16:16.88Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-22189",
+          "PkgName": "github.com/quic-go/quic-go",
+          "InstalledVersion": "0.40.1",
+          "FixedVersion": "0.42.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-22189",
+          "PkgRef": "pkg:golang/github.com/quic-go/quic-go@0.40.1",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "quic-go: memory exhaustion attack against QUIC's connection ID mechanism",
+          "Description": "quic-go is an implementation of the QUIC protocol in Go. Prior to version 0.42.0, an attacker can cause its peer to run out of memory sending a large number of `NEW_CONNECTION_ID` frames that retire old connection IDs. The receiver is supposed to respond to each retirement frame with a `RETIRE_CONNECTION_ID` frame. The attacker can prevent the receiver from sending out (the vast majority of) these `RETIRE_CONNECTION_ID` frames by collapsing the peers congestion window (by selectively acknowledging received packets) and by manipulating the peer's RTT estimate. Version 0.42.0 contains a patch for the issue. No known workarounds are available.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-22189",
+            "https://github.com/quic-go/quic-go",
+            "https://github.com/quic-go/quic-go/commit/4a99b816ae3ab03ae5449d15aac45147c85ed47a",
+            "https://github.com/quic-go/quic-go/security/advisories/GHSA-c33x-xqrf-c478",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-22189",
+            "https://seemann.io/posts/2024-03-19-exploiting-quics-connection-id-management",
+            "https://www.cve.org/CVERecord?id=CVE-2024-22189",
+            "https://www.youtube.com/watch?v=JqXtYcZAtIA\u0026t=3683s"
+          ],
+          "PublishedDate": "2024-04-04T15:15:37.99Z",
+          "LastModifiedDate": "2024-04-04T16:33:06.61Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28869",
+          "PkgName": "github.com/traefik/traefik",
+          "InstalledVersion": "0.0.0-20240212151404-0c8778639a3c",
+          "FixedVersion": "2.11.2",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28869",
+          "PkgRef": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "traefik: denial of service",
+          "Description": "Traefik is an HTTP reverse proxy and load balancer. In affected versions sending a GET request to any Traefik endpoint with the \"Content-length\" request header results in an indefinite hang with the default configuration. This vulnerability can be exploited by attackers to induce a denial of service. This vulnerability has been addressed in version 2.11.2 and 3.0.0-rc5. Users are advised to upgrade. For affected versions, this vulnerability can be mitigated by configuring the readTimeout option.\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-755"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28869",
+            "https://doc.traefik.io/traefik/routing/entrypoints/#respondingtimeouts",
+            "https://github.com/traefik/traefik",
+            "https://github.com/traefik/traefik/commit/240b83b77351dfd8cadb91c305b84e9d22e0f9c6",
+            "https://github.com/traefik/traefik/releases/tag/v2.11.2",
+            "https://github.com/traefik/traefik/releases/tag/v3.0.0-rc5",
+            "https://github.com/traefik/traefik/security/advisories/GHSA-4vwx-54mw-vqfw",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28869",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28869"
+          ],
+          "PublishedDate": "2024-04-12T22:15:07.08Z",
+          "LastModifiedDate": "2024-04-15T13:15:31.997Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-9321",
+          "PkgName": "github.com/traefik/traefik",
+          "InstalledVersion": "0.0.0-20240212151404-0c8778639a3c",
+          "FixedVersion": "2.1.4",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-9321",
+          "PkgRef": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "Improper Certificate Handling",
+          "Description": "configurationwatcher.go in Traefik 2.x before 2.1.4 and TraefikEE 2.0.0 mishandles the purging of certificate contents from providers before logging.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:U/RL:O/RC:C",
+              "V3Score": 4.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/containous/traefik/pull/6281",
+            "https://github.com/containous/traefik/releases/tag/v2.1.4",
+            "https://github.com/traefik/traefik",
+            "https://github.com/traefik/traefik/pull/6281",
+            "https://github.com/traefik/traefik/releases/tag/v2.1.4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-9321"
+          ],
+          "PublishedDate": "2020-03-16T19:15:11.443Z",
+          "LastModifiedDate": "2021-07-28T00:44:22.057Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-32813",
+          "PkgName": "github.com/traefik/traefik",
+          "InstalledVersion": "0.0.0-20240212151404-0c8778639a3c",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-32813",
+          "PkgRef": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "Header dropping in traefik",
+          "Description": "Traefik is an HTTP reverse proxy and load balancer. Prior to version 2.4.13, there exists a potential header vulnerability in Traefik's handling of the Connection header. Active exploitation of this issue is unlikely, as it requires that a removed header would lead to a privilege escalation, however, the Traefik team has addressed this issue to prevent any potential abuse. If one has a chain of Traefik middlewares, and one of them sets a request header, then sending a request with a certain Connection header will cause it to be removed before the request is sent. In this case, the backend does not see the request header. A patch is available in version 2.4.13. There are no known workarounds aside from upgrading.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-913"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 4.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "github.com/traefik/traefik",
+            "https://github.com/traefik/traefik/pull/8319/commits/cbaf86a93014a969b8accf39301932c17d0d73f9",
+            "https://github.com/traefik/traefik/releases/tag/v2.4.13",
+            "https://github.com/traefik/traefik/security/advisories/GHSA-m697-4v8f-55qg",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-32813"
+          ],
+          "PublishedDate": "2021-08-03T23:15:07.37Z",
+          "LastModifiedDate": "2021-08-11T23:40:43.39Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-7v4p-328v-8v5g",
+          "PkgName": "github.com/traefik/traefik",
+          "InstalledVersion": "0.0.0-20240212151404-0c8778639a3c",
+          "FixedVersion": "2.10.5, 3.0.0-beta4",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-7v4p-328v-8v5g",
+          "PkgRef": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "Traefik vulnerable to HTTP/2 request causing denial of service ",
+          "Description": "### Impact\n\nA vulnerability CVE-2023-39325 exists in [Go managing HTTP/2 requests](https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo/m/UDd7VKQuAAAJ?pli=1), which impacts Traefik. This vulnerability could be exploited to cause a denial of service.\n\n### References\n\n- [CVE-2023-44487](https://www.cve.org/CVERecord?id=CVE-2023-44487)\n- [CVE-2023-39325](https://www.cve.org/CVERecord?id=CVE-2023-39325)\n\n### Patches\n\n- https://github.com/traefik/traefik/releases/tag/v2.10.5\n- https://github.com/traefik/traefik/releases/tag/v3.0.0-beta4",
+          "Severity": "MEDIUM",
+          "References": [
+            "https://github.com/traefik/traefik",
+            "https://github.com/traefik/traefik/security/advisories/GHSA-7v4p-328v-8v5g",
+            "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo/m/UDd7VKQuAAAJ?pli=1"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2023-45288",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "0.20.0",
+          "FixedVersion": "0.23.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45288",
+          "PkgRef": "pkg:golang/golang.org/x/net@0.20.0",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "golang: net/http, x/net/http2: unlimited number of CONTINUATION frames causes DoS",
+          "Description": "An attacker may cause an HTTP/2 endpoint to read arbitrary amounts of header data by sending an excessive number of CONTINUATION frames. Maintaining HPACK state requires parsing and processing all HEADERS and CONTINUATION frames on a connection. When a request's headers exceed MaxHeaderBytes, no memory is allocated to store the excess headers, but they are still parsed. This permits an attacker to cause an HTTP/2 endpoint to read arbitrary amounts of header data, all associated with a request which is going to be rejected. These headers can include Huffman-encoded data which is significantly more expensive for the receiver to decode than for an attacker to send. The fix sets a limit on the amount of excess header frames we will process before closing a connection.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-45288",
+            "https://go.dev/cl/576155",
+            "https://go.dev/issue/65051",
+            "https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M",
+            "https://nowotarski.info/http2-continuation-flood-technical-details",
+            "https://nowotarski.info/http2-continuation-flood/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-45288",
+            "https://pkg.go.dev/vuln/GO-2024-2687",
+            "https://security.netapp.com/advisory/ntap-20240419-0009",
+            "https://security.netapp.com/advisory/ntap-20240419-0009/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-45288",
+            "https://www.kb.cert.org/vuls/id/421644"
+          ],
+          "PublishedDate": "2024-04-04T21:15:16.113Z",
+          "LastModifiedDate": "2024-04-19T07:15:08.747Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-24786",
+          "PkgName": "google.golang.org/protobuf",
+          "InstalledVersion": "1.31.0",
+          "FixedVersion": "1.33.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-24786",
+          "PkgRef": "pkg:golang/google.golang.org/protobuf@1.31.0",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "golang-protobuf: encoding/protojson, internal/encoding/json: infinite loop in protojson.Unmarshal when unmarshaling certain forms of invalid JSON",
+          "Description": "The protojson.Unmarshal function can enter an infinite loop when unmarshaling certain forms of invalid JSON. This condition can occur when unmarshaling into a message which contains a google.protobuf.Any value, or when the UnmarshalOptions.DiscardUnknown option is set.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-24786",
+            "https://github.com/protocolbuffers/protobuf-go",
+            "https://github.com/protocolbuffers/protobuf-go/commit/f01a588e5810b90996452eec4a28f22a0afae023",
+            "https://github.com/protocolbuffers/protobuf-go/releases/tag/v1.33.0",
+            "https://go.dev/cl/569356",
+            "https://groups.google.com/g/golang-announce/c/ArQ6CDgtEjY/",
+            "https://linux.oracle.com/cve/CVE-2024-24786.html",
+            "https://linux.oracle.com/errata/ELSA-2024-12329.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JDMBHAVSDU2FBDZ45U3A2VLSM35OJ2HU",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JDMBHAVSDU2FBDZ45U3A2VLSM35OJ2HU/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-24786",
+            "https://pkg.go.dev/vuln/GO-2024-2611",
+            "https://www.cve.org/CVERecord?id=CVE-2024-24786"
+          ],
+          "PublishedDate": "2024-03-05T23:15:07.82Z",
+          "LastModifiedDate": "2024-03-24T03:15:09.093Z"
+        }
+      ]
+    }
+  ]
+}

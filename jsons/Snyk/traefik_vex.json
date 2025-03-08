@@ -1,0 +1,974 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-ALPINE319-OPENSSL-6593965",
+      "cpes": [],
+      "title": "CVE-2024-2511",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.1.4-r6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.1.4-r6"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce",
+          "title": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d",
+          "title": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08",
+          "title": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08"
+        },
+        {
+          "url": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640",
+          "title": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20240408.txt",
+          "title": "https://www.openssl.org/news/secadv/20240408.txt"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2024-04-09T14:00:48.135216Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.19` relevant fixed versions and status._\n\nIssue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.\n## Remediation\nUpgrade `Alpine:3.19` `openssl` to version 3.1.4-r6 or higher.\n## References\n- [https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce](https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce)\n- [https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d](https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d)\n- [https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08](https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08)\n- [https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640](https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640)\n- [https://www.openssl.org/news/secadv/20240408.txt](https://www.openssl.org/news/secadv/20240408.txt)\n",
+      "epssDetails": {
+        "percentile": "0.14103",
+        "probability": "0.00045",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-2511"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-04-10T03:00:45.014550Z",
+      "disclosureTime": "2024-04-08T14:15:07.660000Z",
+      "packageManager": "alpine:3.19",
+      "publicationTime": "2024-04-10T03:00:45.046244Z",
+      "modificationTime": "2024-04-10T03:00:45.046480Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|traefik@latest",
+        "openssl/libcrypto3@3.1.4-r5"
+      ],
+      "upgradePath": [
+        false,
+        "openssl/libcrypto3@3.1.4-r6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl/libcrypto3",
+      "version": "3.1.4-r5",
+      "nearestFixedInVersion": "3.1.4-r6"
+    },
+    {
+      "id": "SNYK-ALPINE319-OPENSSL-6593965",
+      "cpes": [],
+      "title": "CVE-2024-2511",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.1.4-r6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.1.4-r6"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce",
+          "title": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d",
+          "title": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08",
+          "title": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08"
+        },
+        {
+          "url": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640",
+          "title": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20240408.txt",
+          "title": "https://www.openssl.org/news/secadv/20240408.txt"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2024-04-09T14:00:48.135216Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.19` relevant fixed versions and status._\n\nIssue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.\n## Remediation\nUpgrade `Alpine:3.19` `openssl` to version 3.1.4-r6 or higher.\n## References\n- [https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce](https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce)\n- [https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d](https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d)\n- [https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08](https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08)\n- [https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640](https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640)\n- [https://www.openssl.org/news/secadv/20240408.txt](https://www.openssl.org/news/secadv/20240408.txt)\n",
+      "epssDetails": {
+        "percentile": "0.14103",
+        "probability": "0.00045",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-2511"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-04-10T03:00:45.014550Z",
+      "disclosureTime": "2024-04-08T14:15:07.660000Z",
+      "packageManager": "alpine:3.19",
+      "publicationTime": "2024-04-10T03:00:45.046244Z",
+      "modificationTime": "2024-04-10T03:00:45.046480Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|traefik@latest",
+        "apk-tools/apk-tools@2.14.0-r5",
+        "openssl/libcrypto3@3.1.4-r5"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto3",
+      "version": "3.1.4-r5",
+      "nearestFixedInVersion": "3.1.4-r6"
+    },
+    {
+      "id": "SNYK-ALPINE319-OPENSSL-6593965",
+      "cpes": [],
+      "title": "CVE-2024-2511",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.1.4-r6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.1.4-r6"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce",
+          "title": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d",
+          "title": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08",
+          "title": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08"
+        },
+        {
+          "url": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640",
+          "title": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20240408.txt",
+          "title": "https://www.openssl.org/news/secadv/20240408.txt"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2024-04-09T14:00:48.135216Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.19` relevant fixed versions and status._\n\nIssue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.\n## Remediation\nUpgrade `Alpine:3.19` `openssl` to version 3.1.4-r6 or higher.\n## References\n- [https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce](https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce)\n- [https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d](https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d)\n- [https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08](https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08)\n- [https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640](https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640)\n- [https://www.openssl.org/news/secadv/20240408.txt](https://www.openssl.org/news/secadv/20240408.txt)\n",
+      "epssDetails": {
+        "percentile": "0.14103",
+        "probability": "0.00045",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-2511"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-04-10T03:00:45.014550Z",
+      "disclosureTime": "2024-04-08T14:15:07.660000Z",
+      "packageManager": "alpine:3.19",
+      "publicationTime": "2024-04-10T03:00:45.046244Z",
+      "modificationTime": "2024-04-10T03:00:45.046480Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|traefik@latest",
+        "busybox/ssl_client@1.36.1-r15",
+        "openssl/libcrypto3@3.1.4-r5"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto3",
+      "version": "3.1.4-r5",
+      "nearestFixedInVersion": "3.1.4-r6"
+    },
+    {
+      "id": "SNYK-ALPINE319-OPENSSL-6593965",
+      "cpes": [],
+      "title": "CVE-2024-2511",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.1.4-r6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.1.4-r6"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce",
+          "title": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d",
+          "title": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08",
+          "title": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08"
+        },
+        {
+          "url": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640",
+          "title": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20240408.txt",
+          "title": "https://www.openssl.org/news/secadv/20240408.txt"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2024-04-09T14:00:48.135216Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.19` relevant fixed versions and status._\n\nIssue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.\n## Remediation\nUpgrade `Alpine:3.19` `openssl` to version 3.1.4-r6 or higher.\n## References\n- [https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce](https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce)\n- [https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d](https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d)\n- [https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08](https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08)\n- [https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640](https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640)\n- [https://www.openssl.org/news/secadv/20240408.txt](https://www.openssl.org/news/secadv/20240408.txt)\n",
+      "epssDetails": {
+        "percentile": "0.14103",
+        "probability": "0.00045",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-2511"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-04-10T03:00:45.014550Z",
+      "disclosureTime": "2024-04-08T14:15:07.660000Z",
+      "packageManager": "alpine:3.19",
+      "publicationTime": "2024-04-10T03:00:45.046244Z",
+      "modificationTime": "2024-04-10T03:00:45.046480Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|traefik@latest",
+        "ca-certificates/ca-certificates@20230506-r0",
+        "openssl/libcrypto3@3.1.4-r5"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto3",
+      "version": "3.1.4-r5",
+      "nearestFixedInVersion": "3.1.4-r6"
+    },
+    {
+      "id": "SNYK-ALPINE319-OPENSSL-6593965",
+      "cpes": [],
+      "title": "CVE-2024-2511",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.1.4-r6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.1.4-r6"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce",
+          "title": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d",
+          "title": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08",
+          "title": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08"
+        },
+        {
+          "url": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640",
+          "title": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20240408.txt",
+          "title": "https://www.openssl.org/news/secadv/20240408.txt"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2024-04-09T14:00:48.135216Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.19` relevant fixed versions and status._\n\nIssue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.\n## Remediation\nUpgrade `Alpine:3.19` `openssl` to version 3.1.4-r6 or higher.\n## References\n- [https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce](https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce)\n- [https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d](https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d)\n- [https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08](https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08)\n- [https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640](https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640)\n- [https://www.openssl.org/news/secadv/20240408.txt](https://www.openssl.org/news/secadv/20240408.txt)\n",
+      "epssDetails": {
+        "percentile": "0.14103",
+        "probability": "0.00045",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-2511"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-04-10T03:00:45.014550Z",
+      "disclosureTime": "2024-04-08T14:15:07.660000Z",
+      "packageManager": "alpine:3.19",
+      "publicationTime": "2024-04-10T03:00:45.046244Z",
+      "modificationTime": "2024-04-10T03:00:45.046480Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|traefik@latest",
+        "apk-tools/apk-tools@2.14.0-r5",
+        "openssl/libssl3@3.1.4-r5",
+        "openssl/libcrypto3@3.1.4-r5"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto3",
+      "version": "3.1.4-r5",
+      "nearestFixedInVersion": "3.1.4-r6"
+    },
+    {
+      "id": "SNYK-ALPINE319-OPENSSL-6593965",
+      "cpes": [],
+      "title": "CVE-2024-2511",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.1.4-r6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.1.4-r6"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce",
+          "title": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d",
+          "title": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08",
+          "title": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08"
+        },
+        {
+          "url": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640",
+          "title": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20240408.txt",
+          "title": "https://www.openssl.org/news/secadv/20240408.txt"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2024-04-09T14:00:48.135216Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.19` relevant fixed versions and status._\n\nIssue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.\n## Remediation\nUpgrade `Alpine:3.19` `openssl` to version 3.1.4-r6 or higher.\n## References\n- [https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce](https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce)\n- [https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d](https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d)\n- [https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08](https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08)\n- [https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640](https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640)\n- [https://www.openssl.org/news/secadv/20240408.txt](https://www.openssl.org/news/secadv/20240408.txt)\n",
+      "epssDetails": {
+        "percentile": "0.14103",
+        "probability": "0.00045",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-2511"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-04-10T03:00:45.014550Z",
+      "disclosureTime": "2024-04-08T14:15:07.660000Z",
+      "packageManager": "alpine:3.19",
+      "publicationTime": "2024-04-10T03:00:45.046244Z",
+      "modificationTime": "2024-04-10T03:00:45.046480Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|traefik@latest",
+        "openssl/libssl3@3.1.4-r5"
+      ],
+      "upgradePath": [
+        false,
+        "openssl/libssl3@3.1.4-r6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl/libssl3",
+      "version": "3.1.4-r5",
+      "nearestFixedInVersion": "3.1.4-r6"
+    },
+    {
+      "id": "SNYK-ALPINE319-OPENSSL-6593965",
+      "cpes": [],
+      "title": "CVE-2024-2511",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.1.4-r6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.1.4-r6"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce",
+          "title": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d",
+          "title": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08",
+          "title": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08"
+        },
+        {
+          "url": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640",
+          "title": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20240408.txt",
+          "title": "https://www.openssl.org/news/secadv/20240408.txt"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2024-04-09T14:00:48.135216Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.19` relevant fixed versions and status._\n\nIssue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.\n## Remediation\nUpgrade `Alpine:3.19` `openssl` to version 3.1.4-r6 or higher.\n## References\n- [https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce](https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce)\n- [https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d](https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d)\n- [https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08](https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08)\n- [https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640](https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640)\n- [https://www.openssl.org/news/secadv/20240408.txt](https://www.openssl.org/news/secadv/20240408.txt)\n",
+      "epssDetails": {
+        "percentile": "0.14103",
+        "probability": "0.00045",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-2511"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-04-10T03:00:45.014550Z",
+      "disclosureTime": "2024-04-08T14:15:07.660000Z",
+      "packageManager": "alpine:3.19",
+      "publicationTime": "2024-04-10T03:00:45.046244Z",
+      "modificationTime": "2024-04-10T03:00:45.046480Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|traefik@latest",
+        "apk-tools/apk-tools@2.14.0-r5",
+        "openssl/libssl3@3.1.4-r5"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl3",
+      "version": "3.1.4-r5",
+      "nearestFixedInVersion": "3.1.4-r6"
+    },
+    {
+      "id": "SNYK-ALPINE319-OPENSSL-6593965",
+      "cpes": [],
+      "title": "CVE-2024-2511",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.1.4-r6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.1.4-r6"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce",
+          "title": "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d",
+          "title": "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d"
+        },
+        {
+          "url": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08",
+          "title": "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08"
+        },
+        {
+          "url": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640",
+          "title": "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20240408.txt",
+          "title": "https://www.openssl.org/news/secadv/20240408.txt"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2024-04-09T14:00:48.135216Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.19` relevant fixed versions and status._\n\nIssue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.\n## Remediation\nUpgrade `Alpine:3.19` `openssl` to version 3.1.4-r6 or higher.\n## References\n- [https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce](https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce)\n- [https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d](https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d)\n- [https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08](https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08)\n- [https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640](https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640)\n- [https://www.openssl.org/news/secadv/20240408.txt](https://www.openssl.org/news/secadv/20240408.txt)\n",
+      "epssDetails": {
+        "percentile": "0.14103",
+        "probability": "0.00045",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-2511"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-04-10T03:00:45.014550Z",
+      "disclosureTime": "2024-04-08T14:15:07.660000Z",
+      "packageManager": "alpine:3.19",
+      "publicationTime": "2024-04-10T03:00:45.046244Z",
+      "modificationTime": "2024-04-10T03:00:45.046480Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|traefik@latest",
+        "busybox/ssl_client@1.36.1-r15",
+        "openssl/libssl3@3.1.4-r5"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl3",
+      "version": "3.1.4-r5",
+      "nearestFixedInVersion": "3.1.4-r6"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 17,
+  "org": "katushka-induktivnosti",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.1\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "apk",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false
+  },
+  "docker": {
+    "baseImage": "alpine:3.19.1",
+    "baseImageRemediation": {
+      "code": "NO_REMEDIATION_AVAILABLE",
+      "advice": [
+        {
+          "message": "According to our scan, you are currently using the most secure version of the selected base image",
+          "bold": true
+        }
+      ]
+    }
+  },
+  "summary": "8 vulnerable dependency paths",
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 1,
+  "projectName": "docker-image|traefik",
+  "platform": "linux/amd64",
+  "hasUnknownVersions": false,
+  "path": "traefik",
+  "applications": [
+    {
+      "vulnerabilities": [],
+      "ok": true,
+      "dependencyCount": 1587,
+      "org": "katushka-induktivnosti",
+      "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.1\nignore: {}\npatch: {}\n",
+      "isPrivate": true,
+      "licensesPolicy": {
+        "severities": {},
+        "orgLicenseRules": {
+          "AGPL-1.0": {
+            "licenseType": "AGPL-1.0",
+            "severity": "high",
+            "instructions": ""
+          },
+          "AGPL-3.0": {
+            "licenseType": "AGPL-3.0",
+            "severity": "high",
+            "instructions": ""
+          },
+          "Artistic-1.0": {
+            "licenseType": "Artistic-1.0",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "Artistic-2.0": {
+            "licenseType": "Artistic-2.0",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "CDDL-1.0": {
+            "licenseType": "CDDL-1.0",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "CPOL-1.02": {
+            "licenseType": "CPOL-1.02",
+            "severity": "high",
+            "instructions": ""
+          },
+          "EPL-1.0": {
+            "licenseType": "EPL-1.0",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "GPL-2.0": {
+            "licenseType": "GPL-2.0",
+            "severity": "high",
+            "instructions": ""
+          },
+          "GPL-3.0": {
+            "licenseType": "GPL-3.0",
+            "severity": "high",
+            "instructions": ""
+          },
+          "LGPL-2.0": {
+            "licenseType": "LGPL-2.0",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "LGPL-2.1": {
+            "licenseType": "LGPL-2.1",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "LGPL-3.0": {
+            "licenseType": "LGPL-3.0",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "MPL-1.1": {
+            "licenseType": "MPL-1.1",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "MPL-2.0": {
+            "licenseType": "MPL-2.0",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "MS-RL": {
+            "licenseType": "MS-RL",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "SimPL-2.0": {
+            "licenseType": "SimPL-2.0",
+            "severity": "high",
+            "instructions": ""
+          }
+        }
+      },
+      "packageManager": "gomodules",
+      "ignoreSettings": {
+        "adminOnly": false,
+        "reasonRequired": false,
+        "disregardFilesystemIgnores": false
+      },
+      "docker": {},
+      "summary": "No known vulnerabilities",
+      "filesystemPolicy": false,
+      "uniqueCount": 0,
+      "targetFile": "/usr/local/bin/traefik",
+      "projectName": "github.com/traefik/traefik/v2",
+      "displayTargetFile": "/usr/local/bin/traefik",
+      "hasUnknownVersions": false,
+      "path": "traefik/traefik/traefik/v2"
+    }
+  ]
+}

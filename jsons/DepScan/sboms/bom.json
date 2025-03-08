@@ -1,0 +1,45 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:5ecf04a1-4619-42a0-a208-2a9f4ab79a05",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-05-13T16:16:33Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "10.5.1",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@10.5.1",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@10.5.1",
+          "author": "OWASP Foundation",
+          "publisher": "OWASP Foundation"
+        }
+      ]
+    },
+    "authors": [
+      {
+        "name": "OWASP Foundation"
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "component": {
+      "group": "",
+      "name": "docker",
+      "version": "latest",
+      "type": "application",
+      "bom-ref": "pkg:gem/docker@latest",
+      "purl": "pkg:gem/docker@latest",
+      "components": []
+    }
+  },
+  "components": [],
+  "services": [],
+  "dependencies": []
+}

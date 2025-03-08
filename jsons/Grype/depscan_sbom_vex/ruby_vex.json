@@ -1,0 +1,179 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-592j-995h-p23j",
+    "dataSource": "https://github.com/advisories/GHSA-592j-995h-p23j",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-592j-995h-p23j"
+    ],
+    "description": "RDoc RCE vulnerability with .rdoc_options",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "6.6.3.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-27281",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-27281",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://hackerone.com/reports/1187477",
+      "https://www.ruby-lang.org/en/news/2024/03/21/rce-rdoc-cve-2024-27281/"
+     ],
+     "description": "An issue was discovered in RDoc 6.3.3 through 6.6.2, as distributed in Ruby 3.x through 3.3.0. When parsing .rdoc_options (used for configuration in RDoc) as a YAML file, object injection and resultant remote code execution are possible because there are no restrictions on the classes that can be restored. (When loading the documentation cache, object injection and resultant remote code execution are also possible if there were a crafted cache.) The main fixed version is 6.6.3.1. For Ruby 3.0 users, a fixed version is rdoc 6.3.4.1. For Ruby 3.1 users, a fixed version is rdoc 6.4.1.1. For Ruby 3.2 users, a fixed version is rdoc 6.5.1.1.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rdoc",
+       "version": "6.6.2"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=6.6.0,<6.6.3.1 (unknown)",
+      "vulnerabilityID": "GHSA-592j-995h-p23j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "3ddeddd5be65d8d4",
+    "name": "rdoc",
+    "version": "6.6.2",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/rdoc@6.6.2",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "ruby",
+   "imageID": "pkg:oci/ruby@sha256:8eb6fb9ea8d522506913b420fbaecace30c15f545fb86a8cf7406179e7efa3fd",
+   "manifestDigest": "latest",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-05-15T01:28:06Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:ae6d37ab4724e50bf25d76152f0f93f5f4f2c063e77806b540ec818920592692",
+   "error": null
+  },
+  "timestamp": "2024-05-15T13:34:30.13274+02:00"
+ }
+}

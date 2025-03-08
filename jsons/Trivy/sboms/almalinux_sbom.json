@@ -1,0 +1,5117 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "almalinux",
+  "documentNamespace": "http://aquasecurity.github.io/trivy/container_image/almalinux-4b7f7e0f-9cf0-4f5c-8ca5-9472ccdf1f84",
+  "creationInfo": {
+    "licenseListVersion": "",
+    "creators": [
+      "Organization: aquasecurity",
+      "Tool: trivy-0.46.0"
+    ],
+    "created": "2024-04-20T17:46:32Z"
+  },
+  "packages": [
+    {
+      "name": "acl",
+      "SPDXID": "SPDXRef-Package-fb1348b7fd0fcbf5",
+      "versionInfo": "2.3.1-3.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "30ed35fe284aa1ffee4fc8cf082ab6fa"
+        }
+      ],
+      "sourceInfo": "built package from: acl 2.3.1-3.el9",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/acl@2.3.1-3.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: acl@2.3.1-3.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "alma",
+      "SPDXID": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "versionInfo": "9.3",
+      "downloadLocation": "NONE",
+      "copyrightText": "",
+      "primaryPackagePurpose": "OPERATING-SYSTEM"
+    },
+    {
+      "name": "almalinux",
+      "SPDXID": "SPDXRef-ContainerImage-2643de6c5a2acd1e",
+      "downloadLocation": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:oci/almalinux@sha256%3Ad7f8aa1c5ff918565fa1114d16e27b03fe10944a422e2943a66f6f4a275fa22c?arch=amd64\u0026repository_url=index.docker.io%2Flibrary%2Falmalinux"
+        }
+      ],
+      "attributionTexts": [
+        "SchemaVersion: 2",
+        "ImageID: sha256:7407e03f7ffc1633c8fe6789582fa2c960c8c4b4ae659730318451ff6dc9a82a",
+        "RepoDigest: almalinux@sha256:d7f8aa1c5ff918565fa1114d16e27b03fe10944a422e2943a66f6f4a275fa22c",
+        "DiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc",
+        "RepoTag: almalinux:latest"
+      ],
+      "primaryPackagePurpose": "CONTAINER"
+    },
+    {
+      "name": "almalinux-gpg-keys",
+      "SPDXID": "SPDXRef-Package-f335c5291e59fc7a",
+      "versionInfo": "9.3-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "bdec411a3bec643f1072e80bb9e91361"
+        }
+      ],
+      "sourceInfo": "built package from: almalinux-release 9.3-1.el9",
+      "licenseConcluded": "GPL-2.0-only",
+      "licenseDeclared": "GPL-2.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/almalinux-gpg-keys@9.3-1.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: almalinux-gpg-keys@9.3-1.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "almalinux-release",
+      "SPDXID": "SPDXRef-Package-acb38d9eed2ac950",
+      "versionInfo": "9.3-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "9705030a0ee58376a0e54fff9ca9fb6c"
+        }
+      ],
+      "sourceInfo": "built package from: almalinux-release 9.3-1.el9",
+      "licenseConcluded": "GPL-2.0-only",
+      "licenseDeclared": "GPL-2.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/almalinux-release@9.3-1.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: almalinux-release@9.3-1.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "almalinux-repos",
+      "SPDXID": "SPDXRef-Package-6db4437c33759726",
+      "versionInfo": "9.3-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "e20763549b95141ce85500e335a9e2dd"
+        }
+      ],
+      "sourceInfo": "built package from: almalinux-release 9.3-1.el9",
+      "licenseConcluded": "GPL-2.0-only",
+      "licenseDeclared": "GPL-2.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/almalinux-repos@9.3-1.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: almalinux-repos@9.3-1.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "alternatives",
+      "SPDXID": "SPDXRef-Package-7f07db2250ba70ea",
+      "versionInfo": "1.24-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7dc0df1af794578e55b5157a814495b7"
+        }
+      ],
+      "sourceInfo": "built package from: chkconfig 1.24-1.el9",
+      "licenseConcluded": "GPL-2.0-only",
+      "licenseDeclared": "GPL-2.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/alternatives@1.24-1.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: alternatives@1.24-1.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "audit-libs",
+      "SPDXID": "SPDXRef-Package-71d494bd351375d3",
+      "versionInfo": "3.0.7-104.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "6cab5a9f0a41a0ee61aa17c5def47ae0"
+        }
+      ],
+      "sourceInfo": "built package from: audit 3.0.7-104.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/audit-libs@3.0.7-104.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: audit-libs@3.0.7-104.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "basesystem",
+      "SPDXID": "SPDXRef-Package-350908224dc0acb0",
+      "versionInfo": "11-13.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "5fb7306840ce1307c9450ace93a9a78a"
+        }
+      ],
+      "sourceInfo": "built package from: basesystem 11-13.el9",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/basesystem@11-13.el9?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: basesystem@11-13.el9.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "bash",
+      "SPDXID": "SPDXRef-Package-fcdca11664b978a7",
+      "versionInfo": "5.1.8-6.el9_1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7d375a65005ada7d52480b74b73ec7f5"
+        }
+      ],
+      "sourceInfo": "built package from: bash 5.1.8-6.el9_1",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/bash@5.1.8-6.el9_1?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: bash@5.1.8-6.el9_1.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "binutils",
+      "SPDXID": "SPDXRef-Package-7fcdfb74d543c485",
+      "versionInfo": "2.35.2-42.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "119a86597ed58a872e354a901c950611"
+        }
+      ],
+      "sourceInfo": "built package from: binutils 2.35.2-42.el9",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/binutils@2.35.2-42.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: binutils@2.35.2-42.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "binutils-gold",
+      "SPDXID": "SPDXRef-Package-4be9cc091b1b7508",
+      "versionInfo": "2.35.2-42.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "a684e1800a474e0663c03cdde0b9cd79"
+        }
+      ],
+      "sourceInfo": "built package from: binutils 2.35.2-42.el9",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/binutils-gold@2.35.2-42.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: binutils-gold@2.35.2-42.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "bzip2-libs",
+      "SPDXID": "SPDXRef-Package-f5a6262001eaa518",
+      "versionInfo": "1.0.8-8.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1f15fc55c2554b44837665b74da23c77"
+        }
+      ],
+      "sourceInfo": "built package from: bzip2 1.0.8-8.el9",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/bzip2-libs@1.0.8-8.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: bzip2-libs@1.0.8-8.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "ca-certificates",
+      "SPDXID": "SPDXRef-Package-38182dff3132ba9a",
+      "versionInfo": "2023.2.60_v7.0.306-90.1.el9_2",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1b5d5183fa21dc6e25530d0977cb4e8a"
+        }
+      ],
+      "sourceInfo": "built package from: ca-certificates 2023.2.60_v7.0.306-90.1.el9_2",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/ca-certificates@2023.2.60_v7.0.306-90.1.el9_2?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: ca-certificates@2023.2.60_v7.0.306-90.1.el9_2.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "coreutils-single",
+      "SPDXID": "SPDXRef-Package-751754ec576ac95",
+      "versionInfo": "8.32-34.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7a1148407618f4e4e630eff1416fa91e"
+        }
+      ],
+      "sourceInfo": "built package from: coreutils 8.32-34.el9",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/coreutils-single@8.32-34.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: coreutils-single@8.32-34.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "cracklib",
+      "SPDXID": "SPDXRef-Package-cf3b8bca5cd505e2",
+      "versionInfo": "2.9.6-27.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "ea2a45be2b7fcc294568cdfcf303a2f7"
+        }
+      ],
+      "sourceInfo": "built package from: cracklib 2.9.6-27.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/cracklib@2.9.6-27.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: cracklib@2.9.6-27.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "cracklib-dicts",
+      "SPDXID": "SPDXRef-Package-e54a1757f577b08a",
+      "versionInfo": "2.9.6-27.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "70cb82f78826244294e7adc4592f8d6a"
+        }
+      ],
+      "sourceInfo": "built package from: cracklib 2.9.6-27.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/cracklib-dicts@2.9.6-27.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: cracklib-dicts@2.9.6-27.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "crypto-policies",
+      "SPDXID": "SPDXRef-Package-bf685ff70ce16dc6",
+      "versionInfo": "20230731-1.git94f0e2c.el9_3.1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "d9512b895284107be34f2bbe000f4ac6"
+        }
+      ],
+      "sourceInfo": "built package from: crypto-policies 20230731-1.git94f0e2c.el9_3.1",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/crypto-policies@20230731-1.git94f0e2c.el9_3.1?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: crypto-policies@20230731-1.git94f0e2c.el9_3.1.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "crypto-policies-scripts",
+      "SPDXID": "SPDXRef-Package-7af3b8191b7707e6",
+      "versionInfo": "20230731-1.git94f0e2c.el9_3.1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "3df8d93a97e6ebe18df57e42fda513ee"
+        }
+      ],
+      "sourceInfo": "built package from: crypto-policies 20230731-1.git94f0e2c.el9_3.1",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/crypto-policies-scripts@20230731-1.git94f0e2c.el9_3.1?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: crypto-policies-scripts@20230731-1.git94f0e2c.el9_3.1.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "curl-minimal",
+      "SPDXID": "SPDXRef-Package-b3ad0f3796ce5a46",
+      "versionInfo": "7.76.1-26.el9_3.2",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "e23fcc682783475cc81ade80db8ac8a0"
+        }
+      ],
+      "sourceInfo": "built package from: curl 7.76.1-26.el9_3.2",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/curl-minimal@7.76.1-26.el9_3.2?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: curl-minimal@7.76.1-26.el9_3.2.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "cyrus-sasl-lib",
+      "SPDXID": "SPDXRef-Package-4448347e5f9b9b0f",
+      "versionInfo": "2.1.27-21.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1e17f0e3e0b903cd332c0dd7ca7ae4a5"
+        }
+      ],
+      "sourceInfo": "built package from: cyrus-sasl 2.1.27-21.el9",
+      "licenseConcluded": "BSD-3-Clause WITH advertising",
+      "licenseDeclared": "BSD-3-Clause WITH advertising",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/cyrus-sasl-lib@2.1.27-21.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: cyrus-sasl-lib@2.1.27-21.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "dbus",
+      "SPDXID": "SPDXRef-Package-398d5209b917d07d",
+      "versionInfo": "1:1.12.20-8.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "d0edbea7011398f04d0fe9730f1d7856"
+        }
+      ],
+      "sourceInfo": "built package from: dbus 1:1.12.20-8.el9",
+      "licenseConcluded": "(GPL-2.0-or-later OR AFL) AND GPL-2.0-or-later",
+      "licenseDeclared": "(GPL-2.0-or-later OR AFL) AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/dbus@1.12.20-8.el9?arch=x86_64\u0026distro=alma-9.3\u0026epoch=1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: dbus@1.12.20-8.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "dbus-broker",
+      "SPDXID": "SPDXRef-Package-2de6514ab77466f5",
+      "versionInfo": "28-7.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "2b9ec3491790b01982af17a13cd77881"
+        }
+      ],
+      "sourceInfo": "built package from: dbus-broker 28-7.el9",
+      "licenseConcluded": "ASL-2.0",
+      "licenseDeclared": "ASL-2.0",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/dbus-broker@28-7.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: dbus-broker@28-7.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "dbus-common",
+      "SPDXID": "SPDXRef-Package-dddff83802d07223",
+      "versionInfo": "1:1.12.20-8.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "bae88bf95fdeab1240fc8b04af8666ec"
+        }
+      ],
+      "sourceInfo": "built package from: dbus 1:1.12.20-8.el9",
+      "licenseConcluded": "(GPL-2.0-or-later OR AFL) AND GPL-2.0-or-later",
+      "licenseDeclared": "(GPL-2.0-or-later OR AFL) AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/dbus-common@1.12.20-8.el9?arch=noarch\u0026distro=alma-9.3\u0026epoch=1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: dbus-common@1.12.20-8.el9.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "dnf",
+      "SPDXID": "SPDXRef-Package-cc25b6934e93968e",
+      "versionInfo": "4.14.0-8.el9.alma.1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "cf01ba152ff8735e957b1e446728fdd6"
+        }
+      ],
+      "sourceInfo": "built package from: dnf 4.14.0-8.el9.alma.1",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/dnf@4.14.0-8.el9.alma.1?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: dnf@4.14.0-8.el9.alma.1.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "dnf-data",
+      "SPDXID": "SPDXRef-Package-1e38b6d5e68c463a",
+      "versionInfo": "4.14.0-8.el9.alma.1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "26108bfc3c697a453e70275444fe910c"
+        }
+      ],
+      "sourceInfo": "built package from: dnf 4.14.0-8.el9.alma.1",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/dnf-data@4.14.0-8.el9.alma.1?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: dnf-data@4.14.0-8.el9.alma.1.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "elfutils-debuginfod-client",
+      "SPDXID": "SPDXRef-Package-2d470883ce3aef1",
+      "versionInfo": "0.189-3.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "a4935565e33da4fcc254ac88a82edb32"
+        }
+      ],
+      "sourceInfo": "built package from: elfutils 0.189-3.el9",
+      "licenseConcluded": "GPL-3.0-or-later AND (GPL-2.0-or-later OR LGPLv3+)",
+      "licenseDeclared": "GPL-3.0-or-later AND (GPL-2.0-or-later OR LGPLv3+)",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/elfutils-debuginfod-client@0.189-3.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: elfutils-debuginfod-client@0.189-3.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "elfutils-default-yama-scope",
+      "SPDXID": "SPDXRef-Package-5c9d09c36f90d68c",
+      "versionInfo": "0.189-3.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "9611d96ff0c36534a191219649820fcb"
+        }
+      ],
+      "sourceInfo": "built package from: elfutils 0.189-3.el9",
+      "licenseConcluded": "GPL-2.0-or-later OR LGPLv3+",
+      "licenseDeclared": "GPL-2.0-or-later OR LGPLv3+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/elfutils-default-yama-scope@0.189-3.el9?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: elfutils-default-yama-scope@0.189-3.el9.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "elfutils-libelf",
+      "SPDXID": "SPDXRef-Package-134d17fb3a9c6d4e",
+      "versionInfo": "0.189-3.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "16d10836efd6ea4cd2a28b307bc2e950"
+        }
+      ],
+      "sourceInfo": "built package from: elfutils 0.189-3.el9",
+      "licenseConcluded": "GPL-2.0-or-later OR LGPLv3+",
+      "licenseDeclared": "GPL-2.0-or-later OR LGPLv3+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/elfutils-libelf@0.189-3.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: elfutils-libelf@0.189-3.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "elfutils-libs",
+      "SPDXID": "SPDXRef-Package-5f368dc75f531763",
+      "versionInfo": "0.189-3.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "87a6fd4511e435174046ee95a3da3791"
+        }
+      ],
+      "sourceInfo": "built package from: elfutils 0.189-3.el9",
+      "licenseConcluded": "GPL-2.0-or-later OR LGPLv3+",
+      "licenseDeclared": "GPL-2.0-or-later OR LGPLv3+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/elfutils-libs@0.189-3.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: elfutils-libs@0.189-3.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "expat",
+      "SPDXID": "SPDXRef-Package-72c13d00eb9a3304",
+      "versionInfo": "2.5.0-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "5889a3b6803d903ab80d4cad482eee11"
+        }
+      ],
+      "sourceInfo": "built package from: expat 2.5.0-1.el9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/expat@2.5.0-1.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: expat@2.5.0-1.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "file-libs",
+      "SPDXID": "SPDXRef-Package-4c1402f41d439796",
+      "versionInfo": "5.39-14.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "63b3c0a96f70c2278103881c33a84233"
+        }
+      ],
+      "sourceInfo": "built package from: file 5.39-14.el9",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/file-libs@5.39-14.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: file-libs@5.39-14.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "filesystem",
+      "SPDXID": "SPDXRef-Package-cc5f5c8020f17881",
+      "versionInfo": "3.16-2.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "af8186b8ad88a618815abba07a45c2a1"
+        }
+      ],
+      "sourceInfo": "built package from: filesystem 3.16-2.el9",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/filesystem@3.16-2.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: filesystem@3.16-2.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "findutils",
+      "SPDXID": "SPDXRef-Package-e4a9cd88c52bc36e",
+      "versionInfo": "1:4.8.0-6.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "8ff7c8de07d240659e6d8235caee4e12"
+        }
+      ],
+      "sourceInfo": "built package from: findutils 1:4.8.0-6.el9",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/findutils@4.8.0-6.el9?arch=x86_64\u0026distro=alma-9.3\u0026epoch=1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: findutils@4.8.0-6.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gawk",
+      "SPDXID": "SPDXRef-Package-8f5960f35596aeb1",
+      "versionInfo": "5.1.0-6.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "fcd814904c14563f0fb1b26cd5abf615"
+        }
+      ],
+      "sourceInfo": "built package from: gawk 5.1.0-6.el9",
+      "licenseConcluded": "GPL-3.0-or-later AND GPL-2.0-or-later AND LGPLv2+ AND BSD-3-Clause",
+      "licenseDeclared": "GPL-3.0-or-later AND GPL-2.0-or-later AND LGPLv2+ AND BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/gawk@5.1.0-6.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gawk@5.1.0-6.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gdbm-libs",
+      "SPDXID": "SPDXRef-Package-6f52f4172efa1889",
+      "versionInfo": "1:1.19-4.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "2961f15e1dd34f931a68765f44c3997f"
+        }
+      ],
+      "sourceInfo": "built package from: gdbm 1:1.19-4.el9",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/gdbm-libs@1.19-4.el9?arch=x86_64\u0026distro=alma-9.3\u0026epoch=1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gdbm-libs@1.19-4.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "glib2",
+      "SPDXID": "SPDXRef-Package-7eb8a73e0f93ba53",
+      "versionInfo": "2.68.4-11.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "06fdc9b06ebe3429888cf120e4ac676d"
+        }
+      ],
+      "sourceInfo": "built package from: glib2 2.68.4-11.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/glib2@2.68.4-11.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: glib2@2.68.4-11.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "glibc",
+      "SPDXID": "SPDXRef-Package-490a5fbd1e098ca0",
+      "versionInfo": "2.34-83.el9_3.7",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1b2158f1c06b0ed1d11d95fabb07dd7e"
+        }
+      ],
+      "sourceInfo": "built package from: glibc 2.34-83.el9_3.7",
+      "licenseConcluded": "LGPLv2+ AND LGPLv2+ WITH exceptions AND GPL-2.0-or-later AND GPL-2.0-or-later WITH exceptions AND BSD-3-Clause AND Inner-Net AND ISC AND Unlicense AND GFDL",
+      "licenseDeclared": "LGPLv2+ AND LGPLv2+ WITH exceptions AND GPL-2.0-or-later AND GPL-2.0-or-later WITH exceptions AND BSD-3-Clause AND Inner-Net AND ISC AND Unlicense AND GFDL",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/glibc@2.34-83.el9_3.7?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: glibc@2.34-83.el9_3.7.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "glibc-common",
+      "SPDXID": "SPDXRef-Package-937a279e18a94d21",
+      "versionInfo": "2.34-83.el9_3.7",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1f932b7d434b7044761eb506f524f0e7"
+        }
+      ],
+      "sourceInfo": "built package from: glibc 2.34-83.el9_3.7",
+      "licenseConcluded": "LGPLv2+ AND LGPLv2+ WITH exceptions AND GPL-2.0-or-later AND GPL-2.0-or-later WITH exceptions AND BSD-3-Clause AND Inner-Net AND ISC AND Unlicense AND GFDL",
+      "licenseDeclared": "LGPLv2+ AND LGPLv2+ WITH exceptions AND GPL-2.0-or-later AND GPL-2.0-or-later WITH exceptions AND BSD-3-Clause AND Inner-Net AND ISC AND Unlicense AND GFDL",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/glibc-common@2.34-83.el9_3.7?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: glibc-common@2.34-83.el9_3.7.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "glibc-minimal-langpack",
+      "SPDXID": "SPDXRef-Package-848f68bc27fbfd3d",
+      "versionInfo": "2.34-83.el9_3.7",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1e3e29227d1d8ffb526e6e6178cd6efd"
+        }
+      ],
+      "sourceInfo": "built package from: glibc 2.34-83.el9_3.7",
+      "licenseConcluded": "LGPLv2+ AND LGPLv2+ WITH exceptions AND GPL-2.0-or-later AND GPL-2.0-or-later WITH exceptions AND BSD-3-Clause AND Inner-Net AND ISC AND Unlicense AND GFDL",
+      "licenseDeclared": "LGPLv2+ AND LGPLv2+ WITH exceptions AND GPL-2.0-or-later AND GPL-2.0-or-later WITH exceptions AND BSD-3-Clause AND Inner-Net AND ISC AND Unlicense AND GFDL",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/glibc-minimal-langpack@2.34-83.el9_3.7?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: glibc-minimal-langpack@2.34-83.el9_3.7.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gmp",
+      "SPDXID": "SPDXRef-Package-635fb373a5ffbb37",
+      "versionInfo": "1:6.2.0-13.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "608294d7e89348908bf207387ecbfeca"
+        }
+      ],
+      "sourceInfo": "built package from: gmp 1:6.2.0-13.el9",
+      "licenseConcluded": "LGPLv3+ OR GPL-2.0-or-later",
+      "licenseDeclared": "LGPLv3+ OR GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/gmp@6.2.0-13.el9?arch=x86_64\u0026distro=alma-9.3\u0026epoch=1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gmp@6.2.0-13.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gnupg2",
+      "SPDXID": "SPDXRef-Package-8a222d2003203c89",
+      "versionInfo": "2.3.3-4.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f696a343ea200fca03bc84d64c5ac82f"
+        }
+      ],
+      "sourceInfo": "built package from: gnupg2 2.3.3-4.el9",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/gnupg2@2.3.3-4.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gnupg2@2.3.3-4.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gnutls",
+      "SPDXID": "SPDXRef-Package-b15a7e7d5e1883f8",
+      "versionInfo": "3.7.6-23.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "98f41e2cf0279e2b1e46ea18995bab6d"
+        }
+      ],
+      "sourceInfo": "built package from: gnutls 3.7.6-23.el9",
+      "licenseConcluded": "GPL-3.0-or-later AND LGPLv2+",
+      "licenseDeclared": "GPL-3.0-or-later AND LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/gnutls@3.7.6-23.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gnutls@3.7.6-23.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gpg-pubkey",
+      "SPDXID": "SPDXRef-Package-26435044feccc26a",
+      "versionInfo": "b86b3716-61e69f29",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "pubkey",
+      "licenseDeclared": "pubkey",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/gpg-pubkey@b86b3716-61e69f29?arch=None\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gpg-pubkey@b86b3716-61e69f29.",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gpgme",
+      "SPDXID": "SPDXRef-Package-d6af22e75eec6e7b",
+      "versionInfo": "1.15.1-6.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "20f2994f0957eed21152ce820dc88acc"
+        }
+      ],
+      "sourceInfo": "built package from: gpgme 1.15.1-6.el9",
+      "licenseConcluded": "LGPLv2+ AND GPL-3.0-or-later",
+      "licenseDeclared": "LGPLv2+ AND GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/gpgme@1.15.1-6.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gpgme@1.15.1-6.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "grep",
+      "SPDXID": "SPDXRef-Package-ee945a8f8d8082ee",
+      "versionInfo": "3.6-5.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "a446fe7db66d7e8f0fcd097c20abd47c"
+        }
+      ],
+      "sourceInfo": "built package from: grep 3.6-5.el9",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/grep@3.6-5.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: grep@3.6-5.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gzip",
+      "SPDXID": "SPDXRef-Package-baa9843637294523",
+      "versionInfo": "1.12-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "b5c23607ca0175f8586bb9f04bc0c094"
+        }
+      ],
+      "sourceInfo": "built package from: gzip 1.12-1.el9",
+      "licenseConcluded": "GPL-3.0-or-later AND GFDL",
+      "licenseDeclared": "GPL-3.0-or-later AND GFDL",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/gzip@1.12-1.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gzip@1.12-1.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "hostname",
+      "SPDXID": "SPDXRef-Package-9e2b206323783524",
+      "versionInfo": "3.23-6.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "3e957e11a4dc81bfd5de2d7f0fee8b87"
+        }
+      ],
+      "sourceInfo": "built package from: hostname 3.23-6.el9",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/hostname@3.23-6.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: hostname@3.23-6.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "ima-evm-utils",
+      "SPDXID": "SPDXRef-Package-d22974d115667f2e",
+      "versionInfo": "1.4-4.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "c692abb24eaa09049f28c4c6f9a9c42d"
+        }
+      ],
+      "sourceInfo": "built package from: ima-evm-utils 1.4-4.el9",
+      "licenseConcluded": "GPL-2.0-only",
+      "licenseDeclared": "GPL-2.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/ima-evm-utils@1.4-4.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: ima-evm-utils@1.4-4.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "iputils",
+      "SPDXID": "SPDXRef-Package-9e8895e2fe78aaf5",
+      "versionInfo": "20210202-9.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "0a5534a28a8fde408cce6e293cf3299f"
+        }
+      ],
+      "sourceInfo": "built package from: iputils 20210202-9.el9",
+      "licenseConcluded": "BSD-3-Clause AND GPL-2.0-or-later",
+      "licenseDeclared": "BSD-3-Clause AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/iputils@20210202-9.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: iputils@20210202-9.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "json-c",
+      "SPDXID": "SPDXRef-Package-e90609b5fe78175c",
+      "versionInfo": "0.14-11.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "e3bcf96305017ede260a388d95652a40"
+        }
+      ],
+      "sourceInfo": "built package from: json-c 0.14-11.el9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/json-c@0.14-11.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: json-c@0.14-11.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "keyutils-libs",
+      "SPDXID": "SPDXRef-Package-d3fdc41ac7576d7e",
+      "versionInfo": "1.6.3-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7f796f310a80bc09e6a82f3c714391ae"
+        }
+      ],
+      "sourceInfo": "built package from: keyutils 1.6.3-1.el9",
+      "licenseConcluded": "GPL-2.0-or-later AND LGPLv2+",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/keyutils-libs@1.6.3-1.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: keyutils-libs@1.6.3-1.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "kmod-libs",
+      "SPDXID": "SPDXRef-Package-98bc220f0e94e0be",
+      "versionInfo": "28-9.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "73cd92e55d04a7b054bf8e24beaf2cc5"
+        }
+      ],
+      "sourceInfo": "built package from: kmod 28-9.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/kmod-libs@28-9.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: kmod-libs@28-9.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "krb5-libs",
+      "SPDXID": "SPDXRef-Package-4c53469264daf136",
+      "versionInfo": "1.21.1-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "c3367fe80c7edbd829273c9b1bd430"
+        }
+      ],
+      "sourceInfo": "built package from: krb5 1.21.1-1.el9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/krb5-libs@1.21.1-1.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: krb5-libs@1.21.1-1.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "less",
+      "SPDXID": "SPDXRef-Package-bcf208f1eb40036e",
+      "versionInfo": "590-2.el9_2",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "606397997bec2c0a5ec412365b153990"
+        }
+      ],
+      "sourceInfo": "built package from: less 590-2.el9_2",
+      "licenseConcluded": "GPL-3.0-or-later OR BSD-3-Clause",
+      "licenseDeclared": "GPL-3.0-or-later OR BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/less@590-2.el9_2?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: less@590-2.el9_2.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libacl",
+      "SPDXID": "SPDXRef-Package-f7d2d7a91b454021",
+      "versionInfo": "2.3.1-3.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7708efc7b54622fd3ce9ba9de9e6eb79"
+        }
+      ],
+      "sourceInfo": "built package from: acl 2.3.1-3.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libacl@2.3.1-3.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libacl@2.3.1-3.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libarchive",
+      "SPDXID": "SPDXRef-Package-96041e88fa8c1d76",
+      "versionInfo": "3.5.3-4.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "6c8d4dcc8132dcfa7b24219ac3a301ce"
+        }
+      ],
+      "sourceInfo": "built package from: libarchive 3.5.3-4.el9",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libarchive@3.5.3-4.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libarchive@3.5.3-4.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libassuan",
+      "SPDXID": "SPDXRef-Package-ea15fa1a80f1696c",
+      "versionInfo": "2.5.5-3.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "8ac858829e2934e515ec1ad98226e0f2"
+        }
+      ],
+      "sourceInfo": "built package from: libassuan 2.5.5-3.el9",
+      "licenseConcluded": "LGPLv2+ AND GPL-3.0-or-later",
+      "licenseDeclared": "LGPLv2+ AND GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libassuan@2.5.5-3.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libassuan@2.5.5-3.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libattr",
+      "SPDXID": "SPDXRef-Package-5ce7de67fa516893",
+      "versionInfo": "2.5.1-3.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7ce1bc0a98f4c0afd2d5d8576ca27133"
+        }
+      ],
+      "sourceInfo": "built package from: attr 2.5.1-3.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libattr@2.5.1-3.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libattr@2.5.1-3.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libblkid",
+      "SPDXID": "SPDXRef-Package-220ef6c61e5f0e8c",
+      "versionInfo": "2.37.4-15.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1d80fcb01edb4d5f90ca140411d72767"
+        }
+      ],
+      "sourceInfo": "built package from: util-linux 2.37.4-15.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libblkid@2.37.4-15.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libblkid@2.37.4-15.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libcap",
+      "SPDXID": "SPDXRef-Package-a28d9ffe4d7222fa",
+      "versionInfo": "2.48-9.el9_2",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "5a98e1e7897c9e7a9a2382be21fd93d4"
+        }
+      ],
+      "sourceInfo": "built package from: libcap 2.48-9.el9_2",
+      "licenseConcluded": "BSD-3-Clause OR GPL-2.0-only",
+      "licenseDeclared": "BSD-3-Clause OR GPL-2.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libcap@2.48-9.el9_2?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libcap@2.48-9.el9_2.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libcap-ng",
+      "SPDXID": "SPDXRef-Package-e003a94cee631851",
+      "versionInfo": "0.8.2-7.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "b3b6c517f674b1a19c87a1561fd7e3c5"
+        }
+      ],
+      "sourceInfo": "built package from: libcap-ng 0.8.2-7.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libcap-ng@0.8.2-7.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libcap-ng@0.8.2-7.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libcom_err",
+      "SPDXID": "SPDXRef-Package-a38e1ed004ec04f5",
+      "versionInfo": "1.46.5-3.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f049c5ef0be9df24b453883f75ef1641"
+        }
+      ],
+      "sourceInfo": "built package from: e2fsprogs 1.46.5-3.el9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libcom_err@1.46.5-3.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libcom_err@1.46.5-3.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libcomps",
+      "SPDXID": "SPDXRef-Package-5bd5588d4d71df4a",
+      "versionInfo": "0.1.18-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "4f97877e8cb57940749e7837ef2aa885"
+        }
+      ],
+      "sourceInfo": "built package from: libcomps 0.1.18-1.el9",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libcomps@0.1.18-1.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libcomps@0.1.18-1.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libcurl-minimal",
+      "SPDXID": "SPDXRef-Package-2e2e5c5bdf804b5a",
+      "versionInfo": "7.76.1-26.el9_3.2",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f189add6adfbeefe2328399c3ed15d5f"
+        }
+      ],
+      "sourceInfo": "built package from: curl 7.76.1-26.el9_3.2",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libcurl-minimal@7.76.1-26.el9_3.2?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libcurl-minimal@7.76.1-26.el9_3.2.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libdb",
+      "SPDXID": "SPDXRef-Package-397aaf7cf608d030",
+      "versionInfo": "5.3.28-53.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f5cb68e5f5675d81104d59bf6c54b882"
+        }
+      ],
+      "sourceInfo": "built package from: libdb 5.3.28-53.el9",
+      "licenseConcluded": "BSD-3-Clause AND LGPLv2 AND Sleepycat",
+      "licenseDeclared": "BSD-3-Clause AND LGPLv2 AND Sleepycat",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libdb@5.3.28-53.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libdb@5.3.28-53.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libdnf",
+      "SPDXID": "SPDXRef-Package-8bf0ad4d7656f67d",
+      "versionInfo": "0.69.0-6.el9_3.alma.1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "290f6aa9469025fda694bc1a429003b3"
+        }
+      ],
+      "sourceInfo": "built package from: libdnf 0.69.0-6.el9_3.alma.1",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libdnf@0.69.0-6.el9_3.alma.1?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libdnf@0.69.0-6.el9_3.alma.1.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libeconf",
+      "SPDXID": "SPDXRef-Package-be1404e77902dcaf",
+      "versionInfo": "0.4.1-3.el9_2",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1d3ce7ab36790cb7a425d8f8a0e76e88"
+        }
+      ],
+      "sourceInfo": "built package from: libeconf 0.4.1-3.el9_2",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libeconf@0.4.1-3.el9_2?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libeconf@0.4.1-3.el9_2.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libevent",
+      "SPDXID": "SPDXRef-Package-da0cb84b2c4b9020",
+      "versionInfo": "2.1.12-6.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7a1f243c0c959c3f3ee245f55b8a4c3d"
+        }
+      ],
+      "sourceInfo": "built package from: libevent 2.1.12-6.el9",
+      "licenseConcluded": "BSD-3-Clause AND ISC",
+      "licenseDeclared": "BSD-3-Clause AND ISC",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libevent@2.1.12-6.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libevent@2.1.12-6.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libfdisk",
+      "SPDXID": "SPDXRef-Package-8887e605249184fa",
+      "versionInfo": "2.37.4-15.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "008d1dabfb3500079fa2bdf362c968c0"
+        }
+      ],
+      "sourceInfo": "built package from: util-linux 2.37.4-15.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libfdisk@2.37.4-15.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libfdisk@2.37.4-15.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libffi",
+      "SPDXID": "SPDXRef-Package-1215868036de57e8",
+      "versionInfo": "3.4.2-8.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "34887349d1d9f7578ffabc8273fa4558"
+        }
+      ],
+      "sourceInfo": "built package from: libffi 3.4.2-8.el9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libffi@3.4.2-8.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libffi@3.4.2-8.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libgcc",
+      "SPDXID": "SPDXRef-Package-8c88af1ee3e73efd",
+      "versionInfo": "11.4.1-2.1.el9.alma",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "252b253bc9bf0fcbc37d26877b32fd58"
+        }
+      ],
+      "sourceInfo": "built package from: gcc 11.4.1-2.1.el9.alma",
+      "licenseConcluded": "GPL-3.0-or-later AND GPL-3.0-or-later WITH exceptions AND GPL-2.0-or-later WITH exceptions AND LGPLv2+ AND BSD-3-Clause",
+      "licenseDeclared": "GPL-3.0-or-later AND GPL-3.0-or-later WITH exceptions AND GPL-2.0-or-later WITH exceptions AND LGPLv2+ AND BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libgcc@11.4.1-2.1.el9.alma?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libgcc@11.4.1-2.1.el9.alma.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libgcrypt",
+      "SPDXID": "SPDXRef-Package-a318ebf6a9607155",
+      "versionInfo": "1.10.0-10.el9_2",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "bee3bf28cecf603bc8c857ae94a5b30c"
+        }
+      ],
+      "sourceInfo": "built package from: libgcrypt 1.10.0-10.el9_2",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libgcrypt@1.10.0-10.el9_2?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libgcrypt@1.10.0-10.el9_2.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libgomp",
+      "SPDXID": "SPDXRef-Package-84e7f5d1af05a02c",
+      "versionInfo": "11.4.1-2.1.el9.alma",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1edc8952bc0fdc0cbf47090ec715f287"
+        }
+      ],
+      "sourceInfo": "built package from: gcc 11.4.1-2.1.el9.alma",
+      "licenseConcluded": "GPL-3.0-or-later AND GPL-3.0-or-later WITH exceptions AND GPL-2.0-or-later WITH exceptions AND LGPLv2+ AND BSD-3-Clause",
+      "licenseDeclared": "GPL-3.0-or-later AND GPL-3.0-or-later WITH exceptions AND GPL-2.0-or-later WITH exceptions AND LGPLv2+ AND BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libgomp@11.4.1-2.1.el9.alma?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libgomp@11.4.1-2.1.el9.alma.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libgpg-error",
+      "SPDXID": "SPDXRef-Package-5fb5eea9d072e6fa",
+      "versionInfo": "1.42-5.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "e6b8dd1cf21caa5d740e91046442bf26"
+        }
+      ],
+      "sourceInfo": "built package from: libgpg-error 1.42-5.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libgpg-error@1.42-5.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libgpg-error@1.42-5.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libidn2",
+      "SPDXID": "SPDXRef-Package-1a4507f12f1c18b5",
+      "versionInfo": "2.3.0-7.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1f6a3623b3f769250040f82e0df9b999"
+        }
+      ],
+      "sourceInfo": "built package from: libidn2 2.3.0-7.el9",
+      "licenseConcluded": "(GPL-2.0-or-later OR LGPLv3+) AND GPL-3.0-or-later",
+      "licenseDeclared": "(GPL-2.0-or-later OR LGPLv3+) AND GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libidn2@2.3.0-7.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libidn2@2.3.0-7.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libksba",
+      "SPDXID": "SPDXRef-Package-a9c73e634e32a760",
+      "versionInfo": "1.5.1-6.el9_1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "b7ee5abc567ec6776d9a8600102ad71f"
+        }
+      ],
+      "sourceInfo": "built package from: libksba 1.5.1-6.el9_1",
+      "licenseConcluded": "(LGPLv3+ OR GPL-2.0-or-later) AND GPL-3.0-or-later",
+      "licenseDeclared": "(LGPLv3+ OR GPL-2.0-or-later) AND GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libksba@1.5.1-6.el9_1?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libksba@1.5.1-6.el9_1.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libmodulemd",
+      "SPDXID": "SPDXRef-Package-5a83d3ce98930419",
+      "versionInfo": "2.13.0-2.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "922bb17f538dc4083e65e6ac097ae552"
+        }
+      ],
+      "sourceInfo": "built package from: libmodulemd 2.13.0-2.el9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libmodulemd@2.13.0-2.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libmodulemd@2.13.0-2.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libmount",
+      "SPDXID": "SPDXRef-Package-10e9a2699686a7db",
+      "versionInfo": "2.37.4-15.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f8aba16ab39007de75759ae8cce2bd02"
+        }
+      ],
+      "sourceInfo": "built package from: util-linux 2.37.4-15.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libmount@2.37.4-15.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libmount@2.37.4-15.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libnghttp2",
+      "SPDXID": "SPDXRef-Package-6c28f9c41dc217ce",
+      "versionInfo": "1.43.0-5.el9_3.1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "5a2a4a835b31d92b85f6a06a5a5486ad"
+        }
+      ],
+      "sourceInfo": "built package from: nghttp2 1.43.0-5.el9_3.1",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libnghttp2@1.43.0-5.el9_3.1?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libnghttp2@1.43.0-5.el9_3.1.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libpwquality",
+      "SPDXID": "SPDXRef-Package-f78ec552f79606c9",
+      "versionInfo": "1.4.4-8.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "8887f61609c602b650ca3a7f5077bd71"
+        }
+      ],
+      "sourceInfo": "built package from: libpwquality 1.4.4-8.el9",
+      "licenseConcluded": "BSD-3-Clause OR GPL-2.0-or-later",
+      "licenseDeclared": "BSD-3-Clause OR GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libpwquality@1.4.4-8.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libpwquality@1.4.4-8.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "librepo",
+      "SPDXID": "SPDXRef-Package-c5b8934a5647b3e0",
+      "versionInfo": "1.14.5-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "e74552cbc3bf97c64b0a5f0b6cb5ade5"
+        }
+      ],
+      "sourceInfo": "built package from: librepo 1.14.5-1.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/librepo@1.14.5-1.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: librepo@1.14.5-1.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libreport-filesystem",
+      "SPDXID": "SPDXRef-Package-d2b0166aa1214686",
+      "versionInfo": "2.15.2-6.el9.alma",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "98bf4e89ac7fbfa33605601497df0624"
+        }
+      ],
+      "sourceInfo": "built package from: libreport 2.15.2-6.el9.alma",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libreport-filesystem@2.15.2-6.el9.alma?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libreport-filesystem@2.15.2-6.el9.alma.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libseccomp",
+      "SPDXID": "SPDXRef-Package-89c7cf6d6af36def",
+      "versionInfo": "2.5.2-2.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "98c287f27456bdc4196130779a910832"
+        }
+      ],
+      "sourceInfo": "built package from: libseccomp 2.5.2-2.el9",
+      "licenseConcluded": "LGPLv2",
+      "licenseDeclared": "LGPLv2",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libseccomp@2.5.2-2.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libseccomp@2.5.2-2.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libselinux",
+      "SPDXID": "SPDXRef-Package-90263560ef0739cc",
+      "versionInfo": "3.5-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "6be6d6feced6acc069b8dff0aba6fae6"
+        }
+      ],
+      "sourceInfo": "built package from: libselinux 3.5-1.el9",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libselinux@3.5-1.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libselinux@3.5-1.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libsemanage",
+      "SPDXID": "SPDXRef-Package-8aa5128ad6f4e918",
+      "versionInfo": "3.5-2.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "4fbcda2c5da1b3e8b2811941c48181d1"
+        }
+      ],
+      "sourceInfo": "built package from: libsemanage 3.5-2.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libsemanage@3.5-2.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libsemanage@3.5-2.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libsepol",
+      "SPDXID": "SPDXRef-Package-6666df79fb96df56",
+      "versionInfo": "3.5-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "4840b966a6038eebaa58a5662bc265b8"
+        }
+      ],
+      "sourceInfo": "built package from: libsepol 3.5-1.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libsepol@3.5-1.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libsepol@3.5-1.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libsigsegv",
+      "SPDXID": "SPDXRef-Package-fa2f3d63c7105377",
+      "versionInfo": "2.13-4.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7012e4a7edf3bd5d99b21eec9fb21cff"
+        }
+      ],
+      "sourceInfo": "built package from: libsigsegv 2.13-4.el9",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libsigsegv@2.13-4.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libsigsegv@2.13-4.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libsmartcols",
+      "SPDXID": "SPDXRef-Package-e251cdd4cee4317f",
+      "versionInfo": "2.37.4-15.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "010d11e31fb792a5c94ac01de34c104c"
+        }
+      ],
+      "sourceInfo": "built package from: util-linux 2.37.4-15.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libsmartcols@2.37.4-15.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libsmartcols@2.37.4-15.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libsolv",
+      "SPDXID": "SPDXRef-Package-5671b6dc899333cb",
+      "versionInfo": "0.7.24-2.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "4be84600dee3549afd043915b7a34458"
+        }
+      ],
+      "sourceInfo": "built package from: libsolv 0.7.24-2.el9",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libsolv@0.7.24-2.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libsolv@0.7.24-2.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libstdc++",
+      "SPDXID": "SPDXRef-Package-7b7aeeb2312e3581",
+      "versionInfo": "11.4.1-2.1.el9.alma",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "8abbd2220ca23e784d18300ff67aad46"
+        }
+      ],
+      "sourceInfo": "built package from: gcc 11.4.1-2.1.el9.alma",
+      "licenseConcluded": "GPL-3.0-or-later AND GPL-3.0-or-later WITH exceptions AND GPL-2.0-or-later WITH exceptions AND LGPLv2+ AND BSD-3-Clause",
+      "licenseDeclared": "GPL-3.0-or-later AND GPL-3.0-or-later WITH exceptions AND GPL-2.0-or-later WITH exceptions AND LGPLv2+ AND BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libstdc%2B%2B@11.4.1-2.1.el9.alma?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libstdc++@11.4.1-2.1.el9.alma.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libtasn1",
+      "SPDXID": "SPDXRef-Package-8c09e9abd2a16907",
+      "versionInfo": "4.16.0-8.el9_1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "6f432bf9de029f87de8a5259a9bc277b"
+        }
+      ],
+      "sourceInfo": "built package from: libtasn1 4.16.0-8.el9_1",
+      "licenseConcluded": "GPL-3.0-or-later AND LGPLv2+",
+      "licenseDeclared": "GPL-3.0-or-later AND LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libtasn1@4.16.0-8.el9_1?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libtasn1@4.16.0-8.el9_1.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libunistring",
+      "SPDXID": "SPDXRef-Package-82053cd90a243d31",
+      "versionInfo": "0.9.10-15.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "89974ee18eca0832a008f146ab722d15"
+        }
+      ],
+      "sourceInfo": "built package from: libunistring 0.9.10-15.el9",
+      "licenseConcluded": "GPL-2.0-or-later OR LGPLv3+",
+      "licenseDeclared": "GPL-2.0-or-later OR LGPLv3+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libunistring@0.9.10-15.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libunistring@0.9.10-15.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libutempter",
+      "SPDXID": "SPDXRef-Package-3fca8a93c094e398",
+      "versionInfo": "1.2.1-6.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "60d7a46e01fd1a708369f595c8fa9da6"
+        }
+      ],
+      "sourceInfo": "built package from: libutempter 1.2.1-6.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libutempter@1.2.1-6.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libutempter@1.2.1-6.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libuuid",
+      "SPDXID": "SPDXRef-Package-88e17dbba6701971",
+      "versionInfo": "2.37.4-15.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "ce68dff1fc96762cfc6110851bc264ca"
+        }
+      ],
+      "sourceInfo": "built package from: util-linux 2.37.4-15.el9",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libuuid@2.37.4-15.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libuuid@2.37.4-15.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libverto",
+      "SPDXID": "SPDXRef-Package-4508aab24907c527",
+      "versionInfo": "0.3.2-3.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7f11c70e36432c127987bfbe02b7bef0"
+        }
+      ],
+      "sourceInfo": "built package from: libverto 0.3.2-3.el9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libverto@0.3.2-3.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libverto@0.3.2-3.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libxcrypt",
+      "SPDXID": "SPDXRef-Package-41a97d73b41b80f4",
+      "versionInfo": "4.4.18-3.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "03354b2659877cafec7273b5cd8f879c"
+        }
+      ],
+      "sourceInfo": "built package from: libxcrypt 4.4.18-3.el9",
+      "licenseConcluded": "LGPLv2+ AND BSD-3-Clause AND Unlicense",
+      "licenseDeclared": "LGPLv2+ AND BSD-3-Clause AND Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libxcrypt@4.4.18-3.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libxcrypt@4.4.18-3.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libxml2",
+      "SPDXID": "SPDXRef-Package-9d5cb023c12cf8c7",
+      "versionInfo": "2.9.13-4.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "6025d30ee4cd636cef7fbccde97b13a4"
+        }
+      ],
+      "sourceInfo": "built package from: libxml2 2.9.13-4.el9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libxml2@2.9.13-4.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libxml2@2.9.13-4.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libyaml",
+      "SPDXID": "SPDXRef-Package-699a608da9afe26d",
+      "versionInfo": "0.2.5-7.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "e9d15235172c2755d98ec8a901f09a0e"
+        }
+      ],
+      "sourceInfo": "built package from: libyaml 0.2.5-7.el9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libyaml@0.2.5-7.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libyaml@0.2.5-7.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libzstd",
+      "SPDXID": "SPDXRef-Package-dd8105f8dceae501",
+      "versionInfo": "1.5.1-2.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "9ac3b1699daa081106c9277e64720df6"
+        }
+      ],
+      "sourceInfo": "built package from: zstd 1.5.1-2.el9",
+      "licenseConcluded": "BSD-3-Clause AND GPL-2.0-only",
+      "licenseDeclared": "BSD-3-Clause AND GPL-2.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/libzstd@1.5.1-2.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libzstd@1.5.1-2.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "lua-libs",
+      "SPDXID": "SPDXRef-Package-7ba97ee481cd8d50",
+      "versionInfo": "5.4.4-4.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "2430d6b63b04055dcf0ed3068e801da9"
+        }
+      ],
+      "sourceInfo": "built package from: lua 5.4.4-4.el9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/lua-libs@5.4.4-4.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: lua-libs@5.4.4-4.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "lz4-libs",
+      "SPDXID": "SPDXRef-Package-5647ca546b3b8c43",
+      "versionInfo": "1.9.3-5.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "8557c4f0d9c63e5ebf77dcfe4dd2e9fb"
+        }
+      ],
+      "sourceInfo": "built package from: lz4 1.9.3-5.el9",
+      "licenseConcluded": "GPL-2.0-or-later AND BSD-3-Clause",
+      "licenseDeclared": "GPL-2.0-or-later AND BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/lz4-libs@1.9.3-5.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: lz4-libs@1.9.3-5.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "mpfr",
+      "SPDXID": "SPDXRef-Package-55481b13f9cb5ca0",
+      "versionInfo": "4.1.0-7.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "667977b12c5e8614ecfbf50760fe8cea"
+        }
+      ],
+      "sourceInfo": "built package from: mpfr 4.1.0-7.el9",
+      "licenseConcluded": "LGPLv3+",
+      "licenseDeclared": "LGPLv3+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/mpfr@4.1.0-7.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: mpfr@4.1.0-7.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "ncurses-base",
+      "SPDXID": "SPDXRef-Package-bfc4a76e92703235",
+      "versionInfo": "6.2-10.20210508.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "e76ab9d464fd0617d39240bb50b60c20"
+        }
+      ],
+      "sourceInfo": "built package from: ncurses 6.2-10.20210508.el9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/ncurses-base@6.2-10.20210508.el9?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: ncurses-base@6.2-10.20210508.el9.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "ncurses-libs",
+      "SPDXID": "SPDXRef-Package-61efafceb048d673",
+      "versionInfo": "6.2-10.20210508.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "106facf385b93a57145f2ac9f4ba3713"
+        }
+      ],
+      "sourceInfo": "built package from: ncurses 6.2-10.20210508.el9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/ncurses-libs@6.2-10.20210508.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: ncurses-libs@6.2-10.20210508.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "nettle",
+      "SPDXID": "SPDXRef-Package-f9bfcc7b93baec6b",
+      "versionInfo": "3.8-3.el9_0",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "0b1d42cfaaf2b16b64be3a234c6ed357"
+        }
+      ],
+      "sourceInfo": "built package from: nettle 3.8-3.el9_0",
+      "licenseConcluded": "LGPLv3+ OR GPL-2.0-or-later",
+      "licenseDeclared": "LGPLv3+ OR GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/nettle@3.8-3.el9_0?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: nettle@3.8-3.el9_0.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "npth",
+      "SPDXID": "SPDXRef-Package-7a5ec78fa88d32d8",
+      "versionInfo": "1.6-8.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "3b35ca6e537948cb8cb49e1ca3790bd2"
+        }
+      ],
+      "sourceInfo": "built package from: npth 1.6-8.el9",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/npth@1.6-8.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: npth@1.6-8.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "openldap",
+      "SPDXID": "SPDXRef-Package-47ec6b1400924ca1",
+      "versionInfo": "2.6.3-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "d9bcbca742a1f9446f3e9e2bf59236bb"
+        }
+      ],
+      "sourceInfo": "built package from: openldap 2.6.3-1.el9",
+      "licenseConcluded": "OpenLDAP",
+      "licenseDeclared": "OpenLDAP",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/openldap@2.6.3-1.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: openldap@2.6.3-1.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "openssl",
+      "SPDXID": "SPDXRef-Package-9a961c107eb114ea",
+      "versionInfo": "1:3.0.7-24.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "ab2e57aa29c55c1367a2a3d8699a345d"
+        }
+      ],
+      "sourceInfo": "built package from: openssl 1:3.0.7-24.el9",
+      "licenseConcluded": "ASL-2.0",
+      "licenseDeclared": "ASL-2.0",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/openssl@3.0.7-24.el9?arch=x86_64\u0026distro=alma-9.3\u0026epoch=1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: openssl@3.0.7-24.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "openssl-libs",
+      "SPDXID": "SPDXRef-Package-2bf015f02e0e84a1",
+      "versionInfo": "1:3.0.7-24.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "8edb63917d19ee7daf2651cd975e9e8c"
+        }
+      ],
+      "sourceInfo": "built package from: openssl 1:3.0.7-24.el9",
+      "licenseConcluded": "ASL-2.0",
+      "licenseDeclared": "ASL-2.0",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/openssl-libs@3.0.7-24.el9?arch=x86_64\u0026distro=alma-9.3\u0026epoch=1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: openssl-libs@3.0.7-24.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "p11-kit",
+      "SPDXID": "SPDXRef-Package-3a33cc5ea3fd2281",
+      "versionInfo": "0.24.1-2.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "2edce5b1adc3511e9230830f34d98123"
+        }
+      ],
+      "sourceInfo": "built package from: p11-kit 0.24.1-2.el9",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/p11-kit@0.24.1-2.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: p11-kit@0.24.1-2.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "p11-kit-trust",
+      "SPDXID": "SPDXRef-Package-865e707c1dee64a1",
+      "versionInfo": "0.24.1-2.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "e178e3141a9be5894da8d429f4d512e0"
+        }
+      ],
+      "sourceInfo": "built package from: p11-kit 0.24.1-2.el9",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/p11-kit-trust@0.24.1-2.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: p11-kit-trust@0.24.1-2.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pam",
+      "SPDXID": "SPDXRef-Package-57bfeff2353a8032",
+      "versionInfo": "1.5.1-15.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "ea14634227606181763f4260efec3a1d"
+        }
+      ],
+      "sourceInfo": "built package from: pam 1.5.1-15.el9",
+      "licenseConcluded": "BSD-3-Clause AND GPL-2.0-or-later",
+      "licenseDeclared": "BSD-3-Clause AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/pam@1.5.1-15.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: pam@1.5.1-15.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pcre",
+      "SPDXID": "SPDXRef-Package-e8d643c807461961",
+      "versionInfo": "8.44-3.el9.3",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "a0782c0f28325f4d48ebe112615ee57f"
+        }
+      ],
+      "sourceInfo": "built package from: pcre 8.44-3.el9.3",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/pcre@8.44-3.el9.3?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: pcre@8.44-3.el9.3.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pcre2",
+      "SPDXID": "SPDXRef-Package-91d6b626d3b72d68",
+      "versionInfo": "10.40-2.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "33aa1b711d1f3238f58a4e3e92d91ed7"
+        }
+      ],
+      "sourceInfo": "built package from: pcre2 10.40-2.el9",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/pcre2@10.40-2.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: pcre2@10.40-2.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pcre2-syntax",
+      "SPDXID": "SPDXRef-Package-fa45f6f6ed40c13e",
+      "versionInfo": "10.40-2.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "379d04fefe5c1fc823b87ef0f374bad6"
+        }
+      ],
+      "sourceInfo": "built package from: pcre2 10.40-2.el9",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/pcre2-syntax@10.40-2.el9?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: pcre2-syntax@10.40-2.el9.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "popt",
+      "SPDXID": "SPDXRef-Package-bc5a173e5969ae44",
+      "versionInfo": "1.18-8.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "d023c9ebf80dbada8fddb5a69471a0d9"
+        }
+      ],
+      "sourceInfo": "built package from: popt 1.18-8.el9",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/popt@1.18-8.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: popt@1.18-8.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python3",
+      "SPDXID": "SPDXRef-Package-52a8300203eaed6b",
+      "versionInfo": "3.9.18-1.el9_3",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "039285ac96e8bbf82f3fb031aec863cf"
+        }
+      ],
+      "sourceInfo": "built package from: python3.9 3.9.18-1.el9_3",
+      "licenseConcluded": "Python",
+      "licenseDeclared": "Python",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/python3@3.9.18-1.el9_3?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python3@3.9.18-1.el9_3.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python3-dnf",
+      "SPDXID": "SPDXRef-Package-62055b5fdabb4671",
+      "versionInfo": "4.14.0-8.el9.alma.1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "ad95572865de8b2ea953af5d9ae0203b"
+        }
+      ],
+      "sourceInfo": "built package from: dnf 4.14.0-8.el9.alma.1",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/python3-dnf@4.14.0-8.el9.alma.1?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python3-dnf@4.14.0-8.el9.alma.1.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python3-gpg",
+      "SPDXID": "SPDXRef-Package-370407815b28b5a0",
+      "versionInfo": "1.15.1-6.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "c4601c7fc021ac2b78d3aeb61b98af1b"
+        }
+      ],
+      "sourceInfo": "built package from: gpgme 1.15.1-6.el9",
+      "licenseConcluded": "LGPLv2+ AND GPL-3.0-or-later",
+      "licenseDeclared": "LGPLv2+ AND GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/python3-gpg@1.15.1-6.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python3-gpg@1.15.1-6.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python3-hawkey",
+      "SPDXID": "SPDXRef-Package-7df9a4153d45e89a",
+      "versionInfo": "0.69.0-6.el9_3.alma.1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "37e53bf7b364f88bc0820f4388018cf0"
+        }
+      ],
+      "sourceInfo": "built package from: libdnf 0.69.0-6.el9_3.alma.1",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/python3-hawkey@0.69.0-6.el9_3.alma.1?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python3-hawkey@0.69.0-6.el9_3.alma.1.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python3-libcomps",
+      "SPDXID": "SPDXRef-Package-b5146a74419c3908",
+      "versionInfo": "0.1.18-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "af9ef0b9d92fa89aee17655d3d40c764"
+        }
+      ],
+      "sourceInfo": "built package from: libcomps 0.1.18-1.el9",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/python3-libcomps@0.1.18-1.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python3-libcomps@0.1.18-1.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python3-libdnf",
+      "SPDXID": "SPDXRef-Package-3b80c37c8674c36f",
+      "versionInfo": "0.69.0-6.el9_3.alma.1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "4ee4503882c6174e16e4198a7183d88c"
+        }
+      ],
+      "sourceInfo": "built package from: libdnf 0.69.0-6.el9_3.alma.1",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/python3-libdnf@0.69.0-6.el9_3.alma.1?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python3-libdnf@0.69.0-6.el9_3.alma.1.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python3-libs",
+      "SPDXID": "SPDXRef-Package-bb72b3e93596f2dc",
+      "versionInfo": "3.9.18-1.el9_3",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "6e566f82bb050c8f171172771092edf3"
+        }
+      ],
+      "sourceInfo": "built package from: python3.9 3.9.18-1.el9_3",
+      "licenseConcluded": "Python",
+      "licenseDeclared": "Python",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/python3-libs@3.9.18-1.el9_3?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python3-libs@3.9.18-1.el9_3.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python3-pip-wheel",
+      "SPDXID": "SPDXRef-Package-e3ff34a551fe6cd9",
+      "versionInfo": "21.2.3-7.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "6ad91b1dd5638468cbc00e5514c05667"
+        }
+      ],
+      "sourceInfo": "built package from: python-pip 21.2.3-7.el9",
+      "licenseConcluded": "MIT AND Python AND ASL-2.0 AND BSD-3-Clause AND ISC AND LGPLv2 AND MPLv2.0 AND (ASL-2.0 OR BSD-3-Clause)",
+      "licenseDeclared": "MIT AND Python AND ASL-2.0 AND BSD-3-Clause AND ISC AND LGPLv2 AND MPLv2.0 AND (ASL-2.0 OR BSD-3-Clause)",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/python3-pip-wheel@21.2.3-7.el9?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python3-pip-wheel@21.2.3-7.el9.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python3-rpm",
+      "SPDXID": "SPDXRef-Package-86b325718eb8324",
+      "versionInfo": "4.16.1.3-25.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "66d45bf00bc79e245d7bb9defce4368e"
+        }
+      ],
+      "sourceInfo": "built package from: rpm 4.16.1.3-25.el9",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/python3-rpm@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python3-rpm@4.16.1.3-25.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python3-setuptools-wheel",
+      "SPDXID": "SPDXRef-Package-1eba810061e28f28",
+      "versionInfo": "53.0.0-12.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "34a51e2a8b54246fcd09facd3048b3e7"
+        }
+      ],
+      "sourceInfo": "built package from: python-setuptools 53.0.0-12.el9",
+      "licenseConcluded": "MIT AND (BSD-3-Clause OR ASL-2.0)",
+      "licenseDeclared": "MIT AND (BSD-3-Clause OR ASL-2.0)",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/python3-setuptools-wheel@53.0.0-12.el9?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: python3-setuptools-wheel@53.0.0-12.el9.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "readline",
+      "SPDXID": "SPDXRef-Package-6f754ddf3c0f0173",
+      "versionInfo": "8.1-4.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f4f3a3fa47cf00c5f36937b73da28db1"
+        }
+      ],
+      "sourceInfo": "built package from: readline 8.1-4.el9",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/readline@8.1-4.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: readline@8.1-4.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "rootfiles",
+      "SPDXID": "SPDXRef-Package-c755e0b9fb7bbcde",
+      "versionInfo": "8.1-31.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "df09b8fcb46c0ca371ac63d612f016a9"
+        }
+      ],
+      "sourceInfo": "built package from: rootfiles 8.1-31.el9",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/rootfiles@8.1-31.el9?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rootfiles@8.1-31.el9.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "rpm",
+      "SPDXID": "SPDXRef-Package-3941ed3d90603ce4",
+      "versionInfo": "4.16.1.3-25.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f503bc17be9325eb4f3cfa2c25a5d9c9"
+        }
+      ],
+      "sourceInfo": "built package from: rpm 4.16.1.3-25.el9",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/rpm@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rpm@4.16.1.3-25.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "rpm-build-libs",
+      "SPDXID": "SPDXRef-Package-d36bcd18375be25a",
+      "versionInfo": "4.16.1.3-25.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f9ff69251beaa848be5c9254c7d084ac"
+        }
+      ],
+      "sourceInfo": "built package from: rpm 4.16.1.3-25.el9",
+      "licenseConcluded": "GPL-2.0-or-later AND LGPLv2+ WITH exceptions",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPLv2+ WITH exceptions",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/rpm-build-libs@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rpm-build-libs@4.16.1.3-25.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "rpm-libs",
+      "SPDXID": "SPDXRef-Package-36802c1de82c231e",
+      "versionInfo": "4.16.1.3-25.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "14dd2b0d3929040d68e251e8d2ebe03b"
+        }
+      ],
+      "sourceInfo": "built package from: rpm 4.16.1.3-25.el9",
+      "licenseConcluded": "GPL-2.0-or-later AND LGPLv2+ WITH exceptions",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPLv2+ WITH exceptions",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/rpm-libs@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rpm-libs@4.16.1.3-25.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "rpm-sign-libs",
+      "SPDXID": "SPDXRef-Package-593760eac963546b",
+      "versionInfo": "4.16.1.3-25.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "3cf6712fe4cbb227a8a39ea4057a757f"
+        }
+      ],
+      "sourceInfo": "built package from: rpm 4.16.1.3-25.el9",
+      "licenseConcluded": "GPL-2.0-or-later AND LGPLv2+ WITH exceptions",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPLv2+ WITH exceptions",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/rpm-sign-libs@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rpm-sign-libs@4.16.1.3-25.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "sed",
+      "SPDXID": "SPDXRef-Package-5e5138b9ee1d9f9",
+      "versionInfo": "4.8-9.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "11204e2cc270a9dbcefd2b57361e1756"
+        }
+      ],
+      "sourceInfo": "built package from: sed 4.8-9.el9",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/sed@4.8-9.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: sed@4.8-9.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "setup",
+      "SPDXID": "SPDXRef-Package-4710195c628768e0",
+      "versionInfo": "2.13.7-9.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "6522d371fb65f509815047693adbfe2e"
+        }
+      ],
+      "sourceInfo": "built package from: setup 2.13.7-9.el9",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/setup@2.13.7-9.el9?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: setup@2.13.7-9.el9.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "shadow-utils",
+      "SPDXID": "SPDXRef-Package-8514f3f83524f9ad",
+      "versionInfo": "2:4.9-8.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "d4a1b296105aaaf2d21f45e6f31a5c34"
+        }
+      ],
+      "sourceInfo": "built package from: shadow-utils 2:4.9-8.el9",
+      "licenseConcluded": "BSD-3-Clause AND GPL-2.0-or-later",
+      "licenseDeclared": "BSD-3-Clause AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/shadow-utils@4.9-8.el9?arch=x86_64\u0026distro=alma-9.3\u0026epoch=2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: shadow-utils@4.9-8.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "sqlite-libs",
+      "SPDXID": "SPDXRef-Package-2247976e328cde3f",
+      "versionInfo": "3.34.1-6.el9_1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "29212d8cc1ee4b96cd2208d43f8b3222"
+        }
+      ],
+      "sourceInfo": "built package from: sqlite 3.34.1-6.el9_1",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/sqlite-libs@3.34.1-6.el9_1?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: sqlite-libs@3.34.1-6.el9_1.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "systemd",
+      "SPDXID": "SPDXRef-Package-1cee1436a73c2433",
+      "versionInfo": "252-18.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "07e01ac6fcee3723ea7a192395c75233"
+        }
+      ],
+      "sourceInfo": "built package from: systemd 252-18.el9",
+      "licenseConcluded": "LGPLv2+ AND MIT AND GPL-2.0-or-later",
+      "licenseDeclared": "LGPLv2+ AND MIT AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/systemd@252-18.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: systemd@252-18.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "systemd-libs",
+      "SPDXID": "SPDXRef-Package-751a66d7d4f2d9c1",
+      "versionInfo": "252-18.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "8965d9506dbd9a97e25b32690718a981"
+        }
+      ],
+      "sourceInfo": "built package from: systemd 252-18.el9",
+      "licenseConcluded": "LGPLv2+ AND MIT",
+      "licenseDeclared": "LGPLv2+ AND MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/systemd-libs@252-18.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: systemd-libs@252-18.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "systemd-pam",
+      "SPDXID": "SPDXRef-Package-95e39bf469966e04",
+      "versionInfo": "252-18.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "267c0b5cbef68a3b64e10434e7832ce5"
+        }
+      ],
+      "sourceInfo": "built package from: systemd 252-18.el9",
+      "licenseConcluded": "LGPLv2+ AND MIT AND GPL-2.0-or-later",
+      "licenseDeclared": "LGPLv2+ AND MIT AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/systemd-pam@252-18.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: systemd-pam@252-18.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "systemd-rpm-macros",
+      "SPDXID": "SPDXRef-Package-dc1dbc0f395f0516",
+      "versionInfo": "252-18.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "faea601865e19d5575821abd07c079aa"
+        }
+      ],
+      "sourceInfo": "built package from: systemd 252-18.el9",
+      "licenseConcluded": "LGPLv2+ AND MIT AND GPL-2.0-or-later",
+      "licenseDeclared": "LGPLv2+ AND MIT AND GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/systemd-rpm-macros@252-18.el9?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: systemd-rpm-macros@252-18.el9.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "tar",
+      "SPDXID": "SPDXRef-Package-464117da2eb8df78",
+      "versionInfo": "2:1.34-6.el9_1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "81689da1c5890b81664b9c296793276f"
+        }
+      ],
+      "sourceInfo": "built package from: tar 2:1.34-6.el9_1",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/tar@1.34-6.el9_1?arch=x86_64\u0026distro=alma-9.3\u0026epoch=2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: tar@1.34-6.el9_1.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "tpm2-tss",
+      "SPDXID": "SPDXRef-Package-d1787655f44c4e66",
+      "versionInfo": "3.2.2-2.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7e09db66ddfe3c46501551d9f82a5e84"
+        }
+      ],
+      "sourceInfo": "built package from: tpm2-tss 3.2.2-2.el9",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/tpm2-tss@3.2.2-2.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: tpm2-tss@3.2.2-2.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "tzdata",
+      "SPDXID": "SPDXRef-Package-ca5ca7a00eb69cb4",
+      "versionInfo": "2023c-1.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "012efc50f1e371c1259bbe7401847aee"
+        }
+      ],
+      "sourceInfo": "built package from: tzdata 2023c-1.el9",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/tzdata@2023c-1.el9?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: tzdata@2023c-1.el9.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "util-linux",
+      "SPDXID": "SPDXRef-Package-a821d8bda0b6c995",
+      "versionInfo": "2.37.4-15.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "db9c60bb632738e069d0adcf99a69a6a"
+        }
+      ],
+      "sourceInfo": "built package from: util-linux 2.37.4-15.el9",
+      "licenseConcluded": "GPL-2.0-only AND GPL-2.0-or-later AND LGPLv2+ AND BSD-3-Clause WITH advertising AND Unlicense",
+      "licenseDeclared": "GPL-2.0-only AND GPL-2.0-or-later AND LGPLv2+ AND BSD-3-Clause WITH advertising AND Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/util-linux@2.37.4-15.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: util-linux@2.37.4-15.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "util-linux-core",
+      "SPDXID": "SPDXRef-Package-cbe7c338cbae560b",
+      "versionInfo": "2.37.4-15.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "30bf536ebd287ee5f810334f85b447d5"
+        }
+      ],
+      "sourceInfo": "built package from: util-linux 2.37.4-15.el9",
+      "licenseConcluded": "GPL-2.0-only AND GPL-2.0-or-later AND LGPLv2+ AND BSD-3-Clause WITH advertising AND Unlicense",
+      "licenseDeclared": "GPL-2.0-only AND GPL-2.0-or-later AND LGPLv2+ AND BSD-3-Clause WITH advertising AND Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/util-linux-core@2.37.4-15.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: util-linux-core@2.37.4-15.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "vim-minimal",
+      "SPDXID": "SPDXRef-Package-3a0edd246cbcb5c1",
+      "versionInfo": "2:8.2.2637-20.el9_1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "80ef36684df6e81f32ca7dd9fc573bda"
+        }
+      ],
+      "sourceInfo": "built package from: vim 2:8.2.2637-20.el9_1",
+      "licenseConcluded": "Vim AND MIT",
+      "licenseDeclared": "Vim AND MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/vim-minimal@8.2.2637-20.el9_1?arch=x86_64\u0026distro=alma-9.3\u0026epoch=2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: vim-minimal@8.2.2637-20.el9_1.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "xz",
+      "SPDXID": "SPDXRef-Package-f8952dfb93cbea74",
+      "versionInfo": "5.2.5-8.el9_0",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "faecaee7f9cd46fec9def1b27acc08d2"
+        }
+      ],
+      "sourceInfo": "built package from: xz 5.2.5-8.el9_0",
+      "licenseConcluded": "GPL-2.0-or-later AND Unlicense",
+      "licenseDeclared": "GPL-2.0-or-later AND Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/xz@5.2.5-8.el9_0?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: xz@5.2.5-8.el9_0.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "xz-libs",
+      "SPDXID": "SPDXRef-Package-b575b7394379998c",
+      "versionInfo": "5.2.5-8.el9_0",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "26d1d44716e54a105e7083fedc4c3a18"
+        }
+      ],
+      "sourceInfo": "built package from: xz 5.2.5-8.el9_0",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/xz-libs@5.2.5-8.el9_0?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: xz-libs@5.2.5-8.el9_0.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "yum",
+      "SPDXID": "SPDXRef-Package-81e0fe6ebfc611f5",
+      "versionInfo": "4.14.0-8.el9.alma.1",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "97649a5a3b588fbc720c42ee303683c0"
+        }
+      ],
+      "sourceInfo": "built package from: dnf 4.14.0-8.el9.alma.1",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/yum@4.14.0-8.el9.alma.1?arch=noarch\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: yum@4.14.0-8.el9.alma.1.noarch",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "zlib",
+      "SPDXID": "SPDXRef-Package-c4be693a659f8a46",
+      "versionInfo": "1.2.11-40.el9",
+      "supplier": "Organization: AlmaLinux",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "06ae87f547967cdb2d0cbe1a8f7a0a3b"
+        }
+      ],
+      "sourceInfo": "built package from: zlib 1.2.11-40.el9",
+      "licenseConcluded": "Zlib AND Boost",
+      "licenseDeclared": "Zlib AND Boost",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/alma/zlib@1.2.11-40.el9?arch=x86_64\u0026distro=alma-9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: zlib@1.2.11-40.el9.x86_64",
+        "LayerDiffID: sha256:342efb67861c022d0cddfe980ce8126795a7f350d7530dd8a88a908f3d2b24bc"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-ContainerImage-2643de6c5a2acd1e",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-ContainerImage-2643de6c5a2acd1e",
+      "relatedSpdxElement": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-fb1348b7fd0fcbf5",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-f335c5291e59fc7a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-acb38d9eed2ac950",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-6db4437c33759726",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-7f07db2250ba70ea",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-71d494bd351375d3",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-350908224dc0acb0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-fcdca11664b978a7",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-7fcdfb74d543c485",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-4be9cc091b1b7508",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-f5a6262001eaa518",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-38182dff3132ba9a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-751754ec576ac95",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-cf3b8bca5cd505e2",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-e54a1757f577b08a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-bf685ff70ce16dc6",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-7af3b8191b7707e6",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-b3ad0f3796ce5a46",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-4448347e5f9b9b0f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-398d5209b917d07d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-2de6514ab77466f5",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-dddff83802d07223",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-cc25b6934e93968e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-1e38b6d5e68c463a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-2d470883ce3aef1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-5c9d09c36f90d68c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-134d17fb3a9c6d4e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-5f368dc75f531763",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-72c13d00eb9a3304",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-4c1402f41d439796",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-cc5f5c8020f17881",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-e4a9cd88c52bc36e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-8f5960f35596aeb1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-6f52f4172efa1889",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-7eb8a73e0f93ba53",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-490a5fbd1e098ca0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-937a279e18a94d21",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-848f68bc27fbfd3d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-635fb373a5ffbb37",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-8a222d2003203c89",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-b15a7e7d5e1883f8",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-26435044feccc26a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-d6af22e75eec6e7b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-ee945a8f8d8082ee",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-baa9843637294523",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-9e2b206323783524",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-d22974d115667f2e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-9e8895e2fe78aaf5",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-e90609b5fe78175c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-d3fdc41ac7576d7e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-98bc220f0e94e0be",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-4c53469264daf136",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-bcf208f1eb40036e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-f7d2d7a91b454021",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-96041e88fa8c1d76",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-ea15fa1a80f1696c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-5ce7de67fa516893",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-220ef6c61e5f0e8c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-a28d9ffe4d7222fa",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-e003a94cee631851",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-a38e1ed004ec04f5",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-5bd5588d4d71df4a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-2e2e5c5bdf804b5a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-397aaf7cf608d030",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-8bf0ad4d7656f67d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-be1404e77902dcaf",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-da0cb84b2c4b9020",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-8887e605249184fa",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-1215868036de57e8",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-8c88af1ee3e73efd",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-a318ebf6a9607155",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-84e7f5d1af05a02c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-5fb5eea9d072e6fa",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-1a4507f12f1c18b5",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-a9c73e634e32a760",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-5a83d3ce98930419",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-10e9a2699686a7db",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-6c28f9c41dc217ce",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-f78ec552f79606c9",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-c5b8934a5647b3e0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-d2b0166aa1214686",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-89c7cf6d6af36def",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-90263560ef0739cc",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-8aa5128ad6f4e918",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-6666df79fb96df56",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-fa2f3d63c7105377",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-e251cdd4cee4317f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-5671b6dc899333cb",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-7b7aeeb2312e3581",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-8c09e9abd2a16907",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-82053cd90a243d31",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-3fca8a93c094e398",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-88e17dbba6701971",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-4508aab24907c527",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-41a97d73b41b80f4",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-9d5cb023c12cf8c7",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-699a608da9afe26d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-dd8105f8dceae501",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-7ba97ee481cd8d50",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-5647ca546b3b8c43",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-55481b13f9cb5ca0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-bfc4a76e92703235",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-61efafceb048d673",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-f9bfcc7b93baec6b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-7a5ec78fa88d32d8",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-47ec6b1400924ca1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-9a961c107eb114ea",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-2bf015f02e0e84a1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-3a33cc5ea3fd2281",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-865e707c1dee64a1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-57bfeff2353a8032",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-e8d643c807461961",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-91d6b626d3b72d68",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-fa45f6f6ed40c13e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-bc5a173e5969ae44",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-52a8300203eaed6b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-62055b5fdabb4671",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-370407815b28b5a0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-7df9a4153d45e89a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-b5146a74419c3908",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-3b80c37c8674c36f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-bb72b3e93596f2dc",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-e3ff34a551fe6cd9",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-86b325718eb8324",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-1eba810061e28f28",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-6f754ddf3c0f0173",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-c755e0b9fb7bbcde",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-3941ed3d90603ce4",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-d36bcd18375be25a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-36802c1de82c231e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-593760eac963546b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-5e5138b9ee1d9f9",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-4710195c628768e0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-8514f3f83524f9ad",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-2247976e328cde3f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-1cee1436a73c2433",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-751a66d7d4f2d9c1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-95e39bf469966e04",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-dc1dbc0f395f0516",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-464117da2eb8df78",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-d1787655f44c4e66",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-ca5ca7a00eb69cb4",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-a821d8bda0b6c995",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-cbe7c338cbae560b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-3a0edd246cbcb5c1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-f8952dfb93cbea74",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-b575b7394379998c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-81e0fe6ebfc611f5",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-ddb5f36e535fbc31",
+      "relatedSpdxElement": "SPDXRef-Package-c4be693a659f8a46",
+      "relationshipType": "CONTAINS"
+    }
+  ]
+}

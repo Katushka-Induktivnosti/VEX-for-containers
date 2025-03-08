@@ -1,0 +1,1345 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-6vqw-3v5j-54x4",
+    "dataSource": "https://github.com/advisories/GHSA-6vqw-3v5j-54x4",
+    "namespace": "github:language:python",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-6vqw-3v5j-54x4"
+    ],
+    "description": "cryptography NULL pointer dereference with pkcs12.serialize_key_and_certificates when called with a non-matching certificate and private key and an hmac_hash override",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "42.0.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26130",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26130",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/pyca/cryptography/commit/97d231672763cdb5959a3b191e692a362f1b9e55",
+      "https://github.com/pyca/cryptography/pull/10423",
+      "https://github.com/pyca/cryptography/security/advisories/GHSA-6vqw-3v5j-54x4"
+     ],
+     "description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Starting in version 38.0.0 and prior to version 42.0.4, if `pkcs12.serialize_key_and_certificates` is called with both a certificate whose public key did not match the provided private key and an `encryption_algorithm` with `hmac_hash` set (via `PrivateFormat.PKCS12.encryption_builder().hmac_hash(...)`, then a NULL pointer dereference would occur, crashing the Python process. This has been resolved in version 42.0.4, the first version in which a `ValueError` is properly raised.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "cryptography",
+       "version": "41.0.3"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=38.0.0,<42.0.4 (python)",
+      "vulnerabilityID": "GHSA-6vqw-3v5j-54x4"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6bb7d20922308837",
+    "name": "cryptography",
+    "version": "41.0.3",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [
+     "Apache-2.0 OR BSD-3-Clause",
+     "Apache-2.0 OR BSD-3-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:pypi/cryptography@41.0.3",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-3ww4-gg4f-jr7f",
+    "dataSource": "https://github.com/advisories/GHSA-3ww4-gg4f-jr7f",
+    "namespace": "github:language:python",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-3ww4-gg4f-jr7f"
+    ],
+    "description": "Python Cryptography package vulnerable to Bleichenbacher timing oracle attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "42.0.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-50782",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50782",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://access.redhat.com/security/cve/CVE-2023-50782",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2254432"
+     ],
+     "description": "A flaw was found in the python-cryptography package. This issue may allow a remote attacker to decrypt captured messages in TLS servers that use RSA key exchanges, which may lead to exposure of confidential or sensitive data.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "cryptography",
+       "version": "41.0.3"
+      }
+     },
+     "found": {
+      "versionConstraint": "<42.0.0 (python)",
+      "vulnerabilityID": "GHSA-3ww4-gg4f-jr7f"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6bb7d20922308837",
+    "name": "cryptography",
+    "version": "41.0.3",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [
+     "Apache-2.0 OR BSD-3-Clause",
+     "Apache-2.0 OR BSD-3-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:pypi/cryptography@41.0.3",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-jfhm-5ghh-2f97",
+    "dataSource": "https://github.com/advisories/GHSA-jfhm-5ghh-2f97",
+    "namespace": "github:language:python",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-jfhm-5ghh-2f97"
+    ],
+    "description": "cryptography vulnerable to NULL-dereference when loading PKCS7 certificates",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "41.0.6"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-49083",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-49083",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/pyca/cryptography/commit/f09c261ca10a31fe41b1262306db7f8f1da0e48a",
+      "https://github.com/pyca/cryptography/pull/9926",
+      "https://github.com/pyca/cryptography/security/advisories/GHSA-jfhm-5ghh-2f97",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QMNTYMUGFJSDBYBU22FUYBHFRZODRKXV/"
+     ],
+     "description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Calling `load_pem_pkcs7_certificates` or `load_der_pkcs7_certificates` could lead to a NULL-pointer dereference and segfault. Exploitation of this vulnerability poses a serious risk of Denial of Service (DoS) for any application attempting to deserialize a PKCS7 blob/certificate. The consequences extend to potential disruptions in system availability and stability. This vulnerability has been patched in version 41.0.6.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "cryptography",
+       "version": "41.0.3"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=3.1,<41.0.6 (python)",
+      "vulnerabilityID": "GHSA-jfhm-5ghh-2f97"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6bb7d20922308837",
+    "name": "cryptography",
+    "version": "41.0.3",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [
+     "Apache-2.0 OR BSD-3-Clause",
+     "Apache-2.0 OR BSD-3-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:pypi/cryptography@41.0.3",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-9v9h-cgj8-h64p",
+    "dataSource": "https://github.com/advisories/GHSA-9v9h-cgj8-h64p",
+    "namespace": "github:language:python",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-9v9h-cgj8-h64p"
+    ],
+    "description": "Null pointer dereference in PKCS12 parsing",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "42.0.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-0727",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-0727",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/openssl/openssl/commit/09df4395b5071217b76dc7d3d2e630eb8c5a79c2",
+      "https://github.com/openssl/openssl/commit/775acfdbd0c6af9ac855f34969cdab0c0c90844a",
+      "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
+      "https://github.openssl.org/openssl/extended-releases/commit/03b3941d60c4bce58fab69a0c22377ab439bc0e8",
+      "https://github.openssl.org/openssl/extended-releases/commit/aebaa5883e31122b404e450732dc833dc9dee539",
+      "https://security.netapp.com/advisory/ntap-20240208-0006/",
+      "https://www.openssl.org/news/secadv/20240125.txt"
+     ],
+     "description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "cryptography",
+       "version": "41.0.3"
+      }
+     },
+     "found": {
+      "versionConstraint": "<42.0.2 (python)",
+      "vulnerabilityID": "GHSA-9v9h-cgj8-h64p"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6bb7d20922308837",
+    "name": "cryptography",
+    "version": "41.0.3",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [
+     "Apache-2.0 OR BSD-3-Clause",
+     "Apache-2.0 OR BSD-3-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:pypi/cryptography@41.0.3",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v8gr-m533-ghj9",
+    "dataSource": "https://github.com/advisories/GHSA-v8gr-m533-ghj9",
+    "namespace": "github:language:python",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-v8gr-m533-ghj9"
+    ],
+    "description": "Vulnerable OpenSSL included in cryptography wheels",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "41.0.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "cryptography",
+       "version": "41.0.3"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=2.5,<41.0.4 (python)",
+      "vulnerabilityID": "GHSA-v8gr-m533-ghj9"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6bb7d20922308837",
+    "name": "cryptography",
+    "version": "41.0.3",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [
+     "Apache-2.0 OR BSD-3-Clause",
+     "Apache-2.0 OR BSD-3-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:pypi/cryptography@41.0.3",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-xr7r-f8xq-vfvv",
+    "dataSource": "https://github.com/advisories/GHSA-xr7r-f8xq-vfvv",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-xr7r-f8xq-vfvv"
+    ],
+    "description": "runc vulnerable to container breakout through process.cwd trickery and leaked fds",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.6,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.1.12"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-21626",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-21626",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://packetstormsecurity.com/files/176993/runc-1.1.11-File-Descriptor-Leak-Privilege-Escalation.html",
+      "http://www.openwall.com/lists/oss-security/2024/02/01/1",
+      "http://www.openwall.com/lists/oss-security/2024/02/02/3",
+      "https://github.com/opencontainers/runc/commit/02120488a4c0fc487d1ed2867e901eeed7ce8ecf",
+      "https://github.com/opencontainers/runc/releases/tag/v1.1.12",
+      "https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv",
+      "https://lists.debian.org/debian-lts-announce/2024/02/msg00005.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2NLXNE23Q5ESQUAI22Z7A63JX2WMPJ2J/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SYMO3BANINS6RGFQFKPRG4FIOJ7GWYTL/"
+     ],
+     "description": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. In runc 1.1.11 and earlier, due to an internal file descriptor leak, an attacker could cause a newly-spawned container process (from runc exec) to have a working directory in the host filesystem namespace, allowing for a container escape by giving access to the host filesystem (\"attack 2\"). The same attack could be used by a malicious image to allow a container process to gain access to the host filesystem through runc run (\"attack 1\"). Variants of attacks 1 and 2 could be also be used to overwrite semi-arbitrary host binaries, allowing for complete container escapes (\"attack 3a\" and \"attack 3b\"). runc 1.1.12 includes patches for this issue. ",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.6,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.6,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/opencontainers/runc",
+       "version": "v1.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.0.0-rc93,<=1.1.11 (unknown)",
+      "vulnerabilityID": "GHSA-xr7r-f8xq-vfvv"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1fea7eb9eb275a84",
+    "name": "github.com/opencontainers/runc",
+    "version": "v1.1.0",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v1.1.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vpvm-3wq2-2wvm",
+    "dataSource": "https://github.com/advisories/GHSA-vpvm-3wq2-2wvm",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-vpvm-3wq2-2wvm"
+    ],
+    "description": "Opencontainers runc Incorrect Authorization vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7,
+       "exploitabilityScore": 1,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.1.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-27561",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-27561",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://gist.github.com/LiveOverflow/c937820b688922eb127fb760ce06dab9",
+      "https://github.com/opencontainers/runc/issues/2197#issuecomment-1437617334",
+      "https://github.com/opencontainers/runc/issues/3751",
+      "https://lists.debian.org/debian-lts-announce/2023/03/msg00023.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ANUGDBJ7NBUMSUFZUSKU3ZMQYZ2Z3STN/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DHGVGGMKGZSJ7YO67TGGPFEHBYMS63VF/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/FNB2UEDIIJCRQW4WJLZOPQJZXCVSXMLD/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/FYVE3GB4OG3BNT5DLQHYO4M5SXX33AQ5/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/I6BF24VCZRFTYBTT3T7HDZUOTKOTNPLZ/"
+     ],
+     "description": "runc through 1.1.4 has Incorrect Access Control leading to Escalation of Privileges, related to libcontainer/rootfs_linux.go. To exploit this, an attacker must be able to spawn two containers with custom volume-mount configurations, and be able to run custom images. NOTE: this issue exists because of a CVE-2019-19921 regression.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7,
+        "exploitabilityScore": 1,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/opencontainers/runc",
+       "version": "v1.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.0.0-rc95,<1.1.5 (unknown)",
+      "vulnerabilityID": "GHSA-vpvm-3wq2-2wvm"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1fea7eb9eb275a84",
+    "name": "github.com/opencontainers/runc",
+    "version": "v1.1.0",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v1.1.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-g2j6-57v7-gm8c",
+    "dataSource": "https://github.com/advisories/GHSA-g2j6-57v7-gm8c",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-g2j6-57v7-gm8c"
+    ],
+    "description": "runc AppArmor bypass with symlinked /proc",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.1.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-28642",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-28642",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/opencontainers/runc/pull/3785",
+      "https://github.com/opencontainers/runc/security/advisories/GHSA-g2j6-57v7-gm8c"
+     ],
+     "description": "runc is a CLI tool for spawning and running containers according to the OCI specification. It was found that AppArmor can be bypassed when `/proc` inside the container is symlinked with a specific mount configuration. This issue has been fixed in runc version 1.1.5, by prohibiting symlinked `/proc`. See PR #3785 for details. users are advised to upgrade. Users unable to upgrade should avoid using an untrusted container image.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/opencontainers/runc",
+       "version": "v1.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.1.5 (unknown)",
+      "vulnerabilityID": "GHSA-g2j6-57v7-gm8c"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1fea7eb9eb275a84",
+    "name": "github.com/opencontainers/runc",
+    "version": "v1.1.0",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v1.1.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-f3fp-gc8g-vw66",
+    "dataSource": "https://github.com/advisories/GHSA-f3fp-gc8g-vw66",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-f3fp-gc8g-vw66"
+    ],
+    "description": "Default inheritable capabilities for linux container should be empty",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.5,
+       "impactScore": 3.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.1.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-29162",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29162",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/opencontainers/runc/commit/d04de3a9b72d7a2455c1885fc75eb36d02cd17b5",
+      "https://github.com/opencontainers/runc/releases/tag/v1.1.2",
+      "https://github.com/opencontainers/runc/security/advisories/GHSA-f3fp-gc8g-vw66",
+      "https://lists.debian.org/debian-lts-announce/2023/03/msg00023.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/AVPZBV7ISA7QKRPTC7ZXWKMIQI2HZEBB/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/D77CKD3AXPMU4PMQIQI5Q74SI4JATNND/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/GPQU4YC4AAY54JDXGDQHJEYKSXXG5T2Y/"
+     ],
+     "description": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. A bug was found in runc prior to version 1.1.2 where `runc exec --cap` created processes with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during execve(2). This bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set. This bug has been fixed in runc 1.1.2. This fix changes `runc exec --cap` behavior such that the additional capabilities granted to the process being executed (as specified via `--cap` arguments) do not include inheritable capabilities. In addition, `runc spec` is changed to not set any inheritable capabilities in the created example OCI spec (`config.json`) file.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 4.6,
+        "exploitabilityScore": 3.9,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.5,
+        "impactScore": 3.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/opencontainers/runc",
+       "version": "v1.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.1.2 (unknown)",
+      "vulnerabilityID": "GHSA-f3fp-gc8g-vw66"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1fea7eb9eb275a84",
+    "name": "github.com/opencontainers/runc",
+    "version": "v1.1.0",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v1.1.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-m8cg-xc2p-r3fc",
+    "dataSource": "https://github.com/advisories/GHSA-m8cg-xc2p-r3fc",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-m8cg-xc2p-r3fc"
+    ],
+    "description": "rootless: `/sys/fs/cgroup` is writable when cgroupns isn't unshared in runc",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 2.5,
+       "exploitabilityScore": 0.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Low",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.1.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-25809",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-25809",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/opencontainers/runc/commit/0d62b950e60f6980b54fe3bafd9a9c608dc1df17",
+      "https://github.com/opencontainers/runc/security/advisories/GHSA-m8cg-xc2p-r3fc"
+     ],
+     "description": "runc is a CLI tool for spawning and running containers according to the OCI specification. In affected versions it was found that rootless runc makes `/sys/fs/cgroup` writable in following conditons: 1. when runc is executed inside the user namespace, and the `config.json` does not specify the cgroup namespace to be unshared (e.g.., `(docker|podman|nerdctl) run --cgroupns=host`, with Rootless Docker/Podman/nerdctl) or 2. when runc is executed outside the user namespace, and `/sys` is mounted with `rbind, ro` (e.g., `runc spec --rootless`; this condition is very rare). A container may gain the write access to user-owned cgroup hierarchy `/sys/fs/cgroup/user.slice/...` on the host . Other users's cgroup hierarchies are not affected. Users are advised to upgrade to version 1.1.5. Users unable to upgrade may unshare the cgroup namespace (`(docker|podman|nerdctl) run --cgroupns=private)`. This is the default behavior of Docker/Podman/nerdctl on cgroup v2 hosts. or add `/sys/fs/cgroup` to `maskedPaths`.\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L",
+       "metrics": {
+        "baseScore": 6.3,
+        "exploitabilityScore": 2,
+        "impactScore": 3.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:L/I:L/A:L",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 0.8,
+        "impactScore": 3.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/opencontainers/runc",
+       "version": "v1.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.1.5 (unknown)",
+      "vulnerabilityID": "GHSA-m8cg-xc2p-r3fc"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1fea7eb9eb275a84",
+    "name": "github.com/opencontainers/runc",
+    "version": "v1.1.0",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v1.1.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-45x7-px36-x8w8",
+    "dataSource": "https://github.com/advisories/GHSA-45x7-px36-x8w8",
+    "namespace": "github:language:python",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-45x7-px36-x8w8"
+    ],
+    "description": "Prefix Truncation Attack against ChaCha20-Poly1305 and Encrypt-then-MAC aka Terrapin",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "3.4.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-48795",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-48795",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://packetstormsecurity.com/files/176280/Terrapin-SSH-Connection-Weakening.html",
+      "http://seclists.org/fulldisclosure/2024/Mar/21",
+      "http://www.openwall.com/lists/oss-security/2023/12/18/3",
+      "http://www.openwall.com/lists/oss-security/2023/12/19/5",
+      "http://www.openwall.com/lists/oss-security/2023/12/20/3",
+      "https://access.redhat.com/security/cve/cve-2023-48795",
+      "https://arstechnica.com/security/2023/12/hackers-can-break-ssh-channel-integrity-using-novel-data-corruption-attack/",
+      "https://bugs.gentoo.org/920280",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2254210",
+      "https://bugzilla.suse.com/show_bug.cgi?id=1217950",
+      "https://crates.io/crates/thrussh/versions",
+      "https://filezilla-project.org/versions.php",
+      "https://forum.netgate.com/topic/184941/terrapin-ssh-attack",
+      "https://git.libssh.org/projects/libssh.git/commit/?h=stable-0.10&id=10e09e273f69e149389b3e0e5d44b8c221c2e7f6",
+      "https://github.com/NixOS/nixpkgs/pull/275249",
+      "https://github.com/PowerShell/Win32-OpenSSH/issues/2189",
+      "https://github.com/PowerShell/Win32-OpenSSH/releases/tag/v9.5.0.0p1-Beta",
+      "https://github.com/TeraTermProject/teraterm/commit/7279fbd6ef4d0c8bdd6a90af4ada2899d786eec0",
+      "https://github.com/TeraTermProject/teraterm/releases/tag/v5.1",
+      "https://github.com/advisories/GHSA-45x7-px36-x8w8",
+      "https://github.com/apache/mina-sshd/issues/445",
+      "https://github.com/connectbot/sshlib/commit/5c8b534f6e97db7ac0e0e579331213aa25c173ab",
+      "https://github.com/connectbot/sshlib/compare/2.2.21...2.2.22",
+      "https://github.com/cyd01/KiTTY/issues/520",
+      "https://github.com/drakkan/sftpgo/releases/tag/v2.5.6",
+      "https://github.com/erlang/otp/blob/d1b43dc0f1361d2ad67601169e90a7fc50bb0369/lib/ssh/doc/src/notes.xml#L39-L42",
+      "https://github.com/erlang/otp/releases/tag/OTP-26.2.1",
+      "https://github.com/golang/crypto/commit/9d2ee975ef9fe627bf0a6f01c1f69e8ef1d4f05d",
+      "https://github.com/hierynomus/sshj/issues/916",
+      "https://github.com/janmojzis/tinyssh/issues/81",
+      "https://github.com/jtesta/ssh-audit/commit/8e972c5e94b460379fe0c7d20209c16df81538a5",
+      "https://github.com/libssh2/libssh2/pull/1291",
+      "https://github.com/mkj/dropbear/blob/17657c36cce6df7716d5ff151ec09a665382d5dd/CHANGES#L25",
+      "https://github.com/mscdex/ssh2/commit/97b223f8891b96d6fc054df5ab1d5a1a545da2a3",
+      "https://github.com/mwiede/jsch/compare/jsch-0.2.14...jsch-0.2.15",
+      "https://github.com/mwiede/jsch/issues/457",
+      "https://github.com/mwiede/jsch/pull/461",
+      "https://github.com/net-ssh/net-ssh/blob/2e65064a52d73396bfc3806c9196fc8108f33cd8/CHANGES.txt#L14-L16",
+      "https://github.com/openssh/openssh-portable/commits/master",
+      "https://github.com/paramiko/paramiko/issues/2337",
+      "https://github.com/proftpd/proftpd/blob/0a7ea9b0ba9fcdf368374a226370d08f10397d99/RELEASE_NOTES",
+      "https://github.com/proftpd/proftpd/blob/d21e7a2e47e9b38f709bec58e3fa711f759ad0e1/RELEASE_NOTES",
+      "https://github.com/proftpd/proftpd/blob/master/RELEASE_NOTES",
+      "https://github.com/proftpd/proftpd/issues/456",
+      "https://github.com/rapier1/hpn-ssh/releases",
+      "https://github.com/ronf/asyncssh/blob/develop/docs/changes.rst",
+      "https://github.com/ronf/asyncssh/tags",
+      "https://github.com/ssh-mitm/ssh-mitm/issues/165",
+      "https://github.com/warp-tech/russh/releases/tag/v0.40.2",
+      "https://gitlab.com/libssh/libssh-mirror/-/tags",
+      "https://groups.google.com/g/golang-announce/c/-n5WqVC18LQ",
+      "https://groups.google.com/g/golang-announce/c/qA3XtxvMUyg",
+      "https://help.panic.com/releasenotes/transmit5/",
+      "https://jadaptive.com/important-java-ssh-security-update-new-ssh-vulnerability-discovered-cve-2023-48795/",
+      "https://lists.debian.org/debian-lts-announce/2023/12/msg00017.html",
+      "https://lists.debian.org/debian-lts-announce/2024/01/msg00013.html",
+      "https://lists.debian.org/debian-lts-announce/2024/01/msg00014.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/33XHJUB6ROFUOH2OQNENFROTVH6MHSHA/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/3CAYYW35MUTNO65RVAELICTNZZFMT2XS/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/3JIMLVBDWOP4FUPXPTB4PGHHIOMGFLQE/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/3YQLUQWLIHDB5QCXQEX7HXHAWMOKPP5O/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/6Y74KVCPEPT4MVU3LHDWCNNOXOE5ZLUR/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/APYIXIQOVDCRWLHTGB4VYMAUIAQLKYJ3/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BL5KTLOSLH2KHRN4HCXJPK3JUVLDGEL6/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/C3AFMZ6MH2UHHOPIWT5YLSFV3D2VB3AC/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/CHHITS4PUOZAKFIUBQAQZC7JWXMOYE4B/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/F7EYCFQCTSGJXWO3ZZ44MGKFC5HA7G3Y/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HYEDEXIKFKTUJIN43RG4B7T5ZS6MHUSP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/I724O3LSRCPO4WNVIXTZCT4VVRMXMMSG/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/KEOTKBUPZXHE3F352JBYNTSNRXYLWD6P/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/KMZCVGUGJZZVDPCVDA7TEB22VUCNEXDD/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/L5Y6MNNVAPIJSXJERQ6PKZVCIUXSNJK7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LZQVUHWVWRH73YBXUQJOD6CKHDQBU3DM/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/MKQRBF3DWMWPH36LBCOBUTSIZRTPEZXB/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QI3EHAHABFQK7OABNCSF5GMYP6TONTI7/",
+      "https://matt.ucc.asn.au/dropbear/CHANGES",
+      "https://nest.pijul.com/pijul/thrussh/changes/D6H7OWTTMHHX6BTB3B6MNBOBX2L66CBL4LGSEUSAI2MCRCJDQFRQC",
+      "https://news.ycombinator.com/item?id=38684904",
+      "https://news.ycombinator.com/item?id=38685286",
+      "https://news.ycombinator.com/item?id=38732005",
+      "https://nova.app/releases/#v11.8",
+      "https://oryx-embedded.com/download/#changelog",
+      "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2024-0002",
+      "https://roumenpetrov.info/secsh/#news20231220",
+      "https://security-tracker.debian.org/tracker/CVE-2023-48795",
+      "https://security-tracker.debian.org/tracker/source-package/libssh2",
+      "https://security-tracker.debian.org/tracker/source-package/proftpd-dfsg",
+      "https://security-tracker.debian.org/tracker/source-package/trilead-ssh2",
+      "https://security.gentoo.org/glsa/202312-16",
+      "https://security.gentoo.org/glsa/202312-17",
+      "https://security.netapp.com/advisory/ntap-20240105-0004/",
+      "https://support.apple.com/kb/HT214084",
+      "https://thorntech.com/cve-2023-48795-and-sftp-gateway/",
+      "https://twitter.com/TrueSkrillor/status/1736774389725565005",
+      "https://ubuntu.com/security/CVE-2023-48795",
+      "https://winscp.net/eng/docs/history#6.2.2",
+      "https://www.bitvise.com/ssh-client-version-history#933",
+      "https://www.bitvise.com/ssh-server-version-history",
+      "https://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html",
+      "https://www.crushftp.com/crush10wiki/Wiki.jsp?page=Update",
+      "https://www.debian.org/security/2023/dsa-5586",
+      "https://www.debian.org/security/2023/dsa-5588",
+      "https://www.freebsd.org/security/advisories/FreeBSD-SA-23:19.openssh.asc",
+      "https://www.lancom-systems.de/service-support/allgemeine-sicherheitshinweise#c243508",
+      "https://www.netsarang.com/en/xshell-update-history/",
+      "https://www.openssh.com/openbsd.html",
+      "https://www.openssh.com/txt/release-9.6",
+      "https://www.openwall.com/lists/oss-security/2023/12/18/2",
+      "https://www.openwall.com/lists/oss-security/2023/12/20/3",
+      "https://www.paramiko.org/changelog.html",
+      "https://www.reddit.com/r/sysadmin/comments/18idv52/cve202348795_why_is_this_cve_still_undisclosed/",
+      "https://www.suse.com/c/suse-addresses-the-ssh-v2-protocol-terrapin-attack-aka-cve-2023-48795/",
+      "https://www.terrapin-attack.com",
+      "https://www.theregister.com/2023/12/20/terrapin_attack_ssh",
+      "https://www.vandyke.com/products/securecrt/history.txt"
+     ],
+     "description": "The SSH transport protocol with certain OpenSSH extensions, found in OpenSSH before 9.6 and other products, allows remote attackers to bypass integrity checks such that some packets are omitted (from the extension negotiation message), and a client and server may consequently end up with a connection for which some security features have been downgraded or disabled, aka a Terrapin attack. This occurs because the SSH Binary Packet Protocol (BPP), implemented by these extensions, mishandles the handshake phase and mishandles use of sequence numbers. For example, there is an effective attack against SSH's use of ChaCha20-Poly1305 (and CBC with Encrypt-then-MAC). The bypass occurs in chacha20-poly1305@openssh.com and (if CBC is used) the -etm@openssh.com MAC algorithms. This also affects Maverick Synergy Java SSH API before 3.1.0-SNAPSHOT, Dropbear through 2022.83, Ssh before 5.1.1 in Erlang/OTP, PuTTY before 0.80, AsyncSSH before 2.14.2, golang.org/x/crypto before 0.17.0, libssh before 0.10.6, libssh2 through 1.11.0, Thorn Tech SFTP Gateway before 3.4.6, Tera Term before 5.1, Paramiko before 3.4.0, jsch before 0.2.15, SFTPGo before 2.5.6, Netgate pfSense Plus through 23.09.1, Netgate pfSense CE through 2.7.2, HPN-SSH through 18.2.0, ProFTPD before 1.3.8b (and before 1.3.9rc2), ORYX CycloneSSH before 2.3.4, NetSarang XShell 7 before Build 0144, CrushFTP before 10.6.0, ConnectBot SSH library before 2.2.22, Apache MINA sshd through 2.11.0, sshj through 0.37.0, TinySSH through 20230101, trilead-ssh2 6401, LANCOM LCOS and LANconfig, FileZilla before 3.66.4, Nova before 11.8, PKIX-SSH before 14.4, SecureCRT before 9.4.3, Transmit5 before 5.10.4, Win32-OpenSSH before 9.5.0.0p1-Beta, WinSCP before 6.2.2, Bitvise SSH Server before 9.32, Bitvise SSH Client before 9.33, KiTTY through 0.76.1.13, the net-ssh gem 7.2.0 for Ruby, the mscdex ssh2 module before 1.15.0 for Node.js, the thrussh library before 0.35.1 for Rust, and the Russh crate before 0.40.2 for Rust.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "paramiko",
+       "version": "2.11.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=2.5.0,<3.4.0 (python)",
+      "vulnerabilityID": "GHSA-45x7-px36-x8w8"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c309259555bde5fa",
+    "name": "paramiko",
+    "version": "2.11.0",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [
+     "LGPL-3.0-only",
+     "LGPL-3.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:pypi/paramiko@2.11.0",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "mysql",
+   "imageID": "ContainerImage-7554a0988bd63ee9",
+   "manifestDigest": "",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "oracle",
+  "version": "8.9",
+  "idLike": [
+   "oracle"
+  ]
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-04-20T01:25:41Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:16b261c20c43828088d3530bdb10577ad87b9d33cfbfcaf051c3af61ba7e53ca",
+   "error": null
+  },
+  "timestamp": "2024-04-20T21:36:19.667607+02:00"
+ }
+}

@@ -1,0 +1,496 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/grype/sboms/elasticsearch:8.12.2_sbom.json",
+  "ArtifactType": "cyclonedx",
+  "Metadata": {
+    "OS": {
+      "Family": "ubuntu",
+      "Name": "20.04"
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "jsons/grype/sboms/elasticsearch:8.12.2_sbom.json (ubuntu 20.04)",
+      "Class": "os-pkgs",
+      "Type": "ubuntu",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2016-2781",
+          "PkgName": "coreutils",
+          "InstalledVersion": "8.30-3ubuntu2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-2781",
+          "PkgRef": "pkg:deb/ubuntu/coreutils@8.30-3ubuntu2?arch=arm64\u0026distro=ubuntu-20.04\u0026package-id=64b883ea034e9264",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "coreutils: Non-privileged session can escape to the parent session in chroot",
+          "Description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+              "V2Score": 2.1,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V2Score": 6.2,
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "http://seclists.org/oss-sec/2016/q1/452",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+            "https://access.redhat.com/security/cve/CVE-2016-2781",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+            "https://lore.kernel.org/patchwork/patch/793178/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+            "https://www.cve.org/CVERecord?id=CVE-2016-2781"
+          ],
+          "PublishedDate": "2017-02-07T15:59:00.333Z",
+          "LastModifiedDate": "2023-11-07T02:32:03.347Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2398",
+          "PkgName": "curl",
+          "InstalledVersion": "7.68.0-1ubuntu2.21",
+          "FixedVersion": "7.68.0-1ubuntu2.22",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2398",
+          "PkgRef": "pkg:deb/ubuntu/curl@7.68.0-1ubuntu2.21?arch=arm64\u0026distro=ubuntu-20.04\u0026package-id=aeb9bbecd7f6fc67",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "curl: HTTP/2 push headers memory-leak",
+          "Description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2398",
+            "https://curl.se/docs/CVE-2024-2398.html",
+            "https://curl.se/docs/CVE-2024-2398.json",
+            "https://hackerone.com/reports/2402845",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GMD6UYKCCRCYETWQZUJ65ZRFULT6SHLI/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2398",
+            "https://ubuntu.com/security/notices/USN-6718-1",
+            "https://ubuntu.com/security/notices/USN-6718-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2398"
+          ],
+          "PublishedDate": "2024-03-27T08:15:41.283Z",
+          "LastModifiedDate": "2024-04-19T23:15:10.867Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2236",
+          "PkgName": "libgcrypt20",
+          "InstalledVersion": "1.8.5-5ubuntu1.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2236",
+          "PkgRef": "pkg:deb/ubuntu/libgcrypt20@1.8.5-5ubuntu1.1?arch=arm64\u0026distro=ubuntu-20.04\u0026package-id=0c2072c243d3a8e6",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "libgcrypt: vulnerable to Marvin Attack",
+          "Description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-208"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2236",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2268268",
+            "https://github.com/tomato42/marvin-toolkit/tree/master/example/libgcrypt",
+            "https://lists.gnupg.org/pipermail/gcrypt-devel/2024-March/005607.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2236",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2236"
+          ],
+          "PublishedDate": "2024-03-06T22:15:57.977Z",
+          "LastModifiedDate": "2024-03-07T13:52:27.11Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28085",
+          "PkgName": "util-linux",
+          "InstalledVersion": "2.34-0.1ubuntu9.4",
+          "FixedVersion": "2.34-0.1ubuntu9.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28085",
+          "PkgRef": "pkg:deb/ubuntu/util-linux@2.34-0.1ubuntu9.4?arch=arm64\u0026distro=ubuntu-20.04\u0026package-id=1bbfea509665548c",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "util-linux: CVE-2024-28085: wall: escape sequence injection",
+          "Description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28085",
+            "https://github.com/skyler-ferrante/CVE-2024-28085",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+            "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+            "https://ubuntu.com/security/notices/USN-6719-1",
+            "https://ubuntu.com/security/notices/USN-6719-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28085",
+            "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+          ],
+          "PublishedDate": "2024-03-27T19:15:48.367Z",
+          "LastModifiedDate": "2024-04-07T12:15:08.903Z"
+        }
+      ]
+    },
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-52428",
+          "PkgName": "com.nimbusds:nimbus-jose-jwt",
+          "InstalledVersion": "9.23",
+          "FixedVersion": "9.37.2",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-52428",
+          "PkgRef": "pkg:maven/com.nimbusds/nimbus-jose-jwt@9.23?package-id=c11ed077af11e468",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "Denial of Service in Connect2id Nimbus JOSE+JWT",
+          "Description": "In Connect2id Nimbus JOSE+JWT before 9.37.2, an attacker can cause a denial of service (resource consumption) via a large JWE p2c header value (aka iteration count) for the PasswordBasedDecrypter (PBKDF2) component.",
+          "Severity": "MEDIUM",
+          "References": [
+            "https://bitbucket.org/connect2id/nimbus-jose-jwt",
+            "https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/3b3b77e",
+            "https://bitbucket.org/connect2id/nimbus-jose-jwt/issues/526",
+            "https://bitbucket.org/connect2id/nimbus-jose-jwt/issues/526/",
+            "https://connect2id.com/products/nimbus-jose-jwt",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-52428"
+          ],
+          "PublishedDate": "2024-02-11T05:15:08.383Z",
+          "LastModifiedDate": "2024-02-11T22:29:15.837Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-29025",
+          "PkgName": "io.netty:netty-codec-http",
+          "InstalledVersion": "4.1.94.Final",
+          "FixedVersion": "4.1.108.Final",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-29025",
+          "PkgRef": "pkg:maven/io.netty/netty-codec-http@4.1.94.Final?package-id=5c00db63cd2b2b08",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "netty-codec-http: Allocation of Resources Without Limits or Throttling",
+          "Description": "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers \u0026 clients. The `HttpPostRequestDecoder` can be tricked to accumulate data. While the decoder can store items on the disk if configured so, there are no limits to the number of fields the form can have, an attacher can send a chunked post consisting of many small fields that will be accumulated in the `bodyListHttpData` list. The decoder cumulates bytes in the `undecodedChunk` buffer until it can decode a field, this field can cumulate data without limits. This vulnerability is fixed in 4.1.108.Final.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-29025",
+            "https://gist.github.com/vietj/f558b8ea81ec6505f1e9a6ca283c9ae3",
+            "https://github.com/netty/netty",
+            "https://github.com/netty/netty/commit/0d0c6ed782d13d423586ad0c71737b2c7d02058c",
+            "https://github.com/netty/netty/security/advisories/GHSA-5jpm-x58v-624v",
+            "https://github.com/vietj/netty/tree/post-request-decoder",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-29025",
+            "https://security.snyk.io/vuln/SNYK-JAVA-IONETTY-6483812",
+            "https://www.cve.org/CVERecord?id=CVE-2024-29025"
+          ],
+          "PublishedDate": "2024-03-25T20:15:08.797Z",
+          "LastModifiedDate": "2024-03-26T12:55:05.01Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-xpw8-rcwv-8f8p",
+          "PkgName": "io.netty:netty-codec-http2",
+          "InstalledVersion": "4.1.94.Final",
+          "FixedVersion": "4.1.100.Final",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-xpw8-rcwv-8f8p",
+          "PkgRef": "pkg:maven/io.netty/netty-codec-http2@4.1.94.Final?package-id=cf7e7c60eb4fe50c",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "io.netty:netty-codec-http2 vulnerable to HTTP/2 Rapid Reset Attack",
+          "Description": "A client might overload the server by issue frequent RST frames. This can cause a massive amount of load on the remote system and so cause a DDOS attack. \n\n### Impact\nThis is a DDOS attack, any http2 server is affected and so you should update as soon as possible.\n\n### Patches\nThis is patched in version 4.1.100.Final.\n\n### Workarounds\nA user can limit the amount of RST frames that are accepted per connection over a timeframe manually using either an own `Http2FrameListener` implementation or an `ChannelInboundHandler` implementation (depending which http2 API is used).\n\n### References\n- https://www.cve.org/CVERecord?id=CVE-2023-44487\n- https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack/\n- https://cloud.google.com/blog/products/identity-security/google-cloud-mitigated-largest-ddos-attack-peaking-above-398-million-rps/",
+          "Severity": "HIGH",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/apple/swift-nio-http2/security/advisories/GHSA-qppj-fm5r-hxr3",
+            "https://github.com/netty/netty",
+            "https://github.com/netty/netty/commit/58f75f665aa81a8cbcf6ffa74820042a285c5e61",
+            "https://github.com/netty/netty/security/advisories/GHSA-xpw8-rcwv-8f8p",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-44487",
+            "https://www.cve.org/CVERecord?id=CVE-2023-44487"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2023-1370",
+          "PkgName": "net.minidev:json-smart",
+          "InstalledVersion": "2.4.8",
+          "FixedVersion": "2.4.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-1370",
+          "PkgRef": "pkg:maven/net.minidev/json-smart@2.4.8?package-id=e50b9704e3673c26",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "json-smart: Uncontrolled Resource Consumption vulnerability in json-smart (Resource Exhaustion)",
+          "Description": "[Json-smart](https://netplex.github.io/json-smart/) is a performance focused, JSON processor lib.\n\nWhen reaching a ‘[‘ or ‘{‘ character in the JSON input, the code parses an array or an object respectively.\n\nIt was discovered that the code does not have any limit to the nesting of such arrays or objects. Since the parsing of nested arrays and objects is done recursively, nesting too many of them can cause a stack exhaustion (stack overflow) and crash the software.\n\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-674"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-1370",
+            "https://github.com/advisories/GHSA-493p-pfq6-5258",
+            "https://github.com/netplex/json-smart-v2/commit/5b3205d051952d3100aa0db1535f6ba6226bd87a",
+            "https://github.com/netplex/json-smart-v2/commit/e2791ae506a57491bc856b439d706c81e45adcf8",
+            "https://github.com/netplex/json-smart-v2/issues/137",
+            "https://github.com/oswaldobapvicjr/jsonmerge",
+            "https://github.com/oswaldobapvicjr/jsonmerge/security/advisories/GHSA-493p-pfq6-5258",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-1370",
+            "https://research.jfrog.com/vulnerabilities/stack-exhaustion-in-json-smart-leads-to-denial-of-service-when-parsing-malformed-json-xray-427633",
+            "https://research.jfrog.com/vulnerabilities/stack-exhaustion-in-json-smart-leads-to-denial-of-service-when-parsing-malformed-json-xray-427633/",
+            "https://security.snyk.io/vuln/SNYK-JAVA-NETMINIDEV-3369748",
+            "https://ubuntu.com/security/notices/USN-6011-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-1370"
+          ],
+          "PublishedDate": "2023-03-22T06:15:09.493Z",
+          "LastModifiedDate": "2024-04-01T15:45:17.643Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-25710",
+          "PkgName": "org.apache.commons:commons-compress",
+          "InstalledVersion": "1.24.0",
+          "FixedVersion": "1.26.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-25710",
+          "PkgRef": "pkg:maven/org.apache.commons/commons-compress@1.24.0?package-id=60f1517f10b341c0",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "commons-compress: Denial of service caused by an infinite loop for a corrupted DUMP file",
+          "Description": "Loop with Unreachable Exit Condition ('Infinite Loop') vulnerability in Apache Commons Compress.This issue affects Apache Commons Compress: from 1.3 through 1.25.0.\n\nUsers are recommended to upgrade to version 1.26.0 which fixes the issue.\n\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-835"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/02/19/1",
+            "https://access.redhat.com/security/cve/CVE-2024-25710",
+            "https://github.com/apache/commons-compress",
+            "https://lists.apache.org/thread/cz8qkcwphy4cx8gltn932ln51cbtq6kf",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-25710",
+            "https://security.netapp.com/advisory/ntap-20240307-0010",
+            "https://security.netapp.com/advisory/ntap-20240307-0010/",
+            "https://www.cve.org/CVERecord?id=CVE-2024-25710"
+          ],
+          "PublishedDate": "2024-02-19T09:15:37.943Z",
+          "LastModifiedDate": "2024-03-07T17:15:12.94Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26308",
+          "PkgName": "org.apache.commons:commons-compress",
+          "InstalledVersion": "1.24.0",
+          "FixedVersion": "1.26.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26308",
+          "PkgRef": "pkg:maven/org.apache.commons/commons-compress@1.24.0?package-id=60f1517f10b341c0",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "commons-compress: OutOfMemoryError unpacking broken Pack200 file",
+          "Description": "Allocation of Resources Without Limits or Throttling vulnerability in Apache Commons Compress.This issue affects Apache Commons Compress: from 1.21 before 1.26.\n\nUsers are recommended to upgrade to version 1.26, which fixes the issue.\n\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/02/19/2",
+            "https://access.redhat.com/security/cve/CVE-2024-26308",
+            "https://github.com/apache/commons-compress",
+            "https://lists.apache.org/thread/ch5yo2d21p7vlqrhll9b17otbyq4npfg",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26308",
+            "https://security.netapp.com/advisory/ntap-20240307-0009",
+            "https://security.netapp.com/advisory/ntap-20240307-0009/",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26308",
+            "https://www.openwall.com/lists/oss-security/2024/02/19/2"
+          ],
+          "PublishedDate": "2024-02-19T09:15:38.277Z",
+          "LastModifiedDate": "2024-03-21T19:54:03.23Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-21742",
+          "PkgName": "org.apache.james:apache-mime4j-core",
+          "InstalledVersion": "0.8.9",
+          "FixedVersion": "0.8.10",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-21742",
+          "PkgRef": "pkg:maven/org.apache.james/apache-mime4j-core@0.8.9?package-id=284fda7d6263b78b",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": ": Apache James Mime4J: Mime4J DOM header injection",
+          "Description": "Improper input validation allows for header injection in MIME4J library when using MIME4J DOM for composing message.\nThis can be exploited by an attacker to add unintended headers to MIME messages.\n",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 5.6
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/02/27/5",
+            "https://access.redhat.com/security/cve/CVE-2024-21742",
+            "https://github.com/apache/james-mime4j",
+            "https://github.com/apache/james-mime4j/commit/9dec5df2a588fed8027839815daefa79ee66efd1",
+            "https://github.com/apache/james-mime4j/commit/d25fb3fd35db42b060789a20634fbe3cb84aba17",
+            "https://lists.apache.org/thread/nrqzg93219wdj056pqfszsd33dc54kfy",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-21742",
+            "https://www.cve.org/CVERecord?id=CVE-2024-21742"
+          ],
+          "PublishedDate": "2024-02-27T17:15:12.03Z",
+          "LastModifiedDate": "2024-02-29T01:44:04.04Z"
+        }
+      ]
+    }
+  ]
+}

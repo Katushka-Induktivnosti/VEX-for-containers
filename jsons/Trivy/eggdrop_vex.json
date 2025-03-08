@@ -1,0 +1,163 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "eggdrop",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.16.8"
+    },
+    "ImageID": "sha256:7e96a60c235c0c85131c4b9d9a0a9ad05a0c59a71f8d3aa00d390cef0e6cc9ef",
+    "DiffIDs": [
+      "sha256:e6f74d769c024fa6059c2f78fc20dbdf92c50c322f172a8877ac7de5750ed37a",
+      "sha256:c81a43223aab8bfa60a7a2356f7571de5f5676d7f9ba5d52ffed8d9aa2aaf504",
+      "sha256:3aecdc3cfdb3e058a341b09992a3ce57b5d530689474ca822add0c164af29a56",
+      "sha256:a9c9f1e7e33c4f79157124d5555c759f7206764077d8491570bed86bd2cd03b4",
+      "sha256:1dad9016dc4c4bcf91890022aeb1f647d1963b458b04488952e4a49331b95163",
+      "sha256:67eceaa8847393f441506d68d1d8600c63168532525cce07c10c883e54b6e998",
+      "sha256:3eba066a649fc13c97e89a045fbc2723e98426d54a4ba05a872d3f51335e950d"
+    ],
+    "RepoTags": [
+      "eggdrop:latest"
+    ],
+    "RepoDigests": [
+      "eggdrop@sha256:1cad2b51626113b4a567a871b00914876ccc7479afff3b7946965202d77279a4"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "author": "Geo Van O \u003cgeo@eggheads.org\u003e",
+      "container": "87997e53be69547d0a60ed9515fef2f89858b061cfbc72d14f279733d5b7aed7",
+      "created": "2023-12-01T06:45:05.030998363Z",
+      "docker_version": "20.10.23",
+      "history": [
+        {
+          "created": "2023-11-30T23:23:05Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:282274bb02b29182f35c732f021f3dab6de9f16a1ae24460061ad1abdca6444a in / "
+        },
+        {
+          "created": "2023-11-30T23:23:05Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T06:41:07Z",
+          "created_by": "/bin/sh -c #(nop)  MAINTAINER Geo Van O \u003cgeo@eggheads.org\u003e",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T06:41:08Z",
+          "created_by": "/bin/sh -c adduser -S eggdrop"
+        },
+        {
+          "created": "2023-12-01T06:41:09Z",
+          "created_by": "/bin/sh -c apk add --no-cache 'su-exec\u003e=0.2'"
+        },
+        {
+          "created": "2023-12-01T06:41:10Z",
+          "created_by": "/bin/sh -c apk add --no-cache tcl bash openssl"
+        },
+        {
+          "created": "2023-12-01T06:45:03Z",
+          "created_by": "/bin/sh -c apk add --no-cache --virtual egg-deps wget ca-certificates make tar gnupg build-base openssl-dev   \u0026\u0026 wget \"https://prdownloads.sourceforge.net/tcl/tcl8.6.12-src.tar.gz\" -O tcl8.6.12-src.tar.gz   \u0026\u0026 tar -zxf tcl8.6.12-src.tar.gz   \u0026\u0026 ( cd tcl8.6.12     \u0026\u0026 sed -i \"/define TCL_UTF_MAX/c\\#define TCL_UTF_MAX 6\" generic/tcl.h     \u0026\u0026 cd unix     \u0026\u0026 ./configure     \u0026\u0026 make     \u0026\u0026 make install )   \u0026\u0026 rm tcl8.6.12-src.tar.gz   \u0026\u0026 rm -rf tcl8.6.12   \u0026\u0026 wget ftp://ftp.eggheads.org/pub/eggdrop/source/1.9/eggdrop-1.9.5.tar.gz   \u0026\u0026 wget ftp://ftp.eggheads.org/pub/eggdrop/source/1.9/eggdrop-1.9.5.tar.gz.asc   \u0026\u0026 gpg --keyserver keyserver.ubuntu.com --recv-key E01C240484DE7DBE190FE141E7667DE1D1A39AFF   \u0026\u0026 gpg --batch --verify eggdrop-1.9.5.tar.gz.asc eggdrop-1.9.5.tar.gz   \u0026\u0026 command -v gpgconf \u003e /dev/null   \u0026\u0026 gpgconf --kill all   \u0026\u0026 rm eggdrop-1.9.5.tar.gz.asc   \u0026\u0026 tar -zxvf eggdrop-1.9.5.tar.gz   \u0026\u0026 rm eggdrop-1.9.5.tar.gz   \u0026\u0026 ( cd eggdrop-1.9.5     \u0026\u0026 ./configure     \u0026\u0026 make config     \u0026\u0026 make     \u0026\u0026 make install DEST=/home/eggdrop/eggdrop )   \u0026\u0026 rm -rf eggdrop-1.9.5   \u0026\u0026 mkdir /home/eggdrop/eggdrop/data   \u0026\u0026 chown -R eggdrop /home/eggdrop/eggdrop   \u0026\u0026 apk del egg-deps"
+        },
+        {
+          "created": "2023-12-01T06:45:04Z",
+          "created_by": "/bin/sh -c #(nop)  ENV NICK=",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T06:45:04Z",
+          "created_by": "/bin/sh -c #(nop)  ENV SERVER=",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T06:45:04Z",
+          "created_by": "/bin/sh -c #(nop)  ENV LISTEN=3333",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T06:45:04Z",
+          "created_by": "/bin/sh -c #(nop)  ENV OWNER=",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T06:45:04Z",
+          "created_by": "/bin/sh -c #(nop)  ENV USERFILE=eggdrop.user",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T06:45:04Z",
+          "created_by": "/bin/sh -c #(nop)  ENV CHANFILE=eggdrop.chan",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T06:45:04Z",
+          "created_by": "/bin/sh -c #(nop) WORKDIR /home/eggdrop/eggdrop",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T06:45:04Z",
+          "created_by": "/bin/sh -c #(nop)  EXPOSE 3333",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T06:45:04Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:ddb4d88d0de0ae2531972fbd491e6c611f0bb89ff8457bc01e4e61ae7f66cd46 in /home/eggdrop/eggdrop "
+        },
+        {
+          "created": "2023-12-01T06:45:04Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:b76e92fb28997fa3fd71a3b880ff3b73567ca05021b617d51ebdcefd8c31b457 in /home/eggdrop/eggdrop/scripts/ "
+        },
+        {
+          "created": "2023-12-01T06:45:04Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/home/eggdrop/eggdrop/entrypoint.sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T06:45:05Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"eggdrop.conf\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:e6f74d769c024fa6059c2f78fc20dbdf92c50c322f172a8877ac7de5750ed37a",
+          "sha256:c81a43223aab8bfa60a7a2356f7571de5f5676d7f9ba5d52ffed8d9aa2aaf504",
+          "sha256:3aecdc3cfdb3e058a341b09992a3ce57b5d530689474ca822add0c164af29a56",
+          "sha256:a9c9f1e7e33c4f79157124d5555c759f7206764077d8491570bed86bd2cd03b4",
+          "sha256:1dad9016dc4c4bcf91890022aeb1f647d1963b458b04488952e4a49331b95163",
+          "sha256:67eceaa8847393f441506d68d1d8600c63168532525cce07c10c883e54b6e998",
+          "sha256:3eba066a649fc13c97e89a045fbc2723e98426d54a4ba05a872d3f51335e950d"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "eggdrop.conf"
+        ],
+        "Entrypoint": [
+          "/home/eggdrop/eggdrop/entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "NICK=",
+          "SERVER=",
+          "LISTEN=3333",
+          "OWNER=",
+          "USERFILE=eggdrop.user",
+          "CHANFILE=eggdrop.chan"
+        ],
+        "Image": "sha256:c162d1a40d7f7dbd19c063df517b8f0d948c15aef78f4b8c96f5144d75e0ddd3",
+        "WorkingDir": "/home/eggdrop/eggdrop"
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "eggdrop (alpine 3.16.8)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    }
+  ]
+}

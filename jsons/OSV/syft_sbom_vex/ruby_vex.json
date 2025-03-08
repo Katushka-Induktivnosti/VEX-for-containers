@@ -1,0 +1,377 @@
+{
+  "results": [
+    {
+      "source": {
+        "path": "/Users/katushka/Documents/vex_json/jsons/grype/sboms/ruby_sbom.json",
+        "type": "sbom"
+      },
+      "packages": [
+        {
+          "package": {
+            "name": "imagemagick",
+            "version": "8:6.9.11.60+dfsg-1.6",
+            "ecosystem": "Debian"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-22T19:16:57Z",
+              "published": "2024-02-22T00:00:00Z",
+              "schema_version": "1.6.0",
+              "id": "DSA-5628-1",
+              "related": [
+                "CVE-2021-3610",
+                "CVE-2022-1115",
+                "CVE-2023-1289",
+                "CVE-2023-1906",
+                "CVE-2023-34151",
+                "CVE-2023-3428",
+                "CVE-2023-5341"
+              ],
+              "summary": "imagemagick - security update",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Debian:11",
+                    "name": "imagemagick",
+                    "purl": "pkg:deb/debian/imagemagick?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "8:6.9.11.60+dfsg-1.3+deb11u3"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "8:6.9.11.60+dfsg-1.3",
+                    "8:6.9.11.60+dfsg-1.3+deb11u1",
+                    "8:6.9.11.60+dfsg-1.3+deb11u2"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/debian-osv/dsa-osv/DSA-5628-1.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Debian:12",
+                    "name": "imagemagick",
+                    "purl": "pkg:deb/debian/imagemagick?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "8:6.9.11.60+dfsg-1.6+deb12u1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "8:6.9.11.60+dfsg-1.6"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/debian-osv/dsa-osv/DSA-5628-1.json"
+                  }
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "DSA-5628-1"
+              ],
+              "aliases": [
+                "DSA-5628-1"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "rdoc",
+            "version": "6.6.2",
+            "ecosystem": "RubyGems"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-25T19:58:32Z",
+              "published": "2024-03-25T19:36:59Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-592j-995h-p23j",
+              "aliases": [
+                "CVE-2024-27281"
+              ],
+              "summary": "RDoc RCE vulnerability with .rdoc_options",
+              "details": "An issue was discovered in RDoc 6.3.3 through 6.6.2, as distributed in Ruby 3.x through 3.3.0.\n\nWhen parsing `.rdoc_options` (used for configuration in RDoc) as a YAML file, object injection and resultant remote code execution are possible because there are no restrictions on the classes that can be restored.\n\nWhen loading the documentation cache, object injection and resultant remote code execution are also possible if there were a crafted cache.\n\nWe recommend to update the RDoc gem to version 6.6.3.1 or later. In order to ensure compatibility with bundled version in older Ruby series, you may update as follows instead:\n\n* For Ruby 3.0 users: Update to `rdoc` 6.3.4.1\n* For Ruby 3.1 users: Update to `rdoc` 6.4.1.1\n* For Ruby 3.2 users: Update to `rdoc` 6.5.1.1\n\nYou can use `gem update rdoc` to update it. If you are using bundler, please add `gem \"rdoc\", \"\u003e= 6.6.3.1\"` to your `Gemfile`.\n\nNote: 6.3.4, 6.4.1, 6.5.1 and 6.6.3 have a incorrect fix. We recommend to upgrade 6.3.4.1, 6.4.1.1, 6.5.1.1 and 6.6.3.1 instead of them.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "rdoc",
+                    "purl": "pkg:gem/rdoc"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "6.3.0"
+                        },
+                        {
+                          "fixed": "6.3.4.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "6.3.0",
+                    "6.3.1",
+                    "6.3.2",
+                    "6.3.3"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-592j-995h-p23j/GHSA-592j-995h-p23j.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "rdoc",
+                    "purl": "pkg:gem/rdoc"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "6.4.0"
+                        },
+                        {
+                          "fixed": "6.4.1.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "6.4.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-592j-995h-p23j/GHSA-592j-995h-p23j.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "rdoc",
+                    "purl": "pkg:gem/rdoc"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "6.5.0"
+                        },
+                        {
+                          "fixed": "6.5.1.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "6.5.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-592j-995h-p23j/GHSA-592j-995h-p23j.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "rdoc",
+                    "purl": "pkg:gem/rdoc"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "6.6.0"
+                        },
+                        {
+                          "fixed": "6.6.3.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "6.6.0",
+                    "6.6.1",
+                    "6.6.2"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-592j-995h-p23j/GHSA-592j-995h-p23j.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rdoc/commit/1254b0066f312ddbf7fae7a195e66ce5b3bc6656"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rdoc/commit/32ff6ba0bebd8ea26f569da5fd23be2937f6a644"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rdoc/commit/48617985e9fbc2825219d55f04e3e0e98d2923be"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rdoc/commit/811f125a4a0cc968e3eb18e16ea6c1a3b49a11bf"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rdoc/commit/a5de13bf0f0c26f8e764e82b5bf4bf8bffc7198e"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rdoc/commit/d22ba930f1f611dda531dba04cd3d2531bb3f8a5"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rdoc/commit/da7a0c7553ef7250ca665a3fecdc01dbaacbb43d"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rdoc/commit/e4a0e71e6f1032f8b4e5e58b4ef60d702c22ce17"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/ruby/rdoc"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/rdoc/CVE-2024-27281.yml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.ruby-lang.org/en/news/2024/03/21/rce-rdoc-cve-2024-27281"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-74"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-25T19:36:59Z",
+                "nvd_published_at": null,
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-592j-995h-p23j"
+              ],
+              "aliases": [
+                "CVE-2024-27281",
+                "GHSA-592j-995h-p23j"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "ruby",
+            "version": "3.3.0",
+            "ecosystem": "OSS-Fuzz"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2022-10-29T00:00:16Z",
+              "published": "2022-10-29T00:00:16Z",
+              "schema_version": "1.6.0",
+              "id": "OSV-2022-1108",
+              "summary": "Use-after-poison in /mnt/scratch0/clusterfuzz/bot/builds/clusterfuzz-builds_ruby_e5a0a396033f4deba21",
+              "details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52788\n\n```\nCrash type: Use-after-poison READ 1\nCrash state:\n/mnt/scratch0/clusterfuzz/bot/builds/clusterfuzz-builds_ruby_e5a0a396033f4deba21\n/mnt/scratch0/clusterfuzz/bot/builds/clusterfuzz-builds_ruby_e5a0a396033f4deba21\n/mnt/scratch0/clusterfuzz/bot/builds/clusterfuzz-builds_ruby_e5a0a396033f4deba21\n```\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "OSS-Fuzz",
+                    "name": "ruby",
+                    "purl": "pkg:generic/ruby"
+                  },
+                  "ranges": [
+                    {
+                      "type": "GIT",
+                      "events": [
+                        {
+                          "introduced": "67de00053a26db9d976efa393d121479b5315f5e"
+                        }
+                      ],
+                      "repo": "https://github.com/ruby/ruby.git"
+                    }
+                  ],
+                  "versions": [
+                    "v3_2_0",
+                    "v3_2_0_preview3",
+                    "v3_2_0_rc1",
+                    "v3_2_1",
+                    "v3_2_2",
+                    "v3_2_3",
+                    "v3_3_0",
+                    "v3_3_0_preview1",
+                    "v3_3_0_preview2",
+                    "v3_3_0_preview3"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/ruby/OSV-2022-1108.yaml"
+                  },
+                  "ecosystem_specific": {
+                    "severity": "MEDIUM"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "REPORT",
+                  "url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52788"
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "OSV-2022-1108"
+              ],
+              "aliases": [
+                "OSV-2022-1108"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "experimental_config": {
+    "licenses": {
+      "summary": false,
+      "allowlist": null
+    }
+  }
+}

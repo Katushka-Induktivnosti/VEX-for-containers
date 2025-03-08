@@ -1,0 +1,1224 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2011-3374",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2011-3374",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2011-3374"
+    ],
+    "description": "It was found that apt-key in apt, all versions, do not correctly validate gpg keys with the master keyring, leading to a potential man-in-the-middle attack.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2011-3374",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2011-3374",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://access.redhat.com/security/cve/cve-2011-3374",
+      "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=642480",
+      "https://people.canonical.com/~ubuntu-security/cve/2011/CVE-2011-3374.html",
+      "https://seclists.org/fulldisclosure/2011/Sep/221",
+      "https://security-tracker.debian.org/tracker/CVE-2011-3374",
+      "https://snyk.io/vuln/SNYK-LINUX-APT-116518",
+      "https://ubuntu.com/security/CVE-2011-3374"
+     ],
+     "description": "It was found that apt-key in apt, all versions, do not correctly validate gpg keys with the master keyring, leading to a potential man-in-the-middle attack.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 3.7,
+        "exploitabilityScore": 2.2,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "apt",
+       "version": "2.6.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2011-3374"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "138c2ad7bddff802",
+    "name": "apt",
+    "version": "2.6.1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only AND BSD-3-Clause AND Expat",
+     "GPL-2.0-only AND BSD-3-Clause AND Expat"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/apt@2.6.1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2781",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2016-2781",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Low",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2016-2781"
+    ],
+    "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-2781",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+      "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "coreutils",
+       "version": "9.1-1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-2781"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5cd412a403394fbb",
+    "name": "coreutils",
+    "version": "9.1-1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-only AND BSD-4-clause-UC AND ISC AND FSFULLR AND GFDL-NIV-1.3 AND GFDL-1.3-only",
+     "GPL-3.0-only AND BSD-4-clause-UC AND ISC AND FSFULLR AND GFDL-NIV-1.3 AND GFDL-1.3-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/coreutils@9.1-1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2017-18018",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2017-18018",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2017-18018"
+    ],
+    "description": "In GNU Coreutils through 8.29, chown-core.c in chown and chgrp does not prevent replacement of a plain file with a symlink during use of the POSIX \"-R -L\" options, which allows local users to modify the ownership of arbitrary files by leveraging a race condition.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-18018",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-18018",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://lists.gnu.org/archive/html/coreutils/2017-12/msg00045.html"
+     ],
+     "description": "In GNU Coreutils through 8.29, chown-core.c in chown and chgrp does not prevent replacement of a plain file with a symlink during use of the POSIX \"-R -L\" options, which allows local users to modify the ownership of arbitrary files by leveraging a race condition.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 1.9,
+        "exploitabilityScore": 3.4,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 4.7,
+        "exploitabilityScore": 1,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "coreutils",
+       "version": "9.1-1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-18018"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5cd412a403394fbb",
+    "name": "coreutils",
+    "version": "9.1-1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-only AND BSD-4-clause-UC AND ISC AND FSFULLR AND GFDL-NIV-1.3 AND GFDL-1.3-only",
+     "GPL-3.0-only AND BSD-4-clause-UC AND ISC AND FSFULLR AND GFDL-NIV-1.3 AND GFDL-1.3-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/coreutils@9.1-1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-6vqw-3v5j-54x4",
+    "dataSource": "https://github.com/advisories/GHSA-6vqw-3v5j-54x4",
+    "namespace": "github:language:python",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-6vqw-3v5j-54x4"
+    ],
+    "description": "cryptography NULL pointer dereference with pkcs12.serialize_key_and_certificates when called with a non-matching certificate and private key and an hmac_hash override",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "42.0.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26130",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26130",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/pyca/cryptography/commit/97d231672763cdb5959a3b191e692a362f1b9e55",
+      "https://github.com/pyca/cryptography/pull/10423",
+      "https://github.com/pyca/cryptography/security/advisories/GHSA-6vqw-3v5j-54x4"
+     ],
+     "description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Starting in version 38.0.0 and prior to version 42.0.4, if `pkcs12.serialize_key_and_certificates` is called with both a certificate whose public key did not match the provided private key and an `encryption_algorithm` with `hmac_hash` set (via `PrivateFormat.PKCS12.encryption_builder().hmac_hash(...)`, then a NULL pointer dereference would occur, crashing the Python process. This has been resolved in version 42.0.4, the first version in which a `ValueError` is properly raised.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "cryptography",
+       "version": "41.0.7"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=38.0.0,<42.0.4 (python)",
+      "vulnerabilityID": "GHSA-6vqw-3v5j-54x4"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ee14f36b98cd1b9f",
+    "name": "cryptography",
+    "version": "41.0.7",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [
+     "Apache-2.0 OR BSD-3-Clause",
+     "Apache-2.0 OR BSD-3-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:pypi/cryptography@41.0.7",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-3ww4-gg4f-jr7f",
+    "dataSource": "https://github.com/advisories/GHSA-3ww4-gg4f-jr7f",
+    "namespace": "github:language:python",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-3ww4-gg4f-jr7f"
+    ],
+    "description": "Python Cryptography package vulnerable to Bleichenbacher timing oracle attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "42.0.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-50782",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50782",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://access.redhat.com/security/cve/CVE-2023-50782",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2254432"
+     ],
+     "description": "A flaw was found in the python-cryptography package. This issue may allow a remote attacker to decrypt captured messages in TLS servers that use RSA key exchanges, which may lead to exposure of confidential or sensitive data.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "cryptography",
+       "version": "41.0.7"
+      }
+     },
+     "found": {
+      "versionConstraint": "<42.0.0 (python)",
+      "vulnerabilityID": "GHSA-3ww4-gg4f-jr7f"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ee14f36b98cd1b9f",
+    "name": "cryptography",
+    "version": "41.0.7",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [
+     "Apache-2.0 OR BSD-3-Clause",
+     "Apache-2.0 OR BSD-3-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:pypi/cryptography@41.0.7",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-9v9h-cgj8-h64p",
+    "dataSource": "https://github.com/advisories/GHSA-9v9h-cgj8-h64p",
+    "namespace": "github:language:python",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-9v9h-cgj8-h64p"
+    ],
+    "description": "Null pointer dereference in PKCS12 parsing",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "42.0.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-0727",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-0727",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/openssl/openssl/commit/09df4395b5071217b76dc7d3d2e630eb8c5a79c2",
+      "https://github.com/openssl/openssl/commit/775acfdbd0c6af9ac855f34969cdab0c0c90844a",
+      "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
+      "https://github.openssl.org/openssl/extended-releases/commit/03b3941d60c4bce58fab69a0c22377ab439bc0e8",
+      "https://github.openssl.org/openssl/extended-releases/commit/aebaa5883e31122b404e450732dc833dc9dee539",
+      "https://security.netapp.com/advisory/ntap-20240208-0006/",
+      "https://www.openssl.org/news/secadv/20240125.txt"
+     ],
+     "description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "cryptography",
+       "version": "41.0.7"
+      }
+     },
+     "found": {
+      "versionConstraint": "<42.0.2 (python)",
+      "vulnerabilityID": "GHSA-9v9h-cgj8-h64p"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ee14f36b98cd1b9f",
+    "name": "cryptography",
+    "version": "41.0.7",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [
+     "Apache-2.0 OR BSD-3-Clause",
+     "Apache-2.0 OR BSD-3-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:pypi/cryptography@41.0.7",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-2236",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-2236",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Medium",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2024-2236"
+    ],
+    "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-2236",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-2236",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://access.redhat.com/security/cve/CVE-2024-2236",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2268268"
+     ],
+     "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+     "cvss": [
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "libgcrypt20",
+       "version": "1.10.1-3"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-2236"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "904e000cf9aa40c9",
+    "name": "libgcrypt20",
+    "version": "1.10.1-3",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "LGPL-3.0-only AND GPL-2.0-only",
+     "LGPL-3.0-only AND GPL-2.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-6829",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2018-6829",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2018-6829"
+    ],
+    "description": "cipher/elgamal.c in Libgcrypt through 1.8.2, when used to encrypt messages directly, improperly encodes plaintexts, which allows attackers to obtain sensitive information by reading ciphertext data (i.e., it does not have semantic security in face of a ciphertext-only attack). The Decisional Diffie-Hellman (DDH) assumption does not hold for Libgcrypt's ElGamal implementation.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-6829",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-6829",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/weikengchen/attack-on-libgcrypt-elgamal",
+      "https://github.com/weikengchen/attack-on-libgcrypt-elgamal/wiki",
+      "https://lists.gnupg.org/pipermail/gcrypt-devel/2018-February/004394.html",
+      "https://www.oracle.com/security-alerts/cpujan2020.html"
+     ],
+     "description": "cipher/elgamal.c in Libgcrypt through 1.8.2, when used to encrypt messages directly, improperly encodes plaintexts, which allows attackers to obtain sensitive information by reading ciphertext data (i.e., it does not have semantic security in face of a ciphertext-only attack). The Decisional Diffie-Hellman (DDH) assumption does not hold for Libgcrypt's ElGamal implementation.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "libgcrypt20",
+       "version": "1.10.1-3"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2018-6829"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "904e000cf9aa40c9",
+    "name": "libgcrypt20",
+    "version": "1.10.1-3",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "LGPL-3.0-only AND GPL-2.0-only",
+     "LGPL-3.0-only AND GPL-2.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-4016",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-4016",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Low",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2023-4016"
+    ],
+    "description": "Under some circumstances, this weakness allows a user who has access to run the “ps” utility on a machine, the ability to write almost unlimited amounts of unfiltered data into the process heap.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4016",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4016",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://gitlab.com/procps-ng/procps",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SUETRRT24OFGPYK6ACPM5VUGHNKH5CQ5/"
+     ],
+     "description": "Under some circumstances, this weakness allows a user who has access to run the “ps” utility on a machine, the ability to write almost unlimited amounts of unfiltered data into the process heap.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 3.3,
+        "exploitabilityScore": 1.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "trellixpsirt@trellix.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 2.5,
+        "exploitabilityScore": 1,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "procps",
+       "version": "2:4.0.2-3"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-4016"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "99b65cd5e67cbaac",
+    "name": "procps",
+    "version": "2:4.0.2-3",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "LGPL-2.1-only AND LGPL-2.0-only AND GPL-2.0-only",
+     "LGPL-2.1-only AND LGPL-2.0-only AND GPL-2.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/procps@4.0.2-3?arch=arm64&distro=debian-12.5&epoch=2",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2005-2541",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2005-2541",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2005-2541"
+    ],
+    "description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2005-2541",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2005-2541",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://marc.info/?l=bugtraq&m=112327628230258&w=2",
+      "https://lists.apache.org/thread.html/rc713534b10f9daeee2e0990239fa407e2118e4aa9e88a7041177497c%40%3Cissues.guacamole.apache.org%3E"
+     ],
+     "description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+       "metrics": {
+        "baseScore": 10,
+        "exploitabilityScore": 10,
+        "impactScore": 10
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "tar",
+       "version": "1.34+dfsg-1.2+deb12u1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2005-2541"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "82362461e6878adb",
+    "name": "tar",
+    "version": "1.34+dfsg-1.2+deb12u1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-only AND GPL-3.0-or-later WITH Bison-exception AND LGPL-3.0-only AND GPL-2.0-only",
+     "GPL-3.0-only AND GPL-3.0-or-later WITH Bison-exception AND LGPL-3.0-only AND GPL-2.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/tar@1.34+dfsg-1.2+deb12u1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-0563",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2022-0563",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2022-0563"
+    ],
+    "description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-0563",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-0563",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lore.kernel.org/util-linux/20220214110609.msiwlm457ngoic6w%40ws.net.home/T/#u",
+      "https://security.gentoo.org/glsa/202401-08",
+      "https://security.netapp.com/advisory/ntap-20220331-0002/"
+     ],
+     "description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 1.9,
+        "exploitabilityScore": 3.4,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "util-linux",
+       "version": "2.38.1-5+b1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2022-0563"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d53d825e51532f09",
+    "name": "util-linux",
+    "version": "2.38.1-5+b1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only AND GPL-3.0-only AND public-domain AND BSD-4-Clause AND MIT AND BSD-3-Clause AND BSLA AND LGPL-2.0-only AND LGPL-2.1-only AND LGPL-3.0-only",
+     "GPL-2.0-only AND GPL-3.0-only AND public-domain AND BSD-4-Clause AND MIT AND BSD-3-Clause AND BSLA AND LGPL-2.0-only AND LGPL-2.1-only AND LGPL-3.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/util-linux@2.38.1-5+b1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-28085",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-28085",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Unknown",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2024-28085"
+    ],
+    "description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.38.1-5+deb12u1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": [
+     {
+      "id": "DSA-5650-1",
+      "link": "https://security-tracker.debian.org/tracker/DSA-5650-1"
+     }
+    ]
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28085",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://github.com/skyler-ferrante/CVE-2024-28085",
+      "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+      "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+      "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+      "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+      "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+     ],
+     "description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "util-linux",
+       "version": "2.38.1-5+b1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.38.1-5+deb12u1 (deb)",
+      "vulnerabilityID": "CVE-2024-28085"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d53d825e51532f09",
+    "name": "util-linux",
+    "version": "2.38.1-5+b1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only AND GPL-3.0-only AND public-domain AND BSD-4-Clause AND MIT AND BSD-3-Clause AND BSLA AND LGPL-2.0-only AND LGPL-2.1-only AND LGPL-3.0-only",
+     "GPL-2.0-only AND GPL-3.0-only AND public-domain AND BSD-4-Clause AND MIT AND BSD-3-Clause AND BSLA AND LGPL-2.0-only AND LGPL-2.1-only AND LGPL-3.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/util-linux@2.38.1-5+b1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "aerospike:ee-7.0.0.4_1",
+   "imageID": "ContainerImage-a0f0c704304f441a",
+   "manifestDigest": "",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "debian",
+  "version": "12.5",
+  "idLike": [
+   "debian"
+  ]
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-04-20T01:25:41Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:16b261c20c43828088d3530bdb10577ad87b9d33cfbfcaf051c3af61ba7e53ca",
+   "error": null
+  },
+  "timestamp": "2024-04-20T21:38:55.268906+02:00"
+ }
+}

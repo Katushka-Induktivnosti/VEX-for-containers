@@ -1,0 +1,2280 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-vmq6-5m68-f53m",
+    "dataSource": "https://github.com/advisories/GHSA-vmq6-5m68-f53m",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-vmq6-5m68-f53m"
+    ],
+    "description": "logback serialization vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.1,
+       "exploitabilityScore": 2.5,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.2.13"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-6378",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-6378",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://logback.qos.ch/news.html#1.3.12"
+     ],
+     "description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.11 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "vulnerability@ncsc.ch",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.1,
+        "exploitabilityScore": 2.5,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "ch.qos.logback/logback-classic",
+       "version": "1.2.12"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.2.13 (unknown)",
+      "vulnerabilityID": "GHSA-vmq6-5m68-f53m"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "b55b0bd38d376728",
+    "name": "ch.qos.logback/logback-classic",
+    "version": "1.2.12",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "http://www.eclipse.org/legal/epl-v10.html, http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/ch.qos.logback/logback-classic@1.2.12",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vmq6-5m68-f53m",
+    "dataSource": "https://github.com/advisories/GHSA-vmq6-5m68-f53m",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-vmq6-5m68-f53m"
+    ],
+    "description": "logback serialization vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.1,
+       "exploitabilityScore": 2.5,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.2.13"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-6378",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-6378",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://logback.qos.ch/news.html#1.3.12"
+     ],
+     "description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.11 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "vulnerability@ncsc.ch",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.1,
+        "exploitabilityScore": 2.5,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "ch.qos.logback/logback-core",
+       "version": "1.2.12"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.2.13 (unknown)",
+      "vulnerabilityID": "GHSA-vmq6-5m68-f53m"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ee405741034c7e8e",
+    "name": "ch.qos.logback/logback-core",
+    "version": "1.2.12",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "http://www.eclipse.org/legal/epl-v10.html, http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/ch.qos.logback/logback-core@1.2.12",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-gm62-rw4g-vrc4",
+    "dataSource": "https://github.com/advisories/GHSA-gm62-rw4g-vrc4",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-gm62-rw4g-vrc4"
+    ],
+    "description": "Logback is vulnerable to an attacker mounting a Denial-Of-Service attack by sending poisoned data",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.1,
+       "exploitabilityScore": 2.5,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.2.13"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-6481",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-6481",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://logback.qos.ch/news.html#1.3.12",
+      "https://logback.qos.ch/news.html#1.3.14"
+     ],
+     "description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.13, 1.3.13 and 1.2.12 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "vulnerability@ncsc.ch",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.1,
+        "exploitabilityScore": 2.5,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "ch.qos.logback/logback-core",
+       "version": "1.2.12"
+      }
+     },
+     "found": {
+      "versionConstraint": "=1.2.12 (unknown)",
+      "vulnerabilityID": "GHSA-gm62-rw4g-vrc4"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ee405741034c7e8e",
+    "name": "ch.qos.logback/logback-core",
+    "version": "1.2.12",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "http://www.eclipse.org/legal/epl-v10.html, http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/ch.qos.logback/logback-core@1.2.12",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-h376-j262-vhq6",
+    "dataSource": "https://github.com/advisories/GHSA-h376-j262-vhq6",
+    "namespace": "github:language:java",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-h376-j262-vhq6"
+    ],
+    "description": "RCE in H2 Console",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0.206"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-42392",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-42392",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/h2database/h2database/security/advisories/GHSA-h376-j262-vhq6",
+      "https://jfrog.com/blog/the-jndi-strikes-back-unauthenticated-rce-in-h2-database-console/",
+      "https://lists.debian.org/debian-lts-announce/2022/02/msg00017.html",
+      "https://security.netapp.com/advisory/ntap-20220119-0001/",
+      "https://www.debian.org/security/2022/dsa-5076",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.secpod.com/blog/log4shell-critical-remote-code-execution-vulnerability-in-h2database-console/"
+     ],
+     "description": "The org.h2.util.JdbcUtils.getConnection method of the H2 database takes as parameters the class name of the driver and URL of the database. An attacker may pass a JNDI driver name and a URL leading to a LDAP or RMI servers, causing remote code execution. This can be exploited through various attack vectors, most notably through the H2 Console which leads to unauthenticated remote code execution.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+       "metrics": {
+        "baseScore": 10,
+        "exploitabilityScore": 10,
+        "impactScore": 10
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "com.h2database/h2",
+       "version": "1.4.199"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.1.100,<2.0.206 (unknown)",
+      "vulnerabilityID": "GHSA-h376-j262-vhq6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dea1fdf0eaa17de3",
+    "name": "com.h2database/h2",
+    "version": "1.4.199",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "http://www.h2database.com/html/license.html"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/com.h2database/h2@1.4.199",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-45hx-wfhj-473x",
+    "dataSource": "https://github.com/advisories/GHSA-45hx-wfhj-473x",
+    "namespace": "github:language:java",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-45hx-wfhj-473x"
+    ],
+    "description": "Arbitrary code execution in H2 Console",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.1.210"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-23221",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-23221",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://packetstormsecurity.com/files/165676/H2-Database-Console-Remote-Code-Execution.html",
+      "http://seclists.org/fulldisclosure/2022/Jan/39",
+      "https://github.com/h2database/h2database/releases/tag/version-2.1.210",
+      "https://github.com/h2database/h2database/security/advisories",
+      "https://lists.debian.org/debian-lts-announce/2022/02/msg00017.html",
+      "https://security.netapp.com/advisory/ntap-20230818-0011/",
+      "https://twitter.com/d0nkey_man/status/1483824727936450564",
+      "https://www.debian.org/security/2022/dsa-5076",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html"
+     ],
+     "description": "H2 Console before 2.1.210 allows remote attackers to execute arbitrary code via a jdbc:h2:mem JDBC URL containing the IGNORE_UNKNOWN_SETTINGS=TRUE;FORBID_CREATION=FALSE;INIT=RUNSCRIPT substring, a different vulnerability than CVE-2021-42392.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+       "metrics": {
+        "baseScore": 10,
+        "exploitabilityScore": 10,
+        "impactScore": 10
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "com.h2database/h2",
+       "version": "1.4.199"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.1.210 (unknown)",
+      "vulnerabilityID": "GHSA-45hx-wfhj-473x"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dea1fdf0eaa17de3",
+    "name": "com.h2database/h2",
+    "version": "1.4.199",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "http://www.h2database.com/html/license.html"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/com.h2database/h2@1.4.199",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-7rpj-hg47-cx62",
+    "dataSource": "https://github.com/advisories/GHSA-7rpj-hg47-cx62",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-7rpj-hg47-cx62"
+    ],
+    "description": "Improper Restriction of XML External Entity Reference in com.h2database:h2.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+      "metrics": {
+       "baseScore": 8.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0.202"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-23463",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-23463",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/h2database/h2database/commit/d83285fd2e48fb075780ee95badee6f5a15ea7f8%23diff-008c2e4462609982199cd83e7cf6f1d6b41296b516783f6752c44b9f15dc7bc3",
+      "https://github.com/h2database/h2database/issues/3195",
+      "https://github.com/h2database/h2database/pull/3199",
+      "https://security.netapp.com/advisory/ntap-20230818-0010/",
+      "https://snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-1769238",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html"
+     ],
+     "description": "The package com.h2database:h2 from 1.4.198 and before 2.0.202 are vulnerable to XML External Entity (XXE) Injection via the org.h2.jdbc.JdbcSQLXML class object, when it receives parsed string data from org.h2.jdbc.JdbcResultSet.getSQLXML() method. If it executes the getSource() method when the parameter is DOMSource.class it will trigger the vulnerability.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+       "metrics": {
+        "baseScore": 6.4,
+        "exploitabilityScore": 10,
+        "impactScore": 4.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 9.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "report@snyk.io",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "com.h2database/h2",
+       "version": "1.4.199"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.4.198,<2.0.202 (unknown)",
+      "vulnerabilityID": "GHSA-7rpj-hg47-cx62"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dea1fdf0eaa17de3",
+    "name": "com.h2database/h2",
+    "version": "1.4.199",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "http://www.h2database.com/html/license.html"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/com.h2database/h2@1.4.199",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-22wj-vf5f-wrvj",
+    "dataSource": "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-22wj-vf5f-wrvj"
+    ],
+    "description": "Password exposure in H2 Database ",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.8,
+       "exploitabilityScore": 1.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.220"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-45868",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-45868",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
+      "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347",
+      "https://github.com/h2database/h2database/issues/3686",
+      "https://github.com/h2database/h2database/pull/3833",
+      "https://github.com/h2database/h2database/releases/tag/version-2.2.220",
+      "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243"
+     ],
+     "description": "The web-based admin console in H2 Database Engine before 2.2.220 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states \"This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that.\" Nonetheless, the issue was fixed in 2.2.220.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve@mitre.org",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.4,
+        "exploitabilityScore": 2.5,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "com.h2database/h2",
+       "version": "1.4.199"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.2.220 (unknown)",
+      "vulnerabilityID": "GHSA-22wj-vf5f-wrvj"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dea1fdf0eaa17de3",
+    "name": "com.h2database/h2",
+    "version": "1.4.199",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "http://www.h2database.com/html/license.html"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/com.h2database/h2@1.4.199",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-fccv-jmmp-qg76",
+    "dataSource": "https://github.com/advisories/GHSA-fccv-jmmp-qg76",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-fccv-jmmp-qg76"
+    ],
+    "description": "Apache Tomcat Improper Input Validation vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "9.0.83"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-46589",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-46589",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://lists.apache.org/thread/0rqq6ktozqc42ro8hhxdmmdjm1k1tpxr",
+      "https://lists.debian.org/debian-lts-announce/2024/01/msg00001.html",
+      "https://security.netapp.com/advisory/ntap-20231214-0009/",
+      "https://www.openwall.com/lists/oss-security/2023/11/28/2"
+     ],
+     "description": "Improper Input Validation vulnerability in Apache Tomcat.Tomcat from 11.0.0-M1 through 11.0.0-M10, from 10.1.0-M1 through 10.1.15, from 9.0.0-M1 through 9.0.82 and from 8.5.0 through 8.5.95 did not correctly parse HTTP trailer headers. A trailer header that exceeded the header size limit could cause Tomcat to treat a single \nrequest as multiple requests leading to the possibility of request \nsmuggling when behind a reverse proxy.\n\nUsers are recommended to upgrade to version 11.0.0-M11 onwards, 10.1.16 onwards, 9.0.83 onwards or 8.5.96 onwards, which fix the issue.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.apache.tomcat.embed/tomcat-embed-core",
+       "version": "9.0.81"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=9.0.0-M1,<9.0.83 (unknown)",
+      "vulnerabilityID": "GHSA-fccv-jmmp-qg76"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8b737f3fbf5b8714",
+    "name": "org.apache.tomcat.embed/tomcat-embed-core",
+    "version": "9.0.81",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.81",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-7w75-32cg-r6g2",
+    "dataSource": "https://github.com/advisories/GHSA-7w75-32cg-r6g2",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-7w75-32cg-r6g2"
+    ],
+    "description": "Apache Tomcat Denial of Service due to improper input validation vulnerability for HTTP/2 requests",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "9.0.86"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-24549",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-24549",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://lists.apache.org/thread/4c50rmomhbbsdgfjsgwlb51xdwfjdcvg",
+      "https://lists.debian.org/debian-lts-announce/2024/04/msg00001.html",
+      "https://security.netapp.com/advisory/ntap-20240402-0002/"
+     ],
+     "description": "Denial of Service due to improper input validation vulnerability for HTTP/2 requests in Apache Tomcat. When processing an HTTP/2 request, if the request exceeded any of the configured limits for headers, the associated HTTP/2 stream was not reset until after all of the headers had been processed.This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M16, from 10.1.0-M1 through 10.1.18, from 9.0.0-M1 through 9.0.85, from 8.5.0 through 8.5.98.\n\nUsers are recommended to upgrade to version 11.0.0-M17, 10.1.19, 9.0.86 or 8.5.99 which fix the issue.\n\n",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.apache.tomcat.embed/tomcat-embed-core",
+       "version": "9.0.81"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=9.0.0-M1,<=9.0.85 (unknown)",
+      "vulnerabilityID": "GHSA-7w75-32cg-r6g2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8b737f3fbf5b8714",
+    "name": "org.apache.tomcat.embed/tomcat-embed-core",
+    "version": "9.0.81",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.81",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-7w75-32cg-r6g2",
+    "dataSource": "https://github.com/advisories/GHSA-7w75-32cg-r6g2",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-7w75-32cg-r6g2"
+    ],
+    "description": "Apache Tomcat Denial of Service due to improper input validation vulnerability for HTTP/2 requests",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "9.0.86"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-24549",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-24549",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://lists.apache.org/thread/4c50rmomhbbsdgfjsgwlb51xdwfjdcvg",
+      "https://lists.debian.org/debian-lts-announce/2024/04/msg00001.html",
+      "https://security.netapp.com/advisory/ntap-20240402-0002/"
+     ],
+     "description": "Denial of Service due to improper input validation vulnerability for HTTP/2 requests in Apache Tomcat. When processing an HTTP/2 request, if the request exceeded any of the configured limits for headers, the associated HTTP/2 stream was not reset until after all of the headers had been processed.This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M16, from 10.1.0-M1 through 10.1.18, from 9.0.0-M1 through 9.0.85, from 8.5.0 through 8.5.98.\n\nUsers are recommended to upgrade to version 11.0.0-M17, 10.1.19, 9.0.86 or 8.5.99 which fix the issue.\n\n",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.apache.tomcat/tomcat-coyote",
+       "version": "9.0.81"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=9.0.0-M1,<=9.0.85 (unknown)",
+      "vulnerabilityID": "GHSA-7w75-32cg-r6g2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c8c8cd3541d479d7",
+    "name": "org.apache.tomcat/tomcat-coyote",
+    "version": "9.0.81",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.apache.tomcat/tomcat-coyote@9.0.81",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v682-8vv8-vpwr",
+    "dataSource": "https://github.com/advisories/GHSA-v682-8vv8-vpwr",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v682-8vv8-vpwr"
+    ],
+    "description": "Denial of Service via incomplete cleanup vulnerability in Apache Tomcat",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "9.0.86"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-23672",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-23672",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://lists.apache.org/thread/cmpswfx6tj4s7x0nxxosvfqs11lvdx2f",
+      "https://lists.debian.org/debian-lts-announce/2024/04/msg00001.html",
+      "https://security.netapp.com/advisory/ntap-20240402-0002/"
+     ],
+     "description": "Denial of Service via incomplete cleanup vulnerability in Apache Tomcat. It was possible for WebSocket clients to keep WebSocket connections open leading to increased resource consumption.This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M16, from 10.1.0-M1 through 10.1.18, from 9.0.0-M1 through 9.0.85, from 8.5.0 through 8.5.98.\n\nUsers are recommended to upgrade to version 11.0.0-M17, 10.1.19, 9.0.86 or 8.5.99 which fix the issue.\n\n",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.apache.tomcat/tomcat-websocket",
+       "version": "9.0.81"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=9.0.0-M1,<=9.0.85 (unknown)",
+      "vulnerabilityID": "GHSA-v682-8vv8-vpwr"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0e2e28efaaf47880",
+    "name": "org.apache.tomcat/tomcat-websocket",
+    "version": "9.0.81",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.apache.tomcat/tomcat-websocket@9.0.81",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hmr7-m48g-48f6",
+    "dataSource": "https://github.com/advisories/GHSA-hmr7-m48g-48f6",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-hmr7-m48g-48f6"
+    ],
+    "description": "Jetty accepts \"+\" prefixed value in Content-Length",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "9.4.52"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-40167",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40167",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/eclipse/jetty.project/security/advisories/GHSA-hmr7-m48g-48f6",
+      "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+      "https://www.debian.org/security/2023/dsa-5507",
+      "https://www.rfc-editor.org/rfc/rfc9110#section-8.6"
+     ],
+     "description": "Jetty is a Java based web server and servlet engine. Prior to versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1, Jetty accepts the `+` character proceeding the content-length value in a HTTP/1 header field.  This is more permissive than allowed by the RFC and other servers routinely reject such requests with 400 responses.  There is no known exploit scenario, but it is conceivable that request smuggling could result if jetty is used in combination with a server that does not close the connection after sending such a 400 response. Versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1 contain a patch for this issue. There is no workaround as there is no known exploit scenario.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.eclipse.jetty/jetty-http",
+       "version": "9.4.48.v20220622"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=9.0.0,<=9.4.51 (unknown)",
+      "vulnerabilityID": "GHSA-hmr7-m48g-48f6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8af3e788dd103bd1",
+    "name": "org.eclipse.jetty/jetty-http",
+    "version": "9.4.48.v20220622",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-http@9.4.48.v20220622",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-qw69-rqj8-6qw8",
+    "dataSource": "https://github.com/advisories/GHSA-qw69-rqj8-6qw8",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-qw69-rqj8-6qw8"
+    ],
+    "description": "OutOfMemoryError for large multipart without filename in Eclipse Jetty",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "9.4.51.v20230217"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-26048",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/eclipse/jetty.project/issues/9076",
+      "https://github.com/eclipse/jetty.project/pull/9344",
+      "https://github.com/eclipse/jetty.project/pull/9345",
+      "https://github.com/eclipse/jetty.project/security/advisories/GHSA-qw69-rqj8-6qw8",
+      "https://github.com/jakartaee/servlet/blob/6.0.0/spec/src/main/asciidoc/servlet-spec-body.adoc#32-file-upload",
+      "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+      "https://security.netapp.com/advisory/ntap-20230526-0001/",
+      "https://www.debian.org/security/2023/dsa-5507"
+     ],
+     "description": "Jetty is a java based web server and servlet engine. In affected versions servlets with multipart support (e.g. annotated with `@MultipartConfig`) that call `HttpServletRequest.getParameter()` or `HttpServletRequest.getParts()` may cause `OutOfMemoryError` when the client sends a multipart request with a part that has a name but no filename and very large content. This happens even with the default settings of `fileSizeThreshold=0` which should stream the whole part content to disk. An attacker client may send a large multipart request and cause the server to throw `OutOfMemoryError`. However, the server may be able to recover after the `OutOfMemoryError` and continue its service -- although it may take some time. This issue has been patched in versions 9.4.51, 10.0.14, and 11.0.14. Users are advised to upgrade. Users unable to upgrade may set the multipart parameter `maxRequestSize` which must be set to a non-negative value, so the whole multipart content is limited (although still read into memory).",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.eclipse.jetty/jetty-server",
+       "version": "9.4.48.v20220622"
+      }
+     },
+     "found": {
+      "versionConstraint": "<9.4.51.v20230217 (unknown)",
+      "vulnerabilityID": "GHSA-qw69-rqj8-6qw8"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f7da45d6d55838d9",
+    "name": "org.eclipse.jetty/jetty-server",
+    "version": "9.4.48.v20220622",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-server@9.4.48.v20220622",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-p26g-97m4-6q7c",
+    "dataSource": "https://github.com/advisories/GHSA-p26g-97m4-6q7c",
+    "namespace": "github:language:java",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-p26g-97m4-6q7c"
+    ],
+    "description": "Eclipse Jetty's cookie parsing of quoted values can exfiltrate values from other cookies",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 2.4,
+       "exploitabilityScore": 0.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Low",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "9.4.51.v20230217"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-26049",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/eclipse/jetty.project/pull/9339",
+      "https://github.com/eclipse/jetty.project/pull/9352",
+      "https://github.com/eclipse/jetty.project/security/advisories/GHSA-p26g-97m4-6q7c",
+      "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+      "https://security.netapp.com/advisory/ntap-20230526-0001/",
+      "https://www.debian.org/security/2023/dsa-5507",
+      "https://www.rfc-editor.org/rfc/rfc2965",
+      "https://www.rfc-editor.org/rfc/rfc6265"
+     ],
+     "description": "Jetty is a java based web server and servlet engine. Nonstandard cookie parsing in Jetty may allow an attacker to smuggle cookies within other cookies, or otherwise perform unintended behavior by tampering with the cookie parsing mechanism. If Jetty sees a cookie VALUE that starts with `\"` (double quote), it will continue to read the cookie string until it sees a closing quote -- even if a semicolon is encountered. So, a cookie header such as: `DISPLAY_LANGUAGE=\"b; JSESSIONID=1337; c=d\"` will be parsed as one cookie, with the name DISPLAY_LANGUAGE and a value of b; JSESSIONID=1337; c=d instead of 3 separate cookies. This has security implications because if, say, JSESSIONID is an HttpOnly cookie, and the DISPLAY_LANGUAGE cookie value is rendered on the page, an attacker can smuggle the JSESSIONID cookie into the DISPLAY_LANGUAGE cookie and thereby exfiltrate it. This is significant when an intermediary is enacting some policy based on cookies, so a smuggled cookie can bypass that policy yet still be seen by the Jetty server or its logging system. This issue has been addressed in versions 9.4.51, 10.0.14, 11.0.14, and 12.0.0.beta0 and users are advised to upgrade. There are no known workarounds for this issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 2.4,
+        "exploitabilityScore": 0.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.eclipse.jetty/jetty-server",
+       "version": "9.4.48.v20220622"
+      }
+     },
+     "found": {
+      "versionConstraint": "<9.4.51.v20230217 (unknown)",
+      "vulnerabilityID": "GHSA-p26g-97m4-6q7c"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f7da45d6d55838d9",
+    "name": "org.eclipse.jetty/jetty-server",
+    "version": "9.4.48.v20220622",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-server@9.4.48.v20220622",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-24rp-q3w6-vc56",
+    "dataSource": "https://github.com/advisories/GHSA-24rp-q3w6-vc56",
+    "namespace": "github:language:java",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-24rp-q3w6-vc56"
+    ],
+    "description": "org.postgresql:postgresql vulnerable to SQL Injection via line comment generation",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 10,
+       "exploitabilityScore": 3.9,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "42.4.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-1597",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-1597",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-24rp-q3w6-vc56",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TZQTSMESZD2RJ5XBPSXH3TIQVUW5DIUU/",
+      "https://security.netapp.com/advisory/ntap-20240419-0008/",
+      "https://www.enterprisedb.com/docs/jdbc_connector/latest/01_jdbc_rel_notes/",
+      "https://www.enterprisedb.com/docs/security/assessments/cve-2024-1597/"
+     ],
+     "description": "pgjdbc, the PostgreSQL JDBC Driver, allows attacker to inject SQL if using PreferQueryMode=SIMPLE. Note this is not the default. In the default mode there is no vulnerability. A placeholder for a numeric value must be immediately preceded by a minus. There must be a second placeholder for a string value after the first placeholder; both must be on the same line. By constructing a matching string payload, the attacker can inject SQL to alter the query,bypassing the protections that parameterized queries bring against SQL Injection attacks. Versions before 42.7.2, 42.6.1, 42.5.5, 42.4.4, 42.3.9, and 42.2.28 are affected.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "f86ef6dc-4d3a-42ad-8f28-e6d5547a5007",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 10,
+        "exploitabilityScore": 3.9,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.postgresql/postgresql",
+       "version": "42.4.3"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=42.4.0,<42.4.4 (unknown)",
+      "vulnerabilityID": "GHSA-24rp-q3w6-vc56"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "17fc99361b0be490",
+    "name": "org.postgresql/postgresql",
+    "version": "42.4.3",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.postgresql/postgresql@42.4.3",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-jjfh-589g-3hjx",
+    "dataSource": "https://github.com/advisories/GHSA-jjfh-589g-3hjx",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-jjfh-589g-3hjx"
+    ],
+    "description": "Spring Boot denial of service vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.7.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-34055",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-34055",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://security.netapp.com/advisory/ntap-20231221-0010/",
+      "https://spring.io/security/cve-2023-34055"
+     ],
+     "description": "In Spring Boot versions 2.7.0 - 2.7.17, 3.0.0-3.0.12 and 3.1.0-3.1.5, it is possible for a user to provide specially crafted HTTP requests that may cause a denial-of-service (DoS) condition.\n\nSpecifically, an application is vulnerable when all of the following are true:\n\n  *  the application uses Spring MVC or Spring WebFlux\n  *  org.springframework.boot:spring-boot-actuator is on the classpath\n\n\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@vmware.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.springframework.boot/spring-boot",
+       "version": "2.7.12"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.7.18 (unknown)",
+      "vulnerabilityID": "GHSA-jjfh-589g-3hjx"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2303bb74dba0372f",
+    "name": "org.springframework.boot/spring-boot",
+    "version": "2.7.12",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "Apache-2.0"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.12",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4wrc-f8pq-fpqp",
+    "dataSource": "https://github.com/advisories/GHSA-4wrc-f8pq-fpqp",
+    "namespace": "github:language:java",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-4wrc-f8pq-fpqp"
+    ],
+    "description": "Pivotal Spring Framework contains unsafe Java deserialization methods",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "6.0.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-1000027",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-1000027",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-1000027",
+      "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-579669626",
+      "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-582313417",
+      "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-744519525",
+      "https://raw.githubusercontent.com/distributedweaknessfiling/cvelist/master/2016/1000xxx/CVE-2016-1000027.json",
+      "https://security-tracker.debian.org/tracker/CVE-2016-1000027",
+      "https://security.netapp.com/advisory/ntap-20230420-0009/",
+      "https://spring.io/blog/2022/05/11/spring-framework-5-3-20-and-5-2-22-available-now",
+      "https://www.tenable.com/security/research/tra-2016-20"
+     ],
+     "description": "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.springframework/spring-web",
+       "version": "5.3.27"
+      }
+     },
+     "found": {
+      "versionConstraint": "<6.0.0 (unknown)",
+      "vulnerabilityID": "GHSA-4wrc-f8pq-fpqp"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e8d378fc27f3efca",
+    "name": "org.springframework/spring-web",
+    "version": "5.3.27",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "Apache-2.0 OR BSD-3-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.springframework/spring-web@5.3.27",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hgjh-9rj2-g67j",
+    "dataSource": "https://github.com/advisories/GHSA-hgjh-9rj2-g67j",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-hgjh-9rj2-g67j"
+    ],
+    "description": "Spring Framework URL Parsing with Host Validation Vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 8.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "5.3.33"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-22259",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-22259",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://spring.io/security/cve-2024-22259"
+     ],
+     "description": "Applications that use UriComponentsBuilder in Spring Framework to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.\n\nThis is the same as  CVE-2024-22243 https://spring.io/security/cve-2024-22243 , but with different input.\n\n",
+     "cvss": [
+      {
+       "source": "security@vmware.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.springframework/spring-web",
+       "version": "5.3.27"
+      }
+     },
+     "found": {
+      "versionConstraint": "<5.3.33 (unknown)",
+      "vulnerabilityID": "GHSA-hgjh-9rj2-g67j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e8d378fc27f3efca",
+    "name": "org.springframework/spring-web",
+    "version": "5.3.27",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "Apache-2.0 OR BSD-3-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.springframework/spring-web@5.3.27",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-ccgv-vj62-xf9h",
+    "dataSource": "https://github.com/advisories/GHSA-ccgv-vj62-xf9h",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-ccgv-vj62-xf9h"
+    ],
+    "description": "Spring Web vulnerable to Open Redirect or Server Side Request Forgery",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 8.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "5.3.32"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-22243",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-22243",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://spring.io/security/cve-2024-22243"
+     ],
+     "description": "Applications that use UriComponentsBuilder to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.\n",
+     "cvss": [
+      {
+       "source": "security@vmware.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.springframework/spring-web",
+       "version": "5.3.27"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=5.3.0,<5.3.32 (unknown)",
+      "vulnerabilityID": "GHSA-ccgv-vj62-xf9h"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e8d378fc27f3efca",
+    "name": "org.springframework/spring-web",
+    "version": "5.3.27",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "Apache-2.0 OR BSD-3-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.springframework/spring-web@5.3.27",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-mjmj-j48q-9wg2",
+    "dataSource": "https://github.com/advisories/GHSA-mjmj-j48q-9wg2",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-mjmj-j48q-9wg2"
+    ],
+    "description": "SnakeYaml Constructor Deserialization Remote Code Execution",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+      "metrics": {
+       "baseScore": 8.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.5
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-1471",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1471",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://packetstormsecurity.com/files/175095/PyTorch-Model-Server-Registration-Deserialization-Remote-Code-Execution.html",
+      "http://www.openwall.com/lists/oss-security/2023/11/19/1",
+      "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64581479",
+      "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2",
+      "https://github.com/mbechler/marshalsec",
+      "https://groups.google.com/g/kubernetes-security-announce/c/mwrakFaEdnc",
+      "https://security.netapp.com/advisory/ntap-20230818-0015/",
+      "https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true"
+     ],
+     "description": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization. We recommend upgrading to version 2.0 and beyond.\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve-coordination@google.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+       "metrics": {
+        "baseScore": 8.3,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.5
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.yaml/snakeyaml",
+       "version": "1.32"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=1.33 (unknown)",
+      "vulnerabilityID": "GHSA-mjmj-j48q-9wg2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "3c396bc40ced242e",
+    "name": "org.yaml/snakeyaml",
+    "version": "1.32",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.yaml/snakeyaml@1.32",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "",
+   "imageID": "",
+   "manifestDigest": "",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-04-20T01:25:41Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:16b261c20c43828088d3530bdb10577ad87b9d33cfbfcaf051c3af61ba7e53ca",
+   "error": null
+  },
+  "timestamp": "2024-04-20T21:50:47.542773+02:00"
+ }
+}

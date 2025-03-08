@@ -1,0 +1,3698 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:17bfd6dd-6d7e-488c-a787-4eac1f6dc2fc",
+    "version": 2,
+    "metadata": {
+        "timestamp": "2024-06-24T22:32:01Z",
+        "tools": {
+            "components": [
+                {
+                    "group": "@cyclonedx",
+                    "name": "cdxgen",
+                    "version": "10.5.1",
+                    "purl": "pkg:npm/%40cyclonedx/cdxgen@10.5.1",
+                    "type": "application",
+                    "bom-ref": "pkg:npm/@cyclonedx/cdxgen@10.5.1",
+                    "author": "OWASP Foundation",
+                    "publisher": "OWASP Foundation"
+                },
+                {
+                    "type": "application",
+                    "name": "owasp-depscan",
+                    "version": "5.3.4",
+                    "purl": "pkg:pypi/owasp-depscan@5.3.4",
+                    "bom-ref": "pkg:pypi/owasp-depscan@5.3.4"
+                }
+            ]
+        },
+        "authors": [
+            {
+                "name": "OWASP Foundation"
+            }
+        ],
+        "lifecycles": [
+            {
+                "phase": "pre-build"
+            },
+            {
+                "phase": "post-build"
+            }
+        ],
+        "component": {
+            "group": "",
+            "name": "photon",
+            "version": "latest",
+            "type": "application",
+            "bom-ref": "pkg:gem/photon@latest",
+            "purl": "pkg:gem/photon@latest"
+        },
+        "properties": [
+            {
+                "name": "oci:image:Id",
+                "value": "sha256:c5c324f10b7679e5b8f9e115f589ef68a4dd2bc0681585369d71e939489e7f8c"
+            },
+            {
+                "name": "oci:image:RepoTag",
+                "value": "photon:latest"
+            },
+            {
+                "name": "oci:image:RepoDigest",
+                "value": "photon@sha256:1abc5e403f89099cde0133ce7272b36b96888975408428dc60ae6cd05dc7c445"
+            },
+            {
+                "name": "oci:image:Created",
+                "value": "2024-01-22T19:52:13.127618791Z"
+            },
+            {
+                "name": "oci:image:Architecture",
+                "value": "amd64"
+            },
+            {
+                "name": "oci:image:Os",
+                "value": "linux"
+            },
+            {
+                "name": "oci:image:manifest:Config",
+                "value": "blobs/sha256/c5c324f10b7679e5b8f9e115f589ef68a4dd2bc0681585369d71e939489e7f8c"
+            },
+            {
+                "name": "oci:image:manifest:Layers",
+                "value": "blobs/sha256/0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+            },
+            {
+                "name": "oci:image:componentTypes",
+                "value": "rpm\\nphoton-5.0\\nphoton"
+            }
+        ]
+    },
+    "components": [
+        {
+            "bom-ref": "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "bash",
+            "version": "5.2-1.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "57a707ecf96219789f30160210704486"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "GPLv3"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/bzip2-libs@1.0.8-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "bzip2-libs",
+            "version": "1.0.8-5.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "c325f2238bb667d2c10839da6ded2568"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "0BSD"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/bzip2-libs@1.0.8-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/bzip2@1.0.8?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "bzip2",
+            "version": "1.0.8",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "c325f2238bb667d2c10839da6ded2568"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "0BSD"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/bzip2@1.0.8?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/ca-certificates-pki@20230315-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "ca-certificates-pki",
+            "version": "20230315-2.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "2a27778d039bc9caaf71d7a2724394cc"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "Custom"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/ca-certificates-pki@20230315-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/ca-certificates@20230315?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "ca-certificates",
+            "version": "20230315",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "2a27778d039bc9caaf71d7a2724394cc"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "Custom"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/ca-certificates@20230315?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/ca-certificates@20230315-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "ca-certificates",
+            "version": "20230315-2.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "7c1ca2f095710a53cd5b698814d3744f"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "Custom"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/ca-certificates@20230315-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/curl-libs@8.1.2-7.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "curl-libs",
+            "version": "8.1.2-7.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "34417ab8106321088a70d3cb7f9037e3"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MIT"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/curl-libs@8.1.2-7.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "curl",
+            "version": "8.1.2",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "34417ab8106321088a70d3cb7f9037e3"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MIT"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/curl@8.1.2-7.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "curl",
+            "version": "8.1.2-7.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "3955ec1a3aa0d3cb0aadd7c6fa5ebc6c"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MIT"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/curl@8.1.2-7.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/e2fsprogs-libs@1.46.5-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "e2fsprogs-libs",
+            "version": "1.46.5-2.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "01fe05aa14f3308e80a9ae2d4bcf26b7"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "GPLv2+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/e2fsprogs-libs@1.46.5-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/e2fsprogs@1.46.5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "e2fsprogs",
+            "version": "1.46.5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "01fe05aa14f3308e80a9ae2d4bcf26b7"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "GPLv2+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/e2fsprogs@1.46.5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/elfutils-libelf@0.189-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "elfutils-libelf",
+            "version": "0.189-2.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "067bad4c98dab25c0efcf1cdf37e2a32"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "GPLv2+ or LGPLv3+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/elfutils-libelf@0.189-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/elfutils@0.189?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "elfutils",
+            "version": "0.189",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "067bad4c98dab25c0efcf1cdf37e2a32"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "GPLv2+ or LGPLv3+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/elfutils@0.189?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/expat-libs@2.5.0-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "expat-libs",
+            "version": "2.5.0-1.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "255eaf8fa0944a83ff48aefa6406b5f0"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MIT"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/expat-libs@2.5.0-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/expat@2.5.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "expat",
+            "version": "2.5.0",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "255eaf8fa0944a83ff48aefa6406b5f0"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MIT"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/expat@2.5.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/filesystem@1.1-4.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "filesystem",
+            "version": "1.1-4.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "fc05b0c6c2998d9ea7d2b4fbefd391df"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "GPLv3"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/filesystem@1.1-4.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "glibc-libs",
+            "version": "2.36-8.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "f25661f28f8a815fc1de9360fe2b00bb"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "LGPLv2+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "glibc",
+            "version": "2.36",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "f25661f28f8a815fc1de9360fe2b00bb"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "LGPLv2+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "glibc",
+            "version": "2.36-8.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "96f922a58a18c3a3fecfcc6c0525e347"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "LGPLv2+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/gpg-pubkey@66fd4949-4803fe57?arch=None&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "name": "gpg-pubkey",
+            "version": "66fd4949-4803fe57",
+            "licenses": [
+                {
+                    "license": {
+                        "name": "pubkey"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/gpg-pubkey@66fd4949-4803fe57?arch=None&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/gpg-pubkey@8a6a826d-596882ca?arch=None&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "name": "gpg-pubkey",
+            "version": "8a6a826d-596882ca",
+            "licenses": [
+                {
+                    "license": {
+                        "name": "pubkey"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/gpg-pubkey@8a6a826d-596882ca?arch=None&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/krb5@1.20.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "krb5",
+            "version": "1.20.2-1.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "4ec386da75bf377860a60673b5074bdb"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MIT"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/krb5@1.20.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/libcap@2.66-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "libcap",
+            "version": "2.66-2.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "3feb7af8605ebfad88ef319cd08513e9"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "GPLv2+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/libcap@2.66-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/libgcc@12.2.0-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "libgcc",
+            "version": "12.2.0-2.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "460bd99ac57b28d26b0ae0ca2eb3e5bf"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "GPLv2+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/libgcc@12.2.0-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/gcc@12.2.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "gcc",
+            "version": "12.2.0",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "460bd99ac57b28d26b0ae0ca2eb3e5bf"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "GPLv2+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/gcc@12.2.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/libsolv@0.7.22-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "libsolv",
+            "version": "0.7.22-5.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "638167b146e8732d4dfdc8af7057f26a"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "0BSD"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/libsolv@0.7.22-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/libssh2@1.11.0-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "libssh2",
+            "version": "1.11.0-2.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "4bbc1e290457e6f022636d129309a259"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "0BSD"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/libssh2@1.11.0-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/lua-libs@5.4.6-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "lua-libs",
+            "version": "5.4.6-1.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "c7d5b5e796ba4d5caab9b81bda03f3f5"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MIT"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/lua-libs@5.4.6-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/lua@5.4.6?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "lua",
+            "version": "5.4.6",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "c7d5b5e796ba4d5caab9b81bda03f3f5"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MIT"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/lua@5.4.6?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/ncurses-libs@6.4-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "ncurses-libs",
+            "version": "6.4-2.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "bb0b24c241906a73974fff56486bcf40"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MIT"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/ncurses-libs@6.4-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/ncurses@6.4?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "ncurses",
+            "version": "6.4",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "bb0b24c241906a73974fff56486bcf40"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MIT"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/ncurses@6.4?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/nspr@4.33-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "nspr",
+            "version": "4.33-1.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "d849ab6cc1299de228610a7c42e8cd3a"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MPLv2.0"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/nspr@4.33-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/nss-libs@3.78-6.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "nss-libs",
+            "version": "3.78-6.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "2fcf2adf7fdc6188663aa5be6c55ca2c"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MPLv2.0"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/nss-libs@3.78-6.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/nss@3.78?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "nss",
+            "version": "3.78",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "2fcf2adf7fdc6188663aa5be6c55ca2c"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MPLv2.0"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/nss@3.78?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/openssl-libs@3.0.9-9.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "openssl-libs",
+            "version": "3.0.9-9.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "18cca1b396b73275f09286d661d6df2f"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "OpenSSL"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/openssl-libs@3.0.9-9.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "openssl",
+            "version": "3.0.9",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "18cca1b396b73275f09286d661d6df2f"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "OpenSSL"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/photon-release@5.0-2.ph5?arch=noarch&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "photon-release",
+            "version": "5.0-2.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "f2ea3ddb627a48317553b5b12ac72c83"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "Apache License"
+                }
+            ],
+            "purl": "pkg:rpm/photon/photon-release@5.0-2.ph5?arch=noarch&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/photon-repos@5.0-4.ph5?arch=noarch&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "photon-repos",
+            "version": "5.0-4.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "03bd4a6155e0fa46f6a9a52df5b03cd2"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "Apache License"
+                }
+            ],
+            "purl": "pkg:rpm/photon/photon-repos@5.0-4.ph5?arch=noarch&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/popt@1.16-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "popt",
+            "version": "1.16-5.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "5660ee1bcef803950bfecb72a07c1a3b"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MIT"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/popt@1.16-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/readline@8.2-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "readline",
+            "version": "8.2-2.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "a5c7c178c70c672b2477067232d8d6b3"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "GPLv3+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/readline@8.2-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/rpm-libs@4.18.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "rpm-libs",
+            "version": "4.18.2-1.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "05861d0f8cb9a2d143bc57cdd0f75eb8"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "GPLv2+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/rpm-libs@4.18.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/rpm@4.18.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "rpm",
+            "version": "4.18.2",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "05861d0f8cb9a2d143bc57cdd0f75eb8"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "GPLv2+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/rpm@4.18.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/sqlite-libs@3.40.1-3.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "sqlite-libs",
+            "version": "3.40.1-3.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "30aea2dede4e8a037b45338ad06fa0b5"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "Public Domain"
+                }
+            ],
+            "purl": "pkg:rpm/photon/sqlite-libs@3.40.1-3.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/sqlite@3.40.1?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "sqlite",
+            "version": "3.40.1",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "30aea2dede4e8a037b45338ad06fa0b5"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "Public Domain"
+                }
+            ],
+            "purl": "pkg:rpm/photon/sqlite@3.40.1?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/tdnf-cli-libs@3.5.6-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "tdnf-cli-libs",
+            "version": "3.5.6-1.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "b7ba696edb951d0cafc27b216ba4c9c5"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "LGPLv2.1,GPLv2"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/tdnf-cli-libs@3.5.6-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/tdnf@3.5.6?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "tdnf",
+            "version": "3.5.6",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "b7ba696edb951d0cafc27b216ba4c9c5"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "LGPLv2.1,GPLv2"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/tdnf@3.5.6?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/tdnf@3.5.6-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "tdnf",
+            "version": "3.5.6-1.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "a550e9cd8e2ae3a4522056a4e8712764"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "LGPLv2.1,GPLv2"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/tdnf@3.5.6-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/toybox@0.8.9-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "toybox",
+            "version": "0.8.9-5.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "25bc6ecd6e2b08f5920f081d9b3d191a"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "0BSD"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/toybox@0.8.9-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/xz-libs@5.4.0-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "xz-libs",
+            "version": "5.4.0-1.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "d08e4e38aa2c344c8aa5478c67333eb0"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "GPLv2+ and GPLv3+ and LGPLv2+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/xz-libs@5.4.0-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/xz@5.4.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "xz",
+            "version": "5.4.0",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "d08e4e38aa2c344c8aa5478c67333eb0"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "GPLv2+ and GPLv3+ and LGPLv2+"
+                }
+            ],
+            "purl": "pkg:rpm/photon/xz@5.4.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/zlib@1.2.13-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "zlib",
+            "version": "1.2.13-2.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "1bc7f49d6a1e8a4cc6c084d7acd94534"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "zlib"
+                    }
+                }
+            ],
+            "purl": "pkg:rpm/photon/zlib@1.2.13-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/zstd-libs@1.5.5-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "zstd-libs",
+            "version": "1.5.5-2.ph5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "9a37b5308405a941b7a8addaca8a0da0"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "BSD and GPLv2"
+                }
+            ],
+            "purl": "pkg:rpm/photon/zstd-libs@1.5.5-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        },
+        {
+            "bom-ref": "pkg:rpm/photon/zstd@1.5.5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "type": "library",
+            "supplier": {
+                "name": "VMware, Inc."
+            },
+            "name": "zstd",
+            "version": "1.5.5",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "9a37b5308405a941b7a8addaca8a0da0"
+                }
+            ],
+            "licenses": [
+                {
+                    "expression": "BSD and GPLv2"
+                }
+            ],
+            "purl": "pkg:rpm/photon/zstd@1.5.5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "group": "photon"
+        }
+    ],
+    "services": [],
+    "dependencies": [
+        {
+            "ref": "pkg:oci/photon@sha256:1abc5e403f89099cde0133ce7272b36b96888975408428dc60ae6cd05dc7c445",
+            "dependsOn": [
+                "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0",
+                "pkg:rpm/photon/bzip2-libs@1.0.8-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/bzip2@1.0.8?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/ca-certificates-pki@20230315-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/ca-certificates@20230315-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/ca-certificates@20230315?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/curl-libs@8.1.2-7.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/curl@8.1.2-7.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/e2fsprogs-libs@1.46.5-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/e2fsprogs@1.46.5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/elfutils-libelf@0.189-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/elfutils@0.189?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/expat-libs@2.5.0-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/expat@2.5.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/filesystem@1.1-4.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/gcc@12.2.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/gpg-pubkey@66fd4949-4803fe57?arch=None&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/gpg-pubkey@8a6a826d-596882ca?arch=None&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/krb5@1.20.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/libcap@2.66-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/libgcc@12.2.0-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/libsolv@0.7.22-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/libssh2@1.11.0-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/lua-libs@5.4.6-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/lua@5.4.6?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/ncurses-libs@6.4-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/ncurses@6.4?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/nspr@4.33-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/nss-libs@3.78-6.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/nss@3.78?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/openssl-libs@3.0.9-9.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/photon-release@5.0-2.ph5?arch=noarch&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/photon-repos@5.0-4.ph5?arch=noarch&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/popt@1.16-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/readline@8.2-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/rpm-libs@4.18.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/rpm@4.18.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/sqlite-libs@3.40.1-3.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/sqlite@3.40.1?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/tdnf-cli-libs@3.5.6-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/tdnf@3.5.6-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/tdnf@3.5.6?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/toybox@0.8.9-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/xz-libs@5.4.0-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/xz@5.4.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zlib@1.2.13-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zstd-libs@1.5.5-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zstd@1.5.5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0",
+                "pkg:rpm/photon/ncurses-libs@6.4-2.ph5?arch=x86_64&distro=photon-5.0",
+                "pkg:rpm/photon/readline@8.2-2.ph5?arch=x86_64&distro=photon-5.0",
+                "pkg:rpm/photon/toybox@0.8.9-5.ph5?arch=x86_64&distro=photon-5.0"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/bzip2-libs@1.0.8-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/ca-certificates-pki@20230315-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:rpm/photon/ca-certificates@20230315-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/ca-certificates-pki@20230315-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/openssl-libs@3.0.9-9.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/curl-libs@8.1.2-7.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/ca-certificates-pki@20230315-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/krb5@1.20.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/libssh2@1.11.0-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/openssl-libs@3.0.9-9.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zlib@1.2.13-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zstd-libs@1.5.5-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/curl@8.1.2-7.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/ca-certificates@20230315-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/curl-libs@8.1.2-7.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/krb5@1.20.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/libssh2@1.11.0-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/openssl-libs@3.0.9-9.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zlib@1.2.13-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/e2fsprogs-libs@1.46.5-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/elfutils-libelf@0.189-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/bzip2-libs@1.0.8-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zlib@1.2.13-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zstd-libs@1.5.5-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/expat-libs@2.5.0-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/filesystem@1.1-4.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/filesystem@1.1-4.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/gpg-pubkey@66fd4949-4803fe57?arch=None&distro=photon-5.0&distro_name=photon",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:rpm/photon/gpg-pubkey@8a6a826d-596882ca?arch=None&distro=photon-5.0&distro_name=photon",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:rpm/photon/krb5@1.20.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/e2fsprogs-libs@1.46.5-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/openssl-libs@3.0.9-9.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/libcap@2.66-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/libgcc@12.2.0-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/libsolv@0.7.22-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/expat-libs@2.5.0-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/rpm-libs@4.18.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zlib@1.2.13-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/libssh2@1.11.0-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/openssl-libs@3.0.9-9.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zlib@1.2.13-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/lua-libs@5.4.6-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/ncurses-libs@6.4-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/nspr@4.33-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/nss-libs@3.78-6.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/nspr@4.33-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/sqlite-libs@3.40.1-3.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/openssl-libs@3.0.9-9.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/photon-release@5.0-2.ph5?arch=noarch&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/photon-repos@5.0-4.ph5?arch=noarch&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/photon-release@5.0-2.ph5?arch=noarch&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/popt@1.16-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/readline@8.2-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/ncurses-libs@6.4-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/rpm-libs@4.18.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/bzip2-libs@1.0.8-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/elfutils-libelf@0.189-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/libcap@2.66-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/libgcc@12.2.0-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/lua-libs@5.4.6-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/nss-libs@3.78-6.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/openssl-libs@3.0.9-9.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/popt@1.16-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/sqlite-libs@3.40.1-3.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/xz-libs@5.4.0-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zlib@1.2.13-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zstd-libs@1.5.5-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/sqlite-libs@3.40.1-3.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zlib@1.2.13-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/tdnf-cli-libs@3.5.6-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/tdnf@3.5.6-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/curl-libs@8.1.2-7.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/libsolv@0.7.22-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/openssl-libs@3.0.9-9.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/popt@1.16-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/rpm-libs@4.18.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/sqlite-libs@3.40.1-3.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/tdnf-cli-libs@3.5.6-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zlib@1.2.13-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/toybox@0.8.9-5.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/openssl-libs@3.0.9-9.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/zlib@1.2.13-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/xz-libs@5.4.0-1.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/zlib@1.2.13-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        },
+        {
+            "ref": "pkg:rpm/photon/zstd-libs@1.5.5-2.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "dependsOn": [
+                "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64&distro=photon-5.0&distro_name=photon"
+            ]
+        }
+    ],
+    "vulnerabilities": [
+        {
+            "bom-ref": "CVE-2023-6779/pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-6779",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-6779"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 2.36-9.ph5 are vulnerable",
+            "recommendation": "Update to 2.36-10.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "2.36",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.36-10.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/glibc@<2.36-9.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-36191/pkg:rpm/photon/sqlite@3.40.1?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-36191",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-36191"
+            },
+            "ratings": [
+                {
+                    "score": 5.5,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.40.1-2.ph5 are vulnerable",
+            "recommendation": "Update to 3.40.1-3.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/sqlite@3.40.1?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.40.1",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.40.1-3.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/sqlite@<3.40.1-2.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-7104/pkg:rpm/photon/sqlite@3.40.1?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-7104",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-7104"
+            },
+            "ratings": [
+                {
+                    "score": 7.3,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.40.1-3.ph5 are vulnerable",
+            "recommendation": "Update to 3.40.1-3.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/sqlite@3.40.1?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.40.1",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.40.1-3.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/sqlite@<3.40.1-3.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-5363/pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-5363",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-5363"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.0.9-7.ph5 are vulnerable",
+            "recommendation": "Update to 3.0.9-7.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.0.9",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.0.9-7.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/openssl@<3.0.9-7.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2022-1304/pkg:rpm/photon/e2fsprogs@1.46.5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2022-1304",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1304"
+            },
+            "ratings": [
+                {
+                    "score": 7.8,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 1.46.5-2.ph5 are vulnerable",
+            "recommendation": "Update to 1.46.5-2.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/e2fsprogs@1.46.5?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "1.46.5",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.46.5-2.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/e2fsprogs@<1.46.5-2.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2024-0727/pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2024-0727",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-0727"
+            },
+            "ratings": [
+                {
+                    "score": 5.5,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.0.9-10.ph5 are vulnerable",
+            "recommendation": "Update to 3.0.9-10.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.0.9",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.0.9-10.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/openssl@<3.0.9-10.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-28322/pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-28322",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-28322"
+            },
+            "ratings": [
+                {
+                    "score": 3.7,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 8.1.2-1.ph5 are vulnerable",
+            "recommendation": "Update to 8.1.2-8.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "8.1.2",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "8.1.2-8.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Uninstall candidate\\nDistro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/curl@<8.1.2-1.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-4911/pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-4911",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-4911"
+            },
+            "ratings": [
+                {
+                    "score": 7.8,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 2.36-8.ph5 are vulnerable",
+            "recommendation": "Update to 2.36-10.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "2.36",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.36-10.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/glibc@<2.36-8.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2022-33099/pkg:rpm/photon/lua@5.4.6?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2022-33099",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-33099"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 5.4.6-1.ph5 are vulnerable",
+            "recommendation": "Update to 5.4.6-1.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/lua@5.4.6?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "5.4.6",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "5.4.6-1.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/lua@<5.4.6-1.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2022-3479/pkg:rpm/photon/nss@3.78?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2022-3479",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-3479"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.78-5.ph5 are vulnerable",
+            "recommendation": "Update to 3.78-8.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/nss@3.78?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.78",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.78-8.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/nss@<3.78-5.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2024-2004/pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2024-2004",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-2004"
+            },
+            "ratings": [
+                {
+                    "score": 5.3,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 8.1.2-8.ph5 are vulnerable",
+            "recommendation": "Update to 8.1.2-8.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "8.1.2",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "8.1.2-8.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Uninstall candidate\\nDistro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/curl@<8.1.2-8.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-0687/pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-0687",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-0687"
+            },
+            "ratings": [
+                {
+                    "score": 9.8,
+                    "severity": "critical",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 2.36-8.ph5 are vulnerable",
+            "recommendation": "Update to 2.36-10.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "2.36",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.36-10.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/glibc@<2.36-8.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-4807/pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-4807",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-4807"
+            },
+            "ratings": [
+                {
+                    "score": 7.8,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.0.9-6.ph5 are vulnerable",
+            "recommendation": "Update to 3.0.9-6.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.0.9",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.0.9-6.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/openssl@<3.0.9-6.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-0767/pkg:rpm/photon/nss@3.78?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-0767",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-0767"
+            },
+            "ratings": [
+                {
+                    "score": 8.8,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.78-6.ph5 are vulnerable",
+            "recommendation": "Update to 3.78-8.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/nss@3.78?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.78",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.78-8.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/nss@<3.78-6.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-2975/pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-2975",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-2975"
+            },
+            "ratings": [
+                {
+                    "score": 5.3,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.0.9-2.ph5 are vulnerable",
+            "recommendation": "Update to 3.0.9-2.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.0.9",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.0.9-2.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/openssl@<3.0.9-2.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-52426/pkg:rpm/photon/expat@2.5.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-52426",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-52426"
+            },
+            "ratings": [
+                {
+                    "score": 5.5,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 2.6.0-1.ph5 are vulnerable",
+            "recommendation": "Update to 2.6.0-2.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/expat@2.5.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "2.5.0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.6.0-2.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/expat@<2.6.0-1.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2022-39046/pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2022-39046",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-39046"
+            },
+            "ratings": [
+                {
+                    "score": 5.3,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 2.36-6.ph5 are vulnerable",
+            "recommendation": "Update to 2.36-10.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "2.36",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.36-10.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/glibc@<2.36-6.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2024-2511/pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2024-2511",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-2511"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.0.13-4.ph5 are vulnerable",
+            "recommendation": "Update to 3.0.13-4.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.0.9",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.0.13-4.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/openssl@<3.0.13-4.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-29491/pkg:rpm/photon/ncurses@6.4?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-29491",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-29491"
+            },
+            "ratings": [
+                {
+                    "score": 7.8,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 6.4-1.ph5 are vulnerable",
+            "recommendation": "Update to 6.4-1.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/ncurses@6.4?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "6.4",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "6.4-1.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Suppress for containers\\nDistro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/ncurses@<6.4-1.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-38545/pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-38545",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-38545"
+            },
+            "ratings": [
+                {
+                    "score": 9.8,
+                    "severity": "critical",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 8.1.2-6.ph5 are vulnerable",
+            "recommendation": "Update to 8.1.2-8.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "8.1.2",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "8.1.2-8.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Uninstall candidate\\nDistro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/curl@<8.1.2-6.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-38546/pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-38546",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-38546"
+            },
+            "ratings": [
+                {
+                    "score": 3.7,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 8.1.2-6.ph5 are vulnerable",
+            "recommendation": "Update to 8.1.2-8.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "8.1.2",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "8.1.2-8.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Uninstall candidate\\nDistro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/curl@<8.1.2-6.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-5388/pkg:rpm/photon/nss@3.78?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-5388",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-5388"
+            },
+            "ratings": [
+                {
+                    "score": 6.5,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.78-8.ph5 are vulnerable",
+            "recommendation": "Update to 3.78-8.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/nss@3.78?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.78",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.78-8.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/nss@<3.78-8.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-0466/pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-0466",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-0466"
+            },
+            "ratings": [
+                {
+                    "score": 5.3,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.0.9-1.ph5 are vulnerable",
+            "recommendation": "Update to 3.0.9-1.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.0.9",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.0.9-1.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/openssl@<3.0.9-1.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-28321/pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-28321",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-28321"
+            },
+            "ratings": [
+                {
+                    "score": 5.9,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 8.1.2-1.ph5 are vulnerable",
+            "recommendation": "Update to 8.1.2-8.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "8.1.2",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "8.1.2-8.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Uninstall candidate\\nDistro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/curl@<8.1.2-1.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2024-2398/pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2024-2398",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-2398"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 8.1.2-8.ph5 are vulnerable",
+            "recommendation": "Update to 8.1.2-8.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "8.1.2",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "8.1.2-8.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Uninstall candidate\\nDistro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/curl@<8.1.2-8.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-6780/pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-6780",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-6780"
+            },
+            "ratings": [
+                {
+                    "score": 9.8,
+                    "severity": "critical",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 2.36-9.ph5 are vulnerable",
+            "recommendation": "Update to 2.36-10.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "2.36",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.36-10.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/glibc@<2.36-9.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2024-28757/pkg:rpm/photon/expat@2.5.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2024-28757",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-28757"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 2.6.0-2.ph5 are vulnerable",
+            "recommendation": "Update to 2.6.0-2.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/expat@2.5.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "2.5.0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.6.0-2.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/expat@<2.6.0-2.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-6246/pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-6246",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-6246"
+            },
+            "ratings": [
+                {
+                    "score": 7.8,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 2.36-9.ph5 are vulnerable",
+            "recommendation": "Update to 2.36-10.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "2.36",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.36-10.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/glibc@<2.36-9.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-5678/pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-5678",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-5678"
+            },
+            "ratings": [
+                {
+                    "score": 5.3,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.0.9-8.ph5 are vulnerable",
+            "recommendation": "Update to 3.0.9-8.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.0.9",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.0.9-8.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/openssl@<3.0.9-8.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-38039/pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-38039",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-38039"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 8.1.2-5.ph5 are vulnerable",
+            "recommendation": "Update to 8.1.2-8.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "8.1.2",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "8.1.2-8.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Uninstall candidate\\nDistro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/curl@<8.1.2-5.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-28319/pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-28319",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-28319"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 8.1.2-1.ph5 are vulnerable",
+            "recommendation": "Update to 8.1.2-8.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "8.1.2",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "8.1.2-8.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Uninstall candidate\\nDistro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/curl@<8.1.2-1.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-32001/pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-32001",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-32001"
+            },
+            "ratings": [
+                {
+                    "score": 5.5,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 8.1.2-2.ph5 are vulnerable",
+            "recommendation": "Update to 8.1.2-8.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "8.1.2",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "8.1.2-8.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Uninstall candidate\\nDistro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/curl@<8.1.2-2.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-4527/pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-4527",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-4527"
+            },
+            "ratings": [
+                {
+                    "score": 7.1,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 2.36-8.ph5 are vulnerable",
+            "recommendation": "Update to 2.36-10.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "2.36",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.36-10.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/glibc@<2.36-8.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-4806/pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-4806",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-4806"
+            },
+            "ratings": [
+                {
+                    "score": 5.9,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 2.36-7.ph5 are vulnerable",
+            "recommendation": "Update to 2.36-10.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "2.36",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.36-10.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/glibc@<2.36-7.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-52425/pkg:rpm/photon/expat@2.5.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-52425",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-52425"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 2.6.0-1.ph5 are vulnerable",
+            "recommendation": "Update to 2.6.0-2.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/expat@2.5.0?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "2.5.0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.6.0-2.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/expat@<2.6.0-1.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-2650/pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-2650",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-2650"
+            },
+            "ratings": [
+                {
+                    "score": 6.5,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.0.9-1.ph5 are vulnerable",
+            "recommendation": "Update to 3.0.9-1.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.0.9",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.0.9-1.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/openssl@<3.0.9-1.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-28320/pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-28320",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-28320"
+            },
+            "ratings": [
+                {
+                    "score": 5.9,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 8.1.2-1.ph5 are vulnerable",
+            "recommendation": "Update to 8.1.2-8.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/curl@8.1.2?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "8.1.2",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "8.1.2-8.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Uninstall candidate\\nDistro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/curl@<8.1.2-1.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-3446/pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-3446",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-3446"
+            },
+            "ratings": [
+                {
+                    "score": 5.3,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.0.9-3.ph5 are vulnerable",
+            "recommendation": "Update to 3.0.9-3.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.0.9",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.0.9-3.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/openssl@<3.0.9-3.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2024-2961/pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2024-2961",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-2961"
+            },
+            "ratings": [
+                {
+                    "score": 8.2,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 2.36-10.ph5 are vulnerable",
+            "recommendation": "Update to 2.36-10.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "2.36",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.36-10.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/glibc@<2.36-10.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-3817/pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-3817",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-3817"
+            },
+            "ratings": [
+                {
+                    "score": 5.3,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 3.0.9-4.ph5 are vulnerable",
+            "recommendation": "Update to 3.0.9-4.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/openssl@3.0.9?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "3.0.9",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.0.9-4.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/openssl@<3.0.9-4.ph5"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-5156/pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+            "id": "CVE-2023-5156",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-5156"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Summary\nall versions before 2.36-8.ph5 are vulnerable",
+            "recommendation": "Update to 2.36-10.ph5 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:rpm/photon/glibc@2.36?arch=x86_64&distro=photon-5.0&distro_name=photon",
+                    "versions": [
+                        {
+                            "version": "2.36",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.36-10.ph5",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "photon/glibc@<2.36-8.ph5"
+                }
+            ]
+        }
+    ]
+}

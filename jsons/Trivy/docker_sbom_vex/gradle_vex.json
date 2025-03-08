@@ -1,0 +1,602 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/docker_scout/sboms/gradle_sbom.json",
+  "ArtifactType": "spdx",
+  "Metadata": {
+    "OS": {
+      "Family": "none",
+      "Name": ""
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-25710",
+          "PkgName": "org.apache.commons:commons-compress",
+          "InstalledVersion": "1.21",
+          "FixedVersion": "1.26.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-25710",
+          "PkgRef": "pkg:maven/org.apache.commons/commons-compress@1.21",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "commons-compress: Denial of service caused by an infinite loop for a corrupted DUMP file",
+          "Description": "Loop with Unreachable Exit Condition ('Infinite Loop') vulnerability in Apache Commons Compress.This issue affects Apache Commons Compress: from 1.3 through 1.25.0.\n\nUsers are recommended to upgrade to version 1.26.0 which fixes the issue.\n\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-835"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/02/19/1",
+            "https://access.redhat.com/security/cve/CVE-2024-25710",
+            "https://github.com/apache/commons-compress",
+            "https://lists.apache.org/thread/cz8qkcwphy4cx8gltn932ln51cbtq6kf",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-25710",
+            "https://security.netapp.com/advisory/ntap-20240307-0010",
+            "https://security.netapp.com/advisory/ntap-20240307-0010/",
+            "https://www.cve.org/CVERecord?id=CVE-2024-25710"
+          ],
+          "PublishedDate": "2024-02-19T09:15:37.943Z",
+          "LastModifiedDate": "2024-03-07T17:15:12.94Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26308",
+          "PkgName": "org.apache.commons:commons-compress",
+          "InstalledVersion": "1.21",
+          "FixedVersion": "1.26.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26308",
+          "PkgRef": "pkg:maven/org.apache.commons/commons-compress@1.21",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "commons-compress: OutOfMemoryError unpacking broken Pack200 file",
+          "Description": "Allocation of Resources Without Limits or Throttling vulnerability in Apache Commons Compress.This issue affects Apache Commons Compress: from 1.21 before 1.26.\n\nUsers are recommended to upgrade to version 1.26, which fixes the issue.\n\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/02/19/2",
+            "https://access.redhat.com/security/cve/CVE-2024-26308",
+            "https://github.com/apache/commons-compress",
+            "https://lists.apache.org/thread/ch5yo2d21p7vlqrhll9b17otbyq4npfg",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26308",
+            "https://security.netapp.com/advisory/ntap-20240307-0009",
+            "https://security.netapp.com/advisory/ntap-20240307-0009/",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26308",
+            "https://www.openwall.com/lists/oss-security/2024/02/19/2"
+          ],
+          "PublishedDate": "2024-02-19T09:15:38.277Z",
+          "LastModifiedDate": "2024-03-21T19:54:03.23Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-33201",
+          "PkgName": "org.bouncycastle:bcprov-jdk15on",
+          "InstalledVersion": "1.68",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-33201",
+          "PkgRef": "pkg:maven/org.bouncycastle/bcprov-jdk15on@1.68",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "bouncycastle: potential  blind LDAP injection attack using a self-signed certificate",
+          "Description": "Bouncy Castle For Java before 1.74 is affected by an LDAP injection vulnerability. The vulnerability only affects applications that use an LDAP CertStore from Bouncy Castle to validate X.509 certificates. During the certificate validation process, Bouncy Castle inserts the certificate's Subject Name into an LDAP search filter without any escaping, which leads to an LDAP injection vulnerability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-33201",
+            "https://bouncycastle.org",
+            "https://bouncycastle.org/releasenotes.html#r1rv74",
+            "https://github.com/bcgit/bc-java",
+            "https://github.com/bcgit/bc-java/commit/ccf93ca736b89250ff4ce079a5aa56f5cbf0ebbd",
+            "https://github.com/bcgit/bc-java/commit/e8c409a8389c815ea3fda5e8b94c92fdfe583bcc",
+            "https://github.com/bcgit/bc-java/commits/main/prov/src/main/java/org/bouncycastle/jce/provider/X509LDAPCertStoreSpi.java",
+            "https://github.com/bcgit/bc-java/wiki/CVE-2023-33201",
+            "https://lists.debian.org/debian-lts-announce/2023/08/msg00000.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-33201",
+            "https://security.netapp.com/advisory/ntap-20230824-0008",
+            "https://security.netapp.com/advisory/ntap-20230824-0008/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-33201"
+          ],
+          "PublishedDate": "2023-07-05T03:15:09.197Z",
+          "LastModifiedDate": "2023-08-24T19:15:38.933Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-33202",
+          "PkgName": "org.bouncycastle:bcprov-jdk15on",
+          "InstalledVersion": "1.68",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-33202",
+          "PkgRef": "pkg:maven/org.bouncycastle/bcprov-jdk15on@1.68",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "bc-java: Out of memory while parsing ASN.1 crafted data in org.bouncycastle.openssl.PEMParser class",
+          "Description": "Bouncy Castle for Java before 1.73 contains a potential Denial of Service (DoS) issue within the Bouncy Castle org.bouncycastle.openssl.PEMParser class. This class parses OpenSSL PEM encoded streams containing X.509 certificates, PKCS8 encoded keys, and PKCS7 objects. Parsing a file that has crafted ASN.1 data through the PEMParser causes an OutOfMemoryError, which can enable a denial of service attack. (For users of the FIPS Java API: BC-FJA 1.0.2.3 and earlier are affected; BC-FJA 1.0.2.4 is fixed.)",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-33202",
+            "https://bouncycastle.org",
+            "https://github.com/bcgit/bc-java/wiki/CVE-2023-33202",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-33202",
+            "https://security.netapp.com/advisory/ntap-20240125-0001",
+            "https://security.netapp.com/advisory/ntap-20240125-0001/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-33202"
+          ],
+          "PublishedDate": "2023-11-23T16:15:07.273Z",
+          "LastModifiedDate": "2024-01-25T14:15:25.783Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-4759",
+          "PkgName": "org.eclipse.jgit:org.eclipse.jgit",
+          "InstalledVersion": "5.7.0.202003110725-r",
+          "FixedVersion": "6.6.1.202309021850-r, 5.13.3.202401111512-r",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-4759",
+          "PkgRef": "pkg:maven/org.eclipse.jgit/org.eclipse.jgit@5.7.0.202003110725-r",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "jgit: arbitrary file overwrite",
+          "Description": "Arbitrary File Overwrite in Eclipse JGit \u003c= 6.6.0\n\nIn Eclipse JGit, all versions \u003c= 6.6.0.202305301015-r, a symbolic link present in a specially crafted git repository can be used to write a file to locations outside the working tree when this repository is cloned with JGit to a case-insensitive filesystem, or when a checkout from a clone of such a repository is performed on a case-insensitive filesystem.\n\nThis can happen on checkout (DirCacheCheckout), merge (ResolveMerger via its WorkingTreeUpdater), pull (PullCommand using merge), and when applying a patch (PatchApplier). This can be exploited for remote code execution (RCE), for instance if the file written outside the working tree is a git filter that gets executed on a subsequent git command.\n\nThe issue occurs only on case-insensitive filesystems, like the default filesystems on Windows and macOS. The user performing the clone or checkout must have the rights to create symbolic links for the problem to occur, and symbolic links must be enabled in the git configuration.\n\nSetting git configuration option core.symlinks = false before checking out avoids the problem.\n\nThe issue was fixed in Eclipse JGit version 6.6.1.202309021850-r and 6.7.0.202309050840-r, available via  Maven Central https://repo1.maven.org/maven2/org/eclipse/jgit/  and  repo.eclipse.org https://repo.eclipse.org/content/repositories/jgit-releases/ . A backport is available in 5.13.3 starting from  5.13.3.202401111512-r.\n\n\nThe JGit maintainers would like to thank RyotaK for finding and reporting this issue.\n\n\n\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-178",
+            "CWE-59"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-4759",
+            "https://git.eclipse.org/c/jgit/jgit.git",
+            "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=9072103f3b3cf64dd12ad2949836ab98f62dabf1",
+            "https://github.com/eclipse-jgit/jgit/issues/30",
+            "https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/11",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-4759",
+            "https://projects.eclipse.org/projects/technology.jgit/releases/5.13.3",
+            "https://projects.eclipse.org/projects/technology.jgit/releases/6.6.1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-4759"
+          ],
+          "PublishedDate": "2023-09-12T10:15:29.977Z",
+          "LastModifiedDate": "2024-01-12T16:15:52.087Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-21634",
+          "PkgName": "software.amazon.ion:ion-java",
+          "InstalledVersion": "1.0.2",
+          "FixedVersion": "1.10.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-21634",
+          "PkgRef": "pkg:maven/software.amazon.ion/ion-java@1.0.2",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "Ion Java StackOverflow vulnerability",
+          "Description": "Amazon Ion is a Java implementation of the Ion data notation. Prior to version 1.10.5, a potential denial-of-service issue exists in `ion-java` for applications that use `ion-java` to deserialize Ion text encoded data, or deserialize Ion text or binary encoded data into the `IonValue` model and then invoke certain `IonValue` methods on that in-memory representation. An actor could craft Ion data that, when loaded by the affected application and/or processed using the `IonValue` model, results in a `StackOverflowError` originating from the `ion-java` library. The patch is included in `ion-java` 1.10.5. As a workaround, do not load data which originated from an untrusted source or that could have been tampered with.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/amazon-ion/ion-java",
+            "https://github.com/amazon-ion/ion-java/security/advisories/GHSA-264p-99wq-f4j6",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-21634"
+          ],
+          "PublishedDate": "2024-01-03T23:15:08.943Z",
+          "LastModifiedDate": "2024-01-10T16:38:20.853Z"
+        }
+      ]
+    },
+    {
+      "Target": "Python",
+      "Class": "lang-pkgs",
+      "Type": "python-pkg",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-37920",
+          "PkgName": "certifi",
+          "InstalledVersion": "2020.6.20",
+          "FixedVersion": "2023.7.22",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-37920",
+          "PkgRef": "pkg:pypi/certifi@2020.6.20",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Title": "python-certifi: Removal of e-Tugra root certificate",
+          "Description": "Certifi is a curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. Certifi prior to version 2023.07.22 recognizes \"e-Tugra\" root certificates. e-Tugra's root certificates were subject to an investigation prompted by reporting of security issues in their systems. Certifi 2023.07.22 removes root certificates from \"e-Tugra\" from the root store.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-345"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0133",
+            "https://access.redhat.com/security/cve/CVE-2023-37920",
+            "https://bugzilla.redhat.com/2226586",
+            "https://bugzilla.redhat.com/2242493",
+            "https://errata.almalinux.org/8/ALSA-2024-0133.html",
+            "https://github.com/certifi/python-certifi",
+            "https://github.com/certifi/python-certifi/commit/8fb96ed81f71e7097ed11bc4d9b19afd7ea5c909",
+            "https://github.com/certifi/python-certifi/security/advisories/GHSA-xqr8-7jwr-rhp7",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/certifi/PYSEC-2023-135.yaml",
+            "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/C-HrP1SEq1A",
+            "https://linux.oracle.com/cve/CVE-2023-37920.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0133.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5EX6NG7WUFNUKGFHLM35KHHU3GAKXRTG",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5EX6NG7WUFNUKGFHLM35KHHU3GAKXRTG/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-37920",
+            "https://www.cve.org/CVERecord?id=CVE-2023-37920"
+          ],
+          "PublishedDate": "2023-07-25T21:15:10.827Z",
+          "LastModifiedDate": "2023-08-12T06:16:31.077Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-23491",
+          "PkgName": "certifi",
+          "InstalledVersion": "2020.6.20",
+          "FixedVersion": "2022.12.07",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23491",
+          "PkgRef": "pkg:pypi/certifi@2020.6.20",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Title": "python-certifi: untrusted root certificates",
+          "Description": "Certifi is a curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. Certifi 2022.12.07 removes root certificates from \"TrustCor\" from the root store. These are in the process of being removed from Mozilla's trust store. TrustCor's root certificates are being removed pursuant to an investigation prompted by media reporting that TrustCor's ownership also operated a business that produced spyware. Conclusions of Mozilla's investigation can be found in the linked google group discussion.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-345"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+              "V3Score": 6.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-23491",
+            "https://github.com/certifi/python-certifi",
+            "https://github.com/certifi/python-certifi/commit/9e9e840925d7b8e76c76fdac1fab7e6e88c1c3b8",
+            "https://github.com/certifi/python-certifi/security/advisories/GHSA-43fp-rhv2-5gv8",
+            "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/oxX69KFvsm4/m/yLohoVqtCgAJ",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-23491",
+            "https://ubuntu.com/security/notices/USN-5761-1",
+            "https://ubuntu.com/security/notices/USN-5761-2",
+            "https://www.cve.org/CVERecord?id=CVE-2022-23491"
+          ],
+          "PublishedDate": "2022-12-07T22:15:09.87Z",
+          "LastModifiedDate": "2023-03-24T18:12:24.36Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-26112",
+          "PkgName": "configobj",
+          "InstalledVersion": "5.0.6",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-26112",
+          "PkgRef": "pkg:pypi/configobj@5.0.6",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Title": "python-configobj: Regular expression denial of service exists in ./src/configobj/validate.py",
+          "Description": "All versions of the package configobj are vulnerable to Regular Expression Denial of Service (ReDoS) via the validate function, using (.+?)\\((.*)\\).\r\r**Note:** This is only exploitable in the case of a developer, putting the offending value in a server side configuration file.\r\r",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-1333"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.7
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-26112",
+            "https://github.com/DiffSK/configobj",
+            "https://github.com/DiffSK/configobj/issues/232",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6BO4RLMYEJODCNUE3DJIIUUFVTPAG6VN",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6BO4RLMYEJODCNUE3DJIIUUFVTPAG6VN/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NZHY7B33EFY4LESP2NI4APQUPRROTAZK",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NZHY7B33EFY4LESP2NI4APQUPRROTAZK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PYU4IHVLOTYMFPH7KDOJGKZQR4GKWPFK",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PYU4IHVLOTYMFPH7KDOJGKZQR4GKWPFK/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-26112",
+            "https://security.snyk.io/vuln/SNYK-PYTHON-CONFIGOBJ-3252494",
+            "https://www.cve.org/CVERecord?id=CVE-2023-26112"
+          ],
+          "PublishedDate": "2023-04-03T05:15:07.753Z",
+          "LastModifiedDate": "2023-11-07T04:09:21.94Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-43804",
+          "PkgName": "urllib3",
+          "InstalledVersion": "1.26.5",
+          "FixedVersion": "2.0.6, 1.26.17",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-43804",
+          "PkgRef": "pkg:pypi/urllib3@1.26.5",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Title": "python-urllib3: Cookie request header isn't stripped during cross-origin redirects",
+          "Description": "urllib3 is a user-friendly HTTP client library for Python. urllib3 doesn't treat the `Cookie` HTTP header special or provide any helpers for managing cookies over HTTP, that is the responsibility of the user. However, it is possible for a user to specify a `Cookie` header and unknowingly leak information via HTTP redirects to a different origin if that user doesn't disable redirects explicitly. This issue has been patched in urllib3 version 1.26.17 or 2.0.5.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 5.9
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0133",
+            "https://access.redhat.com/security/cve/CVE-2023-43804",
+            "https://bugzilla.redhat.com/2226586",
+            "https://bugzilla.redhat.com/2242493",
+            "https://errata.almalinux.org/8/ALSA-2024-0133.html",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/urllib3/PYSEC-2023-192.yaml",
+            "https://github.com/urllib3/urllib3",
+            "https://github.com/urllib3/urllib3/commit/01220354d389cd05474713f8c982d05c9b17aafb",
+            "https://github.com/urllib3/urllib3/commit/644124ecd0b6e417c527191f866daa05a5a2056d",
+            "https://github.com/urllib3/urllib3/security/advisories/GHSA-v845-jxx5-vc9f",
+            "https://linux.oracle.com/cve/CVE-2023-43804.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0464.html",
+            "https://lists.debian.org/debian-lts-announce/2023/10/msg00012.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5F5CUBAN5XMEBVBZPHFITBLMJV5FIJJ5",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5F5CUBAN5XMEBVBZPHFITBLMJV5FIJJ5/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I3PR7C6RJ6JUBQKIJ644DMIJSUP36VDY",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I3PR7C6RJ6JUBQKIJ644DMIJSUP36VDY/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NDAGZXYJ7H2G3SB47M453VQVNAWKAEJJ",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NDAGZXYJ7H2G3SB47M453VQVNAWKAEJJ/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-43804",
+            "https://ubuntu.com/security/notices/USN-6473-1",
+            "https://ubuntu.com/security/notices/USN-6473-2",
+            "https://www.cve.org/CVERecord?id=CVE-2023-43804"
+          ],
+          "PublishedDate": "2023-10-04T17:15:10.163Z",
+          "LastModifiedDate": "2024-02-01T00:55:23.317Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-45803",
+          "PkgName": "urllib3",
+          "InstalledVersion": "1.26.5",
+          "FixedVersion": "2.0.7, 1.26.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45803",
+          "PkgRef": "pkg:pypi/urllib3@1.26.5",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Title": "urllib3: Request body not stripped after redirect from 303 status changes request method to GET",
+          "Description": "urllib3 is a user-friendly HTTP client library for Python. urllib3 previously wouldn't remove the HTTP request body when an HTTP redirect response using status 301, 302, or 303 after the request had its method changed from one that could accept a request body (like `POST`) to `GET` as is required by HTTP RFCs. Although this behavior is not specified in the section for redirects, it can be inferred by piecing together information from different sections and we have observed the behavior in other major HTTP client implementations like curl and web browsers. Because the vulnerability requires a previously trusted service to become compromised in order to have an impact on confidentiality we believe the exploitability of this vulnerability is low. Additionally, many users aren't putting sensitive data in HTTP request bodies, if this is the case then this vulnerability isn't exploitable. Both of the following conditions must be true to be affected by this vulnerability: 1. Using urllib3 and submitting sensitive information in the HTTP request body (such as form data or JSON) and 2. The origin service is compromised and starts redirecting using 301, 302, or 303 to a malicious peer or the redirected-to service becomes compromised. This issue has been addressed in versions 1.26.18 and 2.0.7 and users are advised to update to resolve this issue. Users unable to update should disable redirects for services that aren't expecting to respond with redirects with `redirects=False` and disable automatic redirects with `redirects=False` and handle 301, 302, and 303 redirects manually by stripping the HTTP request body.\n",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:A/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 4.2
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:A/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 4.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:A/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 4.2
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0116",
+            "https://access.redhat.com/security/cve/CVE-2023-45803",
+            "https://bugzilla.redhat.com/2242493",
+            "https://bugzilla.redhat.com/2246840",
+            "https://errata.almalinux.org/8/ALSA-2024-0116.html",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/urllib3/PYSEC-2023-212.yaml",
+            "https://github.com/urllib3/urllib3",
+            "https://github.com/urllib3/urllib3/commit/4e50fbc5db74e32cabd5ccc1ab81fc103adfe0b3",
+            "https://github.com/urllib3/urllib3/commit/4e98d57809dacab1cbe625fddeec1a290c478ea9",
+            "https://github.com/urllib3/urllib3/commit/b594c5ceaca38e1ac215f916538fb128e3526a36",
+            "https://github.com/urllib3/urllib3/releases/tag/1.26.18",
+            "https://github.com/urllib3/urllib3/releases/tag/2.0.7",
+            "https://github.com/urllib3/urllib3/security/advisories/GHSA-g4mx-q9vg-27p4",
+            "https://linux.oracle.com/cve/CVE-2023-45803.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0464.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4R2Y5XK3WALSR3FNAGN7JBYV2B343ZKB",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4R2Y5XK3WALSR3FNAGN7JBYV2B343ZKB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5F5CUBAN5XMEBVBZPHFITBLMJV5FIJJ5",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5F5CUBAN5XMEBVBZPHFITBLMJV5FIJJ5/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PPDPLM6UUMN55ESPQWJFLLIZY4ZKCNRX",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PPDPLM6UUMN55ESPQWJFLLIZY4ZKCNRX/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-45803",
+            "https://ubuntu.com/security/notices/USN-6473-1",
+            "https://ubuntu.com/security/notices/USN-6473-2",
+            "https://www.cve.org/CVERecord?id=CVE-2023-45803",
+            "https://www.rfc-editor.org/rfc/rfc9110.html#name-get"
+          ],
+          "PublishedDate": "2023-10-17T20:15:10.07Z",
+          "LastModifiedDate": "2023-11-03T22:15:11.693Z"
+        }
+      ]
+    }
+  ]
+}

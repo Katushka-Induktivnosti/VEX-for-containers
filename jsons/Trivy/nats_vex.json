@@ -1,0 +1,75 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "nats",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "ImageID": "sha256:ce61e33cb4a8d130b0bb7871e706ccd2897ae03b3b77a43a733ff1364582c913",
+    "DiffIDs": [
+      "sha256:9efa2f5a3143c141e1d08ddfee76d2d6ee3da41278ef210edba48bf099dae3f5",
+      "sha256:7102cbee48d9bc3899f7a96e8e80ea75839eef77a3660dfc9e4065792f0a6569"
+    ],
+    "RepoTags": [
+      "nats:latest"
+    ],
+    "RepoDigests": [
+      "nats@sha256:b9ef701c1a6c164190123d100b3bc63223b4dc17841e42793337a8ccb1be221d"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "14ba2c161b80bfe659b05864bff4c9247a871a83528acafa74f57385cded85d0",
+      "created": "2024-01-11T18:26:32.507772605Z",
+      "docker_version": "20.10.23",
+      "history": [
+        {
+          "created": "2023-10-21T02:39:39Z",
+          "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-11T18:26:32Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:a70beb4afc760b4eb620b77324ac11877e2d745bc4b21651e5f559167412340a in /nats-server "
+        },
+        {
+          "created": "2024-01-11T18:26:32Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:2c51166f33066351f3cfe3734f884c41f36fb66575bdde453c5c93e819cfae35 in /nats-server.conf "
+        },
+        {
+          "created": "2024-01-11T18:26:32Z",
+          "created_by": "/bin/sh -c #(nop)  EXPOSE 4222 6222 8222",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-11T18:26:32Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/nats-server\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-11T18:26:32Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"--config\" \"nats-server.conf\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:9efa2f5a3143c141e1d08ddfee76d2d6ee3da41278ef210edba48bf099dae3f5",
+          "sha256:7102cbee48d9bc3899f7a96e8e80ea75839eef77a3660dfc9e4065792f0a6569"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "--config",
+          "nats-server.conf"
+        ],
+        "Entrypoint": [
+          "/nats-server"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/"
+        ],
+        "Image": "sha256:2727e95b7fa54826b8b5b5aab3f0725c9e3dc3be3aced611b30aea647dd7c831"
+      }
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 11,
+  "metadata": {
+    "tools": [
+      {
+        "name": "docker-scout",
+        "version": "1.16.1"
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg-oci-nats-sha256-1c7f4a1c1c6caddf58ea4c89d1c8c9bc075bbdf63f6011c7cd42ccd6185045e2-repository-url-docker.io-tag-latest",
+      "type": "container",
+      "name": "nats",
+      "version": "latest",
+      "purl": "pkg:oci/nats@sha256:1c7f4a1c1c6caddf58ea4c89d1c8c9bc075bbdf63f6011c7cd42ccd6185045e2?repository_url=docker.io\u0026tag=latest"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "package-pkg-golang-github.com-nats-io-nats-server--devel--v2",
+      "type": "application",
+      "name": "nats-server",
+      "version": "(devel)",
+      "purl": "pkg:golang/github.com/nats-io/nats-server@(devel)#v2",
+      "components": [
+        {
+          "bom-ref": "File---nats-server",
+          "type": "file",
+          "name": "/nats-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-golang-go.uber.org-automaxprocs-1.6.0",
+      "type": "application",
+      "name": "automaxprocs",
+      "version": "1.6.0",
+      "purl": "pkg:golang/go.uber.org/automaxprocs@1.6.0",
+      "components": [
+        {
+          "bom-ref": "File---nats-server",
+          "type": "file",
+          "name": "/nats-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-golang-golang.org-x-sys-0.29.0",
+      "type": "application",
+      "name": "sys",
+      "version": "0.29.0",
+      "purl": "pkg:golang/golang.org/x/sys@0.29.0",
+      "components": [
+        {
+          "bom-ref": "File---nats-server",
+          "type": "file",
+          "name": "/nats-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-golang-stdlib-1.23.5",
+      "type": "application",
+      "name": "stdlib",
+      "version": "1.23.5",
+      "purl": "pkg:golang/stdlib@1.23.5",
+      "components": [
+        {
+          "bom-ref": "File---nats-server",
+          "type": "file",
+          "name": "/nats-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-golang-github.com-nats-io-nkeys-0.4.9",
+      "type": "application",
+      "name": "nkeys",
+      "version": "0.4.9",
+      "purl": "pkg:golang/github.com/nats-io/nkeys@0.4.9",
+      "components": [
+        {
+          "bom-ref": "File---nats-server",
+          "type": "file",
+          "name": "/nats-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-golang-github.com-nats-io-nuid-1.0.1",
+      "type": "application",
+      "name": "nuid",
+      "version": "1.0.1",
+      "purl": "pkg:golang/github.com/nats-io/nuid@1.0.1",
+      "components": [
+        {
+          "bom-ref": "File---nats-server",
+          "type": "file",
+          "name": "/nats-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-golang-github.com-minio-highwayhash-1.0.3",
+      "type": "application",
+      "name": "highwayhash",
+      "version": "1.0.3",
+      "purl": "pkg:golang/github.com/minio/highwayhash@1.0.3",
+      "components": [
+        {
+          "bom-ref": "File---nats-server",
+          "type": "file",
+          "name": "/nats-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-golang-github.com-nats-io-jwt-2.7.3-v2",
+      "type": "application",
+      "name": "jwt",
+      "version": "2.7.3",
+      "purl": "pkg:golang/github.com/nats-io/jwt@2.7.3#v2",
+      "components": [
+        {
+          "bom-ref": "File---nats-server",
+          "type": "file",
+          "name": "/nats-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-golang-golang.org-x-crypto-0.32.0",
+      "type": "application",
+      "name": "crypto",
+      "version": "0.32.0",
+      "purl": "pkg:golang/golang.org/x/crypto@0.32.0",
+      "components": [
+        {
+          "bom-ref": "File---nats-server",
+          "type": "file",
+          "name": "/nats-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-golang-golang.org-x-time-0.9.0",
+      "type": "application",
+      "name": "time",
+      "version": "0.9.0",
+      "purl": "pkg:golang/golang.org/x/time@0.9.0",
+      "components": [
+        {
+          "bom-ref": "File---nats-server",
+          "type": "file",
+          "name": "/nats-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-golang-github.com-klauspost-compress-1.17.11",
+      "type": "application",
+      "name": "compress",
+      "version": "1.17.11",
+      "purl": "pkg:golang/github.com/klauspost/compress@1.17.11",
+      "components": [
+        {
+          "bom-ref": "File---nats-server",
+          "type": "file",
+          "name": "/nats-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-golang-stdlib-go1.23.5",
+      "type": "application",
+      "name": "stdlib",
+      "version": "go1.23.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:golang/stdlib@go1.23.5",
+      "components": [
+        {
+          "bom-ref": "File---nats-server",
+          "type": "file",
+          "name": "/nats-server"
+        }
+      ]
+    }
+  ]
+}

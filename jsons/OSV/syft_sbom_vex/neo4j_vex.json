@@ -1,0 +1,1294 @@
+{
+  "results": [
+    {
+      "source": {
+        "path": "/Users/katushka/Documents/vex_json/jsons/grype/sboms/neo4j_sbom.json",
+        "type": "sbom"
+      },
+      "packages": [
+        {
+          "package": {
+            "name": "org.apache.commons:commons-compress",
+            "version": "1.25.0",
+            "ecosystem": "Maven"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-07T18:46:18Z",
+              "published": "2024-02-19T09:30:52Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-4265-ccf5-phj5",
+              "aliases": [
+                "CVE-2024-26308"
+              ],
+              "summary": "Apache Commons Compress: OutOfMemoryError unpacking broken Pack200 file",
+              "details": "Allocation of Resources Without Limits or Throttling vulnerability in Apache Commons Compress. This issue affects Apache Commons Compress: from 1.21 before 1.26.\n\nUsers are recommended to upgrade to version 1.26, which fixes the issue.\n\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.apache.commons:commons-compress",
+                    "purl": "pkg:maven/org.apache.commons/commons-compress"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "1.21"
+                        },
+                        {
+                          "fixed": "1.26.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "1.21",
+                    "1.22",
+                    "1.23.0",
+                    "1.24.0",
+                    "1.25.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-4265-ccf5-phj5/GHSA-4265-ccf5-phj5.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-26308"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/apache/commons-compress"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread/ch5yo2d21p7vlqrhll9b17otbyq4npfg"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20240307-0009"
+                },
+                {
+                  "type": "WEB",
+                  "url": "http://www.openwall.com/lists/oss-security/2024/02/19/2"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-770"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-02-20T23:59:29Z",
+                "nvd_published_at": "2024-02-19T09:15:38Z",
+                "severity": "HIGH"
+              }
+            },
+            {
+              "modified": "2024-03-07T18:46:51Z",
+              "published": "2024-02-19T09:30:50Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-4g9r-vxhx-9pgx",
+              "aliases": [
+                "CVE-2024-25710"
+              ],
+              "summary": "Apache Commons Compress: Denial of service caused by an infinite loop for a corrupted DUMP file",
+              "details": "Loop with Unreachable Exit Condition ('Infinite Loop') vulnerability in Apache Commons Compress. This issue affects Apache Commons Compress: from 1.3 through 1.25.0.\n\nUsers are recommended to upgrade to version 1.26.0 which fixes the issue.\n\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.apache.commons:commons-compress",
+                    "purl": "pkg:maven/org.apache.commons/commons-compress"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "1.3"
+                        },
+                        {
+                          "fixed": "1.26.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "1.10",
+                    "1.11",
+                    "1.12",
+                    "1.13",
+                    "1.14",
+                    "1.15",
+                    "1.16",
+                    "1.16.1",
+                    "1.17",
+                    "1.18",
+                    "1.19",
+                    "1.20",
+                    "1.21",
+                    "1.22",
+                    "1.23.0",
+                    "1.24.0",
+                    "1.25.0",
+                    "1.3",
+                    "1.4",
+                    "1.4.1",
+                    "1.5",
+                    "1.6",
+                    "1.7",
+                    "1.8",
+                    "1.8.1",
+                    "1.9"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-4g9r-vxhx-9pgx/GHSA-4g9r-vxhx-9pgx.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-25710"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/apache/commons-compress"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread/cz8qkcwphy4cx8gltn932ln51cbtq6kf"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20240307-0010"
+                },
+                {
+                  "type": "WEB",
+                  "url": "http://www.openwall.com/lists/oss-security/2024/02/19/1"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-835"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-02-20T23:58:47Z",
+                "nvd_published_at": "2024-02-19T09:15:37Z",
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-4265-ccf5-phj5"
+              ],
+              "aliases": [
+                "CVE-2024-26308",
+                "GHSA-4265-ccf5-phj5"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-4g9r-vxhx-9pgx"
+              ],
+              "aliases": [
+                "CVE-2024-25710",
+                "GHSA-4g9r-vxhx-9pgx"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "org.apache.commons:commons-configuration2",
+            "version": "2.9.0",
+            "ecosystem": "Maven"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-30T03:46:14Z",
+              "published": "2024-03-21T09:31:14Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-9w38-p64v-xpmv",
+              "aliases": [
+                "CVE-2024-29133"
+              ],
+              "summary": "Apache Commons Configuration: StackOverflowError calling ListDelimiterHandler.flatten(Object, int) with a cyclical object tree",
+              "details": "This Out-of-bounds Write vulnerability in Apache Commons Configuration affects Apache Commons Configuration: from 2.0 before 2.10.1. User can see this as a 'StackOverflowError' calling 'ListDelimiterHandler.flatten(Object, int)' with a cyclical object tree.\nUsers are recommended to upgrade to version 2.10.1, which fixes the issue. \n\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.apache.commons:commons-configuration2",
+                    "purl": "pkg:maven/org.apache.commons/commons-configuration2"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "2.0"
+                        },
+                        {
+                          "fixed": "2.10.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "2.0",
+                    "2.1",
+                    "2.1.1",
+                    "2.10.0",
+                    "2.2",
+                    "2.3",
+                    "2.4",
+                    "2.5",
+                    "2.6",
+                    "2.7",
+                    "2.8.0",
+                    "2.9.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-9w38-p64v-xpmv/GHSA-9w38-p64v-xpmv.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-29133"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/apache/commons-configuration/commit/43f4dab021e9acb8db390db2ae80aa0cee4f9ee4"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://issues.apache.org/jira/browse/CONFIGURATION-841"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread/ccb9w15bscznh6tnp3wsvrrj9crbszh2"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SNKDKEEKZNL5FGCTZKJ6CFXFVWFL5FJ7"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YD4AFTIIQW662LUAQRMWS6BBKYSZG3YS"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "apache/commons-configuration"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-787"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-21T18:59:08Z",
+                "nvd_published_at": "2024-03-21T09:15:07Z",
+                "severity": "MODERATE"
+              }
+            },
+            {
+              "modified": "2024-03-30T03:46:31Z",
+              "published": "2024-03-21T09:31:14Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-xjp4-hw94-mvp5",
+              "aliases": [
+                "CVE-2024-29131"
+              ],
+              "summary": "Apache Commons Configuration: StackOverflowError adding property in AbstractListDelimiterHandler.flattenIterator()",
+              "details": "This Out-of-bounds Write vulnerability in Apache Commons Configuration affects Apache Commons Configuration: from 2.0 before 2.10.1. User can see this as a 'StackOverflowError' when adding a property in 'AbstractListDelimiterHandler.flattenIterator()'.\nUsers are recommended to upgrade to version 2.10.1, which fixes the issue. \n\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.apache.commons:commons-configuration2",
+                    "purl": "pkg:maven/org.apache.commons/commons-configuration2"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "2.0"
+                        },
+                        {
+                          "fixed": "2.10.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "2.0",
+                    "2.1",
+                    "2.1.1",
+                    "2.10.0",
+                    "2.2",
+                    "2.3",
+                    "2.4",
+                    "2.5",
+                    "2.6",
+                    "2.7",
+                    "2.8.0",
+                    "2.9.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-xjp4-hw94-mvp5/GHSA-xjp4-hw94-mvp5.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-29131"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/apache/commons-configuration/commit/56b5c4dcdffbde27870df5a3105d6a5f9b22f554"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/apache/commons-configuration"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://issues.apache.org/jira/browse/CONFIGURATION-840"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread/03nzzzjn4oknyw5y0871tw7ltj0t3r37"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SNKDKEEKZNL5FGCTZKJ6CFXFVWFL5FJ7"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YD4AFTIIQW662LUAQRMWS6BBKYSZG3YS"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-787"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-21T18:58:52Z",
+                "nvd_published_at": "2024-03-21T09:15:07Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-9w38-p64v-xpmv"
+              ],
+              "aliases": [
+                "CVE-2024-29133",
+                "GHSA-9w38-p64v-xpmv"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-xjp4-hw94-mvp5"
+              ],
+              "aliases": [
+                "CVE-2024-29131",
+                "GHSA-xjp4-hw94-mvp5"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "org.eclipse.jetty.http2:http2-common",
+            "version": "10.0.17",
+            "ecosystem": "Maven"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-04-10T19:03:37Z",
+              "published": "2024-02-26T20:13:46Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-rggv-cv7r-mw98",
+              "aliases": [
+                "CVE-2024-22201"
+              ],
+              "summary": "Connection leaking on idle timeout when TCP congested",
+              "details": "### Impact\nIf an HTTP/2 connection gets TCP congested, when an idle timeout occurs the HTTP/2 session is marked as closed, and then a GOAWAY frame is queued to be written.\nHowever it is not written because the connection is TCP congested.\nWhen another idle timeout period elapses, it is then supposed to hard close the connection, but it delegates to the HTTP/2 session which reports that it has already been closed so it does not attempt to hard close the connection.\n\nThis leaves the connection in ESTABLISHED state (i.e. not closed), TCP congested, and idle.\n\nAn attacker can cause many connections to end up in this state, and the server may run out of file descriptors, eventually causing the server to stop accepting new connections from valid clients.\n\nThe client may also be impacted (if the server does not read causing a TCP congestion), but the issue is more severe for servers.\n\n### Patches\nPatched versions:\n* 9.4.54\n* 10.0.20\n* 11.0.20\n* 12.0.6\n\n### Workarounds\nDisable HTTP/2 and HTTP/3 support until you can upgrade to a patched version of Jetty.\nHTTP/1.x is not affected.\n\n### References\n* https://github.com/jetty/jetty.project/issues/11256.\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.eclipse.jetty.http2:http2-common",
+                    "purl": "pkg:maven/org.eclipse.jetty.http2/http2-common"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "9.3.0"
+                        },
+                        {
+                          "fixed": "9.4.54"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "9.3.0.v20150612",
+                    "9.3.1.v20150714",
+                    "9.3.10.M0",
+                    "9.3.10.v20160621",
+                    "9.3.11.M0",
+                    "9.3.11.v20160721",
+                    "9.3.12.v20160915",
+                    "9.3.13.M0",
+                    "9.3.13.v20161014",
+                    "9.3.14.v20161028",
+                    "9.3.15.v20161220",
+                    "9.3.16.v20170120",
+                    "9.3.17.RC0",
+                    "9.3.17.v20170317",
+                    "9.3.18.v20170406",
+                    "9.3.19.v20170502",
+                    "9.3.2.v20150730",
+                    "9.3.20.v20170531",
+                    "9.3.21.M0",
+                    "9.3.21.RC0",
+                    "9.3.21.v20170918",
+                    "9.3.22.v20171030",
+                    "9.3.23.v20180228",
+                    "9.3.24.v20180605",
+                    "9.3.25.v20180904",
+                    "9.3.26.v20190403",
+                    "9.3.27.v20190418",
+                    "9.3.28.v20191105",
+                    "9.3.29.v20201019",
+                    "9.3.3.v20150827",
+                    "9.3.30.v20211001",
+                    "9.3.4.RC0",
+                    "9.3.4.RC1",
+                    "9.3.4.v20151007",
+                    "9.3.5.v20151012",
+                    "9.3.6.v20151106",
+                    "9.3.7.RC0",
+                    "9.3.7.RC1",
+                    "9.3.7.v20160115",
+                    "9.3.8.RC0",
+                    "9.3.8.v20160314",
+                    "9.3.9.M0",
+                    "9.3.9.M1",
+                    "9.3.9.v20160517",
+                    "9.4.0.M0",
+                    "9.4.0.M1",
+                    "9.4.0.RC0",
+                    "9.4.0.RC1",
+                    "9.4.0.RC2",
+                    "9.4.0.RC3",
+                    "9.4.0.v20161208",
+                    "9.4.0.v20180619",
+                    "9.4.1.v20170120",
+                    "9.4.1.v20180619",
+                    "9.4.10.RC0",
+                    "9.4.10.RC1",
+                    "9.4.10.v20180503",
+                    "9.4.11.v20180605",
+                    "9.4.12.RC0",
+                    "9.4.12.RC1",
+                    "9.4.12.RC2",
+                    "9.4.12.v20180830",
+                    "9.4.13.v20181111",
+                    "9.4.14.v20181114",
+                    "9.4.15.v20190215",
+                    "9.4.16.v20190411",
+                    "9.4.17.v20190418",
+                    "9.4.18.v20190429",
+                    "9.4.19.v20190610",
+                    "9.4.2.v20170220",
+                    "9.4.2.v20180619",
+                    "9.4.20.v20190813",
+                    "9.4.21.v20190926",
+                    "9.4.22.v20191022",
+                    "9.4.23.v20191118",
+                    "9.4.24.v20191120",
+                    "9.4.25.v20191220",
+                    "9.4.26.v20200117",
+                    "9.4.27.v20200227",
+                    "9.4.28.v20200408",
+                    "9.4.29.v20200521",
+                    "9.4.3.v20170317",
+                    "9.4.3.v20180619",
+                    "9.4.30.v20200611",
+                    "9.4.31.v20200723",
+                    "9.4.32.v20200930",
+                    "9.4.33.v20201020",
+                    "9.4.34.v20201102",
+                    "9.4.35.v20201120",
+                    "9.4.36.v20210114",
+                    "9.4.37.v20210219",
+                    "9.4.38.v20210224",
+                    "9.4.39.v20210325",
+                    "9.4.4.v20170414",
+                    "9.4.4.v20180619",
+                    "9.4.40.v20210413",
+                    "9.4.41.v20210516",
+                    "9.4.42.v20210604",
+                    "9.4.43.v20210629",
+                    "9.4.44.v20210927",
+                    "9.4.45.v20220203",
+                    "9.4.46.v20220331",
+                    "9.4.47.v20220610",
+                    "9.4.48.v20220622",
+                    "9.4.49.v20220914",
+                    "9.4.5.v20170502",
+                    "9.4.5.v20180619",
+                    "9.4.50.v20221201",
+                    "9.4.51.v20230217",
+                    "9.4.52.v20230823",
+                    "9.4.53.v20231009",
+                    "9.4.6.v20170531",
+                    "9.4.6.v20180619",
+                    "9.4.7.RC0",
+                    "9.4.7.v20170914",
+                    "9.4.7.v20180619",
+                    "9.4.8.v20171121",
+                    "9.4.8.v20180619",
+                    "9.4.9.v20180320"
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 9.4.53",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-rggv-cv7r-mw98/GHSA-rggv-cv7r-mw98.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.eclipse.jetty.http2:http2-common",
+                    "purl": "pkg:maven/org.eclipse.jetty.http2/http2-common"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "10.0.0"
+                        },
+                        {
+                          "fixed": "10.0.20"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "10.0.0",
+                    "10.0.1",
+                    "10.0.10",
+                    "10.0.11",
+                    "10.0.12",
+                    "10.0.13",
+                    "10.0.14",
+                    "10.0.15",
+                    "10.0.16",
+                    "10.0.17",
+                    "10.0.18",
+                    "10.0.19",
+                    "10.0.2",
+                    "10.0.3",
+                    "10.0.4",
+                    "10.0.5",
+                    "10.0.6",
+                    "10.0.7",
+                    "10.0.8",
+                    "10.0.9"
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 10.0.19",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-rggv-cv7r-mw98/GHSA-rggv-cv7r-mw98.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.eclipse.jetty.http3:http3-common",
+                    "purl": "pkg:maven/org.eclipse.jetty.http3/http3-common"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "10.0.8"
+                        },
+                        {
+                          "fixed": "10.0.20"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "10.0.10",
+                    "10.0.11",
+                    "10.0.12",
+                    "10.0.13",
+                    "10.0.14",
+                    "10.0.15",
+                    "10.0.16",
+                    "10.0.17",
+                    "10.0.18",
+                    "10.0.19",
+                    "10.0.8",
+                    "10.0.9"
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 10.0.19",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-rggv-cv7r-mw98/GHSA-rggv-cv7r-mw98.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.eclipse.jetty.http2:http2-common",
+                    "purl": "pkg:maven/org.eclipse.jetty.http2/http2-common"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "11.0.0"
+                        },
+                        {
+                          "fixed": "11.0.20"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "11.0.0",
+                    "11.0.1",
+                    "11.0.10",
+                    "11.0.11",
+                    "11.0.12",
+                    "11.0.13",
+                    "11.0.14",
+                    "11.0.15",
+                    "11.0.16",
+                    "11.0.17",
+                    "11.0.18",
+                    "11.0.19",
+                    "11.0.2",
+                    "11.0.3",
+                    "11.0.4",
+                    "11.0.5",
+                    "11.0.6",
+                    "11.0.7",
+                    "11.0.8",
+                    "11.0.9"
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 11.0.19",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-rggv-cv7r-mw98/GHSA-rggv-cv7r-mw98.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.eclipse.jetty.http3:http3-common",
+                    "purl": "pkg:maven/org.eclipse.jetty.http3/http3-common"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "11.0.8"
+                        },
+                        {
+                          "fixed": "11.0.20"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "11.0.10",
+                    "11.0.11",
+                    "11.0.12",
+                    "11.0.13",
+                    "11.0.14",
+                    "11.0.15",
+                    "11.0.16",
+                    "11.0.17",
+                    "11.0.18",
+                    "11.0.19",
+                    "11.0.8",
+                    "11.0.9"
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 11.0.19",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-rggv-cv7r-mw98/GHSA-rggv-cv7r-mw98.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.eclipse.jetty.http2:jetty-http2-common",
+                    "purl": "pkg:maven/org.eclipse.jetty.http2/jetty-http2-common"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "12.0.0"
+                        },
+                        {
+                          "fixed": "12.0.6"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "12.0.0",
+                    "12.0.1",
+                    "12.0.2",
+                    "12.0.3",
+                    "12.0.4",
+                    "12.0.5"
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 12.0.5",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-rggv-cv7r-mw98/GHSA-rggv-cv7r-mw98.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.eclipse.jetty.http3:jetty-http3-common",
+                    "purl": "pkg:maven/org.eclipse.jetty.http3/jetty-http3-common"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "12.0.0"
+                        },
+                        {
+                          "fixed": "12.0.6"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "12.0.0",
+                    "12.0.1",
+                    "12.0.2",
+                    "12.0.3",
+                    "12.0.4",
+                    "12.0.5"
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 12.0.5",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-rggv-cv7r-mw98/GHSA-rggv-cv7r-mw98.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jetty/jetty.project/security/advisories/GHSA-rggv-cv7r-mw98"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-22201"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jetty/jetty.project/issues/11256"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jetty/jetty.project/issues/11259"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jetty/jetty.project/commit/0839a208cdc3fcfe25206a77af59ba9fda260188"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jetty/jetty.project/commit/b953871c9a5ff4fbca4a2499848f75182dbd9810"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/jetty/jetty.project"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.debian.org/debian-lts-announce/2024/04/msg00002.html"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20240329-0001"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-400"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-02-26T20:13:46Z",
+                "nvd_published_at": "2024-02-26T16:27:56Z",
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-rggv-cv7r-mw98"
+              ],
+              "aliases": [
+                "CVE-2024-22201",
+                "GHSA-rggv-cv7r-mw98"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "io.netty:netty-codec-http",
+            "version": "4.1.101.Final",
+            "ecosystem": "Maven"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-25T22:47:12Z",
+              "published": "2024-03-25T19:40:50Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-5jpm-x58v-624v",
+              "aliases": [
+                "CVE-2024-29025"
+              ],
+              "summary": "Netty's HttpPostRequestDecoder can OOM",
+              "details": "### Summary\nThe `HttpPostRequestDecoder` can be tricked to accumulate data. I have spotted currently two attack vectors \n\n### Details\n1. While the decoder can store items on the disk if configured so, there are no limits to the number of fields the form can have, an attacher can send a chunked post consisting of many small fields that will be accumulated in the `bodyListHttpData` list.\n2. The decoder cumulates bytes in the `undecodedChunk` buffer until it can decode a field, this field can cumulate data without limits\n\n### PoC\n\nHere is a Netty branch that provides a fix + tests : https://github.com/vietj/netty/tree/post-request-decoder\n\n\nHere is a reproducer with Vert.x (which uses this decoder) https://gist.github.com/vietj/f558b8ea81ec6505f1e9a6ca283c9ae3\n\n### Impact\nAny Netty based HTTP server that uses the `HttpPostRequestDecoder` to decode a form.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "io.netty:netty-codec-http",
+                    "purl": "pkg:maven/io.netty/netty-codec-http"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.1.108.Final"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "4.0.0.Alpha1",
+                    "4.0.0.Alpha2",
+                    "4.0.0.Alpha3",
+                    "4.0.0.Alpha4",
+                    "4.0.0.Alpha5",
+                    "4.0.0.Alpha6",
+                    "4.0.0.Alpha7",
+                    "4.0.0.Alpha8",
+                    "4.0.0.Beta1",
+                    "4.0.0.Beta2",
+                    "4.0.0.Beta3",
+                    "4.0.0.CR1",
+                    "4.0.0.CR2",
+                    "4.0.0.CR3",
+                    "4.0.0.CR4",
+                    "4.0.0.CR5",
+                    "4.0.0.CR6",
+                    "4.0.0.CR7",
+                    "4.0.0.CR8",
+                    "4.0.0.CR9",
+                    "4.0.0.Final",
+                    "4.0.1.Final",
+                    "4.0.10.Final",
+                    "4.0.11.Final",
+                    "4.0.12.Final",
+                    "4.0.13.Final",
+                    "4.0.14.Beta1",
+                    "4.0.14.Final",
+                    "4.0.15.Final",
+                    "4.0.16.Final",
+                    "4.0.17.Final",
+                    "4.0.18.Final",
+                    "4.0.19.Final",
+                    "4.0.2.Final",
+                    "4.0.20.Final",
+                    "4.0.21.Final",
+                    "4.0.22.Final",
+                    "4.0.23.Final",
+                    "4.0.24.Final",
+                    "4.0.25.Final",
+                    "4.0.26.Final",
+                    "4.0.27.Final",
+                    "4.0.28.Final",
+                    "4.0.29.Final",
+                    "4.0.3.Final",
+                    "4.0.30.Final",
+                    "4.0.31.Final",
+                    "4.0.32.Final",
+                    "4.0.33.Final",
+                    "4.0.34.Final",
+                    "4.0.35.Final",
+                    "4.0.36.Final",
+                    "4.0.37.Final",
+                    "4.0.38.Final",
+                    "4.0.39.Final",
+                    "4.0.4.Final",
+                    "4.0.40.Final",
+                    "4.0.41.Final",
+                    "4.0.42.Final",
+                    "4.0.43.Final",
+                    "4.0.44.Final",
+                    "4.0.45.Final",
+                    "4.0.46.Final",
+                    "4.0.47.Final",
+                    "4.0.48.Final",
+                    "4.0.49.Final",
+                    "4.0.5.Final",
+                    "4.0.50.Final",
+                    "4.0.51.Final",
+                    "4.0.52.Final",
+                    "4.0.53.Final",
+                    "4.0.54.Final",
+                    "4.0.55.Final",
+                    "4.0.56.Final",
+                    "4.0.6.Final",
+                    "4.0.7.Final",
+                    "4.0.8.Final",
+                    "4.0.9.Final",
+                    "4.1.0.Beta1",
+                    "4.1.0.Beta2",
+                    "4.1.0.Beta3",
+                    "4.1.0.Beta4",
+                    "4.1.0.Beta5",
+                    "4.1.0.Beta6",
+                    "4.1.0.Beta7",
+                    "4.1.0.Beta8",
+                    "4.1.0.CR1",
+                    "4.1.0.CR2",
+                    "4.1.0.CR3",
+                    "4.1.0.CR4",
+                    "4.1.0.CR5",
+                    "4.1.0.CR6",
+                    "4.1.0.CR7",
+                    "4.1.0.Final",
+                    "4.1.1.Final",
+                    "4.1.10.Final",
+                    "4.1.100.Final",
+                    "4.1.101.Final",
+                    "4.1.102.Final",
+                    "4.1.103.Final",
+                    "4.1.104.Final",
+                    "4.1.105.Final",
+                    "4.1.106.Final",
+                    "4.1.107.Final",
+                    "4.1.11.Final",
+                    "4.1.12.Final",
+                    "4.1.13.Final",
+                    "4.1.14.Final",
+                    "4.1.15.Final",
+                    "4.1.16.Final",
+                    "4.1.17.Final",
+                    "4.1.18.Final",
+                    "4.1.19.Final",
+                    "4.1.2.Final",
+                    "4.1.20.Final",
+                    "4.1.21.Final",
+                    "4.1.22.Final",
+                    "4.1.23.Final",
+                    "4.1.24.Final",
+                    "4.1.25.Final",
+                    "4.1.26.Final",
+                    "4.1.27.Final",
+                    "4.1.28.Final",
+                    "4.1.29.Final",
+                    "4.1.3.Final",
+                    "4.1.30.Final",
+                    "4.1.31.Final",
+                    "4.1.32.Final",
+                    "4.1.33.Final",
+                    "4.1.34.Final",
+                    "4.1.35.Final",
+                    "4.1.36.Final",
+                    "4.1.37.Final",
+                    "4.1.38.Final",
+                    "4.1.39.Final",
+                    "4.1.4.Final",
+                    "4.1.40.Final",
+                    "4.1.41.Final",
+                    "4.1.42.Final",
+                    "4.1.43.Final",
+                    "4.1.44.Final",
+                    "4.1.45.Final",
+                    "4.1.46.Final",
+                    "4.1.47.Final",
+                    "4.1.48.Final",
+                    "4.1.49.Final",
+                    "4.1.5.Final",
+                    "4.1.50.Final",
+                    "4.1.51.Final",
+                    "4.1.52.Final",
+                    "4.1.53.Final",
+                    "4.1.54.Final",
+                    "4.1.55.Final",
+                    "4.1.56.Final",
+                    "4.1.57.Final",
+                    "4.1.58.Final",
+                    "4.1.59.Final",
+                    "4.1.6.Final",
+                    "4.1.60.Final",
+                    "4.1.61.Final",
+                    "4.1.62.Final",
+                    "4.1.63.Final",
+                    "4.1.64.Final",
+                    "4.1.65.Final",
+                    "4.1.66.Final",
+                    "4.1.67.Final",
+                    "4.1.68.Final",
+                    "4.1.69.Final",
+                    "4.1.7.Final",
+                    "4.1.70.Final",
+                    "4.1.71.Final",
+                    "4.1.72.Final",
+                    "4.1.73.Final",
+                    "4.1.74.Final",
+                    "4.1.75.Final",
+                    "4.1.76.Final",
+                    "4.1.77.Final",
+                    "4.1.78.Final",
+                    "4.1.79.Final",
+                    "4.1.8.Final",
+                    "4.1.80.Final",
+                    "4.1.81.Final",
+                    "4.1.82.Final",
+                    "4.1.83.Final",
+                    "4.1.84.Final",
+                    "4.1.85.Final",
+                    "4.1.86.Final",
+                    "4.1.87.Final",
+                    "4.1.88.Final",
+                    "4.1.89.Final",
+                    "4.1.9.Final",
+                    "4.1.90.Final",
+                    "4.1.91.Final",
+                    "4.1.92.Final",
+                    "4.1.93.Final",
+                    "4.1.94.Final",
+                    "4.1.95.Final",
+                    "4.1.96.Final",
+                    "4.1.97.Final",
+                    "4.1.98.Final",
+                    "4.1.99.Final"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-5jpm-x58v-624v/GHSA-5jpm-x58v-624v.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/netty/netty/security/advisories/GHSA-5jpm-x58v-624v"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-29025"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/netty/netty/commit/0d0c6ed782d13d423586ad0c71737b2c7d02058c"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://gist.github.com/vietj/f558b8ea81ec6505f1e9a6ca283c9ae3"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/netty/netty"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vietj/netty/tree/post-request-decoder"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-770"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-25T19:40:50Z",
+                "nvd_published_at": "2024-03-25T20:15:08Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-5jpm-x58v-624v"
+              ],
+              "aliases": [
+                "CVE-2024-29025",
+                "GHSA-5jpm-x58v-624v"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "util-linux",
+            "version": "2.36.1-8+deb11u1",
+            "ecosystem": "Debian"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-31T12:15:33Z",
+              "published": "2024-03-31T00:00:00Z",
+              "schema_version": "1.6.0",
+              "id": "DSA-5650-1",
+              "related": [
+                "CVE-2024-28085"
+              ],
+              "summary": "util-linux - security update",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Debian:11",
+                    "name": "util-linux",
+                    "purl": "pkg:deb/debian/util-linux?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.36.1-8+deb11u2"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "2.36.1-8",
+                    "2.36.1-8+deb11u1"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/debian-osv/dsa-osv/DSA-5650-1.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Debian:12",
+                    "name": "util-linux",
+                    "purl": "pkg:deb/debian/util-linux?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.38.1-5+deb12u1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "2.38.1-5"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/debian-osv/dsa-osv/DSA-5650-1.json"
+                  }
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "DSA-5650-1"
+              ],
+              "aliases": [
+                "DSA-5650-1"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "experimental_config": {
+    "licenses": {
+      "summary": false,
+      "allowlist": null
+    }
+  }
+}

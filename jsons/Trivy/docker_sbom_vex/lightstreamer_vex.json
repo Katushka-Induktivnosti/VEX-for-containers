@@ -1,0 +1,75 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/docker_scout/sboms/lightstreamer_sbom.json",
+  "ArtifactType": "spdx",
+  "Metadata": {
+    "OS": {
+      "Family": "none",
+      "Name": ""
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-29025",
+          "PkgName": "io.netty:netty-codec-http",
+          "InstalledVersion": "4.1.101.Final",
+          "FixedVersion": "4.1.108.Final",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-29025",
+          "PkgRef": "pkg:maven/io.netty/netty-codec-http@4.1.101.Final",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "netty-codec-http: Allocation of Resources Without Limits or Throttling",
+          "Description": "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers \u0026 clients. The `HttpPostRequestDecoder` can be tricked to accumulate data. While the decoder can store items on the disk if configured so, there are no limits to the number of fields the form can have, an attacher can send a chunked post consisting of many small fields that will be accumulated in the `bodyListHttpData` list. The decoder cumulates bytes in the `undecodedChunk` buffer until it can decode a field, this field can cumulate data without limits. This vulnerability is fixed in 4.1.108.Final.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-29025",
+            "https://gist.github.com/vietj/f558b8ea81ec6505f1e9a6ca283c9ae3",
+            "https://github.com/netty/netty",
+            "https://github.com/netty/netty/commit/0d0c6ed782d13d423586ad0c71737b2c7d02058c",
+            "https://github.com/netty/netty/security/advisories/GHSA-5jpm-x58v-624v",
+            "https://github.com/vietj/netty/tree/post-request-decoder",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-29025",
+            "https://security.snyk.io/vuln/SNYK-JAVA-IONETTY-6483812",
+            "https://www.cve.org/CVERecord?id=CVE-2024-29025"
+          ],
+          "PublishedDate": "2024-03-25T20:15:08.797Z",
+          "LastModifiedDate": "2024-03-26T12:55:05.01Z"
+        }
+      ]
+    }
+  ]
+}

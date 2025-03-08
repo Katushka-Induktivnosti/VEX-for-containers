@@ -1,0 +1,28 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/trivy/sboms/eggdrop_sbom.json",
+  "ArtifactType": "spdx",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.16.8"
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "jsons/trivy/sboms/eggdrop_sbom.json (alpine 3.16.8)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    }
+  ]
+}

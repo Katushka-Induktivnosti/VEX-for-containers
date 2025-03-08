@@ -1,0 +1,289 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-78xj-cgh5-2h22",
+    "dataSource": "https://github.com/advisories/GHSA-78xj-cgh5-2h22",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-78xj-cgh5-2h22"
+    ],
+    "description": "NPM IP package incorrectly identifies some private IP addresses as public",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.0.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42282",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42282",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://cosmosofcyberspace.github.io/npm_ip_cve/npm_ip_cve.html",
+      "https://github.com/indutny/node-ip/commit/6a3ada9b471b09d5f0f5be264911ab564bf67894",
+      "https://huntr.com/bounties/bfc3b23f-ddc0-4ee7-afab-223b07115ed3/",
+      "https://security.netapp.com/advisory/ntap-20240315-0008/"
+     ],
+     "description": "The ip package before 1.1.9 for Node.js might allow SSRF because some IP addresses (such as 0x7f.1) are improperly categorized as globally routable via isPublic.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "ip",
+       "version": "2.0.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "=2.0.0 (unknown)",
+      "vulnerabilityID": "GHSA-78xj-cgh5-2h22"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2b0dae5227ecf1bd",
+    "name": "ip",
+    "version": "2.0.0",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/ip@2.0.0",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-f5x3-32g6-xq36",
+    "dataSource": "https://github.com/advisories/GHSA-f5x3-32g6-xq36",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-f5x3-32g6-xq36"
+    ],
+    "description": "Denial of service while parsing a tar file due to lack of folders count validation",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "6.2.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28863",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28863",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/isaacs/node-tar/commit/fe8cd57da5686f8695415414bda49206a545f7f7",
+      "https://github.com/isaacs/node-tar/security/advisories/GHSA-f5x3-32g6-xq36"
+     ],
+     "description": "node-tar is a Tar for Node.js. node-tar prior to version 6.2.1 has no limit on the number of sub-folders created in the folder creation process. An attacker who generates a large number of sub-folders can consume memory on the system running node-tar and even crash the Node.js client within few seconds of running it using a path with too many sub-folders inside. Version 6.2.1 fixes this issue by preventing extraction in excessively deep sub-folders.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "tar",
+       "version": "6.2.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<6.2.1 (unknown)",
+      "vulnerabilityID": "GHSA-f5x3-32g6-xq36"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "29a8902c44ab841f",
+    "name": "tar",
+    "version": "6.2.0",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "ISC"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/tar@6.2.0",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "",
+   "imageID": "",
+   "manifestDigest": "",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-04-20T01:25:41Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:16b261c20c43828088d3530bdb10577ad87b9d33cfbfcaf051c3af61ba7e53ca",
+   "error": null
+  },
+  "timestamp": "2024-04-20T21:50:19.108142+02:00"
+ }
+}

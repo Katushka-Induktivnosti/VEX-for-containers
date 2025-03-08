@@ -1,0 +1,471 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.4",
+    "serialNumber": "urn:uuid:b55e8973-d678-4b84-a3dd-9d105560d202",
+    "version": 2,
+    "metadata": {
+        "timestamp": "2024-04-20T22:03:34+02:00",
+        "tools": [
+            {
+                "vendor": "anchore",
+                "name": "syft",
+                "version": "0.93.0"
+            }
+        ],
+        "component": {
+            "bom-ref": "8e334dcd2fba8d9c",
+            "type": "container",
+            "name": "busybox",
+            "version": "sha256:b6e64714f4c19bd7cb5b4b14b6ffd4efeb8466b599cb935a1cf1e34f22610a15"
+        }
+    },
+    "components": [
+        {
+            "bom-ref": "df9bb5164dab84cf",
+            "type": "application",
+            "name": "busybox",
+            "version": "1.36.1",
+            "cpe": "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*",
+            "properties": [
+                {
+                    "name": "syft:package:foundBy",
+                    "value": "binary-cataloger"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "BinaryMetadata"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "binary"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:location:0:layerID",
+                    "value": "sha256:2e112031b4b923a873c8b3d685d48037e4d5ccd967b658743d93a6e56c3064b9"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/bin/["
+                }
+            ]
+        },
+        {
+            "type": "operating-system",
+            "name": "busybox",
+            "version": "1.36.1",
+            "description": "BusyBox v1.36.1",
+            "swid": {
+                "tagId": "busybox",
+                "name": "busybox",
+                "version": "1.36.1"
+            },
+            "properties": [
+                {
+                    "name": "syft:distro:id",
+                    "value": "busybox"
+                },
+                {
+                    "name": "syft:distro:idLike:0",
+                    "value": "busybox"
+                },
+                {
+                    "name": "syft:distro:prettyName",
+                    "value": "BusyBox v1.36.1"
+                },
+                {
+                    "name": "syft:distro:versionID",
+                    "value": "1.36.1"
+                }
+            ]
+        }
+    ],
+    "vulnerabilities": [
+        {
+            "bom-ref": "CVE-2023-42363/:busybox:1.36.1",
+            "id": "CVE-2023-42363",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-42363"
+            },
+            "ratings": [
+                {
+                    "score": 5.0,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "A use-after-free vulnerability was discovered in xasprintf function in ...\nNOTE: https://bugs.busybox.net/show_bug.cgi?id=15865",
+            "recommendation": "",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":busybox:1.36.1",
+                    "versions": [
+                        {
+                            "version": "<99.99.9",
+                            "status": "affected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-42364/:busybox:1.36.1",
+            "id": "CVE-2023-42364",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-42364"
+            },
+            "ratings": [
+                {
+                    "score": 5.0,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to ...\nNOTE: https://bugs.busybox.net/show_bug.cgi?id=15868",
+            "recommendation": "",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":busybox:1.36.1",
+                    "versions": [
+                        {
+                            "version": "<99.99.9",
+                            "status": "affected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2022-48174/:busybox:1.36.1",
+            "id": "CVE-2022-48174",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-48174"
+            },
+            "ratings": [
+                {
+                    "score": 5.0,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "There is a stack overflow vulnerability in ash.c:6030 in busybox befor ...\nNOTE: https://bugs.busybox.net/show_bug.cgi?id=15216\nNOTE: https://git.busybox.net/busybox/commit/?id=d417193cf37ca1005830d7e16f5fa7e1d8a44209",
+            "recommendation": "",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":busybox:1.36.1",
+                    "versions": [
+                        {
+                            "version": "<99.99.9",
+                            "status": "affected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2018-1000500/:busybox:1.36.1",
+            "id": "CVE-2018-1000500",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000500"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "Busybox contains a Missing SSL certificate validation vulnerability in ...\nNOTE: Intentional design decision:\nNOTE: https://git.busybox.net/busybox/tree/networking/wget.c?id=8bc418f07eab79a9c8d26594629799f6157a9466#n74\nNOTE: https://git.busybox.net/busybox/commit/networking/wget.c?id=0972c7f7a570c38edb68e1c60a45614b7a7c7d55\nNOTE: Starting with 1:1.27.2-3 in unstable wget emmits a message that certificate\nNOTE: verification is not implemented.",
+            "recommendation": "",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":busybox:1.36.1",
+                    "versions": [
+                        {
+                            "version": "<99.99.9",
+                            "status": "affected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-42366/:busybox:1.36.1",
+            "id": "CVE-2023-42366",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-42366"
+            },
+            "ratings": [
+                {
+                    "score": 5.0,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_ ...\nNOTE: https://bugs.busybox.net/show_bug.cgi?id=15874",
+            "recommendation": "",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":busybox:1.36.1",
+                    "versions": [
+                        {
+                            "version": "<99.99.9",
+                            "status": "affected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-42365/:busybox:1.36.1",
+            "id": "CVE-2023-42365",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-42365"
+            },
+            "ratings": [
+                {
+                    "score": 5.0,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via\t...\nNOTE: https://bugs.busybox.net/show_bug.cgi?id=15871",
+            "recommendation": "",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":busybox:1.36.1",
+                    "versions": [
+                        {
+                            "version": "<99.99.9",
+                            "status": "affected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2022-30065/:busybox:1.36.1",
+            "id": "CVE-2022-30065",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-30065"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "A use-after-free in Busybox 1.35-x's awk applet leads to denial of ser ...\nNOTE: https://bugs.busybox.net/show_bug.cgi?id=14781\nNOTE: https://git.busybox.net/busybox/commit/?id=e63d7cdfdac78c6fd27e9e63150335767592b85e (1_36_0)\nNOTE: Crash in CLI tool, no security impact",
+            "recommendation": "Update to 1.36.1-1 or later",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":busybox:1.36.1",
+                    "versions": [
+                        {
+                            "version": "<1.36.1-1",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.36.1-1",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2022-28391/:busybox:1.36.1",
+            "id": "CVE-2022-28391",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-28391"
+            },
+            "ratings": [
+                {
+                    "score": 5.0,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "BusyBox through 1.35.0 allows remote attackers to execute arbitrary co ...\nNOTE: https://gitlab.alpinelinux.org/alpine/aports/-/issues/13661",
+            "recommendation": "",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":busybox:1.36.1",
+                    "versions": [
+                        {
+                            "version": "<99.99.9",
+                            "status": "affected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "bom-ref": "CVE-2023-39810/:busybox:1.36.1",
+            "id": "CVE-2023-39810",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39810"
+            },
+            "ratings": [
+                {
+                    "score": 5.0,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "An issue in the CPIO command of Busybox v1.33.2 allows attackers to ex ...\nNOTE: https://www.pentagrid.ch/en/blog/busybox-cpio-directory-traversal-vulnerability/",
+            "recommendation": "",
+            "advisories": [],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": ":busybox:1.36.1",
+                    "versions": [
+                        {
+                            "version": "<99.99.9",
+                            "status": "affected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                }
+            ]
+        }
+    ]
+}

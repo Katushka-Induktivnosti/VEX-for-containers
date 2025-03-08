@@ -1,0 +1,2896 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42366",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42366",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15874"
+    ],
+    "description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_token function at awk.c:1159.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r15"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42366",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ed491f68cff63304",
+    "name": "busybox",
+    "version": "1.36.1-r15",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.36.1-r15?arch=aarch64&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/busybox"
+      },
+      {
+       "path": "/etc"
+      },
+      {
+       "path": "/etc/securetty"
+      },
+      {
+       "path": "/etc/udhcpd.conf"
+      },
+      {
+       "path": "/etc/busybox-paths.d"
+      },
+      {
+       "path": "/etc/busybox-paths.d/busybox"
+      },
+      {
+       "path": "/etc/logrotate.d"
+      },
+      {
+       "path": "/etc/logrotate.d/acpid"
+      },
+      {
+       "path": "/etc/network"
+      },
+      {
+       "path": "/etc/network/if-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-up.d"
+      },
+      {
+       "path": "/etc/network/if-pre-down.d"
+      },
+      {
+       "path": "/etc/network/if-pre-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d/dad"
+      },
+      {
+       "path": "/etc/udhcpc"
+      },
+      {
+       "path": "/etc/udhcpc/udhcpc.conf"
+      },
+      {
+       "path": "/sbin"
+      },
+      {
+       "path": "/tmp"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/sbin"
+      },
+      {
+       "path": "/usr/share"
+      },
+      {
+       "path": "/usr/share/udhcpc"
+      },
+      {
+       "path": "/usr/share/udhcpc/default.script"
+      },
+      {
+       "path": "/var"
+      },
+      {
+       "path": "/var/cache"
+      },
+      {
+       "path": "/var/cache/misc"
+      },
+      {
+       "path": "/var/lib"
+      },
+      {
+       "path": "/var/lib/udhcpd"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42365",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42365",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15871"
+    ],
+    "description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r15"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42365",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ed491f68cff63304",
+    "name": "busybox",
+    "version": "1.36.1-r15",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.36.1-r15?arch=aarch64&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/busybox"
+      },
+      {
+       "path": "/etc"
+      },
+      {
+       "path": "/etc/securetty"
+      },
+      {
+       "path": "/etc/udhcpd.conf"
+      },
+      {
+       "path": "/etc/busybox-paths.d"
+      },
+      {
+       "path": "/etc/busybox-paths.d/busybox"
+      },
+      {
+       "path": "/etc/logrotate.d"
+      },
+      {
+       "path": "/etc/logrotate.d/acpid"
+      },
+      {
+       "path": "/etc/network"
+      },
+      {
+       "path": "/etc/network/if-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-up.d"
+      },
+      {
+       "path": "/etc/network/if-pre-down.d"
+      },
+      {
+       "path": "/etc/network/if-pre-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d/dad"
+      },
+      {
+       "path": "/etc/udhcpc"
+      },
+      {
+       "path": "/etc/udhcpc/udhcpc.conf"
+      },
+      {
+       "path": "/sbin"
+      },
+      {
+       "path": "/tmp"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/sbin"
+      },
+      {
+       "path": "/usr/share"
+      },
+      {
+       "path": "/usr/share/udhcpc"
+      },
+      {
+       "path": "/usr/share/udhcpc/default.script"
+      },
+      {
+       "path": "/var"
+      },
+      {
+       "path": "/var/cache"
+      },
+      {
+       "path": "/var/cache/misc"
+      },
+      {
+       "path": "/var/lib"
+      },
+      {
+       "path": "/var/lib/udhcpd"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42364",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42364",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15868"
+    ],
+    "description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r15"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42364",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ed491f68cff63304",
+    "name": "busybox",
+    "version": "1.36.1-r15",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.36.1-r15?arch=aarch64&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/busybox"
+      },
+      {
+       "path": "/etc"
+      },
+      {
+       "path": "/etc/securetty"
+      },
+      {
+       "path": "/etc/udhcpd.conf"
+      },
+      {
+       "path": "/etc/busybox-paths.d"
+      },
+      {
+       "path": "/etc/busybox-paths.d/busybox"
+      },
+      {
+       "path": "/etc/logrotate.d"
+      },
+      {
+       "path": "/etc/logrotate.d/acpid"
+      },
+      {
+       "path": "/etc/network"
+      },
+      {
+       "path": "/etc/network/if-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-up.d"
+      },
+      {
+       "path": "/etc/network/if-pre-down.d"
+      },
+      {
+       "path": "/etc/network/if-pre-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d/dad"
+      },
+      {
+       "path": "/etc/udhcpc"
+      },
+      {
+       "path": "/etc/udhcpc/udhcpc.conf"
+      },
+      {
+       "path": "/sbin"
+      },
+      {
+       "path": "/tmp"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/sbin"
+      },
+      {
+       "path": "/usr/share"
+      },
+      {
+       "path": "/usr/share/udhcpc"
+      },
+      {
+       "path": "/usr/share/udhcpc/default.script"
+      },
+      {
+       "path": "/var"
+      },
+      {
+       "path": "/var/cache"
+      },
+      {
+       "path": "/var/cache/misc"
+      },
+      {
+       "path": "/var/lib"
+      },
+      {
+       "path": "/var/lib/udhcpd"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42363",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42363",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15865"
+    ],
+    "description": "A use-after-free vulnerability was discovered in xasprintf function in xfuncs_printf.c:344 in BusyBox v.1.36.1.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r15"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42363",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ed491f68cff63304",
+    "name": "busybox",
+    "version": "1.36.1-r15",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.36.1-r15?arch=aarch64&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/busybox"
+      },
+      {
+       "path": "/etc"
+      },
+      {
+       "path": "/etc/securetty"
+      },
+      {
+       "path": "/etc/udhcpd.conf"
+      },
+      {
+       "path": "/etc/busybox-paths.d"
+      },
+      {
+       "path": "/etc/busybox-paths.d/busybox"
+      },
+      {
+       "path": "/etc/logrotate.d"
+      },
+      {
+       "path": "/etc/logrotate.d/acpid"
+      },
+      {
+       "path": "/etc/network"
+      },
+      {
+       "path": "/etc/network/if-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-down.d"
+      },
+      {
+       "path": "/etc/network/if-post-up.d"
+      },
+      {
+       "path": "/etc/network/if-pre-down.d"
+      },
+      {
+       "path": "/etc/network/if-pre-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d"
+      },
+      {
+       "path": "/etc/network/if-up.d/dad"
+      },
+      {
+       "path": "/etc/udhcpc"
+      },
+      {
+       "path": "/etc/udhcpc/udhcpc.conf"
+      },
+      {
+       "path": "/sbin"
+      },
+      {
+       "path": "/tmp"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/sbin"
+      },
+      {
+       "path": "/usr/share"
+      },
+      {
+       "path": "/usr/share/udhcpc"
+      },
+      {
+       "path": "/usr/share/udhcpc/default.script"
+      },
+      {
+       "path": "/var"
+      },
+      {
+       "path": "/var/cache"
+      },
+      {
+       "path": "/var/cache/misc"
+      },
+      {
+       "path": "/var/lib"
+      },
+      {
+       "path": "/var/lib/udhcpd"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42366",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42366",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15874"
+    ],
+    "description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_token function at awk.c:1159.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r15"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42366",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c6d89e35b2780e3a",
+    "name": "busybox-binsh",
+    "version": "1.36.1-r15",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox-binsh:busybox-binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox-binsh:busybox_binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox-binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox_binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox-binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox_binsh:1.36.1-r15:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r15?arch=aarch64&upstream=busybox&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/sh"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42365",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42365",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15871"
+    ],
+    "description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r15"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42365",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c6d89e35b2780e3a",
+    "name": "busybox-binsh",
+    "version": "1.36.1-r15",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox-binsh:busybox-binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox-binsh:busybox_binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox-binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox_binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox-binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox_binsh:1.36.1-r15:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r15?arch=aarch64&upstream=busybox&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/sh"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42364",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42364",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15868"
+    ],
+    "description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r15"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42364",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c6d89e35b2780e3a",
+    "name": "busybox-binsh",
+    "version": "1.36.1-r15",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox-binsh:busybox-binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox-binsh:busybox_binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox-binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox_binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox-binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox_binsh:1.36.1-r15:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r15?arch=aarch64&upstream=busybox&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/sh"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42363",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42363",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15865"
+    ],
+    "description": "A use-after-free vulnerability was discovered in xasprintf function in xfuncs_printf.c:344 in BusyBox v.1.36.1.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r15"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42363",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c6d89e35b2780e3a",
+    "name": "busybox-binsh",
+    "version": "1.36.1-r15",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox-binsh:busybox-binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox-binsh:busybox_binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox-binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox_binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox-binsh:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox_binsh:1.36.1-r15:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r15?arch=aarch64&upstream=busybox&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/sh"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2781",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+     "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+     "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+    ],
+    "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+      "metrics": {
+       "baseScore": 2.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2,
+       "impactScore": 4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnu:coreutils:9.4-r2:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "coreutils",
+       "version": "9.4-r2"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2016-2781",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnu:coreutils:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "013dd445e692242c",
+    "name": "coreutils",
+    "version": "9.4-r2",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:coreutils:coreutils:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnu:coreutils:9.4-r2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/coreutils@9.4-r2?arch=aarch64&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "coreutils"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/bin"
+      },
+      {
+       "path": "/bin/base64"
+      },
+      {
+       "path": "/bin/cat"
+      },
+      {
+       "path": "/bin/chgrp"
+      },
+      {
+       "path": "/bin/chmod"
+      },
+      {
+       "path": "/bin/chown"
+      },
+      {
+       "path": "/bin/cp"
+      },
+      {
+       "path": "/bin/date"
+      },
+      {
+       "path": "/bin/dd"
+      },
+      {
+       "path": "/bin/df"
+      },
+      {
+       "path": "/bin/echo"
+      },
+      {
+       "path": "/bin/false"
+      },
+      {
+       "path": "/bin/ln"
+      },
+      {
+       "path": "/bin/ls"
+      },
+      {
+       "path": "/bin/mkdir"
+      },
+      {
+       "path": "/bin/mknod"
+      },
+      {
+       "path": "/bin/mktemp"
+      },
+      {
+       "path": "/bin/mv"
+      },
+      {
+       "path": "/bin/nice"
+      },
+      {
+       "path": "/bin/printenv"
+      },
+      {
+       "path": "/bin/pwd"
+      },
+      {
+       "path": "/bin/rm"
+      },
+      {
+       "path": "/bin/rmdir"
+      },
+      {
+       "path": "/bin/sleep"
+      },
+      {
+       "path": "/bin/stat"
+      },
+      {
+       "path": "/bin/stty"
+      },
+      {
+       "path": "/bin/sync"
+      },
+      {
+       "path": "/bin/touch"
+      },
+      {
+       "path": "/bin/true"
+      },
+      {
+       "path": "/bin/uname"
+      },
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/bin"
+      },
+      {
+       "path": "/usr/bin/["
+      },
+      {
+       "path": "/usr/bin/b2sum"
+      },
+      {
+       "path": "/usr/bin/base32"
+      },
+      {
+       "path": "/usr/bin/basename"
+      },
+      {
+       "path": "/usr/bin/basenc"
+      },
+      {
+       "path": "/usr/bin/chcon"
+      },
+      {
+       "path": "/usr/bin/cksum"
+      },
+      {
+       "path": "/usr/bin/comm"
+      },
+      {
+       "path": "/usr/bin/coreutils"
+      },
+      {
+       "path": "/usr/bin/csplit"
+      },
+      {
+       "path": "/usr/bin/cut"
+      },
+      {
+       "path": "/usr/bin/dir"
+      },
+      {
+       "path": "/usr/bin/dircolors"
+      },
+      {
+       "path": "/usr/bin/dirname"
+      },
+      {
+       "path": "/usr/bin/du"
+      },
+      {
+       "path": "/usr/bin/expand"
+      },
+      {
+       "path": "/usr/bin/expr"
+      },
+      {
+       "path": "/usr/bin/factor"
+      },
+      {
+       "path": "/usr/bin/fold"
+      },
+      {
+       "path": "/usr/bin/head"
+      },
+      {
+       "path": "/usr/bin/hostid"
+      },
+      {
+       "path": "/usr/bin/id"
+      },
+      {
+       "path": "/usr/bin/install"
+      },
+      {
+       "path": "/usr/bin/join"
+      },
+      {
+       "path": "/usr/bin/link"
+      },
+      {
+       "path": "/usr/bin/logname"
+      },
+      {
+       "path": "/usr/bin/md5sum"
+      },
+      {
+       "path": "/usr/bin/mkfifo"
+      },
+      {
+       "path": "/usr/bin/nl"
+      },
+      {
+       "path": "/usr/bin/nohup"
+      },
+      {
+       "path": "/usr/bin/nproc"
+      },
+      {
+       "path": "/usr/bin/numfmt"
+      },
+      {
+       "path": "/usr/bin/od"
+      },
+      {
+       "path": "/usr/bin/paste"
+      },
+      {
+       "path": "/usr/bin/pathchk"
+      },
+      {
+       "path": "/usr/bin/pinky"
+      },
+      {
+       "path": "/usr/bin/pr"
+      },
+      {
+       "path": "/usr/bin/printf"
+      },
+      {
+       "path": "/usr/bin/ptx"
+      },
+      {
+       "path": "/usr/bin/readlink"
+      },
+      {
+       "path": "/usr/bin/realpath"
+      },
+      {
+       "path": "/usr/bin/runcon"
+      },
+      {
+       "path": "/usr/bin/seq"
+      },
+      {
+       "path": "/usr/bin/sha1sum"
+      },
+      {
+       "path": "/usr/bin/sha224sum"
+      },
+      {
+       "path": "/usr/bin/sha256sum"
+      },
+      {
+       "path": "/usr/bin/sha384sum"
+      },
+      {
+       "path": "/usr/bin/shred"
+      },
+      {
+       "path": "/usr/bin/shuf"
+      },
+      {
+       "path": "/usr/bin/sort"
+      },
+      {
+       "path": "/usr/bin/split"
+      },
+      {
+       "path": "/usr/bin/stdbuf"
+      },
+      {
+       "path": "/usr/bin/sum"
+      },
+      {
+       "path": "/usr/bin/tac"
+      },
+      {
+       "path": "/usr/bin/tail"
+      },
+      {
+       "path": "/usr/bin/tee"
+      },
+      {
+       "path": "/usr/bin/test"
+      },
+      {
+       "path": "/usr/bin/timeout"
+      },
+      {
+       "path": "/usr/bin/tr"
+      },
+      {
+       "path": "/usr/bin/truncate"
+      },
+      {
+       "path": "/usr/bin/tsort"
+      },
+      {
+       "path": "/usr/bin/tty"
+      },
+      {
+       "path": "/usr/bin/unexpand"
+      },
+      {
+       "path": "/usr/bin/uniq"
+      },
+      {
+       "path": "/usr/bin/unlink"
+      },
+      {
+       "path": "/usr/bin/users"
+      },
+      {
+       "path": "/usr/bin/vdir"
+      },
+      {
+       "path": "/usr/bin/wc"
+      },
+      {
+       "path": "/usr/bin/who"
+      },
+      {
+       "path": "/usr/bin/whoami"
+      },
+      {
+       "path": "/usr/bin/yes"
+      },
+      {
+       "path": "/usr/libexec"
+      },
+      {
+       "path": "/usr/libexec/coreutils"
+      },
+      {
+       "path": "/usr/libexec/coreutils/libstdbuf.so"
+      },
+      {
+       "path": "/usr/sbin"
+      },
+      {
+       "path": "/usr/sbin/chroot"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2781",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+     "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+     "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+    ],
+    "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+      "metrics": {
+       "baseScore": 2.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2,
+       "impactScore": 4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnu:coreutils:9.4-r2:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "coreutils",
+       "version": "9.4-r2"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2016-2781",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnu:coreutils:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5c97a0e47225a119",
+    "name": "coreutils-env",
+    "version": "9.4-r2",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:coreutils-env:coreutils-env:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils-env:coreutils_env:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils_env:coreutils-env:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils_env:coreutils_env:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils:coreutils-env:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils:coreutils_env:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnu:coreutils-env:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnu:coreutils_env:9.4-r2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/coreutils-env@9.4-r2?arch=aarch64&upstream=coreutils&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "coreutils"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/bin"
+      },
+      {
+       "path": "/usr/bin/env"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2781",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+     "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+     "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+    ],
+    "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+      "metrics": {
+       "baseScore": 2.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2,
+       "impactScore": 4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnu:coreutils:9.4-r2:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "coreutils",
+       "version": "9.4-r2"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2016-2781",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnu:coreutils:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a1b2ecc368e35f6f",
+    "name": "coreutils-fmt",
+    "version": "9.4-r2",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:coreutils-fmt:coreutils-fmt:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils-fmt:coreutils_fmt:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils_fmt:coreutils-fmt:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils_fmt:coreutils_fmt:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils:coreutils-fmt:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils:coreutils_fmt:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnu:coreutils-fmt:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnu:coreutils_fmt:9.4-r2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/coreutils-fmt@9.4-r2?arch=aarch64&upstream=coreutils&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "coreutils"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/bin"
+      },
+      {
+       "path": "/usr/bin/fmt"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2781",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+     "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+     "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+    ],
+    "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+      "metrics": {
+       "baseScore": 2.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2,
+       "impactScore": 4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnu:coreutils:9.4-r2:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "coreutils",
+       "version": "9.4-r2"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2016-2781",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnu:coreutils:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d9c673dc1ea815b8",
+    "name": "coreutils-sha512sum",
+    "version": "9.4-r2",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:coreutils-sha512sum:coreutils-sha512sum:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils-sha512sum:coreutils_sha512sum:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils_sha512sum:coreutils-sha512sum:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils_sha512sum:coreutils_sha512sum:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils:coreutils-sha512sum:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:coreutils:coreutils_sha512sum:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnu:coreutils-sha512sum:9.4-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnu:coreutils_sha512sum:9.4-r2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/coreutils-sha512sum@9.4-r2?arch=aarch64&upstream=coreutils&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "coreutils"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/bin"
+      },
+      {
+       "path": "/usr/bin/sha512sum"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-0853",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-0853",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://curl.se/docs/CVE-2024-0853.html",
+     "https://curl.se/docs/CVE-2024-0853.json",
+     "https://hackerone.com/reports/2298922"
+    ],
+    "description": "curl inadvertently kept the SSL session ID for connections in its cache even when the verify status (*OCSP stapling*) test failed. A subsequent transfer to\nthe same hostname could then succeed if the session ID cache was still fresh, which then skipped the verify status check.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:haxx:curl:8.5.0-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "curl",
+       "version": "8.5.0-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2024-0853",
+      "versionConstraint": "= 8.5.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:haxx:curl:8.5.0:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "815edfcf18028546",
+    "name": "curl",
+    "version": "8.5.0-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "curl"
+    ],
+    "cpes": [
+     "cpe:2.3:a:curl:curl:8.5.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:haxx:curl:8.5.0-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/curl@8.5.0-r0?arch=aarch64&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "curl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/bin"
+      },
+      {
+       "path": "/usr/bin/curl"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2007-4596",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2007-4596",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://www.exploit-db.com/exploits/4314"
+    ],
+    "description": "The perl extension in PHP does not follow safe_mode restrictions, which allows context-dependent attackers to execute arbitrary code via the Perl eval function.  NOTE: this might only be a vulnerability in limited environments.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 10,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:php:php:8.3.3:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "php-cli",
+       "version": "8.3.3"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2007-4596",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:php:php:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "bcad62ffe233549e",
+    "name": "php-cli",
+    "version": "8.3.3",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/local/bin/php",
+      "layerID": "sha256:e7ddb750a83fdf8e1a70c3c4b7f65ec2fd7660357d3d997173f6de32832a2195"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:php:php:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php-cli:php-cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php-cli:php_cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php_cli:php-cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php_cli:php_cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php:php-cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php:php_cli:8.3.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/php-cli@8.3.3",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-4900",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-4900",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2022-4900",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2179880",
+     "https://security.netapp.com/advisory/ntap-20231130-0008/"
+    ],
+    "description": "A vulnerability was found in PHP where setting the environment variable PHP_CLI_SERVER_WORKERS to a large value leads to a heap buffer overflow.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "source": "secalert@redhat.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.2,
+       "exploitabilityScore": 2.5,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:php:php:8.3.3:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "php-cli",
+       "version": "8.3.3"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-4900",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:php:php:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "bcad62ffe233549e",
+    "name": "php-cli",
+    "version": "8.3.3",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/local/bin/php",
+      "layerID": "sha256:e7ddb750a83fdf8e1a70c3c4b7f65ec2fd7660357d3d997173f6de32832a2195"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:php:php:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php-cli:php-cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php-cli:php_cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php_cli:php-cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php_cli:php_cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php:php-cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php:php_cli:8.3.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/php-cli@8.3.3",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2007-3205",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2007-3205",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://osvdb.org/39834",
+     "http://securityreason.com/securityalert/2800",
+     "http://www.acid-root.new.fr/advisories/14070612.txt",
+     "http://www.securityfocus.com/archive/1/471178/100/0/threaded",
+     "http://www.securityfocus.com/archive/1/471204/100/0/threaded",
+     "http://www.securityfocus.com/archive/1/471275/100/0/threaded",
+     "https://exchange.xforce.ibmcloud.com/vulnerabilities/34836"
+    ],
+    "description": "The parse_str function in (1) PHP, (2) Hardened-PHP, and (3) Suhosin, when called without a second parameter, might allow remote attackers to overwrite arbitrary variables by specifying variable names and values in the string to be parsed.  NOTE: it is not clear whether this is a design limitation of the function or a bug in PHP, although it is likely to be regarded as a bug in Hardened-PHP and Suhosin.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:php:php:8.3.3:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "php-cli",
+       "version": "8.3.3"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2007-3205",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:php:php:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "bcad62ffe233549e",
+    "name": "php-cli",
+    "version": "8.3.3",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/local/bin/php",
+      "layerID": "sha256:e7ddb750a83fdf8e1a70c3c4b7f65ec2fd7660357d3d997173f6de32832a2195"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:php:php:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php-cli:php-cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php-cli:php_cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php_cli:php-cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php_cli:php_cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php:php-cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php:php_cli:8.3.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/php-cli@8.3.3",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2007-2728",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2007-2728",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://blog.php-security.org/archives/80-Watching-the-PHP-CVS.html",
+     "http://osvdb.org/36086",
+     "http://secunia.com/advisories/25306",
+     "http://secunia.com/advisories/26102",
+     "http://secunia.com/advisories/26895",
+     "http://www.mandriva.com/security/advisories?name=MDKSA-2007:187",
+     "http://www.novell.com/linux/security/advisories/2007_15_sr.html",
+     "http://www.ubuntu.com/usn/usn-485-1",
+     "http://www.vupen.com/english/advisories/2007/1839"
+    ],
+    "description": "The soap extension in PHP calls php_rand_r with an uninitialized seed variable, which has unknown impact and attack vectors, a related issue to the mcrypt_create_iv issue covered by CVE-2007-2727.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "stock-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:php:php:8.3.3:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "php-cli",
+       "version": "8.3.3"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2007-2728",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:php:php:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "bcad62ffe233549e",
+    "name": "php-cli",
+    "version": "8.3.3",
+    "type": "binary",
+    "locations": [
+     {
+      "path": "/usr/local/bin/php",
+      "layerID": "sha256:e7ddb750a83fdf8e1a70c3c4b7f65ec2fd7660357d3d997173f6de32832a2195"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:php:php:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php-cli:php-cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php-cli:php_cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php_cli:php-cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php_cli:php_cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php:php-cli:8.3.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:php:php_cli:8.3.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/php-cli@8.3.3",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42366",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42366",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15874"
+    ],
+    "description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_token function at awk.c:1159.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r15"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42366",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "3aba9a37f8af4502",
+    "name": "ssl_client",
+    "version": "1.36.1-r15",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ssl-client:ssl-client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl-client:ssl_client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl-client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl_client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl-client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl_client:1.36.1-r15:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/ssl_client@1.36.1-r15?arch=aarch64&upstream=busybox&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/bin"
+      },
+      {
+       "path": "/usr/bin/ssl_client"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42365",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42365",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15871"
+    ],
+    "description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r15"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42365",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "3aba9a37f8af4502",
+    "name": "ssl_client",
+    "version": "1.36.1-r15",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ssl-client:ssl-client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl-client:ssl_client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl-client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl_client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl-client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl_client:1.36.1-r15:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/ssl_client@1.36.1-r15?arch=aarch64&upstream=busybox&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/bin"
+      },
+      {
+       "path": "/usr/bin/ssl_client"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42364",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42364",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15868"
+    ],
+    "description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r15"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42364",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "3aba9a37f8af4502",
+    "name": "ssl_client",
+    "version": "1.36.1-r15",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ssl-client:ssl-client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl-client:ssl_client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl-client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl_client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl-client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl_client:1.36.1-r15:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/ssl_client@1.36.1-r15?arch=aarch64&upstream=busybox&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/bin"
+      },
+      {
+       "path": "/usr/bin/ssl_client"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42363",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42363",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15865"
+    ],
+    "description": "A use-after-free vulnerability was discovered in xasprintf function in xfuncs_printf.c:344 in BusyBox v.1.36.1.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r15:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r15"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42363",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "3aba9a37f8af4502",
+    "name": "ssl_client",
+    "version": "1.36.1-r15",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ssl-client:ssl-client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl-client:ssl_client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl-client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl_client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl-client:1.36.1-r15:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl_client:1.36.1-r15:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/ssl_client@1.36.1-r15?arch=aarch64&upstream=busybox&distro=alpine-3.19.1",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": [
+      {
+       "path": "/usr"
+      },
+      {
+       "path": "/usr/bin"
+      },
+      {
+       "path": "/usr/bin/ssl_client"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "composer",
+   "imageID": "sha256:d43c6bca9be0143db8a29a8576692793c249b1db5231f0730fd140548273dd37",
+   "manifestDigest": "sha256:1dab0873273ad3931cc2ee468a229f78b2c976df79a62fdd18c50712a401c5fe",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "composer:latest"
+   ],
+   "imageSize": 191945324,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:b09314aec293bcd9a8ee5e643539437b3846f9e5e55f79e282e5f67e3026de5e",
+     "size": 7723680
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:4642c23867b4e1a4375aa45574fb1ef441214d7bcf6bb5bc4546a5acd3203816",
+     "size": 6885553
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:04adf2cd5d05b407e8762d7c898ed855ae64aea96282fd869192d758afc3d067",
+     "size": 4680
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:1e11063920f9c02abd01b9f3f98ff824e35ba1ffda0f1b72811d77b6631e4f16",
+     "size": 0
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:caa34ae89469201307fca2109ec749e175a8c82fee01ed8391fcb4268ff94aff",
+     "size": 12511445
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:5c504aa11fbb28ddb5e6d2e3a5aa8c2fe7c36b6d45011b40488059061fe4d12c",
+     "size": 587
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:e7ddb750a83fdf8e1a70c3c4b7f65ec2fd7660357d3d997173f6de32832a2195",
+     "size": 66447453
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:ee19e64df31e567bd3e6e3a624b442f2c6e986f9e279ac498cba65837445b331",
+     "size": 7199
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:121ddc36049f40e4ddaf227c789f5083c66b497cfa04d041337fc3f189725db7",
+     "size": 53414
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:dce3ae4e46aa6a8782a70acdf0ea1b5245b9c402e83871c59d1e722bc8e5e10e",
+     "size": 93973558
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:412950dd9644ae18ef284b65c2107de553b45964c870a1a8554f19dbb63a745d",
+     "size": 66
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:f593551943547305728d074c6cc9b3531b8ce7593ea490e2f92864f6f0d830e8",
+     "size": 4337065
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:9f8709cac80d0e3e0bd99bab29dad3a2306bcb20fa83ff219fece257e98dd704",
+     "size": 624
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:517845b81f7748bbf84e9dd3edbdb99864f14878c4351307892890de3948f43d",
+     "size": 0
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoxMTYyNiwiZGlnZXN0Ijoic2hhMjU2OmQ0M2M2YmNhOWJlMDE0M2RiOGEyOWE4NTc2NjkyNzkzYzI0OWIxZGI1MjMxZjA3MzBmZDE0MDU0ODI3M2RkMzcifSwibGF5ZXJzIjpbeyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6ODAxOTQ1NiwiZGlnZXN0Ijoic2hhMjU2OmIwOTMxNGFlYzI5M2JjZDlhOGVlNWU2NDM1Mzk0MzdiMzg0NmY5ZTVlNTVmNzllMjgyZTVmNjdlMzAyNmRlNWUifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo3MTg3NDU2LCJkaWdlc3QiOiJzaGEyNTY6NDY0MmMyMzg2N2I0ZTFhNDM3NWFhNDU1NzRmYjFlZjQ0MTIxNGQ3YmNmNmJiNWJjNDU0NmE1YWNkMzIwMzgxNiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjEyMjg4LCJkaWdlc3QiOiJzaGEyNTY6MDRhZGYyY2Q1ZDA1YjQwN2U4NzYyZDdjODk4ZWQ4NTVhZTY0YWVhOTYyODJmZDg2OTE5MmQ3NThhZmMzZDA2NyJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjYxNDQsImRpZ2VzdCI6InNoYTI1NjoxZTExMDYzOTIwZjljMDJhYmQwMWI5ZjNmOThmZjgyNGUzNWJhMWZmZGEwZjFiNzI4MTFkNzdiNjYzMWU0ZjE2In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MTI1MjU1NjgsImRpZ2VzdCI6InNoYTI1NjpjYWEzNGFlODk0NjkyMDEzMDdmY2EyMTA5ZWM3NDllMTc1YThjODJmZWUwMWVkODM5MWZjYjQyNjhmZjk0YWZmIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6NDA5NiwiZGlnZXN0Ijoic2hhMjU2OjVjNTA0YWExMWZiYjI4ZGRiNWU2ZDJlM2E1YWE4YzJmZTdjMzZiNmQ0NTAxMWI0MDQ4ODA1OTA2MWZlNGQxMmMifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo2Njk5NzI0OCwiZGlnZXN0Ijoic2hhMjU2OmU3ZGRiNzUwYTgzZmRmOGUxYTcwYzNjNGI3ZjY1ZWMyZmQ3NjYwMzU3ZDNkOTk3MTczZjZkZTMyODMyYTIxOTUifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMjgwMCwiZGlnZXN0Ijoic2hhMjU2OmVlMTllNjRkZjMxZTU2N2JkM2U2ZTNhNjI0YjQ0MmYyYzZlOTg2ZjllMjc5YWM0OThjYmE2NTgzNzQ0NWIzMzEifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo2NjA0OCwiZGlnZXN0Ijoic2hhMjU2OjEyMWRkYzM2MDQ5ZjQwZTRkZGFmMjI3Yzc4OWY1MDgzYzY2YjQ5N2NmYTA0ZDA0MTMzN2ZjM2YxODk3MjVkYjcifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo5NjI5Njk2MCwiZGlnZXN0Ijoic2hhMjU2OmRjZTNhZTRlNDZhYTZhODc4MmE3MGFjZGYwZWExYjUyNDViOWM0MDJlODM4NzFjNTlkMWU3MjJiYzhlNWUxMGUifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo0NjA4LCJkaWdlc3QiOiJzaGEyNTY6NDEyOTUwZGQ5NjQ0YWUxOGVmMjg0YjY1YzIxMDdkZTU1M2I0NTk2NGM4NzBhMWE4NTU0ZjE5ZGJiNjNhNzQ1ZCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjQzNzI5OTIsImRpZ2VzdCI6InNoYTI1NjpmNTkzNTUxOTQzNTQ3MzA1NzI4ZDA3NGM2Y2M5YjM1MzFiOGNlNzU5M2VhNDkwZTJmOTI4NjRmNmYwZDgzMGU4In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MjU2MCwiZGlnZXN0Ijoic2hhMjU2OjlmODcwOWNhYzgwZDBlM2UwYmQ5OWJhYjI5ZGFkM2EyMzA2YmNiMjBmYTgzZmYyMTlmZWNlMjU3ZTk4ZGQ3MDQifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoyMDQ4LCJkaWdlc3QiOiJzaGEyNTY6NTE3ODQ1YjgxZjc3NDhiYmY4NGU5ZGQzZWRiZGI5OTg2NGYxNDg3OGM0MzUxMzA3ODkyODkwZGUzOTQ4ZjQzZCJ9XX0=",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhcm02NCIsImNvbmZpZyI6eyJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJQSFBJWkVfREVQUz1hdXRvY29uZiBcdFx0ZHBrZy1kZXYgZHBrZyBcdFx0ZmlsZSBcdFx0ZysrIFx0XHRnY2MgXHRcdGxpYmMtZGV2IFx0XHRtYWtlIFx0XHRwa2djb25mIFx0XHRyZTJjIiwiUEhQX0lOSV9ESVI9L3Vzci9sb2NhbC9ldGMvcGhwIiwiUEhQX0NGTEFHUz0tZnN0YWNrLXByb3RlY3Rvci1zdHJvbmcgLWZwaWMgLWZwaWUgLU8yIC1EX0xBUkdFRklMRV9TT1VSQ0UgLURfRklMRV9PRkZTRVRfQklUUz02NCIsIlBIUF9DUFBGTEFHUz0tZnN0YWNrLXByb3RlY3Rvci1zdHJvbmcgLWZwaWMgLWZwaWUgLU8yIC1EX0xBUkdFRklMRV9TT1VSQ0UgLURfRklMRV9PRkZTRVRfQklUUz02NCIsIlBIUF9MREZMQUdTPS1XbCwtTzEgLXBpZSIsIkdQR19LRVlTPTExOThDMDExNzU5MzQ5N0E1RUM1QzE5OTI4NkFGMUY5ODk3NDY5REMgQzI4RDkzNzU3NTYwM0VCNEFCQjcyNTg2MUMwNzc5REM1QzBBOURFNCBBRkQ4NjkxRkRBRURGMDNCREY2RTQ2MDU2M0YxNUE5QjcxNTM3NkNBIiwiUEhQX1ZFUlNJT049OC4zLjMiLCJQSFBfVVJMPWh0dHBzOi8vd3d3LnBocC5uZXQvZGlzdHJpYnV0aW9ucy9waHAtOC4zLjMudGFyLnh6IiwiUEhQX0FTQ19VUkw9aHR0cHM6Ly93d3cucGhwLm5ldC9kaXN0cmlidXRpb25zL3BocC04LjMuMy50YXIueHouYXNjIiwiUEhQX1NIQTI1Nj1iMGE5OTYyNzZmZTIxZmU5Y2E4Zjk5MzMxNGM4YmMwMjc1MGY0NjRjN2IwMzQzZjA1NmZiMDg5NGE4ZGZhOWQxIiwiQ09NUE9TRVJfQUxMT1dfU1VQRVJVU0VSPTEiLCJDT01QT1NFUl9IT01FPS90bXAiLCJDT01QT1NFUl9WRVJTSU9OPTIuNy4xIl0sIkVudHJ5cG9pbnQiOlsiL2RvY2tlci1lbnRyeXBvaW50LnNoIl0sIkNtZCI6WyJjb21wb3NlciJdLCJXb3JraW5nRGlyIjoiL2FwcCIsIkFyZ3NFc2NhcGVkIjp0cnVlLCJPbkJ1aWxkIjpudWxsfSwiY3JlYXRlZCI6IjIwMjQtMDItMTBUMTU6MTk6MjNaIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjQtMDEtMjZUMjM6NDQ6NDcuNTczMzY1MDg3WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZTpkMDc2NGE3MTdkMWU5ZDBhZmYzZmE4NDc3OWIxMWJmYTBhZmU0NDMwZGNiNmI0NmQ5NjViMjA5MTY3NjM5YmEwIGluIC8gIn0seyJjcmVhdGVkIjoiMjAyNC0wMS0yNlQyMzo0NDo0Ny43MjcwMjMwOTdaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1wiL2Jpbi9zaFwiXSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAxLTI3VDA3OjI4OjUzLjk4NjAxMTMzM1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBQSFBJWkVfREVQUz1hdXRvY29uZiBcdFx0ZHBrZy1kZXYgZHBrZyBcdFx0ZmlsZSBcdFx0ZysrIFx0XHRnY2MgXHRcdGxpYmMtZGV2IFx0XHRtYWtlIFx0XHRwa2djb25mIFx0XHRyZTJjIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDEtMjdUMDc6Mjg6NTUuNDM5ODI0MzA2WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jIGFwayBhZGQgLS1uby1jYWNoZSBcdFx0Y2EtY2VydGlmaWNhdGVzIFx0XHRjdXJsIFx0XHRvcGVuc3NsIFx0XHR0YXIgXHRcdHh6In0seyJjcmVhdGVkIjoiMjAyNC0wMS0yN1QwNzoyODo1NS45MjY2NjYyOThaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgc2V0IC1ldXg7IFx0YWRkdXNlciAtdSA4MiAtRCAtUyAtRyB3d3ctZGF0YSB3d3ctZGF0YSJ9LHsiY3JlYXRlZCI6IjIwMjQtMDEtMjdUMDc6Mjg6NTYuMDE1MTgzNDI0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRU5WIFBIUF9JTklfRElSPS91c3IvbG9jYWwvZXRjL3BocCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAxLTI3VDA3OjI4OjU2LjQ2MjYzNTU2WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jIHNldCAtZXV4OyBcdG1rZGlyIC1wIFwiJFBIUF9JTklfRElSL2NvbmYuZFwiOyBcdFsgISAtZCAvdmFyL3d3dy9odG1sIF07IFx0bWtkaXIgLXAgL3Zhci93d3cvaHRtbDsgXHRjaG93biB3d3ctZGF0YTp3d3ctZGF0YSAvdmFyL3d3dy9odG1sOyBcdGNobW9kIDE3NzcgL3Zhci93d3cvaHRtbCJ9LHsiY3JlYXRlZCI6IjIwMjQtMDEtMjdUMDc6Mjg6NTYuNTQ3NTY3MzQ2WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRU5WIFBIUF9DRkxBR1M9LWZzdGFjay1wcm90ZWN0b3Itc3Ryb25nIC1mcGljIC1mcGllIC1PMiAtRF9MQVJHRUZJTEVfU09VUkNFIC1EX0ZJTEVfT0ZGU0VUX0JJVFM9NjQiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wMS0yN1QwNzoyODo1Ni42MjY3MzU1NTVaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgUEhQX0NQUEZMQUdTPS1mc3RhY2stcHJvdGVjdG9yLXN0cm9uZyAtZnBpYyAtZnBpZSAtTzIgLURfTEFSR0VGSUxFX1NPVVJDRSAtRF9GSUxFX09GRlNFVF9CSVRTPTY0IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDEtMjdUMDc6Mjg6NTYuNzA3OTQ1ODYxWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRU5WIFBIUF9MREZMQUdTPS1XbCwtTzEgLXBpZSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAxLTI3VDA3OjI4OjU2Ljc5MDg2ODQwM1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBHUEdfS0VZUz0xMTk4QzAxMTc1OTM0OTdBNUVDNUMxOTkyODZBRjFGOTg5NzQ2OURDIEMyOEQ5Mzc1NzU2MDNFQjRBQkI3MjU4NjFDMDc3OURDNUMwQTlERTQgQUZEODY5MUZEQUVERjAzQkRGNkU0NjA1NjNGMTVBOUI3MTUzNzZDQSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTE2VDIzOjE0OjA5LjIyNTk2OTM1MVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBQSFBfVkVSU0lPTj04LjMuMyIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTE2VDIzOjE0OjA5LjMwOTIxMzkxMloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBQSFBfVVJMPWh0dHBzOi8vd3d3LnBocC5uZXQvZGlzdHJpYnV0aW9ucy9waHAtOC4zLjMudGFyLnh6IFBIUF9BU0NfVVJMPWh0dHBzOi8vd3d3LnBocC5uZXQvZGlzdHJpYnV0aW9ucy9waHAtOC4zLjMudGFyLnh6LmFzYyIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTE2VDIzOjE0OjA5LjM5MTc0Nzc0NloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBQSFBfU0hBMjU2PWIwYTk5NjI3NmZlMjFmZTljYThmOTkzMzE0YzhiYzAyNzUwZjQ2NGM3YjAzNDNmMDU2ZmIwODk0YThkZmE5ZDEiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wMi0xNlQyMzoxNDoxNy41Nzc2Nzk0NzdaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgc2V0IC1ldXg7IFx0XHRhcGsgYWRkIC0tbm8tY2FjaGUgLS12aXJ0dWFsIC5mZXRjaC1kZXBzIGdudXBnOyBcdFx0bWtkaXIgLXAgL3Vzci9zcmM7IFx0Y2QgL3Vzci9zcmM7IFx0XHRjdXJsIC1mc1NMIC1vIHBocC50YXIueHogXCIkUEhQX1VSTFwiOyBcdFx0aWYgWyAtbiBcIiRQSFBfU0hBMjU2XCIgXTsgdGhlbiBcdFx0ZWNobyBcIiRQSFBfU0hBMjU2ICpwaHAudGFyLnh6XCIgfCBzaGEyNTZzdW0gLWMgLTsgXHRmaTsgXHRcdGlmIFsgLW4gXCIkUEhQX0FTQ19VUkxcIiBdOyB0aGVuIFx0XHRjdXJsIC1mc1NMIC1vIHBocC50YXIueHouYXNjIFwiJFBIUF9BU0NfVVJMXCI7IFx0XHRleHBvcnQgR05VUEdIT01FPVwiJChta3RlbXAgLWQpXCI7IFx0XHRmb3Iga2V5IGluICRHUEdfS0VZUzsgZG8gXHRcdFx0Z3BnIC0tYmF0Y2ggLS1rZXlzZXJ2ZXIga2V5c2VydmVyLnVidW50dS5jb20gLS1yZWN2LWtleXMgXCIka2V5XCI7IFx0XHRkb25lOyBcdFx0Z3BnIC0tYmF0Y2ggLS12ZXJpZnkgcGhwLnRhci54ei5hc2MgcGhwLnRhci54ejsgXHRcdGdwZ2NvbmYgLS1raWxsIGFsbDsgXHRcdHJtIC1yZiBcIiRHTlVQR0hPTUVcIjsgXHRmaTsgXHRcdGFwayBkZWwgLS1uby1uZXR3b3JrIC5mZXRjaC1kZXBzIn0seyJjcmVhdGVkIjoiMjAyNC0wMi0xNlQyMzoxNDoxNy43MDgxMTg3ODNaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIENPUFkgZmlsZTpjZTU3YzA0YjcwODk2Zjc3Y2MxMWViMjc2NjQxN2Q4YTEyNDBmY2ZmZTViYmE5MjE3OWVjNzhjNDU4ODQ0MTEwIGluIC91c3IvbG9jYWwvYmluLyAifSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTE2VDIzOjE4OjM3LjUwOTA2NjQ2MloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyBzZXQgLWV1eDsgXHRhcGsgYWRkIC0tbm8tY2FjaGUgLS12aXJ0dWFsIC5idWlsZC1kZXBzIFx0XHQkUEhQSVpFX0RFUFMgXHRcdGFyZ29uMi1kZXYgXHRcdGNvcmV1dGlscyBcdFx0Y3VybC1kZXYgXHRcdGdudS1saWJpY29udi1kZXYgXHRcdGxpYnNvZGl1bS1kZXYgXHRcdGxpYnhtbDItZGV2IFx0XHRsaW51eC1oZWFkZXJzIFx0XHRvbmlndXJ1bWEtZGV2IFx0XHRvcGVuc3NsLWRldiBcdFx0cmVhZGxpbmUtZGV2IFx0XHRzcWxpdGUtZGV2IFx0OyBcdFx0cm0gLXZmIC91c3IvaW5jbHVkZS9pY29udi5oOyBcdFx0ZXhwb3J0IFx0XHRDRkxBR1M9XCIkUEhQX0NGTEFHU1wiIFx0XHRDUFBGTEFHUz1cIiRQSFBfQ1BQRkxBR1NcIiBcdFx0TERGTEFHUz1cIiRQSFBfTERGTEFHU1wiIFx0XHRQSFBfQlVJTERfUFJPVklERVI9J2h0dHBzOi8vZ2l0aHViLmNvbS9kb2NrZXItbGlicmFyeS9waHAnIFx0XHRQSFBfVU5BTUU9J0xpbnV4IC0gRG9ja2VyJyBcdDsgXHRkb2NrZXItcGhwLXNvdXJjZSBleHRyYWN0OyBcdGNkIC91c3Ivc3JjL3BocDsgXHRnbnVBcmNoPVwiJChkcGtnLWFyY2hpdGVjdHVyZSAtLXF1ZXJ5IERFQl9CVUlMRF9HTlVfVFlQRSlcIjsgXHQuL2NvbmZpZ3VyZSBcdFx0LS1idWlsZD1cIiRnbnVBcmNoXCIgXHRcdC0td2l0aC1jb25maWctZmlsZS1wYXRoPVwiJFBIUF9JTklfRElSXCIgXHRcdC0td2l0aC1jb25maWctZmlsZS1zY2FuLWRpcj1cIiRQSFBfSU5JX0RJUi9jb25mLmRcIiBcdFx0XHRcdC0tZW5hYmxlLW9wdGlvbi1jaGVja2luZz1mYXRhbCBcdFx0XHRcdC0td2l0aC1taGFzaCBcdFx0XHRcdC0td2l0aC1waWMgXHRcdFx0XHQtLWVuYWJsZS1tYnN0cmluZyBcdFx0LS1lbmFibGUtbXlzcWxuZCBcdFx0LS13aXRoLXBhc3N3b3JkLWFyZ29uMiBcdFx0LS13aXRoLXNvZGl1bT1zaGFyZWQgXHRcdC0td2l0aC1wZG8tc3FsaXRlPS91c3IgXHRcdC0td2l0aC1zcWxpdGUzPS91c3IgXHRcdFx0XHQtLXdpdGgtY3VybCBcdFx0LS13aXRoLWljb252PS91c3IgXHRcdC0td2l0aC1vcGVuc3NsIFx0XHQtLXdpdGgtcmVhZGxpbmUgXHRcdC0td2l0aC16bGliIFx0XHRcdFx0LS1lbmFibGUtcGhwZGJnIFx0XHQtLWVuYWJsZS1waHBkYmctcmVhZGxpbmUgXHRcdFx0XHQtLXdpdGgtcGVhciBcdFx0XHRcdCQodGVzdCBcIiRnbnVBcmNoXCIgPSAnczM5MHgtbGludXgtbXVzbCcgXHUwMDI2XHUwMDI2IGVjaG8gJy0td2l0aG91dC1wY3JlLWppdCcpIFx0OyBcdG1ha2UgLWogXCIkKG5wcm9jKVwiOyBcdGZpbmQgLXR5cGUgZiAtbmFtZSAnKi5hJyAtZGVsZXRlOyBcdG1ha2UgaW5zdGFsbDsgXHRmaW5kIFx0XHQvdXNyL2xvY2FsIFx0XHQtdHlwZSBmIFx0XHQtcGVybSAnLzAxMTEnIFx0XHQtZXhlYyBzaCAtZXV4YyAnIFx0XHRcdHN0cmlwIC0tc3RyaXAtYWxsIFwiJEBcIiB8fCA6IFx0XHQnIC0tICd7fScgKyBcdDsgXHRtYWtlIGNsZWFuOyBcdFx0Y3AgLXYgcGhwLmluaS0qIFwiJFBIUF9JTklfRElSL1wiOyBcdFx0Y2QgLzsgXHRkb2NrZXItcGhwLXNvdXJjZSBkZWxldGU7IFx0XHRydW5EZXBzPVwiJCggXHRcdHNjYW5lbGYgLS1uZWVkZWQgLS1ub2Jhbm5lciAtLWZvcm1hdCAnJW4jcCcgLS1yZWN1cnNpdmUgL3Vzci9sb2NhbCBcdFx0XHR8IHRyICcsJyAnXFxuJyBcdFx0XHR8IHNvcnQgLXUgXHRcdFx0fCBhd2sgJ3N5c3RlbShcIlsgLWUgL3Vzci9sb2NhbC9saWIvXCIgJDEgXCIgXVwiKSA9PSAwIHsgbmV4dCB9IHsgcHJpbnQgXCJzbzpcIiAkMSB9JyBcdClcIjsgXHRhcGsgYWRkIC0tbm8tY2FjaGUgJHJ1bkRlcHM7IFx0XHRhcGsgZGVsIC0tbm8tbmV0d29yayAuYnVpbGQtZGVwczsgXHRcdHBlY2wgdXBkYXRlLWNoYW5uZWxzOyBcdHJtIC1yZiAvdG1wL3BlYXIgfi8ucGVhcnJjOyBcdFx0cGhwIC0tdmVyc2lvbiJ9LHsiY3JlYXRlZCI6IjIwMjQtMDItMTZUMjM6MTg6MzcuODYzODE1MDkxWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBDT1BZIG11bHRpOjZlZGQwMzNiMDM3YWEyZDc2OTdmYzNiOWY4MmMyZjE2MjE0NmMxOTIwYTBjNmQyNWExNjVkYzU2NzgzMjA0ZGIgaW4gL3Vzci9sb2NhbC9iaW4vICJ9LHsiY3JlYXRlZCI6IjIwMjQtMDItMTZUMjM6MTg6MzkuMDM0NDc3NzAxWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jIGRvY2tlci1waHAtZXh0LWVuYWJsZSBzb2RpdW0ifSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTE2VDIzOjE4OjM5LjExODc2MjcxNloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOVFJZUE9JTlQgW1wiZG9ja2VyLXBocC1lbnRyeXBvaW50XCJdIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDItMTZUMjM6MTg6MzkuMTk5OTM3NTA0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQ01EIFtcInBocFwiIFwiLWFcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wMi0xMFQxNToxOToyM1oiLCJjcmVhdGVkX2J5IjoiUlVOIC9iaW4vc2ggLWMgc2V0IC1ldXggOyAgIGFwayBhZGQgLS1uby1jYWNoZSAtLXZpcnR1YWwgLmNvbXBvc2VyLXJ1bmRlcHMgICAgIGJhc2ggICAgIGNvcmV1dGlscyAgICAgZ2l0ICAgICBtYWtlICAgICBvcGVuc3NoLWNsaWVudCAgICAgcGF0Y2ggICAgIHN1YnZlcnNpb24gICAgIHRpbmkgICAgIHVuemlwICAgICB6aXAgICAgICQoWyBcIiQoYXBrIC0tcHJpbnQtYXJjaClcIiAhPSBcIng4NlwiIF0gXHUwMDI2XHUwMDI2IGVjaG8gbWVyY3VyaWFsKSAgICAgJChbIFwiJChhcGsgLS1wcmludC1hcmNoKVwiICE9IFwiYXJtaGZcIiBdIFx1MDAyNlx1MDAyNiBlY2hvIHA3emlwKSAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTEwVDE1OjE5OjIzWiIsImNyZWF0ZWRfYnkiOiJSVU4gL2Jpbi9zaCAtYyBwcmludGYgXCIjIGNvbXBvc2VyIHBocCBjbGkgaW5pIHNldHRpbmdzXFxuZGF0ZS50aW1lem9uZT1VVENcXG5tZW1vcnlfbGltaXQ9LTFcXG5cIiBcdTAwM2UgJFBIUF9JTklfRElSL3BocC1jbGkuaW5pICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjQtMDItMTBUMTU6MTk6MjNaIiwiY3JlYXRlZF9ieSI6IkVOViBDT01QT1NFUl9BTExPV19TVVBFUlVTRVI9MSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDItMTBUMTU6MTk6MjNaIiwiY3JlYXRlZF9ieSI6IkVOViBDT01QT1NFUl9IT01FPS90bXAiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTEwVDE1OjE5OjIzWiIsImNyZWF0ZWRfYnkiOiJFTlYgQ09NUE9TRVJfVkVSU0lPTj0yLjcuMSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDItMTBUMTU6MTk6MjNaIiwiY3JlYXRlZF9ieSI6IlJVTiAvYmluL3NoIC1jIHNldCAtZXV4IDsgICBjdXJsICAgICAtLXNpbGVudCAgICAgLS1mYWlsICAgICAtLWxvY2F0aW9uICAgICAtLXJldHJ5IDMgICAgIC0tb3V0cHV0IC91c3IvbG9jYWwvYmluL2luc3RhbGwtcGhwLWV4dGVuc2lvbnMgICAgIC0tdXJsIGh0dHBzOi8vZ2l0aHViLmNvbS9tbG9jYXRpL2RvY2tlci1waHAtZXh0ZW5zaW9uLWluc3RhbGxlci9yZWxlYXNlcy9kb3dubG9hZC8xLjIuNTgvaW5zdGFsbC1waHAtZXh0ZW5zaW9ucyAgIDsgICBlY2hvIDE4MjAxMWIzZGNhNTU0NGE3MGZkZWI1ODdhZjQ0ZWQxNzYwYWE5YTJlZDM3ZDc4N2QwZjI4MGE5OWY5MmIwMDhlNjM4YzM3NzYyMzYwY2Q4NTU4MzgzMGEwOTc2NjU1NDc4NDljYjIyOTNjNGEwZWUzMmMyYTM2ZWY3YTM0OWUyIC91c3IvbG9jYWwvYmluL2luc3RhbGwtcGhwLWV4dGVuc2lvbnMgfCBzaGE1MTJzdW0gLS1zdHJpY3QgLS1jaGVjayA7ICAgY2htb2QgK3ggL3Vzci9sb2NhbC9iaW4vaW5zdGFsbC1waHAtZXh0ZW5zaW9ucyA7ICAgaW5zdGFsbC1waHAtZXh0ZW5zaW9ucyAgICAgYnoyICAgICB6aXAgICA7ICAgY3VybCAgICAgLS1zaWxlbnQgICAgIC0tZmFpbCAgICAgLS1sb2NhdGlvbiAgICAgLS1yZXRyeSAzICAgICAtLW91dHB1dCAvdG1wL2tleXMuZGV2LnB1YiAgICAgLS11cmwgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NvbXBvc2VyL2NvbXBvc2VyLmdpdGh1Yi5pby9lN2YyOGI3MjAwMjQ5ZjhlNWJjOTEyYjQyODM3ZDQ1OThjNzQxNTNhL3NuYXBzaG90cy5wdWIgICA7ICAgZWNobyA1NzJiOTYzYzRiNzUxMmE3ZGUzYzcxYTc4ODc3MjQ0MGIxOTk2ZDkxOGIxZDJiNTM1NGJmOGJhMmJiMDU3ZmFkZWM2ZjdhYzQ4NTJmMmY4YThjMDFhYjk0YzE4MTQxY2UwNDIyYWVjMzYxOTM1NGIwNTcyMTZlMDU5N2RiNWFjMiAvdG1wL2tleXMuZGV2LnB1YiB8IHNoYTUxMnN1bSAtLXN0cmljdCAtLWNoZWNrIDsgICBjdXJsICAgICAtLXNpbGVudCAgICAgLS1mYWlsICAgICAtLWxvY2F0aW9uICAgICAtLXJldHJ5IDMgICAgIC0tb3V0cHV0IC90bXAva2V5cy50YWdzLnB1YiAgICAgLS11cmwgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NvbXBvc2VyL2NvbXBvc2VyLmdpdGh1Yi5pby9lN2YyOGI3MjAwMjQ5ZjhlNWJjOTEyYjQyODM3ZDQ1OThjNzQxNTNhL3JlbGVhc2VzLnB1YiAgIDsgICBlY2hvIDQ3ZjM3NGI4ODQwZGNiMGFhN2IyMzI3ZjEzZDI0YWI1ZjZhZTllNThhYTYzMGFmMGQ2MmIzZDBlYTExNGY0YTMxNWM1ZDk3YjIxZGNhZDNjN2ZmZTJmMGE5NWRiMmVkZWMyNjdhZGFiYTNmNGY1YTI2MmFiZWJlMzlhZWQzYTI4IC90bXAva2V5cy50YWdzLnB1YiB8IHNoYTUxMnN1bSAtLXN0cmljdCAtLWNoZWNrIDsgICBjdXJsICAgICAtLXNpbGVudCAgICAgLS1mYWlsICAgICAtLWxvY2F0aW9uICAgICAtLXJldHJ5IDMgICAgIC0tb3V0cHV0IC90bXAvaW5zdGFsbGVyLnBocCAgICAgLS11cmwgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NvbXBvc2VyL2dldGNvbXBvc2VyLm9yZy9mMjRiOGY4NjBiOTViNTIxNjdmOTFiYmQzZTNhN2JjYWZlMDQzMDM4L3dlYi9pbnN0YWxsZXIgICA7ICAgZWNobyAzMTM3YWQ4NmJkOTkwNTI0YmExZGVkYzIwMzgzMDlkZmE2YjYzNzkwZDNjYTUyYzI4YWZlYTY1ZGNjMmVhZWFkMTZmYjMzZTlhNzJmZDJhN2E4MjQwYWZhZjI2ZTA2NTkzOWEyZDQ3MmYzYjBlZWFhNTc1ZDFlODY0OGY5YmYxOSAvdG1wL2luc3RhbGxlci5waHAgfCBzaGE1MTJzdW0gLS1zdHJpY3QgLS1jaGVjayA7ICAgcGhwIC90bXAvaW5zdGFsbGVyLnBocCAgICAgLS1uby1hbnNpICAgICAtLWluc3RhbGwtZGlyPS91c3IvYmluICAgICAtLWZpbGVuYW1lPWNvbXBvc2VyICAgICAtLXZlcnNpb249JHtDT01QT1NFUl9WRVJTSU9OfSAgIDsgICBjb21wb3NlciAtLWFuc2kgLS12ZXJzaW9uIC0tbm8taW50ZXJhY3Rpb24gOyAgIGNvbXBvc2VyIGRpYWdub3NlIDsgICBybSAtZiAvdG1wL2luc3RhbGxlci5waHAgOyAgIGZpbmQgL3RtcCAtdHlwZSBkIC1leGVjIGNobW9kIC12IDE3Nzcge30gKyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTEwVDE1OjE5OjIzWiIsImNyZWF0ZWRfYnkiOiJDT1BZIGRvY2tlci1lbnRyeXBvaW50LnNoIC9kb2NrZXItZW50cnlwb2ludC5zaCAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTEwVDE1OjE5OjIzWiIsImNyZWF0ZWRfYnkiOiJXT1JLRElSIC9hcHAiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjQtMDItMTBUMTU6MTk6MjNaIiwiY3JlYXRlZF9ieSI6IkVOVFJZUE9JTlQgW1wiL2RvY2tlci1lbnRyeXBvaW50LnNoXCJdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wMi0xMFQxNToxOToyM1oiLCJjcmVhdGVkX2J5IjoiQ01EIFtcImNvbXBvc2VyXCJdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6YjA5MzE0YWVjMjkzYmNkOWE4ZWU1ZTY0MzUzOTQzN2IzODQ2ZjllNWU1NWY3OWUyODJlNWY2N2UzMDI2ZGU1ZSIsInNoYTI1Njo0NjQyYzIzODY3YjRlMWE0Mzc1YWE0NTU3NGZiMWVmNDQxMjE0ZDdiY2Y2YmI1YmM0NTQ2YTVhY2QzMjAzODE2Iiwic2hhMjU2OjA0YWRmMmNkNWQwNWI0MDdlODc2MmQ3Yzg5OGVkODU1YWU2NGFlYTk2MjgyZmQ4NjkxOTJkNzU4YWZjM2QwNjciLCJzaGEyNTY6MWUxMTA2MzkyMGY5YzAyYWJkMDFiOWYzZjk4ZmY4MjRlMzViYTFmZmRhMGYxYjcyODExZDc3YjY2MzFlNGYxNiIsInNoYTI1NjpjYWEzNGFlODk0NjkyMDEzMDdmY2EyMTA5ZWM3NDllMTc1YThjODJmZWUwMWVkODM5MWZjYjQyNjhmZjk0YWZmIiwic2hhMjU2OjVjNTA0YWExMWZiYjI4ZGRiNWU2ZDJlM2E1YWE4YzJmZTdjMzZiNmQ0NTAxMWI0MDQ4ODA1OTA2MWZlNGQxMmMiLCJzaGEyNTY6ZTdkZGI3NTBhODNmZGY4ZTFhNzBjM2M0YjdmNjVlYzJmZDc2NjAzNTdkM2Q5OTcxNzNmNmRlMzI4MzJhMjE5NSIsInNoYTI1NjplZTE5ZTY0ZGYzMWU1NjdiZDNlNmUzYTYyNGI0NDJmMmM2ZTk4NmY5ZTI3OWFjNDk4Y2JhNjU4Mzc0NDViMzMxIiwic2hhMjU2OjEyMWRkYzM2MDQ5ZjQwZTRkZGFmMjI3Yzc4OWY1MDgzYzY2YjQ5N2NmYTA0ZDA0MTMzN2ZjM2YxODk3MjVkYjciLCJzaGEyNTY6ZGNlM2FlNGU0NmFhNmE4NzgyYTcwYWNkZjBlYTFiNTI0NWI5YzQwMmU4Mzg3MWM1OWQxZTcyMmJjOGU1ZTEwZSIsInNoYTI1Njo0MTI5NTBkZDk2NDRhZTE4ZWYyODRiNjVjMjEwN2RlNTUzYjQ1OTY0Yzg3MGExYTg1NTRmMTlkYmI2M2E3NDVkIiwic2hhMjU2OmY1OTM1NTE5NDM1NDczMDU3MjhkMDc0YzZjYzliMzUzMWI4Y2U3NTkzZWE0OTBlMmY5Mjg2NGY2ZjBkODMwZTgiLCJzaGEyNTY6OWY4NzA5Y2FjODBkMGUzZTBiZDk5YmFiMjlkYWQzYTIzMDZiY2IyMGZhODNmZjIxOWZlY2UyNTdlOThkZDcwNCIsInNoYTI1Njo1MTc4NDViODFmNzc0OGJiZjg0ZTlkZDNlZGJkYjk5ODY0ZjE0ODc4YzQzNTEzMDc4OTI4OTBkZTM5NDhmNDNkIl19fQ==",
+   "repoDigests": [
+    "composer@sha256:da5213f1c0c4db435ad335be4e782ebf8677b45d37677a6db1e73e474c7ad947"
+   ],
+   "architecture": "arm64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.19.1",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-03-05T01:25:08Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:0b045cc4fdd0e497911cdb0531583416c62f21691525f22fdf43180a4263d9f4",
+   "error": null
+  },
+  "timestamp": "2024-03-06T13:43:27.367106+01:00"
+ }
+}

@@ -1,0 +1,346 @@
+{
+  "results": [
+    {
+      "source": {
+        "path": "/Users/katushka/Documents/vex_json/jsons/grype/sboms/node_sbom.json",
+        "type": "sbom"
+      },
+      "packages": [
+        {
+          "package": {
+            "name": "imagemagick",
+            "version": "8:6.9.11.60+dfsg-1.6",
+            "ecosystem": "Debian"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-22T19:16:57Z",
+              "published": "2024-02-22T00:00:00Z",
+              "schema_version": "1.6.0",
+              "id": "DSA-5628-1",
+              "related": [
+                "CVE-2021-3610",
+                "CVE-2022-1115",
+                "CVE-2023-1289",
+                "CVE-2023-1906",
+                "CVE-2023-34151",
+                "CVE-2023-3428",
+                "CVE-2023-5341"
+              ],
+              "summary": "imagemagick - security update",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Debian:11",
+                    "name": "imagemagick",
+                    "purl": "pkg:deb/debian/imagemagick?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "8:6.9.11.60+dfsg-1.3+deb11u3"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "8:6.9.11.60+dfsg-1.3",
+                    "8:6.9.11.60+dfsg-1.3+deb11u1",
+                    "8:6.9.11.60+dfsg-1.3+deb11u2"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/debian-osv/dsa-osv/DSA-5628-1.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Debian:12",
+                    "name": "imagemagick",
+                    "purl": "pkg:deb/debian/imagemagick?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "8:6.9.11.60+dfsg-1.6+deb12u1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "8:6.9.11.60+dfsg-1.6"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/debian-osv/dsa-osv/DSA-5628-1.json"
+                  }
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "DSA-5628-1"
+              ],
+              "aliases": [
+                "DSA-5628-1"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "ip",
+            "version": "2.0.0",
+            "ecosystem": "npm"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-20T18:30:37Z",
+              "published": "2024-02-08T18:30:39Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-78xj-cgh5-2h22",
+              "aliases": [
+                "CVE-2023-42282"
+              ],
+              "summary": "NPM IP package incorrectly identifies some private IP addresses as public",
+              "details": "The `isPublic()` function in the NPM package `ip` doesn't correctly identify certain private IP addresses in uncommon formats such as `0x7F.1` as private. Instead, it reports them as public by returning `true`. This can lead to security issues such as Server-Side Request Forgery (SSRF) if `isPublic()` is used to protect sensitive code paths when passed user input. Versions 1.1.9 and 2.0.1 fix the issue.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "ip",
+                    "purl": "pkg:npm/ip"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "2.0.0"
+                        },
+                        {
+                          "fixed": "2.0.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "2.0.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-78xj-cgh5-2h22/GHSA-78xj-cgh5-2h22.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "ip",
+                    "purl": "pkg:npm/ip"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.1.9"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-78xj-cgh5-2h22/GHSA-78xj-cgh5-2h22.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-42282"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/JoshGlazebrook/socks/issues/93#issue-2128357447"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/github/advisory-database/pull/3504#issuecomment-1937179999"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/indutny/node-ip/pull/138"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/indutny/node-ip/commit/32f468f1245574785ec080705737a579be1223aa"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/indutny/node-ip/commit/6a3ada9b471b09d5f0f5be264911ab564bf67894"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://cosmosofcyberspace.github.io/npm_ip_cve/npm_ip_cve.html"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/indutny/node-ip"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-918"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-02-09T15:03:18Z",
+                "nvd_published_at": "2024-02-08T17:15:10Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-78xj-cgh5-2h22"
+              ],
+              "aliases": [
+                "CVE-2023-42282",
+                "GHSA-78xj-cgh5-2h22"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "tar",
+            "version": "6.2.0",
+            "ecosystem": "npm"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-04-09T19:02:31Z",
+              "published": "2024-03-22T16:57:05Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-f5x3-32g6-xq36",
+              "aliases": [
+                "CVE-2024-28863"
+              ],
+              "summary": "Denial of service while parsing a tar file due to lack of folders count validation",
+              "details": "## Description: \nDuring some analysis today on npm's `node-tar` package I came across the folder creation process, Basicly if you provide node-tar with a path like this `./a/b/c/foo.txt` it would create every folder and sub-folder here a, b and c until it reaches the last folder to create `foo.txt`, In-this case I noticed that there's no validation at all on the amount of folders being created, that said we're actually able to CPU and memory consume the system running node-tar and even crash the nodejs client within few seconds of running it using a path with too many sub-folders inside\n\n## Steps To Reproduce:\nYou can reproduce this issue by downloading the tar file I provided in the resources and using node-tar to extract it, you should get the same behavior as the video\n\n## Proof Of Concept:\nHere's a [video](https://hackerone-us-west-2-production-attachments.s3.us-west-2.amazonaws.com/3i7uojw8s52psar6pg8zkdo4h9io?response-content-disposition=attachment%3B%20filename%3D%22tar-dos-poc.webm%22%3B%20filename%2A%3DUTF-8%27%27tar-dos-poc.webm\u0026response-content-type=video%2Fwebm\u0026X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=ASIAQGK6FURQSWWGDXHA%2F20240312%2Fus-west-2%2Fs3%2Faws4_request\u0026X-Amz-Date=20240312T080103Z\u0026X-Amz-Expires=3600\u0026X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDcaCXVzLXdlc3QtMiJHMEUCID3xYDc6emXVPOg8iVR5dVk0u3gguTPIDJ0OIE%2BKxj17AiEAi%2BGiay1gGMWhH%2F031fvMYnSsa8U7CnpZpxvFAYqNRwgqsQUIQBADGgwwMTM2MTkyNzQ4NDkiDAaj6OgUL3gg4hhLLCqOBUUrOgWSqaK%2FmxN6nKRvB4Who3LIyzswFKm9LV94GiSVFP3zXYA480voCmAHTg7eBL7%2BrYgV2RtXbhF4aCFMCN3qu7GeXkIdH7xwVMi9zXHkekviSKZ%2FsZtVVjn7RFqOCKhJl%2FCoiLQJuDuju%2FtfdTGZbEbGsPgKHoILYbRp81K51zeRL21okjsOehmypkZzq%2BoGrXIX0ynPOKujxw27uqdF4T%2BF9ynodq01vGgwgVBEjHojc4OKOfr1oW5b%2FtGVV59%2BOBVI1hqIKHRG0Ed4SWmp%2BLd1hazGuZPvp52szmegnOj5qr3ubppnKL242bX%2FuAnQKzKK0HpwolqXjsuEeFeM85lxhqHV%2B1BJqaqSHHDa0HUMLZistMRshRlntuchcFQCR6HBa2c8PSnhpVC31zMzvYMfKsI12h4HB6l%2FudrmNrvmH4LmNpi4dZFcio21DzKj%2FRjWmxjH7l8egDyG%2FIgPMY6Ls4IiN7aR1jijYTrBCgPUUHets3BFvqLzHtPFnG3B7%2FYRPnhCLu%2FgzvKN3F8l38KqeTNMHJaxkuhCvEjpFB2SJbi2QZqZZbLj3xASqXoogzbsyPp0Tzp0tH7EKDhPA7H6wwiZukXfFhhlYzP8on9fO2Ajz%2F%2BTDkDjbfWw4KNJ0cFeDsGrUspqQZb5TAKlUge7iOZEc2TZ5uagatSy9Mg08E4nImBSE5QUHDc7Daya1gyqrETMDZBBUHH2RFkGA9qMpEtNrtJ9G%2BPedz%2FpPY1hh9OCp9Pg1BrX97l3SfVzlAMRfNibhywq6qnE35rVnZi%2BEQ1UgBjs9jD%2FQrW49%2FaD0oUDojVeuFFryzRnQxDbKtYgonRcItTvLT5Y0xaK9P0u6H1197%2FMk3XxmjD9%2Fb%2BvBjqxAQWWkKiIxpC1oHEWK9Jt8UdJ39xszDBGpBqjB6Tvt5ePAXSyX8np%2FrBi%2BAPx06O0%2Ba7pU4NmH800EVXxxhgfj9nMw3CeoUIdxorVKtU2Mxw%2FLaAiPgxPS4rqkt65NF7eQYfegcSYDTm2Z%2BHPbz9HfCaVZ28Zqeko6sR%2F29ML4bguqVvHAM4mWPLNDXH33mjG%2BuzLi8e1BF7tNveg2X9G%2FRdcMkojwKYbu6xN3M6aX2alQg%3D%3D\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=1e8235d885f1d61529b7d6b23ea3a0780c300c91d86e925dd8310d5b661ddbe2) show-casing the exploit: \n\n## Impact\n\nDenial of service by crashing the nodejs client when attempting to parse a tar archive, make it run out of heap memory and consuming server CPU and memory resources\n\n## Report resources\n[payload.txt](https://hackerone-us-west-2-production-attachments.s3.us-west-2.amazonaws.com/1e83ayb5dd3350fvj3gst0mqixwk?response-content-disposition=attachment%3B%20filename%3D%22payload.txt%22%3B%20filename%2A%3DUTF-8%27%27payload.txt\u0026response-content-type=text%2Fplain\u0026X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=ASIAQGK6FURQSWWGDXHA%2F20240312%2Fus-west-2%2Fs3%2Faws4_request\u0026X-Amz-Date=20240312T080103Z\u0026X-Amz-Expires=3600\u0026X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDcaCXVzLXdlc3QtMiJHMEUCID3xYDc6emXVPOg8iVR5dVk0u3gguTPIDJ0OIE%2BKxj17AiEAi%2BGiay1gGMWhH%2F031fvMYnSsa8U7CnpZpxvFAYqNRwgqsQUIQBADGgwwMTM2MTkyNzQ4NDkiDAaj6OgUL3gg4hhLLCqOBUUrOgWSqaK%2FmxN6nKRvB4Who3LIyzswFKm9LV94GiSVFP3zXYA480voCmAHTg7eBL7%2BrYgV2RtXbhF4aCFMCN3qu7GeXkIdH7xwVMi9zXHkekviSKZ%2FsZtVVjn7RFqOCKhJl%2FCoiLQJuDuju%2FtfdTGZbEbGsPgKHoILYbRp81K51zeRL21okjsOehmypkZzq%2BoGrXIX0ynPOKujxw27uqdF4T%2BF9ynodq01vGgwgVBEjHojc4OKOfr1oW5b%2FtGVV59%2BOBVI1hqIKHRG0Ed4SWmp%2BLd1hazGuZPvp52szmegnOj5qr3ubppnKL242bX%2FuAnQKzKK0HpwolqXjsuEeFeM85lxhqHV%2B1BJqaqSHHDa0HUMLZistMRshRlntuchcFQCR6HBa2c8PSnhpVC31zMzvYMfKsI12h4HB6l%2FudrmNrvmH4LmNpi4dZFcio21DzKj%2FRjWmxjH7l8egDyG%2FIgPMY6Ls4IiN7aR1jijYTrBCgPUUHets3BFvqLzHtPFnG3B7%2FYRPnhCLu%2FgzvKN3F8l38KqeTNMHJaxkuhCvEjpFB2SJbi2QZqZZbLj3xASqXoogzbsyPp0Tzp0tH7EKDhPA7H6wwiZukXfFhhlYzP8on9fO2Ajz%2F%2BTDkDjbfWw4KNJ0cFeDsGrUspqQZb5TAKlUge7iOZEc2TZ5uagatSy9Mg08E4nImBSE5QUHDc7Daya1gyqrETMDZBBUHH2RFkGA9qMpEtNrtJ9G%2BPedz%2FpPY1hh9OCp9Pg1BrX97l3SfVzlAMRfNibhywq6qnE35rVnZi%2BEQ1UgBjs9jD%2FQrW49%2FaD0oUDojVeuFFryzRnQxDbKtYgonRcItTvLT5Y0xaK9P0u6H1197%2FMk3XxmjD9%2Fb%2BvBjqxAQWWkKiIxpC1oHEWK9Jt8UdJ39xszDBGpBqjB6Tvt5ePAXSyX8np%2FrBi%2BAPx06O0%2Ba7pU4NmH800EVXxxhgfj9nMw3CeoUIdxorVKtU2Mxw%2FLaAiPgxPS4rqkt65NF7eQYfegcSYDTm2Z%2BHPbz9HfCaVZ28Zqeko6sR%2F29ML4bguqVvHAM4mWPLNDXH33mjG%2BuzLi8e1BF7tNveg2X9G%2FRdcMkojwKYbu6xN3M6aX2alQg%3D%3D\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=bad9fe731f05a63a950f99828125653a8c1254750fe0ca7be882e89ecdd449ae)\n[archeive.tar.gz](https://hackerone-us-west-2-production-attachments.s3.us-west-2.amazonaws.com/ymkuh4xnfdcf1soeyi7jc2x4yt2i?response-content-disposition=attachment%3B%20filename%3D%22archive.tar.gz%22%3B%20filename%2A%3DUTF-8%27%27archive.tar.gz\u0026response-content-type=application%2Fx-tar\u0026X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=ASIAQGK6FURQSWWGDXHA%2F20240312%2Fus-west-2%2Fs3%2Faws4_request\u0026X-Amz-Date=20240312T080103Z\u0026X-Amz-Expires=3600\u0026X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDcaCXVzLXdlc3QtMiJHMEUCID3xYDc6emXVPOg8iVR5dVk0u3gguTPIDJ0OIE%2BKxj17AiEAi%2BGiay1gGMWhH%2F031fvMYnSsa8U7CnpZpxvFAYqNRwgqsQUIQBADGgwwMTM2MTkyNzQ4NDkiDAaj6OgUL3gg4hhLLCqOBUUrOgWSqaK%2FmxN6nKRvB4Who3LIyzswFKm9LV94GiSVFP3zXYA480voCmAHTg7eBL7%2BrYgV2RtXbhF4aCFMCN3qu7GeXkIdH7xwVMi9zXHkekviSKZ%2FsZtVVjn7RFqOCKhJl%2FCoiLQJuDuju%2FtfdTGZbEbGsPgKHoILYbRp81K51zeRL21okjsOehmypkZzq%2BoGrXIX0ynPOKujxw27uqdF4T%2BF9ynodq01vGgwgVBEjHojc4OKOfr1oW5b%2FtGVV59%2BOBVI1hqIKHRG0Ed4SWmp%2BLd1hazGuZPvp52szmegnOj5qr3ubppnKL242bX%2FuAnQKzKK0HpwolqXjsuEeFeM85lxhqHV%2B1BJqaqSHHDa0HUMLZistMRshRlntuchcFQCR6HBa2c8PSnhpVC31zMzvYMfKsI12h4HB6l%2FudrmNrvmH4LmNpi4dZFcio21DzKj%2FRjWmxjH7l8egDyG%2FIgPMY6Ls4IiN7aR1jijYTrBCgPUUHets3BFvqLzHtPFnG3B7%2FYRPnhCLu%2FgzvKN3F8l38KqeTNMHJaxkuhCvEjpFB2SJbi2QZqZZbLj3xASqXoogzbsyPp0Tzp0tH7EKDhPA7H6wwiZukXfFhhlYzP8on9fO2Ajz%2F%2BTDkDjbfWw4KNJ0cFeDsGrUspqQZb5TAKlUge7iOZEc2TZ5uagatSy9Mg08E4nImBSE5QUHDc7Daya1gyqrETMDZBBUHH2RFkGA9qMpEtNrtJ9G%2BPedz%2FpPY1hh9OCp9Pg1BrX97l3SfVzlAMRfNibhywq6qnE35rVnZi%2BEQ1UgBjs9jD%2FQrW49%2FaD0oUDojVeuFFryzRnQxDbKtYgonRcItTvLT5Y0xaK9P0u6H1197%2FMk3XxmjD9%2Fb%2BvBjqxAQWWkKiIxpC1oHEWK9Jt8UdJ39xszDBGpBqjB6Tvt5ePAXSyX8np%2FrBi%2BAPx06O0%2Ba7pU4NmH800EVXxxhgfj9nMw3CeoUIdxorVKtU2Mxw%2FLaAiPgxPS4rqkt65NF7eQYfegcSYDTm2Z%2BHPbz9HfCaVZ28Zqeko6sR%2F29ML4bguqVvHAM4mWPLNDXH33mjG%2BuzLi8e1BF7tNveg2X9G%2FRdcMkojwKYbu6xN3M6aX2alQg%3D%3D\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=5e2c0d4b4de40373ac0fe91908c2659141a6dd4ab850271cc26042a3885c82ea)\n\n## Note\nThis report was originally reported to GitHub bug bounty program, they asked me to report it to you a month ago",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "node-tar",
+                    "purl": "pkg:npm/node-tar"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "6.2.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-f5x3-32g6-xq36/GHSA-f5x3-32g6-xq36.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "tar",
+                    "purl": "pkg:npm/tar"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "6.2.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-f5x3-32g6-xq36/GHSA-f5x3-32g6-xq36.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/isaacs/node-tar/security/advisories/GHSA-f5x3-32g6-xq36"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-28863"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/isaacs/node-tar/commit/fe8cd57da5686f8695415414bda49206a545f7f7"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/isaacs/node-tar"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-400"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-22T16:57:05Z",
+                "nvd_published_at": "2024-03-21T23:15:10Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-f5x3-32g6-xq36"
+              ],
+              "aliases": [
+                "CVE-2024-28863",
+                "GHSA-f5x3-32g6-xq36"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "experimental_config": {
+    "licenses": {
+      "summary": false,
+      "allowlist": null
+    }
+  }
+}

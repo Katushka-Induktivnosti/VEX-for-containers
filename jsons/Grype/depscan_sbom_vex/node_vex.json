@@ -1,0 +1,326 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-gh88-3pxp-6fm8",
+    "dataSource": "https://github.com/advisories/GHSA-gh88-3pxp-6fm8",
+    "namespace": "github:language:javascript",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-gh88-3pxp-6fm8"
+    ],
+    "description": "Infinite Loop in colors.js",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-23567",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-23567",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/Marak/colors.js/commit/074a0f8ed0c31c35d13d28632bd8a049ff136fb6%23diff-92bbac9a308cd5fcf9db165841f2d90ce981baddcb2b1e26cfff170929af3bd1R18",
+      "https://github.com/Marak/colors.js/issues/285",
+      "https://github.com/Marak/colors.js/issues/285%23issuecomment-1008212640",
+      "https://snyk.io/blog/open-source-maintainer-pulls-the-plug-on-npm-packages-colors-and-faker-now-what/",
+      "https://snyk.io/vuln/SNYK-JS-COLORS-2331906"
+     ],
+     "description": "The package colors after 1.4.0 are vulnerable to Denial of Service (DoS) that was introduced through an infinite loop in the americanFlag module. Unfortunately this appears to have been a purposeful attempt by a maintainer of colors to make the package unusable, other maintainers' controls over this package appear to have been revoked in an attempt to prevent them from fixing the issue. Vulnerable Code js for (let i = 666; i < Infinity; i++;) { Alternative Remediation Suggested * Pin dependancy to 1.4.0",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "report@snyk.io",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "colors",
+       "version": "1.5.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.4.1 (unknown)",
+      "vulnerabilityID": "GHSA-gh88-3pxp-6fm8"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "53e3e044d36a5649",
+    "name": "colors",
+    "version": "1.5.0",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/%40colors/colors@1.5.0",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-f5x3-32g6-xq36",
+    "dataSource": "https://github.com/advisories/GHSA-f5x3-32g6-xq36",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-f5x3-32g6-xq36"
+    ],
+    "description": "Denial of service while parsing a tar file due to lack of folders count validation",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "6.2.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28863",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28863",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/isaacs/node-tar/commit/fe8cd57da5686f8695415414bda49206a545f7f7",
+      "https://github.com/isaacs/node-tar/security/advisories/GHSA-f5x3-32g6-xq36"
+     ],
+     "description": "node-tar is a Tar for Node.js. node-tar prior to version 6.2.1 has no limit on the number of sub-folders created in the folder creation process. An attacker who generates a large number of sub-folders can consume memory on the system running node-tar and even crash the Node.js client within few seconds of running it using a path with too many sub-folders inside. Version 6.2.1 fixes this issue by preventing extraction in excessively deep sub-folders.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "tar",
+       "version": "6.2.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<6.2.1 (unknown)",
+      "vulnerabilityID": "GHSA-f5x3-32g6-xq36"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "29a8902c44ab841f",
+    "name": "tar",
+    "version": "6.2.0",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "ISC"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/tar@6.2.0",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "node",
+   "imageID": "pkg:oci/node@sha256:162d92c5f1467ad877bf6d8a098d9b04d7303879017a2f3644bfb1de1fc88ff0",
+   "manifestDigest": "latest",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-05-15T01:28:06Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:ae6d37ab4724e50bf25d76152f0f93f5f4f2c063e77806b540ec818920592692",
+   "error": null
+  },
+  "timestamp": "2024-05-15T13:34:24.079072+02:00"
+ }
+}

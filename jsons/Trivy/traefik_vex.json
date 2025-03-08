@@ -1,0 +1,114 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "traefik",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.19.1"
+    },
+    "ImageID": "sha256:0643a799ff035126e2e658c3f68c5e0c2294df52ab11f327a719dc384321a655",
+    "DiffIDs": [
+      "sha256:d4fc045c9e3a848011de66f34b81f052d4f2c15a17bb196d637e526349601820",
+      "sha256:2c0b58a5630cef5bc3704b08666e4d257875d6df44f0b47cdae4d34527f828a1",
+      "sha256:4743699f268e435cbd99c1243419fc0e869e94264204a1dcdccafae47a7dae94",
+      "sha256:a541d5665ad4bba72cb277ee07c8759ea44b140484b876e1f8415a501a1c770b"
+    ],
+    "RepoTags": [
+      "traefik:latest"
+    ],
+    "RepoDigests": [
+      "traefik@sha256:4be302e188b5be7637a3404033e8088c005059fd29e05b7ff04a403fac3d13ea"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "5b9c964b3faa17d055d1f0032083fb1bbd43a2776ce3c1a8f53de88fd48ebe2f",
+      "created": "2024-02-12T22:35:58.858557888Z",
+      "docker_version": "20.10.23",
+      "history": [
+        {
+          "created": "2024-01-27T00:30:48.624602109Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / "
+        },
+        {
+          "created": "2024-01-27T00:30:48.743965523Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-27T03:56:04.193050431Z",
+          "created_by": "/bin/sh -c apk --no-cache add ca-certificates tzdata"
+        },
+        {
+          "created": "2024-02-12T22:35:58.190869081Z",
+          "created_by": "/bin/sh -c set -ex; \tapkArch=\"$(apk --print-arch)\"; \tcase \"$apkArch\" in \t\tarmhf) arch='armv6' ;; \t\taarch64) arch='arm64' ;; \t\tx86_64) arch='amd64' ;; \t\ts390x) arch='s390x' ;; \t\tppc64le) arch='ppc64le' ;; \t\t*) echo \u003e\u00262 \"error: unsupported architecture: $apkArch\"; exit 1 ;; \tesac; \twget --quiet -O /tmp/traefik.tar.gz \"https://github.com/traefik/traefik/releases/download/v2.11.0/traefik_v2.11.0_linux_$arch.tar.gz\"; \ttar xzvf /tmp/traefik.tar.gz -C /usr/local/bin traefik; \trm -f /tmp/traefik.tar.gz; \tchmod +x /usr/local/bin/traefik"
+        },
+        {
+          "created": "2024-02-12T22:35:58.52128167Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:59a219a1fb7a9dc894a7a9a4718fa97fd24adb0a4a6455240ec2ab0183da796e in / "
+        },
+        {
+          "created": "2024-02-12T22:35:58.599818907Z",
+          "created_by": "/bin/sh -c #(nop)  EXPOSE 80",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-02-12T22:35:58.680111956Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/entrypoint.sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-02-12T22:35:58.777072994Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"traefik\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-02-12T22:35:58.858557888Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.0 org.opencontainers.image.documentation=https://docs.traefik.io",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:d4fc045c9e3a848011de66f34b81f052d4f2c15a17bb196d637e526349601820",
+          "sha256:2c0b58a5630cef5bc3704b08666e4d257875d6df44f0b47cdae4d34527f828a1",
+          "sha256:4743699f268e435cbd99c1243419fc0e869e94264204a1dcdccafae47a7dae94",
+          "sha256:a541d5665ad4bba72cb277ee07c8759ea44b140484b876e1f8415a501a1c770b"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "traefik"
+        ],
+        "Entrypoint": [
+          "/entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Image": "sha256:a53fa774a07e051c38c31424d1672c549745e662c03ed652fc44fa4fd273d9a9",
+        "Labels": {
+          "org.opencontainers.image.description": "A modern reverse-proxy",
+          "org.opencontainers.image.documentation": "https://docs.traefik.io",
+          "org.opencontainers.image.source": "https://github.com/traefik/traefik",
+          "org.opencontainers.image.title": "Traefik",
+          "org.opencontainers.image.url": "https://traefik.io",
+          "org.opencontainers.image.vendor": "Traefik Labs",
+          "org.opencontainers.image.version": "v2.11.0"
+        },
+        "ExposedPorts": {
+          "80/tcp": {}
+        }
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "traefik (alpine 3.19.1)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    }
+  ]
+}

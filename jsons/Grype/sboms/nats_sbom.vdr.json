@@ -1,0 +1,1425 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.4",
+    "serialNumber": "urn:uuid:fcbaf983-53d0-4a17-8f8e-e31ec89bd8dd",
+    "version": 2,
+    "metadata": {
+        "timestamp": "2024-04-20T22:03:33+02:00",
+        "tools": [
+            {
+                "vendor": "anchore",
+                "name": "syft",
+                "version": "0.93.0"
+            }
+        ],
+        "component": {
+            "bom-ref": "8294c9b5b80e68f2",
+            "type": "container",
+            "name": "nats",
+            "version": "sha256:c99b2f2a94bf3dc4622cfb1b2de1ae8cc9400a942ddae6aa3d297624274a602e"
+        }
+    },
+    "components": [
+        {
+            "bom-ref": "pkg:golang/github.com/klauspost/compress@v1.17.4?package-id=7e32540dffac182c",
+            "type": "library",
+            "name": "github.com/klauspost/compress",
+            "version": "v1.17.4",
+            "cpe": "cpe:2.3:a:klauspost:compress:v1.17.4:*:*:*:*:*:*:*",
+            "purl": "pkg:golang/github.com/klauspost/compress@v1.17.4",
+            "properties": [
+                {
+                    "name": "syft:package:foundBy",
+                    "value": "go-module-binary-cataloger"
+                },
+                {
+                    "name": "syft:package:language",
+                    "value": "go"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "GolangBinMetadata"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "go-module"
+                },
+                {
+                    "name": "syft:location:0:layerID",
+                    "value": "sha256:9efa2f5a3143c141e1d08ddfee76d2d6ee3da41278ef210edba48bf099dae3f5"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/nats-server"
+                },
+                {
+                    "name": "syft:metadata:architecture",
+                    "value": "amd64"
+                },
+                {
+                    "name": "syft:metadata:goCompiledVersion",
+                    "value": "go1.21.6"
+                },
+                {
+                    "name": "syft:metadata:goCryptoSettings:0",
+                    "value": "standard-crypto"
+                },
+                {
+                    "name": "syft:metadata:h1Digest",
+                    "value": "h1:Ej5ixsIri7BrIjBkRZLTo6ghwrEtHFk7ijlczPW4fZ4="
+                },
+                {
+                    "name": "syft:metadata:mainModule",
+                    "value": "github.com/nats-io/nats-server/v2"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/github.com/minio/highwayhash@v1.0.2?package-id=52491e5d09ad7021",
+            "type": "library",
+            "name": "github.com/minio/highwayhash",
+            "version": "v1.0.2",
+            "cpe": "cpe:2.3:a:minio:highwayhash:v1.0.2:*:*:*:*:*:*:*",
+            "purl": "pkg:golang/github.com/minio/highwayhash@v1.0.2",
+            "properties": [
+                {
+                    "name": "syft:package:foundBy",
+                    "value": "go-module-binary-cataloger"
+                },
+                {
+                    "name": "syft:package:language",
+                    "value": "go"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "GolangBinMetadata"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "go-module"
+                },
+                {
+                    "name": "syft:location:0:layerID",
+                    "value": "sha256:9efa2f5a3143c141e1d08ddfee76d2d6ee3da41278ef210edba48bf099dae3f5"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/nats-server"
+                },
+                {
+                    "name": "syft:metadata:architecture",
+                    "value": "amd64"
+                },
+                {
+                    "name": "syft:metadata:goCompiledVersion",
+                    "value": "go1.21.6"
+                },
+                {
+                    "name": "syft:metadata:goCryptoSettings:0",
+                    "value": "standard-crypto"
+                },
+                {
+                    "name": "syft:metadata:h1Digest",
+                    "value": "h1:Aak5U0nElisjDCfPSG79Tgzkn2gl66NxOMspRrKnA/g="
+                },
+                {
+                    "name": "syft:metadata:mainModule",
+                    "value": "github.com/nats-io/nats-server/v2"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/github.com/nats-io/jwt/v2@v2.5.3?package-id=7d343c80aefc410d",
+            "type": "library",
+            "name": "github.com/nats-io/jwt/v2",
+            "version": "v2.5.3",
+            "cpe": "cpe:2.3:a:nats-io:jwt\\/v2:v2.5.3:*:*:*:*:*:*:*",
+            "purl": "pkg:golang/github.com/nats-io/jwt/v2@v2.5.3",
+            "properties": [
+                {
+                    "name": "syft:package:foundBy",
+                    "value": "go-module-binary-cataloger"
+                },
+                {
+                    "name": "syft:package:language",
+                    "value": "go"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "GolangBinMetadata"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "go-module"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:nats_io:jwt\\/v2:v2.5.3:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:nats:jwt\\/v2:v2.5.3:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:location:0:layerID",
+                    "value": "sha256:9efa2f5a3143c141e1d08ddfee76d2d6ee3da41278ef210edba48bf099dae3f5"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/nats-server"
+                },
+                {
+                    "name": "syft:metadata:architecture",
+                    "value": "amd64"
+                },
+                {
+                    "name": "syft:metadata:goCompiledVersion",
+                    "value": "go1.21.6"
+                },
+                {
+                    "name": "syft:metadata:goCryptoSettings:0",
+                    "value": "standard-crypto"
+                },
+                {
+                    "name": "syft:metadata:h1Digest",
+                    "value": "h1:/9SWvzc6hTfamcgXJ3uYRpgj+QuY2aLNqRiqrKcrpEo="
+                },
+                {
+                    "name": "syft:metadata:mainModule",
+                    "value": "github.com/nats-io/nats-server/v2"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5?package-id=c6b2022459a2c237",
+            "type": "library",
+            "name": "github.com/nats-io/nats-server/v2",
+            "version": "v0.0.0-20240111053235-a5298e2a18a5",
+            "cpe": "cpe:2.3:a:nats-io:nats-server\\/v2:v0.0.0-20240111053235-a5298e2a18a5:*:*:*:*:*:*:*",
+            "purl": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5",
+            "properties": [
+                {
+                    "name": "syft:package:foundBy",
+                    "value": "go-module-binary-cataloger"
+                },
+                {
+                    "name": "syft:package:language",
+                    "value": "go"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "GolangBinMetadata"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "go-module"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:nats-io:nats_server\\/v2:v0.0.0-20240111053235-a5298e2a18a5:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:nats_io:nats-server\\/v2:v0.0.0-20240111053235-a5298e2a18a5:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:nats_io:nats_server\\/v2:v0.0.0-20240111053235-a5298e2a18a5:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:nats:nats-server\\/v2:v0.0.0-20240111053235-a5298e2a18a5:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:nats:nats_server\\/v2:v0.0.0-20240111053235-a5298e2a18a5:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:location:0:layerID",
+                    "value": "sha256:9efa2f5a3143c141e1d08ddfee76d2d6ee3da41278ef210edba48bf099dae3f5"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/nats-server"
+                },
+                {
+                    "name": "syft:metadata:architecture",
+                    "value": "amd64"
+                },
+                {
+                    "name": "syft:metadata:goBuildSettings:-buildmode",
+                    "value": "exe"
+                },
+                {
+                    "name": "syft:metadata:goBuildSettings:-compiler",
+                    "value": "gc"
+                },
+                {
+                    "name": "syft:metadata:goBuildSettings:-trimpath",
+                    "value": "true"
+                },
+                {
+                    "name": "syft:metadata:goBuildSettings:CGO_ENABLED",
+                    "value": "0"
+                },
+                {
+                    "name": "syft:metadata:goBuildSettings:DefaultGODEBUG",
+                    "value": "panicnil=1"
+                },
+                {
+                    "name": "syft:metadata:goBuildSettings:GOAMD64",
+                    "value": "v1"
+                },
+                {
+                    "name": "syft:metadata:goBuildSettings:GOARCH",
+                    "value": "amd64"
+                },
+                {
+                    "name": "syft:metadata:goBuildSettings:GOOS",
+                    "value": "linux"
+                },
+                {
+                    "name": "syft:metadata:goBuildSettings:vcs",
+                    "value": "git"
+                },
+                {
+                    "name": "syft:metadata:goBuildSettings:vcs.modified",
+                    "value": "false"
+                },
+                {
+                    "name": "syft:metadata:goBuildSettings:vcs.revision",
+                    "value": "a5298e2a18a591da933898b6d83adf08e2352aca"
+                },
+                {
+                    "name": "syft:metadata:goBuildSettings:vcs.time",
+                    "value": "2024-01-11T05:32:35Z"
+                },
+                {
+                    "name": "syft:metadata:goCompiledVersion",
+                    "value": "go1.21.6"
+                },
+                {
+                    "name": "syft:metadata:goCryptoSettings:0",
+                    "value": "standard-crypto"
+                },
+                {
+                    "name": "syft:metadata:mainModule",
+                    "value": "github.com/nats-io/nats-server/v2"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/github.com/nats-io/nkeys@v0.4.7?package-id=e0565f3d88f5c7a6",
+            "type": "library",
+            "name": "github.com/nats-io/nkeys",
+            "version": "v0.4.7",
+            "cpe": "cpe:2.3:a:nats-io:nkeys:v0.4.7:*:*:*:*:*:*:*",
+            "purl": "pkg:golang/github.com/nats-io/nkeys@v0.4.7",
+            "properties": [
+                {
+                    "name": "syft:package:foundBy",
+                    "value": "go-module-binary-cataloger"
+                },
+                {
+                    "name": "syft:package:language",
+                    "value": "go"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "GolangBinMetadata"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "go-module"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:nats_io:nkeys:v0.4.7:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:nats:nkeys:v0.4.7:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:location:0:layerID",
+                    "value": "sha256:9efa2f5a3143c141e1d08ddfee76d2d6ee3da41278ef210edba48bf099dae3f5"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/nats-server"
+                },
+                {
+                    "name": "syft:metadata:architecture",
+                    "value": "amd64"
+                },
+                {
+                    "name": "syft:metadata:goCompiledVersion",
+                    "value": "go1.21.6"
+                },
+                {
+                    "name": "syft:metadata:goCryptoSettings:0",
+                    "value": "standard-crypto"
+                },
+                {
+                    "name": "syft:metadata:h1Digest",
+                    "value": "h1:RwNJbbIdYCoClSDNY7QVKZlyb/wfT6ugvFCiKy6vDvI="
+                },
+                {
+                    "name": "syft:metadata:mainModule",
+                    "value": "github.com/nats-io/nats-server/v2"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/github.com/nats-io/nuid@v1.0.1?package-id=8a32b5cbe25c226e",
+            "type": "library",
+            "name": "github.com/nats-io/nuid",
+            "version": "v1.0.1",
+            "cpe": "cpe:2.3:a:nats-io:nuid:v1.0.1:*:*:*:*:*:*:*",
+            "purl": "pkg:golang/github.com/nats-io/nuid@v1.0.1",
+            "properties": [
+                {
+                    "name": "syft:package:foundBy",
+                    "value": "go-module-binary-cataloger"
+                },
+                {
+                    "name": "syft:package:language",
+                    "value": "go"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "GolangBinMetadata"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "go-module"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:nats_io:nuid:v1.0.1:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:nats:nuid:v1.0.1:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:location:0:layerID",
+                    "value": "sha256:9efa2f5a3143c141e1d08ddfee76d2d6ee3da41278ef210edba48bf099dae3f5"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/nats-server"
+                },
+                {
+                    "name": "syft:metadata:architecture",
+                    "value": "amd64"
+                },
+                {
+                    "name": "syft:metadata:goCompiledVersion",
+                    "value": "go1.21.6"
+                },
+                {
+                    "name": "syft:metadata:goCryptoSettings:0",
+                    "value": "standard-crypto"
+                },
+                {
+                    "name": "syft:metadata:h1Digest",
+                    "value": "h1:5iA8DT8V7q8WK2EScv2padNa/rTESc1KdnPw4TC2paw="
+                },
+                {
+                    "name": "syft:metadata:mainModule",
+                    "value": "github.com/nats-io/nats-server/v2"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/go.uber.org/automaxprocs@v1.5.3?package-id=260c208627be46e2",
+            "type": "library",
+            "name": "go.uber.org/automaxprocs",
+            "version": "v1.5.3",
+            "purl": "pkg:golang/go.uber.org/automaxprocs@v1.5.3",
+            "properties": [
+                {
+                    "name": "syft:package:foundBy",
+                    "value": "go-module-binary-cataloger"
+                },
+                {
+                    "name": "syft:package:language",
+                    "value": "go"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "GolangBinMetadata"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "go-module"
+                },
+                {
+                    "name": "syft:location:0:layerID",
+                    "value": "sha256:9efa2f5a3143c141e1d08ddfee76d2d6ee3da41278ef210edba48bf099dae3f5"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/nats-server"
+                },
+                {
+                    "name": "syft:metadata:architecture",
+                    "value": "amd64"
+                },
+                {
+                    "name": "syft:metadata:goCompiledVersion",
+                    "value": "go1.21.6"
+                },
+                {
+                    "name": "syft:metadata:goCryptoSettings:0",
+                    "value": "standard-crypto"
+                },
+                {
+                    "name": "syft:metadata:h1Digest",
+                    "value": "h1:kWazyxZUrS3Gs4qUpbwo5kEIMGe/DAvi5Z4tl2NW4j8="
+                },
+                {
+                    "name": "syft:metadata:mainModule",
+                    "value": "github.com/nats-io/nats-server/v2"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/golang.org/x/crypto@v0.18.0?package-id=713a6e3d512e6792",
+            "type": "library",
+            "name": "golang.org/x/crypto",
+            "version": "v0.18.0",
+            "cpe": "cpe:2.3:a:golang:x\\/crypto:v0.18.0:*:*:*:*:*:*:*",
+            "purl": "pkg:golang/golang.org/x/crypto@v0.18.0",
+            "properties": [
+                {
+                    "name": "syft:package:foundBy",
+                    "value": "go-module-binary-cataloger"
+                },
+                {
+                    "name": "syft:package:language",
+                    "value": "go"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "GolangBinMetadata"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "go-module"
+                },
+                {
+                    "name": "syft:location:0:layerID",
+                    "value": "sha256:9efa2f5a3143c141e1d08ddfee76d2d6ee3da41278ef210edba48bf099dae3f5"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/nats-server"
+                },
+                {
+                    "name": "syft:metadata:architecture",
+                    "value": "amd64"
+                },
+                {
+                    "name": "syft:metadata:goCompiledVersion",
+                    "value": "go1.21.6"
+                },
+                {
+                    "name": "syft:metadata:goCryptoSettings:0",
+                    "value": "standard-crypto"
+                },
+                {
+                    "name": "syft:metadata:h1Digest",
+                    "value": "h1:PGVlW0xEltQnzFZ55hkuX5+KLyrMYhHld1YHO4AKcdc="
+                },
+                {
+                    "name": "syft:metadata:mainModule",
+                    "value": "github.com/nats-io/nats-server/v2"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/golang.org/x/sys@v0.16.0?package-id=e8475a1be2bc680e",
+            "type": "library",
+            "name": "golang.org/x/sys",
+            "version": "v0.16.0",
+            "cpe": "cpe:2.3:a:golang:x\\/sys:v0.16.0:*:*:*:*:*:*:*",
+            "purl": "pkg:golang/golang.org/x/sys@v0.16.0",
+            "properties": [
+                {
+                    "name": "syft:package:foundBy",
+                    "value": "go-module-binary-cataloger"
+                },
+                {
+                    "name": "syft:package:language",
+                    "value": "go"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "GolangBinMetadata"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "go-module"
+                },
+                {
+                    "name": "syft:location:0:layerID",
+                    "value": "sha256:9efa2f5a3143c141e1d08ddfee76d2d6ee3da41278ef210edba48bf099dae3f5"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/nats-server"
+                },
+                {
+                    "name": "syft:metadata:architecture",
+                    "value": "amd64"
+                },
+                {
+                    "name": "syft:metadata:goCompiledVersion",
+                    "value": "go1.21.6"
+                },
+                {
+                    "name": "syft:metadata:goCryptoSettings:0",
+                    "value": "standard-crypto"
+                },
+                {
+                    "name": "syft:metadata:h1Digest",
+                    "value": "h1:xWw16ngr6ZMtmxDyKyIgsE93KNKz5HKmMa3b8ALHidU="
+                },
+                {
+                    "name": "syft:metadata:mainModule",
+                    "value": "github.com/nats-io/nats-server/v2"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/golang.org/x/time@v0.5.0?package-id=07ca254be1b527c7",
+            "type": "library",
+            "name": "golang.org/x/time",
+            "version": "v0.5.0",
+            "cpe": "cpe:2.3:a:golang:x\\/time:v0.5.0:*:*:*:*:*:*:*",
+            "purl": "pkg:golang/golang.org/x/time@v0.5.0",
+            "properties": [
+                {
+                    "name": "syft:package:foundBy",
+                    "value": "go-module-binary-cataloger"
+                },
+                {
+                    "name": "syft:package:language",
+                    "value": "go"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "GolangBinMetadata"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "go-module"
+                },
+                {
+                    "name": "syft:location:0:layerID",
+                    "value": "sha256:9efa2f5a3143c141e1d08ddfee76d2d6ee3da41278ef210edba48bf099dae3f5"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/nats-server"
+                },
+                {
+                    "name": "syft:metadata:architecture",
+                    "value": "amd64"
+                },
+                {
+                    "name": "syft:metadata:goCompiledVersion",
+                    "value": "go1.21.6"
+                },
+                {
+                    "name": "syft:metadata:goCryptoSettings:0",
+                    "value": "standard-crypto"
+                },
+                {
+                    "name": "syft:metadata:h1Digest",
+                    "value": "h1:o7cqy6amK/52YcAKIPlM3a+Fpj35zvRj2TP+e1xFSfk="
+                },
+                {
+                    "name": "syft:metadata:mainModule",
+                    "value": "github.com/nats-io/nats-server/v2"
+                }
+            ]
+        },
+        {
+            "bom-ref": "pkg:golang/stdlib@1.21.6?package-id=904ca934e69f0e52",
+            "type": "library",
+            "name": "stdlib",
+            "version": "go1.21.6",
+            "cpe": "cpe:2.3:a:golang:go:1.21.6:-:*:*:*:*:*:*",
+            "purl": "pkg:golang/stdlib@1.21.6",
+            "properties": [
+                {
+                    "name": "syft:package:language",
+                    "value": "go"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "GolangBinMetadata"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "go-module"
+                },
+                {
+                    "name": "syft:location:0:layerID",
+                    "value": "sha256:9efa2f5a3143c141e1d08ddfee76d2d6ee3da41278ef210edba48bf099dae3f5"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/nats-server"
+                },
+                {
+                    "name": "syft:metadata:goCompiledVersion",
+                    "value": "go1.21.6"
+                }
+            ]
+        }
+    ],
+    "vulnerabilities": [
+        {
+            "bom-ref": "CVE-2019-13126/pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5",
+            "id": "CVE-2019-13126",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-13126"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                190
+            ],
+            "description": "# Integer Overflow or Wraparound in NATS Server\nAn integer overflow in NATS Server before 2.2.0 allows a remote attacker to crash the server by sending a crafted request.\n\n### Specific Go Packages Affected\ngithub.com/nats-io/nats-server/v2/server",
+            "recommendation": "Update to 2.2.0 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://www.twistlock.com/labs-blog/finding-dos-vulnerability-nats-go-fuzz-cve-2019-13126"
+                },
+                {
+                    "title": "GitHub PR",
+                    "url": "https://github.com/nats-io/nats-server/pull/1441"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5",
+                    "versions": [
+                        {
+                            "version": "v0.0.0-20240111053235-a5298e2a18a5",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "github.com/nats-io/nats-server/v2@>=0-<2.2.0"
+                }
+            ],
+            "published": "2021-05-18T18:14:55",
+            "updated": "2023-11-08T04:01:07"
+        },
+        {
+            "bom-ref": "CVE-2020-26892/pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5",
+            "id": "CVE-2020-26892",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-26892"
+            },
+            "ratings": [
+                {
+                    "score": 9.8,
+                    "severity": "critical",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                798
+            ],
+            "description": "# Incorrect handling of credential expiry by /nats-io/nats-server\n\n## Problem Description\n\nNATS nats-server through 2020-10-07 has Incorrect Access Control because of how expired credentials are handled.\n\nThe NATS accounts system has expiration timestamps on credentials; the <https://github.com/nats-io/jwt> library had an API which encouraged misuse and an `IsRevoked()` method which misused its own API.\n\nA new `IsClaimRevoked()` method has correct handling and the nats-server has been updated to use this.\tThe old `IsRevoked()` method now always returns true and other client code will have to be updated to avoid calling it.\n\nThe CVE identifier should cover any application using the old JWT API, where the nats-server is one of those applications.\n\n\n## Affected versions\n\n#### JWT library\n\n * all versions prior to 1.1.0\n * fixed after nats-io/jwt PR 103 landed (2020-10-06)\n\n#### NATS Server\n\n * Version 2 prior to 2.1.9\n\t + 2.0.0 through and including 2.1.8 are vulnerable.\n * fixed with nats-io/nats-server PRs 1632, 1635, 1645\n\n\n## Impact\n\nTime-based credential expiry did not work.\n\n\n## Workaround\n\nHave credentials which only expire after fixes can be deployed.\n\n\n## Solution\n\nUpgrade the JWT dependency in any application using it.\n\nUpgrade the NATS server if using NATS Accounts.\n\n## Related CVE(s)\nCVE-2020-26892, GHSA-2c64-vj8g-vwrq, GO-2022-0380",
+            "recommendation": "Update to 2.2.0 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://pkg.go.dev/vuln/GO-2022-0380"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://www.openwall.com/lists/oss-security/2020/11/02/2"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://www.openwall.com/lists/oss-security/2020/11/02/2"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5",
+                    "versions": [
+                        {
+                            "version": "v0.0.0-20240111053235-a5298e2a18a5",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "github.com/nats-io/nats-server/v2@>=0-<2.1.9"
+                }
+            ],
+            "published": "2022-02-11T23:42:20",
+            "updated": "2023-11-08T04:03:20"
+        },
+        {
+            "bom-ref": "CVE-2020-28466/pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5",
+            "id": "CVE-2020-28466",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-28466"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                400
+            ],
+            "description": "# Denial of service in github.com/nats-io/nats-server/server\nThis affects all versions of package github.com/nats-io/nats-server/server. Untrusted accounts are able to crash the server using configs that represent a service export/import cycles. Disclaimer from the maintainers - Running a NATS service which is exposed to untrusted users presents a heightened risk. Any remote execution flaw or equivalent seriousness, or denial-of-service by unauthenticated users, will lead to prompt releases by the NATS maintainers. Fixes for denial of service issues with no threat of remote execution, when limited to account holders, are likely to just be committed to the main development branch with no special attention. Those who are running such services are encouraged to build regularly from git.\n\n## Related CVE(s)\nBIT-nats-2020-28466, CVE-2020-28466, SNYK-GOLANG-GITHUBCOMNATSIONATSSERVERSERVER-1042967",
+            "recommendation": "Update to 2.2.0 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://snyk.io/vuln/SNYK-GOLANG-GITHUBCOMNATSIONATSSERVERSERVER-1042967"
+                },
+                {
+                    "title": "GitHub PR",
+                    "url": "https://github.com/nats-io/nats-server/pull/1731/commits/2e3c22672936f4980d343fb1d328b38919e74796"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "http://www.openwall.com/lists/oss-security/2021/03/16/2"
+                },
+                {
+                    "title": "vendor",
+                    "url": "http://www.openwall.com/lists/oss-security/2021/03/16/2"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5",
+                    "versions": [
+                        {
+                            "version": "v0.0.0-20240111053235-a5298e2a18a5",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "github.com/nats-io/nats-server/v2@>=0-<2.2.0"
+                }
+            ],
+            "published": "2022-02-15T01:57:18",
+            "updated": "2023-12-06T01:00:30"
+        },
+        {
+            "bom-ref": "GHSA-gwj5-3vfq-q992/pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5",
+            "id": "GHSA-gwj5-3vfq-q992",
+            "source": {
+                "name": "GitHub",
+                "url": "https://github.com/advisories/GHSA-gwj5-3vfq-q992"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                400
+            ],
+            "description": "# Import loops in account imports, nats-server DoS\n(This advisory is canonically <https://advisories.nats.io/CVE/CVE-2020-28466.txt>)\n\n## Problem Description\n\nAn export/import cycle between accounts could crash the nats-server, after consuming CPU and memory.\n\nThis issue was fixed publicly in <https://github.com/nats-io/nats-server/pull/1731> in November 2020.\n\nThe need to call this out as a security issue was highlighted by `snyk.io` and we are grateful for their assistance in doing so.\n\nOrganizations which run a NATS service providing access to accounts run by untrusted third parties are affected.\nSee below for an important caveat if running such a service.\n\n\n## Affected versions\n\n#### NATS Server\n\n * Version 2 prior to 2.2.0\n\t + 2.0.0 through and including 2.1.9 are vulnerable.\n * fixed with nats-io/nats-server PR 1731, commit 2e3c226729\n\n\n## Impact\n\nThe nats-server could be killed, after consuming resources.\n\n\n## Workaround\n\nThe import cycle requires at least two accounts to work; if you have open account sign-up, then restricting new account sign-up might hinder an attacker.\n\n\n## Solution\n\nUpgrade the nats-server.\n\n\n## Caveat on NATS with untrusted users\n\nRunning a NATS service which is exposed to untrusted users presents a heightened risk.\n\nAny remote execution flaw or equivalent seriousness, or denial-of-service by unauthenticated users, will lead to prompt releases by the NATS maintainers.\n\nFixes for denial of service issues with no threat of remote execution, when limited to account holders, are likely to just be committed to the main development branch with no special attention.\n\nThose who are running such services are encouraged to build regularly from git.",
+            "recommendation": "Update to 2.2.0 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://github.com/nats-io/nats-server/security/advisories/GHSA-gwj5-3vfq-q992"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5",
+                    "versions": [
+                        {
+                            "version": "v0.0.0-20240111053235-a5298e2a18a5",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "github.com/nats-io/nats-server/v2@>=0-<2.2.0"
+                }
+            ],
+            "published": "2021-05-21T16:22:16",
+            "updated": "2021-05-20T21:07:16"
+        },
+        {
+            "bom-ref": "CVE-2024-24783/pkg:golang/stdlib@1.21.6",
+            "id": "CVE-2024-24783",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-24783"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "# Verify panics on certificates with an unknown public key algorithm in crypto/x509\nVerifying a certificate chain which contains a certificate with an unknown public key algorithm will cause Certificate.Verify to panic.\n\nThis affects all crypto/tls clients, and servers that set Config.ClientAuth to VerifyClientCertIfGiven or RequireAndVerifyClientCert. The default behavior is for TLS servers to not verify client certificates.\n\n## Related CVE(s)\nBIT-golang-2024-24783, CVE-2024-24783",
+            "recommendation": "Update to 1.21.9 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://groups.google.com/g/golang-announce/c/5pwGVUPoMbg"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:golang/stdlib@1.21.6",
+                    "versions": [
+                        {
+                            "version": "1.21.6",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.21.9",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "stdlib@>=0-<1.21.8"
+                }
+            ],
+            "published": "2024-03-05T22:14:58",
+            "updated": "2024-03-12T09:11:42"
+        },
+        {
+            "bom-ref": "CVE-2023-45289/pkg:golang/stdlib@1.21.6",
+            "id": "CVE-2023-45289",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-45289"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "# Incorrect forwarding of sensitive headers and cookies on HTTP redirect in net/http\nWhen following an HTTP redirect to a domain which is not a subdomain match or exact match of the initial domain, an http.Client does not forward sensitive headers such as \"Authorization\" or \"Cookie\". For example, a redirect from foo.com to www.foo.com will forward the Authorization header, but a redirect to bar.com will not.\n\nA maliciously crafted HTTP redirect could cause sensitive headers to be unexpectedly forwarded.\n\n## Related CVE(s)\nBIT-golang-2023-45289, CVE-2023-45289",
+            "recommendation": "Update to 1.21.9 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://groups.google.com/g/golang-announce/c/5pwGVUPoMbg"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:golang/stdlib@1.21.6",
+                    "versions": [
+                        {
+                            "version": "1.21.6",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.21.9",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "stdlib@>=0-<1.21.8"
+                }
+            ],
+            "published": "2024-03-05T22:15:02",
+            "updated": "2024-03-12T09:11:35"
+        },
+        {
+            "bom-ref": "CVE-2023-45290/pkg:golang/stdlib@1.21.6",
+            "id": "CVE-2023-45290",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-45290"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "# Memory exhaustion in multipart form parsing in net/textproto and net/http\nWhen parsing a multipart form (either explicitly with Request.ParseMultipartForm or implicitly with Request.FormValue, Request.PostFormValue, or Request.FormFile), limits on the total size of the parsed form were not applied to the memory consumed while reading a single form line. This permits a maliciously crafted input containing very long lines to cause allocation of arbitrarily large amounts of memory, potentially leading to memory exhaustion.\n\nWith fix, the ParseMultipartForm function now correctly limits the maximum size of form lines.\n\n## Related CVE(s)\nBIT-golang-2023-45290, CVE-2023-45290",
+            "recommendation": "Update to 1.21.9 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://groups.google.com/g/golang-announce/c/5pwGVUPoMbg"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:golang/stdlib@1.21.6",
+                    "versions": [
+                        {
+                            "version": "1.21.6",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.21.9",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "stdlib@>=0-<1.21.8"
+                }
+            ],
+            "published": "2024-03-05T22:15:00",
+            "updated": "2024-03-12T09:11:36"
+        },
+        {
+            "bom-ref": "CVE-2024-24784/pkg:golang/stdlib@1.21.6",
+            "id": "CVE-2024-24784",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-24784"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "# Comments in display names are incorrectly handled in net/mail\nThe ParseAddressList function incorrectly handles comments (text within parentheses) within display names. Since this is a misalignment with conforming address parsers, it can result in different trust decisions being made by programs using different parsers.\n\n## Related CVE(s)\nBIT-golang-2024-24784, CVE-2024-24784",
+            "recommendation": "Update to 1.21.9 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://groups.google.com/g/golang-announce/c/5pwGVUPoMbg"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:golang/stdlib@1.21.6",
+                    "versions": [
+                        {
+                            "version": "1.21.6",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.21.9",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "stdlib@>=0-<1.21.8"
+                }
+            ],
+            "published": "2024-03-05T22:15:04",
+            "updated": "2024-03-12T09:11:42"
+        },
+        {
+            "bom-ref": "CVE-2024-24785/pkg:golang/stdlib@1.21.6",
+            "id": "CVE-2024-24785",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-24785"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "# Errors returned from JSON marshaling may break template escaping in html/template\nIf errors returned from MarshalJSON methods contain user controlled data, they may be used to break the contextual auto-escaping behavior of the html/template package, allowing for subsequent actions to inject unexpected content into templates.\n\n## Related CVE(s)\nBIT-golang-2024-24785, CVE-2024-24785",
+            "recommendation": "Update to 1.21.9 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://groups.google.com/g/golang-announce/c/5pwGVUPoMbg"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:golang/stdlib@1.21.6",
+                    "versions": [
+                        {
+                            "version": "1.21.6",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.21.9",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "stdlib@>=0-<1.21.8"
+                }
+            ],
+            "published": "2024-03-05T22:15:40",
+            "updated": "2024-03-12T09:11:35"
+        },
+        {
+            "bom-ref": "CVE-2023-45288/pkg:golang/stdlib@1.21.6",
+            "id": "CVE-2023-45288",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-45288"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "# HTTP/2 CONTINUATION flood in net/http\nAn attacker may cause an HTTP/2 endpoint to read arbitrary amounts of header data by sending an excessive number of CONTINUATION frames.\n\nMaintaining HPACK state requires parsing and processing all HEADERS and CONTINUATION frames on a connection. When a request's headers exceed MaxHeaderBytes, no memory is allocated to store the excess headers, but they are still parsed.\n\nThis permits an attacker to cause an HTTP/2 endpoint to read arbitrary amounts of header data, all associated with a request which is going to be rejected. These headers can include Huffman-encoded data which is significantly more expensive for the receiver to decode than for an attacker to send.\n\nThe fix sets a limit on the amount of excess header frames we will process before closing a connection.\n\n## Related CVE(s)\nBIT-golang-2023-45288, CVE-2023-45288, GHSA-4v7x-pqxf-cx7m",
+            "recommendation": "Update to 1.21.9 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:golang/stdlib@1.21.6",
+                    "versions": [
+                        {
+                            "version": "1.21.6",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.21.9",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "stdlib@>=0-<1.21.9"
+                }
+            ],
+            "published": "2024-04-03T21:12:01",
+            "updated": "2024-04-16T21:40:19"
+        },
+        {
+            "bom-ref": "CVE-2021-3127/pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5",
+            "id": "CVE-2021-3127",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3127"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                755,
+                863
+            ],
+            "description": "# github.com/nats-io/nats-server/ Import token permissions checking not enforced\n(This advisory is canonically <https://advisories.nats.io/CVE/CVE-2021-3127.txt>)\n\n## Problem Description\n\nThe NATS server provides for Subjects which are namespaced by Account; all Subjects are supposed to be private to an account, with an Export/Import system used to grant cross-account access to some Subjects.\tSome Exports are public, such that anyone can import the relevant subjects, and some Exports are private, such that the Import requires a token JWT to prove permission.\n\nThe JWT library's validation of the bindings in the Import Token incorrectly warned on mismatches, instead of outright rejecting the token.\n\nAs a result, any account can take an Import token used by any other account and re-use it for themselves because the binding to the importing account is not rejected, and use it to import *any* Subject from the Exporting account, not just the Subject referenced in the Import Token.\n\nThe NATS account-server system treats account JWTs as semi-public information, such that an attacker can easily enumerate all account JWTs and retrieve all Import Tokens from those account JWTs.\n\nThe CVE identifier should cover the JWT library repair and the nats-server containing the fixed JWT library, and any other application depending upon the fixed JWT library.\n\n\n## Affected versions\n\n#### JWT library\n\n * all versions prior to 2.0.1\n * fixed after nats-io/jwt#149 landed (2021-03-14)\n\n#### NATS Server\n\n * Version 2 prior to 2.2.0\n\t + 2.0.0 through and including 2.1.9 are vulnerable\n * fixed with nats-io/nats-server@423b79440c (2021-03-14)\n\n\n## Impact\n\nIn deployments with untrusted accounts able to update the Account Server with imports, a malicious account can access any Subject from an account which provides Exported Subjects.\n\nAbuse of this facility requires the malicious actor to upload their tampered Account JWT to the Account Server, providing the service operator with a data-store which can be scanned for signs of abuse.\n\n\n## Workaround\n\nDeny access to clients to update their account JWT in the account server.\n\n\n## Solution\n\nUpgrade the JWT dependency in any application using it.\n\nUpgrade the NATS server if using NATS Accounts (with private Exports; Account owners can create those at any time though).\n\nAudit all accounts JWTs to scan for exploit attempts; a Python script to audit the accounts can be found at <https://gist.github.com/philpennock/09d49524ad98043ff11d8a40c2bb0d5a>.\n\n## Related CVE(s)\nBIT-nats-2021-3127, CVE-2021-3127, GHSA-62mh-w5cv-p88c, GHSA-9r5x-fjv3-q6h4, GO-2022-0386",
+            "recommendation": "Update to 2.2.0 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://advisories.nats.io/CVE/CVE-2021-3127.txt"
+                },
+                {
+                    "title": "GitHub PR",
+                    "url": "https://github.com/nats-io/jwt/pull/149"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5",
+                    "versions": [
+                        {
+                            "version": "v0.0.0-20240111053235-a5298e2a18a5",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "github.com/nats-io/nats-server/v2@>=0-<2.2.0"
+                }
+            ],
+            "published": "2021-05-21T16:22:20",
+            "updated": "2023-12-06T01:01:11"
+        },
+        {
+            "bom-ref": "CVE-2020-26521/pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5",
+            "id": "CVE-2020-26521",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-26521"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                476
+            ],
+            "description": "# Nil dereference in NATS JWT causing DoS of nats-server\n(This advisory is canonically <https://advisories.nats.io/CVE/CVE-2020-26521.txt>)\n\n## Problem Description\n\nThe NATS account system has an Operator trusted by the servers, which signs Accounts, and each Account can then create and sign Users within their account.\tThe Operator should be able to safely issue Accounts to other entities which it does not fully trust.\n\nA malicious Account could create and sign a User JWT with a state not created by the normal tooling, such that decoding by the NATS JWT library (written in Go) would attempt a nil dereference, aborting execution.\n\nThe NATS Server is known to be impacted by this.\n\n\n## Affected versions\n\n#### JWT library\n\n * all versions prior to 1.1.0\n\n#### NATS Server\n\n * Version 2 prior to 2.1.9\n\n\n## Impact\n\n#### JWT library\n\n * Programs would nil dereference and panic, aborting execution by default.\n\n#### NATS server\n\n * Denial of Service caused by process termination\n\n\n## Workaround\n\nIf your NATS servers do not trust any accounts which are managed by untrusted entities, then malformed User credentials are unlikely to be encountered.\n\n\n## Solution\n\nUpgrade the JWT dependency in any application using it.\n\nUpgrade the NATS server if using NATS Accounts.\n\n## Related CVE(s)\nCVE-2020-26521, GHSA-h2fg-54x9-5qhq, GO-2022-0402",
+            "recommendation": "Update to 2.2.0 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://advisories.nats.io/CVE/CVE-2020-26521.txt"
+                },
+                {
+                    "title": "GitHub PR",
+                    "url": "https://github.com/nats-io/jwt/pull/107"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://www.openwall.com/lists/oss-security/2020/11/02/2"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://www.openwall.com/lists/oss-security/2020/11/02/2"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:golang/github.com/nats-io/nats-server/v2@v0.0.0-20240111053235-a5298e2a18a5",
+                    "versions": [
+                        {
+                            "version": "v0.0.0-20240111053235-a5298e2a18a5",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "github.com/nats-io/nats-server/v2@>=0-<2.1.9"
+                }
+            ],
+            "published": "2021-05-21T16:22:10",
+            "updated": "2023-11-08T04:03:19"
+        }
+    ]
+}

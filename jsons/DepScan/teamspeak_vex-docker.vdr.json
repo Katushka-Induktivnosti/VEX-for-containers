@@ -1,0 +1,94 @@
+{
+    "id": "CVE-2024-0985",
+    "package": "alpine:alpine-3.18/postgresql15",
+    "purl": "alpine:alpine-3.18/postgresql15",
+    "package_type": "alpine",
+    "package_usage": "N/A",
+    "version": ">=15.1-r0-<=15.5-r4",
+    "fix_version": null,
+    "severity": "HIGH",
+    "cvss_score": "8.0",
+    "short_description": "# Summary\nLate privilege drop in REFRESH MATERIALIZED VIEW CONCURRENTLY in PostgreSQL allows an object creator to execute arbitrary SQL functions as the command issuer. The command intends to run SQL functions as the owner of the materialized view, enabling safe refresh of untrusted materialized views. The victim is a superuser or member of one of the attacker's roles. The attack requires luring the victim into running REFRESH MATERIALIZED VIEW CONCURRENTLY on the attacker's materialized view. As part of exploiting this vulnerability, the attacker creates functions that use CREATE RULE to convert the internally-built temporary table to a view. Versions before PostgreSQL 15.6, 14.11, 13.14, and 12.18 are affected. The only known exploit does not work in PostgreSQL 16 and later. For defense in depth, PostgreSQL 16.2 adds the protections that older branches are using to fix their vulnerability.",
+    "related_urls": [
+        "https://www.postgresql.org/support/security/CVE-2024-0985/",
+        "https://lists.debian.org/debian-lts-announce/2024/03/msg00017.html"
+    ],
+    "occurrence_count": 0,
+    "reachable_flows": 0,
+    "metadata": {
+        "tools": {
+            "components": [
+                {
+                    "type": "application",
+                    "name": "owasp-depscan",
+                    "version": "5.3.4",
+                    "purl": "pkg:pypi/owasp-depscan@5.3.4",
+                    "bom-ref": "pkg:pypi/owasp-depscan@5.3.4"
+                }
+            ]
+        }
+    },
+    "vulnerabilities": [
+        {
+            "bom-ref": "CVE-2024-0985/pkg:apk/alpine/postgresql15@15.5-r0?arch=x86_64&distro=alpine-3.18.5&distro_name=alpine-3.18",
+            "id": "CVE-2024-0985",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-0985"
+            },
+            "ratings": [
+                {
+                    "score": 8.0,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "# Summary\nLate privilege drop in REFRESH MATERIALIZED VIEW CONCURRENTLY in PostgreSQL allows an object creator to execute arbitrary SQL functions as the command issuer. The command intends to run SQL functions as the owner of the materialized view, enabling safe refresh of untrusted materialized views. The victim is a superuser or member of one of the attacker's roles. The attack requires luring the victim into running REFRESH MATERIALIZED VIEW CONCURRENTLY on the attacker's materialized view. As part of exploiting this vulnerability, the attacker creates functions that use CREATE RULE to convert the internally-built temporary table to a view. Versions before PostgreSQL 15.6, 14.11, 13.14, and 12.18 are affected. The only known exploit does not work in PostgreSQL 16 and later. For defense in depth, PostgreSQL 16.2 adds the protections that older branches are using to fix their vulnerability.",
+            "recommendation": "",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://www.postgresql.org/support/security/CVE-2024-0985/"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.debian.org/debian-lts-announce/2024/03/msg00017.html"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://lists.debian.org/debian-lts-announce/2024/03/msg00017.html"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/postgresql15@15.5-r0?arch=x86_64&distro=alpine-3.18.5&distro_name=alpine-3.18",
+                    "versions": [
+                        {
+                            "version": "15.5-r0",
+                            "status": "affected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Distro specific"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "alpine/postgresql15@>=15.1-r0-<=15.5-r4"
+                }
+            ],
+            "published": "2024-02-08T13:15:08",
+            "updated": "2024-03-18T19:09:49"
+        }
+    ]
+}

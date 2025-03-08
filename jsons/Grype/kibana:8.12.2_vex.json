@@ -1,0 +1,5440 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2781",
+    "dataSource": "https://ubuntu.com/security/CVE-2016-2781",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2016-2781"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-2781",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+      "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "coreutils",
+       "version": "8.30-3ubuntu2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-2781"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "264909b0c6567511",
+    "name": "coreutils",
+    "version": "8.30-3ubuntu2",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/coreutils/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/coreutils.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3"
+    ],
+    "cpes": [
+     "cpe:2.3:a:coreutils:coreutils:8.30-3ubuntu2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/coreutils@8.30-3ubuntu2?arch=arm64&distro=ubuntu-20.04",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-36jr-mh4h-2g58",
+    "dataSource": "https://github.com/advisories/GHSA-36jr-mh4h-2g58",
+    "namespace": "github:language:javascript",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-36jr-mh4h-2g58"
+    ],
+    "description": "d3-color vulnerable to ReDoS",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.1.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "d3-color",
+       "version": "2.0.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<3.1.0 (unknown)",
+      "vulnerabilityID": "GHSA-36jr-mh4h-2g58"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a1ff075a9b5c8ab9",
+    "name": "d3-color",
+    "version": "2.0.0",
+    "type": "npm",
+    "locations": [
+     {
+      "path": "/usr/share/kibana/node_modules/d3-color/package.json",
+      "layerID": "sha256:78f5193479941026cfe5f91d993ca334bbe92b97b573f06e90f6ccb15712256b"
+     }
+    ],
+    "language": "javascript",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:d3-color:d3-color:2.0.0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:d3-color:d3_color:2.0.0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:d3_color:d3-color:2.0.0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:d3_color:d3_color:2.0.0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:d3:d3-color:2.0.0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:d3:d3_color:2.0.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:npm/d3-color@2.0.0",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4gmj-3p3h-gm8h",
+    "dataSource": "https://github.com/advisories/GHSA-4gmj-3p3h-gm8h",
+    "namespace": "github:language:javascript",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-4gmj-3p3h-gm8h"
+    ],
+    "description": "es5-ext vulnerable to Regular Expression Denial of Service in `function#copy` and `function#toStringTokens`",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.10.63"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-27088",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-27088",
+     "namespace": "nvd:cpe",
+     "severity": "None",
+     "urls": [
+      "https://github.com/medikoo/es5-ext/commit/3551cdd7b2db08b1632841f819d008757d28e8e2",
+      "https://github.com/medikoo/es5-ext/commit/a52e95736690ad1d465ebcd9791d54570e294602",
+      "https://github.com/medikoo/es5-ext/issues/201",
+      "https://github.com/medikoo/es5-ext/security/advisories/GHSA-4gmj-3p3h-gm8h"
+     ],
+     "description": "es5-ext contains ECMAScript 5 extensions. Passing functions with very long names or complex default argument names into `function#copy` or `function#toStringTokens` may cause the script to stall. The vulnerability is patched in v0.10.63.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:N",
+       "metrics": {
+        "baseScore": 0,
+        "exploitabilityScore": 0.8,
+        "impactScore": 0
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "es5-ext",
+       "version": "0.10.46"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=0.10.0,<0.10.63 (unknown)",
+      "vulnerabilityID": "GHSA-4gmj-3p3h-gm8h"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ad4e153b2c4b9909",
+    "name": "es5-ext",
+    "version": "0.10.46",
+    "type": "npm",
+    "locations": [
+     {
+      "path": "/usr/share/kibana/node_modules/es5-ext/package.json",
+      "layerID": "sha256:78f5193479941026cfe5f91d993ca334bbe92b97b573f06e90f6ccb15712256b"
+     }
+    ],
+    "language": "javascript",
+    "licenses": [
+     "ISC"
+    ],
+    "cpes": [
+     "cpe:2.3:a:es5-ext:es5-ext:0.10.46:*:*:*:*:*:*:*",
+     "cpe:2.3:a:es5-ext:es5_ext:0.10.46:*:*:*:*:*:*:*",
+     "cpe:2.3:a:es5_ext:es5-ext:0.10.46:*:*:*:*:*:*:*",
+     "cpe:2.3:a:es5_ext:es5_ext:0.10.46:*:*:*:*:*:*:*",
+     "cpe:2.3:a:medikoo:es5-ext:0.10.46:*:*:*:*:*:*:*",
+     "cpe:2.3:a:medikoo:es5_ext:0.10.46:*:*:*:*:*:*:*",
+     "cpe:2.3:a:es5:es5-ext:0.10.46:*:*:*:*:*:*:*",
+     "cpe:2.3:a:es5:es5_ext:0.10.46:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:npm/es5-ext@0.10.46",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-jchw-25xp-jwwc",
+    "dataSource": "https://github.com/advisories/GHSA-jchw-25xp-jwwc",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-jchw-25xp-jwwc"
+    ],
+    "description": "Follow Redirects improperly handles URLs in the url.parse() function",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.15.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-26159",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-26159",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/follow-redirects/follow-redirects/issues/235",
+      "https://github.com/follow-redirects/follow-redirects/pull/236",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZZ425BFKNBQ6AK7I5SAM56TWON5OF2XM/",
+      "https://security.snyk.io/vuln/SNYK-JS-FOLLOWREDIRECTS-6141137"
+     ],
+     "description": "Versions of the package follow-redirects before 1.15.4 are vulnerable to Improper Input Validation due to the improper handling of URLs by the url.parse() function. When new URL() throws an error, it can be manipulated to misinterpret the hostname. An attacker could exploit this weakness to redirect traffic to a malicious site, potentially leading to information disclosure, phishing attacks, or other security breaches.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "report@snyk.io",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+       "metrics": {
+        "baseScore": 7.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "follow-redirects",
+       "version": "1.15.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.15.4 (unknown)",
+      "vulnerabilityID": "GHSA-jchw-25xp-jwwc"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e588e44fddd00bdd",
+    "name": "follow-redirects",
+    "version": "1.15.2",
+    "type": "npm",
+    "locations": [
+     {
+      "path": "/usr/share/kibana/node_modules/follow-redirects/package.json",
+      "layerID": "sha256:78f5193479941026cfe5f91d993ca334bbe92b97b573f06e90f6ccb15712256b"
+     }
+    ],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:follow-redirects:follow-redirects:1.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:follow-redirects:follow_redirects:1.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:follow_redirects:follow-redirects:1.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:follow_redirects:follow_redirects:1.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:follow:follow-redirects:1.15.2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:follow:follow_redirects:1.15.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:npm/follow-redirects@1.15.2",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3219",
+    "dataSource": "https://ubuntu.com/security/CVE-2022-3219",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2022-3219"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-3219",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://access.redhat.com/security/cve/CVE-2022-3219",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+      "https://dev.gnupg.org/D556",
+      "https://dev.gnupg.org/T5993",
+      "https://marc.info/?l=oss-security&m=165696590211434&w=4",
+      "https://security.netapp.com/advisory/ntap-20230324-0001/"
+     ],
+     "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 3.3,
+        "exploitabilityScore": 1.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "gnupg2",
+       "version": "2.2.19-3ubuntu2.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2022-3219"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0e4ba11a7da76b86",
+    "name": "gpgv",
+    "version": "2.2.19-3ubuntu2.2",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/gpgv/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/gpgv.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-clause",
+     "CC0-1.0",
+     "Expat",
+     "GPL-3",
+     "GPL-3+",
+     "LGPL-2.1",
+     "LGPL-2.1+",
+     "LGPL-3",
+     "LGPL-3+",
+     "RFC-Reference",
+     "TinySCHEME",
+     "permissive"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gpgv:gpgv:2.2.19-3ubuntu2.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/gpgv@2.2.19-3ubuntu2.2?arch=arm64&upstream=gnupg2&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "gnupg2"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-78xj-cgh5-2h22",
+    "dataSource": "https://github.com/advisories/GHSA-78xj-cgh5-2h22",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-78xj-cgh5-2h22"
+    ],
+    "description": "NPM IP package incorrectly identifies some private IP addresses as public",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.9"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-42282",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42282",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://cosmosofcyberspace.github.io/npm_ip_cve/npm_ip_cve.html",
+      "https://github.com/indutny/node-ip/commit/6a3ada9b471b09d5f0f5be264911ab564bf67894",
+      "https://huntr.com/bounties/bfc3b23f-ddc0-4ee7-afab-223b07115ed3/"
+     ],
+     "description": "The ip package before 1.1.9 for Node.js might allow SSRF because some IP addresses (such as 0x7f.1) are improperly categorized as globally routable via isPublic.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "ip",
+       "version": "1.1.8"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.1.9 (unknown)",
+      "vulnerabilityID": "GHSA-78xj-cgh5-2h22"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a636b034b1e31145",
+    "name": "ip",
+    "version": "1.1.8",
+    "type": "npm",
+    "locations": [
+     {
+      "path": "/usr/share/kibana/node_modules/ip/package.json",
+      "layerID": "sha256:78f5193479941026cfe5f91d993ca334bbe92b97b573f06e90f6ccb15712256b"
+     }
+    ],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:indutny:ip:1.1.8:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ip:ip:1.1.8:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:npm/ip@1.1.8",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-20013",
+    "dataSource": "https://ubuntu.com/security/CVE-2016-20013",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Negligible",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2016-20013"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-20013",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-20013",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://akkadia.org/drepper/SHA-crypt.txt",
+      "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+      "https://twitter.com/solardiz/status/795601240151457793"
+     ],
+     "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.31-0ubuntu9.14"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-20013"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ad5290c314327179",
+    "name": "libc-bin",
+    "version": "2.31-0ubuntu9.14",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc-bin/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libc-bin.conffiles",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libc-bin.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc-bin:libc-bin:2.31-0ubuntu9.14:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc-bin:libc_bin:2.31-0ubuntu9.14:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc-bin:2.31-0ubuntu9.14:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc_bin:2.31-0ubuntu9.14:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc-bin:2.31-0ubuntu9.14:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc_bin:2.31-0ubuntu9.14:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc-bin@2.31-0ubuntu9.14?arch=arm64&upstream=glibc&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-20013",
+    "dataSource": "https://ubuntu.com/security/CVE-2016-20013",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Negligible",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2016-20013"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-20013",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-20013",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://akkadia.org/drepper/SHA-crypt.txt",
+      "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+      "https://twitter.com/solardiz/status/795601240151457793"
+     ],
+     "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.31-0ubuntu9.14"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-20013"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "83dfe672b0a4937f",
+    "name": "libc6",
+    "version": "2.31-0ubuntu9.14",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libc6:arm64.conffiles",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libc6:arm64.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.31-0ubuntu9.14:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.14?arch=arm64&upstream=glibc&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-52426",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-52426",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-52426"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-52426",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-52426",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://cwe.mitre.org/data/definitions/776.html",
+      "https://github.com/libexpat/libexpat/commit/0f075ec8ecb5e43f8fdca5182f8cca4703da0404",
+      "https://github.com/libexpat/libexpat/pull/777",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PNRIHC7DVVRAIWFRGV23Y6UZXFBXSQDB/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WNUBSGZFEZOBHJFTAD42SAN4ATW2VEMV/"
+     ],
+     "description": "libexpat through 2.5.0 allows recursive XML Entity Expansion if XML_DTD is undefined at compile time.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "expat",
+       "version": "2.2.9-1ubuntu0.6"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-52426"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "bd19454562edb683",
+    "name": "libexpat1",
+    "version": "2.2.9-1ubuntu0.6",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libexpat1/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libexpat1:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libexpat1:libexpat1:2.2.9-1ubuntu0.6:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libexpat1@2.2.9-1ubuntu0.6?arch=arm64&upstream=expat&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "expat"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-26462",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-26462",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-26462"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26462",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26462",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_3.md"
+     ],
+     "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "krb5",
+       "version": "1.17-6ubuntu4.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-26462"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "fe7854d18763a72e",
+    "name": "libgssapi-krb5-2",
+    "version": "1.17-6ubuntu4.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libgssapi-krb5-2/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libgssapi-krb5-2:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libgssapi-krb5-2:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi-krb5-2:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi_krb5_2:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi_krb5_2:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi-krb5:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi-krb5:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi_krb5:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi_krb5:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libgssapi-krb5-2@1.17-6ubuntu4.4?arch=arm64&upstream=krb5&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "krb5"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-26461",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-26461",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-26461"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26461",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26461",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md"
+     ],
+     "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "krb5",
+       "version": "1.17-6ubuntu4.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-26461"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "fe7854d18763a72e",
+    "name": "libgssapi-krb5-2",
+    "version": "1.17-6ubuntu4.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libgssapi-krb5-2/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libgssapi-krb5-2:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libgssapi-krb5-2:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi-krb5-2:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi_krb5_2:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi_krb5_2:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi-krb5:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi-krb5:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi_krb5:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi_krb5:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libgssapi-krb5-2@1.17-6ubuntu4.4?arch=arm64&upstream=krb5&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "krb5"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-26458",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-26458",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-26458"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26458",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26458",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md"
+     ],
+     "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "krb5",
+       "version": "1.17-6ubuntu4.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-26458"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "fe7854d18763a72e",
+    "name": "libgssapi-krb5-2",
+    "version": "1.17-6ubuntu4.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libgssapi-krb5-2/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libgssapi-krb5-2:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libgssapi-krb5-2:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi-krb5-2:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi_krb5_2:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi_krb5_2:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi-krb5:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi-krb5:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi_krb5:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi_krb5:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi:libgssapi-krb5-2:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgssapi:libgssapi_krb5_2:1.17-6ubuntu4.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libgssapi-krb5-2@1.17-6ubuntu4.4?arch=arm64&upstream=krb5&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "krb5"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-26462",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-26462",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-26462"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26462",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26462",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_3.md"
+     ],
+     "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "krb5",
+       "version": "1.17-6ubuntu4.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-26462"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "bbde16850b02a6c4",
+    "name": "libk5crypto3",
+    "version": "1.17-6ubuntu4.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libk5crypto3/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libk5crypto3:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libk5crypto3:libk5crypto3:1.17-6ubuntu4.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libk5crypto3@1.17-6ubuntu4.4?arch=arm64&upstream=krb5&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "krb5"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-26461",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-26461",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-26461"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26461",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26461",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md"
+     ],
+     "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "krb5",
+       "version": "1.17-6ubuntu4.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-26461"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "bbde16850b02a6c4",
+    "name": "libk5crypto3",
+    "version": "1.17-6ubuntu4.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libk5crypto3/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libk5crypto3:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libk5crypto3:libk5crypto3:1.17-6ubuntu4.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libk5crypto3@1.17-6ubuntu4.4?arch=arm64&upstream=krb5&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "krb5"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-26458",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-26458",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-26458"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26458",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26458",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md"
+     ],
+     "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "krb5",
+       "version": "1.17-6ubuntu4.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-26458"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "bbde16850b02a6c4",
+    "name": "libk5crypto3",
+    "version": "1.17-6ubuntu4.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libk5crypto3/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libk5crypto3:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libk5crypto3:libk5crypto3:1.17-6ubuntu4.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libk5crypto3@1.17-6ubuntu4.4?arch=arm64&upstream=krb5&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "krb5"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-26462",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-26462",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-26462"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26462",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26462",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_3.md"
+     ],
+     "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "krb5",
+       "version": "1.17-6ubuntu4.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-26462"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "adc19eab72534e69",
+    "name": "libkrb5-3",
+    "version": "1.17-6ubuntu4.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libkrb5-3/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libkrb5-3:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libkrb5-3:libkrb5-3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5-3:libkrb5_3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5_3:libkrb5-3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5_3:libkrb5_3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5:libkrb5-3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5:libkrb5_3:1.17-6ubuntu4.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libkrb5-3@1.17-6ubuntu4.4?arch=arm64&upstream=krb5&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "krb5"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-26461",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-26461",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-26461"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26461",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26461",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md"
+     ],
+     "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "krb5",
+       "version": "1.17-6ubuntu4.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-26461"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "adc19eab72534e69",
+    "name": "libkrb5-3",
+    "version": "1.17-6ubuntu4.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libkrb5-3/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libkrb5-3:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libkrb5-3:libkrb5-3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5-3:libkrb5_3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5_3:libkrb5-3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5_3:libkrb5_3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5:libkrb5-3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5:libkrb5_3:1.17-6ubuntu4.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libkrb5-3@1.17-6ubuntu4.4?arch=arm64&upstream=krb5&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "krb5"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-26458",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-26458",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-26458"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26458",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26458",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md"
+     ],
+     "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "krb5",
+       "version": "1.17-6ubuntu4.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-26458"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "adc19eab72534e69",
+    "name": "libkrb5-3",
+    "version": "1.17-6ubuntu4.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libkrb5-3/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libkrb5-3:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libkrb5-3:libkrb5-3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5-3:libkrb5_3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5_3:libkrb5-3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5_3:libkrb5_3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5:libkrb5-3:1.17-6ubuntu4.4:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libkrb5:libkrb5_3:1.17-6ubuntu4.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libkrb5-3@1.17-6ubuntu4.4?arch=arm64&upstream=krb5&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "krb5"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-26462",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-26462",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-26462"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26462",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26462",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_3.md"
+     ],
+     "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/kdc/ndr.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "krb5",
+       "version": "1.17-6ubuntu4.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-26462"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "58f94b0426a0714e",
+    "name": "libkrb5support0",
+    "version": "1.17-6ubuntu4.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libkrb5support0/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libkrb5support0:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libkrb5support0:libkrb5support0:1.17-6ubuntu4.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libkrb5support0@1.17-6ubuntu4.4?arch=arm64&upstream=krb5&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "krb5"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-26461",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-26461",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-26461"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26461",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26461",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md"
+     ],
+     "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "krb5",
+       "version": "1.17-6ubuntu4.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-26461"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "58f94b0426a0714e",
+    "name": "libkrb5support0",
+    "version": "1.17-6ubuntu4.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libkrb5support0/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libkrb5support0:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libkrb5support0:libkrb5support0:1.17-6ubuntu4.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libkrb5support0@1.17-6ubuntu4.4?arch=arm64&upstream=krb5&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "krb5"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-26458",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-26458",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-26458"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26458",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26458",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md"
+     ],
+     "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "krb5",
+       "version": "1.17-6ubuntu4.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-26458"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "58f94b0426a0714e",
+    "name": "libkrb5support0",
+    "version": "1.17-6ubuntu4.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libkrb5support0/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libkrb5support0:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libkrb5support0:libkrb5support0:1.17-6ubuntu4.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libkrb5support0@1.17-6ubuntu4.4?arch=arm64&upstream=krb5&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "krb5"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2020-22916",
+    "dataSource": "https://ubuntu.com/security/CVE-2020-22916",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2020-22916"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-22916",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-22916",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://web.archive.org/web/20230918084612/https://github.com/snappyJack/CVE-request-XZ-5.2.5-has-denial-of-service-vulnerability",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2234987",
+      "https://bugzilla.suse.com/show_bug.cgi?id=1214590",
+      "https://github.com/snappyJack/CVE-request-XZ-5.2.5-has-denial-of-service-vulnerability",
+      "https://github.com/tukaani-project/xz/issues/61",
+      "https://security-tracker.debian.org/tracker/CVE-2020-22916",
+      "https://tukaani.org/xz/"
+     ],
+     "description": "An issue discovered in XZ 5.2.5 allows attackers to cause a denial of service via decompression of a crafted file. NOTE: the vendor disputes the claims of \"endless output\" and \"denial of service\" because decompression of the 17,486 bytes always results in 114,881,179 bytes, which is often a reasonable size increase.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "xz-utils",
+       "version": "5.2.4-1ubuntu1.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2020-22916"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d58dca2b30d638be",
+    "name": "liblzma5",
+    "version": "5.2.4-1ubuntu1.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/liblzma5/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/liblzma5:arm64.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Autoconf",
+     "GPL-2",
+     "GPL-2+",
+     "GPL-3",
+     "LGPL-2",
+     "LGPL-2.1",
+     "LGPL-2.1+",
+     "PD",
+     "PD-debian",
+     "config-h",
+     "noderivs",
+     "permissive-fsf",
+     "permissive-nowarranty",
+     "probably-PD"
+    ],
+    "cpes": [
+     "cpe:2.3:a:liblzma5:liblzma5:5.2.4-1ubuntu1.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/liblzma5@5.2.4-1ubuntu1.1?arch=arm64&upstream=xz-utils&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "xz-utils"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-50495",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-50495",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-50495"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-50495",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+      "https://security.netapp.com/advisory/ntap-20240119-0008/"
+     ],
+     "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.2-0ubuntu2.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-50495"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f4a3015f46c93e9c",
+    "name": "libncurses6",
+    "version": "6.2-0ubuntu2.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libtinfo6/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libncurses6:arm64.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libncurses6:libncurses6:6.2-0ubuntu2.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libncurses6@6.2-0ubuntu2.1?arch=arm64&upstream=ncurses&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-45918",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-45918",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-45918"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45918",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45918",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html"
+     ],
+     "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.2-0ubuntu2.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-45918"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f4a3015f46c93e9c",
+    "name": "libncurses6",
+    "version": "6.2-0ubuntu2.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libtinfo6/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libncurses6:arm64.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libncurses6:libncurses6:6.2-0ubuntu2.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libncurses6@6.2-0ubuntu2.1?arch=arm64&upstream=ncurses&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-50495",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-50495",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-50495"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-50495",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+      "https://security.netapp.com/advisory/ntap-20240119-0008/"
+     ],
+     "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.2-0ubuntu2.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-50495"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cb59673637dbc6b4",
+    "name": "libncursesw6",
+    "version": "6.2-0ubuntu2.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libtinfo6/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libncursesw6:arm64.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libncursesw6:libncursesw6:6.2-0ubuntu2.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libncursesw6@6.2-0ubuntu2.1?arch=arm64&upstream=ncurses&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-45918",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-45918",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-45918"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45918",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45918",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html"
+     ],
+     "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.2-0ubuntu2.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-45918"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "cb59673637dbc6b4",
+    "name": "libncursesw6",
+    "version": "6.2-0ubuntu2.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libtinfo6/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libncursesw6:arm64.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libncursesw6:libncursesw6:6.2-0ubuntu2.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libncursesw6@6.2-0ubuntu2.1?arch=arm64&upstream=ncurses&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-6135",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-6135",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-6135"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-6135",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-6135",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=1853908",
+      "https://security.gentoo.org/glsa/202401-10",
+      "https://www.mozilla.org/security/advisories/mfsa2023-56/"
+     ],
+     "description": "Multiple NSS NIST curves were susceptible to a side-channel attack known as \"Minerva\". This attack could potentially allow an attacker to recover the private key. This vulnerability affects Firefox < 121.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 2.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "nss",
+       "version": "2:3.49.1-1ubuntu1.9"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-6135"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9eac608e504652e9",
+    "name": "libnss3",
+    "version": "2:3.49.1-1ubuntu1.9",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libnss3/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libnss3:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3",
+     "MIT",
+     "MPL-2.0",
+     "Zlib",
+     "public-domain"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libnss3:libnss3:2:3.49.1-1ubuntu1.9:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libnss3@2:3.49.1-1ubuntu1.9?arch=arm64&upstream=nss&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "nss"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-5388",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-5388",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-5388"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "nss",
+       "version": "2:3.49.1-1ubuntu1.9"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-5388"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9eac608e504652e9",
+    "name": "libnss3",
+    "version": "2:3.49.1-1ubuntu1.9",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libnss3/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libnss3:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3",
+     "MIT",
+     "MPL-2.0",
+     "Zlib",
+     "public-domain"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libnss3:libnss3:2:3.49.1-1ubuntu1.9:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libnss3@2:3.49.1-1ubuntu1.9?arch=arm64&upstream=nss&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "nss"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-4421",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-4421",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Medium",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-4421"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4421",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4421",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=1651411",
+      "https://www.mozilla.org/security/advisories/mfsa2023-53/"
+     ],
+     "description": "The NSS code used for checking PKCS#1 v1.5 was leaking information useful in mounting Bleichenbacher-like attacks. Both the overall correctness of the padding as well as the length of the encrypted message was leaking through timing side-channel. By sending large number of attacker-selected ciphertexts, the attacker would be able to decrypt a previously intercepted PKCS#1 v1.5 ciphertext (for example, to decrypt a TLS session that used RSA key exchange), or forge a signature using the victim's key. The issue was fixed by implementing the implicit rejection algorithm, in which the NSS returns a deterministic random message in case invalid padding is detected, as proposed in the Marvin Attack paper. This vulnerability affects NSS < 3.61.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "nss",
+       "version": "2:3.49.1-1ubuntu1.9"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-4421"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9eac608e504652e9",
+    "name": "libnss3",
+    "version": "2:3.49.1-1ubuntu1.9",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libnss3/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libnss3:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3",
+     "MIT",
+     "MPL-2.0",
+     "Zlib",
+     "public-domain"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libnss3:libnss3:2:3.49.1-1ubuntu1.9:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libnss3@2:3.49.1-1ubuntu1.9?arch=arm64&upstream=nss&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "nss"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2017-11164",
+    "dataSource": "https://ubuntu.com/security/CVE-2017-11164",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Negligible",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2017-11164"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-11164",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-11164",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://openwall.com/lists/oss-security/2017/07/11/3",
+      "http://www.openwall.com/lists/oss-security/2023/04/11/1",
+      "http://www.openwall.com/lists/oss-security/2023/04/12/1",
+      "http://www.securityfocus.com/bid/99575",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 10,
+        "impactScore": 6.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "pcre3",
+       "version": "2:8.39-12ubuntu0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-11164"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e67722235708be21",
+    "name": "libpcre3",
+    "version": "2:8.39-12ubuntu0.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libpcre3/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libpcre3:arm64.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libpcre3:libpcre3:2:8.39-12ubuntu0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libpcre3@2:8.39-12ubuntu0.1?arch=arm64&upstream=pcre3&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "pcre3"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3857",
+    "dataSource": "https://ubuntu.com/security/CVE-2022-3857",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2022-3857"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-3857",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3857",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://security.netapp.com/advisory/ntap-20230406-0004/",
+      "https://sourceforge.net/p/libpng/bugs/300/"
+     ],
+     "description": "A flaw was found in libpng 1.6.38. A crafted PNG image can lead to a segmentation fault and denial of service in png_setup_paeth_row() function.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "libpng1.6",
+       "version": "1.6.37-2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2022-3857"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1aab3551321eda17",
+    "name": "libpng16-16",
+    "version": "1.6.37-2",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libpng16-16/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libpng16-16:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0",
+     "BSD-3-clause",
+     "BSD-like-with-advertising-clause",
+     "GPL-2",
+     "GPL-2+",
+     "expat",
+     "libpng"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libpng16-16:libpng16-16:1.6.37-2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpng16-16:libpng16_16:1.6.37-2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpng16_16:libpng16-16:1.6.37-2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpng16_16:libpng16_16:1.6.37-2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpng16:libpng16-16:1.6.37-2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libpng16:libpng16_16:1.6.37-2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libpng16-16@1.6.37-2?arch=arm64&upstream=libpng1.6&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "libpng1.6"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-0727",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-0727",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-0727"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1f-1ubuntu2.21"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-0727",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-0727",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/openssl/openssl/commit/09df4395b5071217b76dc7d3d2e630eb8c5a79c2",
+      "https://github.com/openssl/openssl/commit/775acfdbd0c6af9ac855f34969cdab0c0c90844a",
+      "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
+      "https://github.openssl.org/openssl/extended-releases/commit/03b3941d60c4bce58fab69a0c22377ab439bc0e8",
+      "https://github.openssl.org/openssl/extended-releases/commit/aebaa5883e31122b404e450732dc833dc9dee539",
+      "https://security.netapp.com/advisory/ntap-20240208-0006/",
+      "https://www.openssl.org/news/secadv/20240125.txt"
+     ],
+     "description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1f-1ubuntu2.20"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1f-1ubuntu2.21 (deb)",
+      "vulnerabilityID": "CVE-2024-0727"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "843f68acf74caaab",
+    "name": "libssl1.1",
+    "version": "1.1.1f-1ubuntu2.20",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libssl1.1/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libssl1.1:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1f-1ubuntu2.20:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libssl1.1@1.1.1f-1ubuntu2.20?arch=arm64&upstream=openssl&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-5678",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-5678",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-5678"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1f-1ubuntu2.21"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-5678",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-5678",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=34efaef6c103d636ab507a0cc34dca4d3aecc055",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=710fee740904b6290fef0dd5536fbcedbc38ff0c",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=db925ae2e65d0d925adef429afc37f75bd1c2017",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ddeb4b6c6d527e54ce9a99cba785c0f7776e54b6",
+      "https://security.netapp.com/advisory/ntap-20231130-0010/",
+      "https://www.openssl.org/news/secadv/20231106.txt"
+     ],
+     "description": "Issue summary: Generating excessively long X9.42 DH keys or checking\nexcessively long X9.42 DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_generate_key() to\ngenerate an X9.42 DH key may experience long delays.  Likewise, applications\nthat use DH_check_pub_key(), DH_check_pub_key_ex() or EVP_PKEY_public_check()\nto check an X9.42 DH key or X9.42 DH parameters may experience long delays.\nWhere the key or parameters that are being checked have been obtained from\nan untrusted source this may lead to a Denial of Service.\n\nWhile DH_check() performs all the necessary checks (as of CVE-2023-3817),\nDH_check_pub_key() doesn't make any of these checks, and is therefore\nvulnerable for excessively large P and Q parameters.\n\nLikewise, while DH_generate_key() performs a check for an excessively large\nP, it doesn't check for an excessively large Q.\n\nAn application that calls DH_generate_key() or DH_check_pub_key() and\nsupplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nDH_generate_key() and DH_check_pub_key() are also called by a number of\nother OpenSSL functions.  An application calling any of those other\nfunctions may similarly be affected.  The other functions affected by this\nare DH_check_pub_key_ex(), EVP_PKEY_public_check(), and EVP_PKEY_generate().\n\nAlso vulnerable are the OpenSSL pkey command line application when using the\n\"-pubcheck\" option, as well as the OpenSSL genpkey command line application.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1f-1ubuntu2.20"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1f-1ubuntu2.21 (deb)",
+      "vulnerabilityID": "CVE-2023-5678"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "843f68acf74caaab",
+    "name": "libssl1.1",
+    "version": "1.1.1f-1ubuntu2.20",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libssl1.1/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libssl1.1:arm64.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1f-1ubuntu2.20:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libssl1.1@1.1.1f-1ubuntu2.20?arch=arm64&upstream=openssl&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-7008",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-7008",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-7008"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-7008",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-7008",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://access.redhat.com/security/cve/CVE-2023-7008",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2222261",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2222672",
+      "https://github.com/systemd/systemd/issues/25676",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4GMDEG5PKONWNHOEYSUDRT6JEOISRMN2/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QHNBXGKJWISJETTTDTZKTBFIBJUOSLKL/"
+     ],
+     "description": "A vulnerability was found in systemd-resolved. This issue may allow systemd-resolved to accept records of DNSSEC-signed domains even when they have no signature, allowing man-in-the-middles (or the upstream DNS resolver) to manipulate records.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "systemd",
+       "version": "245.4-4ubuntu3.23"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-7008"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "567bf3f8f0cee486",
+    "name": "libsystemd0",
+    "version": "245.4-4ubuntu3.23",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libsystemd0/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libsystemd0:arm64.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "CC0-1.0",
+     "Expat",
+     "GPL-2",
+     "GPL-2+",
+     "LGPL-2.1",
+     "LGPL-2.1+",
+     "public-domain"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libsystemd0:libsystemd0:245.4-4ubuntu3.23:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libsystemd0@245.4-4ubuntu3.23?arch=arm64&upstream=systemd&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "systemd"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-26604",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-26604",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-26604"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-26604",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-26604",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://packetstormsecurity.com/files/174130/systemd-246-Local-Root-Privilege-Escalation.html",
+      "https://blog.compass-security.com/2012/10/dangerous-sudoers-entries-part-2-insecure-functionality/",
+      "https://github.com/systemd/systemd/blob/main/NEWS#L4335-L4340",
+      "https://lists.debian.org/debian-lts-announce/2023/03/msg00032.html",
+      "https://medium.com/%40zenmoviefornotification/saidov-maxim-cve-2023-26604-c1232a526ba7",
+      "https://security.netapp.com/advisory/ntap-20230505-0009/"
+     ],
+     "description": "systemd before 247 does not adequately block local privilege escalation for some Sudo configurations, e.g., plausible sudoers files in which the \"systemctl status\" command may be executed. Specifically, systemd does not set LESSSECURE to 1, and thus other programs may be launched from the less program. This presents a substantial security risk when running systemctl from Sudo, because less executes as root when the terminal size is too small to show the complete systemctl output.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "systemd",
+       "version": "245.4-4ubuntu3.23"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-26604"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "567bf3f8f0cee486",
+    "name": "libsystemd0",
+    "version": "245.4-4ubuntu3.23",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libsystemd0/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libsystemd0:arm64.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "CC0-1.0",
+     "Expat",
+     "GPL-2",
+     "GPL-2+",
+     "LGPL-2.1",
+     "LGPL-2.1+",
+     "public-domain"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libsystemd0:libsystemd0:245.4-4ubuntu3.23:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libsystemd0@245.4-4ubuntu3.23?arch=arm64&upstream=systemd&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "systemd"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-50495",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-50495",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-50495"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-50495",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+      "https://security.netapp.com/advisory/ntap-20240119-0008/"
+     ],
+     "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.2-0ubuntu2.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-50495"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e13d872235da8620",
+    "name": "libtinfo6",
+    "version": "6.2-0ubuntu2.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libtinfo6/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libtinfo6:arm64.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libtinfo6:libtinfo6:6.2-0ubuntu2.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libtinfo6@6.2-0ubuntu2.1?arch=arm64&upstream=ncurses&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-45918",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-45918",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-45918"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45918",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45918",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html"
+     ],
+     "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.2-0ubuntu2.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-45918"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e13d872235da8620",
+    "name": "libtinfo6",
+    "version": "6.2-0ubuntu2.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libtinfo6/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libtinfo6:arm64.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libtinfo6:libtinfo6:6.2-0ubuntu2.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libtinfo6@6.2-0ubuntu2.1?arch=arm64&upstream=ncurses&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-7008",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-7008",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-7008"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-7008",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-7008",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://access.redhat.com/security/cve/CVE-2023-7008",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2222261",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2222672",
+      "https://github.com/systemd/systemd/issues/25676",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4GMDEG5PKONWNHOEYSUDRT6JEOISRMN2/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QHNBXGKJWISJETTTDTZKTBFIBJUOSLKL/"
+     ],
+     "description": "A vulnerability was found in systemd-resolved. This issue may allow systemd-resolved to accept records of DNSSEC-signed domains even when they have no signature, allowing man-in-the-middles (or the upstream DNS resolver) to manipulate records.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "systemd",
+       "version": "245.4-4ubuntu3.23"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-7008"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "837bcd460d77d38d",
+    "name": "libudev1",
+    "version": "245.4-4ubuntu3.23",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libudev1/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libudev1:arm64.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "CC0-1.0",
+     "Expat",
+     "GPL-2",
+     "GPL-2+",
+     "LGPL-2.1",
+     "LGPL-2.1+",
+     "public-domain"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libudev1:libudev1:245.4-4ubuntu3.23:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libudev1@245.4-4ubuntu3.23?arch=arm64&upstream=systemd&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "systemd"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-26604",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-26604",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-26604"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-26604",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-26604",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://packetstormsecurity.com/files/174130/systemd-246-Local-Root-Privilege-Escalation.html",
+      "https://blog.compass-security.com/2012/10/dangerous-sudoers-entries-part-2-insecure-functionality/",
+      "https://github.com/systemd/systemd/blob/main/NEWS#L4335-L4340",
+      "https://lists.debian.org/debian-lts-announce/2023/03/msg00032.html",
+      "https://medium.com/%40zenmoviefornotification/saidov-maxim-cve-2023-26604-c1232a526ba7",
+      "https://security.netapp.com/advisory/ntap-20230505-0009/"
+     ],
+     "description": "systemd before 247 does not adequately block local privilege escalation for some Sudo configurations, e.g., plausible sudoers files in which the \"systemctl status\" command may be executed. Specifically, systemd does not set LESSSECURE to 1, and thus other programs may be launched from the less program. This presents a substantial security risk when running systemctl from Sudo, because less executes as root when the terminal size is too small to show the complete systemctl output.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "systemd",
+       "version": "245.4-4ubuntu3.23"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-26604"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "837bcd460d77d38d",
+    "name": "libudev1",
+    "version": "245.4-4ubuntu3.23",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libudev1/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libudev1:arm64.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "CC0-1.0",
+     "Expat",
+     "GPL-2",
+     "GPL-2+",
+     "LGPL-2.1",
+     "LGPL-2.1+",
+     "public-domain"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libudev1:libudev1:245.4-4ubuntu3.23:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libudev1@245.4-4ubuntu3.23?arch=arm64&upstream=systemd&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "systemd"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-4641",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-4641",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-4641"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1:4.8.1-1ubuntu5.20.04.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4641",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4641",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://access.redhat.com/errata/RHSA-2023:6632",
+      "https://access.redhat.com/errata/RHSA-2023:7112",
+      "https://access.redhat.com/security/cve/CVE-2023-4641",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2215945"
+     ],
+     "description": "A flaw was found in shadow-utils. When asking for a new password, shadow-utils asks the password twice. If the password fails on the second attempt, shadow-utils fails in cleaning the buffer used to store the first entry. This may allow an attacker with enough access to retrieve the password from the memory.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 4.7,
+        "exploitabilityScore": 1,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "shadow",
+       "version": "1:4.8.1-1ubuntu5.20.04.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1:4.8.1-1ubuntu5.20.04.5 (deb)",
+      "vulnerabilityID": "CVE-2023-4641"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "23ba97e4aebafaac",
+    "name": "login",
+    "version": "1:4.8.1-1ubuntu5.20.04.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/login/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/login.conffiles",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/login.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:login:login:1:4.8.1-1ubuntu5.20.04.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/login@1:4.8.1-1ubuntu5.20.04.4?arch=arm64&upstream=shadow&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "shadow"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-29383",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-29383",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-29383"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-29383",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-29383",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d",
+      "https://github.com/shadow-maint/shadow/pull/687",
+      "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/",
+      "https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797"
+     ],
+     "description": "In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that \"cat /etc/passwd\" shows a rogue user account.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 3.3,
+        "exploitabilityScore": 1.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "shadow",
+       "version": "1:4.8.1-1ubuntu5.20.04.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-29383"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "23ba97e4aebafaac",
+    "name": "login",
+    "version": "1:4.8.1-1ubuntu5.20.04.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/login/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/login.conffiles",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/login.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:login:login:1:4.8.1-1ubuntu5.20.04.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/login@1:4.8.1-1ubuntu5.20.04.4?arch=arm64&upstream=shadow&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "shadow"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2013-4235",
+    "dataSource": "https://ubuntu.com/security/CVE-2013-4235",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2013-4235"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2013-4235",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2013-4235",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://access.redhat.com/security/cve/cve-2013-4235",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+      "https://security-tracker.debian.org/tracker/CVE-2013-4235",
+      "https://security.gentoo.org/glsa/202210-26"
+     ],
+     "description": "shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:P",
+       "metrics": {
+        "baseScore": 3.3,
+        "exploitabilityScore": 3.4,
+        "impactScore": 4.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 4.7,
+        "exploitabilityScore": 1,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "shadow",
+       "version": "1:4.8.1-1ubuntu5.20.04.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2013-4235"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "23ba97e4aebafaac",
+    "name": "login",
+    "version": "1:4.8.1-1ubuntu5.20.04.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/login/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/login.conffiles",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/login.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:login:login:1:4.8.1-1ubuntu5.20.04.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/login@1:4.8.1-1ubuntu5.20.04.4?arch=arm64&upstream=shadow&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "shadow"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-50495",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-50495",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-50495"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-50495",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+      "https://security.netapp.com/advisory/ntap-20240119-0008/"
+     ],
+     "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.2-0ubuntu2.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-50495"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9eb6373515809f31",
+    "name": "ncurses-base",
+    "version": "6.2-0ubuntu2.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/ncurses-base/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/ncurses-base.conffiles",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/ncurses-base.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:ncurses-base:ncurses-base:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses-base:ncurses_base:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_base:ncurses-base:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_base:ncurses_base:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses-base:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses_base:6.2-0ubuntu2.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/ncurses-base@6.2-0ubuntu2.1?arch=all&upstream=ncurses&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-45918",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-45918",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-45918"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45918",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45918",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html"
+     ],
+     "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.2-0ubuntu2.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-45918"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9eb6373515809f31",
+    "name": "ncurses-base",
+    "version": "6.2-0ubuntu2.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/ncurses-base/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/ncurses-base.conffiles",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/ncurses-base.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:ncurses-base:ncurses-base:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses-base:ncurses_base:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_base:ncurses-base:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_base:ncurses_base:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses-base:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses_base:6.2-0ubuntu2.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/ncurses-base@6.2-0ubuntu2.1?arch=all&upstream=ncurses&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-50495",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-50495",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-50495"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-50495",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50495",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LU4MYMKFEZQ5VSCVLRIZGDQOUW3T44GT/",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00020.html",
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-04/msg00029.html",
+      "https://security.netapp.com/advisory/ntap-20240119-0008/"
+     ],
+     "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.2-0ubuntu2.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-50495"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e500beaa46df120b",
+    "name": "ncurses-bin",
+    "version": "6.2-0ubuntu2.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/ncurses-bin/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/ncurses-bin.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:ncurses-bin:ncurses-bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses-bin:ncurses_bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_bin:ncurses-bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_bin:ncurses_bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses-bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses_bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/ncurses-bin@6.2-0ubuntu2.1?arch=arm64&upstream=ncurses&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-45918",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-45918",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-45918"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45918",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45918",
+     "namespace": "nvd:cpe",
+     "urls": [
+      "https://lists.gnu.org/archive/html/bug-ncurses/2023-06/msg00005.html"
+     ],
+     "description": "ncurses 6.4-20230610 has a NULL pointer dereference in tgetstr in tinfo/lib_termcap.c.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "ncurses",
+       "version": "6.2-0ubuntu2.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-45918"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e500beaa46df120b",
+    "name": "ncurses-bin",
+    "version": "6.2-0ubuntu2.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/ncurses-bin/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/ncurses-bin.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:ncurses-bin:ncurses-bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses-bin:ncurses_bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_bin:ncurses-bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses_bin:ncurses_bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses-bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ncurses:ncurses_bin:6.2-0ubuntu2.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/ncurses-bin@6.2-0ubuntu2.1?arch=arm64&upstream=ncurses&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "ncurses"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-9h6g-pr28-7cqp",
+    "dataSource": "https://github.com/advisories/GHSA-9h6g-pr28-7cqp",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-9h6g-pr28-7cqp"
+    ],
+    "description": "nodemailer ReDoS when trying to send a specially crafted email",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "6.9.9"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "nodemailer",
+       "version": "6.6.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=6.9.8 (unknown)",
+      "vulnerabilityID": "GHSA-9h6g-pr28-7cqp"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e66ad2425906f90f",
+    "name": "nodemailer",
+    "version": "6.6.2",
+    "type": "npm",
+    "locations": [
+     {
+      "path": "/usr/share/kibana/node_modules/nodemailer/package.json",
+      "layerID": "sha256:78f5193479941026cfe5f91d993ca334bbe92b97b573f06e90f6ccb15712256b"
+     }
+    ],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:nodemailer:nodemailer:6.6.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:npm/nodemailer@6.6.2",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-0727",
+    "dataSource": "https://ubuntu.com/security/CVE-2024-0727",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2024-0727"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1f-1ubuntu2.21"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-0727",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-0727",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/openssl/openssl/commit/09df4395b5071217b76dc7d3d2e630eb8c5a79c2",
+      "https://github.com/openssl/openssl/commit/775acfdbd0c6af9ac855f34969cdab0c0c90844a",
+      "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
+      "https://github.openssl.org/openssl/extended-releases/commit/03b3941d60c4bce58fab69a0c22377ab439bc0e8",
+      "https://github.openssl.org/openssl/extended-releases/commit/aebaa5883e31122b404e450732dc833dc9dee539",
+      "https://security.netapp.com/advisory/ntap-20240208-0006/",
+      "https://www.openssl.org/news/secadv/20240125.txt"
+     ],
+     "description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1f-1ubuntu2.20"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1f-1ubuntu2.21 (deb)",
+      "vulnerabilityID": "CVE-2024-0727"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1e96c6df310b8c04",
+    "name": "openssl",
+    "version": "1.1.1f-1ubuntu2.20",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libssl1.1/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/openssl.conffiles",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/openssl.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:openssl:openssl:1.1.1f-1ubuntu2.20:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/openssl@1.1.1f-1ubuntu2.20?arch=arm64&distro=ubuntu-20.04",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-5678",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-5678",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-5678"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1f-1ubuntu2.21"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-5678",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-5678",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=34efaef6c103d636ab507a0cc34dca4d3aecc055",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=710fee740904b6290fef0dd5536fbcedbc38ff0c",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=db925ae2e65d0d925adef429afc37f75bd1c2017",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ddeb4b6c6d527e54ce9a99cba785c0f7776e54b6",
+      "https://security.netapp.com/advisory/ntap-20231130-0010/",
+      "https://www.openssl.org/news/secadv/20231106.txt"
+     ],
+     "description": "Issue summary: Generating excessively long X9.42 DH keys or checking\nexcessively long X9.42 DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_generate_key() to\ngenerate an X9.42 DH key may experience long delays.  Likewise, applications\nthat use DH_check_pub_key(), DH_check_pub_key_ex() or EVP_PKEY_public_check()\nto check an X9.42 DH key or X9.42 DH parameters may experience long delays.\nWhere the key or parameters that are being checked have been obtained from\nan untrusted source this may lead to a Denial of Service.\n\nWhile DH_check() performs all the necessary checks (as of CVE-2023-3817),\nDH_check_pub_key() doesn't make any of these checks, and is therefore\nvulnerable for excessively large P and Q parameters.\n\nLikewise, while DH_generate_key() performs a check for an excessively large\nP, it doesn't check for an excessively large Q.\n\nAn application that calls DH_generate_key() or DH_check_pub_key() and\nsupplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nDH_generate_key() and DH_check_pub_key() are also called by a number of\nother OpenSSL functions.  An application calling any of those other\nfunctions may similarly be affected.  The other functions affected by this\nare DH_check_pub_key_ex(), EVP_PKEY_public_check(), and EVP_PKEY_generate().\n\nAlso vulnerable are the OpenSSL pkey command line application when using the\n\"-pubcheck\" option, as well as the OpenSSL genpkey command line application.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1f-1ubuntu2.20"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1f-1ubuntu2.21 (deb)",
+      "vulnerabilityID": "CVE-2023-5678"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1e96c6df310b8c04",
+    "name": "openssl",
+    "version": "1.1.1f-1ubuntu2.20",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libssl1.1/copyright",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/openssl.conffiles",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/info/openssl.md5sums",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:openssl:openssl:1.1.1f-1ubuntu2.20:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/openssl@1.1.1f-1ubuntu2.20?arch=arm64&distro=ubuntu-20.04",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-4641",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-4641",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-4641"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1:4.8.1-1ubuntu5.20.04.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4641",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4641",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://access.redhat.com/errata/RHSA-2023:6632",
+      "https://access.redhat.com/errata/RHSA-2023:7112",
+      "https://access.redhat.com/security/cve/CVE-2023-4641",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2215945"
+     ],
+     "description": "A flaw was found in shadow-utils. When asking for a new password, shadow-utils asks the password twice. If the password fails on the second attempt, shadow-utils fails in cleaning the buffer used to store the first entry. This may allow an attacker with enough access to retrieve the password from the memory.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 4.7,
+        "exploitabilityScore": 1,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "shadow",
+       "version": "1:4.8.1-1ubuntu5.20.04.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1:4.8.1-1ubuntu5.20.04.5 (deb)",
+      "vulnerabilityID": "CVE-2023-4641"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c5a7bf6c7c2343db",
+    "name": "passwd",
+    "version": "1:4.8.1-1ubuntu5.20.04.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/passwd/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/passwd.conffiles",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/passwd.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:passwd:passwd:1:4.8.1-1ubuntu5.20.04.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/passwd@1:4.8.1-1ubuntu5.20.04.4?arch=arm64&upstream=shadow&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "shadow"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-29383",
+    "dataSource": "https://ubuntu.com/security/CVE-2023-29383",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2023-29383"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-29383",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-29383",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d",
+      "https://github.com/shadow-maint/shadow/pull/687",
+      "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/",
+      "https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797"
+     ],
+     "description": "In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that \"cat /etc/passwd\" shows a rogue user account.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 3.3,
+        "exploitabilityScore": 1.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "shadow",
+       "version": "1:4.8.1-1ubuntu5.20.04.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-29383"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c5a7bf6c7c2343db",
+    "name": "passwd",
+    "version": "1:4.8.1-1ubuntu5.20.04.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/passwd/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/passwd.conffiles",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/passwd.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:passwd:passwd:1:4.8.1-1ubuntu5.20.04.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/passwd@1:4.8.1-1ubuntu5.20.04.4?arch=arm64&upstream=shadow&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "shadow"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2013-4235",
+    "dataSource": "https://ubuntu.com/security/CVE-2013-4235",
+    "namespace": "ubuntu:distro:ubuntu:20.04",
+    "severity": "Low",
+    "urls": [
+     "https://ubuntu.com/security/CVE-2013-4235"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2013-4235",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2013-4235",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://access.redhat.com/security/cve/cve-2013-4235",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+      "https://security-tracker.debian.org/tracker/CVE-2013-4235",
+      "https://security.gentoo.org/glsa/202210-26"
+     ],
+     "description": "shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:P",
+       "metrics": {
+        "baseScore": 3.3,
+        "exploitabilityScore": 3.4,
+        "impactScore": 4.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 4.7,
+        "exploitabilityScore": 1,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "20.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:20.04",
+      "package": {
+       "name": "shadow",
+       "version": "1:4.8.1-1ubuntu5.20.04.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2013-4235"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c5a7bf6c7c2343db",
+    "name": "passwd",
+    "version": "1:4.8.1-1ubuntu5.20.04.4",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/passwd/copyright",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/passwd.conffiles",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/info/passwd.md5sums",
+      "layerID": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:passwd:passwd:1:4.8.1-1ubuntu5.20.04.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/passwd@1:4.8.1-1ubuntu5.20.04.4?arch=arm64&upstream=shadow&distro=ubuntu-20.04",
+    "upstreams": [
+     {
+      "name": "shadow"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-3787-6prv-h9w3",
+    "dataSource": "https://github.com/advisories/GHSA-3787-6prv-h9w3",
+    "namespace": "github:language:javascript",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-3787-6prv-h9w3"
+    ],
+    "description": "Undici proxy-authorization header not cleared on cross-origin redirect in fetch",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:L/I:L/A:L",
+      "metrics": {
+       "baseScore": 3.9,
+       "exploitabilityScore": 0.5,
+       "impactScore": 3.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Low",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "5.28.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-24758",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-24758",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://github.com/nodejs/undici/commit/b9da3e40f1f096a06b4caedbb27c2568730434ef",
+      "https://github.com/nodejs/undici/security/advisories/GHSA-3787-6prv-h9w3"
+     ],
+     "description": "Undici is an HTTP/1.1 client, written from scratch for Node.js. Undici already cleared Authorization headers on cross-origin redirects, but did not clear `Proxy-Authentication` headers. This issue has been patched in versions 5.28.3 and 6.6.1. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:L/I:L/A:L",
+       "metrics": {
+        "baseScore": 3.9,
+        "exploitabilityScore": 0.5,
+        "impactScore": 3.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "undici",
+       "version": "5.26.3"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=5.28.2 (unknown)",
+      "vulnerabilityID": "GHSA-3787-6prv-h9w3"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8bbc339941b64b43",
+    "name": "undici",
+    "version": "5.26.3",
+    "type": "npm",
+    "locations": [
+     {
+      "path": "/usr/share/kibana/node_modules/undici/package.json",
+      "layerID": "sha256:78f5193479941026cfe5f91d993ca334bbe92b97b573f06e90f6ccb15712256b"
+     }
+    ],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:undici:undici:5.26.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:npm/undici@5.26.3",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "kibana:8.12.2",
+   "imageID": "sha256:fde07164e826703ed82f5c458e72dea8b57b1d3a76d0222488c4b83bf04a602a",
+   "manifestDigest": "sha256:b8eaafe1b841f038da54669f6e4335a7cf47a32ec0e90eef40158b508ea7553a",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "kibana:8.12.2"
+   ],
+   "imageSize": 1108316933,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:956c99b07a411a286d30e71338d3057196d7edbe72fe5f13f51008029cc0ffdf",
+     "size": 65651789
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:7f9979e7086f63293b62142325b5a2d9c9c15fca85b3d99e9430754c46d8d55c",
+     "size": 22937575
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:0fab38e08f9d7c4a385fded81040068725184317cbb4139eebd01314d8e6c200",
+     "size": 23904
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:8c631b4c94d1752b264f09afa1b8e7a360ce616905c9551293e4c61181108c08",
+     "size": 0
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:6af9b6d342ea5bae2c868d2cb3df01a3f49c571074c8e7496e5d3ff5555a69d4",
+     "size": 20332392
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+     "size": 0
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:8f44213dc30755bddd1a565bc426fa9e166f9c47dd1bb5d6b84b7463bf07ef33",
+     "size": 27164
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:78f5193479941026cfe5f91d993ca334bbe92b97b573f06e90f6ccb15712256b",
+     "size": 998547289
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+     "size": 0
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:6032ff2c0c6c976541f346b240cb9b4969c1ef0700024d6888f31c5ca0eca118",
+     "size": 0
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:3a809b321be8afb0c779a527b653da6777d78de26bab532ff866f21f0047f181",
+     "size": 249
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:afe0840945bcf860807fd20a90dd5c11977e80e62cb35d8d68406acc4abea46c",
+     "size": 17058
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:7091bbcc5bf5804f7a2d870465b170a7c9175b850043062d93a4e289fa93d57d",
+     "size": 249
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:2859987416e672d6288dff71ed57a5931d329afdafbf392150aa22507c83cb52",
+     "size": 446264
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:863288b64b4714d51d78fc4e79db5101bd77c17ab4a4e0f17392bfc0565088bd",
+     "size": 333000
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo5MDIxLCJkaWdlc3QiOiJzaGEyNTY6ZmRlMDcxNjRlODI2NzAzZWQ4MmY1YzQ1OGU3MmRlYThiNTdiMWQzYTc2ZDAyMjI0ODhjNGI4M2JmMDRhNjAyYSJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo2ODEwOTMxMiwiZGlnZXN0Ijoic2hhMjU2Ojk1NmM5OWIwN2E0MTFhMjg2ZDMwZTcxMzM4ZDMwNTcxOTZkN2VkYmU3MmZlNWYxM2Y1MTAwODAyOWNjMGZmZGYifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoyMzYzMDMzNiwiZGlnZXN0Ijoic2hhMjU2OjdmOTk3OWU3MDg2ZjYzMjkzYjYyMTQyMzI1YjVhMmQ5YzljMTVmY2E4NWIzZDk5ZTk0MzA3NTRjNDZkOGQ1NWMifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoyNjYyNCwiZGlnZXN0Ijoic2hhMjU2OjBmYWIzOGUwOGY5ZDdjNGEzODVmZGVkODEwNDAwNjg3MjUxODQzMTdjYmI0MTM5ZWViZDAxMzE0ZDhlNmMyMDAifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjozMDcyLCJkaWdlc3QiOiJzaGEyNTY6OGM2MzFiNGM5NGQxNzUyYjI2NGYwOWFmYTFiOGU3YTM2MGNlNjE2OTA1Yzk1NTEyOTNlNGM2MTE4MTEwOGMwOCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjIwMzM2MTI4LCJkaWdlc3QiOiJzaGEyNTY6NmFmOWI2ZDM0MmVhNWJhZTJjODY4ZDJjYjNkZjAxYTNmNDljNTcxMDc0YzhlNzQ5NmU1ZDNmZjU1NTVhNjlkNCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjEwMjQsImRpZ2VzdCI6InNoYTI1Njo1ZjcwYmYxOGEwODYwMDcwMTZlOTQ4YjA0YWVkM2I4MjEwM2EzNmJlYTQxNzU1YjZjZGRmYWYxMGFjZTNjNmVmIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MzUzMjgsImRpZ2VzdCI6InNoYTI1Njo4ZjQ0MjEzZGMzMDc1NWJkZGQxYTU2NWJjNDI2ZmE5ZTE2NmY5YzQ3ZGQxYmI1ZDZiODRiNzQ2M2JmMDdlZjMzIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MTA2Mzc1NjI4OCwiZGlnZXN0Ijoic2hhMjU2Ojc4ZjUxOTM0Nzk5NDEwMjZjZmU1ZjkxZDk5M2NhMzM0YmJlOTJiOTdiNTczZjA2ZTkwZjZjY2IxNTcxMjI1NmIifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjowLCJkaWdlc3QiOiJzaGEyNTY6NWY3MGJmMThhMDg2MDA3MDE2ZTk0OGIwNGFlZDNiODIxMDNhMzZiZWE0MTc1NWI2Y2RkZmFmMTBhY2UzYzZlZiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjIwNDgsImRpZ2VzdCI6InNoYTI1Njo2MDMyZmYyYzBjNmM5NzY1NDFmMzQ2YjI0MGNiOWI0OTY5YzFlZjA3MDAwMjRkNjg4OGYzMWM1Y2EwZWNhMTE4In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6NDA5NiwiZGlnZXN0Ijoic2hhMjU2OjNhODA5YjMyMWJlOGFmYjBjNzc5YTUyN2I2NTNkYTY3NzdkNzhkZTI2YmFiNTMyZmY4NjZmMjFmMDA0N2YxODEifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoyMDQ4MCwiZGlnZXN0Ijoic2hhMjU2OmFmZTA4NDA5NDViY2Y4NjA4MDdmZDIwYTkwZGQ1YzExOTc3ZTgwZTYyY2IzNWQ4ZDY4NDA2YWNjNGFiZWE0NmMifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo0MDk2LCJkaWdlc3QiOiJzaGEyNTY6NzA5MWJiY2M1YmY1ODA0ZjdhMmQ4NzA0NjViMTcwYTdjOTE3NWI4NTAwNDMwNjJkOTNhNGUyODlmYTkzZDU3ZCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjQ1NTY4MCwiZGlnZXN0Ijoic2hhMjU2OjI4NTk5ODc0MTZlNjcyZDYyODhkZmY3MWVkNTdhNTkzMWQzMjlhZmRhZmJmMzkyMTUwYWEyMjUwN2M4M2NiNTIifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjozNDUwODgsImRpZ2VzdCI6InNoYTI1Njo4NjMyODhiNjRiNDcxNGQ1MWQ3OGZjNGU3OWRiNTEwMWJkNzdjMTdhYjRhNGUwZjE3MzkyYmZjMDU2NTA4OGJkIn1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhcm02NCIsImNvbmZpZyI6eyJVc2VyIjoiMTAwMCIsIkV4cG9zZWRQb3J0cyI6eyI1NjAxL3RjcCI6e319LCJFbnYiOlsiUEFUSD0vdXNyL3NoYXJlL2tpYmFuYS9iaW46L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiRUxBU1RJQ19DT05UQUlORVI9dHJ1ZSJdLCJFbnRyeXBvaW50IjpbIi9iaW4vdGluaSIsIi0tIl0sIkNtZCI6WyIvdXNyL2xvY2FsL2Jpbi9raWJhbmEtZG9ja2VyIl0sIldvcmtpbmdEaXIiOiIvdXNyL3NoYXJlL2tpYmFuYSIsIkxhYmVscyI6eyJvcmcubGFiZWwtc2NoZW1hLmJ1aWxkLWRhdGUiOiIyMDI0LTAyLTE5VDEyOjA2OjM0LjExN1oiLCJvcmcubGFiZWwtc2NoZW1hLmxpY2Vuc2UiOiJFbGFzdGljIExpY2Vuc2UiLCJvcmcubGFiZWwtc2NoZW1hLm5hbWUiOiJLaWJhbmEiLCJvcmcubGFiZWwtc2NoZW1hLnNjaGVtYS12ZXJzaW9uIjoiMS4wIiwib3JnLmxhYmVsLXNjaGVtYS51cmwiOiJodHRwczovL3d3dy5lbGFzdGljLmNvL3Byb2R1Y3RzL2tpYmFuYSIsIm9yZy5sYWJlbC1zY2hlbWEudXNhZ2UiOiJodHRwczovL3d3dy5lbGFzdGljLmNvL2d1aWRlL2VuL2tpYmFuYS9yZWZlcmVuY2UvaW5kZXguaHRtbCIsIm9yZy5sYWJlbC1zY2hlbWEudmNzLXJlZiI6ImY1YmQ0ODljNWZmOWM2NzZjNGY4NjFjNDJkYTZlYTk5YWUzNTA4MzIiLCJvcmcubGFiZWwtc2NoZW1hLnZjcy11cmwiOiJodHRwczovL2dpdGh1Yi5jb20vZWxhc3RpYy9raWJhbmEiLCJvcmcubGFiZWwtc2NoZW1hLnZlbmRvciI6IkVsYXN0aWMiLCJvcmcubGFiZWwtc2NoZW1hLnZlcnNpb24iOiI4LjEyLjIiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuY3JlYXRlZCI6IjIwMjQtMDItMTlUMTI6MDY6MzQuMTE3WiIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5kb2N1bWVudGF0aW9uIjoiaHR0cHM6Ly93d3cuZWxhc3RpYy5jby9ndWlkZS9lbi9raWJhbmEvcmVmZXJlbmNlL2luZGV4Lmh0bWwiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UubGljZW5zZXMiOiJFbGFzdGljIExpY2Vuc2UiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UucmVmLm5hbWUiOiJ1YnVudHUiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UucmV2aXNpb24iOiJmNWJkNDg5YzVmZjljNjc2YzRmODYxYzQyZGE2ZWE5OWFlMzUwODMyIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnNvdXJjZSI6Imh0dHBzOi8vZ2l0aHViLmNvbS9lbGFzdGljL2tpYmFuYSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS50aXRsZSI6IktpYmFuYSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS51cmwiOiJodHRwczovL3d3dy5lbGFzdGljLmNvL3Byb2R1Y3RzL2tpYmFuYSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZW5kb3IiOiJFbGFzdGljIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlcnNpb24iOiI4LjEyLjIifSwiQXJnc0VzY2FwZWQiOnRydWUsIk9uQnVpbGQiOm51bGx9LCJjcmVhdGVkIjoiMjAyNC0wMi0yMlQxMjo1MDo1MloiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMjAyNC0wMS0yM1QxMzowNDoyNi4wMjY4MzA1MDhaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBBUkcgUkVMRUFTRSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAxLTIzVDEzOjA0OjI2LjA5MzExMzczNVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEFSRyBMQVVOQ0hQQURfQlVJTERfQVJDSCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAxLTIzVDEzOjA0OjI2LjEzNTE3OTQ1OVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5yZWYubmFtZT11YnVudHUiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wMS0yM1QxMzowNDoyNi4xNjExODk4NzZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbj0yMC4wNCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAxLTIzVDEzOjA0OjI3LjY3MTUxMzIyN1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQUREIGZpbGU6OTQ5N2U5ZGJjZGU5YTA0ZTc2NDYyNWM3N2M5NzVjZmNlZDFkZDBiYjNiYjc3MTc1NzJlYTQ3NjIxZjNjMTJhNyBpbiAvICJ9LHsiY3JlYXRlZCI6IjIwMjQtMDEtMjNUMTM6MDQ6MjcuODc5NTAzNjA0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQ01EIFtcIi9iaW4vYmFzaFwiXSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTIyVDEyOjUwOjUyWiIsImNyZWF0ZWRfYnkiOiJFWFBPU0UgbWFwWzU2MDEvdGNwOnt9XSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDItMjJUMTI6NTA6NTJaIiwiY3JlYXRlZF9ieSI6IlJVTiAvYmluL3NoIC1jIGZvciBpdGVyIGluIHsxLi4xMH07IGRvICAgICAgIGV4cG9ydCBERUJJQU5fRlJPTlRFTkQ9bm9uaW50ZXJhY3RpdmUgXHUwMDI2XHUwMDI2ICAgICAgIGFwdC1nZXQgdXBkYXRlICBcdTAwMjZcdTAwMjYgICAgICAgYXB0LWdldCB1cGdyYWRlIC15ICBcdTAwMjZcdTAwMjYgICAgICAgYXB0LWdldCBpbnN0YWxsIC15IC0tbm8taW5zdGFsbC1yZWNvbW1lbmRzICAgICAgICBmb250Y29uZmlnIGZvbnRzLWxpYmVyYXRpb24gbGlibnNzMyBsaWJmb250Y29uZmlnMSBjYS1jZXJ0aWZpY2F0ZXMgY3VybCBcdTAwMjZcdTAwMjYgICAgICAgYXB0LWdldCBjbGVhbiBcdTAwMjZcdTAwMjYgICAgICAgcm0gLXJmIC92YXIvbGliL2FwdC9saXN0cy8qIFx1MDAyNlx1MDAyNiBleGl0X2NvZGU9MCBcdTAwMjZcdTAwMjYgYnJlYWsgfHwgZXhpdF9jb2RlPSQ/IFx1MDAyNlx1MDAyNiBlY2hvIFwiYXB0LWdldCBlcnJvcjogcmV0cnkgJGl0ZXIgaW4gMTBzXCIgXHUwMDI2XHUwMDI2ICAgICAgIHNsZWVwIDEwOyAgICAgZG9uZTsgICAgIChleGl0ICRleGl0X2NvZGUpICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjQtMDItMjJUMTI6NTA6NTJaIiwiY3JlYXRlZF9ieSI6IlJVTiAvYmluL3NoIC1jIHNldCAtZSA7ICAgICBUSU5JX0JJTj1cIlwiIDsgICAgIGNhc2UgXCIkKGFyY2gpXCIgaW4gICAgICAgICBhYXJjaDY0KSAgICAgICAgICAgICBUSU5JX0JJTj0ndGluaS1hcm02NCcgOyAgICAgICAgICAgICA7OyAgICAgICAgIHg4Nl82NCkgICAgICAgICAgICAgVElOSV9CSU49J3RpbmktYW1kNjQnIDsgICAgICAgICAgICAgOzsgICAgICAgICAqKSBlY2hvIFx1MDAzZVx1MDAyNjIgXCJVbnN1cHBvcnRlZCBhcmNoaXRlY3R1cmUgJChhcmNoKVwiIDsgZXhpdCAxIDs7ICAgICBlc2FjIDsgICBUSU5JX1ZFUlNJT049J3YwLjE5LjAnIDsgICBjdXJsIC0tcmV0cnkgOCAtUyAtTCAtTyBcImh0dHBzOi8vZ2l0aHViLmNvbS9rcmFsbGluL3RpbmkvcmVsZWFzZXMvZG93bmxvYWQvJHtUSU5JX1ZFUlNJT059LyR7VElOSV9CSU59XCIgOyAgIGN1cmwgLS1yZXRyeSA4IC1TIC1MIC1PIFwiaHR0cHM6Ly9naXRodWIuY29tL2tyYWxsaW4vdGluaS9yZWxlYXNlcy9kb3dubG9hZC8ke1RJTklfVkVSU0lPTn0vJHtUSU5JX0JJTn0uc2hhMjU2c3VtXCIgOyAgIHNoYTI1NnN1bSAtYyBcIiR7VElOSV9CSU59LnNoYTI1NnN1bVwiIDsgICBybSBcIiR7VElOSV9CSU59LnNoYTI1NnN1bVwiIDsgICBtdiBcIiR7VElOSV9CSU59XCIgL2Jpbi90aW5pIDsgICBjaG1vZCAreCAvYmluL3RpbmkgIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyNC0wMi0yMlQxMjo1MDo1MloiLCJjcmVhdGVkX2J5IjoiUlVOIC9iaW4vc2ggLWMgbWtkaXIgL3Vzci9zaGFyZS9mb250cy9sb2NhbCAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTIyVDEyOjUwOjUyWiIsImNyZWF0ZWRfYnkiOiJSVU4gL2Jpbi9zaCAtYyBjdXJsIC0tcmV0cnkgOCAtUyAtTCAtbyAvdXNyL3NoYXJlL2ZvbnRzL2xvY2FsL05vdG9TYW5zQ0pLLVJlZ3VsYXIudHRjIGh0dHBzOi8vZ2l0aHViLmNvbS9nb29nbGVmb250cy9ub3RvLWNqay9yYXcvTm90b1NhbnNWMi4wMDEvTm90b1NhbnNDSkstUmVndWxhci50dGMgIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyNC0wMi0yMlQxMjo1MDo1MloiLCJjcmVhdGVkX2J5IjoiUlVOIC9iaW4vc2ggLWMgZWNobyBcIjVkY2QxYzMzNmNjOTM0NGNiNzdjMDNhMGNkODk4MmNhOGE3ZGM5N2Q2MjBmZDZjOWM0MzRlMDJkY2IxY2VlYjMgIC91c3Ivc2hhcmUvZm9udHMvbG9jYWwvTm90b1NhbnNDSkstUmVndWxhci50dGNcIiB8IHNoYTI1NnN1bSAtYyAtICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjQtMDItMjJUMTI6NTA6NTJaIiwiY3JlYXRlZF9ieSI6IlJVTiAvYmluL3NoIC1jIGZjLWNhY2hlIC12ICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjQtMDItMjJUMTI6NTA6NTJaIiwiY3JlYXRlZF9ieSI6IkNPUFkgL3Vzci9zaGFyZS9raWJhbmEgL3Vzci9zaGFyZS9raWJhbmEgIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyNC0wMi0yMlQxMjo1MDo1MloiLCJjcmVhdGVkX2J5IjoiV09SS0RJUiAvdXNyL3NoYXJlL2tpYmFuYSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyNC0wMi0yMlQxMjo1MDo1MloiLCJjcmVhdGVkX2J5IjoiUlVOIC9iaW4vc2ggLWMgbG4gLXMgL3Vzci9zaGFyZS9raWJhbmEgL29wdC9raWJhbmEgIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyNC0wMi0yMlQxMjo1MDo1MloiLCJjcmVhdGVkX2J5IjoiRU5WIEVMQVNUSUNfQ09OVEFJTkVSPXRydWUiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTIyVDEyOjUwOjUyWiIsImNyZWF0ZWRfYnkiOiJFTlYgUEFUSD0vdXNyL3NoYXJlL2tpYmFuYS9iaW46L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wMi0yMlQxMjo1MDo1MloiLCJjcmVhdGVkX2J5IjoiQ09QWSBjb25maWcva2liYW5hLnltbCAvdXNyL3NoYXJlL2tpYmFuYS9jb25maWcva2liYW5hLnltbCAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTIyVDEyOjUwOjUyWiIsImNyZWF0ZWRfYnkiOiJDT1BZIGJpbi9raWJhbmEtZG9ja2VyIC91c3IvbG9jYWwvYmluLyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTIyVDEyOjUwOjUyWiIsImNyZWF0ZWRfYnkiOiJSVU4gL2Jpbi9zaCAtYyBjaG1vZCBnK3dzIC91c3Ivc2hhcmUva2liYW5hIFx1MDAyNlx1MDAyNiAgICAgZmluZCAvdXNyL3NoYXJlL2tpYmFuYSAtZ2lkIDAgLWFuZCAtbm90IC1wZXJtIC9nK3cgLWV4ZWMgY2htb2QgZyt3IHt9IFxcOyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDI0LTAyLTIyVDEyOjUwOjUyWiIsImNyZWF0ZWRfYnkiOiJSVU4gL2Jpbi9zaCAtYyBmaW5kIC8gLXhkZXYgLXBlcm0gLTQwMDAgLWV4ZWMgY2htb2QgdS1zIHt9ICsgIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyNC0wMi0yMlQxMjo1MDo1MloiLCJjcmVhdGVkX2J5IjoiUlVOIC9iaW4vc2ggLWMgZ3JvdXBhZGQgLS1naWQgMTAwMCBraWJhbmEgXHUwMDI2XHUwMDI2ICAgICB1c2VyYWRkIC0tdWlkIDEwMDAgLS1naWQgMTAwMCAtRyAwICAgICAgIC0taG9tZS1kaXIgL3Vzci9zaGFyZS9raWJhbmEgLS1uby1jcmVhdGUtaG9tZSAgICAgICBraWJhbmEgIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyNC0wMi0yMlQxMjo1MDo1MloiLCJjcmVhdGVkX2J5IjoiTEFCRUwgb3JnLmxhYmVsLXNjaGVtYS5idWlsZC1kYXRlPTIwMjQtMDItMTlUMTI6MDY6MzQuMTE3WiBvcmcubGFiZWwtc2NoZW1hLmxpY2Vuc2U9RWxhc3RpYyBMaWNlbnNlIG9yZy5sYWJlbC1zY2hlbWEubmFtZT1LaWJhbmEgb3JnLmxhYmVsLXNjaGVtYS5zY2hlbWEtdmVyc2lvbj0xLjAgb3JnLmxhYmVsLXNjaGVtYS51cmw9aHR0cHM6Ly93d3cuZWxhc3RpYy5jby9wcm9kdWN0cy9raWJhbmEgb3JnLmxhYmVsLXNjaGVtYS51c2FnZT1odHRwczovL3d3dy5lbGFzdGljLmNvL2d1aWRlL2VuL2tpYmFuYS9yZWZlcmVuY2UvaW5kZXguaHRtbCBvcmcubGFiZWwtc2NoZW1hLnZjcy1yZWY9ZjViZDQ4OWM1ZmY5YzY3NmM0Zjg2MWM0MmRhNmVhOTlhZTM1MDgzMiBvcmcubGFiZWwtc2NoZW1hLnZjcy11cmw9aHR0cHM6Ly9naXRodWIuY29tL2VsYXN0aWMva2liYW5hIG9yZy5sYWJlbC1zY2hlbWEudmVuZG9yPUVsYXN0aWMgb3JnLmxhYmVsLXNjaGVtYS52ZXJzaW9uPTguMTIuMiBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuY3JlYXRlZD0yMDI0LTAyLTE5VDEyOjA2OjM0LjExN1ogb3JnLm9wZW5jb250YWluZXJzLmltYWdlLmRvY3VtZW50YXRpb249aHR0cHM6Ly93d3cuZWxhc3RpYy5jby9ndWlkZS9lbi9raWJhbmEvcmVmZXJlbmNlL2luZGV4Lmh0bWwgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLmxpY2Vuc2VzPUVsYXN0aWMgTGljZW5zZSBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UucmV2aXNpb249ZjViZDQ4OWM1ZmY5YzY3NmM0Zjg2MWM0MmRhNmVhOTlhZTM1MDgzMiBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2Uuc291cmNlPWh0dHBzOi8vZ2l0aHViLmNvbS9lbGFzdGljL2tpYmFuYSBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudGl0bGU9S2liYW5hIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS51cmw9aHR0cHM6Ly93d3cuZWxhc3RpYy5jby9wcm9kdWN0cy9raWJhbmEgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlbmRvcj1FbGFzdGljIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZXJzaW9uPTguMTIuMiIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDItMjJUMTI6NTA6NTJaIiwiY3JlYXRlZF9ieSI6IkVOVFJZUE9JTlQgW1wiL2Jpbi90aW5pXCIgXCItLVwiXSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDItMjJUMTI6NTA6NTJaIiwiY3JlYXRlZF9ieSI6IkNNRCBbXCIvdXNyL2xvY2FsL2Jpbi9raWJhbmEtZG9ja2VyXCJdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wMi0yMlQxMjo1MDo1MloiLCJjcmVhdGVkX2J5IjoiVVNFUiAxMDAwIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6OTU2Yzk5YjA3YTQxMWEyODZkMzBlNzEzMzhkMzA1NzE5NmQ3ZWRiZTcyZmU1ZjEzZjUxMDA4MDI5Y2MwZmZkZiIsInNoYTI1Njo3Zjk5NzllNzA4NmY2MzI5M2I2MjE0MjMyNWI1YTJkOWM5YzE1ZmNhODViM2Q5OWU5NDMwNzU0YzQ2ZDhkNTVjIiwic2hhMjU2OjBmYWIzOGUwOGY5ZDdjNGEzODVmZGVkODEwNDAwNjg3MjUxODQzMTdjYmI0MTM5ZWViZDAxMzE0ZDhlNmMyMDAiLCJzaGEyNTY6OGM2MzFiNGM5NGQxNzUyYjI2NGYwOWFmYTFiOGU3YTM2MGNlNjE2OTA1Yzk1NTEyOTNlNGM2MTE4MTEwOGMwOCIsInNoYTI1Njo2YWY5YjZkMzQyZWE1YmFlMmM4NjhkMmNiM2RmMDFhM2Y0OWM1NzEwNzRjOGU3NDk2ZTVkM2ZmNTU1NWE2OWQ0Iiwic2hhMjU2OjVmNzBiZjE4YTA4NjAwNzAxNmU5NDhiMDRhZWQzYjgyMTAzYTM2YmVhNDE3NTViNmNkZGZhZjEwYWNlM2M2ZWYiLCJzaGEyNTY6OGY0NDIxM2RjMzA3NTViZGRkMWE1NjViYzQyNmZhOWUxNjZmOWM0N2RkMWJiNWQ2Yjg0Yjc0NjNiZjA3ZWYzMyIsInNoYTI1Njo3OGY1MTkzNDc5OTQxMDI2Y2ZlNWY5MWQ5OTNjYTMzNGJiZTkyYjk3YjU3M2YwNmU5MGY2Y2NiMTU3MTIyNTZiIiwic2hhMjU2OjVmNzBiZjE4YTA4NjAwNzAxNmU5NDhiMDRhZWQzYjgyMTAzYTM2YmVhNDE3NTViNmNkZGZhZjEwYWNlM2M2ZWYiLCJzaGEyNTY6NjAzMmZmMmMwYzZjOTc2NTQxZjM0NmIyNDBjYjliNDk2OWMxZWYwNzAwMDI0ZDY4ODhmMzFjNWNhMGVjYTExOCIsInNoYTI1NjozYTgwOWIzMjFiZThhZmIwYzc3OWE1MjdiNjUzZGE2Nzc3ZDc4ZGUyNmJhYjUzMmZmODY2ZjIxZjAwNDdmMTgxIiwic2hhMjU2OmFmZTA4NDA5NDViY2Y4NjA4MDdmZDIwYTkwZGQ1YzExOTc3ZTgwZTYyY2IzNWQ4ZDY4NDA2YWNjNGFiZWE0NmMiLCJzaGEyNTY6NzA5MWJiY2M1YmY1ODA0ZjdhMmQ4NzA0NjViMTcwYTdjOTE3NWI4NTAwNDMwNjJkOTNhNGUyODlmYTkzZDU3ZCIsInNoYTI1NjoyODU5OTg3NDE2ZTY3MmQ2Mjg4ZGZmNzFlZDU3YTU5MzFkMzI5YWZkYWZiZjM5MjE1MGFhMjI1MDdjODNjYjUyIiwic2hhMjU2Ojg2MzI4OGI2NGI0NzE0ZDUxZDc4ZmM0ZTc5ZGI1MTAxYmQ3N2MxN2FiNGE0ZTBmMTczOTJiZmMwNTY1MDg4YmQiXX19",
+   "repoDigests": [
+    "kibana@sha256:a746e254aea8caa92f2251fd9952afe8a15c862615ede927b4299eb12a6de871"
+   ],
+   "architecture": "arm64",
+   "os": "linux",
+   "labels": {
+    "org.label-schema.build-date": "2024-02-19T12:06:34.117Z",
+    "org.label-schema.license": "Elastic License",
+    "org.label-schema.name": "Kibana",
+    "org.label-schema.schema-version": "1.0",
+    "org.label-schema.url": "https://www.elastic.co/products/kibana",
+    "org.label-schema.usage": "https://www.elastic.co/guide/en/kibana/reference/index.html",
+    "org.label-schema.vcs-ref": "f5bd489c5ff9c676c4f861c42da6ea99ae350832",
+    "org.label-schema.vcs-url": "https://github.com/elastic/kibana",
+    "org.label-schema.vendor": "Elastic",
+    "org.label-schema.version": "8.12.2",
+    "org.opencontainers.image.created": "2024-02-19T12:06:34.117Z",
+    "org.opencontainers.image.documentation": "https://www.elastic.co/guide/en/kibana/reference/index.html",
+    "org.opencontainers.image.licenses": "Elastic License",
+    "org.opencontainers.image.ref.name": "ubuntu",
+    "org.opencontainers.image.revision": "f5bd489c5ff9c676c4f861c42da6ea99ae350832",
+    "org.opencontainers.image.source": "https://github.com/elastic/kibana",
+    "org.opencontainers.image.title": "Kibana",
+    "org.opencontainers.image.url": "https://www.elastic.co/products/kibana",
+    "org.opencontainers.image.vendor": "Elastic",
+    "org.opencontainers.image.version": "8.12.2"
+   }
+  }
+ },
+ "distro": {
+  "name": "ubuntu",
+  "version": "20.04",
+  "idLike": [
+   "debian"
+  ]
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-03-05T01:25:08Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:0b045cc4fdd0e497911cdb0531583416c62f21691525f22fdf43180a4263d9f4",
+   "error": null
+  },
+  "timestamp": "2024-03-06T13:43:24.580114+01:00"
+ }
+}

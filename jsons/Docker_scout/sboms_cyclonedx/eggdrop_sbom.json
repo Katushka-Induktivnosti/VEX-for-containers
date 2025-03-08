@@ -1,0 +1,1792 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 11,
+  "metadata": {
+    "tools": [
+      {
+        "name": "docker-scout",
+        "version": "1.16.1"
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg-oci-eggdrop-sha256-4035c5598844741674c04c76c922d8a7af24752fbc6788e8e9e6fbf59dd1b1d6-repository-url-docker.io-tag-latest",
+      "type": "container",
+      "name": "eggdrop",
+      "version": "latest",
+      "purl": "pkg:oci/eggdrop@sha256:4035c5598844741674c04c76c922d8a7af24752fbc6788e8e9e6fbf59dd1b1d6?repository_url=docker.io\u0026tag=latest"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "package-pkg-apk-alpine-musl-utils-1.2.5-r1-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "musl-utils",
+      "version": "1.2.5-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/musl-utils@1.2.5-r1?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---sbin-ldconfig",
+          "type": "file",
+          "name": "/sbin/ldconfig"
+        },
+        {
+          "bom-ref": "File---usr-bin-ldd",
+          "type": "file",
+          "name": "/usr/bin/ldd"
+        },
+        {
+          "bom-ref": "File---usr-bin-getconf",
+          "type": "file",
+          "name": "/usr/bin/getconf"
+        },
+        {
+          "bom-ref": "File---usr-bin-getent",
+          "type": "file",
+          "name": "/usr/bin/getent"
+        },
+        {
+          "bom-ref": "File---usr-bin-iconv",
+          "type": "file",
+          "name": "/usr/bin/iconv"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-alpine-baselayout-data-3.6.5-r0-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "alpine-baselayout-data",
+      "version": "3.6.5-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/alpine-baselayout-data@3.6.5-r0?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---etc-modules",
+          "type": "file",
+          "name": "/etc/modules"
+        },
+        {
+          "bom-ref": "File---etc-shadow",
+          "type": "file",
+          "name": "/etc/shadow"
+        },
+        {
+          "bom-ref": "File---etc-fstab",
+          "type": "file",
+          "name": "/etc/fstab"
+        },
+        {
+          "bom-ref": "File---etc-services",
+          "type": "file",
+          "name": "/etc/services"
+        },
+        {
+          "bom-ref": "File---etc-sysctl.conf",
+          "type": "file",
+          "name": "/etc/sysctl.conf"
+        },
+        {
+          "bom-ref": "File---etc-shells",
+          "type": "file",
+          "name": "/etc/shells"
+        },
+        {
+          "bom-ref": "File---etc-protocols",
+          "type": "file",
+          "name": "/etc/protocols"
+        },
+        {
+          "bom-ref": "File---etc-inittab",
+          "type": "file",
+          "name": "/etc/inittab"
+        },
+        {
+          "bom-ref": "File---etc-nsswitch.conf",
+          "type": "file",
+          "name": "/etc/nsswitch.conf"
+        },
+        {
+          "bom-ref": "File---etc-hostname",
+          "type": "file",
+          "name": "/etc/hostname"
+        },
+        {
+          "bom-ref": "File---etc-group",
+          "type": "file",
+          "name": "/etc/group"
+        },
+        {
+          "bom-ref": "File---etc-passwd",
+          "type": "file",
+          "name": "/etc/passwd"
+        },
+        {
+          "bom-ref": "File---etc-hosts",
+          "type": "file",
+          "name": "/etc/hosts"
+        },
+        {
+          "bom-ref": "File---etc-profile",
+          "type": "file",
+          "name": "/etc/profile"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-readline-8.2.10-r0-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "readline",
+      "version": "8.2.10-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/readline@8.2.10-r0?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---usr-lib-libreadline.so.8.2",
+          "type": "file",
+          "name": "/usr/lib/libreadline.so.8.2"
+        },
+        {
+          "bom-ref": "File---etc-inputrc",
+          "type": "file",
+          "name": "/etc/inputrc"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-libncursesw-6.4-p20240420-r2-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "libncursesw",
+      "version": "6.4_p20240420-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "X11"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/libncursesw@6.4_p20240420-r2?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---usr-lib-libncursesw.so.6.4",
+          "type": "file",
+          "name": "/usr/lib/libncursesw.so.6.4"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-zlib-1.3.1-r1-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "zlib",
+      "version": "1.3.1-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/zlib@1.3.1-r1?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---lib-libz.so.1.3.1",
+          "type": "file",
+          "name": "/lib/libz.so.1.3.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-su-exec-0.2-r3-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "su-exec",
+      "version": "0.2-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/su-exec@0.2-r3?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---sbin-su-exec",
+          "type": "file",
+          "name": "/sbin/su-exec"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-libssl3-3.3.3-r0-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "libssl3",
+      "version": "3.3.3-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/libssl3@3.3.3-r0?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---lib-libssl.so.3",
+          "type": "file",
+          "name": "/lib/libssl.so.3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-ssl-client-1.36.1-r29-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Sören Tempel \\u003csoeren+alpine@soeren-tempel.net\\u003e"
+      },
+      "name": "ssl_client",
+      "version": "1.36.1-r29",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/ssl_client@1.36.1-r29?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---usr-bin-ssl_client",
+          "type": "file",
+          "name": "/usr/bin/ssl_client"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-bash-5.2.26-r0-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "bash",
+      "version": "5.2.26-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/bash@5.2.26-r0?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-tty",
+          "type": "file",
+          "name": "/usr/lib/bash/tty"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-mkfifo",
+          "type": "file",
+          "name": "/usr/lib/bash/mkfifo"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-tee",
+          "type": "file",
+          "name": "/usr/lib/bash/tee"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-fdflags",
+          "type": "file",
+          "name": "/usr/lib/bash/fdflags"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-finfo",
+          "type": "file",
+          "name": "/usr/lib/bash/finfo"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-dirname",
+          "type": "file",
+          "name": "/usr/lib/bash/dirname"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-mkdir",
+          "type": "file",
+          "name": "/usr/lib/bash/mkdir"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-truefalse",
+          "type": "file",
+          "name": "/usr/lib/bash/truefalse"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-pathchk",
+          "type": "file",
+          "name": "/usr/lib/bash/pathchk"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-push",
+          "type": "file",
+          "name": "/usr/lib/bash/push"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-setpgid",
+          "type": "file",
+          "name": "/usr/lib/bash/setpgid"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-print",
+          "type": "file",
+          "name": "/usr/lib/bash/print"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-rm",
+          "type": "file",
+          "name": "/usr/lib/bash/rm"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-sleep",
+          "type": "file",
+          "name": "/usr/lib/bash/sleep"
+        },
+        {
+          "bom-ref": "File---etc-profile.d-00-bashrc.sh",
+          "type": "file",
+          "name": "/etc/profile.d/00-bashrc.sh"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-ln",
+          "type": "file",
+          "name": "/usr/lib/bash/ln"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-getconf",
+          "type": "file",
+          "name": "/usr/lib/bash/getconf"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-seq",
+          "type": "file",
+          "name": "/usr/lib/bash/seq"
+        },
+        {
+          "bom-ref": "File---etc-bash-bashrc",
+          "type": "file",
+          "name": "/etc/bash/bashrc"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-rmdir",
+          "type": "file",
+          "name": "/usr/lib/bash/rmdir"
+        },
+        {
+          "bom-ref": "File---bin-bash",
+          "type": "file",
+          "name": "/bin/bash"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-accept",
+          "type": "file",
+          "name": "/usr/lib/bash/accept"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-printenv",
+          "type": "file",
+          "name": "/usr/lib/bash/printenv"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-mktemp",
+          "type": "file",
+          "name": "/usr/lib/bash/mktemp"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-cut",
+          "type": "file",
+          "name": "/usr/lib/bash/cut"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-realpath",
+          "type": "file",
+          "name": "/usr/lib/bash/realpath"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-uname",
+          "type": "file",
+          "name": "/usr/lib/bash/uname"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-unlink",
+          "type": "file",
+          "name": "/usr/lib/bash/unlink"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-sync",
+          "type": "file",
+          "name": "/usr/lib/bash/sync"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-mypid",
+          "type": "file",
+          "name": "/usr/lib/bash/mypid"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-dsv",
+          "type": "file",
+          "name": "/usr/lib/bash/dsv"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-csv",
+          "type": "file",
+          "name": "/usr/lib/bash/csv"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-id",
+          "type": "file",
+          "name": "/usr/lib/bash/id"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-strftime",
+          "type": "file",
+          "name": "/usr/lib/bash/strftime"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-stat",
+          "type": "file",
+          "name": "/usr/lib/bash/stat"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-head",
+          "type": "file",
+          "name": "/usr/lib/bash/head"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-whoami",
+          "type": "file",
+          "name": "/usr/lib/bash/whoami"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-basename",
+          "type": "file",
+          "name": "/usr/lib/bash/basename"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-logname",
+          "type": "file",
+          "name": "/usr/lib/bash/logname"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-apk-tools-2.14.4-r1-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "apk-tools",
+      "version": "2.14.4-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/apk-tools@2.14.4-r1?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---lib-libapk.so.2.14.0",
+          "type": "file",
+          "name": "/lib/libapk.so.2.14.0"
+        },
+        {
+          "bom-ref": "File---sbin-apk",
+          "type": "file",
+          "name": "/sbin/apk"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-alpine-keys-2.4-r1-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "alpine-keys",
+      "version": "2.4-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/alpine-keys@2.4-r1?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub"
+        },
+        {
+          "bom-ref": "File---etc-apk-keys-alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub",
+          "type": "file",
+          "name": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub"
+        },
+        {
+          "bom-ref": "File---etc-apk-keys-alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub",
+          "type": "file",
+          "name": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub"
+        },
+        {
+          "bom-ref": "File---etc-apk-keys-alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub",
+          "type": "file",
+          "name": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub"
+        },
+        {
+          "bom-ref": "File---etc-apk-keys-alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub",
+          "type": "file",
+          "name": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub"
+        },
+        {
+          "bom-ref": "File---etc-apk-keys-alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub",
+          "type": "file",
+          "name": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub"
+        },
+        {
+          "bom-ref": "File---usr-share-apk-keys-alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub",
+          "type": "file",
+          "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-musl-1.2.5-r1-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "musl",
+      "version": "1.2.5-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/musl@1.2.5-r1?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---usr-bin-getconf",
+          "type": "file",
+          "name": "/usr/bin/getconf"
+        },
+        {
+          "bom-ref": "File---usr-bin-getent",
+          "type": "file",
+          "name": "/usr/bin/getent"
+        },
+        {
+          "bom-ref": "File---lib-ld-musl-aarch64.so.1",
+          "type": "file",
+          "name": "/lib/ld-musl-aarch64.so.1"
+        },
+        {
+          "bom-ref": "File---usr-bin-iconv",
+          "type": "file",
+          "name": "/usr/bin/iconv"
+        },
+        {
+          "bom-ref": "File---sbin-ldconfig",
+          "type": "file",
+          "name": "/sbin/ldconfig"
+        },
+        {
+          "bom-ref": "File---usr-bin-ldd",
+          "type": "file",
+          "name": "/usr/bin/ldd"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-ncurses-terminfo-base-6.4-p20240420-r2-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "ncurses-terminfo-base",
+      "version": "6.4_p20240420-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "X11"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/ncurses-terminfo-base@6.4_p20240420-r2?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-v-vt200",
+          "type": "file",
+          "name": "/etc/terminfo/v/vt200"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-st-direct",
+          "type": "file",
+          "name": "/etc/terminfo/s/st-direct"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-k-konsole-256color",
+          "type": "file",
+          "name": "/etc/terminfo/k/konsole-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-v-vt52",
+          "type": "file",
+          "name": "/etc/terminfo/v/vt52"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-k-konsole-linux",
+          "type": "file",
+          "name": "/etc/terminfo/k/konsole-linux"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-st-16color",
+          "type": "file",
+          "name": "/etc/terminfo/s/st-16color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-t-tmux-256color",
+          "type": "file",
+          "name": "/etc/terminfo/t/tmux-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-p-putty",
+          "type": "file",
+          "name": "/etc/terminfo/p/putty"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-t-terminology",
+          "type": "file",
+          "name": "/etc/terminfo/t/terminology"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-st-0.7",
+          "type": "file",
+          "name": "/etc/terminfo/s/st-0.7"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-x-xterm",
+          "type": "file",
+          "name": "/etc/terminfo/x/xterm"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-v-vte-256color",
+          "type": "file",
+          "name": "/etc/terminfo/v/vte-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-t-terminator",
+          "type": "file",
+          "name": "/etc/terminfo/t/terminator"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-v-vt102",
+          "type": "file",
+          "name": "/etc/terminfo/v/vt102"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-p-putty-256color",
+          "type": "file",
+          "name": "/etc/terminfo/p/putty-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-d-dumb",
+          "type": "file",
+          "name": "/etc/terminfo/d/dumb"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-a-alacritty",
+          "type": "file",
+          "name": "/etc/terminfo/a/alacritty"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-v-vt220",
+          "type": "file",
+          "name": "/etc/terminfo/v/vt220"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-st-256color",
+          "type": "file",
+          "name": "/etc/terminfo/s/st-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-screen",
+          "type": "file",
+          "name": "/etc/terminfo/s/screen"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-st-0.6",
+          "type": "file",
+          "name": "/etc/terminfo/s/st-0.6"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-t-terminology-0.6.1",
+          "type": "file",
+          "name": "/etc/terminfo/t/terminology-0.6.1"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-x-xterm-color",
+          "type": "file",
+          "name": "/etc/terminfo/x/xterm-color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-sun",
+          "type": "file",
+          "name": "/etc/terminfo/s/sun"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-a-ansi",
+          "type": "file",
+          "name": "/etc/terminfo/a/ansi"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-t-terminology-1.8.1",
+          "type": "file",
+          "name": "/etc/terminfo/t/terminology-1.8.1"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-screen-256color",
+          "type": "file",
+          "name": "/etc/terminfo/s/screen-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-t-terminology-1.0.0",
+          "type": "file",
+          "name": "/etc/terminfo/t/terminology-1.0.0"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-k-konsole",
+          "type": "file",
+          "name": "/etc/terminfo/k/konsole"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-v-vte",
+          "type": "file",
+          "name": "/etc/terminfo/v/vte"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-r-rxvt",
+          "type": "file",
+          "name": "/etc/terminfo/r/rxvt"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-t-tmux",
+          "type": "file",
+          "name": "/etc/terminfo/t/tmux"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-r-rxvt-256color",
+          "type": "file",
+          "name": "/etc/terminfo/r/rxvt-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-st-0.8",
+          "type": "file",
+          "name": "/etc/terminfo/s/st-0.8"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-l-linux",
+          "type": "file",
+          "name": "/etc/terminfo/l/linux"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-g-gnome-256color",
+          "type": "file",
+          "name": "/etc/terminfo/g/gnome-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-x-xterm-256color",
+          "type": "file",
+          "name": "/etc/terminfo/x/xterm-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-v-vt100",
+          "type": "file",
+          "name": "/etc/terminfo/v/vt100"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-g-gnome",
+          "type": "file",
+          "name": "/etc/terminfo/g/gnome"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-x-xterm-xfree86",
+          "type": "file",
+          "name": "/etc/terminfo/x/xterm-xfree86"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-ncurses-6.4-p20240420-r2-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "ncurses",
+      "version": "6.4_p20240420-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "X11"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/ncurses@6.4_p20240420-r2?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-d-dumb",
+          "type": "file",
+          "name": "/etc/terminfo/d/dumb"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-r-rxvt",
+          "type": "file",
+          "name": "/etc/terminfo/r/rxvt"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-t-tmux",
+          "type": "file",
+          "name": "/etc/terminfo/t/tmux"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-x-xterm-256color",
+          "type": "file",
+          "name": "/etc/terminfo/x/xterm-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-r-rxvt-256color",
+          "type": "file",
+          "name": "/etc/terminfo/r/rxvt-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-t-terminology-1.0.0",
+          "type": "file",
+          "name": "/etc/terminfo/t/terminology-1.0.0"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-g-gnome",
+          "type": "file",
+          "name": "/etc/terminfo/g/gnome"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-k-konsole",
+          "type": "file",
+          "name": "/etc/terminfo/k/konsole"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-st-256color",
+          "type": "file",
+          "name": "/etc/terminfo/s/st-256color"
+        },
+        {
+          "bom-ref": "File---usr-lib-libncursesw.so.6.4",
+          "type": "file",
+          "name": "/usr/lib/libncursesw.so.6.4"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-st-0.7",
+          "type": "file",
+          "name": "/etc/terminfo/s/st-0.7"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-t-terminology-1.8.1",
+          "type": "file",
+          "name": "/etc/terminfo/t/terminology-1.8.1"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-p-putty",
+          "type": "file",
+          "name": "/etc/terminfo/p/putty"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-t-terminology",
+          "type": "file",
+          "name": "/etc/terminfo/t/terminology"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-g-gnome-256color",
+          "type": "file",
+          "name": "/etc/terminfo/g/gnome-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-t-terminology-0.6.1",
+          "type": "file",
+          "name": "/etc/terminfo/t/terminology-0.6.1"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-k-konsole-256color",
+          "type": "file",
+          "name": "/etc/terminfo/k/konsole-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-p-putty-256color",
+          "type": "file",
+          "name": "/etc/terminfo/p/putty-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-v-vte-256color",
+          "type": "file",
+          "name": "/etc/terminfo/v/vte-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-k-konsole-linux",
+          "type": "file",
+          "name": "/etc/terminfo/k/konsole-linux"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-t-tmux-256color",
+          "type": "file",
+          "name": "/etc/terminfo/t/tmux-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-st-direct",
+          "type": "file",
+          "name": "/etc/terminfo/s/st-direct"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-sun",
+          "type": "file",
+          "name": "/etc/terminfo/s/sun"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-a-alacritty",
+          "type": "file",
+          "name": "/etc/terminfo/a/alacritty"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-v-vt200",
+          "type": "file",
+          "name": "/etc/terminfo/v/vt200"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-x-xterm-xfree86",
+          "type": "file",
+          "name": "/etc/terminfo/x/xterm-xfree86"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-screen",
+          "type": "file",
+          "name": "/etc/terminfo/s/screen"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-v-vt52",
+          "type": "file",
+          "name": "/etc/terminfo/v/vt52"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-v-vt100",
+          "type": "file",
+          "name": "/etc/terminfo/v/vt100"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-v-vt220",
+          "type": "file",
+          "name": "/etc/terminfo/v/vt220"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-v-vt102",
+          "type": "file",
+          "name": "/etc/terminfo/v/vt102"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-st-16color",
+          "type": "file",
+          "name": "/etc/terminfo/s/st-16color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-t-terminator",
+          "type": "file",
+          "name": "/etc/terminfo/t/terminator"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-screen-256color",
+          "type": "file",
+          "name": "/etc/terminfo/s/screen-256color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-l-linux",
+          "type": "file",
+          "name": "/etc/terminfo/l/linux"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-x-xterm-color",
+          "type": "file",
+          "name": "/etc/terminfo/x/xterm-color"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-st-0.8",
+          "type": "file",
+          "name": "/etc/terminfo/s/st-0.8"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-v-vte",
+          "type": "file",
+          "name": "/etc/terminfo/v/vte"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-a-ansi",
+          "type": "file",
+          "name": "/etc/terminfo/a/ansi"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-x-xterm",
+          "type": "file",
+          "name": "/etc/terminfo/x/xterm"
+        },
+        {
+          "bom-ref": "File---etc-terminfo-s-st-0.6",
+          "type": "file",
+          "name": "/etc/terminfo/s/st-0.6"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-busybox-binsh-1.36.1-r29-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Sören Tempel \\u003csoeren+alpine@soeren-tempel.net\\u003e"
+      },
+      "name": "busybox-binsh",
+      "version": "1.36.1-r29",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r29?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---bin-busybox",
+          "type": "file",
+          "name": "/bin/busybox"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-openssl-3.3.3-r0-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "openssl",
+      "version": "3.3.3-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/openssl@3.3.3-r0?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-loader_attic.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/loader_attic.so"
+        },
+        {
+          "bom-ref": "File---lib-libcrypto.so.3",
+          "type": "file",
+          "name": "/lib/libcrypto.so.3"
+        },
+        {
+          "bom-ref": "File---etc-ssl-ct_log_list.cnf.dist",
+          "type": "file",
+          "name": "/etc/ssl/ct_log_list.cnf.dist"
+        },
+        {
+          "bom-ref": "File---usr-lib-ossl-modules-legacy.so",
+          "type": "file",
+          "name": "/usr/lib/ossl-modules/legacy.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-capi.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/capi.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-padlock.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/padlock.so"
+        },
+        {
+          "bom-ref": "File---lib-libssl.so.3",
+          "type": "file",
+          "name": "/lib/libssl.so.3"
+        },
+        {
+          "bom-ref": "File---usr-bin-openssl",
+          "type": "file",
+          "name": "/usr/bin/openssl"
+        },
+        {
+          "bom-ref": "File---etc-ssl-ct_log_list.cnf",
+          "type": "file",
+          "name": "/etc/ssl/ct_log_list.cnf"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-afalg.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/afalg.so"
+        },
+        {
+          "bom-ref": "File---etc-ssl-openssl.cnf.dist",
+          "type": "file",
+          "name": "/etc/ssl/openssl.cnf.dist"
+        },
+        {
+          "bom-ref": "File---etc-ssl-openssl.cnf",
+          "type": "file",
+          "name": "/etc/ssl/openssl.cnf"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-scanelf-1.3.7-r2-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "scanelf",
+      "version": "1.3.7-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/scanelf@1.3.7-r2?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---usr-bin-scanelf",
+          "type": "file",
+          "name": "/usr/bin/scanelf"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-alpine-baselayout-3.6.5-r0-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "alpine-baselayout",
+      "version": "3.6.5-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/alpine-baselayout@3.6.5-r0?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---etc-nsswitch.conf",
+          "type": "file",
+          "name": "/etc/nsswitch.conf"
+        },
+        {
+          "bom-ref": "File---etc-hostname",
+          "type": "file",
+          "name": "/etc/hostname"
+        },
+        {
+          "bom-ref": "File---etc-services",
+          "type": "file",
+          "name": "/etc/services"
+        },
+        {
+          "bom-ref": "File---etc-profile.d-20locale.sh",
+          "type": "file",
+          "name": "/etc/profile.d/20locale.sh"
+        },
+        {
+          "bom-ref": "File---etc-modprobe.d-kms.conf",
+          "type": "file",
+          "name": "/etc/modprobe.d/kms.conf"
+        },
+        {
+          "bom-ref": "File---etc-motd",
+          "type": "file",
+          "name": "/etc/motd"
+        },
+        {
+          "bom-ref": "File---etc-modprobe.d-aliases.conf",
+          "type": "file",
+          "name": "/etc/modprobe.d/aliases.conf"
+        },
+        {
+          "bom-ref": "File---etc-modprobe.d-i386.conf",
+          "type": "file",
+          "name": "/etc/modprobe.d/i386.conf"
+        },
+        {
+          "bom-ref": "File---etc-protocols",
+          "type": "file",
+          "name": "/etc/protocols"
+        },
+        {
+          "bom-ref": "File---etc-shadow",
+          "type": "file",
+          "name": "/etc/shadow"
+        },
+        {
+          "bom-ref": "File---lib-sysctl.d-00-alpine.conf",
+          "type": "file",
+          "name": "/lib/sysctl.d/00-alpine.conf"
+        },
+        {
+          "bom-ref": "File---etc-profile.d-README",
+          "type": "file",
+          "name": "/etc/profile.d/README"
+        },
+        {
+          "bom-ref": "File---etc-inittab",
+          "type": "file",
+          "name": "/etc/inittab"
+        },
+        {
+          "bom-ref": "File---etc-group",
+          "type": "file",
+          "name": "/etc/group"
+        },
+        {
+          "bom-ref": "File---etc-passwd",
+          "type": "file",
+          "name": "/etc/passwd"
+        },
+        {
+          "bom-ref": "File---etc-modprobe.d-blacklist.conf",
+          "type": "file",
+          "name": "/etc/modprobe.d/blacklist.conf"
+        },
+        {
+          "bom-ref": "File---etc-crontabs-root",
+          "type": "file",
+          "name": "/etc/crontabs/root"
+        },
+        {
+          "bom-ref": "File---etc-profile.d-color_prompt.sh.disabled",
+          "type": "file",
+          "name": "/etc/profile.d/color_prompt.sh.disabled"
+        },
+        {
+          "bom-ref": "File---etc-sysctl.conf",
+          "type": "file",
+          "name": "/etc/sysctl.conf"
+        },
+        {
+          "bom-ref": "File---etc-modules",
+          "type": "file",
+          "name": "/etc/modules"
+        },
+        {
+          "bom-ref": "File---etc-hosts",
+          "type": "file",
+          "name": "/etc/hosts"
+        },
+        {
+          "bom-ref": "File---etc-profile",
+          "type": "file",
+          "name": "/etc/profile"
+        },
+        {
+          "bom-ref": "File---etc-shells",
+          "type": "file",
+          "name": "/etc/shells"
+        },
+        {
+          "bom-ref": "File---etc-fstab",
+          "type": "file",
+          "name": "/etc/fstab"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-ca-certificates-20241121-r1-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "ca-certificates",
+      "version": "20241121-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/ca-certificates@20241121-r1?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-ca-certificates.crt",
+          "type": "file",
+          "name": "/etc/ssl/certs/ca-certificates.crt"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-pax-utils-1.3.7-r2-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "pax-utils",
+      "version": "1.3.7-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/pax-utils@1.3.7-r2?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---usr-bin-scanelf",
+          "type": "file",
+          "name": "/usr/bin/scanelf"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-generic-eggdrop-1.10.0",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "eggdrop",
+      "version": "1.10.0",
+      "purl": "pkg:generic/eggdrop@1.10.0",
+      "components": [
+        {
+          "bom-ref": "File---eggdrop-1.10.0-eggdrop",
+          "type": "file",
+          "name": "/eggdrop-1.10.0/eggdrop"
+        },
+        {
+          "bom-ref": "File---home-eggdrop-eggdrop-eggdrop-1.10.0",
+          "type": "file",
+          "name": "/home/eggdrop/eggdrop/eggdrop-1.10.0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-busybox-1.36.1-r29-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Sören Tempel \\u003csoeren+alpine@soeren-tempel.net\\u003e"
+      },
+      "name": "busybox",
+      "version": "1.36.1-r29",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/busybox@1.36.1-r29?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---etc-logrotate.d-acpid",
+          "type": "file",
+          "name": "/etc/logrotate.d/acpid"
+        },
+        {
+          "bom-ref": "File---usr-bin-ssl_client",
+          "type": "file",
+          "name": "/usr/bin/ssl_client"
+        },
+        {
+          "bom-ref": "File---bin-busybox",
+          "type": "file",
+          "name": "/bin/busybox"
+        },
+        {
+          "bom-ref": "File---etc-securetty",
+          "type": "file",
+          "name": "/etc/securetty"
+        },
+        {
+          "bom-ref": "File---usr-share-udhcpc-default.script",
+          "type": "file",
+          "name": "/usr/share/udhcpc/default.script"
+        },
+        {
+          "bom-ref": "File---etc-udhcpc-udhcpc.conf",
+          "type": "file",
+          "name": "/etc/udhcpc/udhcpc.conf"
+        },
+        {
+          "bom-ref": "File---etc-busybox-paths.d-busybox",
+          "type": "file",
+          "name": "/etc/busybox-paths.d/busybox"
+        },
+        {
+          "bom-ref": "File---etc-network-if-up.d-dad",
+          "type": "file",
+          "name": "/etc/network/if-up.d/dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-libcrypto3-3.3.3-r0-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "libcrypto3",
+      "version": "3.3.3-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/libcrypto3@3.3.3-r0?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-loader_attic.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/loader_attic.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-afalg.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/afalg.so"
+        },
+        {
+          "bom-ref": "File---lib-libcrypto.so.3",
+          "type": "file",
+          "name": "/lib/libcrypto.so.3"
+        },
+        {
+          "bom-ref": "File---etc-ssl-openssl.cnf.dist",
+          "type": "file",
+          "name": "/etc/ssl/openssl.cnf.dist"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-padlock.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/padlock.so"
+        },
+        {
+          "bom-ref": "File---etc-ssl-openssl.cnf",
+          "type": "file",
+          "name": "/etc/ssl/openssl.cnf"
+        },
+        {
+          "bom-ref": "File---etc-ssl-ct_log_list.cnf",
+          "type": "file",
+          "name": "/etc/ssl/ct_log_list.cnf"
+        },
+        {
+          "bom-ref": "File---etc-ssl-ct_log_list.cnf.dist",
+          "type": "file",
+          "name": "/etc/ssl/ct_log_list.cnf.dist"
+        },
+        {
+          "bom-ref": "File---usr-lib-ossl-modules-legacy.so",
+          "type": "file",
+          "name": "/usr/lib/ossl-modules/legacy.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-capi.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/capi.so"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-apk-alpine-ca-certificates-bundle-20241121-r1-os-name-alpine-os-version-3.20",
+      "type": "application",
+      "supplier": {
+        "name": "Natanael Copa \\u003cncopa@alpinelinux.org\\u003e"
+      },
+      "name": "ca-certificates-bundle",
+      "version": "20241121-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:apk/alpine/ca-certificates-bundle@20241121-r1?os_name=alpine\u0026os_version=3.20",
+      "components": [
+        {
+          "bom-ref": "File---lib-apk-db-installed",
+          "type": "file",
+          "name": "/lib/apk/db/installed"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-ca-certificates.crt",
+          "type": "file",
+          "name": "/etc/ssl/certs/ca-certificates.crt"
+        }
+      ]
+    }
+  ]
+}

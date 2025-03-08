@@ -1,0 +1,21 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/grype/sboms/sl_sbom.json",
+  "ArtifactType": "cyclonedx",
+  "Metadata": {
+    "OS": {
+      "Family": "scientific",
+      "Name": "7.9"
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  }
+}

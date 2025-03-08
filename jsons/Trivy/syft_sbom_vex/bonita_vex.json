@@ -1,0 +1,1129 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/grype/sboms/bonita_sbom.json",
+  "ArtifactType": "cyclonedx",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.18.6"
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "jsons/grype/sboms/bonita_sbom.json (alpine 3.18.6)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2021-40633",
+          "PkgName": "giflib",
+          "InstalledVersion": "5.2.1-r4",
+          "FixedVersion": "5.2.2-r0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-40633",
+          "PkgRef": "pkg:apk/alpine/giflib@5.2.1-r4?arch=aarch64\u0026distro=alpine-3.18.6\u0026package-id=d4ab19cbd58d4bf1",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "A memory leak (out-of-memory) in gif2rgb in util/gif2rgb.c in giflib 5 ...",
+          "Description": "A memory leak (out-of-memory) in gif2rgb in util/gif2rgb.c in giflib 5.1.4 allows remote attackers trigger an out of memory exception or denial of service via a gif format file.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-401"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 5.1,
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-40633",
+            "https://sourceforge.net/p/giflib/bugs/157/",
+            "https://www.cve.org/CVERecord?id=CVE-2021-40633"
+          ],
+          "PublishedDate": "2022-06-14T11:15:10.47Z",
+          "LastModifiedDate": "2022-06-23T14:20:26.143Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-48161",
+          "PkgName": "giflib",
+          "InstalledVersion": "5.2.1-r4",
+          "FixedVersion": "5.2.2-r0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-48161",
+          "PkgRef": "pkg:apk/alpine/giflib@5.2.1-r4?arch=aarch64\u0026distro=alpine-3.18.6\u0026package-id=d4ab19cbd58d4bf1",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "giflib: Heap-Buffer Overflow during Image Saving in DumpScreen2RGB Function",
+          "Description": "Buffer Overflow vulnerability in GifLib Project GifLib v.5.2.1 allows a local attacker to obtain sensitive information via the DumpSCreen2RGB function in gif2rgb.c",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-48161",
+            "https://github.com/tacetool/TACE#cve-2023-48161",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-48161",
+            "https://sourceforge.net/p/giflib/bugs/167/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-48161"
+          ],
+          "PublishedDate": "2023-11-22T06:15:43.123Z",
+          "LastModifiedDate": "2023-11-29T18:48:53.683Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-39742",
+          "PkgName": "giflib",
+          "InstalledVersion": "5.2.1-r4",
+          "FixedVersion": "5.2.2-r0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-39742",
+          "PkgRef": "pkg:apk/alpine/giflib@5.2.1-r4?arch=aarch64\u0026distro=alpine-3.18.6\u0026package-id=d4ab19cbd58d4bf1",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "giflib: segfault via getarg.c",
+          "Description": "giflib v5.2.1 was discovered to contain a segmentation fault via the component getarg.c.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-120"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 2.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-39742",
+            "https://gist.github.com/huanglei3/ec9090096aa92445cf0a8baa8e929084",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/O4RLSFGPBPR3FMIUJCWPGVIYIU35YGQX/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/OPNBOB65TEA4ZEPLVENI26BY4LEX7TEF/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/T5WO6WL2TCGO6T4VKGACDIVSZI74WJAU/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-39742",
+            "https://sourceforge.net/p/giflib/bugs/166/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-39742"
+          ],
+          "PublishedDate": "2023-08-25T14:15:09.763Z",
+          "LastModifiedDate": "2023-11-07T04:17:37.49Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28834",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.8.3-r0",
+          "FixedVersion": "3.8.4-r0",
+          "Status": "fixed",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28834",
+          "PkgRef": "pkg:apk/alpine/gnutls@3.8.3-r0?arch=aarch64\u0026distro=alpine-3.18.6\u0026package-id=ea51b5d570ba131a",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "gnutls: vulnerable to Minerva side-channel information leak",
+          "Description": "A flaw was found in GnuTLS. The Minerva attack is a cryptographic vulnerability that exploits deterministic behavior in systems like GnuTLS, leading to side-channel leaks. In specific scenarios, such as when using the GNUTLS_PRIVKEY_FLAG_REPRODUCIBLE flag, it can result in a noticeable step in nonce size from 513 to 512 bits, exposing a potential timing side-channel.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1784",
+            "https://access.redhat.com/errata/RHSA-2024:1879",
+            "https://access.redhat.com/security/cve/CVE-2024-28834",
+            "https://bugzilla.redhat.com/2269228",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2269228",
+            "https://errata.almalinux.org/8/ALSA-2024-1784.html",
+            "https://linux.oracle.com/cve/CVE-2024-28834.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1879.html",
+            "https://lists.gnupg.org/pipermail/gnutls-help/2024-March/004845.html",
+            "https://minerva.crocs.fi.muni.cz/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28834",
+            "https://people.redhat.com/~hkario/marvin/",
+            "https://ubuntu.com/security/notices/USN-6733-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28834",
+            "https://www.gnutls.org/security-new.html#GNUTLS-SA-2023-12-04"
+          ],
+          "PublishedDate": "2024-03-21T14:15:07.547Z",
+          "LastModifiedDate": "2024-04-18T05:15:48.167Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28835",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.8.3-r0",
+          "FixedVersion": "3.8.4-r0",
+          "Status": "fixed",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28835",
+          "PkgRef": "pkg:apk/alpine/gnutls@3.8.3-r0?arch=aarch64\u0026distro=alpine-3.18.6\u0026package-id=ea51b5d570ba131a",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "gnutls: potential crash during chain building/verification",
+          "Description": "A flaw has been discovered in GnuTLS where an application crash can be induced when attempting to verify a specially crafted .pem bundle using the \"certtool --verify-chain\" command.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-248"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1879",
+            "https://access.redhat.com/security/cve/CVE-2024-28835",
+            "https://bugzilla.redhat.com/2269084",
+            "https://bugzilla.redhat.com/2269228",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2269084",
+            "https://errata.almalinux.org/9/ALSA-2024-1879.html",
+            "https://linux.oracle.com/cve/CVE-2024-28835.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1879.html",
+            "https://lists.gnupg.org/pipermail/gnutls-help/2024-March/004845.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28835",
+            "https://ubuntu.com/security/notices/USN-6733-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28835",
+            "https://www.gnutls.org/security-new.html#GNUTLS-SA-2024-01-23"
+          ],
+          "PublishedDate": "2024-03-21T06:15:45.113Z",
+          "LastModifiedDate": "2024-04-18T05:15:48.263Z"
+        }
+      ]
+    },
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-6378",
+          "PkgName": "ch.qos.logback:logback-classic",
+          "InstalledVersion": "1.2.12",
+          "FixedVersion": "1.3.12, 1.4.12, 1.2.13",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6378",
+          "PkgRef": "pkg:maven/ch.qos.logback/logback-classic@1.2.12?package-id=df6fa86ebea88fba",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "logback: serialization vulnerability in logback receiver",
+          "Description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.11 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+              "V3Score": 7.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6378",
+            "https://github.com/qos-ch/logback",
+            "https://github.com/qos-ch/logback/commit/9c782b45be4abdafb7e17481e24e7354c2acd1eb",
+            "https://github.com/qos-ch/logback/commit/b8eac23a9de9e05fb6d51160b3f46acd91af9731",
+            "https://github.com/qos-ch/logback/commit/bb095154be011267b64e37a1d401546e7cc2b7c3",
+            "https://github.com/qos-ch/logback/issues/745#issuecomment-1836227158",
+            "https://logback.qos.ch/manual/receivers.html",
+            "https://logback.qos.ch/news.html#1.2.13",
+            "https://logback.qos.ch/news.html#1.3.12",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6378",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6378"
+          ],
+          "PublishedDate": "2023-11-29T12:15:07.543Z",
+          "LastModifiedDate": "2023-12-05T21:00:10.557Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6378",
+          "PkgName": "ch.qos.logback:logback-core",
+          "InstalledVersion": "1.2.12",
+          "FixedVersion": "1.3.12, 1.4.12, 1.2.13",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6378",
+          "PkgRef": "pkg:maven/ch.qos.logback/logback-core@1.2.12?package-id=950c613be18536a3",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "logback: serialization vulnerability in logback receiver",
+          "Description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.11 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+              "V3Score": 7.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6378",
+            "https://github.com/qos-ch/logback",
+            "https://github.com/qos-ch/logback/commit/9c782b45be4abdafb7e17481e24e7354c2acd1eb",
+            "https://github.com/qos-ch/logback/commit/b8eac23a9de9e05fb6d51160b3f46acd91af9731",
+            "https://github.com/qos-ch/logback/commit/bb095154be011267b64e37a1d401546e7cc2b7c3",
+            "https://github.com/qos-ch/logback/issues/745#issuecomment-1836227158",
+            "https://logback.qos.ch/manual/receivers.html",
+            "https://logback.qos.ch/news.html#1.2.13",
+            "https://logback.qos.ch/news.html#1.3.12",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6378",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6378"
+          ],
+          "PublishedDate": "2023-11-29T12:15:07.543Z",
+          "LastModifiedDate": "2023-12-05T21:00:10.557Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6481",
+          "PkgName": "ch.qos.logback:logback-core",
+          "InstalledVersion": "1.2.12",
+          "FixedVersion": "1.4.14, 1.3.14, 1.2.13",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6481",
+          "PkgRef": "pkg:maven/ch.qos.logback/logback-core@1.2.12?package-id=950c613be18536a3",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "logback: A serialization vulnerability in logback receiver",
+          "Description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.13, 1.3.13 and 1.2.12 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
+          "Severity": "HIGH",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+              "V3Score": 7.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6481",
+            "https://github.com/qos-ch/logback",
+            "https://github.com/qos-ch/logback/commit/7018a3609c7bcc9dc7bf5903509901a986e5f578",
+            "https://github.com/qos-ch/logback/commit/c612b2fa3caf6eef3c75f1cd5859438451d0fd6f",
+            "https://logback.qos.ch/news.html#1.3.12",
+            "https://logback.qos.ch/news.html#1.3.14",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6481",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6481"
+          ],
+          "PublishedDate": "2023-12-04T09:15:37.25Z",
+          "LastModifiedDate": "2023-12-07T19:57:46.02Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42392",
+          "PkgName": "com.h2database:h2",
+          "InstalledVersion": "1.4.199",
+          "FixedVersion": "2.0.206",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42392",
+          "PkgRef": "pkg:maven/com.h2database/h2@1.4.199?package-id=4f9ed2d888ad2899",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "h2: Remote Code Execution in Console",
+          "Description": "The org.h2.util.JdbcUtils.getConnection method of the H2 database takes as parameters the class name of the driver and URL of the database. An attacker may pass a JNDI driver name and a URL leading to a LDAP or RMI servers, causing remote code execution. This can be exploited through various attack vectors, most notably through the H2 Console which leads to unauthenticated remote code execution.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 10,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-42392",
+            "https://github.com/h2database/h2database",
+            "https://github.com/h2database/h2database/releases/tag/version-2.0.206",
+            "https://github.com/h2database/h2database/security/advisories/GHSA-h376-j262-vhq6",
+            "https://jfrog.com/blog/the-jndi-strikes-back-unauthenticated-rce-in-h2-database-console",
+            "https://jfrog.com/blog/the-jndi-strikes-back-unauthenticated-rce-in-h2-database-console/",
+            "https://lists.debian.org/debian-lts-announce/2022/02/msg00017.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-42392",
+            "https://security.netapp.com/advisory/ntap-20220119-0001",
+            "https://security.netapp.com/advisory/ntap-20220119-0001/",
+            "https://ubuntu.com/security/notices/USN-5365-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-42392",
+            "https://www.debian.org/security/2022/dsa-5076",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.secpod.com/blog/log4shell-critical-remote-code-execution-vulnerability-in-h2database-console",
+            "https://www.secpod.com/blog/log4shell-critical-remote-code-execution-vulnerability-in-h2database-console/"
+          ],
+          "PublishedDate": "2022-01-10T14:10:23.643Z",
+          "LastModifiedDate": "2023-02-24T22:15:10.563Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-23221",
+          "PkgName": "com.h2database:h2",
+          "InstalledVersion": "1.4.199",
+          "FixedVersion": "2.1.210",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23221",
+          "PkgRef": "pkg:maven/com.h2database/h2@1.4.199?package-id=4f9ed2d888ad2899",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "h2: Loading of custom classes from remote servers through JNDI",
+          "Description": "H2 Console before 2.1.210 allows remote attackers to execute arbitrary code via a jdbc:h2:mem JDBC URL containing the IGNORE_UNKNOWN_SETTINGS=TRUE;FORBID_CREATION=FALSE;INIT=RUNSCRIPT substring, a different vulnerability than CVE-2021-42392.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-88"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 10,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/165676/H2-Database-Console-Remote-Code-Execution.html",
+            "http://seclists.org/fulldisclosure/2022/Jan/39",
+            "https://access.redhat.com/security/cve/CVE-2022-23221",
+            "https://github.com/advisories/GHSA-45hx-wfhj-473x",
+            "https://github.com/h2database/h2database",
+            "https://github.com/h2database/h2database/releases/tag/version-2.1.210",
+            "https://github.com/h2database/h2database/security/advisories",
+            "https://lists.debian.org/debian-lts-announce/2022/02/msg00017.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-23221",
+            "https://security.netapp.com/advisory/ntap-20230818-0011",
+            "https://security.netapp.com/advisory/ntap-20230818-0011/",
+            "https://twitter.com/d0nkey_man/status/1483824727936450564",
+            "https://ubuntu.com/security/notices/USN-5365-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-23221",
+            "https://www.debian.org/security/2022/dsa-5076",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html"
+          ],
+          "PublishedDate": "2022-01-19T17:15:09Z",
+          "LastModifiedDate": "2023-08-18T14:15:20.417Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-23463",
+          "PkgName": "com.h2database:h2",
+          "InstalledVersion": "1.4.199",
+          "FixedVersion": "2.0.202",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23463",
+          "PkgRef": "pkg:maven/com.h2database/h2@1.4.199?package-id=4f9ed2d888ad2899",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "h2database: XXE injection vulnerability",
+          "Description": "The package com.h2database:h2 from 1.4.198 and before 2.0.202 are vulnerable to XML External Entity (XXE) Injection via the org.h2.jdbc.JdbcSQLXML class object, when it receives parsed string data from org.h2.jdbc.JdbcResultSet.getSQLXML() method. If it executes the getSource() method when the parameter is DOMSource.class it will trigger the vulnerability.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-611"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 8.1
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V2Score": 6.4,
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 6.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-23463",
+            "https://github.com/boris-unckel/h2database/commit/f9ad6aef2bfa59eba2b4d3e7c4c32d2cce8e8b05",
+            "https://github.com/h2database/h2database",
+            "https://github.com/h2database/h2database/commit/d83285fd2e48fb075780ee95badee6f5a15ea7f8%23diff-008c2e4462609982199cd83e7cf6f1d6b41296b516783f6752c44b9f15dc7bc3",
+            "https://github.com/h2database/h2database/issues/3195",
+            "https://github.com/h2database/h2database/pull/3199",
+            "https://github.com/h2database/h2database/pull/3199#issuecomment-1002830390",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-23463",
+            "https://security.netapp.com/advisory/ntap-20230818-0010",
+            "https://security.netapp.com/advisory/ntap-20230818-0010/",
+            "https://snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-1769238",
+            "https://www.cve.org/CVERecord?id=CVE-2021-23463",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html"
+          ],
+          "PublishedDate": "2021-12-10T20:15:07.917Z",
+          "LastModifiedDate": "2023-08-18T14:15:19.227Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-45868",
+          "PkgName": "com.h2database:h2",
+          "InstalledVersion": "1.4.199",
+          "FixedVersion": "2.2.220",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-45868",
+          "PkgRef": "pkg:maven/com.h2database/h2@1.4.199?package-id=4f9ed2d888ad2899",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "The web-based admin console in H2 Database Engine before 2.2.220 can b ...",
+          "Description": "The web-based admin console in H2 Database Engine before 2.2.220 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states \"This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that.\" Nonetheless, the issue was fixed in 2.2.220.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-312"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            }
+          },
+          "References": [
+            "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
+            "https://github.com/h2database/h2database",
+            "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347",
+            "https://github.com/h2database/h2database/commit/581ed18ff9d6b3761d851620ed88a3994a351a0d",
+            "https://github.com/h2database/h2database/issues/3686",
+            "https://github.com/h2database/h2database/pull/3833",
+            "https://github.com/h2database/h2database/releases/tag/version-2.2.220",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-45868",
+            "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243"
+          ],
+          "PublishedDate": "2022-11-23T21:15:11.36Z",
+          "LastModifiedDate": "2024-04-11T01:17:08.497Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-40167",
+          "PkgName": "org.eclipse.jetty:jetty-http",
+          "InstalledVersion": "9.4.48.v20220622",
+          "FixedVersion": "9.4.52, 10.0.16, 11.0.16, 12.0.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-40167",
+          "PkgRef": "pkg:maven/org.eclipse.jetty/jetty-http@9.4.48.v20220622?package-id=536d89147fdcdd9c",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "jetty: Improper validation of HTTP/1 content-length",
+          "Description": "Jetty is a Java based web server and servlet engine. Prior to versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1, Jetty accepts the `+` character proceeding the content-length value in a HTTP/1 header field.  This is more permissive than allowed by the RFC and other servers routinely reject such requests with 400 responses.  There is no known exploit scenario, but it is conceivable that request smuggling could result if jetty is used in combination with a server that does not close the connection after sending such a 400 response. Versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1 contain a patch for this issue. There is no workaround as there is no known exploit scenario.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-130"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-40167",
+            "https://github.com/eclipse/jetty.project",
+            "https://github.com/eclipse/jetty.project/security/advisories/GHSA-hmr7-m48g-48f6",
+            "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-40167",
+            "https://www.cve.org/CVERecord?id=CVE-2023-40167",
+            "https://www.debian.org/security/2023/dsa-5507",
+            "https://www.rfc-editor.org/rfc/rfc9110#section-8.6"
+          ],
+          "PublishedDate": "2023-09-15T20:15:09.827Z",
+          "LastModifiedDate": "2023-10-13T01:59:32.977Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-26048",
+          "PkgName": "org.eclipse.jetty:jetty-server",
+          "InstalledVersion": "9.4.48.v20220622",
+          "FixedVersion": "9.4.51.v20230217, 10.0.14, 11.0.14",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-26048",
+          "PkgRef": "pkg:maven/org.eclipse.jetty/jetty-server@9.4.48.v20220622?package-id=01816d26d4b6890d",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "jetty-server: OutOfMemoryError for large multipart without filename read via request.getParameter()",
+          "Description": "Jetty is a java based web server and servlet engine. In affected versions servlets with multipart support (e.g. annotated with `@MultipartConfig`) that call `HttpServletRequest.getParameter()` or `HttpServletRequest.getParts()` may cause `OutOfMemoryError` when the client sends a multipart request with a part that has a name but no filename and very large content. This happens even with the default settings of `fileSizeThreshold=0` which should stream the whole part content to disk. An attacker client may send a large multipart request and cause the server to throw `OutOfMemoryError`. However, the server may be able to recover after the `OutOfMemoryError` and continue its service -- although it may take some time. This issue has been patched in versions 9.4.51, 10.0.14, and 11.0.14. Users are advised to upgrade. Users unable to upgrade may set the multipart parameter `maxRequestSize` which must be set to a non-negative value, so the whole multipart content is limited (although still read into memory).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-26048",
+            "https://github.com/eclipse/jetty.project",
+            "https://github.com/eclipse/jetty.project/issues/9076",
+            "https://github.com/eclipse/jetty.project/pull/9344",
+            "https://github.com/eclipse/jetty.project/pull/9345",
+            "https://github.com/eclipse/jetty.project/releases/tag/jetty-9.4.51.v20230217",
+            "https://github.com/eclipse/jetty.project/security/advisories/GHSA-qw69-rqj8-6qw8",
+            "https://github.com/jakartaee/servlet/blob/6.0.0/spec/src/main/asciidoc/servlet-spec-body.adoc#32-file-upload",
+            "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-26048",
+            "https://security.netapp.com/advisory/ntap-20230526-0001",
+            "https://security.netapp.com/advisory/ntap-20230526-0001/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-26048",
+            "https://www.debian.org/security/2023/dsa-5507"
+          ],
+          "PublishedDate": "2023-04-18T21:15:08.977Z",
+          "LastModifiedDate": "2023-09-30T15:15:09.71Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-26049",
+          "PkgName": "org.eclipse.jetty:jetty-server",
+          "InstalledVersion": "9.4.48.v20220622",
+          "FixedVersion": "9.4.51.v20230217, 10.0.14, 11.0.14, 12.0.0.beta0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-26049",
+          "PkgRef": "pkg:maven/org.eclipse.jetty/jetty-server@9.4.48.v20220622?package-id=01816d26d4b6890d",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "jetty-server: Cookie parsing of quoted values can exfiltrate values from other cookies",
+          "Description": "Jetty is a java based web server and servlet engine. Nonstandard cookie parsing in Jetty may allow an attacker to smuggle cookies within other cookies, or otherwise perform unintended behavior by tampering with the cookie parsing mechanism. If Jetty sees a cookie VALUE that starts with `\"` (double quote), it will continue to read the cookie string until it sees a closing quote -- even if a semicolon is encountered. So, a cookie header such as: `DISPLAY_LANGUAGE=\"b; JSESSIONID=1337; c=d\"` will be parsed as one cookie, with the name DISPLAY_LANGUAGE and a value of b; JSESSIONID=1337; c=d instead of 3 separate cookies. This has security implications because if, say, JSESSIONID is an HttpOnly cookie, and the DISPLAY_LANGUAGE cookie value is rendered on the page, an attacker can smuggle the JSESSIONID cookie into the DISPLAY_LANGUAGE cookie and thereby exfiltrate it. This is significant when an intermediary is enacting some policy based on cookies, so a smuggled cookie can bypass that policy yet still be seen by the Jetty server or its logging system. This issue has been addressed in versions 9.4.51, 10.0.14, 11.0.14, and 12.0.0.beta0 and users are advised to upgrade. There are no known workarounds for this issue.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:L/I:N/A:N",
+              "V3Score": 2.4
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-26049",
+            "https://github.com/eclipse/jetty.project",
+            "https://github.com/eclipse/jetty.project/pull/9339",
+            "https://github.com/eclipse/jetty.project/pull/9352",
+            "https://github.com/eclipse/jetty.project/releases/tag/jetty-9.4.51.v20230217",
+            "https://github.com/eclipse/jetty.project/security/advisories/GHSA-p26g-97m4-6q7c",
+            "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-26049",
+            "https://security.netapp.com/advisory/ntap-20230526-0001",
+            "https://security.netapp.com/advisory/ntap-20230526-0001/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-26049",
+            "https://www.debian.org/security/2023/dsa-5507",
+            "https://www.rfc-editor.org/rfc/rfc2965",
+            "https://www.rfc-editor.org/rfc/rfc6265"
+          ],
+          "PublishedDate": "2023-04-18T21:15:09.043Z",
+          "LastModifiedDate": "2024-02-01T15:36:15.433Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-1597",
+          "PkgName": "org.postgresql:postgresql",
+          "InstalledVersion": "42.4.3",
+          "FixedVersion": "42.2.28, 42.3.9, 42.4.4, 42.5.5, 42.6.1, 42.7.2",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-1597",
+          "PkgRef": "pkg:maven/org.postgresql/postgresql@42.4.3?package-id=880639eb654f1bcc",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "pgjdbc: PostgreSQL JDBC Driver allows attacker to inject SQL if using PreferQueryMode=SIMPLE",
+          "Description": "pgjdbc, the PostgreSQL JDBC Driver, allows attacker to inject SQL if using PreferQueryMode=SIMPLE. Note this is not the default. In the default mode there is no vulnerability. A placeholder for a numeric value must be immediately preceded by a minus. There must be a second placeholder for a string value after the first placeholder; both must be on the same line. By constructing a matching string payload, the attacker can inject SQL to alter the query,bypassing the protections that parameterized queries bring against SQL Injection attacks. Versions before 42.7.2, 42.6.1, 42.5.5, 42.4.4, 42.3.9, and 42.2.28 are affected.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-89"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1435",
+            "https://access.redhat.com/security/cve/CVE-2024-1597",
+            "https://bugzilla.redhat.com/2266523",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2266523",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1597",
+            "https://errata.almalinux.org/8/ALSA-2024-1435.html",
+            "https://errata.rockylinux.org/RLSA-2024:1435",
+            "https://github.com/pgjdbc/pgjdbc",
+            "https://github.com/pgjdbc/pgjdbc/commit/06abfb78a627277a580d4df825f210e96a4e14ee",
+            "https://github.com/pgjdbc/pgjdbc/commit/93b0fcb2711d9c1e3a2a03134369738a02a58b40",
+            "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-24rp-q3w6-vc56",
+            "https://linux.oracle.com/cve/CVE-2024-1597.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1436.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TZQTSMESZD2RJ5XBPSXH3TIQVUW5DIUU/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-1597",
+            "https://security.netapp.com/advisory/ntap-20240419-0008/",
+            "https://www.cve.org/CVERecord?id=CVE-2024-1597",
+            "https://www.enterprisedb.com/docs/jdbc_connector/latest/01_jdbc_rel_notes/",
+            "https://www.enterprisedb.com/docs/security/assessments/cve-2024-1597/"
+          ],
+          "PublishedDate": "2024-02-19T13:15:07.74Z",
+          "LastModifiedDate": "2024-04-19T07:15:09.047Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-34055",
+          "PkgName": "org.springframework.boot:spring-boot",
+          "InstalledVersion": "2.7.12",
+          "FixedVersion": "2.7.18, 3.0.13, 3.1.6",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-34055",
+          "PkgRef": "pkg:maven/org.springframework.boot/spring-boot@2.7.12?package-id=654044b6e4e117fe",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "spring-boot: org.springframework.boot:spring-boot-actuator class vulnerable to denial of service",
+          "Description": "In Spring Boot versions 2.7.0 - 2.7.17, 3.0.0-3.0.12 and 3.1.0-3.1.5, it is possible for a user to provide specially crafted HTTP requests that may cause a denial-of-service (DoS) condition.\n\nSpecifically, an application is vulnerable when all of the following are true:\n\n  *  the application uses Spring MVC or Spring WebFlux\n  *  org.springframework.boot:spring-boot-actuator is on the classpath\n\n\n\n",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-34055",
+            "https://github.com/spring-projects/spring-boot",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-34055",
+            "https://security.netapp.com/advisory/ntap-20231221-0010",
+            "https://security.netapp.com/advisory/ntap-20231221-0010/",
+            "https://spring.io/security/cve-2023-34055",
+            "https://www.cve.org/CVERecord?id=CVE-2023-34055"
+          ],
+          "PublishedDate": "2023-11-28T09:15:07.303Z",
+          "LastModifiedDate": "2023-12-21T22:15:13.76Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2016-1000027",
+          "PkgName": "org.springframework:spring-web",
+          "InstalledVersion": "5.3.27",
+          "FixedVersion": "6.0.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-1000027",
+          "PkgRef": "pkg:maven/org.springframework/spring-web@5.3.27?package-id=699c87a2adaed4d6",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "spring: HttpInvokerServiceExporter readRemoteInvocation method untrusted java deserialization",
+          "Description": "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2016-1000027",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-1000027",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/2b051b8b321768a4cfef83077db65c6328ffd60f",
+            "https://github.com/spring-projects/spring-framework/commit/5cbe90b2cd91b866a5a9586e460f311860e11cfa",
+            "https://github.com/spring-projects/spring-framework/issues/21680",
+            "https://github.com/spring-projects/spring-framework/issues/24434",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-1231625331",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-579669626",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-582313417",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-744519525",
+            "https://jira.spring.io/browse/SPR-17143?redirect=false",
+            "https://nvd.nist.gov/vuln/detail/CVE-2016-1000027",
+            "https://raw.githubusercontent.com/distributedweaknessfiling/cvelist/master/2016/1000xxx/CVE-2016-1000027.json",
+            "https://security-tracker.debian.org/tracker/CVE-2016-1000027",
+            "https://security.netapp.com/advisory/ntap-20230420-0009",
+            "https://security.netapp.com/advisory/ntap-20230420-0009/",
+            "https://spring.io/blog/2022/05/11/spring-framework-5-3-20-and-5-2-22-available-now",
+            "https://support.contrastsecurity.com/hc/en-us/articles/4402400830612-Spring-web-Java-Deserialization-CVE-2016-1000027",
+            "https://www.cve.org/CVERecord?id=CVE-2016-1000027",
+            "https://www.tenable.com/security/research/tra-2016-20"
+          ],
+          "PublishedDate": "2020-01-02T23:15:11.857Z",
+          "LastModifiedDate": "2023-04-20T09:15:07.047Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-22243",
+          "PkgName": "org.springframework:spring-web",
+          "InstalledVersion": "5.3.27",
+          "FixedVersion": "6.1.4, 6.0.17, 5.3.32",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-22243",
+          "PkgRef": "pkg:maven/org.springframework/spring-web@5.3.27?package-id=699c87a2adaed4d6",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "springframework: URL Parsing with Host Validation",
+          "Description": "Applications that use UriComponentsBuilder to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.\n",
+          "Severity": "HIGH",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:L/A:N",
+              "V3Score": 3.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-22243",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/util/UriComponentsBuilder.java",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-22243",
+            "https://spring.io/security/cve-2024-22243",
+            "https://www.cve.org/CVERecord?id=CVE-2024-22243"
+          ],
+          "PublishedDate": "2024-02-23T05:15:08.143Z",
+          "LastModifiedDate": "2024-02-23T16:14:43.447Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-22259",
+          "PkgName": "org.springframework:spring-web",
+          "InstalledVersion": "5.3.27",
+          "FixedVersion": "6.1.5, 6.0.18, 5.3.33",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-22259",
+          "PkgRef": "pkg:maven/org.springframework/spring-web@5.3.27?package-id=699c87a2adaed4d6",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "springframework: URL Parsing with Host Validation",
+          "Description": "Applications that use UriComponentsBuilder in Spring Framework to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.\n\nThis is the same as  CVE-2024-22243 https://spring.io/security/cve-2024-22243 , but with different input.\n\n",
+          "Severity": "HIGH",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-22259",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/297cbae2990e1413537c55845a7e0ea0ffd9f9bb",
+            "https://github.com/spring-projects/spring-framework/commit/381f790329a48b74c2a49fc1384dd68ca9153501",
+            "https://github.com/spring-projects/spring-framework/commit/f2fd2f12269c6a781c5b2c20b3c24141055a3d68",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-22259",
+            "https://spring.io/security/cve-2024-22259",
+            "https://www.cve.org/CVERecord?id=CVE-2024-22259"
+          ],
+          "PublishedDate": "2024-03-16T05:15:20.83Z",
+          "LastModifiedDate": "2024-03-17T22:38:29.433Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-22262",
+          "PkgName": "org.springframework:spring-web",
+          "InstalledVersion": "5.3.27",
+          "FixedVersion": "5.3.34, 6.0.19, 6.1.6",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-22262",
+          "PkgRef": "pkg:maven/org.springframework/spring-web@5.3.27?package-id=699c87a2adaed4d6",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "springframework: URL Parsing with Host Validation",
+          "Description": "Applications that use UriComponentsBuilder to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.\n\nThis is the same as  CVE-2024-22259 https://spring.io/security/cve-2024-22259  and  CVE-2024-22243 https://spring.io/security/cve-2024-22243 , but with different input.\n\n",
+          "Severity": "HIGH",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-22262",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/util/UriComponentsBuilder.java",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-22262",
+            "https://spring.io/security/cve-2024-22262",
+            "https://www.cve.org/CVERecord?id=CVE-2024-22262"
+          ],
+          "PublishedDate": "2024-04-16T06:15:46.27Z",
+          "LastModifiedDate": "2024-04-16T13:24:07.103Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-1471",
+          "PkgName": "org.yaml:snakeyaml",
+          "InstalledVersion": "1.32",
+          "FixedVersion": "2.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1471",
+          "PkgRef": "pkg:maven/org.yaml/snakeyaml@1.32?package-id=e65e78f8a47ddf8f",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "SnakeYaml: Constructor Deserialization Remote Code Execution",
+          "Description": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization. We recommend upgrading to version 2.0 and beyond.\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502",
+            "CWE-20"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+              "V3Score": 8.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/175095/PyTorch-Model-Server-Registration-Deserialization-Remote-Code-Execution.html",
+            "http://www.openwall.com/lists/oss-security/2023/11/19/1",
+            "https://access.redhat.com/errata/RHSA-2022:9058",
+            "https://access.redhat.com/security/cve/CVE-2022-1471",
+            "https://bitbucket.org/snakeyaml/snakeyaml",
+            "https://bitbucket.org/snakeyaml/snakeyaml/commits/5014df1a36f50aca54405bb8433bc99a8847f758",
+            "https://bitbucket.org/snakeyaml/snakeyaml/commits/acc44099f5f4af26ff86b4e4e4cc1c874e2dc5c4",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64581479",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64634374",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64876314",
+            "https://bitbucket.org/snakeyaml/snakeyaml/wiki/CVE-2022-1471",
+            "https://bugzilla.redhat.com/2150009",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2150009",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1471",
+            "https://errata.almalinux.org/8/ALSA-2022-9058.html",
+            "https://errata.rockylinux.org/RLSA-2022:9058",
+            "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2",
+            "https://github.com/mbechler/marshalsec",
+            "https://groups.google.com/g/kubernetes-security-announce/c/mwrakFaEdnc",
+            "https://linux.oracle.com/cve/CVE-2022-1471.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9058-1.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-1471",
+            "https://security.netapp.com/advisory/ntap-20230818-0015",
+            "https://security.netapp.com/advisory/ntap-20230818-0015/",
+            "https://snyk.io/blog/unsafe-deserialization-snakeyaml-java-cve-2022-1471",
+            "https://www.cve.org/CVERecord?id=CVE-2022-1471",
+            "https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true"
+          ],
+          "PublishedDate": "2022-12-01T11:15:10.553Z",
+          "LastModifiedDate": "2023-11-19T15:15:20.877Z"
+        }
+      ]
+    }
+  ]
+}

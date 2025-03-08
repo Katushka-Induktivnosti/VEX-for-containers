@@ -1,0 +1,970 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-gvpg-vgmx-xg6w",
+    "dataSource": "https://github.com/advisories/GHSA-gvpg-vgmx-xg6w",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-gvpg-vgmx-xg6w"
+    ],
+    "description": "Denial of Service in Connect2id Nimbus JOSE+JWT",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "9.37.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-52428",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-52428",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/3b3b77e",
+      "https://bitbucket.org/connect2id/nimbus-jose-jwt/issues/526/",
+      "https://connect2id.com/products/nimbus-jose-jwt"
+     ],
+     "description": "In Connect2id Nimbus JOSE+JWT before 9.37.2, an attacker can cause a denial of service (resource consumption) via a large JWE p2c header value (aka iteration count) for the PasswordBasedDecrypter (PBKDF2) component.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "com.nimbusds/nimbus-jose-jwt",
+       "version": "9.23"
+      }
+     },
+     "found": {
+      "versionConstraint": "<9.37.2 (unknown)",
+      "vulnerabilityID": "GHSA-gvpg-vgmx-xg6w"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "7248cfb371c6a478",
+    "name": "com.nimbusds/nimbus-jose-jwt",
+    "version": "9.23",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/com.nimbusds/nimbus-jose-jwt@9.23",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-5jpm-x58v-624v",
+    "dataSource": "https://github.com/advisories/GHSA-5jpm-x58v-624v",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-5jpm-x58v-624v"
+    ],
+    "description": "Netty's HttpPostRequestDecoder can OOM",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "4.1.108.Final"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-29025",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-29025",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://gist.github.com/vietj/f558b8ea81ec6505f1e9a6ca283c9ae3",
+      "https://github.com/netty/netty/commit/0d0c6ed782d13d423586ad0c71737b2c7d02058c",
+      "https://github.com/netty/netty/security/advisories/GHSA-5jpm-x58v-624v"
+     ],
+     "description": "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients. The `HttpPostRequestDecoder` can be tricked to accumulate data. While the decoder can store items on the disk if configured so, there are no limits to the number of fields the form can have, an attacher can send a chunked post consisting of many small fields that will be accumulated in the `bodyListHttpData` list. The decoder cumulates bytes in the `undecodedChunk` buffer until it can decode a field, this field can cumulate data without limits. This vulnerability is fixed in 4.1.108.Final.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "io.netty/netty-codec-http",
+       "version": "4.1.94.Final"
+      }
+     },
+     "found": {
+      "versionConstraint": "<4.1.108.Final (unknown)",
+      "vulnerabilityID": "GHSA-5jpm-x58v-624v"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "77342f04ecbd7fa3",
+    "name": "io.netty/netty-codec-http",
+    "version": "4.1.94.Final",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/io.netty/netty-codec-http@4.1.94.Final",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-xpw8-rcwv-8f8p",
+    "dataSource": "https://github.com/advisories/GHSA-xpw8-rcwv-8f8p",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-xpw8-rcwv-8f8p"
+    ],
+    "description": "io.netty:netty-codec-http2 vulnerable to HTTP/2 Rapid Reset Attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "4.1.100.Final"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "io.netty/netty-codec-http2",
+       "version": "4.1.94.Final"
+      }
+     },
+     "found": {
+      "versionConstraint": "<4.1.100.Final (unknown)",
+      "vulnerabilityID": "GHSA-xpw8-rcwv-8f8p"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "998a077581f8791e",
+    "name": "io.netty/netty-codec-http2",
+    "version": "4.1.94.Final",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/io.netty/netty-codec-http2@4.1.94.Final",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-493p-pfq6-5258",
+    "dataSource": "https://github.com/advisories/GHSA-493p-pfq6-5258",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-493p-pfq6-5258"
+    ],
+    "description": "json-smart Uncontrolled Recursion vulnerabilty",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.4.9"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-1370",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-1370",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://research.jfrog.com/vulnerabilities/stack-exhaustion-in-json-smart-leads-to-denial-of-service-when-parsing-malformed-json-xray-427633/"
+     ],
+     "description": "[Json-smart](https://netplex.github.io/json-smart/) is a performance focused, JSON processor lib.\n\nWhen reaching a ‘[‘ or ‘{‘ character in the JSON input, the code parses an array or an object respectively.\n\nIt was discovered that the code does not have any limit to the nesting of such arrays or objects. Since the parsing of nested arrays and objects is done recursively, nesting too many of them can cause a stack exhaustion (stack overflow) and crash the software.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "reefs@jfrog.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "net.minidev/json-smart",
+       "version": "2.4.8"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.4.9 (unknown)",
+      "vulnerabilityID": "GHSA-493p-pfq6-5258"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ca3d7e6d4b9504b8",
+    "name": "net.minidev/json-smart",
+    "version": "2.4.8",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "The Apache Software License, Version 2.0"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/net.minidev/json-smart@2.4.8",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4g9r-vxhx-9pgx",
+    "dataSource": "https://github.com/advisories/GHSA-4g9r-vxhx-9pgx",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-4g9r-vxhx-9pgx"
+    ],
+    "description": "Apache Commons Compress: Denial of service caused by an infinite loop for a corrupted DUMP file",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.1,
+       "exploitabilityScore": 1.4,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.26.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-25710",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-25710",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/02/19/1",
+      "https://lists.apache.org/thread/cz8qkcwphy4cx8gltn932ln51cbtq6kf",
+      "https://security.netapp.com/advisory/ntap-20240307-0010/"
+     ],
+     "description": "Loop with Unreachable Exit Condition ('Infinite Loop') vulnerability in Apache Commons Compress.This issue affects Apache Commons Compress: from 1.3 through 1.25.0.\n\nUsers are recommended to upgrade to version 1.26.0 which fixes the issue.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@apache.org",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 1.4,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.apache.commons/commons-compress",
+       "version": "1.24.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.3,<1.26.0 (unknown)",
+      "vulnerabilityID": "GHSA-4g9r-vxhx-9pgx"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "447e281e33f704a6",
+    "name": "org.apache.commons/commons-compress",
+    "version": "1.24.0",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.apache.commons/commons-compress@1.24.0",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4265-ccf5-phj5",
+    "dataSource": "https://github.com/advisories/GHSA-4265-ccf5-phj5",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-4265-ccf5-phj5"
+    ],
+    "description": "Apache Commons Compress: OutOfMemoryError unpacking broken Pack200 file",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.26.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26308",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26308",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/02/19/2",
+      "https://lists.apache.org/thread/ch5yo2d21p7vlqrhll9b17otbyq4npfg",
+      "https://security.netapp.com/advisory/ntap-20240307-0009/"
+     ],
+     "description": "Allocation of Resources Without Limits or Throttling vulnerability in Apache Commons Compress.This issue affects Apache Commons Compress: from 1.21 before 1.26.\n\nUsers are recommended to upgrade to version 1.26, which fixes the issue.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.apache.commons/commons-compress",
+       "version": "1.24.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.21,<1.26.0 (unknown)",
+      "vulnerabilityID": "GHSA-4265-ccf5-phj5"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "447e281e33f704a6",
+    "name": "org.apache.commons/commons-compress",
+    "version": "1.24.0",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.apache.commons/commons-compress@1.24.0",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-jw7r-rxff-gv24",
+    "dataSource": "https://github.com/advisories/GHSA-jw7r-rxff-gv24",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-jw7r-rxff-gv24"
+    ],
+    "description": "Apache James MIME4J improper input validation vulnerability",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.8.10"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-21742",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-21742",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/02/27/5",
+      "https://lists.apache.org/thread/nrqzg93219wdj056pqfszsd33dc54kfy"
+     ],
+     "description": "Improper input validation allows for header injection in MIME4J library when using MIME4J DOM for composing message.\nThis can be exploited by an attacker to add unintended headers to MIME messages.\n",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.apache.james/apache-mime4j-core",
+       "version": "0.8.9"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.8.10 (unknown)",
+      "vulnerabilityID": "GHSA-jw7r-rxff-gv24"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "bd0fe2c5e0149200",
+    "name": "org.apache.james/apache-mime4j-core",
+    "version": "0.8.9",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.apache.james/apache-mime4j-core@0.8.9",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-w5gg-2q56-6h4f",
+    "dataSource": "https://github.com/advisories/GHSA-w5gg-2q56-6h4f",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-w5gg-2q56-6h4f"
+    ],
+    "description": "Elasticsearch Uncontrolled Resource Consumption vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 4.9,
+       "exploitabilityScore": 1.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "8.13.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-23450",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-23450",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.elastic.co/t/elasticsearch-8-13-0-7-17-19-security-update-esa-2024-06/356314",
+      "https://www.elastic.co/community/security"
+     ],
+     "description": "A flaw was discovered in Elasticsearch, where processing a document in a deeply nested pipeline on an ingest node could cause the Elasticsearch node to crash.",
+     "cvss": [
+      {
+       "source": "bressers@elastic.co",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 4.9,
+        "exploitabilityScore": 1.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.elasticsearch/elasticsearch",
+       "version": "8.12.2"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=8.0.0,<8.13.0 (unknown)",
+      "vulnerabilityID": "GHSA-w5gg-2q56-6h4f"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5d4aa06253be1f4d",
+    "name": "org.elasticsearch/elasticsearch",
+    "version": "8.12.2",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "SSPL-1.0"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.elasticsearch/elasticsearch@8.12.2",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-r3hx-qfh5-r9m7",
+    "dataSource": "https://github.com/advisories/GHSA-r3hx-qfh5-r9m7",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-r3hx-qfh5-r9m7"
+    ],
+    "description": "Elasticsearch Incorrect Authorization vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 4.4,
+       "exploitabilityScore": 0.7,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "8.13.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-23451",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-23451",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.elastic.co/t/elasticsearch-8-13-0-security-update-esa-2024-07/356315"
+     ],
+     "description": "Incorrect Authorization issue exists in the API key based security model for Remote Cluster Security, which is currently in Beta, in Elasticsearch 8.10.0 and before 8.13.0. This allows a malicious user with a valid API key for a remote cluster configured to use the new Remote Cluster Security to read arbitrary documents from any index on the remote cluster, and only if they use the Elasticsearch custom transport protocol to issue requests with the target index ID, the shard ID and the document ID. None of Elasticsearch REST API endpoints are affected by this issue.",
+     "cvss": [
+      {
+       "source": "bressers@elastic.co",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 4.4,
+        "exploitabilityScore": 0.7,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.elasticsearch/elasticsearch",
+       "version": "8.12.2"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=8.10.0,<8.13.0 (unknown)",
+      "vulnerabilityID": "GHSA-r3hx-qfh5-r9m7"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5d4aa06253be1f4d",
+    "name": "org.elasticsearch/elasticsearch",
+    "version": "8.12.2",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "SSPL-1.0"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.elasticsearch/elasticsearch@8.12.2",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "",
+   "imageID": "",
+   "manifestDigest": "",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-04-20T01:25:41Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:16b261c20c43828088d3530bdb10577ad87b9d33cfbfcaf051c3af61ba7e53ca",
+   "error": null
+  },
+  "timestamp": "2024-04-20T22:54:42.2463+02:00"
+ }
+}

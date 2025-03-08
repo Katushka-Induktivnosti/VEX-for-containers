@@ -1,0 +1,285 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/grype/sboms/flink_sbom.json",
+  "ArtifactType": "cyclonedx",
+  "Metadata": {
+    "OS": {
+      "Family": "ubuntu",
+      "Name": "22.04"
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "jsons/grype/sboms/flink_sbom.json (ubuntu 22.04)",
+      "Class": "os-pkgs",
+      "Type": "ubuntu",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2022-3715",
+          "PkgName": "bash",
+          "InstalledVersion": "5.1-6ubuntu1",
+          "FixedVersion": "5.1-6ubuntu1.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3715",
+          "PkgRef": "pkg:deb/ubuntu/bash@5.1-6ubuntu1?arch=arm64\u0026distro=ubuntu-22.04\u0026package-id=80650b1f1bfafb61",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "bash: a heap-buffer-overflow in valid_parameter_transform",
+          "Description": "A flaw was found in the bash package, where a heap-buffer overflow can occur in valid parameter_transform. This issue may lead to memory problems.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-119"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:0340",
+            "https://access.redhat.com/security/cve/CVE-2022-3715",
+            "https://bugzilla.redhat.com/2126720",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2126720",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3715",
+            "https://errata.almalinux.org/9/ALSA-2023-0340.html",
+            "https://errata.rockylinux.org/RLSA-2023:0340",
+            "https://linux.oracle.com/cve/CVE-2022-3715.html",
+            "https://linux.oracle.com/errata/ELSA-2023-0340.html",
+            "https://lists.gnu.org/archive/html/bug-bash/2022-08/msg00147.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-3715",
+            "https://ubuntu.com/security/notices/USN-6697-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-3715"
+          ],
+          "PublishedDate": "2023-01-05T15:15:10.41Z",
+          "LastModifiedDate": "2023-02-24T18:38:10.793Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2016-2781",
+          "PkgName": "coreutils",
+          "InstalledVersion": "8.32-4.1ubuntu1.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-2781",
+          "PkgRef": "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.1?arch=arm64\u0026distro=ubuntu-22.04\u0026package-id=5994ef6f2a62ff84",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "coreutils: Non-privileged session can escape to the parent session in chroot",
+          "Description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+              "V2Score": 2.1,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V2Score": 6.2,
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "http://seclists.org/oss-sec/2016/q1/452",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+            "https://access.redhat.com/security/cve/CVE-2016-2781",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+            "https://lore.kernel.org/patchwork/patch/793178/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+            "https://www.cve.org/CVERecord?id=CVE-2016-2781"
+          ],
+          "PublishedDate": "2017-02-07T15:59:00.333Z",
+          "LastModifiedDate": "2023-11-07T02:32:03.347Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2398",
+          "PkgName": "curl",
+          "InstalledVersion": "7.81.0-1ubuntu1.15",
+          "FixedVersion": "7.81.0-1ubuntu1.16",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2398",
+          "PkgRef": "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.15?arch=arm64\u0026distro=ubuntu-22.04\u0026package-id=748015c00f1d2d20",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "curl: HTTP/2 push headers memory-leak",
+          "Description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2398",
+            "https://curl.se/docs/CVE-2024-2398.html",
+            "https://curl.se/docs/CVE-2024-2398.json",
+            "https://hackerone.com/reports/2402845",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GMD6UYKCCRCYETWQZUJ65ZRFULT6SHLI/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2398",
+            "https://ubuntu.com/security/notices/USN-6718-1",
+            "https://ubuntu.com/security/notices/USN-6718-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2398"
+          ],
+          "PublishedDate": "2024-03-27T08:15:41.283Z",
+          "LastModifiedDate": "2024-04-19T23:15:10.867Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2236",
+          "PkgName": "libgcrypt20",
+          "InstalledVersion": "1.9.4-3ubuntu3",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2236",
+          "PkgRef": "pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3?arch=arm64\u0026distro=ubuntu-22.04\u0026package-id=f75c61455cab99fa",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "libgcrypt: vulnerable to Marvin Attack",
+          "Description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-208"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2236",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2268268",
+            "https://github.com/tomato42/marvin-toolkit/tree/master/example/libgcrypt",
+            "https://lists.gnupg.org/pipermail/gcrypt-devel/2024-March/005607.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2236",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2236"
+          ],
+          "PublishedDate": "2024-03-06T22:15:57.977Z",
+          "LastModifiedDate": "2024-03-07T13:52:27.11Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28085",
+          "PkgName": "util-linux",
+          "InstalledVersion": "2.37.2-4ubuntu3",
+          "FixedVersion": "2.37.2-4ubuntu3.3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28085",
+          "PkgRef": "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3?arch=arm64\u0026distro=ubuntu-22.04\u0026package-id=dc9fac8986c045ac",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "util-linux: CVE-2024-28085: wall: escape sequence injection",
+          "Description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28085",
+            "https://github.com/skyler-ferrante/CVE-2024-28085",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+            "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+            "https://ubuntu.com/security/notices/USN-6719-1",
+            "https://ubuntu.com/security/notices/USN-6719-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28085",
+            "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+          ],
+          "PublishedDate": "2024-03-27T19:15:48.367Z",
+          "LastModifiedDate": "2024-04-07T12:15:08.903Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-31879",
+          "PkgName": "wget",
+          "InstalledVersion": "1.21.2-2ubuntu1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-31879",
+          "PkgRef": "pkg:deb/ubuntu/wget@1.21.2-2ubuntu1?arch=arm64\u0026distro=ubuntu-22.04\u0026package-id=4e6fd809bb2236db",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "wget: authorization header disclosure on redirect",
+          "Description": "GNU Wget through 1.21.1 does not omit the Authorization header upon a redirect to a different origin, a related issue to CVE-2018-1000007.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-601"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V2Score": 5.8,
+              "V3Score": 6.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-31879",
+            "https://mail.gnu.org/archive/html/bug-wget/2021-02/msg00002.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-31879",
+            "https://savannah.gnu.org/bugs/?56909",
+            "https://security.netapp.com/advisory/ntap-20210618-0002/",
+            "https://www.cve.org/CVERecord?id=CVE-2021-31879"
+          ],
+          "PublishedDate": "2021-04-29T05:15:08.707Z",
+          "LastModifiedDate": "2022-05-13T20:52:24.793Z"
+        }
+      ]
+    }
+  ]
+}

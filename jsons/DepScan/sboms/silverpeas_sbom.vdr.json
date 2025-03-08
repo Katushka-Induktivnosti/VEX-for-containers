@@ -1,0 +1,1510 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:ade9297e-4195-4e51-9643-4ec814abfddc",
+    "version": 2,
+    "metadata": {
+        "timestamp": "2024-06-24T22:17:07Z",
+        "tools": {
+            "components": [
+                {
+                    "group": "@cyclonedx",
+                    "name": "cdxgen",
+                    "version": "10.5.1",
+                    "purl": "pkg:npm/%40cyclonedx/cdxgen@10.5.1",
+                    "type": "application",
+                    "bom-ref": "pkg:npm/@cyclonedx/cdxgen@10.5.1",
+                    "author": "OWASP Foundation",
+                    "publisher": "OWASP Foundation"
+                },
+                {
+                    "type": "application",
+                    "name": "owasp-depscan",
+                    "version": "5.3.4",
+                    "purl": "pkg:pypi/owasp-depscan@5.3.4",
+                    "bom-ref": "pkg:pypi/owasp-depscan@5.3.4"
+                }
+            ]
+        },
+        "authors": [
+            {
+                "name": "OWASP Foundation"
+            }
+        ],
+        "lifecycles": [
+            {
+                "phase": "pre-build"
+            },
+            {
+                "phase": "post-build"
+            }
+        ],
+        "component": {
+            "group": "",
+            "name": "silverpeas",
+            "version": "latest",
+            "type": "application",
+            "bom-ref": "pkg:gem/silverpeas@latest",
+            "purl": "pkg:gem/silverpeas@latest"
+        },
+        "properties": [
+            {
+                "name": "oci:image:Id",
+                "value": "sha256:962d33433377d04dbf76fc09dd3c35c108b8230162b4918b750f0b27b29827ba"
+            },
+            {
+                "name": "oci:image:RepoTag",
+                "value": "silverpeas:latest"
+            },
+            {
+                "name": "oci:image:RepoDigest",
+                "value": "silverpeas@sha256:2d1e2d385802db9d7a0f7604b700d42816c767809025c882de9e043353268554"
+            },
+            {
+                "name": "oci:image:Created",
+                "value": "2023-12-16T13:11:44.965428927Z"
+            },
+            {
+                "name": "oci:image:Architecture",
+                "value": "amd64"
+            },
+            {
+                "name": "oci:image:Os",
+                "value": "linux"
+            },
+            {
+                "name": "oci:image:manifest:Config",
+                "value": "blobs/sha256/962d33433377d04dbf76fc09dd3c35c108b8230162b4918b750f0b27b29827ba"
+            },
+            {
+                "name": "oci:image:manifest:Layers",
+                "value": "blobs/sha256/3a03f09d212915b240e9d216069aba5652ed4765c7e4b098c65e71860d47b8e1\\nblobs/sha256/f62416ccf0ff09eda2ad4fa5da695fd7912e3583b01fc8185c3c74c7403f3e8a\\nblobs/sha256/261b2820e2555d9498bf9284d21a107f039075b19a79ea162e490974ba37cd3c\\nblobs/sha256/d9753b359f6836f30ce63f92527c2fb3f65dd202fdebf63a24c8c620186709aa\\nblobs/sha256/4d8276e458137fa748a6c0f3d51d843b8ce4707ff88f8b30993e3741bbb526ad\\nblobs/sha256/acdb7b1f8d97f3234cbbc6c74c21058829a8ceed5006e7a2cdf1c7f65089ebb4\\nblobs/sha256/f2d5512a52007ad34605763671582ad9c2f0d0e3b4ee1c4e28b9186c94d8412c\\nblobs/sha256/bd68f182e9f4872b2fb6d78c5a6d62718c8dffb48b6b469b6ee2d9c0ca0ac8a1\\nblobs/sha256/5fe8cbd7b093eb6cd829f4fd357f0802715908125a5bb8093052ef7d30c8fd11\\nblobs/sha256/092539911071245b0d4507d8af1ccbd3c5bbb913bb54ca343f1f3491b123243f\\nblobs/sha256/822622b54cf1d0bece9061ee8aaee1971ccb77e02a670196d06a066f0c83fb34\\nblobs/sha256/a75c6068fec6a1850b88e5312e16227dbbdb3fa2aa7caee872dcd49624010369\\nblobs/sha256/402031c1acadb5e29aa053763e30c147a85c98331dc7a52ac9afbe0743493b93"
+            }
+        ]
+    },
+    "components": [
+        {
+            "group": "",
+            "name": "jstree",
+            "version": "3.3.1",
+            "purl": "pkg:npm/jstree@3.3.1",
+            "type": "library",
+            "bom-ref": "pkg:npm/jstree@3.3.1",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/data/web/weblib.war/repositorySharing/jstree.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/data/web/weblib.war/repositorySharing/jstree.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "jquery-ui",
+            "version": "1.11.4",
+            "purl": "pkg:npm/jquery-ui@1.11.4",
+            "type": "library",
+            "bom-ref": "pkg:npm/jquery-ui@1.11.4",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/data/web/weblib.war/repositorySharing/jquery-ui.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/data/web/weblib.war/repositorySharing/jquery-ui.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "jquery",
+            "version": "Migrate",
+            "purl": "pkg:npm/jquery@Migrate",
+            "type": "library",
+            "bom-ref": "pkg:npm/jquery@Migrate",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/data/web/weblib.war/repositorySharing/jquery-migrate-3.0.1.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/data/web/weblib.war/repositorySharing/jquery-migrate-3.0.1.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "jquery",
+            "version": "3.3.1",
+            "purl": "pkg:npm/jquery@3.3.1",
+            "type": "library",
+            "bom-ref": "pkg:npm/jquery@3.3.1",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/data/web/weblib.war/repositorySharing/jquery-3.3.1.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/data/web/weblib.war/repositorySharing/jquery-3.3.1.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "selectize.js",
+            "version": "0.12.6 | https://github.com/selectize/selectize.js | Apache License (v2) */",
+            "purl": "pkg:npm/selectize.js@0.12.6%20%7C%20https:%2F%2Fgithub.com%2Fselectize%2Fselectize.js%20%7C%20Apache%20License%20(v2)%20*%2F",
+            "type": "library",
+            "bom-ref": "pkg:npm/selectize.js@0.12.6 | https://github.com/selectize/selectize.js | Apache License (v2) */",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/util/javaScript/selectize.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/util/javaScript/selectize.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "@source",
+            "version": "https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent",
+            "purl": "pkg:npm/%2540source@https:%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FAPI%2FCustomEvent%2FCustomEvent",
+            "type": "library",
+            "bom-ref": "pkg:npm/%40source@https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/util/javaScript/polyfill/customEventIEPolyfill.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/util/javaScript/polyfill/customEventIEPolyfill.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "@source",
+            "version": "http://purl.eligrey.com/github/classList.js/blob/master/classList.js",
+            "purl": "pkg:npm/%2540source@http:%2F%2Fpurl.eligrey.com%2Fgithub%2FclassList.js%2Fblob%2Fmaster%2FclassList.js",
+            "type": "library",
+            "bom-ref": "pkg:npm/%40source@http://purl.eligrey.com/github/classList.js/blob/master/classList.js",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/util/javaScript/polyfill/classList.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/util/javaScript/polyfill/classList.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "jstree",
+            "version": "3.3.8",
+            "purl": "pkg:npm/jstree@3.3.8",
+            "type": "library",
+            "bom-ref": "pkg:npm/jstree@3.3.8",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/util/javaScript/jquery/jstree.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/util/javaScript/jquery/jstree.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "jquery-ui",
+            "version": "1.12.1",
+            "purl": "pkg:npm/jquery-ui@1.12.1",
+            "type": "library",
+            "bom-ref": "pkg:npm/jquery-ui@1.12.1",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/util/javaScript/jquery/jquery-ui.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/util/javaScript/jquery/jquery-ui.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "rateit",
+            "version": "|",
+            "purl": "pkg:npm/rateit@%7C",
+            "type": "library",
+            "bom-ref": "pkg:npm/rateit@|",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/util/javaScript/jquery/rateit/jquery.rateit.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/util/javaScript/jquery/rateit/jquery.rateit.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "http://responsiveslides.com",
+            "version": "1.54",
+            "purl": "pkg:npm/http:%2F%2Fresponsiveslides.com@1.54",
+            "type": "library",
+            "bom-ref": "pkg:npm/http://responsiveslides.com@1.54",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/portlets/jsp/quickInfos/js/responsiveslides.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/portlets/jsp/quickInfos/js/responsiveslides.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "smartmenus-jquery-plugin",
+            "version": "1.0.0",
+            "purl": "pkg:npm/smartmenus-jquery-plugin@1.0.0",
+            "type": "library",
+            "bom-ref": "pkg:npm/smartmenus-jquery-plugin@1.0.0",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/look/jsp/js/jquery.smartmenus.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/look/jsp/js/jquery.smartmenus.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "grapesjs-preset-newsletter",
+            "version": "1.0.2 */",
+            "purl": "pkg:npm/grapesjs-preset-newsletter@1.0.2%20*%2F",
+            "type": "library",
+            "bom-ref": "pkg:npm/grapesjs-preset-newsletter@1.0.2 */",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/ddwe/jsp/grapesjs/grapesjs-preset-newsletter.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/ddwe/jsp/grapesjs/grapesjs-preset-newsletter.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "grapesjs-plugin-ckeditor",
+            "version": "1.0.1 */",
+            "purl": "pkg:npm/grapesjs-plugin-ckeditor@1.0.1%20*%2F",
+            "type": "library",
+            "bom-ref": "pkg:npm/grapesjs-plugin-ckeditor@1.0.1 */",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/ddwe/jsp/grapesjs/grapesjs-plugin-ckeditor.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/ddwe/jsp/grapesjs/grapesjs-plugin-ckeditor.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "grapesjs",
+            "version": "0.21.3 */",
+            "purl": "pkg:npm/grapesjs@0.21.3%20*%2F",
+            "type": "library",
+            "bom-ref": "pkg:npm/grapesjs@0.21.3 */",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/ddwe/jsp/grapesjs/grapes.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/ddwe/jsp/grapesjs/grapes.min.js"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "for",
+            "version": "license",
+            "purl": "pkg:npm/for@license",
+            "type": "library",
+            "bom-ref": "pkg:npm/for@license",
+            "evidence": {
+                "identity": {
+                    "field": "purl",
+                    "confidence": 0.25,
+                    "methods": [
+                        {
+                            "technique": "filename",
+                            "confidence": 0.25,
+                            "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/chat/converse/converse.min.js"
+                        }
+                    ]
+                }
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/var/folders/jt/gbfx1c2n4fs1zdc9pqpt06cw0000gn/T/docker-images-aNf4pk/all-layers/opt/silverpeas/bin/build/dist/chat/converse/converse.min.js"
+                }
+            ]
+        }
+    ],
+    "services": [],
+    "dependencies": [
+        {
+            "ref": "pkg:oci/silverpeas@sha256:2d1e2d385802db9d7a0f7604b700d42816c767809025c882de9e043353268554",
+            "dependsOn": []
+        }
+    ],
+    "vulnerabilities": [
+        {
+            "bom-ref": "CVE-2021-41182/pkg:npm/jquery-ui@1.11.4",
+            "id": "CVE-2021-41182",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41182"
+            },
+            "ratings": [
+                {
+                    "score": 6.5,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                79
+            ],
+            "description": "# XSS in the `altField` option of the Datepicker widget in jquery-ui\n### Impact\nAccepting the value of the `altField` option of the Datepicker widget from untrusted sources may execute untrusted code. For example, initializing the datepicker in the following way:\n```js\n$( \"#datepicker\" ).datepicker( {\n\taltField: \"<img onerror='doEvilThing()' src='/404' />\",\n} );\n```\nwill call the `doEvilThing` function.\n\n### Patches\nThe issue is fixed in jQuery UI 1.13.0. Any string value passed to the `altField` option is now treated as a CSS selector.\n\n### Workarounds\nA workaround is to not accept the value of the `altField` option from untrusted sources.\n\n### For more information\nIf you have any questions or comments about this advisory, search for a relevant issue in [the jQuery UI repo](https://github.com/jquery/jquery-ui/issues). If you don't find an answer, open a new issue.\n\n## Related CVE(s)\nBIT-drupal-2021-41182, CVE-2021-41182",
+            "recommendation": "Update to 1.13.2 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://blog.jqueryui.com/2021/10/jquery-ui-1-13-0-released"
+                },
+                {
+                    "title": "GitHub PR",
+                    "url": "https://github.com/jquery/jquery-ui/pull/1954/commits/6809ce843e5ac4128108ea4c15cbc100653c2b63"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://lists.debian.org/debian-lts-announce/2022/01/msg00014.html"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.debian.org/debian-lts-announce/2022/01/msg00014.html"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:npm/jquery-ui@1.11.4",
+                    "versions": [
+                        {
+                            "version": "1.11.4",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.13.2",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "jquery-ui@>=0-<1.13.0"
+                }
+            ],
+            "published": "2021-10-26T14:55:02",
+            "updated": "2024-03-11T05:19:14"
+        },
+        {
+            "bom-ref": "CVE-2016-7103/pkg:npm/jquery-ui@1.11.4",
+            "id": "CVE-2016-7103",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-7103"
+            },
+            "ratings": [
+                {
+                    "score": 6.1,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                79
+            ],
+            "description": "# jQuery-UI vulnerable to Cross-site Scripting in dialog closeText\nAffected versions of `jquery-ui` are vulnerable to a cross-site scripting vulnerability when arbitrary user input is supplied as the value of the `closeText` parameter in the `dialog` function. \n\njQuery-UI is a library for manipulating UI elements via jQuery.\n\nVersion 1.11.4 has a cross site scripting (XSS) vulnerability in the `closeText` parameter of the `dialog`\tfunction.\tIf your application passes user input to this parameter, it may be vulnerable to XSS via this attack vector.\n\n\n## Recommendation\n\nUpgrade to jQuery-UI 1.12.0 or later.",
+            "recommendation": "Update to 1.13.2 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://github.com/jquery/jquery-ui"
+                },
+                {
+                    "title": "GitHub Issue",
+                    "url": "https://github.com/jquery/api.jqueryui.com/issues/281"
+                },
+                {
+                    "title": "GitHub PR",
+                    "url": "https://github.com/jquery/jquery-ui/pull/1622"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.debian.org/debian-lts-announce/2022/01/msg00014.html"
+                },
+                {
+                    "title": "vendor",
+                    "url": "http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:npm/jquery-ui@1.11.4",
+                    "versions": [
+                        {
+                            "version": "1.11.4",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.13.2",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "jquery-ui@>=0-<1.12.0"
+                }
+            ],
+            "published": "2017-10-24T18:33:35",
+            "updated": "2024-03-11T05:20:56"
+        },
+        {
+            "bom-ref": "CVE-2019-11358/pkg:npm/jquery@3.3.1",
+            "id": "CVE-2019-11358",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-11358"
+            },
+            "ratings": [
+                {
+                    "score": 6.1,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                1321,
+                79
+            ],
+            "description": "# XSS in jQuery as used in Drupal, Backdrop CMS, and other products\njQuery from 1.1.4 until 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles `jQuery.extend(true, {}, ...)` because of `Object.prototype` pollution. If an unsanitized source object contained an enumerable `__proto__` property, it could extend the native `Object.prototype`.\n\n## Related CVE(s)\nCVE-2019-11358, SNYK-JS-JQUERY-174006",
+            "recommendation": "Update to 3.5.0 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "http://www.securityfocus.com/bid/108023"
+                },
+                {
+                    "title": "GitHub PR",
+                    "url": "https://github.com/jquery/jquery/pull/4333"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "http://www.openwall.com/lists/oss-security/2019/06/03/2"
+                },
+                {
+                    "title": "vendor",
+                    "url": "http://www.openwall.com/lists/oss-security/2019/06/03/2"
+                },
+                {
+                    "title": "exploit",
+                    "url": "http://seclists.org/fulldisclosure/2019/May/13"
+                },
+                {
+                    "title": "Debian Security",
+                    "url": "https://www.debian.org/security/2019/dsa-4434"
+                }
+            ],
+            "analysis": {
+                "state": "exploitable",
+                "detail": "See http://seclists.org/fulldisclosure/2019/May/13"
+            },
+            "affects": [
+                {
+                    "ref": "pkg:npm/jquery@3.3.1",
+                    "versions": [
+                        {
+                            "version": "3.3.1",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.5.0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed\\nKnown Exploits"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "true"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "jquery@>=1.1.4-<3.4.0"
+                }
+            ],
+            "published": "2019-04-26T16:29:11",
+            "updated": "2024-04-22T19:46:35"
+        },
+        {
+            "bom-ref": "CVE-2021-41184/pkg:npm/jquery-ui@1.12.1",
+            "id": "CVE-2021-41184",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41184"
+            },
+            "ratings": [
+                {
+                    "score": 6.5,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                79
+            ],
+            "description": "# XSS in the `of` option of the `.position()` util in jquery-ui\n### Impact\nAccepting the value of the `of` option of the [`.position()`](https://api.jqueryui.com/position/) util from untrusted sources may execute untrusted code. For example, invoking the following code:\n```js\n$( \"#element\" ).position( {\n\tmy: \"left top\",\n\tat: \"right bottom\",\n\tof: \"<img onerror='doEvilThing()' src='/404' />\",\n\tcollision: \"none\"\n} );\n```\nwill call the `doEvilThing()` function.\n\n### Patches\nThe issue is fixed in jQuery UI 1.13.0. Any string value passed to the `of` option is now treated as a CSS selector.\n\n### Workarounds\nA workaround is to not accept the value of the `of` option from untrusted sources.\n\n### For more information\nIf you have any questions or comments about this advisory, search for a relevant issue in [the jQuery UI repo](https://github.com/jquery/jquery-ui/issues). If you don't find an answer, open a new issue.\n\n## Related CVE(s)\nBIT-drupal-2021-41184, CVE-2021-41184",
+            "recommendation": "Update to 1.13.2 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://blog.jqueryui.com/2021/10/jquery-ui-1-13-0-released"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://lists.debian.org/debian-lts-announce/2023/08/msg00040.html"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.debian.org/debian-lts-announce/2023/08/msg00040.html"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:npm/jquery-ui@1.12.1",
+                    "versions": [
+                        {
+                            "version": "1.12.1",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.13.2",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "jquery-ui@>=0-<1.13.0"
+                }
+            ],
+            "published": "2021-10-26T14:55:12",
+            "updated": "2024-03-11T05:18:56"
+        },
+        {
+            "bom-ref": "CVE-2020-11022/pkg:npm/jquery@3.3.1",
+            "id": "CVE-2020-11022",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-11022"
+            },
+            "ratings": [
+                {
+                    "score": 6.9,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                79
+            ],
+            "description": "# Potential XSS vulnerability in jQuery\n### Impact\nPassing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. `.html()`, `.append()`, and others) may execute untrusted code.\n\n### Patches\nThis problem is patched in jQuery 3.5.0.\n\n### Workarounds\nTo workaround the issue without upgrading, adding the following to your code:\n\n```js\njQuery.htmlPrefilter = function( html ) {\n\treturn html;\n};\n```\n\nYou need to use at least jQuery 1.12/2.2 or newer to be able to apply this workaround.\n\n### References\nhttps://blog.jquery.com/2020/04/10/jquery-3-5-0-released/\nhttps://jquery.com/upgrade-guide/3.5/\n\n### For more information\nIf you have any questions or comments about this advisory, search for a relevant issue in [the jQuery repo](https://github.com/jquery/jquery/issues). If you don't find an answer, open a new issue.\n\n## Related CVE(s)\nBIT-drupal-2020-11022, CVE-2020-11022",
+            "recommendation": "Update to 3.5.0 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "http://packetstormsecurity.com/files/162159/jQuery-1.2-Cross-Site-Scripting.html"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "http://lists.opensuse.org/opensuse-security-announce/2020-11/msg00039.html"
+                },
+                {
+                    "title": "vendor",
+                    "url": "http://lists.opensuse.org/opensuse-security-announce/2020-11/msg00039.html"
+                },
+                {
+                    "title": "Gentoo Security",
+                    "url": "https://security.gentoo.org/glsa/202007-03"
+                },
+                {
+                    "title": "Debian Security",
+                    "url": "https://www.debian.org/security/2020/dsa-4693"
+                },
+                {
+                    "title": "GitHub Advisory",
+                    "url": "https://github.com/advisories/GHSA-gxr4-xjj5-5px2"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:npm/jquery@3.3.1",
+                    "versions": [
+                        {
+                            "version": "3.3.1",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.5.0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "true"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "jquery@>=1.2.0-<3.5.0"
+                }
+            ],
+            "published": "2020-04-29T22:18:55",
+            "updated": "2024-03-12T05:16:35"
+        },
+        {
+            "bom-ref": "CVE-2021-41182/pkg:npm/jquery-ui@1.12.1",
+            "id": "CVE-2021-41182",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41182"
+            },
+            "ratings": [
+                {
+                    "score": 6.5,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                79
+            ],
+            "description": "# XSS in the `altField` option of the Datepicker widget in jquery-ui\n### Impact\nAccepting the value of the `altField` option of the Datepicker widget from untrusted sources may execute untrusted code. For example, initializing the datepicker in the following way:\n```js\n$( \"#datepicker\" ).datepicker( {\n\taltField: \"<img onerror='doEvilThing()' src='/404' />\",\n} );\n```\nwill call the `doEvilThing` function.\n\n### Patches\nThe issue is fixed in jQuery UI 1.13.0. Any string value passed to the `altField` option is now treated as a CSS selector.\n\n### Workarounds\nA workaround is to not accept the value of the `altField` option from untrusted sources.\n\n### For more information\nIf you have any questions or comments about this advisory, search for a relevant issue in [the jQuery UI repo](https://github.com/jquery/jquery-ui/issues). If you don't find an answer, open a new issue.\n\n## Related CVE(s)\nBIT-drupal-2021-41182, CVE-2021-41182",
+            "recommendation": "Update to 1.13.2 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://blog.jqueryui.com/2021/10/jquery-ui-1-13-0-released"
+                },
+                {
+                    "title": "GitHub PR",
+                    "url": "https://github.com/jquery/jquery-ui/pull/1954/commits/6809ce843e5ac4128108ea4c15cbc100653c2b63"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://lists.debian.org/debian-lts-announce/2022/01/msg00014.html"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.debian.org/debian-lts-announce/2022/01/msg00014.html"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:npm/jquery-ui@1.12.1",
+                    "versions": [
+                        {
+                            "version": "1.12.1",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.13.2",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "jquery-ui@>=0-<1.13.0"
+                }
+            ],
+            "published": "2021-10-26T14:55:02",
+            "updated": "2024-03-11T05:19:14"
+        },
+        {
+            "bom-ref": "CVE-2022-21802/pkg:npm/grapesjs@0.21.3%20*%2F",
+            "id": "CVE-2022-21802",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-21802"
+            },
+            "ratings": [
+                {
+                    "score": 6.1,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                79
+            ],
+            "description": "# grapesjs before 0.19.5 vulnerable to Cross-site Scripting\nThe package grapesjs before 0.19.5 is vulnerable to Cross-site Scripting (XSS) due to an improper sanitization of the class name in Selector Manager.",
+            "recommendation": "",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://security.snyk.io/vuln/SNYK-JS-GRAPESJS-2935960"
+                },
+                {
+                    "title": "GitHub Issue",
+                    "url": "https://github.com/artf/grapesjs/issues/4411%23issuecomment-1167202709"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:npm/grapesjs@0.21.3%20*%2F",
+                    "versions": [
+                        {
+                            "version": "0.21.3 */",
+                            "status": "affected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "grapesjs@>=0"
+                }
+            ],
+            "published": "2022-07-26T00:01:08",
+            "updated": "2023-11-08T04:08:10"
+        },
+        {
+            "bom-ref": "CVE-2021-41183/pkg:npm/jquery-ui@1.12.1",
+            "id": "CVE-2021-41183",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41183"
+            },
+            "ratings": [
+                {
+                    "score": 6.5,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                79
+            ],
+            "description": "# XSS in `*Text` options of the Datepicker widget in jquery-ui\n### Impact\nAccepting the value of various `*Text` options of the Datepicker widget from untrusted sources may execute untrusted code. For example, initializing the datepicker in the following way:\n```js\n$( \"#datepicker\" ).datepicker( {\n\tshowButtonPanel: true,\n\tshowOn: \"both\",\n\tcloseText: \"<script>doEvilThing( 'closeText XSS' )</script>\",\n\tcurrentText: \"<script>doEvilThing( 'currentText XSS' )</script>\",\n\tprevText: \"<script>doEvilThing( 'prevText XSS' )</script>\",\n\tnextText: \"<script>doEvilThing( 'nextText XSS' )</script>\",\n\tbuttonText: \"<script>doEvilThing( 'buttonText XSS' )</script>\",\n\tappendText: \"<script>doEvilThing( 'appendText XSS' )</script>\",\n} );\n```\nwill call `doEvilThing` with 6 different parameters coming from all `*Text` options.\n\n### Patches\nThe issue is fixed in jQuery UI 1.13.0. The values passed to various `*Text` options are now always treated as pure text, not HTML.\n\n### Workarounds\nA workaround is to not accept the value of the `*Text` options from untrusted sources.\n\n### For more information\nIf you have any questions or comments about this advisory, search for a relevant issue in [the jQuery UI repo](https://github.com/jquery/jquery-ui/issues). If you don't find an answer, open a new issue.\n\n## Related CVE(s)\nBIT-drupal-2021-41183, CVE-2021-41183",
+            "recommendation": "Update to 1.13.2 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://blog.jqueryui.com/2021/10/jquery-ui-1-13-0-released"
+                },
+                {
+                    "title": "GitHub PR",
+                    "url": "https://github.com/jquery/jquery-ui/pull/1953"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://lists.debian.org/debian-lts-announce/2022/01/msg00014.html"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.debian.org/debian-lts-announce/2022/01/msg00014.html"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:npm/jquery-ui@1.12.1",
+                    "versions": [
+                        {
+                            "version": "1.12.1",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.13.2",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "jquery-ui@>=0-<1.13.0"
+                }
+            ],
+            "published": "2021-10-26T14:55:21",
+            "updated": "2024-03-11T05:21:04"
+        },
+        {
+            "bom-ref": "CVE-2021-41183/pkg:npm/jquery-ui@1.11.4",
+            "id": "CVE-2021-41183",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41183"
+            },
+            "ratings": [
+                {
+                    "score": 6.5,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                79
+            ],
+            "description": "# XSS in `*Text` options of the Datepicker widget in jquery-ui\n### Impact\nAccepting the value of various `*Text` options of the Datepicker widget from untrusted sources may execute untrusted code. For example, initializing the datepicker in the following way:\n```js\n$( \"#datepicker\" ).datepicker( {\n\tshowButtonPanel: true,\n\tshowOn: \"both\",\n\tcloseText: \"<script>doEvilThing( 'closeText XSS' )</script>\",\n\tcurrentText: \"<script>doEvilThing( 'currentText XSS' )</script>\",\n\tprevText: \"<script>doEvilThing( 'prevText XSS' )</script>\",\n\tnextText: \"<script>doEvilThing( 'nextText XSS' )</script>\",\n\tbuttonText: \"<script>doEvilThing( 'buttonText XSS' )</script>\",\n\tappendText: \"<script>doEvilThing( 'appendText XSS' )</script>\",\n} );\n```\nwill call `doEvilThing` with 6 different parameters coming from all `*Text` options.\n\n### Patches\nThe issue is fixed in jQuery UI 1.13.0. The values passed to various `*Text` options are now always treated as pure text, not HTML.\n\n### Workarounds\nA workaround is to not accept the value of the `*Text` options from untrusted sources.\n\n### For more information\nIf you have any questions or comments about this advisory, search for a relevant issue in [the jQuery UI repo](https://github.com/jquery/jquery-ui/issues). If you don't find an answer, open a new issue.\n\n## Related CVE(s)\nBIT-drupal-2021-41183, CVE-2021-41183",
+            "recommendation": "Update to 1.13.2 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://blog.jqueryui.com/2021/10/jquery-ui-1-13-0-released"
+                },
+                {
+                    "title": "GitHub PR",
+                    "url": "https://github.com/jquery/jquery-ui/pull/1953"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://lists.debian.org/debian-lts-announce/2022/01/msg00014.html"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.debian.org/debian-lts-announce/2022/01/msg00014.html"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:npm/jquery-ui@1.11.4",
+                    "versions": [
+                        {
+                            "version": "1.11.4",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.13.2",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "jquery-ui@>=0-<1.13.0"
+                }
+            ],
+            "published": "2021-10-26T14:55:21",
+            "updated": "2024-03-11T05:21:04"
+        },
+        {
+            "bom-ref": "CVE-2021-41184/pkg:npm/jquery-ui@1.11.4",
+            "id": "CVE-2021-41184",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41184"
+            },
+            "ratings": [
+                {
+                    "score": 6.5,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                79
+            ],
+            "description": "# XSS in the `of` option of the `.position()` util in jquery-ui\n### Impact\nAccepting the value of the `of` option of the [`.position()`](https://api.jqueryui.com/position/) util from untrusted sources may execute untrusted code. For example, invoking the following code:\n```js\n$( \"#element\" ).position( {\n\tmy: \"left top\",\n\tat: \"right bottom\",\n\tof: \"<img onerror='doEvilThing()' src='/404' />\",\n\tcollision: \"none\"\n} );\n```\nwill call the `doEvilThing()` function.\n\n### Patches\nThe issue is fixed in jQuery UI 1.13.0. Any string value passed to the `of` option is now treated as a CSS selector.\n\n### Workarounds\nA workaround is to not accept the value of the `of` option from untrusted sources.\n\n### For more information\nIf you have any questions or comments about this advisory, search for a relevant issue in [the jQuery UI repo](https://github.com/jquery/jquery-ui/issues). If you don't find an answer, open a new issue.\n\n## Related CVE(s)\nBIT-drupal-2021-41184, CVE-2021-41184",
+            "recommendation": "Update to 1.13.2 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://blog.jqueryui.com/2021/10/jquery-ui-1-13-0-released"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://lists.debian.org/debian-lts-announce/2023/08/msg00040.html"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.debian.org/debian-lts-announce/2023/08/msg00040.html"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:npm/jquery-ui@1.11.4",
+                    "versions": [
+                        {
+                            "version": "1.11.4",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.13.2",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "jquery-ui@>=0-<1.13.0"
+                }
+            ],
+            "published": "2021-10-26T14:55:12",
+            "updated": "2024-03-11T05:18:56"
+        },
+        {
+            "bom-ref": "CVE-2022-31160/pkg:npm/jquery-ui@1.12.1",
+            "id": "CVE-2022-31160",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-31160"
+            },
+            "ratings": [
+                {
+                    "score": 6.1,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                79
+            ],
+            "description": "# jQuery UI vulnerable to XSS when refreshing a checkboxradio with an HTML-like initial text label\n### Impact\nInitializing a checkboxradio widget on an input enclosed within a label makes that parent label contents considered as the input label. If you call `.checkboxradio( \"refresh\" )` on such a widget and the initial HTML contained encoded HTML entities, they will erroneously get decoded. This can lead to potentially executing JavaScript code.\n\nFor example, starting with the following initial secure HTML:\n```html\n<label>\n\t<input id=\"test-input\">\n\t&lt;img src=x onerror=\"alert(1)\"&gt;\n</label>\n```\nand calling:\n```js\n$( \"#test-input\" ).checkboxradio();\n$( \"#test-input\" ).checkboxradio( \"refresh\" );\n```\nwill turn the initial HTML into:\n```html\n<label>\n\t<!-- some jQuery UI elements -->\n\t<input id=\"test-input\">\n\t<img src=x onerror=\"alert(1)\">\n</label>\n```\nand the alert will get executed.\n\n### Patches\nThe bug has been patched in jQuery UI 1.13.2.\n\n### Workarounds\nTo remediate the issue, if you can change the initial HTML, you can wrap all the non-input contents of the `label` in a `span`:\n```html\n<label>\n\t<input id=\"test-input\">\n\t<span>&lt;img src=x onerror=\"alert(1)\"&gt;</span>\n</label>\n```\n\n### References\nhttps://blog.jqueryui.com/2022/07/jquery-ui-1-13-2-released/\n\n### For more information\nIf you have any questions or comments about this advisory, search for a relevant issue in [the jQuery UI repo](https://github.com/jquery/jquery-ui/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc). If you don't find an answer, open a new issue.",
+            "recommendation": "Update to 1.13.2 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://www.drupal.org/sa-contrib-2022-052"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QB2FJQXCNHO32VGVOC6DY6IPGVE4VDU6"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QB2FJQXCNHO32VGVOC6DY6IPGVE4VDU6"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:npm/jquery-ui@1.12.1",
+                    "versions": [
+                        {
+                            "version": "1.12.1",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.13.2",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "jquery-ui@>=0-<1.13.2"
+                }
+            ],
+            "published": "2022-07-18T17:07:36",
+            "updated": "2024-02-16T08:12:04"
+        },
+        {
+            "bom-ref": "CVE-2020-23064/pkg:npm/jquery@3.3.1",
+            "id": "CVE-2020-23064",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-23064"
+            },
+            "ratings": [
+                {
+                    "score": 6.1,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                79
+            ],
+            "description": "# jQuery Cross Site Scripting vulnerability\nCross Site Scripting vulnerability in jQuery v.2.2.0 until v.3.5.0 allows a remote attacker to execute arbitrary code via the `<options>` element.\n\n## Related CVE(s)\nCVE-2020-23064, SNYK-JS-JQUERY-565129",
+            "recommendation": "Update to 3.5.0 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://snyk.io/vuln/SNYK-JS-JQUERY-565129"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:npm/jquery@3.3.1",
+                    "versions": [
+                        {
+                            "version": "3.3.1",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.5.0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "true"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "jquery@>=1.0.3-<3.5.0"
+                }
+            ],
+            "published": "2023-06-26T21:30:58",
+            "updated": "2024-04-01T18:46:17"
+        },
+        {
+            "bom-ref": "CVE-2022-31160/pkg:npm/jquery-ui@1.11.4",
+            "id": "CVE-2022-31160",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-31160"
+            },
+            "ratings": [
+                {
+                    "score": 6.1,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                79
+            ],
+            "description": "# jQuery UI vulnerable to XSS when refreshing a checkboxradio with an HTML-like initial text label\n### Impact\nInitializing a checkboxradio widget on an input enclosed within a label makes that parent label contents considered as the input label. If you call `.checkboxradio( \"refresh\" )` on such a widget and the initial HTML contained encoded HTML entities, they will erroneously get decoded. This can lead to potentially executing JavaScript code.\n\nFor example, starting with the following initial secure HTML:\n```html\n<label>\n\t<input id=\"test-input\">\n\t&lt;img src=x onerror=\"alert(1)\"&gt;\n</label>\n```\nand calling:\n```js\n$( \"#test-input\" ).checkboxradio();\n$( \"#test-input\" ).checkboxradio( \"refresh\" );\n```\nwill turn the initial HTML into:\n```html\n<label>\n\t<!-- some jQuery UI elements -->\n\t<input id=\"test-input\">\n\t<img src=x onerror=\"alert(1)\">\n</label>\n```\nand the alert will get executed.\n\n### Patches\nThe bug has been patched in jQuery UI 1.13.2.\n\n### Workarounds\nTo remediate the issue, if you can change the initial HTML, you can wrap all the non-input contents of the `label` in a `span`:\n```html\n<label>\n\t<input id=\"test-input\">\n\t<span>&lt;img src=x onerror=\"alert(1)\"&gt;</span>\n</label>\n```\n\n### References\nhttps://blog.jqueryui.com/2022/07/jquery-ui-1-13-2-released/\n\n### For more information\nIf you have any questions or comments about this advisory, search for a relevant issue in [the jQuery UI repo](https://github.com/jquery/jquery-ui/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc). If you don't find an answer, open a new issue.",
+            "recommendation": "Update to 1.13.2 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://www.drupal.org/sa-contrib-2022-052"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QB2FJQXCNHO32VGVOC6DY6IPGVE4VDU6"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QB2FJQXCNHO32VGVOC6DY6IPGVE4VDU6"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:npm/jquery-ui@1.11.4",
+                    "versions": [
+                        {
+                            "version": "1.11.4",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "1.13.2",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "jquery-ui@>=0-<1.13.2"
+                }
+            ],
+            "published": "2022-07-18T17:07:36",
+            "updated": "2024-02-16T08:12:04"
+        },
+        {
+            "bom-ref": "CVE-2020-11023/pkg:npm/jquery@3.3.1",
+            "id": "CVE-2020-11023",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-11023"
+            },
+            "ratings": [
+                {
+                    "score": 6.9,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                79
+            ],
+            "description": "# Potential XSS vulnerability in jQuery\n### Impact\nPassing HTML containing `<option>` elements from untrusted sources - even after sanitizing them - to one of jQuery's DOM manipulation methods (i.e. `.html()`, `.append()`, and others) may execute untrusted code.\n\n### Patches\nThis problem is patched in jQuery 3.5.0.\n\n### Workarounds\nTo workaround this issue without upgrading, use [DOMPurify](https://github.com/cure53/DOMPurify) with its `SAFE_FOR_JQUERY` option to sanitize the HTML string before passing it to a jQuery method.\n\n### References\nhttps://blog.jquery.com/2020/04/10/jquery-3-5-0-released/\n\n### For more information\nIf you have any questions or comments about this advisory, search for a relevant issue in [the jQuery repo](https://github.com/jquery/jquery/issues). If you don't find an answer, open a new issue.\n\n## Related CVE(s)\nBIT-drupal-2020-11023, CVE-2020-11023",
+            "recommendation": "Update to 3.5.0 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "http://packetstormsecurity.com/files/162160/jQuery-1.0.3-Cross-Site-Scripting.html"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "http://lists.opensuse.org/opensuse-security-announce/2020-11/msg00039.html"
+                },
+                {
+                    "title": "vendor",
+                    "url": "http://lists.opensuse.org/opensuse-security-announce/2020-11/msg00039.html"
+                },
+                {
+                    "title": "Gentoo Security",
+                    "url": "https://security.gentoo.org/glsa/202007-03"
+                },
+                {
+                    "title": "Debian Security",
+                    "url": "https://www.debian.org/security/2020/dsa-4693"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:npm/jquery@3.3.1",
+                    "versions": [
+                        {
+                            "version": "3.3.1",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "3.5.0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "true"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "jquery@>=1.0.3-<3.5.0"
+                }
+            ],
+            "published": "2020-04-29T22:19:14",
+            "updated": "2024-03-10T05:16:52"
+        }
+    ]
+}

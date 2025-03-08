@@ -1,0 +1,1268 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "photon",
+  "documentNamespace": "http://aquasecurity.github.io/trivy/container_image/photon-89bf6271-9802-454b-8a3f-5bdd07b7fae8",
+  "creationInfo": {
+    "licenseListVersion": "",
+    "creators": [
+      "Organization: aquasecurity",
+      "Tool: trivy-0.46.0"
+    ],
+    "created": "2024-04-20T17:46:35Z"
+  },
+  "packages": [
+    {
+      "name": "bash",
+      "SPDXID": "SPDXRef-Package-8109d3771939f80b",
+      "versionInfo": "5.2-1.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "57a707ecf96219789f30160210704486"
+        }
+      ],
+      "sourceInfo": "built package from: bash 5.2-1.ph5",
+      "licenseConcluded": "GPL-3.0-only",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/bash@5.2-1.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: bash@5.2-1.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "bzip2-libs",
+      "SPDXID": "SPDXRef-Package-75a08149929df3a7",
+      "versionInfo": "1.0.8-5.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "c325f2238bb667d2c10839da6ded2568"
+        }
+      ],
+      "sourceInfo": "built package from: bzip2 1.0.8-5.ph5",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/bzip2-libs@1.0.8-5.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: bzip2-libs@1.0.8-5.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "ca-certificates",
+      "SPDXID": "SPDXRef-Package-bf6f0e459a74c08b",
+      "versionInfo": "20230315-2.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "7c1ca2f095710a53cd5b698814d3744f"
+        }
+      ],
+      "sourceInfo": "built package from: ca-certificates 20230315-2.ph5",
+      "licenseConcluded": "Custom",
+      "licenseDeclared": "Custom",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/ca-certificates@20230315-2.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: ca-certificates@20230315-2.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "ca-certificates-pki",
+      "SPDXID": "SPDXRef-Package-ccd7e6ecbc9fca24",
+      "versionInfo": "20230315-2.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "2a27778d039bc9caaf71d7a2724394cc"
+        }
+      ],
+      "sourceInfo": "built package from: ca-certificates 20230315-2.ph5",
+      "licenseConcluded": "Custom",
+      "licenseDeclared": "Custom",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/ca-certificates-pki@20230315-2.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: ca-certificates-pki@20230315-2.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "curl",
+      "SPDXID": "SPDXRef-Package-e8a7daa0603a30f3",
+      "versionInfo": "8.1.2-7.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "3955ec1a3aa0d3cb0aadd7c6fa5ebc6c"
+        }
+      ],
+      "sourceInfo": "built package from: curl 8.1.2-7.ph5",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/curl@8.1.2-7.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: curl@8.1.2-7.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "curl-libs",
+      "SPDXID": "SPDXRef-Package-17fca33a35ab7da9",
+      "versionInfo": "8.1.2-7.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "34417ab8106321088a70d3cb7f9037e3"
+        }
+      ],
+      "sourceInfo": "built package from: curl 8.1.2-7.ph5",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/curl-libs@8.1.2-7.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: curl-libs@8.1.2-7.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "e2fsprogs-libs",
+      "SPDXID": "SPDXRef-Package-7db1aeb46b4fdfd2",
+      "versionInfo": "1.46.5-2.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "01fe05aa14f3308e80a9ae2d4bcf26b7"
+        }
+      ],
+      "sourceInfo": "built package from: e2fsprogs 1.46.5-2.ph5",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/e2fsprogs-libs@1.46.5-2.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: e2fsprogs-libs@1.46.5-2.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "elfutils-libelf",
+      "SPDXID": "SPDXRef-Package-fe89431b5413f5d0",
+      "versionInfo": "0.189-2.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "067bad4c98dab25c0efcf1cdf37e2a32"
+        }
+      ],
+      "sourceInfo": "built package from: elfutils 0.189-2.ph5",
+      "licenseConcluded": "GPL-2.0-or-later OR LGPLv3+",
+      "licenseDeclared": "GPL-2.0-or-later OR LGPLv3+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/elfutils-libelf@0.189-2.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: elfutils-libelf@0.189-2.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "expat-libs",
+      "SPDXID": "SPDXRef-Package-f26e7760439751c2",
+      "versionInfo": "2.5.0-1.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "255eaf8fa0944a83ff48aefa6406b5f0"
+        }
+      ],
+      "sourceInfo": "built package from: expat 2.5.0-1.ph5",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/expat-libs@2.5.0-1.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: expat-libs@2.5.0-1.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "filesystem",
+      "SPDXID": "SPDXRef-Package-f9b630c4edea8462",
+      "versionInfo": "1.1-4.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "fc05b0c6c2998d9ea7d2b4fbefd391df"
+        }
+      ],
+      "sourceInfo": "built package from: filesystem 1.1-4.ph5",
+      "licenseConcluded": "GPL-3.0-only",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/filesystem@1.1-4.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: filesystem@1.1-4.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "glibc",
+      "SPDXID": "SPDXRef-Package-b7151e1a7adc4805",
+      "versionInfo": "2.36-8.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "96f922a58a18c3a3fecfcc6c0525e347"
+        }
+      ],
+      "sourceInfo": "built package from: glibc 2.36-8.ph5",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/glibc@2.36-8.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: glibc@2.36-8.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "glibc-libs",
+      "SPDXID": "SPDXRef-Package-6ead300301de7d46",
+      "versionInfo": "2.36-8.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f25661f28f8a815fc1de9360fe2b00bb"
+        }
+      ],
+      "sourceInfo": "built package from: glibc 2.36-8.ph5",
+      "licenseConcluded": "LGPLv2+",
+      "licenseDeclared": "LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/glibc-libs@2.36-8.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: glibc-libs@2.36-8.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gpg-pubkey",
+      "SPDXID": "SPDXRef-Package-7e62e20e1992a6ee",
+      "versionInfo": "8a6a826d-596882ca",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "pubkey",
+      "licenseDeclared": "pubkey",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/gpg-pubkey@8a6a826d-596882ca?arch=None\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gpg-pubkey@8a6a826d-596882ca.",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gpg-pubkey",
+      "SPDXID": "SPDXRef-Package-c5aaacd9da7692eb",
+      "versionInfo": "66fd4949-4803fe57",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "pubkey",
+      "licenseDeclared": "pubkey",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/gpg-pubkey@66fd4949-4803fe57?arch=None\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gpg-pubkey@66fd4949-4803fe57.",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "krb5",
+      "SPDXID": "SPDXRef-Package-2117ee41b0af152a",
+      "versionInfo": "1.20.2-1.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "4ec386da75bf377860a60673b5074bdb"
+        }
+      ],
+      "sourceInfo": "built package from: krb5 1.20.2-1.ph5",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/krb5@1.20.2-1.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: krb5@1.20.2-1.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libcap",
+      "SPDXID": "SPDXRef-Package-83a21c5397e8ea36",
+      "versionInfo": "2.66-2.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "3feb7af8605ebfad88ef319cd08513e9"
+        }
+      ],
+      "sourceInfo": "built package from: libcap 2.66-2.ph5",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/libcap@2.66-2.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libcap@2.66-2.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libgcc",
+      "SPDXID": "SPDXRef-Package-b07ff840e1320308",
+      "versionInfo": "12.2.0-2.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "460bd99ac57b28d26b0ae0ca2eb3e5bf"
+        }
+      ],
+      "sourceInfo": "built package from: gcc 12.2.0-2.ph5",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/libgcc@12.2.0-2.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libgcc@12.2.0-2.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libsolv",
+      "SPDXID": "SPDXRef-Package-142d7060b9184322",
+      "versionInfo": "0.7.22-5.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "638167b146e8732d4dfdc8af7057f26a"
+        }
+      ],
+      "sourceInfo": "built package from: libsolv 0.7.22-5.ph5",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/libsolv@0.7.22-5.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libsolv@0.7.22-5.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "libssh2",
+      "SPDXID": "SPDXRef-Package-743f16ef44ab55cf",
+      "versionInfo": "1.11.0-2.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "4bbc1e290457e6f022636d129309a259"
+        }
+      ],
+      "sourceInfo": "built package from: libssh2 1.11.0-2.ph5",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/libssh2@1.11.0-2.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: libssh2@1.11.0-2.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "lua-libs",
+      "SPDXID": "SPDXRef-Package-971ecd09ac1ebace",
+      "versionInfo": "5.4.6-1.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "c7d5b5e796ba4d5caab9b81bda03f3f5"
+        }
+      ],
+      "sourceInfo": "built package from: lua 5.4.6-1.ph5",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/lua-libs@5.4.6-1.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: lua-libs@5.4.6-1.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "ncurses-libs",
+      "SPDXID": "SPDXRef-Package-4de53e2c9146e675",
+      "versionInfo": "6.4-2.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "bb0b24c241906a73974fff56486bcf40"
+        }
+      ],
+      "sourceInfo": "built package from: ncurses 6.4-2.ph5",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/ncurses-libs@6.4-2.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: ncurses-libs@6.4-2.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "nspr",
+      "SPDXID": "SPDXRef-Package-6d6312a6b609082f",
+      "versionInfo": "4.33-1.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "d849ab6cc1299de228610a7c42e8cd3a"
+        }
+      ],
+      "sourceInfo": "built package from: nspr 4.33-1.ph5",
+      "licenseConcluded": "MPLv2.0",
+      "licenseDeclared": "MPLv2.0",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/nspr@4.33-1.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: nspr@4.33-1.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "nss-libs",
+      "SPDXID": "SPDXRef-Package-c791732bae8c4839",
+      "versionInfo": "3.78-6.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "2fcf2adf7fdc6188663aa5be6c55ca2c"
+        }
+      ],
+      "sourceInfo": "built package from: nss 3.78-6.ph5",
+      "licenseConcluded": "MPLv2.0",
+      "licenseDeclared": "MPLv2.0",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/nss-libs@3.78-6.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: nss-libs@3.78-6.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "openssl-libs",
+      "SPDXID": "SPDXRef-Package-a3121742d7afce80",
+      "versionInfo": "3.0.9-9.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "18cca1b396b73275f09286d661d6df2f"
+        }
+      ],
+      "sourceInfo": "built package from: openssl 3.0.9-9.ph5",
+      "licenseConcluded": "OpenSSL",
+      "licenseDeclared": "OpenSSL",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/openssl-libs@3.0.9-9.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: openssl-libs@3.0.9-9.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "photon",
+      "SPDXID": "SPDXRef-ContainerImage-8f7bb39e25e9ff1f",
+      "downloadLocation": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:oci/photon@sha256%3A1abc5e403f89099cde0133ce7272b36b96888975408428dc60ae6cd05dc7c445?arch=amd64\u0026repository_url=index.docker.io%2Flibrary%2Fphoton"
+        }
+      ],
+      "attributionTexts": [
+        "SchemaVersion: 2",
+        "ImageID: sha256:c5c324f10b7679e5b8f9e115f589ef68a4dd2bc0681585369d71e939489e7f8c",
+        "RepoDigest: photon@sha256:1abc5e403f89099cde0133ce7272b36b96888975408428dc60ae6cd05dc7c445",
+        "DiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438",
+        "RepoTag: photon:latest"
+      ],
+      "primaryPackagePurpose": "CONTAINER"
+    },
+    {
+      "name": "photon",
+      "SPDXID": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "versionInfo": "5.0",
+      "downloadLocation": "NONE",
+      "copyrightText": "",
+      "primaryPackagePurpose": "OPERATING-SYSTEM"
+    },
+    {
+      "name": "photon-release",
+      "SPDXID": "SPDXRef-Package-722a989fd688632f",
+      "versionInfo": "5.0-2.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "f2ea3ddb627a48317553b5b12ac72c83"
+        }
+      ],
+      "sourceInfo": "built package from: photon-release 5.0-2.ph5",
+      "licenseConcluded": "Apache-License",
+      "licenseDeclared": "Apache-License",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/photon-release@5.0-2.ph5?arch=noarch\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: photon-release@5.0-2.ph5.noarch",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "photon-repos",
+      "SPDXID": "SPDXRef-Package-6003edffcfb221c",
+      "versionInfo": "5.0-4.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "03bd4a6155e0fa46f6a9a52df5b03cd2"
+        }
+      ],
+      "sourceInfo": "built package from: photon-repos 5.0-4.ph5",
+      "licenseConcluded": "Apache-License",
+      "licenseDeclared": "Apache-License",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/photon-repos@5.0-4.ph5?arch=noarch\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: photon-repos@5.0-4.ph5.noarch",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "popt",
+      "SPDXID": "SPDXRef-Package-543810bd3e31159c",
+      "versionInfo": "1.16-5.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "5660ee1bcef803950bfecb72a07c1a3b"
+        }
+      ],
+      "sourceInfo": "built package from: popt 1.16-5.ph5",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/popt@1.16-5.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: popt@1.16-5.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "readline",
+      "SPDXID": "SPDXRef-Package-1c0c984e39d0778c",
+      "versionInfo": "8.2-2.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "a5c7c178c70c672b2477067232d8d6b3"
+        }
+      ],
+      "sourceInfo": "built package from: readline 8.2-2.ph5",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/readline@8.2-2.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: readline@8.2-2.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "rpm-libs",
+      "SPDXID": "SPDXRef-Package-71f4bb017b418476",
+      "versionInfo": "4.18.2-1.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "05861d0f8cb9a2d143bc57cdd0f75eb8"
+        }
+      ],
+      "sourceInfo": "built package from: rpm 4.18.2-1.ph5",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/rpm-libs@4.18.2-1.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rpm-libs@4.18.2-1.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "sqlite-libs",
+      "SPDXID": "SPDXRef-Package-35e70aadd8b6a102",
+      "versionInfo": "3.40.1-3.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "30aea2dede4e8a037b45338ad06fa0b5"
+        }
+      ],
+      "sourceInfo": "built package from: sqlite 3.40.1-3.ph5",
+      "licenseConcluded": "Unlicense",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/sqlite-libs@3.40.1-3.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: sqlite-libs@3.40.1-3.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "tdnf",
+      "SPDXID": "SPDXRef-Package-d5f5402eba33114f",
+      "versionInfo": "3.5.6-1.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "a550e9cd8e2ae3a4522056a4e8712764"
+        }
+      ],
+      "sourceInfo": "built package from: tdnf 3.5.6-1.ph5",
+      "licenseConcluded": "LGPLv2.1-GPLv2",
+      "licenseDeclared": "LGPLv2.1-GPLv2",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/tdnf@3.5.6-1.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: tdnf@3.5.6-1.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "tdnf-cli-libs",
+      "SPDXID": "SPDXRef-Package-79d4ddce532b51e7",
+      "versionInfo": "3.5.6-1.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "b7ba696edb951d0cafc27b216ba4c9c5"
+        }
+      ],
+      "sourceInfo": "built package from: tdnf 3.5.6-1.ph5",
+      "licenseConcluded": "LGPLv2.1-GPLv2",
+      "licenseDeclared": "LGPLv2.1-GPLv2",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/tdnf-cli-libs@3.5.6-1.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: tdnf-cli-libs@3.5.6-1.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "toybox",
+      "SPDXID": "SPDXRef-Package-9d4b462a94f0bf46",
+      "versionInfo": "0.8.9-5.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "25bc6ecd6e2b08f5920f081d9b3d191a"
+        }
+      ],
+      "sourceInfo": "built package from: toybox 0.8.9-5.ph5",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/toybox@0.8.9-5.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: toybox@0.8.9-5.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "xz-libs",
+      "SPDXID": "SPDXRef-Package-3b59e6f53246e845",
+      "versionInfo": "5.4.0-1.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "d08e4e38aa2c344c8aa5478c67333eb0"
+        }
+      ],
+      "sourceInfo": "built package from: xz 5.4.0-1.ph5",
+      "licenseConcluded": "GPL-2.0-or-later AND GPL-3.0-or-later AND LGPLv2+",
+      "licenseDeclared": "GPL-2.0-or-later AND GPL-3.0-or-later AND LGPLv2+",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/xz-libs@5.4.0-1.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: xz-libs@5.4.0-1.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "zlib",
+      "SPDXID": "SPDXRef-Package-e396584fd7026530",
+      "versionInfo": "1.2.13-2.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "1bc7f49d6a1e8a4cc6c084d7acd94534"
+        }
+      ],
+      "sourceInfo": "built package from: zlib 1.2.13-2.ph5",
+      "licenseConcluded": "Zlib",
+      "licenseDeclared": "Zlib",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/zlib@1.2.13-2.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: zlib@1.2.13-2.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "zstd-libs",
+      "SPDXID": "SPDXRef-Package-fe77bf8d27ab11f4",
+      "versionInfo": "1.5.5-2.ph5",
+      "supplier": "Organization: VMware, Inc.",
+      "downloadLocation": "NONE",
+      "checksums": [
+        {
+          "algorithm": "MD5",
+          "checksumValue": "9a37b5308405a941b7a8addaca8a0da0"
+        }
+      ],
+      "sourceInfo": "built package from: zstd 1.5.5-2.ph5",
+      "licenseConcluded": "BSD-3-Clause AND GPL-2.0-only",
+      "licenseDeclared": "BSD-3-Clause AND GPL-2.0-only",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:rpm/photon/zstd-libs@1.5.5-2.ph5?arch=x86_64\u0026distro=photon-5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: zstd-libs@1.5.5-2.ph5.x86_64",
+        "LayerDiffID: sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-ContainerImage-8f7bb39e25e9ff1f",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-ContainerImage-8f7bb39e25e9ff1f",
+      "relatedSpdxElement": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-8109d3771939f80b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-75a08149929df3a7",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-bf6f0e459a74c08b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-ccd7e6ecbc9fca24",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-e8a7daa0603a30f3",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-17fca33a35ab7da9",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-7db1aeb46b4fdfd2",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-fe89431b5413f5d0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-f26e7760439751c2",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-f9b630c4edea8462",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-b7151e1a7adc4805",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-6ead300301de7d46",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-c5aaacd9da7692eb",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-7e62e20e1992a6ee",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-2117ee41b0af152a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-83a21c5397e8ea36",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-b07ff840e1320308",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-142d7060b9184322",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-743f16ef44ab55cf",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-971ecd09ac1ebace",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-4de53e2c9146e675",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-6d6312a6b609082f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-c791732bae8c4839",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-a3121742d7afce80",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-722a989fd688632f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-6003edffcfb221c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-543810bd3e31159c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-1c0c984e39d0778c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-71f4bb017b418476",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-35e70aadd8b6a102",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-d5f5402eba33114f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-79d4ddce532b51e7",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-9d4b462a94f0bf46",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-3b59e6f53246e845",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-e396584fd7026530",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-OperatingSystem-288757a9797f7b5d",
+      "relatedSpdxElement": "SPDXRef-Package-fe77bf8d27ab11f4",
+      "relationshipType": "CONTAINS"
+    }
+  ]
+}

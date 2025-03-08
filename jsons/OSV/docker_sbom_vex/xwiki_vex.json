@@ -1,0 +1,411 @@
+{
+  "results": [
+    {
+      "source": {
+        "path": "/Users/katushka/Documents/vex_json/jsons/docker_scout/sboms/xwiki_sbom.json",
+        "type": "sbom"
+      },
+      "packages": [
+        {
+          "package": {
+            "name": "net.sourceforge.htmlcleaner:htmlcleaner",
+            "version": "2.24",
+            "ecosystem": "Maven"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-16T08:21:19Z",
+              "published": "2023-06-14T15:30:38Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-jv4x-j47q-6qvp",
+              "aliases": [
+                "CVE-2023-34624"
+              ],
+              "summary": "htmlcleaner vulnerable to stack exhaustion",
+              "details": "An issue was discovered htmlcleaner through version 2.28 allows attackers to cause a denial of service or other unspecified impacts via crafted objects that deeply nested structures.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "net.sourceforge.htmlcleaner:htmlcleaner",
+                    "purl": "pkg:maven/net.sourceforge.htmlcleaner/htmlcleaner"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "last_affected": "2.28"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "2.10",
+                    "2.11",
+                    "2.12",
+                    "2.13",
+                    "2.14",
+                    "2.15",
+                    "2.16",
+                    "2.17",
+                    "2.18",
+                    "2.19",
+                    "2.2",
+                    "2.2.1",
+                    "2.20",
+                    "2.21",
+                    "2.22",
+                    "2.23",
+                    "2.24",
+                    "2.25",
+                    "2.26",
+                    "2.27",
+                    "2.28",
+                    "2.4",
+                    "2.5",
+                    "2.6",
+                    "2.6.1",
+                    "2.7",
+                    "2.8",
+                    "2.9"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/06/GHSA-jv4x-j47q-6qvp/GHSA-jv4x-j47q-6qvp.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-34624"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/amplafi/htmlcleaner/issues/13"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/amplafi/htmlcleaner"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.debian.org/debian-lts-announce/2023/08/msg00007.html"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.debian.org/security/2023/dsa-5471"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-400",
+                  "CWE-787"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2023-06-14T21:01:31Z",
+                "nvd_published_at": "2023-06-14T14:15:10Z",
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-jv4x-j47q-6qvp"
+              ],
+              "aliases": [
+                "CVE-2023-34624",
+                "GHSA-jv4x-j47q-6qvp"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "org.apache.james:apache-mime4j-core",
+            "version": "0.8.9",
+            "ecosystem": "Maven"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-01T14:46:07Z",
+              "published": "2024-02-27T18:31:02Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-jw7r-rxff-gv24",
+              "aliases": [
+                "CVE-2024-21742"
+              ],
+              "summary": "Apache James MIME4J improper input validation vulnerability",
+              "details": "Improper input validation allows for header injection in MIME4J library when using MIME4J DOM for composing message.\nThis can be exploited by an attacker to add unintended headers to MIME messages.\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.apache.james:apache-mime4j-core",
+                    "purl": "pkg:maven/org.apache.james/apache-mime4j-core"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "0.8.10"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.7",
+                    "0.7.1",
+                    "0.7.2",
+                    "0.8.0",
+                    "0.8.1",
+                    "0.8.2",
+                    "0.8.3",
+                    "0.8.4",
+                    "0.8.5",
+                    "0.8.6",
+                    "0.8.7",
+                    "0.8.8",
+                    "0.8.9"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-jw7r-rxff-gv24/GHSA-jw7r-rxff-gv24.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-21742"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/apache/james-mime4j/commit/9dec5df2a588fed8027839815daefa79ee66efd1"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/apache/james-mime4j/commit/d25fb3fd35db42b060789a20634fbe3cb84aba17"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/apache/james-mime4j"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread/nrqzg93219wdj056pqfszsd33dc54kfy"
+                },
+                {
+                  "type": "WEB",
+                  "url": "http://www.openwall.com/lists/oss-security/2024/02/27/5"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-20"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-02-27T21:54:39Z",
+                "nvd_published_at": "2024-02-27T17:15:12Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-jw7r-rxff-gv24"
+              ],
+              "aliases": [
+                "CVE-2024-21742",
+                "GHSA-jw7r-rxff-gv24"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "org.jdom:jdom",
+            "version": "1.1.3",
+            "ecosystem": "Maven"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-08T05:19:00Z",
+              "published": "2021-07-27T19:02:56Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-2363-cqg2-863c",
+              "aliases": [
+                "BIT-solr-2021-33813",
+                "CVE-2021-33813"
+              ],
+              "summary": "XML External Entity (XXE) Injection in JDOM",
+              "details": "An XXE issue in SAXBuilder in JDOM through 2.0.6 allows attackers to cause a denial of service via a crafted HTTP request.  At this time there is not released fixed version of JDOM.  As a workaround, to avoid external entities being expanded, one can call `builder.setExpandEntities(false)` and they won't be expanded.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.jdom:jdom",
+                    "purl": "pkg:maven/org.jdom/jdom"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "last_affected": "2.0.6"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "1.1",
+                    "1.1.2",
+                    "1.1.3",
+                    "2.0.0",
+                    "2.0.1",
+                    "2.0.2"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/07/GHSA-2363-cqg2-863c/GHSA-2363-cqg2-863c.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-33813"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/hunterhacker/jdom/pull/188"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/hunterhacker/jdom/commit/dd4f3c2fc7893edd914954c73eb577f925a7d361"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.oracle.com/security-alerts/cpujul2022.html"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EWFVYTHGILOQXUA7U3SPOERQXL7OPSZG"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AH46QHE5GIMT6BL6C3GDTOYF27JYILXM"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.debian.org/debian-lts-announce/2021/07/msg00012.html"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.debian.org/debian-lts-announce/2021/06/msg00026.html"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread.html/rfb7a93e40ebeb1e0068cde0bf3834dcab46bb1ef06d6424db48ed9fd@%3Cdev.tika.apache.org%3E"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread.html/rbc075a4ac85e7a8e47420b7383f16ffa0af3b792b8423584735f369f@%3Cissues.solr.apache.org%3E"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread.html/r9974f64723875052e02787b2a5eda689ac5247c71b827d455e5dc9a6@%3Cissues.solr.apache.org%3E"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread.html/r89b3800cfabb1e773e49425e5d4239c28a659839a2eca6af3431482e@%3Cissues.solr.apache.org%3E"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread.html/r845e987b7cd8efe610284958e997b84583f5a98d3394adc09e3482fe@%3Cissues.solr.apache.org%3E"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread.html/r6db397ae7281ead825338200d1f62d2827585a70797cc9ac0c4bd23f@%3Cissues.solr.apache.org%3E"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread.html/r5674106135bb1a6ef57483f4c63a9c44bca85d0e2a8a05895a8f1d89@%3Cissues.solr.apache.org%3E"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread.html/r21c406c7ed88fe340db7dbae75e58355159e6c324037c7d5547bf40b@%3Cissues.solr.apache.org%3E"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/hunterhacker/jdom/releases"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/hunterhacker/jdom"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://alephsecurity.com/vulns/aleph-2021003"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-611"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2021-07-27T19:02:41Z",
+                "nvd_published_at": "2021-06-16T12:15:00Z",
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-2363-cqg2-863c"
+              ],
+              "aliases": [
+                "BIT-solr-2021-33813",
+                "CVE-2021-33813",
+                "GHSA-2363-cqg2-863c"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "experimental_config": {
+    "licenses": {
+      "summary": false,
+      "allowlist": null
+    }
+  }
+}

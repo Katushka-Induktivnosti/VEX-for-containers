@@ -1,0 +1,846 @@
+{
+  "results": [
+    {
+      "source": {
+        "path": "/Users/katushka/Documents/vex_json/jsons/DepScan/sboms/bonita_sbom.json",
+        "type": "sbom"
+      },
+      "packages": [
+        {
+          "package": {
+            "name": "giflib",
+            "version": "5.2.1-r4",
+            "ecosystem": "Alpine"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-05-14T10:46:14Z",
+              "published": "2022-06-14T11:15:10Z",
+              "schema_version": "1.6.0",
+              "id": "CVE-2021-40633",
+              "details": "A memory leak (out-of-memory) in gif2rgb in util/gif2rgb.c in giflib 5.1.4 allows remote attackers trigger an out of memory exception or denial of service via a gif format file.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Alpine:v3.17",
+                    "name": "giflib",
+                    "purl": "pkg:apk/alpine/giflib?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "5.2.2-r0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "4.1.6-r0",
+                    "4.1.6-r1",
+                    "4.1.6-r2",
+                    "4.1.6-r3",
+                    "4.1.6-r4",
+                    "4.1.6-r5",
+                    "4.1.6-r6",
+                    "4.1.6-r7",
+                    "4.2.1-r0",
+                    "5.0.4-r0",
+                    "5.0.5-r0",
+                    "5.0.6-r0",
+                    "5.1.0-r0",
+                    "5.1.1-r0",
+                    "5.1.2-r0",
+                    "5.1.4-r0",
+                    "5.1.4-r1",
+                    "5.1.4-r2",
+                    "5.1.9-r0",
+                    "5.2.1-r0",
+                    "5.2.1-r1",
+                    "5.2.1-r2"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/cve-osv-conversion/osv-output/CVE-2021-40633.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Alpine:v3.18",
+                    "name": "giflib",
+                    "purl": "pkg:apk/alpine/giflib?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "5.2.2-r0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "4.1.6-r0",
+                    "4.1.6-r1",
+                    "4.1.6-r2",
+                    "4.1.6-r3",
+                    "4.1.6-r4",
+                    "4.1.6-r5",
+                    "4.1.6-r6",
+                    "4.1.6-r7",
+                    "4.2.1-r0",
+                    "5.0.4-r0",
+                    "5.0.5-r0",
+                    "5.0.6-r0",
+                    "5.1.0-r0",
+                    "5.1.1-r0",
+                    "5.1.2-r0",
+                    "5.1.4-r0",
+                    "5.1.4-r1",
+                    "5.1.4-r2",
+                    "5.1.9-r0",
+                    "5.2.1-r0",
+                    "5.2.1-r1",
+                    "5.2.1-r2",
+                    "5.2.1-r3",
+                    "5.2.1-r4"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/cve-osv-conversion/osv-output/CVE-2021-40633.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Alpine:v3.19",
+                    "name": "giflib",
+                    "purl": "pkg:apk/alpine/giflib?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "5.2.2-r0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "4.1.6-r0",
+                    "4.1.6-r1",
+                    "4.1.6-r2",
+                    "4.1.6-r3",
+                    "4.1.6-r4",
+                    "4.1.6-r5",
+                    "4.1.6-r6",
+                    "4.1.6-r7",
+                    "4.2.1-r0",
+                    "5.0.4-r0",
+                    "5.0.5-r0",
+                    "5.0.6-r0",
+                    "5.1.0-r0",
+                    "5.1.1-r0",
+                    "5.1.2-r0",
+                    "5.1.4-r0",
+                    "5.1.4-r1",
+                    "5.1.4-r2",
+                    "5.1.9-r0",
+                    "5.2.1-r0",
+                    "5.2.1-r1",
+                    "5.2.1-r2",
+                    "5.2.1-r3",
+                    "5.2.1-r4",
+                    "5.2.1-r5"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/cve-osv-conversion/osv-output/CVE-2021-40633.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://sourceforge.net/p/giflib/bugs/157/"
+                }
+              ]
+            },
+            {
+              "modified": "2024-05-14T12:59:39Z",
+              "published": "2023-08-25T14:15:09Z",
+              "schema_version": "1.6.0",
+              "id": "CVE-2023-39742",
+              "details": "giflib v5.2.1 was discovered to contain a segmentation fault via the component getarg.c.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Alpine:v3.17",
+                    "name": "giflib",
+                    "purl": "pkg:apk/alpine/giflib?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "5.2.2-r0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "4.1.6-r0",
+                    "4.1.6-r1",
+                    "4.1.6-r2",
+                    "4.1.6-r3",
+                    "4.1.6-r4",
+                    "4.1.6-r5",
+                    "4.1.6-r6",
+                    "4.1.6-r7",
+                    "4.2.1-r0",
+                    "5.0.4-r0",
+                    "5.0.5-r0",
+                    "5.0.6-r0",
+                    "5.1.0-r0",
+                    "5.1.1-r0",
+                    "5.1.2-r0",
+                    "5.1.4-r0",
+                    "5.1.4-r1",
+                    "5.1.4-r2",
+                    "5.1.9-r0",
+                    "5.2.1-r0",
+                    "5.2.1-r1",
+                    "5.2.1-r2"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/cve-osv-conversion/osv-output/CVE-2023-39742.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Alpine:v3.18",
+                    "name": "giflib",
+                    "purl": "pkg:apk/alpine/giflib?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "5.2.2-r0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "4.1.6-r0",
+                    "4.1.6-r1",
+                    "4.1.6-r2",
+                    "4.1.6-r3",
+                    "4.1.6-r4",
+                    "4.1.6-r5",
+                    "4.1.6-r6",
+                    "4.1.6-r7",
+                    "4.2.1-r0",
+                    "5.0.4-r0",
+                    "5.0.5-r0",
+                    "5.0.6-r0",
+                    "5.1.0-r0",
+                    "5.1.1-r0",
+                    "5.1.2-r0",
+                    "5.1.4-r0",
+                    "5.1.4-r1",
+                    "5.1.4-r2",
+                    "5.1.9-r0",
+                    "5.2.1-r0",
+                    "5.2.1-r1",
+                    "5.2.1-r2",
+                    "5.2.1-r3",
+                    "5.2.1-r4"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/cve-osv-conversion/osv-output/CVE-2023-39742.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Alpine:v3.19",
+                    "name": "giflib",
+                    "purl": "pkg:apk/alpine/giflib?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "5.2.2-r0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "4.1.6-r0",
+                    "4.1.6-r1",
+                    "4.1.6-r2",
+                    "4.1.6-r3",
+                    "4.1.6-r4",
+                    "4.1.6-r5",
+                    "4.1.6-r6",
+                    "4.1.6-r7",
+                    "4.2.1-r0",
+                    "5.0.4-r0",
+                    "5.0.5-r0",
+                    "5.0.6-r0",
+                    "5.1.0-r0",
+                    "5.1.1-r0",
+                    "5.1.2-r0",
+                    "5.1.4-r0",
+                    "5.1.4-r1",
+                    "5.1.4-r2",
+                    "5.1.9-r0",
+                    "5.2.1-r0",
+                    "5.2.1-r1",
+                    "5.2.1-r2",
+                    "5.2.1-r3",
+                    "5.2.1-r4",
+                    "5.2.1-r5"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/cve-osv-conversion/osv-output/CVE-2023-39742.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "REPORT",
+                  "url": "https://sourceforge.net/p/giflib/bugs/166/"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://gist.github.com/huanglei3/ec9090096aa92445cf0a8baa8e929084"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/O4RLSFGPBPR3FMIUJCWPGVIYIU35YGQX/"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/OPNBOB65TEA4ZEPLVENI26BY4LEX7TEF/"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/T5WO6WL2TCGO6T4VKGACDIVSZI74WJAU/"
+                }
+              ]
+            },
+            {
+              "modified": "2024-05-14T13:04:14Z",
+              "published": "2023-11-22T06:15:43Z",
+              "schema_version": "1.6.0",
+              "id": "CVE-2023-48161",
+              "details": "Buffer Overflow vulnerability in GifLib Project GifLib v.5.2.1 allows a local attacker to obtain sensitive information via the DumpSCreen2RGB function in gif2rgb.c",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Alpine:v3.17",
+                    "name": "giflib",
+                    "purl": "pkg:apk/alpine/giflib?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "5.2.2-r0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "4.1.6-r0",
+                    "4.1.6-r1",
+                    "4.1.6-r2",
+                    "4.1.6-r3",
+                    "4.1.6-r4",
+                    "4.1.6-r5",
+                    "4.1.6-r6",
+                    "4.1.6-r7",
+                    "4.2.1-r0",
+                    "5.0.4-r0",
+                    "5.0.5-r0",
+                    "5.0.6-r0",
+                    "5.1.0-r0",
+                    "5.1.1-r0",
+                    "5.1.2-r0",
+                    "5.1.4-r0",
+                    "5.1.4-r1",
+                    "5.1.4-r2",
+                    "5.1.9-r0",
+                    "5.2.1-r0",
+                    "5.2.1-r1",
+                    "5.2.1-r2"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/cve-osv-conversion/osv-output/CVE-2023-48161.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Alpine:v3.18",
+                    "name": "giflib",
+                    "purl": "pkg:apk/alpine/giflib?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "5.2.2-r0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "4.1.6-r0",
+                    "4.1.6-r1",
+                    "4.1.6-r2",
+                    "4.1.6-r3",
+                    "4.1.6-r4",
+                    "4.1.6-r5",
+                    "4.1.6-r6",
+                    "4.1.6-r7",
+                    "4.2.1-r0",
+                    "5.0.4-r0",
+                    "5.0.5-r0",
+                    "5.0.6-r0",
+                    "5.1.0-r0",
+                    "5.1.1-r0",
+                    "5.1.2-r0",
+                    "5.1.4-r0",
+                    "5.1.4-r1",
+                    "5.1.4-r2",
+                    "5.1.9-r0",
+                    "5.2.1-r0",
+                    "5.2.1-r1",
+                    "5.2.1-r2",
+                    "5.2.1-r3",
+                    "5.2.1-r4"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/cve-osv-conversion/osv-output/CVE-2023-48161.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Alpine:v3.19",
+                    "name": "giflib",
+                    "purl": "pkg:apk/alpine/giflib?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "5.2.2-r0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "4.1.6-r0",
+                    "4.1.6-r1",
+                    "4.1.6-r2",
+                    "4.1.6-r3",
+                    "4.1.6-r4",
+                    "4.1.6-r5",
+                    "4.1.6-r6",
+                    "4.1.6-r7",
+                    "4.2.1-r0",
+                    "5.0.4-r0",
+                    "5.0.5-r0",
+                    "5.0.6-r0",
+                    "5.1.0-r0",
+                    "5.1.1-r0",
+                    "5.1.2-r0",
+                    "5.1.4-r0",
+                    "5.1.4-r1",
+                    "5.1.4-r2",
+                    "5.1.9-r0",
+                    "5.2.1-r0",
+                    "5.2.1-r1",
+                    "5.2.1-r2",
+                    "5.2.1-r3",
+                    "5.2.1-r4",
+                    "5.2.1-r5"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/cve-osv-conversion/osv-output/CVE-2023-48161.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/tacetool/TACE#cve-2023-48161"
+                },
+                {
+                  "type": "REPORT",
+                  "url": "https://sourceforge.net/p/giflib/bugs/167/"
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "CVE-2021-40633"
+              ],
+              "aliases": [
+                "CVE-2021-40633"
+              ]
+            },
+            {
+              "ids": [
+                "CVE-2023-39742"
+              ],
+              "aliases": [
+                "CVE-2023-39742"
+              ]
+            },
+            {
+              "ids": [
+                "CVE-2023-48161"
+              ],
+              "aliases": [
+                "CVE-2023-48161"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "libjpeg-turbo",
+            "version": "2.1.5.1-r3",
+            "ecosystem": "Alpine"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-13T21:16:05Z",
+              "published": "2023-05-25T22:15:09Z",
+              "schema_version": "1.6.0",
+              "id": "CVE-2023-2804",
+              "details": "A heap-based buffer overflow issue was discovered in libjpeg-turbo in h2v2_merged_upsample_internal() function of jdmrgext.c file. The vulnerability can only be exploited with 12-bit data precision for which the range of the sample data type exceeds the valid sample range, hence, an attacker could craft a 12-bit lossless JPEG image that contains out-of-range 12-bit samples. An application attempting to decompress such image using merged upsampling would lead to segmentation fault or buffer overflows, causing an application to crash.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Alpine:v3.18",
+                    "name": "libjpeg-turbo",
+                    "purl": "pkg:apk/alpine/libjpeg-turbo?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.1.5.1-r3"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "1.2.1-r0",
+                    "1.2.1-r1",
+                    "1.2.1-r2",
+                    "1.2.1-r3",
+                    "1.3.0-r0",
+                    "1.3.0-r1",
+                    "1.3.1-r0",
+                    "1.4.0-r0",
+                    "1.4.1-r0",
+                    "1.4.2-r0",
+                    "1.5.0-r0",
+                    "1.5.1-r0",
+                    "1.5.2-r0",
+                    "1.5.3-r0",
+                    "1.5.3-r1",
+                    "1.5.3-r2",
+                    "1.5.3-r3",
+                    "1.5.3-r4",
+                    "2.0.2-r0",
+                    "2.0.3-r0",
+                    "2.0.4-r0",
+                    "2.0.4-r1",
+                    "2.0.4-r2",
+                    "2.0.5-r0",
+                    "2.0.5-r1",
+                    "2.0.6-r0",
+                    "2.1.0-r0",
+                    "2.1.1-r0",
+                    "2.1.2-r0",
+                    "2.1.2-r1",
+                    "2.1.3-r0",
+                    "2.1.3-r1",
+                    "2.1.4-r0",
+                    "2.1.5-r0",
+                    "2.1.5-r1",
+                    "2.1.5.1-r1"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/cve-osv-conversion/osv-output/CVE-2023-2804.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Alpine:v3.19",
+                    "name": "libjpeg-turbo",
+                    "purl": "pkg:apk/alpine/libjpeg-turbo?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.1.5.1-r4"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "1.2.1-r0",
+                    "1.2.1-r1",
+                    "1.2.1-r2",
+                    "1.2.1-r3",
+                    "1.3.0-r0",
+                    "1.3.0-r1",
+                    "1.3.1-r0",
+                    "1.4.0-r0",
+                    "1.4.1-r0",
+                    "1.4.2-r0",
+                    "1.5.0-r0",
+                    "1.5.1-r0",
+                    "1.5.2-r0",
+                    "1.5.3-r0",
+                    "1.5.3-r1",
+                    "1.5.3-r2",
+                    "1.5.3-r3",
+                    "1.5.3-r4",
+                    "2.0.2-r0",
+                    "2.0.3-r0",
+                    "2.0.4-r0",
+                    "2.0.4-r1",
+                    "2.0.4-r2",
+                    "2.0.5-r0",
+                    "2.0.5-r1",
+                    "2.0.6-r0",
+                    "2.1.0-r0",
+                    "2.1.1-r0",
+                    "2.1.2-r0",
+                    "2.1.2-r1",
+                    "2.1.3-r0",
+                    "2.1.3-r1",
+                    "2.1.4-r0",
+                    "2.1.5-r0",
+                    "2.1.5-r1",
+                    "2.1.5.1-r0",
+                    "2.1.5.1-r1",
+                    "2.1.5.1-r2",
+                    "2.1.5.1-r3"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/cve-osv-conversion/osv-output/CVE-2023-2804.json"
+                  }
+                },
+                {
+                  "ranges": [
+                    {
+                      "type": "GIT",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "9f756bc67a84d4566bf74a0c2432aa55da404021"
+                        }
+                      ],
+                      "repo": "https://github.com/libjpeg-turbo/libjpeg-turbo"
+                    }
+                  ],
+                  "versions": [
+                    "0.0.90",
+                    "0.0.91",
+                    "0.0.93",
+                    "1.0.0",
+                    "1.0.1",
+                    "1.0.90",
+                    "1.1.0",
+                    "1.1.1",
+                    "1.1.90",
+                    "1.2.0",
+                    "1.2.1",
+                    "1.2.90",
+                    "1.3.0",
+                    "1.3.1",
+                    "1.3.90",
+                    "1.4.0",
+                    "1.4.1",
+                    "1.4.2",
+                    "1.4.90",
+                    "1.5.0",
+                    "1.5.1",
+                    "1.5.2",
+                    "1.5.3",
+                    "1.5.90",
+                    "2.0.0",
+                    "2.0.1",
+                    "2.0.2",
+                    "2.0.3",
+                    "2.0.4",
+                    "2.0.5",
+                    "2.0.6",
+                    "2.0.90",
+                    "2.1.0",
+                    "2.1.1",
+                    "2.1.2",
+                    "2.1.3",
+                    "2.1.4",
+                    "2.1.5",
+                    "2.1.90",
+                    "2.1.91",
+                    "jpeg-1",
+                    "jpeg-2",
+                    "jpeg-3",
+                    "jpeg-4",
+                    "jpeg-4a",
+                    "jpeg-5",
+                    "jpeg-5a",
+                    "jpeg-5b",
+                    "jpeg-6",
+                    "jpeg-6a",
+                    "jpeg-6b",
+                    "jpeg-6bl",
+                    "jpeg-6bl-drc",
+                    "jpeg-6bx",
+                    "jpeg-7",
+                    "jpeg-8",
+                    "jpeg-8a",
+                    "jpeg-8b",
+                    "jpeg-8c",
+                    "jpeg-8d",
+                    "jpeg-9",
+                    "jpeg-9a",
+                    "jpeg-9b",
+                    "jpeg-9c",
+                    "jpeg-9d",
+                    "jpeg-ari"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/cve-osv-conversion/osv-output/CVE-2023-2804.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01006.html"
+                },
+                {
+                  "type": "REPORT",
+                  "url": "https://github.com/libjpeg-turbo/libjpeg-turbo/issues/668#issuecomment-1492586118"
+                },
+                {
+                  "type": "REPORT",
+                  "url": "https://github.com/libjpeg-turbo/libjpeg-turbo/issues/675"
+                },
+                {
+                  "type": "REPORT",
+                  "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2208447"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://github.com/libjpeg-turbo/libjpeg-turbo/commit/9f756bc67a84d4566bf74a0c2432aa55da404021"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://access.redhat.com/security/cve/CVE-2023-2804"
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "CVE-2023-2804"
+              ],
+              "aliases": [
+                "CVE-2023-2804"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "experimental_config": {
+    "licenses": {
+      "summary": false,
+      "allowlist": null
+    }
+  }
+}

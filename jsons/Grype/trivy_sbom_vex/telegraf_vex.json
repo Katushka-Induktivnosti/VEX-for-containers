@@ -1,0 +1,2052 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2011-3374",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2011-3374",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2011-3374"
+    ],
+    "description": "It was found that apt-key in apt, all versions, do not correctly validate gpg keys with the master keyring, leading to a potential man-in-the-middle attack.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2011-3374",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2011-3374",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://access.redhat.com/security/cve/cve-2011-3374",
+      "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=642480",
+      "https://people.canonical.com/~ubuntu-security/cve/2011/CVE-2011-3374.html",
+      "https://seclists.org/fulldisclosure/2011/Sep/221",
+      "https://security-tracker.debian.org/tracker/CVE-2011-3374",
+      "https://snyk.io/vuln/SNYK-LINUX-APT-116518",
+      "https://ubuntu.com/security/CVE-2011-3374"
+     ],
+     "description": "It was found that apt-key in apt, all versions, do not correctly validate gpg keys with the master keyring, leading to a potential man-in-the-middle attack.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 3.7,
+        "exploitabilityScore": 2.2,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "apt",
+       "version": "2.6.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2011-3374"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "138c2ad7bddff802",
+    "name": "apt",
+    "version": "2.6.1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only AND BSD-3-Clause AND Expat",
+     "GPL-2.0-only AND BSD-3-Clause AND Expat"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/apt@2.6.1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2781",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2016-2781",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Low",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2016-2781"
+    ],
+    "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-2781",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+      "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "coreutils",
+       "version": "9.1-1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-2781"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5cd412a403394fbb",
+    "name": "coreutils",
+    "version": "9.1-1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-only AND BSD-4-clause-UC AND ISC AND FSFULLR AND GFDL-NIV-1.3 AND GFDL-1.3-only",
+     "GPL-3.0-only AND BSD-4-clause-UC AND ISC AND FSFULLR AND GFDL-NIV-1.3 AND GFDL-1.3-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/coreutils@9.1-1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2017-18018",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2017-18018",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2017-18018"
+    ],
+    "description": "In GNU Coreutils through 8.29, chown-core.c in chown and chgrp does not prevent replacement of a plain file with a symlink during use of the POSIX \"-R -L\" options, which allows local users to modify the ownership of arbitrary files by leveraging a race condition.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-18018",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-18018",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://lists.gnu.org/archive/html/coreutils/2017-12/msg00045.html"
+     ],
+     "description": "In GNU Coreutils through 8.29, chown-core.c in chown and chgrp does not prevent replacement of a plain file with a symlink during use of the POSIX \"-R -L\" options, which allows local users to modify the ownership of arbitrary files by leveraging a race condition.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 1.9,
+        "exploitabilityScore": 3.4,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 4.7,
+        "exploitabilityScore": 1,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "coreutils",
+       "version": "9.1-1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-18018"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5cd412a403394fbb",
+    "name": "coreutils",
+    "version": "9.1-1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-only AND BSD-4-clause-UC AND ISC AND FSFULLR AND GFDL-NIV-1.3 AND GFDL-1.3-only",
+     "GPL-3.0-only AND BSD-4-clause-UC AND ISC AND FSFULLR AND GFDL-NIV-1.3 AND GFDL-1.3-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/coreutils@9.1-1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-2379",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-2379",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2024-2379"
+    ],
+    "description": "libcurl skips the certificate verification for a QUIC connection under certain conditions, when built to use wolfSSL. If told to use an unknown/bad cipher or curve, the error path accidentally skips the verification and returns OK, thus ignoring any certificate problems.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-2379",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-2379",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://curl.se/docs/CVE-2024-2379.html",
+      "https://curl.se/docs/CVE-2024-2379.json",
+      "https://hackerone.com/reports/2410774"
+     ],
+     "description": "libcurl skips the certificate verification for a QUIC connection under certain conditions, when built to use wolfSSL. If told to use an unknown/bad cipher or curve, the error path accidentally skips the verification and returns OK, thus ignoring any certificate problems.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "curl",
+       "version": "7.88.1-10+deb12u5"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-2379"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "273958f9d9400eee",
+    "name": "curl",
+    "version": "7.88.1-10+deb12u5",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "curl AND OLDAP-2.8 AND ISC AND GPL-2.0-or-later WITH Autoconf-data-exception AND GPL-3.0-or-later WITH Autoconf-data-exception AND GPL-2.0-or-later WITH Libtool-exception AND BSD-3-Clause AND BSD-4-Clause-UC AND FSFULLR AND X11 AND GPL-2.0-only",
+     "curl AND OLDAP-2.8 AND ISC AND GPL-2.0-or-later WITH Autoconf-data-exception AND GPL-3.0-or-later WITH Autoconf-data-exception AND GPL-2.0-or-later WITH Libtool-exception AND BSD-3-Clause AND BSD-4-Clause-UC AND FSFULLR AND X11 AND GPL-2.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/curl@7.88.1-10+deb12u5?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-2398",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-2398",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Unknown",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2024-2398"
+    ],
+    "description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-2398",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-2398",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://curl.se/docs/CVE-2024-2398.html",
+      "https://curl.se/docs/CVE-2024-2398.json",
+      "https://hackerone.com/reports/2402845",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GMD6UYKCCRCYETWQZUJ65ZRFULT6SHLI/"
+     ],
+     "description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "curl",
+       "version": "7.88.1-10+deb12u5"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-2398"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "273958f9d9400eee",
+    "name": "curl",
+    "version": "7.88.1-10+deb12u5",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "curl AND OLDAP-2.8 AND ISC AND GPL-2.0-or-later WITH Autoconf-data-exception AND GPL-3.0-or-later WITH Autoconf-data-exception AND GPL-2.0-or-later WITH Libtool-exception AND BSD-3-Clause AND BSD-4-Clause-UC AND FSFULLR AND X11 AND GPL-2.0-only",
+     "curl AND OLDAP-2.8 AND ISC AND GPL-2.0-or-later WITH Autoconf-data-exception AND GPL-3.0-or-later WITH Autoconf-data-exception AND GPL-2.0-or-later WITH Libtool-exception AND BSD-3-Clause AND BSD-4-Clause-UC AND FSFULLR AND X11 AND GPL-2.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/curl@7.88.1-10+deb12u5?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-2004",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-2004",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Unknown",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2024-2004"
+    ],
+    "description": "When a protocol selection parameter option disables all protocols without adding any then the default set of protocols would remain in the allowed set due to an error in the logic for removing protocols. The below command would perform a request to curl.se with a plaintext protocol which has been explicitly disabled.      curl --proto -all,-http http://curl.se  The flaw is only present if the set of selected protocols disables the entire set of available protocols, in itself a command with no practical use and therefore unlikely to be encountered in real situations. The curl security team has thus assessed this to be low severity bug.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-2004",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-2004",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://curl.se/docs/CVE-2024-2004.html",
+      "https://curl.se/docs/CVE-2024-2004.json",
+      "https://hackerone.com/reports/2384833",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GMD6UYKCCRCYETWQZUJ65ZRFULT6SHLI/"
+     ],
+     "description": "When a protocol selection parameter option disables all protocols without adding any then the default set of protocols would remain in the allowed set due to an error in the logic for removing protocols. The below command would perform a request to curl.se with a plaintext protocol which has been explicitly disabled.      curl --proto -all,-http http://curl.se  The flaw is only present if the set of selected protocols disables the entire set of available protocols, in itself a command with no practical use and therefore unlikely to be encountered in real situations. The curl security team has thus assessed this to be low severity bug.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "curl",
+       "version": "7.88.1-10+deb12u5"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-2004"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "273958f9d9400eee",
+    "name": "curl",
+    "version": "7.88.1-10+deb12u5",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "curl AND OLDAP-2.8 AND ISC AND GPL-2.0-or-later WITH Autoconf-data-exception AND GPL-3.0-or-later WITH Autoconf-data-exception AND GPL-2.0-or-later WITH Libtool-exception AND BSD-3-Clause AND BSD-4-Clause-UC AND FSFULLR AND X11 AND GPL-2.0-only",
+     "curl AND OLDAP-2.8 AND ISC AND GPL-2.0-or-later WITH Autoconf-data-exception AND GPL-3.0-or-later WITH Autoconf-data-exception AND GPL-2.0-or-later WITH Libtool-exception AND BSD-3-Clause AND BSD-4-Clause-UC AND FSFULLR AND X11 AND GPL-2.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/curl@7.88.1-10+deb12u5?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-2236",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-2236",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Medium",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2024-2236"
+    ],
+    "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-2236",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-2236",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://access.redhat.com/security/cve/CVE-2024-2236",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2268268"
+     ],
+     "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+     "cvss": [
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "libgcrypt20",
+       "version": "1.10.1-3"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-2236"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "904e000cf9aa40c9",
+    "name": "libgcrypt20",
+    "version": "1.10.1-3",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "LGPL-3.0-only AND GPL-2.0-only",
+     "LGPL-3.0-only AND GPL-2.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-6829",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2018-6829",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2018-6829"
+    ],
+    "description": "cipher/elgamal.c in Libgcrypt through 1.8.2, when used to encrypt messages directly, improperly encodes plaintexts, which allows attackers to obtain sensitive information by reading ciphertext data (i.e., it does not have semantic security in face of a ciphertext-only attack). The Decisional Diffie-Hellman (DDH) assumption does not hold for Libgcrypt's ElGamal implementation.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-6829",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-6829",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/weikengchen/attack-on-libgcrypt-elgamal",
+      "https://github.com/weikengchen/attack-on-libgcrypt-elgamal/wiki",
+      "https://lists.gnupg.org/pipermail/gcrypt-devel/2018-February/004394.html",
+      "https://www.oracle.com/security-alerts/cpujan2020.html"
+     ],
+     "description": "cipher/elgamal.c in Libgcrypt through 1.8.2, when used to encrypt messages directly, improperly encodes plaintexts, which allows attackers to obtain sensitive information by reading ciphertext data (i.e., it does not have semantic security in face of a ciphertext-only attack). The Decisional Diffie-Hellman (DDH) assumption does not hold for Libgcrypt's ElGamal implementation.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "libgcrypt20",
+       "version": "1.10.1-3"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2018-6829"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "904e000cf9aa40c9",
+    "name": "libgcrypt20",
+    "version": "1.10.1-3",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "LGPL-3.0-only AND GPL-2.0-only",
+     "LGPL-3.0-only AND GPL-2.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-0727",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-0727",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Medium",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2024-0727"
+    ],
+    "description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL to crash leading to a potential Denial of Service attack  Impact summary: Applications loading files in the PKCS12 format from untrusted sources might terminate abruptly.  A file in PKCS12 format can contain certificates and keys and may come from an untrusted source. The PKCS12 specification allows certain fields to be NULL, but OpenSSL does not correctly check for this case. This can lead to a NULL pointer dereference that results in OpenSSL crashing. If an application processes PKCS12 files from an untrusted source using the OpenSSL APIs then that application will be vulnerable to this issue.  OpenSSL APIs that are vulnerable to this are: PKCS12_parse(), PKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes() and PKCS12_newpass().  We have also fixed a similar issue in SMIME_write_PKCS7(). However since this function is related to writing data we do not consider it security significant.  The FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-0727",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-0727",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/openssl/openssl/commit/09df4395b5071217b76dc7d3d2e630eb8c5a79c2",
+      "https://github.com/openssl/openssl/commit/775acfdbd0c6af9ac855f34969cdab0c0c90844a",
+      "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
+      "https://github.openssl.org/openssl/extended-releases/commit/03b3941d60c4bce58fab69a0c22377ab439bc0e8",
+      "https://github.openssl.org/openssl/extended-releases/commit/aebaa5883e31122b404e450732dc833dc9dee539",
+      "https://security.netapp.com/advisory/ntap-20240208-0006/",
+      "https://www.openssl.org/news/secadv/20240125.txt"
+     ],
+     "description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.11-1~deb12u2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-0727"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "51aaf8d9aec9771b",
+    "name": "openssl",
+    "version": "3.0.11-1~deb12u2",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "Apache-2.0 AND Artistic AND GPL-1.0-only",
+     "Apache-2.0 AND Artistic AND GPL-1.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-6129",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-6129",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Medium",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2023-6129"
+    ],
+    "description": "Issue summary: The POLY1305 MAC (message authentication code) implementation contains a bug that might corrupt the internal state of applications running on PowerPC CPU based platforms if the CPU provides vector instructions.  Impact summary: If an attacker can influence whether the POLY1305 MAC algorithm is used, the application state might be corrupted with various application dependent consequences.  The POLY1305 MAC (message authentication code) implementation in OpenSSL for PowerPC CPUs restores the contents of vector registers in a different order than they are saved. Thus the contents of some of these vector registers are corrupted when returning to the caller. The vulnerable code is used only on newer PowerPC processors supporting the PowerISA 2.07 instructions.  The consequences of this kind of internal application state corruption can be various - from no consequences, if the calling application does not depend on the contents of non-volatile XMM registers at all, to the worst consequences, where the attacker could get complete control of the application process. However unless the compiler uses the vector registers for storing pointers, the most likely consequence, if any, would be an incorrect result of some application dependent calculations or a crash leading to a denial of service.  The POLY1305 MAC algorithm is most frequently used as part of the CHACHA20-POLY1305 AEAD (authenticated encryption with associated data) algorithm. The most common usage of this AEAD cipher is with TLS protocol versions 1.2 and 1.3. If this cipher is enabled on the server a malicious client can influence whether this AEAD cipher is used. This implies that TLS server applications using OpenSSL can be potentially impacted. However we are currently not aware of any concrete application that would be affected by this issue therefore we consider this a Low severity security issue.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-6129",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-6129",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/openssl/openssl/commit/050d26383d4e264966fb83428e72d5d48f402d35",
+      "https://github.com/openssl/openssl/commit/5b139f95c9a47a55a0c54100f3837b1eee942b04",
+      "https://github.com/openssl/openssl/commit/f3fc5808fe9ff74042d639839610d03b8fdcc015",
+      "https://security.netapp.com/advisory/ntap-20240216-0009/",
+      "https://www.openssl.org/news/secadv/20240109.txt"
+     ],
+     "description": "Issue summary: The POLY1305 MAC (message authentication code) implementation\ncontains a bug that might corrupt the internal state of applications running\non PowerPC CPU based platforms if the CPU provides vector instructions.\n\nImpact summary: If an attacker can influence whether the POLY1305 MAC\nalgorithm is used, the application state might be corrupted with various\napplication dependent consequences.\n\nThe POLY1305 MAC (message authentication code) implementation in OpenSSL for\nPowerPC CPUs restores the contents of vector registers in a different order\nthan they are saved. Thus the contents of some of these vector registers\nare corrupted when returning to the caller. The vulnerable code is used only\non newer PowerPC processors supporting the PowerISA 2.07 instructions.\n\nThe consequences of this kind of internal application state corruption can\nbe various - from no consequences, if the calling application does not\ndepend on the contents of non-volatile XMM registers at all, to the worst\nconsequences, where the attacker could get complete control of the application\nprocess. However unless the compiler uses the vector registers for storing\npointers, the most likely consequence, if any, would be an incorrect result\nof some application dependent calculations or a crash leading to a denial of\nservice.\n\nThe POLY1305 MAC algorithm is most frequently used as part of the\nCHACHA20-POLY1305 AEAD (authenticated encryption with associated data)\nalgorithm. The most common usage of this AEAD cipher is with TLS protocol\nversions 1.2 and 1.3. If this cipher is enabled on the server a malicious\nclient can influence whether this AEAD cipher is used. This implies that\nTLS server applications using OpenSSL can be potentially impacted. However\nwe are currently not aware of any concrete application that would be affected\nby this issue therefore we consider this a Low severity security issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.2,
+        "impactScore": 4.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.11-1~deb12u2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-6129"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "51aaf8d9aec9771b",
+    "name": "openssl",
+    "version": "3.0.11-1~deb12u2",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "Apache-2.0 AND Artistic AND GPL-1.0-only",
+     "Apache-2.0 AND Artistic AND GPL-1.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-5678",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-5678",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Medium",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2023-5678"
+    ],
+    "description": "Issue summary: Generating excessively long X9.42 DH keys or checking excessively long X9.42 DH keys or parameters may be very slow.  Impact summary: Applications that use the functions DH_generate_key() to generate an X9.42 DH key may experience long delays.  Likewise, applications that use DH_check_pub_key(), DH_check_pub_key_ex() or EVP_PKEY_public_check() to check an X9.42 DH key or X9.42 DH parameters may experience long delays. Where the key or parameters that are being checked have been obtained from an untrusted source this may lead to a Denial of Service.  While DH_check() performs all the necessary checks (as of CVE-2023-3817), DH_check_pub_key() doesn't make any of these checks, and is therefore vulnerable for excessively large P and Q parameters.  Likewise, while DH_generate_key() performs a check for an excessively large P, it doesn't check for an excessively large Q.  An application that calls DH_generate_key() or DH_check_pub_key() and supplies a key or parameters obtained from an untrusted source could be vulnerable to a Denial of Service attack.  DH_generate_key() and DH_check_pub_key() are also called by a number of other OpenSSL functions.  An application calling any of those other functions may similarly be affected.  The other functions affected by this are DH_check_pub_key_ex(), EVP_PKEY_public_check(), and EVP_PKEY_generate().  Also vulnerable are the OpenSSL pkey command line application when using the \"-pubcheck\" option, as well as the OpenSSL genpkey command line application.  The OpenSSL SSL/TLS implementation is not affected by this issue.  The OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-5678",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-5678",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=34efaef6c103d636ab507a0cc34dca4d3aecc055",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=710fee740904b6290fef0dd5536fbcedbc38ff0c",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=db925ae2e65d0d925adef429afc37f75bd1c2017",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ddeb4b6c6d527e54ce9a99cba785c0f7776e54b6",
+      "https://security.netapp.com/advisory/ntap-20231130-0010/",
+      "https://www.openssl.org/news/secadv/20231106.txt"
+     ],
+     "description": "Issue summary: Generating excessively long X9.42 DH keys or checking\nexcessively long X9.42 DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_generate_key() to\ngenerate an X9.42 DH key may experience long delays.  Likewise, applications\nthat use DH_check_pub_key(), DH_check_pub_key_ex() or EVP_PKEY_public_check()\nto check an X9.42 DH key or X9.42 DH parameters may experience long delays.\nWhere the key or parameters that are being checked have been obtained from\nan untrusted source this may lead to a Denial of Service.\n\nWhile DH_check() performs all the necessary checks (as of CVE-2023-3817),\nDH_check_pub_key() doesn't make any of these checks, and is therefore\nvulnerable for excessively large P and Q parameters.\n\nLikewise, while DH_generate_key() performs a check for an excessively large\nP, it doesn't check for an excessively large Q.\n\nAn application that calls DH_generate_key() or DH_check_pub_key() and\nsupplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nDH_generate_key() and DH_check_pub_key() are also called by a number of\nother OpenSSL functions.  An application calling any of those other\nfunctions may similarly be affected.  The other functions affected by this\nare DH_check_pub_key_ex(), EVP_PKEY_public_check(), and EVP_PKEY_generate().\n\nAlso vulnerable are the OpenSSL pkey command line application when using the\n\"-pubcheck\" option, as well as the OpenSSL genpkey command line application.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.11-1~deb12u2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-5678"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "51aaf8d9aec9771b",
+    "name": "openssl",
+    "version": "3.0.11-1~deb12u2",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "Apache-2.0 AND Artistic AND GPL-1.0-only",
+     "Apache-2.0 AND Artistic AND GPL-1.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2010-0928",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2010-0928",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2010-0928"
+    ],
+    "description": "OpenSSL 0.9.8i on the Gaisler Research LEON3 SoC on the Xilinx Virtex-II Pro FPGA uses a Fixed Width Exponentiation (FWE) algorithm for certain signature calculations, and does not verify the signature before providing it to a caller, which makes it easier for physically proximate attackers to determine the private key via a modified supply voltage for the microprocessor, related to a \"fault-based attack.\"",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2010-0928",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2010-0928",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://rdist.root.org/2010/03/08/attacking-rsa-exponentiation-with-fault-injection/",
+      "http://www.eecs.umich.edu/~valeria/research/publications/DATE10RSA.pdf",
+      "http://www.networkworld.com/news/2010/030410-rsa-security-attack.html",
+      "http://www.osvdb.org/62808",
+      "http://www.theregister.co.uk/2010/03/04/severe_openssl_vulnerability/",
+      "https://exchange.xforce.ibmcloud.com/vulnerabilities/56750"
+     ],
+     "description": "OpenSSL 0.9.8i on the Gaisler Research LEON3 SoC on the Xilinx Virtex-II Pro FPGA uses a Fixed Width Exponentiation (FWE) algorithm for certain signature calculations, and does not verify the signature before providing it to a caller, which makes it easier for physically proximate attackers to determine the private key via a modified supply voltage for the microprocessor, related to a \"fault-based attack.\"",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:H/Au:N/C:C/I:N/A:N",
+       "metrics": {
+        "baseScore": 4,
+        "exploitabilityScore": 1.9,
+        "impactScore": 6.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.11-1~deb12u2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2010-0928"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "51aaf8d9aec9771b",
+    "name": "openssl",
+    "version": "3.0.11-1~deb12u2",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "Apache-2.0 AND Artistic AND GPL-1.0-only",
+     "Apache-2.0 AND Artistic AND GPL-1.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2007-6755",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2007-6755",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2007-6755"
+    ],
+    "description": "The NIST SP 800-90A default statement of the Dual Elliptic Curve Deterministic Random Bit Generation (Dual_EC_DRBG) algorithm contains point Q constants with a possible relationship to certain \"skeleton key\" values, which might allow context-dependent attackers to defeat cryptographic protection mechanisms by leveraging knowledge of those values.  NOTE: this is a preliminary CVE for Dual_EC_DRBG; future research may provide additional details about point Q and associated attacks, and could potentially lead to a RECAST or REJECT of this CVE.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2007-6755",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2007-6755",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://arstechnica.com/security/2013/09/stop-using-nsa-influence-code-in-our-product-rsa-tells-customers/",
+      "http://blog.cryptographyengineering.com/2013/09/rsa-warns-developers-against-its-own.html",
+      "http://blog.cryptographyengineering.com/2013/09/the-many-flaws-of-dualecdrbg.html",
+      "http://rump2007.cr.yp.to/15-shumow.pdf",
+      "http://stream.wsj.com/story/latest-headlines/SS-2-63399/SS-2-332655/",
+      "http://threatpost.com/in-wake-of-latest-crypto-revelations-everything-is-suspect",
+      "http://www.securityfocus.com/bid/63657",
+      "https://www.schneier.com/blog/archives/2007/11/the_strange_sto.html"
+     ],
+     "description": "The NIST SP 800-90A default statement of the Dual Elliptic Curve Deterministic Random Bit Generation (Dual_EC_DRBG) algorithm contains point Q constants with a possible relationship to certain \"skeleton key\" values, which might allow context-dependent attackers to defeat cryptographic protection mechanisms by leveraging knowledge of those values.  NOTE: this is a preliminary CVE for Dual_EC_DRBG; future research may provide additional details about point Q and associated attacks, and could potentially lead to a RECAST or REJECT of this CVE.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+       "metrics": {
+        "baseScore": 5.8,
+        "exploitabilityScore": 8.6,
+        "impactScore": 4.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.11-1~deb12u2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2007-6755"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "51aaf8d9aec9771b",
+    "name": "openssl",
+    "version": "3.0.11-1~deb12u2",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "Apache-2.0 AND Artistic AND GPL-1.0-only",
+     "Apache-2.0 AND Artistic AND GPL-1.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-2511",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-2511",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Unknown",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2024-2511"
+    ],
+    "description": "Issue summary: Some non-default TLS server configurations can cause unbounded memory growth when processing TLSv1.3 sessions  Impact summary: An attacker may exploit certain server configurations to trigger unbounded memory growth that would lead to a Denial of Service  This problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is being used (but not if early_data support is also configured and the default anti-replay protection is in use). In this case, under certain conditions, the session cache can get into an incorrect state and it will fail to flush properly as it fills. The session cache will continue to grow in an unbounded manner. A malicious client could deliberately create the scenario for this failure to force a Denial of Service. It may also happen by accident in normal operation.  This issue only affects TLS servers supporting TLSv1.3. It does not affect TLS clients.  The FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL 1.0.2 is also not affected by this issue.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-2511",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-2511",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce",
+      "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d",
+      "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08",
+      "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640",
+      "https://www.openssl.org/news/secadv/20240408.txt"
+     ],
+     "description": "Issue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.11-1~deb12u2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2024-2511"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "51aaf8d9aec9771b",
+    "name": "openssl",
+    "version": "3.0.11-1~deb12u2",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "Apache-2.0 AND Artistic AND GPL-1.0-only",
+     "Apache-2.0 AND Artistic AND GPL-1.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-6237",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-6237",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Unknown",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2023-6237"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.11-1~deb12u2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-6237"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "51aaf8d9aec9771b",
+    "name": "openssl",
+    "version": "3.0.11-1~deb12u2",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "Apache-2.0 AND Artistic AND GPL-1.0-only",
+     "Apache-2.0 AND Artistic AND GPL-1.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-31484",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-31484",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2023-31484"
+    ],
+    "description": "CPAN.pm before 2.35 does not verify TLS certificates when downloading distributions over HTTPS.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-31484",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-31484",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/04/29/1",
+      "http://www.openwall.com/lists/oss-security/2023/05/03/3",
+      "http://www.openwall.com/lists/oss-security/2023/05/03/5",
+      "http://www.openwall.com/lists/oss-security/2023/05/07/2",
+      "https://blog.hackeriet.no/perl-http-tiny-insecure-tls-default-affects-cpan-modules/",
+      "https://github.com/andk/cpanpm/pull/175",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BM6UW55CNFUTNGD5ZRKGUKKKFDJGMFHL/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LEGCEOKFJVBJ2QQ6S2H4NAEWTUERC7SB/",
+      "https://metacpan.org/dist/CPAN/changes",
+      "https://www.openwall.com/lists/oss-security/2023/04/18/14"
+     ],
+     "description": "CPAN.pm before 2.35 does not verify TLS certificates when downloading distributions over HTTPS.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.2,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "perl",
+       "version": "5.36.0-7+deb12u1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-31484"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9459b9032089b3fa",
+    "name": "perl",
+    "version": "5.36.0-7+deb12u1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-1.0-only AND Artistic AND Expat AND REGCOMP AND GPL-2.0-only WITH bison-exception AND Unicode AND BZIP AND Zlib AND GPL-2.0-only AND RRA-KEEP-THIS-NOTICE AND BSD-3-Clause WITH weird-numbering AND CC0-1.0 AND TEXT-TABS AND BSD-4-clause-POWERDOG AND BSD-3-clause-GENERIC AND BSD-3-Clause AND SDBM-PUBLIC-DOMAIN AND DONT-CHANGE-THE-GPL AND Artistic-dist AND LGPL-2.1-only AND Artistic-2 AND HSIEH-DERIVATIVE AND HSIEH-BSD",
+     "GPL-1.0-only AND Artistic AND Expat AND REGCOMP AND GPL-2.0-only WITH bison-exception AND Unicode AND BZIP AND Zlib AND GPL-2.0-only AND RRA-KEEP-THIS-NOTICE AND BSD-3-Clause WITH weird-numbering AND CC0-1.0 AND TEXT-TABS AND BSD-4-clause-POWERDOG AND BSD-3-clause-GENERIC AND BSD-3-Clause AND SDBM-PUBLIC-DOMAIN AND DONT-CHANGE-THE-GPL AND Artistic-dist AND LGPL-2.1-only AND Artistic-2 AND HSIEH-DERIVATIVE AND HSIEH-BSD"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/perl@5.36.0-7+deb12u1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-31486",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-31486",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2023-31486"
+    ],
+    "description": "HTTP::Tiny before 0.083, a Perl core module since 5.13.9 and available standalone on CPAN, has an insecure default TLS configuration where users must opt in to verify certificates.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-31486",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-31486",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/04/29/1",
+      "http://www.openwall.com/lists/oss-security/2023/05/03/3",
+      "http://www.openwall.com/lists/oss-security/2023/05/03/5",
+      "http://www.openwall.com/lists/oss-security/2023/05/07/2",
+      "https://blog.hackeriet.no/perl-http-tiny-insecure-tls-default-affects-cpan-modules/",
+      "https://github.com/chansen/p5-http-tiny/pull/153",
+      "https://hackeriet.github.io/cpan-http-tiny-overview/",
+      "https://www.openwall.com/lists/oss-security/2023/04/18/14",
+      "https://www.openwall.com/lists/oss-security/2023/05/03/4",
+      "https://www.reddit.com/r/perl/comments/111tadi/psa_httptiny_disabled_ssl_verification_by_default/"
+     ],
+     "description": "HTTP::Tiny before 0.083, a Perl core module since 5.13.9 and available standalone on CPAN, has an insecure default TLS configuration where users must opt in to verify certificates.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.2,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "perl",
+       "version": "5.36.0-7+deb12u1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-31486"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9459b9032089b3fa",
+    "name": "perl",
+    "version": "5.36.0-7+deb12u1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-1.0-only AND Artistic AND Expat AND REGCOMP AND GPL-2.0-only WITH bison-exception AND Unicode AND BZIP AND Zlib AND GPL-2.0-only AND RRA-KEEP-THIS-NOTICE AND BSD-3-Clause WITH weird-numbering AND CC0-1.0 AND TEXT-TABS AND BSD-4-clause-POWERDOG AND BSD-3-clause-GENERIC AND BSD-3-Clause AND SDBM-PUBLIC-DOMAIN AND DONT-CHANGE-THE-GPL AND Artistic-dist AND LGPL-2.1-only AND Artistic-2 AND HSIEH-DERIVATIVE AND HSIEH-BSD",
+     "GPL-1.0-only AND Artistic AND Expat AND REGCOMP AND GPL-2.0-only WITH bison-exception AND Unicode AND BZIP AND Zlib AND GPL-2.0-only AND RRA-KEEP-THIS-NOTICE AND BSD-3-Clause WITH weird-numbering AND CC0-1.0 AND TEXT-TABS AND BSD-4-clause-POWERDOG AND BSD-3-clause-GENERIC AND BSD-3-Clause AND SDBM-PUBLIC-DOMAIN AND DONT-CHANGE-THE-GPL AND Artistic-dist AND LGPL-2.1-only AND Artistic-2 AND HSIEH-DERIVATIVE AND HSIEH-BSD"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/perl@5.36.0-7+deb12u1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2011-4116",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2011-4116",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2011-4116"
+    ],
+    "description": "_is_safe in the File::Temp module for Perl does not properly handle symlinks.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2011-4116",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2011-4116",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2011/11/04/2",
+      "http://www.openwall.com/lists/oss-security/2011/11/04/4",
+      "https://github.com/Perl-Toolchain-Gang/File-Temp/issues/14",
+      "https://rt.cpan.org/Public/Bug/Display.html?id=69106",
+      "https://seclists.org/oss-sec/2011/q4/238"
+     ],
+     "description": "_is_safe in the File::Temp module for Perl does not properly handle symlinks.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "perl",
+       "version": "5.36.0-7+deb12u1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2011-4116"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9459b9032089b3fa",
+    "name": "perl",
+    "version": "5.36.0-7+deb12u1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-1.0-only AND Artistic AND Expat AND REGCOMP AND GPL-2.0-only WITH bison-exception AND Unicode AND BZIP AND Zlib AND GPL-2.0-only AND RRA-KEEP-THIS-NOTICE AND BSD-3-Clause WITH weird-numbering AND CC0-1.0 AND TEXT-TABS AND BSD-4-clause-POWERDOG AND BSD-3-clause-GENERIC AND BSD-3-Clause AND SDBM-PUBLIC-DOMAIN AND DONT-CHANGE-THE-GPL AND Artistic-dist AND LGPL-2.1-only AND Artistic-2 AND HSIEH-DERIVATIVE AND HSIEH-BSD",
+     "GPL-1.0-only AND Artistic AND Expat AND REGCOMP AND GPL-2.0-only WITH bison-exception AND Unicode AND BZIP AND Zlib AND GPL-2.0-only AND RRA-KEEP-THIS-NOTICE AND BSD-3-Clause WITH weird-numbering AND CC0-1.0 AND TEXT-TABS AND BSD-4-clause-POWERDOG AND BSD-3-clause-GENERIC AND BSD-3-Clause AND SDBM-PUBLIC-DOMAIN AND DONT-CHANGE-THE-GPL AND Artistic-dist AND LGPL-2.1-only AND Artistic-2 AND HSIEH-DERIVATIVE AND HSIEH-BSD"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/perl@5.36.0-7+deb12u1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-4016",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-4016",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Low",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2023-4016"
+    ],
+    "description": "Under some circumstances, this weakness allows a user who has access to run the “ps” utility on a machine, the ability to write almost unlimited amounts of unfiltered data into the process heap.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4016",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4016",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://gitlab.com/procps-ng/procps",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SUETRRT24OFGPYK6ACPM5VUGHNKH5CQ5/"
+     ],
+     "description": "Under some circumstances, this weakness allows a user who has access to run the “ps” utility on a machine, the ability to write almost unlimited amounts of unfiltered data into the process heap.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 3.3,
+        "exploitabilityScore": 1.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "trellixpsirt@trellix.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 2.5,
+        "exploitabilityScore": 1,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "procps",
+       "version": "2:4.0.2-3"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-4016"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "99b65cd5e67cbaac",
+    "name": "procps",
+    "version": "2:4.0.2-3",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "LGPL-2.1-only AND LGPL-2.0-only AND GPL-2.0-only",
+     "LGPL-2.1-only AND LGPL-2.0-only AND GPL-2.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/procps@4.0.2-3?arch=arm64&distro=debian-12.5&epoch=2",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2005-2541",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2005-2541",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2005-2541"
+    ],
+    "description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2005-2541",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2005-2541",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://marc.info/?l=bugtraq&m=112327628230258&w=2",
+      "https://lists.apache.org/thread.html/rc713534b10f9daeee2e0990239fa407e2118e4aa9e88a7041177497c%40%3Cissues.guacamole.apache.org%3E"
+     ],
+     "description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+       "metrics": {
+        "baseScore": 10,
+        "exploitabilityScore": 10,
+        "impactScore": 10
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "tar",
+       "version": "1.34+dfsg-1.2+deb12u1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2005-2541"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "82362461e6878adb",
+    "name": "tar",
+    "version": "1.34+dfsg-1.2+deb12u1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-only AND GPL-3.0-or-later WITH Bison-exception AND LGPL-3.0-only AND GPL-2.0-only",
+     "GPL-3.0-only AND GPL-3.0-or-later WITH Bison-exception AND LGPL-3.0-only AND GPL-2.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/tar@1.34+dfsg-1.2+deb12u1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-0563",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2022-0563",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Negligible",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2022-0563"
+    ],
+    "description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-0563",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-0563",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lore.kernel.org/util-linux/20220214110609.msiwlm457ngoic6w%40ws.net.home/T/#u",
+      "https://security.gentoo.org/glsa/202401-08",
+      "https://security.netapp.com/advisory/ntap-20220331-0002/"
+     ],
+     "description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 1.9,
+        "exploitabilityScore": 3.4,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "util-linux",
+       "version": "2.38.1-5+b1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2022-0563"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d53d825e51532f09",
+    "name": "util-linux",
+    "version": "2.38.1-5+b1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only AND GPL-3.0-only AND public-domain AND BSD-4-Clause AND MIT AND BSD-3-Clause AND BSLA AND LGPL-2.0-only AND LGPL-2.1-only AND LGPL-3.0-only",
+     "GPL-2.0-only AND GPL-3.0-only AND public-domain AND BSD-4-Clause AND MIT AND BSD-3-Clause AND BSLA AND LGPL-2.0-only AND LGPL-2.1-only AND LGPL-3.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/util-linux@2.38.1-5+b1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-28085",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-28085",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Unknown",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2024-28085"
+    ],
+    "description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.38.1-5+deb12u1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": [
+     {
+      "id": "DSA-5650-1",
+      "link": "https://security-tracker.debian.org/tracker/DSA-5650-1"
+     }
+    ]
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28085",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://github.com/skyler-ferrante/CVE-2024-28085",
+      "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+      "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+      "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+      "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+      "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+     ],
+     "description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "util-linux",
+       "version": "2.38.1-5+b1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.38.1-5+deb12u1 (deb)",
+      "vulnerabilityID": "CVE-2024-28085"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d53d825e51532f09",
+    "name": "util-linux",
+    "version": "2.38.1-5+b1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only AND GPL-3.0-only AND public-domain AND BSD-4-Clause AND MIT AND BSD-3-Clause AND BSLA AND LGPL-2.0-only AND LGPL-2.1-only AND LGPL-3.0-only",
+     "GPL-2.0-only AND GPL-3.0-only AND public-domain AND BSD-4-Clause AND MIT AND BSD-3-Clause AND BSLA AND LGPL-2.0-only AND LGPL-2.1-only AND LGPL-3.0-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/util-linux@2.38.1-5+b1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-31879",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2021-31879",
+    "namespace": "debian:distro:debian:12",
+    "severity": "Medium",
+    "urls": [
+     "https://security-tracker.debian.org/tracker/CVE-2021-31879"
+    ],
+    "description": "GNU Wget through 1.21.1 does not omit the Authorization header upon a redirect to a different origin, a related issue to CVE-2018-1000007.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "wont-fix"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-31879",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-31879",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://mail.gnu.org/archive/html/bug-wget/2021-02/msg00002.html",
+      "https://security.netapp.com/advisory/ntap-20210618-0002/"
+     ],
+     "description": "GNU Wget through 1.21.1 does not omit the Authorization header upon a redirect to a different origin, a related issue to CVE-2018-1000007.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+       "metrics": {
+        "baseScore": 5.8,
+        "exploitabilityScore": 8.6,
+        "impactScore": 4.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "debian",
+       "version": "12.5"
+      },
+      "namespace": "debian:distro:debian:12",
+      "package": {
+       "name": "wget",
+       "version": "1.21.3-1+b1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2021-31879"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "31d681e27bfcc513",
+    "name": "wget",
+    "version": "1.21.3-1+b1",
+    "type": "deb",
+    "locations": [],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-only AND GFDL-1.2-only",
+     "GPL-3.0-only AND GFDL-1.2-only"
+    ],
+    "cpes": [],
+    "purl": "pkg:deb/debian/wget@1.21.3-1+b1?arch=arm64&distro=debian-12.5",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "telegraf",
+   "imageID": "ContainerImage-5ce3bace52e2493",
+   "manifestDigest": "",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "debian",
+  "version": "12.5",
+  "idLike": [
+   "debian"
+  ]
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-04-20T01:25:41Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:16b261c20c43828088d3530bdb10577ad87b9d33cfbfcaf051c3af61ba7e53ca",
+   "error": null
+  },
+  "timestamp": "2024-04-20T21:38:51.279472+02:00"
+ }
+}

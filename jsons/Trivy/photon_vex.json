@@ -1,0 +1,541 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "photon",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "photon",
+      "Name": "5.0"
+    },
+    "ImageID": "sha256:c5c324f10b7679e5b8f9e115f589ef68a4dd2bc0681585369d71e939489e7f8c",
+    "DiffIDs": [
+      "sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+    ],
+    "RepoTags": [
+      "photon:latest"
+    ],
+    "RepoDigests": [
+      "photon@sha256:1abc5e403f89099cde0133ce7272b36b96888975408428dc60ae6cd05dc7c445"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "fe10da6c5e2d09461b2986835dac12e3743d100ca170c0d47cee664613d8c4fc",
+      "created": "2024-01-22T19:52:13.127618791Z",
+      "docker_version": "20.10.23",
+      "history": [
+        {
+          "created": "2024-01-22T19:52:12Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:d51309b3b5c64082d243826c72cdf4b78bf4b793a3da49bdfc4b46c87be14a81 in / "
+        },
+        {
+          "created": "2024-01-22T19:52:13Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL name=Photon OS x86_64/5.0 Base Image vendor=VMware build-date=20240120",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-01-22T19:52:13Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "/bin/bash"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Image": "sha256:af4b2fef01ff3afd56c807496e6327cd5079bd1d02660e868491eaca0812adb0",
+        "Labels": {
+          "build-date": "20240120",
+          "name": "Photon OS x86_64/5.0 Base Image",
+          "vendor": "VMware"
+        }
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "photon (photon 5.0)",
+      "Class": "os-pkgs",
+      "Type": "photon",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-52425",
+          "PkgID": "expat-libs@2.5.0-1.ph5.x86_64",
+          "PkgName": "expat-libs",
+          "InstalledVersion": "2.5.0-1.ph5",
+          "FixedVersion": "2.6.0-1.ph5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+          },
+          "SeveritySource": "photon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-52425",
+          "DataSource": {
+            "ID": "photon",
+            "Name": "Photon OS CVE metadata",
+            "URL": "https://packages.vmware.com/photon/photon_cve_metadata/"
+          },
+          "Title": "expat: parsing large tokens can trigger a denial of service",
+          "Description": "libexpat through 2.5.0 allows a denial of service (resource consumption) because many full reparsings are required in the case of a large token for which multiple buffer fills are needed.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-52425",
+            "https://github.com/libexpat/libexpat/pull/789",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PNRIHC7DVVRAIWFRGV23Y6UZXFBXSQDB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WNUBSGZFEZOBHJFTAD42SAN4ATW2VEMV/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-52425",
+            "https://www.cve.org/CVERecord?id=CVE-2023-52425"
+          ],
+          "PublishedDate": "2024-02-04T20:15:46.063Z",
+          "LastModifiedDate": "2024-02-26T16:27:48.367Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-52426",
+          "PkgID": "expat-libs@2.5.0-1.ph5.x86_64",
+          "PkgName": "expat-libs",
+          "InstalledVersion": "2.5.0-1.ph5",
+          "FixedVersion": "2.6.0-1.ph5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+          },
+          "SeveritySource": "photon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-52426",
+          "DataSource": {
+            "ID": "photon",
+            "Name": "Photon OS CVE metadata",
+            "URL": "https://packages.vmware.com/photon/photon_cve_metadata/"
+          },
+          "Title": "expat: recursive XML entity expansion vulnerability",
+          "Description": "libexpat through 2.5.0 allows recursive XML Entity Expansion if XML_DTD is undefined at compile time.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-776"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-52426",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52426",
+            "https://cwe.mitre.org/data/definitions/776.html",
+            "https://github.com/libexpat/libexpat/commit/0f075ec8ecb5e43f8fdca5182f8cca4703da0404",
+            "https://github.com/libexpat/libexpat/pull/777",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PNRIHC7DVVRAIWFRGV23Y6UZXFBXSQDB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WNUBSGZFEZOBHJFTAD42SAN4ATW2VEMV/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-52426",
+            "https://www.cve.org/CVERecord?id=CVE-2023-52426"
+          ],
+          "PublishedDate": "2024-02-04T20:15:46.12Z",
+          "LastModifiedDate": "2024-02-26T16:27:48.45Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6780",
+          "PkgID": "glibc@2.36-8.ph5.x86_64",
+          "PkgName": "glibc",
+          "InstalledVersion": "2.36-8.ph5",
+          "FixedVersion": "2.36-9.ph5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+          },
+          "SeveritySource": "photon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6780",
+          "DataSource": {
+            "ID": "photon",
+            "Name": "Photon OS CVE metadata",
+            "URL": "https://packages.vmware.com/photon/photon_cve_metadata/"
+          },
+          "Title": "glibc: integer overflow in __vsyslog_internal()",
+          "Description": "An integer overflow was found in the __vsyslog_internal function of the glibc library. This function is called by the syslog and vsyslog functions. This issue occurs when these functions are called with a very long message, leading to an incorrect calculation of the buffer size to store the message, resulting in undefined behavior. This issue affects glibc 2.37 and newer.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-190",
+            "CWE-131"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/176932/glibc-syslog-Heap-Based-Buffer-Overflow.html",
+            "http://seclists.org/fulldisclosure/2024/Feb/3",
+            "https://access.redhat.com/security/cve/CVE-2023-6780",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2254396",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6780",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D2FIH77VHY3KCRROCXOT6L27WMZXSJ2G/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MWQ6BZJ6CV5UAW4VZSKJ6TO4KIW2KWAQ/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6780",
+            "https://security.gentoo.org/glsa/202402-01",
+            "https://ubuntu.com/security/notices/USN-6620-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6780",
+            "https://www.openwall.com/lists/oss-security/2024/01/30/6",
+            "https://www.qualys.com/2024/01/30/cve-2023-6246/syslog.txt"
+          ],
+          "PublishedDate": "2024-01-31T14:15:48.917Z",
+          "LastModifiedDate": "2024-03-04T23:04:39.21Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6246",
+          "PkgID": "glibc@2.36-8.ph5.x86_64",
+          "PkgName": "glibc",
+          "InstalledVersion": "2.36-8.ph5",
+          "FixedVersion": "2.36-9.ph5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+          },
+          "SeveritySource": "photon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6246",
+          "DataSource": {
+            "ID": "photon",
+            "Name": "Photon OS CVE metadata",
+            "URL": "https://packages.vmware.com/photon/photon_cve_metadata/"
+          },
+          "Title": "glibc: heap-based buffer overflow in __vsyslog_internal()",
+          "Description": "A heap-based buffer overflow was found in the __vsyslog_internal function of the glibc library. This function is called by the syslog and vsyslog functions. This issue occurs when the openlog function was not called, or called with the ident argument set to NULL, and the program name (the basename of argv[0]) is bigger than 1024 bytes, resulting in an application crash or local privilege escalation. This issue affects glibc 2.36 and newer.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-122"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/176931/glibc-qsort-Out-Of-Bounds-Read-Write.html",
+            "http://packetstormsecurity.com/files/176932/glibc-syslog-Heap-Based-Buffer-Overflow.html",
+            "http://seclists.org/fulldisclosure/2024/Feb/3",
+            "http://seclists.org/fulldisclosure/2024/Feb/5",
+            "https://access.redhat.com/security/cve/CVE-2023-6246",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2249053",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6246",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D2FIH77VHY3KCRROCXOT6L27WMZXSJ2G/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MWQ6BZJ6CV5UAW4VZSKJ6TO4KIW2KWAQ/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6246",
+            "https://security.gentoo.org/glsa/202402-01",
+            "https://security.netapp.com/advisory/ntap-20240216-0007/",
+            "https://ubuntu.com/security/notices/USN-6620-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6246",
+            "https://www.openwall.com/lists/oss-security/2024/01/30/6",
+            "https://www.qualys.com/2024/01/30/cve-2023-6246/syslog.txt"
+          ],
+          "PublishedDate": "2024-01-31T14:15:48.42Z",
+          "LastModifiedDate": "2024-02-16T13:15:10.023Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6779",
+          "PkgID": "glibc@2.36-8.ph5.x86_64",
+          "PkgName": "glibc",
+          "InstalledVersion": "2.36-8.ph5",
+          "FixedVersion": "2.36-9.ph5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+          },
+          "SeveritySource": "photon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6779",
+          "DataSource": {
+            "ID": "photon",
+            "Name": "Photon OS CVE metadata",
+            "URL": "https://packages.vmware.com/photon/photon_cve_metadata/"
+          },
+          "Title": "glibc: off-by-one heap-based buffer overflow in __vsyslog_internal()",
+          "Description": "An off-by-one heap-based buffer overflow was found in the __vsyslog_internal function of the glibc library. This function is called by the syslog and vsyslog functions. This issue occurs when these functions are called with a message bigger than INT_MAX bytes, leading to an incorrect calculation of the buffer size to store the message, resulting in an application crash. This issue affects glibc 2.37 and newer.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-122"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 8.2
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/176932/glibc-syslog-Heap-Based-Buffer-Overflow.html",
+            "http://seclists.org/fulldisclosure/2024/Feb/3",
+            "https://access.redhat.com/security/cve/CVE-2023-6779",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2254395",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6779",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D2FIH77VHY3KCRROCXOT6L27WMZXSJ2G/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MWQ6BZJ6CV5UAW4VZSKJ6TO4KIW2KWAQ/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6779",
+            "https://security.gentoo.org/glsa/202402-01",
+            "https://security.netapp.com/advisory/ntap-20240223-0006/",
+            "https://ubuntu.com/security/notices/USN-6620-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6779",
+            "https://www.openwall.com/lists/oss-security/2024/01/30/6",
+            "https://www.qualys.com/2024/01/30/cve-2023-6246/syslog.txt"
+          ],
+          "PublishedDate": "2024-01-31T14:15:48.7Z",
+          "LastModifiedDate": "2024-02-27T17:26:48.247Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6780",
+          "PkgID": "glibc-libs@2.36-8.ph5.x86_64",
+          "PkgName": "glibc-libs",
+          "InstalledVersion": "2.36-8.ph5",
+          "FixedVersion": "2.36-9.ph5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+          },
+          "SeveritySource": "photon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6780",
+          "DataSource": {
+            "ID": "photon",
+            "Name": "Photon OS CVE metadata",
+            "URL": "https://packages.vmware.com/photon/photon_cve_metadata/"
+          },
+          "Title": "glibc: integer overflow in __vsyslog_internal()",
+          "Description": "An integer overflow was found in the __vsyslog_internal function of the glibc library. This function is called by the syslog and vsyslog functions. This issue occurs when these functions are called with a very long message, leading to an incorrect calculation of the buffer size to store the message, resulting in undefined behavior. This issue affects glibc 2.37 and newer.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-190",
+            "CWE-131"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/176932/glibc-syslog-Heap-Based-Buffer-Overflow.html",
+            "http://seclists.org/fulldisclosure/2024/Feb/3",
+            "https://access.redhat.com/security/cve/CVE-2023-6780",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2254396",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6780",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D2FIH77VHY3KCRROCXOT6L27WMZXSJ2G/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MWQ6BZJ6CV5UAW4VZSKJ6TO4KIW2KWAQ/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6780",
+            "https://security.gentoo.org/glsa/202402-01",
+            "https://ubuntu.com/security/notices/USN-6620-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6780",
+            "https://www.openwall.com/lists/oss-security/2024/01/30/6",
+            "https://www.qualys.com/2024/01/30/cve-2023-6246/syslog.txt"
+          ],
+          "PublishedDate": "2024-01-31T14:15:48.917Z",
+          "LastModifiedDate": "2024-03-04T23:04:39.21Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6246",
+          "PkgID": "glibc-libs@2.36-8.ph5.x86_64",
+          "PkgName": "glibc-libs",
+          "InstalledVersion": "2.36-8.ph5",
+          "FixedVersion": "2.36-9.ph5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+          },
+          "SeveritySource": "photon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6246",
+          "DataSource": {
+            "ID": "photon",
+            "Name": "Photon OS CVE metadata",
+            "URL": "https://packages.vmware.com/photon/photon_cve_metadata/"
+          },
+          "Title": "glibc: heap-based buffer overflow in __vsyslog_internal()",
+          "Description": "A heap-based buffer overflow was found in the __vsyslog_internal function of the glibc library. This function is called by the syslog and vsyslog functions. This issue occurs when the openlog function was not called, or called with the ident argument set to NULL, and the program name (the basename of argv[0]) is bigger than 1024 bytes, resulting in an application crash or local privilege escalation. This issue affects glibc 2.36 and newer.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-122"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/176931/glibc-qsort-Out-Of-Bounds-Read-Write.html",
+            "http://packetstormsecurity.com/files/176932/glibc-syslog-Heap-Based-Buffer-Overflow.html",
+            "http://seclists.org/fulldisclosure/2024/Feb/3",
+            "http://seclists.org/fulldisclosure/2024/Feb/5",
+            "https://access.redhat.com/security/cve/CVE-2023-6246",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2249053",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6246",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D2FIH77VHY3KCRROCXOT6L27WMZXSJ2G/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MWQ6BZJ6CV5UAW4VZSKJ6TO4KIW2KWAQ/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6246",
+            "https://security.gentoo.org/glsa/202402-01",
+            "https://security.netapp.com/advisory/ntap-20240216-0007/",
+            "https://ubuntu.com/security/notices/USN-6620-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6246",
+            "https://www.openwall.com/lists/oss-security/2024/01/30/6",
+            "https://www.qualys.com/2024/01/30/cve-2023-6246/syslog.txt"
+          ],
+          "PublishedDate": "2024-01-31T14:15:48.42Z",
+          "LastModifiedDate": "2024-02-16T13:15:10.023Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6779",
+          "PkgID": "glibc-libs@2.36-8.ph5.x86_64",
+          "PkgName": "glibc-libs",
+          "InstalledVersion": "2.36-8.ph5",
+          "FixedVersion": "2.36-9.ph5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+          },
+          "SeveritySource": "photon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6779",
+          "DataSource": {
+            "ID": "photon",
+            "Name": "Photon OS CVE metadata",
+            "URL": "https://packages.vmware.com/photon/photon_cve_metadata/"
+          },
+          "Title": "glibc: off-by-one heap-based buffer overflow in __vsyslog_internal()",
+          "Description": "An off-by-one heap-based buffer overflow was found in the __vsyslog_internal function of the glibc library. This function is called by the syslog and vsyslog functions. This issue occurs when these functions are called with a message bigger than INT_MAX bytes, leading to an incorrect calculation of the buffer size to store the message, resulting in an application crash. This issue affects glibc 2.37 and newer.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-122"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 8.2
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/176932/glibc-syslog-Heap-Based-Buffer-Overflow.html",
+            "http://seclists.org/fulldisclosure/2024/Feb/3",
+            "https://access.redhat.com/security/cve/CVE-2023-6779",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2254395",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6779",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D2FIH77VHY3KCRROCXOT6L27WMZXSJ2G/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MWQ6BZJ6CV5UAW4VZSKJ6TO4KIW2KWAQ/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6779",
+            "https://security.gentoo.org/glsa/202402-01",
+            "https://security.netapp.com/advisory/ntap-20240223-0006/",
+            "https://ubuntu.com/security/notices/USN-6620-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6779",
+            "https://www.openwall.com/lists/oss-security/2024/01/30/6",
+            "https://www.qualys.com/2024/01/30/cve-2023-6246/syslog.txt"
+          ],
+          "PublishedDate": "2024-01-31T14:15:48.7Z",
+          "LastModifiedDate": "2024-02-27T17:26:48.247Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-0727",
+          "PkgID": "openssl-libs@3.0.9-9.ph5.x86_64",
+          "PkgName": "openssl-libs",
+          "InstalledVersion": "3.0.9-9.ph5",
+          "FixedVersion": "3.0.9-10.ph5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0db235918541589151481ead4b16cfeb8d0087a3bc9bfc88ea4ff4678884b438"
+          },
+          "SeveritySource": "photon",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-0727",
+          "DataSource": {
+            "ID": "photon",
+            "Name": "Photon OS CVE metadata",
+            "URL": "https://packages.vmware.com/photon/photon_cve_metadata/"
+          },
+          "Title": "openssl: denial of service via null dereference",
+          "Description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-0727",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0727",
+            "https://github.com/alexcrichton/openssl-src-rs/commit/add20f73b6b42be7451af2e1044d4e0e778992b2",
+            "https://github.com/github/advisory-database/pull/3472",
+            "https://github.com/openssl/openssl/commit/09df4395b5071217b76dc7d3d2e630eb8c5a79c2",
+            "https://github.com/openssl/openssl/commit/775acfdbd0c6af9ac855f34969cdab0c0c90844a",
+            "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
+            "https://github.com/openssl/openssl/pull/23362",
+            "https://github.com/pyca/cryptography/commit/3519591d255d4506fbcd0d04037d45271903c64d",
+            "https://github.openssl.org/openssl/extended-releases/commit/03b3941d60c4bce58fab69a0c22377ab439bc0e8",
+            "https://github.openssl.org/openssl/extended-releases/commit/aebaa5883e31122b404e450732dc833dc9dee539",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-0727",
+            "https://security.netapp.com/advisory/ntap-20240208-0006",
+            "https://security.netapp.com/advisory/ntap-20240208-0006/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://ubuntu.com/security/notices/USN-6632-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-0727",
+            "https://www.openssl.org/news/secadv/20240125.txt"
+          ],
+          "PublishedDate": "2024-01-26T09:15:07.637Z",
+          "LastModifiedDate": "2024-02-08T10:15:13.91Z"
+        }
+      ]
+    }
+  ]
+}

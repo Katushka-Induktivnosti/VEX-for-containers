@@ -1,0 +1,212 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-r9hx-vwmv-q579",
+    "dataSource": "https://github.com/advisories/GHSA-r9hx-vwmv-q579",
+    "namespace": "github:language:python",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-r9hx-vwmv-q579"
+    ],
+    "description": "pypa/setuptools vulnerable to Regular Expression Denial of Service (ReDoS)",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "65.5.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-40897",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-40897",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/pypa/setuptools/blob/fe8a98e696241487ba6ac9f91faa38ade939ec5d/setuptools/package_index.py#L200",
+      "https://github.com/pypa/setuptools/commit/43a9c9bfa6aa626ec2a22540bea28d2ca77964be",
+      "https://github.com/pypa/setuptools/compare/v65.5.0...v65.5.1",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ADES3NLOE5QJKBLGNZNI2RGVOSQXA37R/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YNA2BAH2ACBZ4TVJZKFLCR7L23BG5C3H/",
+      "https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/",
+      "https://pyup.io/vulnerabilities/CVE-2022-40897/52495/",
+      "https://security.netapp.com/advisory/ntap-20230214-0001/"
+     ],
+     "description": "Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "setuptools",
+       "version": "65.5.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<65.5.1 (python)",
+      "vulnerabilityID": "GHSA-r9hx-vwmv-q579"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "11cd6372e6b84a2a",
+    "name": "setuptools",
+    "version": "65.5.0",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:pypi/setuptools@65.5.0",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "composer",
+   "imageID": "pkg:oci/composer@sha256:db70816515af1c86adae1fe142bf3b9e42634a3d4d7500766b0fcc53301937d9",
+   "manifestDigest": "latest",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-05-15T01:28:06Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:ae6d37ab4724e50bf25d76152f0f93f5f4f2c063e77806b540ec818920592692",
+   "error": null
+  },
+  "timestamp": "2024-05-15T13:34:32.078857+02:00"
+ }
+}

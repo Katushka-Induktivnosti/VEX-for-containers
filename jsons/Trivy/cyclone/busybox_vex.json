@@ -1,0 +1,56 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:f683cb71-1332-4601-9462-dc512e2c34a2",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-02-18T08:49:25+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.57.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "pkg:oci/busybox@sha256%3Aa5d0ce49aa801d475da48f8cb163c354ab95cab073cd3c138bd458fc8257fbf1?arch=amd64&repository_url=index.docker.io%2Flibrary%2Fbusybox",
+      "type": "container",
+      "name": "busybox",
+      "purl": "pkg:oci/busybox@sha256%3Aa5d0ce49aa801d475da48f8cb163c354ab95cab073cd3c138bd458fc8257fbf1?arch=amd64&repository_url=index.docker.io%2Flibrary%2Fbusybox",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:59654b79daad74c77dc2e28502ca577ba8ce73276720002234a23fc60ee92692"
+        },
+        {
+          "name": "aquasecurity:trivy:ImageID",
+          "value": "sha256:af47096251092caf59498806ab8d58e8173ecf5a182f024ce9d635b5b4a55d66"
+        },
+        {
+          "name": "aquasecurity:trivy:RepoDigest",
+          "value": "busybox@sha256:a5d0ce49aa801d475da48f8cb163c354ab95cab073cd3c138bd458fc8257fbf1"
+        },
+        {
+          "name": "aquasecurity:trivy:RepoTag",
+          "value": "busybox:latest"
+        },
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [],
+  "dependencies": [
+    {
+      "ref": "pkg:oci/busybox@sha256%3Aa5d0ce49aa801d475da48f8cb163c354ab95cab073cd3c138bd458fc8257fbf1?arch=amd64&repository_url=index.docker.io%2Flibrary%2Fbusybox",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}

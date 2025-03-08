@@ -1,0 +1,28 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/grype/sboms/teamspeak_sbom.json",
+  "ArtifactType": "cyclonedx",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.18.5"
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "jsons/grype/sboms/teamspeak_sbom.json (alpine 3.18.5)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    }
+  ]
+}

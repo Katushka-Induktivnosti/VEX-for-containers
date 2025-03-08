@@ -1,0 +1,1694 @@
+{
+  "results": [
+    {
+      "source": {
+        "path": "/Users/katushka/Documents/vex_json/jsons/docker_scout/sboms/elasticsearch:8.12.2_sbom.json",
+        "type": "sbom"
+      },
+      "packages": [
+        {
+          "package": {
+            "name": "com.nimbusds:nimbus-jose-jwt",
+            "version": "9.23",
+            "ecosystem": "Maven"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-15T14:58:52Z",
+              "published": "2024-02-11T06:30:27Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-gvpg-vgmx-xg6w",
+              "aliases": [
+                "CVE-2023-52428"
+              ],
+              "summary": "Denial of Service in Connect2id Nimbus JOSE+JWT",
+              "details": "In Connect2id Nimbus JOSE+JWT before 9.37.2, an attacker can cause a denial of service (resource consumption) via a large JWE p2c header value (aka iteration count) for the PasswordBasedDecrypter (PBKDF2) component.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "com.nimbusds:nimbus-jose-jwt",
+                    "purl": "pkg:maven/com.nimbusds/nimbus-jose-jwt"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "9.37.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "2.10",
+                    "2.10.1",
+                    "2.11.0",
+                    "2.12.0",
+                    "2.13.0",
+                    "2.13.1",
+                    "2.14.0",
+                    "2.15.0",
+                    "2.15.1",
+                    "2.15.2",
+                    "2.16",
+                    "2.17",
+                    "2.17.1",
+                    "2.17.2",
+                    "2.18",
+                    "2.18.1",
+                    "2.18.2",
+                    "2.19",
+                    "2.19.1",
+                    "2.20",
+                    "2.21",
+                    "2.22",
+                    "2.22.1",
+                    "2.23",
+                    "2.24",
+                    "2.25",
+                    "2.26",
+                    "2.26.1",
+                    "2.9",
+                    "3.0",
+                    "3.1",
+                    "3.1.1",
+                    "3.1.2",
+                    "3.10",
+                    "3.2",
+                    "3.2.1",
+                    "3.2.2",
+                    "3.3",
+                    "3.4",
+                    "3.5",
+                    "3.6",
+                    "3.7",
+                    "3.8",
+                    "3.8.1",
+                    "3.8.2",
+                    "3.9",
+                    "3.9.1",
+                    "3.9.2",
+                    "4.0",
+                    "4.0-rc1",
+                    "4.0-rc2",
+                    "4.0-rc3",
+                    "4.0-rc4",
+                    "4.0.1",
+                    "4.1",
+                    "4.1.1",
+                    "4.10",
+                    "4.11",
+                    "4.11.1",
+                    "4.11.2",
+                    "4.12",
+                    "4.13",
+                    "4.13.1",
+                    "4.14",
+                    "4.15",
+                    "4.15.1",
+                    "4.16",
+                    "4.16.1",
+                    "4.16.2",
+                    "4.17",
+                    "4.18",
+                    "4.19",
+                    "4.2",
+                    "4.20",
+                    "4.21",
+                    "4.22",
+                    "4.23",
+                    "4.24",
+                    "4.25",
+                    "4.26",
+                    "4.26.1",
+                    "4.27",
+                    "4.27.1",
+                    "4.28",
+                    "4.29",
+                    "4.3",
+                    "4.3.1",
+                    "4.30",
+                    "4.31.1",
+                    "4.32",
+                    "4.33",
+                    "4.34",
+                    "4.34.1",
+                    "4.34.2",
+                    "4.35",
+                    "4.36",
+                    "4.36.1",
+                    "4.37",
+                    "4.37.1",
+                    "4.38",
+                    "4.39",
+                    "4.39.1",
+                    "4.39.2",
+                    "4.4",
+                    "4.40",
+                    "4.41",
+                    "4.41.1",
+                    "4.41.2",
+                    "4.41.3",
+                    "4.5",
+                    "4.6",
+                    "4.7",
+                    "4.8",
+                    "4.9",
+                    "5.0",
+                    "5.1",
+                    "5.10",
+                    "5.11",
+                    "5.12",
+                    "5.13",
+                    "5.14",
+                    "5.2",
+                    "5.3",
+                    "5.4",
+                    "5.5",
+                    "5.6",
+                    "5.7",
+                    "5.8",
+                    "5.9",
+                    "6.0",
+                    "6.0.1",
+                    "6.0.2",
+                    "6.1",
+                    "6.1.1",
+                    "6.2",
+                    "6.3",
+                    "6.3.1",
+                    "6.4",
+                    "6.4.1",
+                    "6.4.2",
+                    "6.5",
+                    "6.5.1",
+                    "6.6",
+                    "6.7",
+                    "6.8",
+                    "7.0",
+                    "7.0.1",
+                    "7.1",
+                    "7.2.1",
+                    "7.3",
+                    "7.4",
+                    "7.5",
+                    "7.5.1",
+                    "7.6",
+                    "7.7",
+                    "7.8",
+                    "7.8.1",
+                    "7.9",
+                    "8.0",
+                    "8.1",
+                    "8.10",
+                    "8.11",
+                    "8.12",
+                    "8.13",
+                    "8.14",
+                    "8.14.1",
+                    "8.15",
+                    "8.16",
+                    "8.17",
+                    "8.17.1",
+                    "8.18",
+                    "8.18.1",
+                    "8.19",
+                    "8.2",
+                    "8.2.1",
+                    "8.20",
+                    "8.20.1",
+                    "8.20.2",
+                    "8.21",
+                    "8.21.1",
+                    "8.22",
+                    "8.22.1",
+                    "8.23",
+                    "8.3",
+                    "8.4",
+                    "8.4.1",
+                    "8.5",
+                    "8.5.1",
+                    "8.6",
+                    "8.7",
+                    "8.8",
+                    "8.9",
+                    "9.0",
+                    "9.0.1",
+                    "9.1",
+                    "9.1.1",
+                    "9.1.2",
+                    "9.1.3",
+                    "9.1.4",
+                    "9.1.5",
+                    "9.10",
+                    "9.10.1",
+                    "9.11",
+                    "9.11.1",
+                    "9.11.2",
+                    "9.11.3",
+                    "9.12",
+                    "9.12.1",
+                    "9.13",
+                    "9.14",
+                    "9.15",
+                    "9.15.1",
+                    "9.15.2",
+                    "9.16",
+                    "9.16-preview.1",
+                    "9.16.1",
+                    "9.17",
+                    "9.18",
+                    "9.19",
+                    "9.2",
+                    "9.20",
+                    "9.21",
+                    "9.21.1",
+                    "9.22",
+                    "9.23",
+                    "9.24",
+                    "9.24.1",
+                    "9.24.2",
+                    "9.24.3",
+                    "9.24.4",
+                    "9.25",
+                    "9.25.1",
+                    "9.25.2",
+                    "9.25.3",
+                    "9.25.4",
+                    "9.25.5",
+                    "9.25.6",
+                    "9.26",
+                    "9.27",
+                    "9.28",
+                    "9.29",
+                    "9.3",
+                    "9.30",
+                    "9.30.1",
+                    "9.30.2",
+                    "9.31",
+                    "9.32",
+                    "9.33",
+                    "9.34",
+                    "9.35",
+                    "9.36",
+                    "9.37",
+                    "9.37.1",
+                    "9.4",
+                    "9.4.1",
+                    "9.4.2",
+                    "9.5",
+                    "9.6",
+                    "9.6.1",
+                    "9.7",
+                    "9.8",
+                    "9.8.1",
+                    "9.9",
+                    "9.9.1",
+                    "9.9.2",
+                    "9.9.3"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-gvpg-vgmx-xg6w/GHSA-gvpg-vgmx-xg6w.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-52428"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://bitbucket.org/connect2id/nimbus-jose-jwt"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/3b3b77e"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://bitbucket.org/connect2id/nimbus-jose-jwt/issues/526"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://connect2id.com/products/nimbus-jose-jwt"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-400"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-15T14:23:03Z",
+                "nvd_published_at": "2024-02-11T05:15:08Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-gvpg-vgmx-xg6w"
+              ],
+              "aliases": [
+                "CVE-2023-52428",
+                "GHSA-gvpg-vgmx-xg6w"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "io.netty:netty-codec-http2",
+            "version": "4.1.94.Final",
+            "ecosystem": "Maven"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-16T08:23:58Z",
+              "published": "2023-10-10T22:22:54Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-xpw8-rcwv-8f8p",
+              "aliases": [
+                "BIT-apisix-2023-44487",
+                "BIT-aspnet-core-2023-44487",
+                "BIT-contour-2023-44487",
+                "BIT-dotnet-2023-44487",
+                "BIT-dotnet-sdk-2023-44487",
+                "BIT-envoy-2023-44487",
+                "BIT-golang-2023-44487",
+                "BIT-jenkins-2023-44487",
+                "BIT-kong-2023-44487",
+                "BIT-nginx-2023-44487",
+                "BIT-nginx-ingress-controller-2023-44487",
+                "BIT-node-2023-44487",
+                "BIT-solr-2023-44487",
+                "BIT-tomcat-2023-44487",
+                "BIT-varnish-2023-44487",
+                "CVE-2023-44487",
+                "GHSA-2m7v-gc89-fjqf",
+                "GHSA-qppj-fm5r-hxr3",
+                "GHSA-vx74-f528-fxqg"
+              ],
+              "summary": "io.netty:netty-codec-http2 vulnerable to HTTP/2 Rapid Reset Attack",
+              "details": "A client might overload the server by issue frequent RST frames. This can cause a massive amount of load on the remote system and so cause a DDOS attack. \n\n### Impact\nThis is a DDOS attack, any http2 server is affected and so you should update as soon as possible.\n\n### Patches\nThis is patched in version 4.1.100.Final.\n\n### Workarounds\nA user can limit the amount of RST frames that are accepted per connection over a timeframe manually using either an own `Http2FrameListener` implementation or an `ChannelInboundHandler` implementation (depending which http2 API is used).\n\n### References\n- https://www.cve.org/CVERecord?id=CVE-2023-44487\n- https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack/\n- https://cloud.google.com/blog/products/identity-security/google-cloud-mitigated-largest-ddos-attack-peaking-above-398-million-rps/",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "io.netty:netty-codec-http2",
+                    "purl": "pkg:maven/io.netty/netty-codec-http2"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.1.100.Final"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "4.1.0.Beta4",
+                    "4.1.0.Beta5",
+                    "4.1.0.Beta6",
+                    "4.1.0.Beta7",
+                    "4.1.0.Beta8",
+                    "4.1.0.CR1",
+                    "4.1.0.CR2",
+                    "4.1.0.CR3",
+                    "4.1.0.CR4",
+                    "4.1.0.CR5",
+                    "4.1.0.CR6",
+                    "4.1.0.CR7",
+                    "4.1.0.Final",
+                    "4.1.1.Final",
+                    "4.1.10.Final",
+                    "4.1.11.Final",
+                    "4.1.12.Final",
+                    "4.1.13.Final",
+                    "4.1.14.Final",
+                    "4.1.15.Final",
+                    "4.1.16.Final",
+                    "4.1.17.Final",
+                    "4.1.18.Final",
+                    "4.1.19.Final",
+                    "4.1.2.Final",
+                    "4.1.20.Final",
+                    "4.1.21.Final",
+                    "4.1.22.Final",
+                    "4.1.23.Final",
+                    "4.1.24.Final",
+                    "4.1.25.Final",
+                    "4.1.26.Final",
+                    "4.1.27.Final",
+                    "4.1.28.Final",
+                    "4.1.29.Final",
+                    "4.1.3.Final",
+                    "4.1.30.Final",
+                    "4.1.31.Final",
+                    "4.1.32.Final",
+                    "4.1.33.Final",
+                    "4.1.34.Final",
+                    "4.1.35.Final",
+                    "4.1.36.Final",
+                    "4.1.37.Final",
+                    "4.1.38.Final",
+                    "4.1.39.Final",
+                    "4.1.4.Final",
+                    "4.1.40.Final",
+                    "4.1.41.Final",
+                    "4.1.42.Final",
+                    "4.1.43.Final",
+                    "4.1.44.Final",
+                    "4.1.45.Final",
+                    "4.1.46.Final",
+                    "4.1.47.Final",
+                    "4.1.48.Final",
+                    "4.1.49.Final",
+                    "4.1.5.Final",
+                    "4.1.50.Final",
+                    "4.1.51.Final",
+                    "4.1.52.Final",
+                    "4.1.53.Final",
+                    "4.1.54.Final",
+                    "4.1.55.Final",
+                    "4.1.56.Final",
+                    "4.1.57.Final",
+                    "4.1.58.Final",
+                    "4.1.59.Final",
+                    "4.1.6.Final",
+                    "4.1.60.Final",
+                    "4.1.61.Final",
+                    "4.1.62.Final",
+                    "4.1.63.Final",
+                    "4.1.64.Final",
+                    "4.1.65.Final",
+                    "4.1.66.Final",
+                    "4.1.67.Final",
+                    "4.1.68.Final",
+                    "4.1.69.Final",
+                    "4.1.7.Final",
+                    "4.1.70.Final",
+                    "4.1.71.Final",
+                    "4.1.72.Final",
+                    "4.1.73.Final",
+                    "4.1.74.Final",
+                    "4.1.75.Final",
+                    "4.1.76.Final",
+                    "4.1.77.Final",
+                    "4.1.78.Final",
+                    "4.1.79.Final",
+                    "4.1.8.Final",
+                    "4.1.80.Final",
+                    "4.1.81.Final",
+                    "4.1.82.Final",
+                    "4.1.83.Final",
+                    "4.1.84.Final",
+                    "4.1.85.Final",
+                    "4.1.86.Final",
+                    "4.1.87.Final",
+                    "4.1.88.Final",
+                    "4.1.89.Final",
+                    "4.1.9.Final",
+                    "4.1.90.Final",
+                    "4.1.91.Final",
+                    "4.1.92.Final",
+                    "4.1.93.Final",
+                    "4.1.94.Final",
+                    "4.1.95.Final",
+                    "4.1.96.Final",
+                    "4.1.97.Final",
+                    "4.1.98.Final",
+                    "4.1.99.Final"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/10/GHSA-xpw8-rcwv-8f8p/GHSA-xpw8-rcwv-8f8p.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/apple/swift-nio-http2/security/advisories/GHSA-qppj-fm5r-hxr3"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/netty/netty/security/advisories/GHSA-xpw8-rcwv-8f8p"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/netty/netty/commit/58f75f665aa81a8cbcf6ffa74820042a285c5e61"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/netty/netty"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.cve.org/CVERecord?id=CVE-2023-44487"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-400"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2023-10-10T22:22:54Z",
+                "nvd_published_at": null,
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-xpw8-rcwv-8f8p"
+              ],
+              "aliases": [
+                "BIT-apisix-2023-44487",
+                "BIT-aspnet-core-2023-44487",
+                "BIT-contour-2023-44487",
+                "BIT-dotnet-2023-44487",
+                "BIT-dotnet-sdk-2023-44487",
+                "BIT-envoy-2023-44487",
+                "BIT-golang-2023-44487",
+                "BIT-jenkins-2023-44487",
+                "BIT-kong-2023-44487",
+                "BIT-nginx-2023-44487",
+                "BIT-nginx-ingress-controller-2023-44487",
+                "BIT-node-2023-44487",
+                "BIT-solr-2023-44487",
+                "BIT-tomcat-2023-44487",
+                "BIT-varnish-2023-44487",
+                "CVE-2023-44487",
+                "GHSA-2m7v-gc89-fjqf",
+                "GHSA-qppj-fm5r-hxr3",
+                "GHSA-vx74-f528-fxqg",
+                "GHSA-xpw8-rcwv-8f8p"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "io.netty:netty-codec-http",
+            "version": "4.1.94.Final",
+            "ecosystem": "Maven"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-25T22:47:12Z",
+              "published": "2024-03-25T19:40:50Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-5jpm-x58v-624v",
+              "aliases": [
+                "CVE-2024-29025"
+              ],
+              "summary": "Netty's HttpPostRequestDecoder can OOM",
+              "details": "### Summary\nThe `HttpPostRequestDecoder` can be tricked to accumulate data. I have spotted currently two attack vectors \n\n### Details\n1. While the decoder can store items on the disk if configured so, there are no limits to the number of fields the form can have, an attacher can send a chunked post consisting of many small fields that will be accumulated in the `bodyListHttpData` list.\n2. The decoder cumulates bytes in the `undecodedChunk` buffer until it can decode a field, this field can cumulate data without limits\n\n### PoC\n\nHere is a Netty branch that provides a fix + tests : https://github.com/vietj/netty/tree/post-request-decoder\n\n\nHere is a reproducer with Vert.x (which uses this decoder) https://gist.github.com/vietj/f558b8ea81ec6505f1e9a6ca283c9ae3\n\n### Impact\nAny Netty based HTTP server that uses the `HttpPostRequestDecoder` to decode a form.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "io.netty:netty-codec-http",
+                    "purl": "pkg:maven/io.netty/netty-codec-http"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.1.108.Final"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "4.0.0.Alpha1",
+                    "4.0.0.Alpha2",
+                    "4.0.0.Alpha3",
+                    "4.0.0.Alpha4",
+                    "4.0.0.Alpha5",
+                    "4.0.0.Alpha6",
+                    "4.0.0.Alpha7",
+                    "4.0.0.Alpha8",
+                    "4.0.0.Beta1",
+                    "4.0.0.Beta2",
+                    "4.0.0.Beta3",
+                    "4.0.0.CR1",
+                    "4.0.0.CR2",
+                    "4.0.0.CR3",
+                    "4.0.0.CR4",
+                    "4.0.0.CR5",
+                    "4.0.0.CR6",
+                    "4.0.0.CR7",
+                    "4.0.0.CR8",
+                    "4.0.0.CR9",
+                    "4.0.0.Final",
+                    "4.0.1.Final",
+                    "4.0.10.Final",
+                    "4.0.11.Final",
+                    "4.0.12.Final",
+                    "4.0.13.Final",
+                    "4.0.14.Beta1",
+                    "4.0.14.Final",
+                    "4.0.15.Final",
+                    "4.0.16.Final",
+                    "4.0.17.Final",
+                    "4.0.18.Final",
+                    "4.0.19.Final",
+                    "4.0.2.Final",
+                    "4.0.20.Final",
+                    "4.0.21.Final",
+                    "4.0.22.Final",
+                    "4.0.23.Final",
+                    "4.0.24.Final",
+                    "4.0.25.Final",
+                    "4.0.26.Final",
+                    "4.0.27.Final",
+                    "4.0.28.Final",
+                    "4.0.29.Final",
+                    "4.0.3.Final",
+                    "4.0.30.Final",
+                    "4.0.31.Final",
+                    "4.0.32.Final",
+                    "4.0.33.Final",
+                    "4.0.34.Final",
+                    "4.0.35.Final",
+                    "4.0.36.Final",
+                    "4.0.37.Final",
+                    "4.0.38.Final",
+                    "4.0.39.Final",
+                    "4.0.4.Final",
+                    "4.0.40.Final",
+                    "4.0.41.Final",
+                    "4.0.42.Final",
+                    "4.0.43.Final",
+                    "4.0.44.Final",
+                    "4.0.45.Final",
+                    "4.0.46.Final",
+                    "4.0.47.Final",
+                    "4.0.48.Final",
+                    "4.0.49.Final",
+                    "4.0.5.Final",
+                    "4.0.50.Final",
+                    "4.0.51.Final",
+                    "4.0.52.Final",
+                    "4.0.53.Final",
+                    "4.0.54.Final",
+                    "4.0.55.Final",
+                    "4.0.56.Final",
+                    "4.0.6.Final",
+                    "4.0.7.Final",
+                    "4.0.8.Final",
+                    "4.0.9.Final",
+                    "4.1.0.Beta1",
+                    "4.1.0.Beta2",
+                    "4.1.0.Beta3",
+                    "4.1.0.Beta4",
+                    "4.1.0.Beta5",
+                    "4.1.0.Beta6",
+                    "4.1.0.Beta7",
+                    "4.1.0.Beta8",
+                    "4.1.0.CR1",
+                    "4.1.0.CR2",
+                    "4.1.0.CR3",
+                    "4.1.0.CR4",
+                    "4.1.0.CR5",
+                    "4.1.0.CR6",
+                    "4.1.0.CR7",
+                    "4.1.0.Final",
+                    "4.1.1.Final",
+                    "4.1.10.Final",
+                    "4.1.100.Final",
+                    "4.1.101.Final",
+                    "4.1.102.Final",
+                    "4.1.103.Final",
+                    "4.1.104.Final",
+                    "4.1.105.Final",
+                    "4.1.106.Final",
+                    "4.1.107.Final",
+                    "4.1.11.Final",
+                    "4.1.12.Final",
+                    "4.1.13.Final",
+                    "4.1.14.Final",
+                    "4.1.15.Final",
+                    "4.1.16.Final",
+                    "4.1.17.Final",
+                    "4.1.18.Final",
+                    "4.1.19.Final",
+                    "4.1.2.Final",
+                    "4.1.20.Final",
+                    "4.1.21.Final",
+                    "4.1.22.Final",
+                    "4.1.23.Final",
+                    "4.1.24.Final",
+                    "4.1.25.Final",
+                    "4.1.26.Final",
+                    "4.1.27.Final",
+                    "4.1.28.Final",
+                    "4.1.29.Final",
+                    "4.1.3.Final",
+                    "4.1.30.Final",
+                    "4.1.31.Final",
+                    "4.1.32.Final",
+                    "4.1.33.Final",
+                    "4.1.34.Final",
+                    "4.1.35.Final",
+                    "4.1.36.Final",
+                    "4.1.37.Final",
+                    "4.1.38.Final",
+                    "4.1.39.Final",
+                    "4.1.4.Final",
+                    "4.1.40.Final",
+                    "4.1.41.Final",
+                    "4.1.42.Final",
+                    "4.1.43.Final",
+                    "4.1.44.Final",
+                    "4.1.45.Final",
+                    "4.1.46.Final",
+                    "4.1.47.Final",
+                    "4.1.48.Final",
+                    "4.1.49.Final",
+                    "4.1.5.Final",
+                    "4.1.50.Final",
+                    "4.1.51.Final",
+                    "4.1.52.Final",
+                    "4.1.53.Final",
+                    "4.1.54.Final",
+                    "4.1.55.Final",
+                    "4.1.56.Final",
+                    "4.1.57.Final",
+                    "4.1.58.Final",
+                    "4.1.59.Final",
+                    "4.1.6.Final",
+                    "4.1.60.Final",
+                    "4.1.61.Final",
+                    "4.1.62.Final",
+                    "4.1.63.Final",
+                    "4.1.64.Final",
+                    "4.1.65.Final",
+                    "4.1.66.Final",
+                    "4.1.67.Final",
+                    "4.1.68.Final",
+                    "4.1.69.Final",
+                    "4.1.7.Final",
+                    "4.1.70.Final",
+                    "4.1.71.Final",
+                    "4.1.72.Final",
+                    "4.1.73.Final",
+                    "4.1.74.Final",
+                    "4.1.75.Final",
+                    "4.1.76.Final",
+                    "4.1.77.Final",
+                    "4.1.78.Final",
+                    "4.1.79.Final",
+                    "4.1.8.Final",
+                    "4.1.80.Final",
+                    "4.1.81.Final",
+                    "4.1.82.Final",
+                    "4.1.83.Final",
+                    "4.1.84.Final",
+                    "4.1.85.Final",
+                    "4.1.86.Final",
+                    "4.1.87.Final",
+                    "4.1.88.Final",
+                    "4.1.89.Final",
+                    "4.1.9.Final",
+                    "4.1.90.Final",
+                    "4.1.91.Final",
+                    "4.1.92.Final",
+                    "4.1.93.Final",
+                    "4.1.94.Final",
+                    "4.1.95.Final",
+                    "4.1.96.Final",
+                    "4.1.97.Final",
+                    "4.1.98.Final",
+                    "4.1.99.Final"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-5jpm-x58v-624v/GHSA-5jpm-x58v-624v.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/netty/netty/security/advisories/GHSA-5jpm-x58v-624v"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-29025"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/netty/netty/commit/0d0c6ed782d13d423586ad0c71737b2c7d02058c"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://gist.github.com/vietj/f558b8ea81ec6505f1e9a6ca283c9ae3"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/netty/netty"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vietj/netty/tree/post-request-decoder"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-770"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-25T19:40:50Z",
+                "nvd_published_at": "2024-03-25T20:15:08Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-5jpm-x58v-624v"
+              ],
+              "aliases": [
+                "CVE-2024-29025",
+                "GHSA-5jpm-x58v-624v"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "net.minidev:json-smart",
+            "version": "2.4.8",
+            "ecosystem": "Maven"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-16T08:14:04Z",
+              "published": "2023-03-23T20:32:03Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-493p-pfq6-5258",
+              "aliases": [
+                "CVE-2023-1370"
+              ],
+              "summary": "json-smart Uncontrolled Recursion vulnerabilty",
+              "details": "### Impact\nAffected versions of [net.minidev:json-smart](https://github.com/netplex/json-smart-v1) are vulnerable to Denial of Service (DoS) due to a StackOverflowError when parsing a deeply nested JSON array or object.\n\nWhen reaching a ‘[‘ or ‘{‘ character in the JSON input, the code parses an array or an object respectively. It was discovered that the 3PP does not have any limit to the nesting of such arrays or objects. Since the parsing of nested arrays and objects is done recursively, nesting too many of them can cause stack exhaustion (stack overflow) and crash the software.\n\n### Patches\nThis vulnerability was fixed in json-smart version 2.4.9, but the maintainer recommends upgrading to 2.4.10, due to a remaining bug.\n\n### Workarounds\nN/A\n\n### References\n- https://www.cve.org/CVERecord?id=CVE-2023-1370\n- https://nvd.nist.gov/vuln/detail/CVE-2023-1370\n- https://security.snyk.io/vuln/SNYK-JAVA-NETMINIDEV-3369748",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "net.minidev:json-smart",
+                    "purl": "pkg:maven/net.minidev/json-smart"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.4.9"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "1.0.6.3",
+                    "1.0.8",
+                    "1.0.9",
+                    "1.0.9-1",
+                    "1.1",
+                    "1.1.1",
+                    "1.2",
+                    "1.3",
+                    "1.3.1",
+                    "1.3.2",
+                    "1.3.3",
+                    "2.0",
+                    "2.0-RC1",
+                    "2.0-RC2",
+                    "2.0-RC3",
+                    "2.1.0",
+                    "2.1.1",
+                    "2.2",
+                    "2.2.1",
+                    "2.3",
+                    "2.3.1",
+                    "2.4.1",
+                    "2.4.2",
+                    "2.4.4",
+                    "2.4.5",
+                    "2.4.6",
+                    "2.4.7",
+                    "2.4.8"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/03/GHSA-493p-pfq6-5258/GHSA-493p-pfq6-5258.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/oswaldobapvicjr/jsonmerge/security/advisories/GHSA-493p-pfq6-5258"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-1370"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/netplex/json-smart-v2/issues/137"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/netplex/json-smart-v2/commit/5b3205d051952d3100aa0db1535f6ba6226bd87a"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/netplex/json-smart-v2/commit/e2791ae506a57491bc856b439d706c81e45adcf8"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/oswaldobapvicjr/jsonmerge"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://research.jfrog.com/vulnerabilities/stack-exhaustion-in-json-smart-leads-to-denial-of-service-when-parsing-malformed-json-xray-427633"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.snyk.io/vuln/SNYK-JAVA-NETMINIDEV-3369748"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.cve.org/CVERecord?id=CVE-2023-1370"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-674"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2023-03-23T20:32:03Z",
+                "nvd_published_at": "2023-03-22T06:15:00Z",
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-493p-pfq6-5258"
+              ],
+              "aliases": [
+                "CVE-2023-1370",
+                "GHSA-493p-pfq6-5258"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "org.apache.commons:commons-compress",
+            "version": "1.24.0",
+            "ecosystem": "Maven"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-07T18:46:18Z",
+              "published": "2024-02-19T09:30:52Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-4265-ccf5-phj5",
+              "aliases": [
+                "CVE-2024-26308"
+              ],
+              "summary": "Apache Commons Compress: OutOfMemoryError unpacking broken Pack200 file",
+              "details": "Allocation of Resources Without Limits or Throttling vulnerability in Apache Commons Compress. This issue affects Apache Commons Compress: from 1.21 before 1.26.\n\nUsers are recommended to upgrade to version 1.26, which fixes the issue.\n\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.apache.commons:commons-compress",
+                    "purl": "pkg:maven/org.apache.commons/commons-compress"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "1.21"
+                        },
+                        {
+                          "fixed": "1.26.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "1.21",
+                    "1.22",
+                    "1.23.0",
+                    "1.24.0",
+                    "1.25.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-4265-ccf5-phj5/GHSA-4265-ccf5-phj5.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-26308"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/apache/commons-compress"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread/ch5yo2d21p7vlqrhll9b17otbyq4npfg"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20240307-0009"
+                },
+                {
+                  "type": "WEB",
+                  "url": "http://www.openwall.com/lists/oss-security/2024/02/19/2"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-770"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-02-20T23:59:29Z",
+                "nvd_published_at": "2024-02-19T09:15:38Z",
+                "severity": "HIGH"
+              }
+            },
+            {
+              "modified": "2024-03-07T18:46:51Z",
+              "published": "2024-02-19T09:30:50Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-4g9r-vxhx-9pgx",
+              "aliases": [
+                "CVE-2024-25710"
+              ],
+              "summary": "Apache Commons Compress: Denial of service caused by an infinite loop for a corrupted DUMP file",
+              "details": "Loop with Unreachable Exit Condition ('Infinite Loop') vulnerability in Apache Commons Compress. This issue affects Apache Commons Compress: from 1.3 through 1.25.0.\n\nUsers are recommended to upgrade to version 1.26.0 which fixes the issue.\n\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.apache.commons:commons-compress",
+                    "purl": "pkg:maven/org.apache.commons/commons-compress"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "1.3"
+                        },
+                        {
+                          "fixed": "1.26.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "1.10",
+                    "1.11",
+                    "1.12",
+                    "1.13",
+                    "1.14",
+                    "1.15",
+                    "1.16",
+                    "1.16.1",
+                    "1.17",
+                    "1.18",
+                    "1.19",
+                    "1.20",
+                    "1.21",
+                    "1.22",
+                    "1.23.0",
+                    "1.24.0",
+                    "1.25.0",
+                    "1.3",
+                    "1.4",
+                    "1.4.1",
+                    "1.5",
+                    "1.6",
+                    "1.7",
+                    "1.8",
+                    "1.8.1",
+                    "1.9"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-4g9r-vxhx-9pgx/GHSA-4g9r-vxhx-9pgx.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-25710"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/apache/commons-compress"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread/cz8qkcwphy4cx8gltn932ln51cbtq6kf"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20240307-0010"
+                },
+                {
+                  "type": "WEB",
+                  "url": "http://www.openwall.com/lists/oss-security/2024/02/19/1"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-835"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-02-20T23:58:47Z",
+                "nvd_published_at": "2024-02-19T09:15:37Z",
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-4265-ccf5-phj5"
+              ],
+              "aliases": [
+                "CVE-2024-26308",
+                "GHSA-4265-ccf5-phj5"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-4g9r-vxhx-9pgx"
+              ],
+              "aliases": [
+                "CVE-2024-25710",
+                "GHSA-4g9r-vxhx-9pgx"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "org.apache.james:apache-mime4j-core",
+            "version": "0.8.9",
+            "ecosystem": "Maven"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-01T14:46:07Z",
+              "published": "2024-02-27T18:31:02Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-jw7r-rxff-gv24",
+              "aliases": [
+                "CVE-2024-21742"
+              ],
+              "summary": "Apache James MIME4J improper input validation vulnerability",
+              "details": "Improper input validation allows for header injection in MIME4J library when using MIME4J DOM for composing message.\nThis can be exploited by an attacker to add unintended headers to MIME messages.\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.apache.james:apache-mime4j-core",
+                    "purl": "pkg:maven/org.apache.james/apache-mime4j-core"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "0.8.10"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.7",
+                    "0.7.1",
+                    "0.7.2",
+                    "0.8.0",
+                    "0.8.1",
+                    "0.8.2",
+                    "0.8.3",
+                    "0.8.4",
+                    "0.8.5",
+                    "0.8.6",
+                    "0.8.7",
+                    "0.8.8",
+                    "0.8.9"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-jw7r-rxff-gv24/GHSA-jw7r-rxff-gv24.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-21742"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/apache/james-mime4j/commit/9dec5df2a588fed8027839815daefa79ee66efd1"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/apache/james-mime4j/commit/d25fb3fd35db42b060789a20634fbe3cb84aba17"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/apache/james-mime4j"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread/nrqzg93219wdj056pqfszsd33dc54kfy"
+                },
+                {
+                  "type": "WEB",
+                  "url": "http://www.openwall.com/lists/oss-security/2024/02/27/5"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-20"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-02-27T21:54:39Z",
+                "nvd_published_at": "2024-02-27T17:15:12Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-jw7r-rxff-gv24"
+              ],
+              "aliases": [
+                "CVE-2024-21742",
+                "GHSA-jw7r-rxff-gv24"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "org.elasticsearch:elasticsearch",
+            "version": "8.12.2",
+            "ecosystem": "Maven"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-27T22:11:53Z",
+              "published": "2024-03-27T18:32:39Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-r3hx-qfh5-r9m7",
+              "aliases": [
+                "CVE-2024-23451"
+              ],
+              "summary": "Elasticsearch Incorrect Authorization vulnerability",
+              "details": "Incorrect Authorization issue exists in the API key based security model for Remote Cluster Security, which is currently in Beta, in Elasticsearch 8.10.0 and before 8.13.0. This allows a malicious user with a valid API key for a remote cluster configured to use the new Remote Cluster Security to read arbitrary documents from any index on the remote cluster, and only if they use the Elasticsearch custom transport protocol to issue requests with the target index ID, the shard ID and the document ID. None of Elasticsearch REST API endpoints are affected by this issue.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.elasticsearch:elasticsearch",
+                    "purl": "pkg:maven/org.elasticsearch/elasticsearch"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "8.10.0"
+                        },
+                        {
+                          "fixed": "8.13.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "8.10.0",
+                    "8.10.1",
+                    "8.10.2",
+                    "8.10.3",
+                    "8.10.4",
+                    "8.11.0",
+                    "8.11.1",
+                    "8.11.2",
+                    "8.11.3",
+                    "8.11.4",
+                    "8.12.0",
+                    "8.12.1",
+                    "8.12.2"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-r3hx-qfh5-r9m7/GHSA-r3hx-qfh5-r9m7.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-23451"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://discuss.elastic.co/t/elasticsearch-8-13-0-security-update-esa-2024-07/356315"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/elastic/elasticsearch"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-863"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-27T21:56:03Z",
+                "nvd_published_at": "2024-03-27T18:15:10Z",
+                "severity": "MODERATE"
+              }
+            },
+            {
+              "modified": "2024-03-27T22:11:53Z",
+              "published": "2024-03-27T18:32:38Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-w5gg-2q56-6h4f",
+              "aliases": [
+                "CVE-2024-23450"
+              ],
+              "summary": "Elasticsearch Uncontrolled Resource Consumption vulnerability",
+              "details": "A flaw was discovered in Elasticsearch, where processing a document in a deeply nested pipeline on an ingest node could cause the Elasticsearch node to crash.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.elasticsearch:elasticsearch",
+                    "purl": "pkg:maven/org.elasticsearch/elasticsearch"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "7.0.0"
+                        },
+                        {
+                          "fixed": "7.17.19"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "7.0.0",
+                    "7.0.1",
+                    "7.1.0",
+                    "7.1.1",
+                    "7.10.0",
+                    "7.10.1",
+                    "7.10.2",
+                    "7.11.0",
+                    "7.11.1",
+                    "7.11.2",
+                    "7.12.0",
+                    "7.12.1",
+                    "7.13.0",
+                    "7.13.1",
+                    "7.13.2",
+                    "7.13.3",
+                    "7.13.4",
+                    "7.14.0",
+                    "7.14.1",
+                    "7.14.2",
+                    "7.15.0",
+                    "7.15.1",
+                    "7.15.2",
+                    "7.16.0",
+                    "7.16.1",
+                    "7.16.2",
+                    "7.16.3",
+                    "7.17.0",
+                    "7.17.1",
+                    "7.17.10",
+                    "7.17.11",
+                    "7.17.12",
+                    "7.17.13",
+                    "7.17.14",
+                    "7.17.15",
+                    "7.17.16",
+                    "7.17.17",
+                    "7.17.18",
+                    "7.17.2",
+                    "7.17.3",
+                    "7.17.4",
+                    "7.17.5",
+                    "7.17.6",
+                    "7.17.7",
+                    "7.17.8",
+                    "7.17.9",
+                    "7.2.0",
+                    "7.2.1",
+                    "7.3.0",
+                    "7.3.1",
+                    "7.3.2",
+                    "7.4.0",
+                    "7.4.1",
+                    "7.4.2",
+                    "7.5.0",
+                    "7.5.1",
+                    "7.5.2",
+                    "7.6.0",
+                    "7.6.1",
+                    "7.6.2",
+                    "7.7.0",
+                    "7.7.1",
+                    "7.8.0",
+                    "7.8.1",
+                    "7.9.0",
+                    "7.9.1",
+                    "7.9.2",
+                    "7.9.3"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-w5gg-2q56-6h4f/GHSA-w5gg-2q56-6h4f.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "org.elasticsearch:elasticsearch",
+                    "purl": "pkg:maven/org.elasticsearch/elasticsearch"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "8.0.0"
+                        },
+                        {
+                          "fixed": "8.13.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "8.0.0",
+                    "8.0.1",
+                    "8.1.0",
+                    "8.1.1",
+                    "8.1.2",
+                    "8.1.3",
+                    "8.10.0",
+                    "8.10.1",
+                    "8.10.2",
+                    "8.10.3",
+                    "8.10.4",
+                    "8.11.0",
+                    "8.11.1",
+                    "8.11.2",
+                    "8.11.3",
+                    "8.11.4",
+                    "8.12.0",
+                    "8.12.1",
+                    "8.12.2",
+                    "8.2.0",
+                    "8.2.1",
+                    "8.2.2",
+                    "8.2.3",
+                    "8.3.0",
+                    "8.3.1",
+                    "8.3.2",
+                    "8.3.3",
+                    "8.4.0",
+                    "8.4.1",
+                    "8.4.2",
+                    "8.4.3",
+                    "8.5.0",
+                    "8.5.1",
+                    "8.5.2",
+                    "8.5.3",
+                    "8.6.0",
+                    "8.6.1",
+                    "8.6.2",
+                    "8.7.0",
+                    "8.7.1",
+                    "8.8.0",
+                    "8.8.1",
+                    "8.8.2",
+                    "8.9.0",
+                    "8.9.1",
+                    "8.9.2"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-w5gg-2q56-6h4f/GHSA-w5gg-2q56-6h4f.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-23450"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://discuss.elastic.co/t/elasticsearch-8-13-0-7-17-19-security-update-esa-2024-06/356314"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/elastic/elasticsearch"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.elastic.co/community/security"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-400"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-27T21:56:08Z",
+                "nvd_published_at": "2024-03-27T17:15:53Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-r3hx-qfh5-r9m7"
+              ],
+              "aliases": [
+                "CVE-2024-23451",
+                "GHSA-r3hx-qfh5-r9m7"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-w5gg-2q56-6h4f"
+              ],
+              "aliases": [
+                "CVE-2024-23450",
+                "GHSA-w5gg-2q56-6h4f"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "experimental_config": {
+    "licenses": {
+      "summary": false,
+      "allowlist": null
+    }
+  }
+}

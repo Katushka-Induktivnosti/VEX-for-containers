@@ -1,0 +1,189 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/docker_scout/sboms/xwiki_sbom.json",
+  "ArtifactType": "spdx",
+  "Metadata": {
+    "OS": {
+      "Family": "none",
+      "Name": ""
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-34624",
+          "PkgName": "net.sourceforge.htmlcleaner:htmlcleaner",
+          "InstalledVersion": "2.24",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-34624",
+          "PkgRef": "pkg:maven/net.sourceforge.htmlcleaner/htmlcleaner@2.24",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "An issue was discovered htmlcleaner thru = 2.28 allows attackers to ca ...",
+          "Description": "An issue was discovered htmlcleaner thru = 2.28 allows attackers to cause a denial of service or other unspecified impacts via crafted object that uses cyclic dependencies.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/amplafi/htmlcleaner",
+            "https://github.com/amplafi/htmlcleaner/issues/13",
+            "https://lists.debian.org/debian-lts-announce/2023/08/msg00007.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-34624",
+            "https://ubuntu.com/security/notices/USN-6683-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-34624",
+            "https://www.debian.org/security/2023/dsa-5471"
+          ],
+          "PublishedDate": "2023-06-14T14:15:10.36Z",
+          "LastModifiedDate": "2023-08-08T04:15:45.03Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-21742",
+          "PkgName": "org.apache.james:apache-mime4j-core",
+          "InstalledVersion": "0.8.9",
+          "FixedVersion": "0.8.10",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-21742",
+          "PkgRef": "pkg:maven/org.apache.james/apache-mime4j-core@0.8.9",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": ": Apache James Mime4J: Mime4J DOM header injection",
+          "Description": "Improper input validation allows for header injection in MIME4J library when using MIME4J DOM for composing message.\nThis can be exploited by an attacker to add unintended headers to MIME messages.\n",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 5.6
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/02/27/5",
+            "https://access.redhat.com/security/cve/CVE-2024-21742",
+            "https://github.com/apache/james-mime4j",
+            "https://github.com/apache/james-mime4j/commit/9dec5df2a588fed8027839815daefa79ee66efd1",
+            "https://github.com/apache/james-mime4j/commit/d25fb3fd35db42b060789a20634fbe3cb84aba17",
+            "https://lists.apache.org/thread/nrqzg93219wdj056pqfszsd33dc54kfy",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-21742",
+            "https://www.cve.org/CVERecord?id=CVE-2024-21742"
+          ],
+          "PublishedDate": "2024-02-27T17:15:12.03Z",
+          "LastModifiedDate": "2024-02-29T01:44:04.04Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-33813",
+          "PkgName": "org.jdom:jdom",
+          "InstalledVersion": "1.1.3",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-33813",
+          "PkgRef": "pkg:maven/org.jdom/jdom@1.1.3",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "jdom: XXE allows attackers to cause a DoS via a crafted HTTP request",
+          "Description": "An XXE issue in SAXBuilder in JDOM through 2.0.6 allows attackers to cause a denial of service via a crafted HTTP request.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-611"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-33813",
+            "https://alephsecurity.com/vulns/aleph-2021003",
+            "https://github.com/hunterhacker/jdom",
+            "https://github.com/hunterhacker/jdom/commit/dd4f3c2fc7893edd914954c73eb577f925a7d361",
+            "https://github.com/hunterhacker/jdom/pull/188",
+            "https://github.com/hunterhacker/jdom/releases",
+            "https://lists.apache.org/thread.html/r21c406c7ed88fe340db7dbae75e58355159e6c324037c7d5547bf40b%40%3Cissues.solr.apache.org%3E",
+            "https://lists.apache.org/thread.html/r21c406c7ed88fe340db7dbae75e58355159e6c324037c7d5547bf40b@%3Cissues.solr.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5674106135bb1a6ef57483f4c63a9c44bca85d0e2a8a05895a8f1d89%40%3Cissues.solr.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5674106135bb1a6ef57483f4c63a9c44bca85d0e2a8a05895a8f1d89@%3Cissues.solr.apache.org%3E",
+            "https://lists.apache.org/thread.html/r6db397ae7281ead825338200d1f62d2827585a70797cc9ac0c4bd23f%40%3Cissues.solr.apache.org%3E",
+            "https://lists.apache.org/thread.html/r6db397ae7281ead825338200d1f62d2827585a70797cc9ac0c4bd23f@%3Cissues.solr.apache.org%3E",
+            "https://lists.apache.org/thread.html/r845e987b7cd8efe610284958e997b84583f5a98d3394adc09e3482fe%40%3Cissues.solr.apache.org%3E",
+            "https://lists.apache.org/thread.html/r845e987b7cd8efe610284958e997b84583f5a98d3394adc09e3482fe@%3Cissues.solr.apache.org%3E",
+            "https://lists.apache.org/thread.html/r89b3800cfabb1e773e49425e5d4239c28a659839a2eca6af3431482e%40%3Cissues.solr.apache.org%3E",
+            "https://lists.apache.org/thread.html/r89b3800cfabb1e773e49425e5d4239c28a659839a2eca6af3431482e@%3Cissues.solr.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9974f64723875052e02787b2a5eda689ac5247c71b827d455e5dc9a6%40%3Cissues.solr.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9974f64723875052e02787b2a5eda689ac5247c71b827d455e5dc9a6@%3Cissues.solr.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbc075a4ac85e7a8e47420b7383f16ffa0af3b792b8423584735f369f%40%3Cissues.solr.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbc075a4ac85e7a8e47420b7383f16ffa0af3b792b8423584735f369f@%3Cissues.solr.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfb7a93e40ebeb1e0068cde0bf3834dcab46bb1ef06d6424db48ed9fd%40%3Cdev.tika.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfb7a93e40ebeb1e0068cde0bf3834dcab46bb1ef06d6424db48ed9fd@%3Cdev.tika.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/06/msg00026.html",
+            "https://lists.debian.org/debian-lts-announce/2021/07/msg00012.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/AH46QHE5GIMT6BL6C3GDTOYF27JYILXM/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/EWFVYTHGILOQXUA7U3SPOERQXL7OPSZG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AH46QHE5GIMT6BL6C3GDTOYF27JYILXM",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EWFVYTHGILOQXUA7U3SPOERQXL7OPSZG",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-33813",
+            "https://www.cve.org/CVERecord?id=CVE-2021-33813",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html"
+          ],
+          "PublishedDate": "2021-06-16T12:15:12.76Z",
+          "LastModifiedDate": "2023-11-07T03:35:55.397Z"
+        }
+      ]
+    }
+  ]
+}

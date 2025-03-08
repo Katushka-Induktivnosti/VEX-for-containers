@@ -1,0 +1,118 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/docker_scout/sboms/node_sbom.json",
+  "ArtifactType": "spdx",
+  "Metadata": {
+    "OS": {
+      "Family": "none",
+      "Name": ""
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "Node.js",
+      "Class": "lang-pkgs",
+      "Type": "node-pkg",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-42282",
+          "PkgName": "ip",
+          "InstalledVersion": "2.0.0",
+          "FixedVersion": "2.0.1, 1.1.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-42282",
+          "PkgRef": "pkg:npm/ip@2.0.0",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-ip: arbitrary code execution via the isPublic() function",
+          "Description": "The ip package before 1.1.9 for Node.js might allow SSRF because some IP addresses (such as 0x7f.1) are improperly categorized as globally routable via isPublic.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-918"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-42282",
+            "https://cosmosofcyberspace.github.io/npm_ip_cve/npm_ip_cve.html",
+            "https://github.com/JoshGlazebrook/socks/issues/93#issue-2128357447",
+            "https://github.com/github/advisory-database/pull/3504#issuecomment-1937179999",
+            "https://github.com/indutny/node-ip",
+            "https://github.com/indutny/node-ip/commit/32f468f1245574785ec080705737a579be1223aa",
+            "https://github.com/indutny/node-ip/commit/6a3ada9b471b09d5f0f5be264911ab564bf67894",
+            "https://github.com/indutny/node-ip/pull/138",
+            "https://huntr.com/bounties/bfc3b23f-ddc0-4ee7-afab-223b07115ed3/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-42282",
+            "https://security.netapp.com/advisory/ntap-20240315-0008/",
+            "https://ubuntu.com/security/notices/USN-6643-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-42282"
+          ],
+          "PublishedDate": "2024-02-08T17:15:10.84Z",
+          "LastModifiedDate": "2024-03-15T19:25:07.84Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28863",
+          "PkgName": "tar",
+          "InstalledVersion": "6.2.0",
+          "FixedVersion": "6.2.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28863",
+          "PkgRef": "pkg:npm/tar@6.2.0",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "node-tar is a Tar for Node.js. node-tar prior to version 6.2.1 has no  ...",
+          "Description": "node-tar is a Tar for Node.js. node-tar prior to version 6.2.1 has no limit on the number of sub-folders created in the folder creation process. An attacker who generates a large number of sub-folders can consume memory on the system running node-tar and even crash the Node.js client within few seconds of running it using a path with too many sub-folders inside. Version 6.2.1 fixes this issue by preventing extraction in excessively deep sub-folders.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://github.com/isaacs/node-tar",
+            "https://github.com/isaacs/node-tar/commit/fe8cd57da5686f8695415414bda49206a545f7f7",
+            "https://github.com/isaacs/node-tar/commit/fe8cd57da5686f8695415414bda49206a545f7f7 (v6.2.1)",
+            "https://github.com/isaacs/node-tar/security/advisories/GHSA-f5x3-32g6-xq36",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28863",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28863"
+          ],
+          "PublishedDate": "2024-03-21T23:15:10.91Z",
+          "LastModifiedDate": "2024-03-22T12:45:36.13Z"
+        }
+      ]
+    }
+  ]
+}

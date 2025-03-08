@@ -1,0 +1,1197 @@
+{
+  "vulnerabilities": [],
+  "ok": true,
+  "dependencyCount": 30,
+  "org": "katushka-induktivnosti",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.1\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "apk",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false
+  },
+  "docker": {
+    "baseImage": "alpine:3.15.11",
+    "baseImageRemediation": {
+      "code": "NO_REMEDIATION_AVAILABLE",
+      "advice": [
+        {
+          "message": "According to our scan, you are currently using the most secure version of the selected base image",
+          "bold": true
+        },
+        {
+          "message": "Alpine 3.15.11 is no longer supported by the Alpine maintainers. Vulnerability detection may be affected by a lack of security updates.",
+          "bold": true,
+          "color": "yellow"
+        }
+      ]
+    }
+  },
+  "summary": "No known operating system vulnerabilities",
+  "filesystemPolicy": false,
+  "uniqueCount": 0,
+  "projectName": "docker-image|consul",
+  "platform": "linux/amd64",
+  "hasUnknownVersions": false,
+  "path": "consul:1.15.4",
+  "applications": [
+    {
+      "vulnerabilities": [
+        {
+          "id": "SNYK-GOLANG-GOLANGORGXCRYPTOSSH-6130669",
+          "title": "Authentication Bypass by Capture-replay",
+          "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N/E:P",
+          "credit": [
+            "Fabian Bäumer",
+            "Marcus Brinkmann",
+            "Jörg Schwenk"
+          ],
+          "semver": {
+            "vulnerable": [
+              "<0.17.0"
+            ],
+            "hashesRange": [
+              "<v0.17.0"
+            ],
+            "vulnerableHashes": []
+          },
+          "exploit": "Proof of Concept",
+          "fixedIn": [
+            "0.17.0"
+          ],
+          "patches": [],
+          "insights": {
+            "triageAdvice": null
+          },
+          "language": "golang",
+          "severity": "medium",
+          "cvssScore": 5.9,
+          "functions": [],
+          "malicious": false,
+          "isDisputed": false,
+          "moduleName": "golang.org/x/crypto/ssh",
+          "references": [
+            {
+              "url": "https://terrapin-attack.com/",
+              "title": "Attack Information"
+            },
+            {
+              "url": "https://github.com/golang/crypto/commit/9d2ee975ef9fe627bf0a6f01c1f69e8ef1d4f05d",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/libssh2/libssh2/pull/1291/commits/ab44b0906d7f8a296e995ccd661b0e98d01a3742",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/mkj/dropbear/commit/6e43be5c7b99dbee49dc72b6f989f29fdd7e9356",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/mwiede/jsch/commit/6214da974286a8b94a95f4cf6cec96e972ffd370",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/openssh/openssh-portable/commit/1edb00c58f8a6875fad6a497aa2bacf37f9e6cd5",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/ronf/asyncssh/commit/0bc73254f41acb140187e0c89606311f88de5b7b",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/ronf/asyncssh/commit/69f5a41b458b29367a65fe469c2b0255b5db210a",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/sshtools/maverick-synergy/commit/3cd7fd156c0d1091e303824807be038b4eead2cd",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/sshtools/maverick-synergy/commit/aadec4c3a5051fd99ad4791c80eeac271d56c859",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/TeraTermProject/teraterm/commit/7279fbd6ef4d0c8bdd6a90af4ada2899d786eec0",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/warp-tech/russh/commit/a355c62d11352cf93c3f9fda7499e03753a938ae",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/paramiko/paramiko/issues/2337",
+              "title": "GitHub Issue"
+            },
+            {
+              "url": "https://go.dev/issue/64784",
+              "title": "GitHub Issue"
+            },
+            {
+              "url": "https://github.com/jenkinsci/jenkins/pull/9089",
+              "title": "GitHub PR"
+            },
+            {
+              "url": "https://go.dev/cl/550715",
+              "title": "Go Forum"
+            },
+            {
+              "url": "https://groups.google.com/g/golang-announce/c/qA3XtxvMUyg",
+              "title": "Google Groups Forum"
+            },
+            {
+              "url": "https://www.jenkins.io/security/advisory/2024-04-17/%23SECURITY-3386",
+              "title": "Jenkins Advisory"
+            },
+            {
+              "url": "https://www.openssh.com/txt/release-9.6",
+              "title": "Security Release"
+            },
+            {
+              "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/javascript/cves/2023/CVE-2023-48795.yaml",
+              "title": "Nuclei Templates"
+            }
+          ],
+          "cvssDetails": [
+            {
+              "assigner": "NVD",
+              "severity": "medium",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "cvssV3BaseScore": 5.9,
+              "modificationTime": "2024-03-11T09:45:32.503659Z"
+            },
+            {
+              "assigner": "Red Hat",
+              "severity": "medium",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "cvssV3BaseScore": 5.9,
+              "modificationTime": "2024-03-11T09:54:12.732947Z"
+            },
+            {
+              "assigner": "SUSE",
+              "severity": "medium",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "cvssV3BaseScore": 5.9,
+              "modificationTime": "2024-03-11T09:54:13.267401Z"
+            }
+          ],
+          "description": "## Overview\n[golang.org/x/crypto/ssh](https://pkg.go.dev/golang.org/x/crypto/ssh?tab=doc) is a SSH client and server\n\nAffected versions of this package are vulnerable to Authentication Bypass by Capture-replay during the establishment of the secure channel. An attacker can manipulate handshake sequence numbers to delete messages sent immediately after the channel is established.\r\n\r\n**Note:**\r\n\r\n1) Sequence numbers are only validated once the channel is established and arbitrary messages are allowed during the handshake, allowing them to manipulate the sequence numbers.\r\n\r\n2) The potential consequences of the general Terrapin attack are dependent on the messages exchanged after the handshake concludes. If you are using a custom SSH service and do not resort to the authentication protocol, you should check that dropping the first few messages of a connection does not yield security risks.\r\n\r\n**Impact:** \r\n\r\nWhile cryptographically novel, there is no discernable impact on the integrity of SSH traffic beyond giving the attacker the ability to delete the message that enables some features related to keystroke timing obfuscation. To successfully carry out the exploitation, the connection needs to be protected using either the `ChaCha20-Poly1305` or `CBC` with `Encrypt-then-MAC` encryption methods. The attacker must also be able to intercept and modify the connection's traffic. \r\n\r\n## Workaround\r\n\r\nTemporarily disable the affected `chacha20-poly1305@openssh.com` encryption and `*-etm@openssh.com` MAC algorithms in the affected configuration, and use unaffected algorithms like `AES-GCM` instead.\n## Remediation\nUpgrade `golang.org/x/crypto/ssh` to version 0.17.0 or higher.\n## References\n- [Attack Information](https://terrapin-attack.com/)\n- [GitHub Commit](https://github.com/golang/crypto/commit/9d2ee975ef9fe627bf0a6f01c1f69e8ef1d4f05d)\n- [GitHub Commit](https://github.com/libssh2/libssh2/pull/1291/commits/ab44b0906d7f8a296e995ccd661b0e98d01a3742)\n- [GitHub Commit](https://github.com/mkj/dropbear/commit/6e43be5c7b99dbee49dc72b6f989f29fdd7e9356)\n- [GitHub Commit](https://github.com/mwiede/jsch/commit/6214da974286a8b94a95f4cf6cec96e972ffd370)\n- [GitHub Commit](https://github.com/openssh/openssh-portable/commit/1edb00c58f8a6875fad6a497aa2bacf37f9e6cd5)\n- [GitHub Commit](https://github.com/ronf/asyncssh/commit/0bc73254f41acb140187e0c89606311f88de5b7b)\n- [GitHub Commit](https://github.com/ronf/asyncssh/commit/69f5a41b458b29367a65fe469c2b0255b5db210a)\n- [GitHub Commit](https://github.com/sshtools/maverick-synergy/commit/3cd7fd156c0d1091e303824807be038b4eead2cd)\n- [GitHub Commit](https://github.com/sshtools/maverick-synergy/commit/aadec4c3a5051fd99ad4791c80eeac271d56c859)\n- [GitHub Commit](https://github.com/TeraTermProject/teraterm/commit/7279fbd6ef4d0c8bdd6a90af4ada2899d786eec0)\n- [GitHub Commit](https://github.com/warp-tech/russh/commit/a355c62d11352cf93c3f9fda7499e03753a938ae)\n- [GitHub Issue](https://github.com/paramiko/paramiko/issues/2337)\n- [GitHub Issue](https://go.dev/issue/64784)\n- [GitHub PR](https://github.com/jenkinsci/jenkins/pull/9089)\n- [Go Forum](https://go.dev/cl/550715)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/qA3XtxvMUyg)\n- [Jenkins Advisory](https://www.jenkins.io/security/advisory/2024-04-17/#SECURITY-3386)\n- [Security Release](https://www.openssh.com/txt/release-9.6)\n- [Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates/blob/master/javascript/cves/2023/CVE-2023-48795.yaml)\n",
+          "epssDetails": {
+            "percentile": "0.99123",
+            "probability": "0.94074",
+            "modelVersion": "v2023.03.01"
+          },
+          "identifiers": {
+            "GO": [
+              "GO-2023-2402"
+            ],
+            "CVE": [
+              "CVE-2023-48795"
+            ],
+            "CWE": [
+              "CWE-294"
+            ]
+          },
+          "packageName": "golang.org/x/crypto/ssh",
+          "proprietary": false,
+          "creationTime": "2023-12-19T07:43:18.835757Z",
+          "functions_new": [],
+          "alternativeIds": [],
+          "disclosureTime": "2023-12-18T21:18:26Z",
+          "packageManager": "golang",
+          "publicationTime": "2023-12-19T08:34:48.266287Z",
+          "modificationTime": "2024-04-18T12:53:53.338337Z",
+          "socialTrendAlert": false,
+          "severityWithCritical": "medium",
+          "from": [
+            "github.com/hashicorp/consul@*",
+            "golang.org/x/crypto/ssh@v0.0.0-20220622213112-05595931fe9d"
+          ],
+          "upgradePath": [],
+          "isUpgradable": false,
+          "isPatchable": false,
+          "name": "golang.org/x/crypto/ssh",
+          "version": "v0.0.0-20220622213112-05595931fe9d"
+        },
+        {
+          "id": "SNYK-GOLANG-GOLANGORGXNETHTTP2-5953327",
+          "title": "Denial of Service (DoS)",
+          "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:H",
+          "credit": [
+            "Unknown"
+          ],
+          "semver": {
+            "vulnerable": [
+              "<0.17.0"
+            ],
+            "hashesRange": [
+              "<v0.17.0"
+            ],
+            "vulnerableHashes": []
+          },
+          "exploit": "High",
+          "fixedIn": [
+            "0.17.0"
+          ],
+          "patches": [],
+          "insights": {
+            "triageAdvice": null
+          },
+          "language": "golang",
+          "severity": "high",
+          "cvssScore": 7.5,
+          "functions": [],
+          "malicious": false,
+          "isDisputed": false,
+          "moduleName": "golang.org/x/net/http2",
+          "references": [
+            {
+              "url": "https://github.com/helidon-io/helidon/commit/58f43670086e530750c7cb74b0bec92bf5189c79",
+              "title": "Github Commit"
+            },
+            {
+              "url": "https://github.com/pgjones/hypercorn/commit/7c39c68b61012a3c30979176080861c8b00fb229",
+              "title": "Github Commit"
+            },
+            {
+              "url": "https://github.com/akka/akka-http/commit/1f29fe6a8567c57dfe848a21ae883304cce5646d",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/apache/tomcat/commit/76bb4bfbfeae827dce896f650655bbf6e251ed49",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/apache/tomcat/commit/9cdfe25bad707f34b3e5da2994f3f1952a163c3e",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/eclipse/jetty.project/commit/dbb94514dc9d3fb21fe92080f57c314e7e06a148",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/gravitational/teleport/commit/15f34f927a45130408eb16ed09af5620270d4d1f",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/kubernetes/apimachinery/commit/be9188050914374ee8128239e5a2e5998d7897f5",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/netty/netty/commit/58f75f665aa81a8cbcf6ffa74820042a285c5e61",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/nghttp2/nghttp2/commit/72b4af6143681f528f1d237b21a9a7aee1738832",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/operator-framework/operator-lifecycle-manager/commit/9ec03f07f942dc9cef736957fa152e39157d6e13",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://snyk.io/blog/find-fix-http-2-rapid-reset-zero-day-vulnerability-cve-2023-44487/",
+              "title": "Snyk Blog"
+            },
+            {
+              "url": "https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack/",
+              "title": "Vulnerability Discovery"
+            },
+            {
+              "url": "https://cloud.google.com/blog/products/identity-security/how-it-works-the-novel-http2-rapid-reset-ddos-attack",
+              "title": "Vulnerability Explanation"
+            },
+            {
+              "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+              "title": "CISA - Known Exploited Vulnerabilities"
+            }
+          ],
+          "cvssDetails": [
+            {
+              "assigner": "NVD",
+              "severity": "high",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "cvssV3BaseScore": 7.5,
+              "modificationTime": "2024-03-11T09:53:41.402458Z"
+            },
+            {
+              "assigner": "SUSE",
+              "severity": "high",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "cvssV3BaseScore": 7.5,
+              "modificationTime": "2024-03-11T09:53:41.426930Z"
+            },
+            {
+              "assigner": "Red Hat",
+              "severity": "high",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "cvssV3BaseScore": 7.5,
+              "modificationTime": "2024-03-11T09:54:02.197243Z"
+            }
+          ],
+          "description": "## Overview\n[golang.org/x/net/http2](https://pkg.go.dev/golang.org/x/net/http2) is a work-in-progress HTTP/2 implementation for Go.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS) in the implementation of the HTTP/2 protocol. An attacker can cause a denial of service (including via DDoS) by rapidly resetting many streams through request cancellation.\n## Remediation\nUpgrade `golang.org/x/net/http2` to version 0.17.0 or higher.\n## References\n- [Github Commit](https://github.com/helidon-io/helidon/commit/58f43670086e530750c7cb74b0bec92bf5189c79)\n- [Github Commit](https://github.com/pgjones/hypercorn/commit/7c39c68b61012a3c30979176080861c8b00fb229)\n- [GitHub Commit](https://github.com/akka/akka-http/commit/1f29fe6a8567c57dfe848a21ae883304cce5646d)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/76bb4bfbfeae827dce896f650655bbf6e251ed49)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/9cdfe25bad707f34b3e5da2994f3f1952a163c3e)\n- [GitHub Commit](https://github.com/eclipse/jetty.project/commit/dbb94514dc9d3fb21fe92080f57c314e7e06a148)\n- [GitHub Commit](https://github.com/gravitational/teleport/commit/15f34f927a45130408eb16ed09af5620270d4d1f)\n- [GitHub Commit](https://github.com/kubernetes/apimachinery/commit/be9188050914374ee8128239e5a2e5998d7897f5)\n- [GitHub Commit](https://github.com/netty/netty/commit/58f75f665aa81a8cbcf6ffa74820042a285c5e61)\n- [GitHub Commit](https://github.com/nghttp2/nghttp2/commit/72b4af6143681f528f1d237b21a9a7aee1738832)\n- [GitHub Commit](https://github.com/operator-framework/operator-lifecycle-manager/commit/9ec03f07f942dc9cef736957fa152e39157d6e13)\n- [Snyk Blog](https://snyk.io/blog/find-fix-http-2-rapid-reset-zero-day-vulnerability-cve-2023-44487/)\n- [Vulnerability Discovery](https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack/)\n- [Vulnerability Explanation](https://cloud.google.com/blog/products/identity-security/how-it-works-the-novel-http2-rapid-reset-ddos-attack)\n- [CISA - Known Exploited Vulnerabilities](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)\n",
+          "epssDetails": {
+            "percentile": "0.98055",
+            "probability": "0.73226",
+            "modelVersion": "v2023.03.01"
+          },
+          "identifiers": {
+            "GO": [
+              "GO-2023-2153"
+            ],
+            "CVE": [
+              "CVE-2023-44487"
+            ],
+            "CWE": [
+              "CWE-400"
+            ],
+            "PVE": [
+              "PVE-2024-63209"
+            ],
+            "GHSA": [
+              "GHSA-2m7v-gc89-fjqf",
+              "GHSA-jhv4-f7mr-xx76"
+            ]
+          },
+          "packageName": "golang.org/x/net/http2",
+          "proprietary": false,
+          "creationTime": "2023-10-10T21:24:19.249482Z",
+          "functions_new": [],
+          "alternativeIds": [],
+          "disclosureTime": "2023-10-10T14:47:39Z",
+          "packageManager": "golang",
+          "publicationTime": "2023-10-11T06:03:00.595391Z",
+          "modificationTime": "2024-04-14T15:25:03.358124Z",
+          "socialTrendAlert": true,
+          "severityWithCritical": "high",
+          "from": [
+            "github.com/hashicorp/consul@*",
+            "golang.org/x/net/http2@v0.8.0"
+          ],
+          "upgradePath": [],
+          "isUpgradable": false,
+          "isPatchable": false,
+          "name": "golang.org/x/net/http2",
+          "version": "v0.8.0"
+        },
+        {
+          "id": "SNYK-GOLANG-GOLANGORGXNETHTTP2-5958903",
+          "title": "Allocation of Resources Without Limits or Throttling",
+          "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+          "credit": [
+            "Damien Neil"
+          ],
+          "semver": {
+            "vulnerable": [
+              "<0.17.0"
+            ],
+            "hashesRange": [
+              "<695775ce641b0f80c9cf03e8a796595355422dd3"
+            ],
+            "vulnerableHashes": []
+          },
+          "exploit": "Not Defined",
+          "fixedIn": [
+            "0.17.0"
+          ],
+          "patches": [],
+          "insights": {
+            "triageAdvice": null
+          },
+          "language": "golang",
+          "severity": "medium",
+          "cvssScore": 4.3,
+          "functions": [],
+          "malicious": false,
+          "isDisputed": false,
+          "moduleName": "golang.org/x/net/http2",
+          "references": [
+            {
+              "url": "https://github.com/golang/net/commit/695775ce641b0f80c9cf03e8a796595355422dd3",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/golang/net/commit/b225e7ca6dde1ef5a5ae5ce922861bda011cfabd",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/containerd/containerd/pull/9387",
+              "title": "GitHub PR"
+            }
+          ],
+          "cvssDetails": [
+            {
+              "assigner": "SUSE",
+              "severity": "high",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "cvssV3BaseScore": 7.5,
+              "modificationTime": "2024-03-11T09:53:41.424745Z"
+            },
+            {
+              "assigner": "NVD",
+              "severity": "high",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "cvssV3BaseScore": 7.5,
+              "modificationTime": "2024-03-11T09:53:44.546004Z"
+            },
+            {
+              "assigner": "Red Hat",
+              "severity": "high",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "cvssV3BaseScore": 7.5,
+              "modificationTime": "2024-03-11T09:54:02.194607Z"
+            }
+          ],
+          "description": "## Overview\n[golang.org/x/net/http2](https://pkg.go.dev/golang.org/x/net/http2) is a work-in-progress HTTP/2 implementation for Go.\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling when `MaxConcurrentStreams` handler `goroutines` running. A a handler is started until one of the existing handlers exits.\r\n\r\n**Note:**\r\n\r\nThis issue is related to [CVE-2023-44487](https://security.snyk.io/vuln/SNYK-GOLANG-GOLANGORGXNETHTTP2-5953327)\n## Remediation\nUpgrade `golang.org/x/net/http2` to version 0.17.0 or higher.\n## References\n- [GitHub Commit](https://github.com/golang/net/commit/695775ce641b0f80c9cf03e8a796595355422dd3)\n- [GitHub Commit](https://github.com/golang/net/commit/b225e7ca6dde1ef5a5ae5ce922861bda011cfabd)\n- [GitHub PR](https://github.com/containerd/containerd/pull/9387)\n",
+          "epssDetails": {
+            "percentile": "0.50940",
+            "probability": "0.00152",
+            "modelVersion": "v2023.03.01"
+          },
+          "identifiers": {
+            "CVE": [
+              "CVE-2023-39325"
+            ],
+            "CWE": [
+              "CWE-770"
+            ]
+          },
+          "packageName": "golang.org/x/net/http2",
+          "proprietary": false,
+          "creationTime": "2023-10-11T10:48:04.271543Z",
+          "functions_new": [],
+          "alternativeIds": [],
+          "disclosureTime": "2023-10-10T19:46:42Z",
+          "packageManager": "golang",
+          "publicationTime": "2023-11-27T10:26:17.463513Z",
+          "modificationTime": "2024-03-11T09:54:02.194607Z",
+          "socialTrendAlert": false,
+          "severityWithCritical": "medium",
+          "from": [
+            "github.com/hashicorp/consul@*",
+            "golang.org/x/net/http2@v0.8.0"
+          ],
+          "upgradePath": [],
+          "isUpgradable": false,
+          "isPatchable": false,
+          "name": "golang.org/x/net/http2",
+          "version": "v0.8.0"
+        },
+        {
+          "id": "SNYK-GOLANG-GOLANGORGXNETHTTP2-6531285",
+          "title": "Allocation of Resources Without Limits or Throttling",
+          "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "credit": [
+            "Bartek Nowotarski"
+          ],
+          "semver": {
+            "vulnerable": [
+              "<0.23.0"
+            ],
+            "hashesRange": [
+              "<v0.23.0"
+            ],
+            "vulnerableHashes": []
+          },
+          "exploit": "Not Defined",
+          "fixedIn": [
+            "0.23.0"
+          ],
+          "patches": [],
+          "insights": {
+            "triageAdvice": null
+          },
+          "language": "golang",
+          "severity": "high",
+          "cvssScore": 7.5,
+          "functions": [],
+          "malicious": false,
+          "isDisputed": false,
+          "moduleName": "golang.org/x/net/http2",
+          "references": [
+            {
+              "url": "https://github.com/traefik/traefik/commit/099c7e9444a5d56918b8221672fc8d6a09a5d389",
+              "title": "Github Commit"
+            },
+            {
+              "url": "https://github.com/golang/net/commit/ba872109ef2dc8f1da778651bd1fd3792d0e4587",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/golang/go/issues/65051",
+              "title": "GitHub Issue"
+            },
+            {
+              "url": "https://pkg.go.dev/vuln/GO-2024-2687",
+              "title": "Go Advisory"
+            }
+          ],
+          "cvssDetails": [
+            {
+              "assigner": "Red Hat",
+              "severity": "high",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "cvssV3BaseScore": 7.5,
+              "modificationTime": "2024-04-04T13:36:13.892008Z"
+            },
+            {
+              "assigner": "SUSE",
+              "severity": "high",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "cvssV3BaseScore": 7.5,
+              "modificationTime": "2024-04-08T23:01:48.310730Z"
+            }
+          ],
+          "description": "## Overview\n[golang.org/x/net/http2](https://pkg.go.dev/golang.org/x/net/http2) is a work-in-progress HTTP/2 implementation for Go.\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling when reading header data from `CONTINUATION` frames. As part of the HPACK flow, all incoming `HEADERS` and `CONTINUATION` frames are read even if their payloads exceed `MaxHeaderBytes` and will be discarded. An attacker can send excessive data over a connection to render it unresponsive.\n## Remediation\nUpgrade `golang.org/x/net/http2` to version 0.23.0 or higher.\n## References\n- [Github Commit](https://github.com/traefik/traefik/commit/099c7e9444a5d56918b8221672fc8d6a09a5d389)\n- [GitHub Commit](https://github.com/golang/net/commit/ba872109ef2dc8f1da778651bd1fd3792d0e4587)\n- [GitHub Issue](https://github.com/golang/go/issues/65051)\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2024-2687)\n",
+          "epssDetails": {
+            "percentile": "0.14208",
+            "probability": "0.00045",
+            "modelVersion": "v2023.03.01"
+          },
+          "identifiers": {
+            "GO": [
+              "GO-2024-2687"
+            ],
+            "CVE": [
+              "CVE-2023-45288"
+            ],
+            "CWE": [
+              "CWE-770"
+            ]
+          },
+          "packageName": "golang.org/x/net/http2",
+          "proprietary": false,
+          "creationTime": "2024-04-04T06:31:35.720850Z",
+          "functions_new": [],
+          "alternativeIds": [],
+          "disclosureTime": "2024-01-10T21:50:43Z",
+          "packageManager": "golang",
+          "publicationTime": "2024-04-04T06:31:35.982707Z",
+          "modificationTime": "2024-04-16T14:02:05.290609Z",
+          "socialTrendAlert": false,
+          "severityWithCritical": "high",
+          "from": [
+            "github.com/hashicorp/consul@*",
+            "golang.org/x/net/http2@v0.8.0"
+          ],
+          "upgradePath": [],
+          "isUpgradable": false,
+          "isPatchable": false,
+          "name": "golang.org/x/net/http2",
+          "version": "v0.8.0"
+        },
+        {
+          "id": "SNYK-GOLANG-GOOGLEGOLANGORGGRPC-5953328",
+          "title": "Denial of Service (DoS)",
+          "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:H",
+          "credit": [
+            "Unknown"
+          ],
+          "semver": {
+            "vulnerable": [
+              "<1.56.3",
+              ">=1.57.0 <1.57.1",
+              ">=1.58.0 <1.58.3"
+            ],
+            "hashesRange": [
+              "<v1.56.3",
+              ">=v1.57.0 <v1.57.1",
+              ">=v1.58.0 <v1.58.3"
+            ],
+            "vulnerableHashes": []
+          },
+          "exploit": "High",
+          "fixedIn": [
+            "1.56.3",
+            "1.57.1",
+            "1.58.3"
+          ],
+          "patches": [],
+          "insights": {
+            "triageAdvice": null
+          },
+          "language": "golang",
+          "severity": "high",
+          "cvssScore": 7.5,
+          "functions": [],
+          "malicious": false,
+          "isDisputed": false,
+          "moduleName": "google.golang.org/grpc",
+          "references": [
+            {
+              "url": "https://github.com/helidon-io/helidon/commit/58f43670086e530750c7cb74b0bec92bf5189c79",
+              "title": "Github Commit"
+            },
+            {
+              "url": "https://github.com/pgjones/hypercorn/commit/7c39c68b61012a3c30979176080861c8b00fb229",
+              "title": "Github Commit"
+            },
+            {
+              "url": "https://github.com/akka/akka-http/commit/1f29fe6a8567c57dfe848a21ae883304cce5646d",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/apache/tomcat/commit/76bb4bfbfeae827dce896f650655bbf6e251ed49",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/apache/tomcat/commit/9cdfe25bad707f34b3e5da2994f3f1952a163c3e",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/eclipse/jetty.project/commit/dbb94514dc9d3fb21fe92080f57c314e7e06a148",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/gravitational/teleport/commit/15f34f927a45130408eb16ed09af5620270d4d1f",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/kubernetes/apimachinery/commit/be9188050914374ee8128239e5a2e5998d7897f5",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/netty/netty/commit/58f75f665aa81a8cbcf6ffa74820042a285c5e61",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/nghttp2/nghttp2/commit/72b4af6143681f528f1d237b21a9a7aee1738832",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/operator-framework/operator-lifecycle-manager/commit/9ec03f07f942dc9cef736957fa152e39157d6e13",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://snyk.io/blog/find-fix-http-2-rapid-reset-zero-day-vulnerability-cve-2023-44487/",
+              "title": "Snyk Blog"
+            },
+            {
+              "url": "https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack/",
+              "title": "Vulnerability Discovery"
+            },
+            {
+              "url": "https://cloud.google.com/blog/products/identity-security/how-it-works-the-novel-http2-rapid-reset-ddos-attack",
+              "title": "Vulnerability Explanation"
+            },
+            {
+              "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+              "title": "CISA - Known Exploited Vulnerabilities"
+            }
+          ],
+          "cvssDetails": [
+            {
+              "assigner": "NVD",
+              "severity": "high",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "cvssV3BaseScore": 7.5,
+              "modificationTime": "2024-03-11T09:53:41.402458Z"
+            },
+            {
+              "assigner": "SUSE",
+              "severity": "high",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "cvssV3BaseScore": 7.5,
+              "modificationTime": "2024-03-11T09:53:41.426930Z"
+            },
+            {
+              "assigner": "Red Hat",
+              "severity": "high",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "cvssV3BaseScore": 7.5,
+              "modificationTime": "2024-03-11T09:54:02.197243Z"
+            }
+          ],
+          "description": "## Overview\n[google.golang.org/grpc](https://pkg.go.dev/google.golang.org/grpc) is a Go implementation of gRPC\n\nAffected versions of this package are vulnerable to Denial of Service (DoS) in the implementation of the HTTP/2 protocol. An attacker can cause a denial of service (including via DDoS) by rapidly resetting many streams through request cancellation.\n## Remediation\nUpgrade `google.golang.org/grpc` to version 1.56.3, 1.57.1, 1.58.3 or higher.\n## References\n- [Github Commit](https://github.com/helidon-io/helidon/commit/58f43670086e530750c7cb74b0bec92bf5189c79)\n- [Github Commit](https://github.com/pgjones/hypercorn/commit/7c39c68b61012a3c30979176080861c8b00fb229)\n- [GitHub Commit](https://github.com/akka/akka-http/commit/1f29fe6a8567c57dfe848a21ae883304cce5646d)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/76bb4bfbfeae827dce896f650655bbf6e251ed49)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/9cdfe25bad707f34b3e5da2994f3f1952a163c3e)\n- [GitHub Commit](https://github.com/eclipse/jetty.project/commit/dbb94514dc9d3fb21fe92080f57c314e7e06a148)\n- [GitHub Commit](https://github.com/gravitational/teleport/commit/15f34f927a45130408eb16ed09af5620270d4d1f)\n- [GitHub Commit](https://github.com/kubernetes/apimachinery/commit/be9188050914374ee8128239e5a2e5998d7897f5)\n- [GitHub Commit](https://github.com/netty/netty/commit/58f75f665aa81a8cbcf6ffa74820042a285c5e61)\n- [GitHub Commit](https://github.com/nghttp2/nghttp2/commit/72b4af6143681f528f1d237b21a9a7aee1738832)\n- [GitHub Commit](https://github.com/operator-framework/operator-lifecycle-manager/commit/9ec03f07f942dc9cef736957fa152e39157d6e13)\n- [Snyk Blog](https://snyk.io/blog/find-fix-http-2-rapid-reset-zero-day-vulnerability-cve-2023-44487/)\n- [Vulnerability Discovery](https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack/)\n- [Vulnerability Explanation](https://cloud.google.com/blog/products/identity-security/how-it-works-the-novel-http2-rapid-reset-ddos-attack)\n- [CISA - Known Exploited Vulnerabilities](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)\n",
+          "epssDetails": {
+            "percentile": "0.98055",
+            "probability": "0.73226",
+            "modelVersion": "v2023.03.01"
+          },
+          "identifiers": {
+            "GO": [
+              "GO-2023-2153"
+            ],
+            "CVE": [
+              "CVE-2023-44487"
+            ],
+            "CWE": [
+              "CWE-400"
+            ],
+            "PVE": [
+              "PVE-2024-63209"
+            ],
+            "GHSA": [
+              "GHSA-2m7v-gc89-fjqf",
+              "GHSA-jhv4-f7mr-xx76"
+            ]
+          },
+          "packageName": "google.golang.org/grpc",
+          "proprietary": false,
+          "creationTime": "2023-10-10T21:24:19.659383Z",
+          "functions_new": [],
+          "alternativeIds": [],
+          "disclosureTime": "2023-10-10T14:47:39Z",
+          "packageManager": "golang",
+          "publicationTime": "2023-10-11T06:03:00.595391Z",
+          "modificationTime": "2024-04-14T15:25:03.358124Z",
+          "socialTrendAlert": true,
+          "severityWithCritical": "high",
+          "from": [
+            "github.com/hashicorp/consul@*",
+            "google.golang.org/grpc@v1.49.0"
+          ],
+          "upgradePath": [],
+          "isUpgradable": false,
+          "isPatchable": false,
+          "name": "google.golang.org/grpc",
+          "version": "v1.49.0"
+        },
+        {
+          "id": "SNYK-GOLANG-GOOGLEGOLANGORGPROTOBUFENCODINGPROTOJSON-6137908",
+          "title": "Stack-based Buffer Overflow",
+          "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "credit": [
+            "jhump"
+          ],
+          "semver": {
+            "vulnerable": [
+              "<1.32.0"
+            ],
+            "hashesRange": [
+              "<bfcd6476a38e41247d6bb43dc8f00b23ec9fffc2"
+            ],
+            "vulnerableHashes": null
+          },
+          "exploit": "Not Defined",
+          "fixedIn": [
+            "1.32.0"
+          ],
+          "patches": [],
+          "insights": {
+            "triageAdvice": null
+          },
+          "language": "golang",
+          "severity": "medium",
+          "cvssScore": 5.9,
+          "functions": [],
+          "malicious": false,
+          "isDisputed": false,
+          "moduleName": "google.golang.org/protobuf/encoding/protojson",
+          "references": [
+            {
+              "url": "https://github.com/protocolbuffers/protobuf-go/commit/bfcd6476a38e41247d6bb43dc8f00b23ec9fffc2",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/golang/protobuf/issues/1584",
+              "title": "GitHub Issue"
+            }
+          ],
+          "cvssDetails": [],
+          "description": "## Overview\n\nAffected versions of this package are vulnerable to Stack-based Buffer Overflow when processing input that uses pathologically deep nesting.\n## Remediation\nUpgrade `google.golang.org/protobuf/encoding/protojson` to version 1.32.0 or higher.\n## References\n- [GitHub Commit](https://github.com/protocolbuffers/protobuf-go/commit/bfcd6476a38e41247d6bb43dc8f00b23ec9fffc2)\n- [GitHub Issue](https://github.com/golang/protobuf/issues/1584)\n",
+          "epssDetails": null,
+          "identifiers": {
+            "CVE": [],
+            "CWE": [
+              "CWE-121"
+            ]
+          },
+          "packageName": "google.golang.org/protobuf/encoding/protojson",
+          "proprietary": false,
+          "creationTime": "2023-12-22T07:56:01.435551Z",
+          "functions_new": [],
+          "alternativeIds": [],
+          "disclosureTime": "2023-12-21T17:31:13Z",
+          "packageManager": "golang",
+          "publicationTime": "2023-12-22T07:57:46.872135Z",
+          "modificationTime": "2023-12-29T11:55:36.470401Z",
+          "socialTrendAlert": false,
+          "severityWithCritical": "medium",
+          "from": [
+            "github.com/hashicorp/consul@*",
+            "google.golang.org/protobuf/encoding/protojson@v1.28.1"
+          ],
+          "upgradePath": [],
+          "isUpgradable": false,
+          "isPatchable": false,
+          "name": "google.golang.org/protobuf/encoding/protojson",
+          "version": "v1.28.1"
+        },
+        {
+          "id": "SNYK-GOLANG-GOOGLEGOLANGORGPROTOBUFENCODINGPROTOJSON-6393703",
+          "title": "Infinite loop",
+          "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "credit": [
+            "Unknown"
+          ],
+          "semver": {
+            "vulnerable": [
+              "<1.33.0"
+            ],
+            "hashesRange": [
+              "<v1.33.0"
+            ],
+            "vulnerableHashes": []
+          },
+          "exploit": "Not Defined",
+          "fixedIn": [
+            "1.33.0"
+          ],
+          "patches": [],
+          "insights": {
+            "triageAdvice": null
+          },
+          "language": "golang",
+          "severity": "medium",
+          "cvssScore": 5.3,
+          "functions": [],
+          "malicious": false,
+          "isDisputed": false,
+          "moduleName": "google.golang.org/protobuf/encoding/protojson",
+          "references": [
+            {
+              "url": "https://github.com/protocolbuffers/protobuf-go/commit/f01a588e5810b90996452eec4a28f22a0afae023",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/protocolbuffers/protobuf-go/releases/tag/v1.33.0",
+              "title": "GitHub Release"
+            },
+            {
+              "url": "https://pkg.go.dev/vuln/GO-2024-2611",
+              "title": "Vulnerability Advisory"
+            }
+          ],
+          "cvssDetails": [
+            {
+              "assigner": "Red Hat",
+              "severity": "medium",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "cvssV3BaseScore": 5.9,
+              "modificationTime": "2024-03-15T13:37:30.301711Z"
+            }
+          ],
+          "description": "## Overview\n\nAffected versions of this package are vulnerable to Infinite loop via the `protojson.Unmarshal` function. An attacker can cause a denial of service condition by unmarshaling certain forms of invalid JSON.\r\n\r\n**Note:**\r\n\r\nThis condition can occur when unmarshaling into a message which contains a `google.protobuf.Any` value, or when the `UnmarshalOptions.DiscardUnknown` option is set.\n## Remediation\nUpgrade `google.golang.org/protobuf/encoding/protojson` to version 1.33.0 or higher.\n## References\n- [GitHub Commit](https://github.com/protocolbuffers/protobuf-go/commit/f01a588e5810b90996452eec4a28f22a0afae023)\n- [GitHub Release](https://github.com/protocolbuffers/protobuf-go/releases/tag/v1.33.0)\n- [Vulnerability Advisory](https://pkg.go.dev/vuln/GO-2024-2611)\n",
+          "epssDetails": {
+            "percentile": "0.14103",
+            "probability": "0.00045",
+            "modelVersion": "v2023.03.01"
+          },
+          "identifiers": {
+            "CVE": [
+              "CVE-2024-24786"
+            ],
+            "CWE": [
+              "CWE-835"
+            ]
+          },
+          "packageName": "google.golang.org/protobuf/encoding/protojson",
+          "proprietary": false,
+          "creationTime": "2024-03-06T08:29:08.019588Z",
+          "functions_new": [],
+          "alternativeIds": [],
+          "disclosureTime": "2024-03-05T20:35:31Z",
+          "packageManager": "golang",
+          "publicationTime": "2024-03-06T09:10:54.221790Z",
+          "modificationTime": "2024-03-15T13:37:30.301711Z",
+          "socialTrendAlert": false,
+          "severityWithCritical": "medium",
+          "from": [
+            "github.com/hashicorp/consul@*",
+            "google.golang.org/protobuf/encoding/protojson@v1.28.1"
+          ],
+          "upgradePath": [],
+          "isUpgradable": false,
+          "isPatchable": false,
+          "name": "google.golang.org/protobuf/encoding/protojson",
+          "version": "v1.28.1"
+        },
+        {
+          "id": "SNYK-GOLANG-GOOGLEGOLANGORGPROTOBUFINTERNALENCODINGJSON-6393704",
+          "title": "Infinite loop",
+          "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "credit": [
+            "Unknown"
+          ],
+          "semver": {
+            "vulnerable": [
+              "<1.33.0"
+            ],
+            "hashesRange": [
+              "<v1.33.0"
+            ],
+            "vulnerableHashes": []
+          },
+          "exploit": "Not Defined",
+          "fixedIn": [
+            "1.33.0"
+          ],
+          "patches": [],
+          "insights": {
+            "triageAdvice": null
+          },
+          "language": "golang",
+          "severity": "medium",
+          "cvssScore": 5.3,
+          "functions": [],
+          "malicious": false,
+          "isDisputed": false,
+          "moduleName": "google.golang.org/protobuf/internal/encoding/json",
+          "references": [
+            {
+              "url": "https://github.com/protocolbuffers/protobuf-go/commit/f01a588e5810b90996452eec4a28f22a0afae023",
+              "title": "GitHub Commit"
+            },
+            {
+              "url": "https://github.com/protocolbuffers/protobuf-go/releases/tag/v1.33.0",
+              "title": "GitHub Release"
+            },
+            {
+              "url": "https://pkg.go.dev/vuln/GO-2024-2611",
+              "title": "Vulnerability Advisory"
+            }
+          ],
+          "cvssDetails": [
+            {
+              "assigner": "Red Hat",
+              "severity": "medium",
+              "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "cvssV3BaseScore": 5.9,
+              "modificationTime": "2024-03-15T13:37:30.301711Z"
+            }
+          ],
+          "description": "## Overview\n\nAffected versions of this package are vulnerable to Infinite loop via the `protojson.Unmarshal` function. An attacker can cause a denial of service condition by unmarshaling certain forms of invalid JSON.\r\n\r\n**Note:**\r\n\r\nThis condition can occur when unmarshaling into a message which contains a `google.protobuf.Any` value, or when the `UnmarshalOptions.DiscardUnknown` option is set.\n## Remediation\nUpgrade `google.golang.org/protobuf/internal/encoding/json` to version 1.33.0 or higher.\n## References\n- [GitHub Commit](https://github.com/protocolbuffers/protobuf-go/commit/f01a588e5810b90996452eec4a28f22a0afae023)\n- [GitHub Release](https://github.com/protocolbuffers/protobuf-go/releases/tag/v1.33.0)\n- [Vulnerability Advisory](https://pkg.go.dev/vuln/GO-2024-2611)\n",
+          "epssDetails": {
+            "percentile": "0.14103",
+            "probability": "0.00045",
+            "modelVersion": "v2023.03.01"
+          },
+          "identifiers": {
+            "CVE": [
+              "CVE-2024-24786"
+            ],
+            "CWE": [
+              "CWE-835"
+            ]
+          },
+          "packageName": "google.golang.org/protobuf/internal/encoding/json",
+          "proprietary": false,
+          "creationTime": "2024-03-06T08:29:08.313965Z",
+          "functions_new": [],
+          "alternativeIds": [],
+          "disclosureTime": "2024-03-05T20:35:31Z",
+          "packageManager": "golang",
+          "publicationTime": "2024-03-06T09:10:54.404795Z",
+          "modificationTime": "2024-03-15T13:37:30.301711Z",
+          "socialTrendAlert": false,
+          "severityWithCritical": "medium",
+          "from": [
+            "github.com/hashicorp/consul@*",
+            "google.golang.org/protobuf/internal/encoding/json@v1.28.1"
+          ],
+          "upgradePath": [],
+          "isUpgradable": false,
+          "isPatchable": false,
+          "name": "google.golang.org/protobuf/internal/encoding/json",
+          "version": "v1.28.1"
+        }
+      ],
+      "ok": false,
+      "dependencyCount": 1018,
+      "org": "katushka-induktivnosti",
+      "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.1\nignore: {}\npatch: {}\n",
+      "isPrivate": true,
+      "licensesPolicy": {
+        "severities": {},
+        "orgLicenseRules": {
+          "AGPL-1.0": {
+            "licenseType": "AGPL-1.0",
+            "severity": "high",
+            "instructions": ""
+          },
+          "AGPL-3.0": {
+            "licenseType": "AGPL-3.0",
+            "severity": "high",
+            "instructions": ""
+          },
+          "Artistic-1.0": {
+            "licenseType": "Artistic-1.0",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "Artistic-2.0": {
+            "licenseType": "Artistic-2.0",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "CDDL-1.0": {
+            "licenseType": "CDDL-1.0",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "CPOL-1.02": {
+            "licenseType": "CPOL-1.02",
+            "severity": "high",
+            "instructions": ""
+          },
+          "EPL-1.0": {
+            "licenseType": "EPL-1.0",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "GPL-2.0": {
+            "licenseType": "GPL-2.0",
+            "severity": "high",
+            "instructions": ""
+          },
+          "GPL-3.0": {
+            "licenseType": "GPL-3.0",
+            "severity": "high",
+            "instructions": ""
+          },
+          "LGPL-2.0": {
+            "licenseType": "LGPL-2.0",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "LGPL-2.1": {
+            "licenseType": "LGPL-2.1",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "LGPL-3.0": {
+            "licenseType": "LGPL-3.0",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "MPL-1.1": {
+            "licenseType": "MPL-1.1",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "MPL-2.0": {
+            "licenseType": "MPL-2.0",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "MS-RL": {
+            "licenseType": "MS-RL",
+            "severity": "medium",
+            "instructions": ""
+          },
+          "SimPL-2.0": {
+            "licenseType": "SimPL-2.0",
+            "severity": "high",
+            "instructions": ""
+          }
+        }
+      },
+      "packageManager": "gomodules",
+      "ignoreSettings": {
+        "adminOnly": false,
+        "reasonRequired": false,
+        "disregardFilesystemIgnores": false
+      },
+      "docker": {},
+      "summary": "8 vulnerable dependency paths",
+      "filesystemPolicy": false,
+      "filtered": {
+        "ignore": [],
+        "patch": []
+      },
+      "uniqueCount": 8,
+      "targetFile": "/bin/consul",
+      "projectName": "github.com/hashicorp/consul",
+      "displayTargetFile": "/bin/consul",
+      "hasUnknownVersions": false,
+      "path": "consul:1.15.4/hashicorp/consul"
+    }
+  ]
+}

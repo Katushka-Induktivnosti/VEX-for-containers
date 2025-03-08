@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.r1 {font-style: italic}
+.r2 {color: #800080; text-decoration-color: #800080; font-weight: bold}
+.r3 {color: #7c8082; text-decoration-color: #7c8082; font-style: italic}
+.r4 {color: #00875f; text-decoration-color: #00875f}
+.r5 {color: #ff0000; text-decoration-color: #ff0000}
+.r7 {color: #ff753d; text-decoration-color: #ff753d; font-weight: bold}
+.r8 {color: #7c8082; text-decoration-color: #7c8082}
+.r9 {color: #800080; text-decoration-color: #800080}
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+</style>
+</head>
+<body>
+    <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">
+<span class="r1">                                                   Dependency Scan Results (BOM)                                                   </span>
+╔═══════════════════════════════════════════════════════════════════════╤════════════════════════╤═════════════╤══════════╤═══════╗
+║<span class="r2"> Dependency Tree                                                       </span>│<span class="r2"> Insights               </span>│<span class="r2"> Fix Version </span>│<span class="r2"> Severity </span>│<span class="r2"> Score </span>║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ <span class="r5">CRITICAL</span> │   <span class="r5">9.0</span> ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2015-0235              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2014-7817              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r5">calcite-core@1.16.0 ⬅ CVE-2022-39135                                 </span> │ 🧾 Vendor Confirmed    │             │ <span class="r5">CRITICAL</span> │   <span class="r5">9.8</span> ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2014-6040              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Indirect dependency</span> │ 3.16.1      │ HIGH     │   7.5 ║
+║ <span class="r6">└── </span><span class="r7">protobuf-java@2.5.0 ⬅ CVE-2021-22569                             </span> │ 🧾 Vendor Confirmed    │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r8">✂ Uninstall candidate</span>  │ 8.6.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │ <span class="r4">📓 Local install</span>       │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">curl@8.5.0-2ubuntu10.6 ⬅ CVE-2024-0853                       </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r8">✂ Uninstall candidate</span>  │ 8.6.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │ <span class="r4">📓 Local install</span>       │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">curl@8.5.0-2ubuntu10.6 ⬅ GHSA-697h-9h25-w4fm                 </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r8">✂ Uninstall candidate</span>  │ 8.7.1-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │ <span class="r4">📓 Local install</span>       │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">curl@8.5.0-2ubuntu10.6 ⬅ CVE-2024-2004                       </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r8">✂ Uninstall candidate</span>  │ 8.7.1-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │ <span class="r4">📓 Local install</span>       │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">curl@8.5.0-2ubuntu10.6 ⬅ GHSA-97xx-95pm-5qv6                 </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r8">✂ Uninstall candidate</span>  │ 8.7.1-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │ <span class="r4">📓 Local install</span>       │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">curl@8.5.0-2ubuntu10.6 ⬅ CVE-2024-2379                       </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r8">✂ Uninstall candidate</span>  │ 8.7.1-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │ <span class="r4">📓 Local install</span>       │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">curl@8.5.0-2ubuntu10.6 ⬅ GHSA-wr4c-gwg7-p734                 </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r8">✂ Uninstall candidate</span>  │ 8.7.1-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │ <span class="r4">📓 Local install</span>       │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">curl@8.5.0-2ubuntu10.6 ⬅ CVE-2024-2398                       </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r8">✂ Uninstall candidate</span>  │ 8.7.1-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │ <span class="r4">📓 Local install</span>       │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">curl@8.5.0-2ubuntu10.6 ⬅ GHSA-mq8w-c2j9-rqxc                 </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r8">✂ Uninstall candidate</span>  │ 8.7.1-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │ <span class="r4">📓 Local install</span>       │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">curl@8.5.0-2ubuntu10.6 ⬅ CVE-2024-2466                       </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r8">✂ Uninstall candidate</span>  │ 8.7.1-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │ <span class="r4">📓 Local install</span>       │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">curl@8.5.0-2ubuntu10.6 ⬅ GHSA-9xr6-qf7m-2jv5                 </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2012-3404              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │             │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">util-linux@2.39.3-9ubuntu6.2 ⬅ CVE-2022-0563                 </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.1-r3    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-3446                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.1-r3    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-3p3x-vg38-6g9q              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.1-r4    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-3817                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.1-r4    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-c945-cqj5-wfv6              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.4-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-5363                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.4-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-xw78-pcr6-wrg8              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.4-r1    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-5678                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.4-r1    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-2cj7-mg3x-9mhq              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.2.1-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2024-0727                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.2.1-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-9v9h-cgj8-h64p              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.3.0-r5    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-6237                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.3.0-r5    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2024-2511                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.3.0-r5    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-299c-jvhc-gxj8              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Indirect dependency</span> │ 3.16.1      │ HIGH     │   7.5 ║
+║ <span class="r6">└── </span><span class="r7">protobuf-java@2.5.0 ⬅ CVE-2022-3509                              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2015-1472              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ avatica-core@1.11.0 ⬅ CVE-2022-36364                                  │ 🧾 Vendor Confirmed    │             │ HIGH     │   8.8 ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.27.3.1 │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2011-3172              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ HIGH     │   7.5 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2013-4357              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2012-3480              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │             │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">wget@1.21.4-1ubuntu4.1 ⬅ CVE-2021-31879                      </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Indirect dependency</span> │ 3.16.1      │ HIGH     │   7.5 ║
+║ <span class="r6">└── </span><span class="r7">protobuf-java@3.3.0 ⬅ CVE-2021-22569                             </span> │ 🧾 Vendor Confirmed    │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │             │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libgcrypt20@1.10.3-2build1 ⬅ CVE-2018-6829                   </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Indirect dependency</span> │ 3.16.1      │ HIGH     │   7.5 ║
+║ <span class="r6">└── </span><span class="r7">protobuf-java@2.5.0 ⬅ CVE-2021-22570                             </span> │ 🧾 Vendor Confirmed    │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2012-3405              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ calcite-core@1.16.0 ⬅ CVE-2020-13955                                  │                        │             │ MEDIUM   │   5.9 ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ HIGH     │   7.5 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2014-5119              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │             │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libgcrypt20@1.10.3-2build1 ⬅ CVE-2024-2236                   </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2012-6656              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Indirect dependency</span> │ 3.16.1      │ HIGH     │   7.5 ║
+║ <span class="r6">└── </span><span class="r7">protobuf-java@3.3.0 ⬅ CVE-2021-22570                             </span> │ 🧾 Vendor Confirmed    │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2012-0864              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │             │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">python3.12@3.12.3-1ubuntu0.4 ⬅ CVE-2023-27043                </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2013-0242              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2012-3406              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2013-4788              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2013-7423              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Indirect dependency</span> │ 3.16.1      │ MEDIUM   │   5.7 ║
+║ <span class="r6">└── </span><span class="r7">protobuf-java@3.3.0 ⬅ CVE-2022-3171                              </span> │ 🧾 Vendor Confirmed    │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ HIGH     │   7.5 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2014-9402              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2013-4237              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Indirect dependency</span> │ 3.16.1      │ MEDIUM   │   5.7 ║
+║ <span class="r6">└── </span><span class="r7">protobuf-java@2.5.0 ⬅ CVE-2022-3171                              </span> │ 🧾 Vendor Confirmed    │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-0215                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-r7jw-wp68-3xch              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-0216                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-29xx-hcv2-c4cp              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-0217                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-vxrh-cpg7-8vjr              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-0286                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-x4qr-2fvf-3mr5              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-0401                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-vrh7-x64v-7vxq              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r1    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-0464                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r1    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-w2w6-xp88-5cvw              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r2    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-0465                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r2    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-77f3-6546-6rj7              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r5    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-1255                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r5    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-4wp2-xw7p-2gfx              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.1-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-2650                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.1-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-gqxg-9vfr-p9cg              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.1-r2    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-2975                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.1-r2    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-hpqg-7fjp-436p              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2013-4332              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ HIGH     │   7.5 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2012-4412              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2022-4203                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-w67w-mw4j-8qrv              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2022-4304                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-p52g-cm5j-mjv4              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2022-4450                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.0-r0    │ LOW      │   2.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ GHSA-v5w6-wcm8-jm4q              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 11-1.18.1   │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">libpam-modules@1.5.3-5ubuntu5.1 ⬅ CVE-2013-1914              </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Local install</span>       │ 3.1.5-1     │ MEDIUM   │   5.0 ║
+║ <span class="r6">└── </span><span class="r3">3f6b5bf6-51fb-4005-a0af-8a6bc5fcbdb7                             </span> │                        │             │          │       ║
+║ <span class="r6">    └── </span><span class="r7">openssl@3.0.13-0ubuntu3.4 ⬅ CVE-2023-6129                    </span> │                        │             │          │       ║
+╟───────────────────────────────────────────────────────────────────────┼────────────────────────┼─────────────┼──────────┼───────╢
+║ <span class="r3">storm@sha256:ca43dd614aca63a7139d108cebdc74dc813d07c1e78cd4d1af558dc…</span> │ <span class="r4">📓 Indirect dependency</span> │ 3.16.1      │ HIGH     │   7.5 ║
+║ <span class="r6">└── </span><span class="r7">protobuf-java@3.3.0 ⬅ CVE-2022-3509                              </span> │                        │             │          │       ║
+╚═══════════════════════════════════════════════════════════════════════╧════════════════════════╧═════════════╧══════════╧═══════╝
+╭─────────────────────────── Recommendation ────────────────────────────╮
+│ ◽ Prioritize the <span class="r9">2</span> critical vulnerabilities confirmed by the vendor. │
+╰───────────────────────────────────────────────────────────────────────╯
+</code></pre>
+</body>
+</html>

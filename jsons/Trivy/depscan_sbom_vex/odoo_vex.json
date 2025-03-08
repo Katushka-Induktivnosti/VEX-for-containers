@@ -1,0 +1,1159 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/DepScan/sboms/odoo_sbom.json",
+  "ArtifactType": "cyclonedx",
+  "Metadata": {
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "Node.js",
+      "Class": "lang-pkgs",
+      "Type": "node-pkg",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2017-16137",
+          "PkgName": "debug",
+          "InstalledVersion": "4.1.7",
+          "FixedVersion": "2.6.9, 3.1.0, 3.2.7, 4.3.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-16137",
+          "PkgRef": "pkg:npm/@types/debug@4.1.7",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-debug: Regular expression Denial of Service",
+          "Description": "The debug module is vulnerable to regular expression denial of service when untrusted user input is passed into the o formatter. It takes around 50k characters to block for 2 seconds making this a low severity issue.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.7
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V2Score": 5,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2017-16137",
+            "https://github.com/debug-js/debug/commit/4e2150207c568adb9ead8f4c4528016081c88020",
+            "https://github.com/debug-js/debug/commit/71169065b5262f9858ac78cc0b688c84a438f290",
+            "https://github.com/debug-js/debug/commit/b6d12fdbc63b483e5c969da33ea6adc09946b5ac",
+            "https://github.com/debug-js/debug/commit/f53962e944a87e6ca9bb622a2a12dffc22a9bb5a",
+            "https://github.com/debug-js/debug/issues/797",
+            "https://github.com/visionmedia/debug",
+            "https://github.com/visionmedia/debug/issues/501",
+            "https://github.com/visionmedia/debug/pull/504",
+            "https://lists.apache.org/thread.html/r8ba4c628fba7181af58817d452119481adce4ba92e889c643e4c7dd3%40%3Ccommits.netbeans.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8ba4c628fba7181af58817d452119481adce4ba92e889c643e4c7dd3@%3Ccommits.netbeans.apache.org%3E",
+            "https://lists.apache.org/thread.html/rb5ac16fad337d1f3bb7079549f97d8166d0ef3082629417c39f12d63%40%3Cnotifications.netbeans.apache.org%3E",
+            "https://lists.apache.org/thread.html/rb5ac16fad337d1f3bb7079549f97d8166d0ef3082629417c39f12d63@%3Cnotifications.netbeans.apache.org%3E",
+            "https://nodesecurity.io/advisories/534",
+            "https://nvd.nist.gov/vuln/detail/CVE-2017-16137",
+            "https://www.cve.org/CVERecord?id=CVE-2017-16137"
+          ],
+          "PublishedDate": "2018-06-07T02:29:03.817Z",
+          "LastModifiedDate": "2023-11-07T02:40:28.13Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-33987",
+          "PkgName": "got",
+          "InstalledVersion": "11.8.3",
+          "FixedVersion": "12.1.0, 11.8.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-33987",
+          "PkgRef": "pkg:npm/got@11.8.3",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-got: missing verification of requested URLs allows redirects to UNIX sockets",
+          "Description": "The got package before 12.1.0 (also fixed in 11.8.5) for Node.js allows a redirect to a UNIX socket.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V2Score": 5,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2022:6448",
+            "https://access.redhat.com/security/cve/CVE-2022-33987",
+            "https://bugzilla.redhat.com/2102001",
+            "https://bugzilla.redhat.com/2105422",
+            "https://bugzilla.redhat.com/2105426",
+            "https://bugzilla.redhat.com/2105428",
+            "https://bugzilla.redhat.com/2105430",
+            "https://errata.almalinux.org/8/ALSA-2022-6448.html",
+            "https://github.com/sindresorhus/got",
+            "https://github.com/sindresorhus/got/commit/861ccd9ac2237df762a9e2beed7edd88c60782dc",
+            "https://github.com/sindresorhus/got/compare/v12.0.3...v12.1.0",
+            "https://github.com/sindresorhus/got/pull/2047",
+            "https://github.com/sindresorhus/got/releases/tag/v11.8.5",
+            "https://github.com/sindresorhus/got/releases/tag/v12.1.0",
+            "https://linux.oracle.com/cve/CVE-2022-33987.html",
+            "https://linux.oracle.com/errata/ELSA-2022-6595.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-33987",
+            "https://www.cve.org/CVERecord?id=CVE-2022-33987"
+          ],
+          "PublishedDate": "2022-06-18T21:15:07.933Z",
+          "LastModifiedDate": "2022-06-28T16:15:31.27Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-25881",
+          "PkgName": "http-cache-semantics",
+          "InstalledVersion": "4.0.1",
+          "FixedVersion": "4.1.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-25881",
+          "PkgRef": "pkg:npm/@types/http-cache-semantics@4.0.1",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "http-cache-semantics: Regular Expression Denial of Service (ReDoS) vulnerability",
+          "Description": "This affects versions of the package http-cache-semantics before 4.1.1. The issue can be exploited via malicious request header values sent to a server, when that server reads the cache policy from the request using this library.\r\r",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-1333"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:1743",
+            "https://access.redhat.com/security/cve/CVE-2022-25881",
+            "https://bugzilla.redhat.com/2134609",
+            "https://bugzilla.redhat.com/2156324",
+            "https://bugzilla.redhat.com/2165824",
+            "https://bugzilla.redhat.com/2168631",
+            "https://bugzilla.redhat.com/2170644",
+            "https://bugzilla.redhat.com/2171935",
+            "https://bugzilla.redhat.com/2172217",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2165824",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2168631",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2171935",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2172190",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2172204",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2172217",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2178076",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25881",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4904",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23918",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23920",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23936",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-24807",
+            "https://errata.almalinux.org/8/ALSA-2023-1743.html",
+            "https://errata.rockylinux.org/RLSA-2023:2655",
+            "https://github.com/kornelski/http-cache-semantics",
+            "https://github.com/kornelski/http-cache-semantics/blob/master/index.js%23L83",
+            "https://github.com/kornelski/http-cache-semantics/commit/560b2d8ef452bbba20ffed69dc155d63ac757b74",
+            "https://linux.oracle.com/cve/CVE-2022-25881.html",
+            "https://linux.oracle.com/errata/ELSA-2023-2655.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-25881",
+            "https://security.netapp.com/advisory/ntap-20230622-0008",
+            "https://security.netapp.com/advisory/ntap-20230622-0008/",
+            "https://security.snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-3253332",
+            "https://security.snyk.io/vuln/SNYK-JS-HTTPCACHESEMANTICS-3248783",
+            "https://www.cve.org/CVERecord?id=CVE-2022-25881"
+          ],
+          "PublishedDate": "2023-01-31T05:15:11.81Z",
+          "LastModifiedDate": "2023-11-07T03:44:51.8Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-25881",
+          "PkgName": "http-cache-semantics",
+          "InstalledVersion": "4.1.0",
+          "FixedVersion": "4.1.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-25881",
+          "PkgRef": "pkg:npm/http-cache-semantics@4.1.0",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "http-cache-semantics: Regular Expression Denial of Service (ReDoS) vulnerability",
+          "Description": "This affects versions of the package http-cache-semantics before 4.1.1. The issue can be exploited via malicious request header values sent to a server, when that server reads the cache policy from the request using this library.\r\r",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-1333"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:1743",
+            "https://access.redhat.com/security/cve/CVE-2022-25881",
+            "https://bugzilla.redhat.com/2134609",
+            "https://bugzilla.redhat.com/2156324",
+            "https://bugzilla.redhat.com/2165824",
+            "https://bugzilla.redhat.com/2168631",
+            "https://bugzilla.redhat.com/2170644",
+            "https://bugzilla.redhat.com/2171935",
+            "https://bugzilla.redhat.com/2172217",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2165824",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2168631",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2171935",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2172190",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2172204",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2172217",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2178076",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25881",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4904",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23918",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23920",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23936",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-24807",
+            "https://errata.almalinux.org/8/ALSA-2023-1743.html",
+            "https://errata.rockylinux.org/RLSA-2023:2655",
+            "https://github.com/kornelski/http-cache-semantics",
+            "https://github.com/kornelski/http-cache-semantics/blob/master/index.js%23L83",
+            "https://github.com/kornelski/http-cache-semantics/commit/560b2d8ef452bbba20ffed69dc155d63ac757b74",
+            "https://linux.oracle.com/cve/CVE-2022-25881.html",
+            "https://linux.oracle.com/errata/ELSA-2023-2655.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-25881",
+            "https://security.netapp.com/advisory/ntap-20230622-0008",
+            "https://security.netapp.com/advisory/ntap-20230622-0008/",
+            "https://security.snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-3253332",
+            "https://security.snyk.io/vuln/SNYK-JS-HTTPCACHESEMANTICS-3248783",
+            "https://www.cve.org/CVERecord?id=CVE-2022-25881"
+          ],
+          "PublishedDate": "2023-01-31T05:15:11.81Z",
+          "LastModifiedDate": "2023-11-07T03:44:51.8Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-42282",
+          "PkgName": "ip",
+          "InstalledVersion": "1.1.0",
+          "FixedVersion": "2.0.1, 1.1.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-42282",
+          "PkgRef": "pkg:npm/@types/ip@1.1.0",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-ip: arbitrary code execution via the isPublic() function",
+          "Description": "The ip package before 1.1.9 for Node.js might allow SSRF because some IP addresses (such as 0x7f.1) are improperly categorized as globally routable via isPublic.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-918"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-42282",
+            "https://cosmosofcyberspace.github.io/npm_ip_cve/npm_ip_cve.html",
+            "https://github.com/JoshGlazebrook/socks/issues/93#issue-2128357447",
+            "https://github.com/github/advisory-database/pull/3504#issuecomment-1937179999",
+            "https://github.com/indutny/node-ip",
+            "https://github.com/indutny/node-ip/commit/32f468f1245574785ec080705737a579be1223aa",
+            "https://github.com/indutny/node-ip/commit/6a3ada9b471b09d5f0f5be264911ab564bf67894",
+            "https://github.com/indutny/node-ip/pull/138",
+            "https://huntr.com/bounties/bfc3b23f-ddc0-4ee7-afab-223b07115ed3/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-42282",
+            "https://security.netapp.com/advisory/ntap-20240315-0008/",
+            "https://ubuntu.com/security/notices/USN-6643-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-42282"
+          ],
+          "PublishedDate": "2024-02-08T17:15:10.84Z",
+          "LastModifiedDate": "2024-03-15T19:25:07.84Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-42282",
+          "PkgName": "ip",
+          "InstalledVersion": "1.1.5",
+          "FixedVersion": "2.0.1, 1.1.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-42282",
+          "PkgRef": "pkg:npm/ip@1.1.5",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-ip: arbitrary code execution via the isPublic() function",
+          "Description": "The ip package before 1.1.9 for Node.js might allow SSRF because some IP addresses (such as 0x7f.1) are improperly categorized as globally routable via isPublic.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-918"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-42282",
+            "https://cosmosofcyberspace.github.io/npm_ip_cve/npm_ip_cve.html",
+            "https://github.com/JoshGlazebrook/socks/issues/93#issue-2128357447",
+            "https://github.com/github/advisory-database/pull/3504#issuecomment-1937179999",
+            "https://github.com/indutny/node-ip",
+            "https://github.com/indutny/node-ip/commit/32f468f1245574785ec080705737a579be1223aa",
+            "https://github.com/indutny/node-ip/commit/6a3ada9b471b09d5f0f5be264911ab564bf67894",
+            "https://github.com/indutny/node-ip/pull/138",
+            "https://huntr.com/bounties/bfc3b23f-ddc0-4ee7-afab-223b07115ed3/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-42282",
+            "https://security.netapp.com/advisory/ntap-20240315-0008/",
+            "https://ubuntu.com/security/notices/USN-6643-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-42282"
+          ],
+          "PublishedDate": "2024-02-08T17:15:10.84Z",
+          "LastModifiedDate": "2024-03-15T19:25:07.84Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2017-20162",
+          "PkgName": "ms",
+          "InstalledVersion": "0.7.31",
+          "FixedVersion": "2.0.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-20162",
+          "PkgRef": "pkg:npm/@types/ms@0.7.31",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "Vercel ms Inefficient Regular Expression Complexity vulnerability",
+          "Description": "A vulnerability, which was classified as problematic, has been found in vercel ms up to 1.x. This issue affects the function parse of the file index.js. The manipulation of the argument str leads to inefficient regular expression complexity. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 2.0.0 is able to address this issue. The patch is named caae2988ba2a37765d055c4eee63d383320ee662. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-217451.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-1333"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://github.com/vercel/ms",
+            "https://github.com/vercel/ms/commit/caae2988ba2a37765d055c4eee63d383320ee662",
+            "https://github.com/vercel/ms/pull/89",
+            "https://github.com/vercel/ms/releases/tag/2.0.0",
+            "https://nvd.nist.gov/vuln/detail/CVE-2017-20162",
+            "https://vuldb.com/?ctiid.217451",
+            "https://vuldb.com/?id.217451"
+          ],
+          "PublishedDate": "2023-01-05T12:15:09.167Z",
+          "LastModifiedDate": "2024-04-11T00:58:23.22Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-29244",
+          "PkgName": "npm",
+          "InstalledVersion": "8.5.1",
+          "FixedVersion": "8.11.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-29244",
+          "PkgRef": "pkg:npm/npm@8.5.1",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs: npm pack ignores root-level .gitignore and .npmignore file exclusion directives when run in a workspace",
+          "Description": "npm pack ignores root-level .gitignore and .npmignore file exclusion directives when run in a workspace or with a workspace flag (ie. `--workspaces`, `--workspace=\u003cname\u003e`). Anyone who has run `npm pack` or `npm publish` inside a workspace, as of v7.9.0 and v7.13.0 respectively, may be affected and have published files into the npm registry they did not intend to include. Users should upgrade to the latest, patched version of npm v8.11.0, run: npm i -g npm@latest . Node.js versions v16.15.1, v17.19.1, and v18.3.0 include the patched v8.11.0 version of npm.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2022:6595",
+            "https://access.redhat.com/security/cve/CVE-2022-29244",
+            "https://bugzilla.redhat.com/1907444",
+            "https://bugzilla.redhat.com/1945459",
+            "https://bugzilla.redhat.com/1964461",
+            "https://bugzilla.redhat.com/2007557",
+            "https://bugzilla.redhat.com/2098556",
+            "https://bugzilla.redhat.com/2102001",
+            "https://bugzilla.redhat.com/2105422",
+            "https://bugzilla.redhat.com/2105426",
+            "https://bugzilla.redhat.com/2105428",
+            "https://bugzilla.redhat.com/2105430",
+            "https://errata.almalinux.org/9/ALSA-2022-6595.html",
+            "https://github.com/nodejs/node/pull/43210",
+            "https://github.com/nodejs/node/releases/tag/v16.15.1",
+            "https://github.com/nodejs/node/releases/tag/v17.9.1",
+            "https://github.com/nodejs/node/releases/tag/v18.3.0",
+            "https://github.com/npm/cli",
+            "https://github.com/npm/cli/releases/tag/v8.11.0",
+            "https://github.com/npm/cli/security/advisories/GHSA-hj9c-8jmm-8c52",
+            "https://github.com/npm/cli/tree/latest/workspaces/libnpmpack",
+            "https://github.com/npm/cli/tree/latest/workspaces/libnpmpublish",
+            "https://github.com/npm/npm-packlist",
+            "https://linux.oracle.com/cve/CVE-2022-29244.html",
+            "https://linux.oracle.com/errata/ELSA-2022-6595.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-29244",
+            "https://security.netapp.com/advisory/ntap-20220722-0007",
+            "https://security.netapp.com/advisory/ntap-20220722-0007/",
+            "https://www.cve.org/CVERecord?id=CVE-2022-29244"
+          ],
+          "PublishedDate": "2022-06-13T14:15:09.027Z",
+          "LastModifiedDate": "2022-10-27T16:25:40.193Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-25883",
+          "PkgName": "semver",
+          "InstalledVersion": "7.3.5",
+          "FixedVersion": "7.5.2, 6.3.1, 5.7.2",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-25883",
+          "PkgRef": "pkg:npm/semver@7.3.5",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-semver: Regular expression denial of service",
+          "Description": "Versions of the package semver before 7.5.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the function new Range, when untrusted user data is provided as a range.\r\r\r",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-1333"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:5362",
+            "https://access.redhat.com/security/cve/CVE-2022-25883",
+            "https://bugzilla.redhat.com/2216475",
+            "https://bugzilla.redhat.com/2230948",
+            "https://bugzilla.redhat.com/2230955",
+            "https://bugzilla.redhat.com/2230956",
+            "https://errata.almalinux.org/8/ALSA-2023-5362.html",
+            "https://github.com/advisories/GHSA-c2qf-rxjj-qqgw",
+            "https://github.com/npm/node-semver",
+            "https://github.com/npm/node-semver/blob/main/classes/range.js#L97-L104",
+            "https://github.com/npm/node-semver/blob/main/classes/range.js%23L97-L104",
+            "https://github.com/npm/node-semver/blob/main/internal/re.js#L138",
+            "https://github.com/npm/node-semver/blob/main/internal/re.js#L160",
+            "https://github.com/npm/node-semver/blob/main/internal/re.js%23L138",
+            "https://github.com/npm/node-semver/blob/main/internal/re.js%23L160",
+            "https://github.com/npm/node-semver/commit/2f8fd41487acf380194579ecb6f8b1bbfe116be0",
+            "https://github.com/npm/node-semver/commit/717534ee353682f3bcf33e60a8af4292626d4441",
+            "https://github.com/npm/node-semver/commit/928e56d21150da0413a3333a3148b20e741a920c",
+            "https://github.com/npm/node-semver/pull/564",
+            "https://github.com/npm/node-semver/pull/585",
+            "https://github.com/npm/node-semver/pull/593",
+            "https://linux.oracle.com/cve/CVE-2022-25883.html",
+            "https://linux.oracle.com/errata/ELSA-2023-5363.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-25883",
+            "https://security.snyk.io/vuln/SNYK-JS-SEMVER-3247795",
+            "https://www.cve.org/CVERecord?id=CVE-2022-25883"
+          ],
+          "PublishedDate": "2023-06-21T05:15:09.06Z",
+          "LastModifiedDate": "2023-11-07T03:44:51.993Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-25883",
+          "PkgName": "semver",
+          "InstalledVersion": "7.3.8",
+          "FixedVersion": "7.5.2, 6.3.1, 5.7.2",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-25883",
+          "PkgRef": "pkg:npm/@types/semver@7.3.8",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-semver: Regular expression denial of service",
+          "Description": "Versions of the package semver before 7.5.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the function new Range, when untrusted user data is provided as a range.\r\r\r",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-1333"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:5362",
+            "https://access.redhat.com/security/cve/CVE-2022-25883",
+            "https://bugzilla.redhat.com/2216475",
+            "https://bugzilla.redhat.com/2230948",
+            "https://bugzilla.redhat.com/2230955",
+            "https://bugzilla.redhat.com/2230956",
+            "https://errata.almalinux.org/8/ALSA-2023-5362.html",
+            "https://github.com/advisories/GHSA-c2qf-rxjj-qqgw",
+            "https://github.com/npm/node-semver",
+            "https://github.com/npm/node-semver/blob/main/classes/range.js#L97-L104",
+            "https://github.com/npm/node-semver/blob/main/classes/range.js%23L97-L104",
+            "https://github.com/npm/node-semver/blob/main/internal/re.js#L138",
+            "https://github.com/npm/node-semver/blob/main/internal/re.js#L160",
+            "https://github.com/npm/node-semver/blob/main/internal/re.js%23L138",
+            "https://github.com/npm/node-semver/blob/main/internal/re.js%23L160",
+            "https://github.com/npm/node-semver/commit/2f8fd41487acf380194579ecb6f8b1bbfe116be0",
+            "https://github.com/npm/node-semver/commit/717534ee353682f3bcf33e60a8af4292626d4441",
+            "https://github.com/npm/node-semver/commit/928e56d21150da0413a3333a3148b20e741a920c",
+            "https://github.com/npm/node-semver/pull/564",
+            "https://github.com/npm/node-semver/pull/585",
+            "https://github.com/npm/node-semver/pull/593",
+            "https://linux.oracle.com/cve/CVE-2022-25883.html",
+            "https://linux.oracle.com/errata/ELSA-2023-5363.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-25883",
+            "https://security.snyk.io/vuln/SNYK-JS-SEMVER-3247795",
+            "https://www.cve.org/CVERecord?id=CVE-2022-25883"
+          ],
+          "PublishedDate": "2023-06-21T05:15:09.06Z",
+          "LastModifiedDate": "2023-11-07T03:44:51.993Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-20834",
+          "PkgName": "tar",
+          "InstalledVersion": "4.0.5",
+          "FixedVersion": "4.4.2, 2.2.2",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-20834",
+          "PkgRef": "pkg:npm/@types/tar@4.0.5",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-tar: Arbitrary file overwrites when extracting tarballs containing a hard-link",
+          "Description": "A vulnerability was found in node-tar before version 4.4.2 (excluding version 2.2.2). An Arbitrary File Overwrite issue exists when extracting a tarball containing a hardlink to a file that already exists on the system, in conjunction with a later plain file with the same name as the hardlink. This plain file content replaces the existing file content. A patch has been applied to node-tar v2.2.2).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-59"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 6.4,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2019:1821",
+            "https://access.redhat.com/security/cve/CVE-2018-20834",
+            "https://github.com/isaacs/node-tar",
+            "https://github.com/npm/node-tar/commit/7ecef07da6a9e72cc0c4d0c9c6a8e85b6b52395d",
+            "https://github.com/npm/node-tar/commit/b0c58433c22f5e7fe8b1c76373f27e3f81dcd4c8",
+            "https://github.com/npm/node-tar/commits/v2.2.2",
+            "https://github.com/npm/node-tar/compare/58a8d43...a5f7779",
+            "https://hackerone.com/reports/344595",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-20834",
+            "https://www.cve.org/CVERecord?id=CVE-2018-20834"
+          ],
+          "PublishedDate": "2019-04-30T19:29:03.327Z",
+          "LastModifiedDate": "2019-09-04T20:15:10.403Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-32803",
+          "PkgName": "tar",
+          "InstalledVersion": "4.0.5",
+          "FixedVersion": "3.2.3, 4.4.15, 5.0.7, 6.1.2",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-32803",
+          "PkgRef": "pkg:npm/@types/tar@4.0.5",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-tar: Insufficient symlink protection allowing arbitrary file creation and overwrite",
+          "Description": "The npm package \"tar\" (aka node-tar) before versions 6.1.2, 5.0.7, 4.4.15, and 3.2.3 has an arbitrary File Creation/Overwrite vulnerability via insufficient symlink protection. `node-tar` aims to guarantee that any file whose location would be modified by a symbolic link is not extracted. This is, in part, achieved by ensuring that extracted directories are not symlinks. Additionally, in order to prevent unnecessary `stat` calls to determine whether a given path is a directory, paths are cached when directories are created. This logic was insufficient when extracting tar files that contained both a directory and a symlink with the same name as the directory. This order of operations resulted in the directory being created and added to the `node-tar` directory cache. When a directory is present in the directory cache, subsequent calls to mkdir for that directory are skipped. However, this is also where `node-tar` checks for symlinks occur. By first creating a directory, and then replacing that directory with a symlink, it was thus possible to bypass `node-tar` symlink checks on directories, essentially allowing an untrusted tar file to symlink into an arbitrary location and subsequently extracting arbitrary files into that location, thus allowing arbitrary file creation and overwrite. This issue was addressed in releases 3.2.3, 4.4.15, 5.0.7 and 6.1.2.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-59",
+            "CWE-22"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+              "V3Score": 8.2
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+              "V2Score": 5.8,
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-32803",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://errata.almalinux.org/8/ALSA-2021-3666.html",
+            "https://github.com/isaacs/node-tar",
+            "https://github.com/isaacs/node-tar/commit/46fe35083e2676e31c4e0a81639dce6da7aaa356",
+            "https://github.com/isaacs/node-tar/commit/5987d9a41f6bfbf1ddab1098e1fdcf1a5618f571",
+            "https://github.com/isaacs/node-tar/commit/85d3a942b4064e4ff171f91696fced7975167349",
+            "https://github.com/isaacs/node-tar/commit/9dbdeb6df8e9dbd96fa9e84341b9d74734be6c20",
+            "https://github.com/npm/node-tar/commit/9dbdeb6df8e9dbd96fa9e84341b9d74734be6c20",
+            "https://github.com/npm/node-tar/security/advisories/GHSA-r628-mhmh-qjhw",
+            "https://linux.oracle.com/cve/CVE-2021-32803.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3666.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-32803",
+            "https://www.cve.org/CVERecord?id=CVE-2021-32803",
+            "https://www.npmjs.com/advisories/1771",
+            "https://www.npmjs.com/package/tar",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-08-03T19:15:08.297Z",
+          "LastModifiedDate": "2022-07-02T18:28:32.41Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-32804",
+          "PkgName": "tar",
+          "InstalledVersion": "4.0.5",
+          "FixedVersion": "3.2.2, 4.4.14, 5.0.6, 6.1.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-32804",
+          "PkgRef": "pkg:npm/@types/tar@4.0.5",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-tar: Insufficient absolute path sanitization allowing arbitrary file creation and overwrite",
+          "Description": "The npm package \"tar\" (aka node-tar) before versions 6.1.1, 5.0.6, 4.4.14, and 3.3.2 has a arbitrary File Creation/Overwrite vulnerability due to insufficient absolute path sanitization. node-tar aims to prevent extraction of absolute file paths by turning absolute paths into relative paths when the `preservePaths` flag is not set to `true`. This is achieved by stripping the absolute path root from any absolute file paths contained in a tar file. For example `/home/user/.bashrc` would turn into `home/user/.bashrc`. This logic was insufficient when file paths contained repeated path roots such as `////home/user/.bashrc`. `node-tar` would only strip a single path root from such paths. When given an absolute file path with repeating path roots, the resulting path (e.g. `///home/user/.bashrc`) would still resolve to an absolute path, thus allowing arbitrary file creation and overwrite. This issue was addressed in releases 3.2.2, 4.4.14, 5.0.6 and 6.1.1. Users may work around this vulnerability without upgrading by creating a custom `onentry` method which sanitizes the `entry.path` or a `filter` method which removes entries with absolute paths. See referenced GitHub Advisory for details. Be aware of CVE-2021-32803 which fixes a similar bug in later versions of tar.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-22"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+              "V3Score": 8.2
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+              "V2Score": 5.8,
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-32804",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://errata.almalinux.org/8/ALSA-2021-3666.html",
+            "https://github.com/npm/node-tar",
+            "https://github.com/npm/node-tar/commit/1f036ca23f64a547bdd6c79c1a44bc62e8115da4",
+            "https://github.com/npm/node-tar/security/advisories/GHSA-3jfq-g458-7qm9",
+            "https://linux.oracle.com/cve/CVE-2021-32804.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3666.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-32804",
+            "https://www.cve.org/CVERecord?id=CVE-2021-32804",
+            "https://www.npmjs.com/advisories/1770",
+            "https://www.npmjs.com/package/tar",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-08-03T19:15:08.41Z",
+          "LastModifiedDate": "2022-04-25T19:12:42.19Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-37701",
+          "PkgName": "tar",
+          "InstalledVersion": "4.0.5",
+          "FixedVersion": "4.4.16, 5.0.8, 6.1.7",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-37701",
+          "PkgRef": "pkg:npm/@types/tar@4.0.5",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-tar: Insufficient symlink protection due to directory cache poisoning using symbolic links allowing arbitrary file creation and overwrite",
+          "Description": "The npm package \"tar\" (aka node-tar) before versions 4.4.16, 5.0.8, and 6.1.7 has an arbitrary file creation/overwrite and arbitrary code execution vulnerability. node-tar aims to guarantee that any file whose location would be modified by a symbolic link is not extracted. This is, in part, achieved by ensuring that extracted directories are not symlinks. Additionally, in order to prevent unnecessary stat calls to determine whether a given path is a directory, paths are cached when directories are created. This logic was insufficient when extracting tar files that contained both a directory and a symlink with the same name as the directory, where the symlink and directory names in the archive entry used backslashes as a path separator on posix systems. The cache checking logic used both `\\` and `/` characters as path separators, however `\\` is a valid filename character on posix systems. By first creating a directory, and then replacing that directory with a symlink, it was thus possible to bypass node-tar symlink checks on directories, essentially allowing an untrusted tar file to symlink into an arbitrary location and subsequently extracting arbitrary files into that location, thus allowing arbitrary file creation and overwrite. Additionally, a similar confusion could arise on case-insensitive filesystems. If a tar archive contained a directory at `FOO`, followed by a symbolic link named `foo`, then on case-insensitive file systems, the creation of the symbolic link would remove the directory from the filesystem, but _not_ from the internal directory cache, as it would not be treated as a cache hit. A subsequent file entry within the `FOO` directory would then be placed in the target of the symbolic link, thinking that the directory had already been created. These issues were addressed in releases 4.4.16, 5.0.8 and 6.1.7. The v3 branch of node-tar has been deprecated and did not receive patches for these issues. If you are still using a v3 release we recommend you update to a more recent version of node-tar. If this is not possible, a workaround is available in the referenced GHSA-9r2w-394v-53qc.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-22",
+            "CWE-59"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+              "V3Score": 8.2
+            },
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V2Score": 4.4,
+              "V3Score": 8.6
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-37701",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://errata.almalinux.org/8/ALSA-2022-0350.html",
+            "https://github.com/npm/node-tar",
+            "https://github.com/npm/node-tar/security/advisories/GHSA-9r2w-394v-53qc",
+            "https://linux.oracle.com/cve/CVE-2021-37701.html",
+            "https://linux.oracle.com/errata/ELSA-2022-0350.html",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00023.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-37701",
+            "https://www.cve.org/CVERecord?id=CVE-2021-37701",
+            "https://www.debian.org/security/2021/dsa-5008",
+            "https://www.npmjs.com/advisories/1779",
+            "https://www.npmjs.com/package/tar",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-08-31T17:15:07.963Z",
+          "LastModifiedDate": "2023-01-19T20:11:48.61Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-37712",
+          "PkgName": "tar",
+          "InstalledVersion": "4.0.5",
+          "FixedVersion": "4.4.18, 5.0.10, 6.1.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-37712",
+          "PkgRef": "pkg:npm/@types/tar@4.0.5",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-tar: Insufficient symlink protection due to directory cache poisoning using symbolic links allowing arbitrary file creation and overwrite",
+          "Description": "The npm package \"tar\" (aka node-tar) before versions 4.4.18, 5.0.10, and 6.1.9 has an arbitrary file creation/overwrite and arbitrary code execution vulnerability. node-tar aims to guarantee that any file whose location would be modified by a symbolic link is not extracted. This is, in part, achieved by ensuring that extracted directories are not symlinks. Additionally, in order to prevent unnecessary stat calls to determine whether a given path is a directory, paths are cached when directories are created. This logic was insufficient when extracting tar files that contained both a directory and a symlink with names containing unicode values that normalized to the same value. Additionally, on Windows systems, long path portions would resolve to the same file system entities as their 8.3 \"short path\" counterparts. A specially crafted tar archive could thus include a directory with one form of the path, followed by a symbolic link with a different string that resolves to the same file system entity, followed by a file using the first form. By first creating a directory, and then replacing that directory with a symlink that had a different apparent name that resolved to the same entry in the filesystem, it was thus possible to bypass node-tar symlink checks on directories, essentially allowing an untrusted tar file to symlink into an arbitrary location and subsequently extracting arbitrary files into that location, thus allowing arbitrary file creation and overwrite. These issues were addressed in releases 4.4.18, 5.0.10 and 6.1.9. The v3 branch of node-tar has been deprecated and did not receive patches for these issues. If you are still using a v3 release we recommend you update to a more recent version of node-tar. If this is not possible, a workaround is available in the referenced GHSA-qq89-hq3f-393p.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-22",
+            "CWE-59"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+              "V3Score": 8.2
+            },
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V2Score": 4.4,
+              "V3Score": 8.6
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-37712",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://errata.almalinux.org/8/ALSA-2022-0350.html",
+            "https://github.com/isaacs/node-tar/commit/1739408d3122af897caefd09662bce2ea477533b",
+            "https://github.com/isaacs/node-tar/commit/2f1bca027286c23e110b8dfc7efc10756fa3db5a",
+            "https://github.com/isaacs/node-tar/commit/3aaf19b2501bbddb145d92b3322c80dcaed3c35f",
+            "https://github.com/isaacs/node-tar/commit/b6162c7fafe797f856564ef37f4b82747f051455",
+            "https://github.com/isaacs/node-tar/commit/bb93ba243746f705092905da1955ac3b0509ba1e",
+            "https://github.com/isaacs/node-tar/commit/d56f790bda9fea807dd80c5083f24771dbdd6eb1",
+            "https://github.com/npm/node-tar",
+            "https://github.com/npm/node-tar/security/advisories/GHSA-qq89-hq3f-393p",
+            "https://linux.oracle.com/cve/CVE-2021-37712.html",
+            "https://linux.oracle.com/errata/ELSA-2022-0350.html",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00023.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-37712",
+            "https://www.cve.org/CVERecord?id=CVE-2021-37712",
+            "https://www.debian.org/security/2021/dsa-5008",
+            "https://www.npmjs.com/advisories/1780",
+            "https://www.npmjs.com/package/tar",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-08-31T17:15:08.023Z",
+          "LastModifiedDate": "2023-02-23T02:28:11.843Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-37713",
+          "PkgName": "tar",
+          "InstalledVersion": "4.0.5",
+          "FixedVersion": "4.4.18, 5.0.10, 6.1.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-37713",
+          "PkgRef": "pkg:npm/@types/tar@4.0.5",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "nodejs-tar: Arbitrary File Creation/Overwrite on Windows via insufficient relative path sanitization",
+          "Description": "The npm package \"tar\" (aka node-tar) before versions 4.4.18, 5.0.10, and 6.1.9 has an arbitrary file creation/overwrite and arbitrary code execution vulnerability. node-tar aims to guarantee that any file whose location would be outside of the extraction target directory is not extracted. This is, in part, accomplished by sanitizing absolute paths of entries within the archive, skipping archive entries that contain `..` path portions, and resolving the sanitized paths against the extraction target directory. This logic was insufficient on Windows systems when extracting tar files that contained a path that was not an absolute path, but specified a drive letter different from the extraction target, such as `C:some\\path`. If the drive letter does not match the extraction target, for example `D:\\extraction\\dir`, then the result of `path.resolve(extractionDirectory, entryPath)` would resolve against the current working directory on the `C:` drive, rather than the extraction target directory. Additionally, a `..` portion of the path could occur immediately after the drive letter, such as `C:../foo`, and was not properly sanitized by the logic that checked for `..` within the normalized and split portions of the path. This only affects users of `node-tar` on Windows systems. These issues were addressed in releases 4.4.18, 5.0.10 and 6.1.9. The v3 branch of node-tar has been deprecated and did not receive patches for these issues. If you are still using a v3 release we recommend you update to a more recent version of node-tar. There is no reasonable way to work around this issue without performing the same path normalization procedures that node-tar now does. Users are encouraged to upgrade to the latest patched versions of node-tar, rather than attempt to sanitize paths themselves.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-22"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+              "V3Score": 8.2
+            },
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V2Score": 4.4,
+              "V3Score": 8.6
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+              "V3Score": 8.2
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-37713",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://github.com/isaacs/node-tar/commit/52b09e309bcae0c741a7eb79a17ef36e7828b946",
+            "https://github.com/isaacs/node-tar/commit/82eac952f7c10765969ed464e549375854b26edc",
+            "https://github.com/isaacs/node-tar/commit/875a37e3ec031186fc6599f6807341f56c584598",
+            "https://github.com/npm/node-tar",
+            "https://github.com/npm/node-tar/security/advisories/GHSA-5955-9wpr-37jh",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-37713",
+            "https://www.cve.org/CVERecord?id=CVE-2021-37713",
+            "https://www.npmjs.com/package/tar",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-08-31T17:15:08.087Z",
+          "LastModifiedDate": "2022-04-25T18:40:30.47Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28863",
+          "PkgName": "tar",
+          "InstalledVersion": "4.0.5",
+          "FixedVersion": "6.2.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28863",
+          "PkgRef": "pkg:npm/@types/tar@4.0.5",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "node-tar is a Tar for Node.js. node-tar prior to version 6.2.1 has no  ...",
+          "Description": "node-tar is a Tar for Node.js. node-tar prior to version 6.2.1 has no limit on the number of sub-folders created in the folder creation process. An attacker who generates a large number of sub-folders can consume memory on the system running node-tar and even crash the Node.js client within few seconds of running it using a path with too many sub-folders inside. Version 6.2.1 fixes this issue by preventing extraction in excessively deep sub-folders.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://github.com/isaacs/node-tar",
+            "https://github.com/isaacs/node-tar/commit/fe8cd57da5686f8695415414bda49206a545f7f7",
+            "https://github.com/isaacs/node-tar/commit/fe8cd57da5686f8695415414bda49206a545f7f7 (v6.2.1)",
+            "https://github.com/isaacs/node-tar/security/advisories/GHSA-f5x3-32g6-xq36",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28863",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28863"
+          ],
+          "PublishedDate": "2024-03-21T23:15:10.91Z",
+          "LastModifiedDate": "2024-03-22T12:45:36.13Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28863",
+          "PkgName": "tar",
+          "InstalledVersion": "6.1.11",
+          "FixedVersion": "6.2.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28863",
+          "PkgRef": "pkg:npm/tar@6.1.11",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "node-tar is a Tar for Node.js. node-tar prior to version 6.2.1 has no  ...",
+          "Description": "node-tar is a Tar for Node.js. node-tar prior to version 6.2.1 has no limit on the number of sub-folders created in the folder creation process. An attacker who generates a large number of sub-folders can consume memory on the system running node-tar and even crash the Node.js client within few seconds of running it using a path with too many sub-folders inside. Version 6.2.1 fixes this issue by preventing extraction in excessively deep sub-folders.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://github.com/isaacs/node-tar",
+            "https://github.com/isaacs/node-tar/commit/fe8cd57da5686f8695415414bda49206a545f7f7",
+            "https://github.com/isaacs/node-tar/commit/fe8cd57da5686f8695415414bda49206a545f7f7 (v6.2.1)",
+            "https://github.com/isaacs/node-tar/security/advisories/GHSA-f5x3-32g6-xq36",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28863",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28863"
+          ],
+          "PublishedDate": "2024-03-21T23:15:10.91Z",
+          "LastModifiedDate": "2024-03-22T12:45:36.13Z"
+        }
+      ]
+    },
+    {
+      "Target": "Python",
+      "Class": "lang-pkgs",
+      "Type": "python-pkg",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2022-24859",
+          "PkgName": "PyPDF2",
+          "InstalledVersion": "1.26.0",
+          "FixedVersion": "1.27.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-24859",
+          "PkgRef": "pkg:pypi/pypdf2@1.26.0",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Title": "PyPDF2: infinite loop vulnerability",
+          "Description": "PyPDF2 is an open source python PDF library capable of splitting, merging, cropping, and transforming the pages of PDF files. In versions prior to 1.27.5 an attacker who uses this vulnerability can craft a PDF which leads to an infinite loop if the PyPDF2 if the code attempts to get the content stream. The reason is that the last while-loop in `ContentStream._readInlineImage` only terminates when it finds the `EI` token, but never actually checks if the stream has already ended. This issue has been resolved in version `1.27.5`. Users unable to upgrade should validate and PDFs prior to iterating over their content stream.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-835"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.2
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-24859",
+            "https://github.com/py-pdf/PyPDF2",
+            "https://github.com/py-pdf/PyPDF2/issues/329",
+            "https://github.com/py-pdf/PyPDF2/pull/740",
+            "https://github.com/py-pdf/PyPDF2/releases/tag/1.27.5",
+            "https://github.com/py-pdf/PyPDF2/security/advisories/GHSA-xcjx-m2pj-8g79",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/pypdf2/PYSEC-2022-194.yaml",
+            "https://lists.debian.org/debian-lts-announce/2022/06/msg00001.html",
+            "https://lists.debian.org/debian-lts-announce/2023/06/msg00013.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-24859",
+            "https://ubuntu.com/security/notices/USN-6176-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-24859"
+          ],
+          "PublishedDate": "2022-04-18T19:15:09.757Z",
+          "LastModifiedDate": "2023-06-10T01:15:52.347Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-36810",
+          "PkgName": "PyPDF2",
+          "InstalledVersion": "1.26.0",
+          "FixedVersion": "1.27.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-36810",
+          "PkgRef": "pkg:pypi/pypdf2@1.26.0",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Title": "pypdf is a pure-python PDF library capable of splitting, merging, crop ...",
+          "Description": "pypdf is a pure-python PDF library capable of splitting, merging, cropping, and transforming the pages of PDF files. An attacker who uses this vulnerability can craft a PDF which leads to unexpected long runtime. This quadratic runtime blocks the current process and can utilize a single core of the CPU by 100%. It does not affect memory usage. This issue has been addressed in PR 808 and versions from 1.27.9 include this fix. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-407"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.2
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://github.com/py-pdf/pypdf",
+            "https://github.com/py-pdf/pypdf/commit/c6c56f550bb384e05f0139c796ba1308837d6373",
+            "https://github.com/py-pdf/pypdf/issues/582",
+            "https://github.com/py-pdf/pypdf/pull/808",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-jrm6-h9cq-8gqw",
+            "https://lists.debian.org/debian-lts-announce/2023/07/msg00019.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-36810",
+            "https://ubuntu.com/security/notices/USN-6280-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-36810"
+          ],
+          "PublishedDate": "2023-06-30T19:15:09.357Z",
+          "LastModifiedDate": "2023-07-14T23:15:08.883Z"
+        }
+      ]
+    }
+  ]
+}

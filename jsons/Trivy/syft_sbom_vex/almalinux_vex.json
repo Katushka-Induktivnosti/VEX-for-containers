@@ -1,0 +1,21 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/grype/sboms/almalinux_sbom.json",
+  "ArtifactType": "cyclonedx",
+  "Metadata": {
+    "OS": {
+      "Family": "almalinux",
+      "Name": "9.3"
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  }
+}

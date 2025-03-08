@@ -1,0 +1,45 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "busybox",
+  "documentNamespace": "http://aquasecurity.github.io/trivy/container_image/busybox-c7252099-4760-4fa2-8a47-10956125665c",
+  "creationInfo": {
+    "licenseListVersion": "",
+    "creators": [
+      "Organization: aquasecurity",
+      "Tool: trivy-0.46.0"
+    ],
+    "created": "2024-04-20T17:46:34Z"
+  },
+  "packages": [
+    {
+      "name": "busybox",
+      "SPDXID": "SPDXRef-ContainerImage-d3e363bf43c67271",
+      "downloadLocation": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:oci/busybox@sha256%3A6d9ac9237a84afe1516540f40a0fafdc86859b2141954b4d643af7066d598b74?arch=amd64\u0026repository_url=index.docker.io%2Flibrary%2Fbusybox"
+        }
+      ],
+      "attributionTexts": [
+        "SchemaVersion: 2",
+        "ImageID: sha256:3f57d9401f8d42f986df300f0c69192fc41da28ccc8d797829467780db3dd741",
+        "RepoDigest: busybox@sha256:6d9ac9237a84afe1516540f40a0fafdc86859b2141954b4d643af7066d598b74",
+        "DiffID: sha256:2e112031b4b923a873c8b3d685d48037e4d5ccd967b658743d93a6e56c3064b9",
+        "RepoTag: busybox:latest"
+      ],
+      "primaryPackagePurpose": "CONTAINER"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-ContainerImage-d3e363bf43c67271",
+      "relationshipType": "DESCRIBES"
+    }
+  ]
+}

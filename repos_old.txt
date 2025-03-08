@@ -1,0 +1,6 @@
+"jenkinsci/jenkins", "google/auto", "square/moshi", "sarxos/webcam-capture",
+        "konsoletyper/teavm", "INRIA/spoon", "apache/tika", "orika-mapper/orika", 
+        "apache/accumulo", "Erudika/para", "vmi/selenese-runner-java", "apache/commons-configuration",
+        "django/django", "pytorch/pytorch", "pallets/flask", "keras-team/keras", "scikit-learn/scikit-learn",
+        "ansible/ansible", "scrapy/scrapy", "deepfakes/faceswap", "hpcaitech/ColossalAI", "apache/airflow",
+        "odoo/odoo", "streamlit/streamlit"

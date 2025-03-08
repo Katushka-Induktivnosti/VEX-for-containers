@@ -1,0 +1,1983 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-xw73-rw38-6vjc",
+    "dataSource": "https://github.com/advisories/GHSA-xw73-rw38-6vjc",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-xw73-rw38-6vjc"
+    ],
+    "description": "Classic builder cache poisoning",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:L/I:H/A:L",
+      "metrics": {
+       "baseScore": 6.9,
+       "exploitabilityScore": 1,
+       "impactScore": 5.3
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "24.0.9"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-24557",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-24557",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/moby/moby/commit/3e230cfdcc989dc524882f6579f9e0dac77400ae",
+      "https://github.com/moby/moby/security/advisories/GHSA-xw73-rw38-6vjc"
+     ],
+     "description": "Moby is an open-source project created by Docker to enable software containerization. The classic builder cache system is prone to cache poisoning if the image is built FROM scratch. Also, changes to some instructions (most important being HEALTHCHECK and ONBUILD) would not cause a cache miss. An attacker with the knowledge of the Dockerfile someone is using could poison their cache by making them pull a specially crafted image that would be considered as a valid cache candidate for some build steps. 23.0+ users are only affected if they explicitly opted out of Buildkit (DOCKER_BUILDKIT=0 environment variable) or are using the /build API endpoint. All users on versions older than 23.0 could be impacted. Image build API endpoint (/build) and ImageBuild function from github.com/docker/docker/client is also affected as it the uses classic builder by default. Patches are included in 24.0.9 and 25.0.2 releases.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:L/I:H/A:L",
+       "metrics": {
+        "baseScore": 6.9,
+        "exploitabilityScore": 1,
+        "impactScore": 5.3
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/docker/docker",
+       "version": "24.0.7+incompatible"
+      }
+     },
+     "found": {
+      "versionConstraint": "<24.0.9 (unknown)",
+      "vulnerabilityID": "GHSA-xw73-rw38-6vjc"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "71c6e8e12658ab2f",
+    "name": "github.com/docker/docker",
+    "version": "24.0.7+incompatible",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/docker/docker@24.0.7+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-c5q2-7r4c-mv6g",
+    "dataSource": "https://github.com/advisories/GHSA-c5q2-7r4c-mv6g",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-c5q2-7r4c-mv6g"
+    ],
+    "description": "Go JOSE vulnerable to Improper Handling of Highly Compressed Data (Data Amplification)",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "3.0.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28180",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28180",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/go-jose/go-jose/commit/0dd4dd541c665fb292d664f77604ba694726f298",
+      "https://github.com/go-jose/go-jose/commit/add6a284ea0f844fd6628cba637be5451fe4b28a",
+      "https://github.com/go-jose/go-jose/commit/f4c051a0653d78199a053892f7619ebf96339502",
+      "https://github.com/go-jose/go-jose/security/advisories/GHSA-c5q2-7r4c-mv6g",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I6MMWFBOXJA6ZCXNVPDFJ4XMK5PVG5RG/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IJ6LAJJ2FTA2JVVOACCV5RZTOIZLXUNJ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JNPMXL36YGS3GQEVI3Q5HKHJ7YAAQXL5/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KXKGNCRU7OTM5AHC7YIYBNOWI742PRMY/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MSOMHDKRPU3A2JEMRODT2IREDFBLVPGS/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UG5FSEYJ3GP27FZXC5YAAMMEC5XWKJHG/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UJO2U5ACZVACNQXJ5EBRFLFW6DP5BROY/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XJDO5VSIAOGT2WP63AXAAWNRSVJCNCRH/"
+     ],
+     "description": "Package jose aims to provide an implementation of the Javascript Object Signing and Encryption set of standards. An attacker could send a JWE containing compressed data that used large amounts of memory and CPU when decompressed by Decrypt or DecryptMulti. Those functions now return an error if the decompressed data would exceed 250kB or 10x the compressed size (whichever is larger). This vulnerability has been patched in versions 4.0.1, 3.0.3 and 2.6.3.\n",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 2.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/go-jose/go-jose/v3",
+       "version": "3.0.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "<3.0.3 (unknown)",
+      "vulnerabilityID": "GHSA-c5q2-7r4c-mv6g"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "4f608964d0b42c36",
+    "name": "github.com/go-jose/go-jose/v3",
+    "version": "3.0.1",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/go-jose/go-jose@3.0.1#v3",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-c33x-xqrf-c478",
+    "dataSource": "https://github.com/advisories/GHSA-c33x-xqrf-c478",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-c33x-xqrf-c478"
+    ],
+    "description": "QUIC's Connection ID Mechanism vulnerable to Memory Exhaustion Attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.42.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-22189",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-22189",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/quic-go/quic-go/commit/4a99b816ae3ab03ae5449d15aac45147c85ed47a",
+      "https://github.com/quic-go/quic-go/security/advisories/GHSA-c33x-xqrf-c478",
+      "https://seemann.io/posts/2024-03-19-exploiting-quics-connection-id-management",
+      "https://www.youtube.com/watch?v=JqXtYcZAtIA&t=3683s"
+     ],
+     "description": "quic-go is an implementation of the QUIC protocol in Go. Prior to version 0.42.0, an attacker can cause its peer to run out of memory sending a large number of `NEW_CONNECTION_ID` frames that retire old connection IDs. The receiver is supposed to respond to each retirement frame with a `RETIRE_CONNECTION_ID` frame. The attacker can prevent the receiver from sending out (the vast majority of) these `RETIRE_CONNECTION_ID` frames by collapsing the peers congestion window (by selectively acknowledging received packets) and by manipulating the peer's RTT estimate. Version 0.42.0 contains a patch for the issue. No known workarounds are available.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/quic-go/quic-go",
+       "version": "0.40.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.42.0 (unknown)",
+      "vulnerabilityID": "GHSA-c33x-xqrf-c478"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ca44a0ca00ee7f32",
+    "name": "github.com/quic-go/quic-go",
+    "version": "0.40.1",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/quic-go/quic-go@0.40.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-q9mp-79cp-9g8j",
+    "dataSource": "https://github.com/advisories/GHSA-q9mp-79cp-9g8j",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-q9mp-79cp-9g8j"
+    ],
+    "description": "Improper Authentication",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-20894",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-20894",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/containous/traefik/issues/5312"
+     ],
+     "description": "Traefik 2.x, in certain configurations, allows HTTPS sessions to proceed without mutual TLS verification in a situation where ERR_BAD_SSL_CLIENT_AUTH_CERT should have occurred.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/traefik/traefik/v2",
+       "version": "0.0.0-20240212151404-0c8778639a3c"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.2.2 (unknown)",
+      "vulnerabilityID": "GHSA-q9mp-79cp-9g8j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a106ffed931eaa6",
+    "name": "github.com/traefik/traefik/v2",
+    "version": "0.0.0-20240212151404-0c8778639a3c",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hrhx-6h34-j5hc",
+    "dataSource": "https://github.com/advisories/GHSA-hrhx-6h34-j5hc",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-hrhx-6h34-j5hc"
+    ],
+    "description": "Skip the router TLS configuration when the host header is an FQDN",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.4,
+       "exploitabilityScore": 2.2,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.6.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-23632",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-23632",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/traefik/traefik/pull/8764",
+      "https://github.com/traefik/traefik/releases/tag/v2.6.1",
+      "https://github.com/traefik/traefik/security/advisories/GHSA-hrhx-6h34-j5hc",
+      "https://www.oracle.com/security-alerts/cpujul2022.html"
+     ],
+     "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to version 2.6.1, Traefik skips the router transport layer security (TLS) configuration when the host header is a fully qualified domain name (FQDN). For a request, the TLS configuration choice can be different than the router choice, which implies the use of a wrong TLS configuration. When sending a request using FQDN handled by a router configured with a dedicated TLS configuration, the TLS configuration falls back to the default configuration that might not correspond to the configured one. If the CNAME flattening is enabled, the selected TLS configuration is the SNI one and the routing uses the CNAME value, so this can skip the expected TLS configuration. Version 2.6.1 contains a patch for this issue. As a workaround, one may add the FDQN to the host rule. However, there is no workaround if the CNAME flattening is enabled.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 8.6,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.4,
+        "exploitabilityScore": 2.2,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/traefik/traefik/v2",
+       "version": "0.0.0-20240212151404-0c8778639a3c"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.6.1 (unknown)",
+      "vulnerabilityID": "GHSA-hrhx-6h34-j5hc"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a106ffed931eaa6",
+    "name": "github.com/traefik/traefik/v2",
+    "version": "0.0.0-20240212151404-0c8778639a3c",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-c6hx-pjc3-7fqr",
+    "dataSource": "https://github.com/advisories/GHSA-c6hx-pjc3-7fqr",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-c6hx-pjc3-7fqr"
+    ],
+    "description": "Traefik HTTP/2 connections management could cause a denial of service",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.8.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-39271",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-39271",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/traefik/traefik/releases/tag/v2.8.8",
+      "https://github.com/traefik/traefik/releases/tag/v2.9.0-rc5",
+      "https://github.com/traefik/traefik/security/advisories/GHSA-c6hx-pjc3-7fqr"
+     ],
+     "description": "Traefik (pronounced traffic) is a modern HTTP reverse proxy and load balancer that assists in deploying microservices. There is a potential vulnerability in Traefik managing HTTP/2 connections. A closing HTTP/2 server connection could hang forever because of a subsequent fatal error. This failure mode could be exploited to cause a denial of service. There has been a patch released in versions 2.8.8 and 2.9.0-rc5. There are currently no known workarounds.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/traefik/traefik/v2",
+       "version": "0.0.0-20240212151404-0c8778639a3c"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.8.8 (unknown)",
+      "vulnerabilityID": "GHSA-c6hx-pjc3-7fqr"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a106ffed931eaa6",
+    "name": "github.com/traefik/traefik/v2",
+    "version": "0.0.0-20240212151404-0c8778639a3c",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-7hj9-rv74-5g92",
+    "dataSource": "https://github.com/advisories/GHSA-7hj9-rv74-5g92",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-7hj9-rv74-5g92"
+    ],
+    "description": "Traefik HTTP header parsing could cause a denial of service ",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.9.10"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-29013",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-29013",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/traefik/traefik/commit/4ed3964b3586565519249bbdc55eb1b961c08c49",
+      "https://github.com/traefik/traefik/releases/tag/v2.10.0-rc2",
+      "https://github.com/traefik/traefik/releases/tag/v2.9.10",
+      "https://github.com/traefik/traefik/security/advisories/GHSA-7hj9-rv74-5g92",
+      "https://security.netapp.com/advisory/ntap-20230517-0008/"
+     ],
+     "description": "Traefik (pronounced traffic) is a modern HTTP reverse proxy and load balancer for deploying microservices. There is a vulnerability in Go when parsing the HTTP headers, which impacts Traefik. HTTP header parsing could allocate substantially more memory than required to hold the parsed headers. This behavior could be exploited to cause a denial of service. This issue has been patched in versions 2.9.10 and 2.10.0-rc2.\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/traefik/traefik/v2",
+       "version": "0.0.0-20240212151404-0c8778639a3c"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.9.10 (unknown)",
+      "vulnerabilityID": "GHSA-7hj9-rv74-5g92"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a106ffed931eaa6",
+    "name": "github.com/traefik/traefik/v2",
+    "version": "0.0.0-20240212151404-0c8778639a3c",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-6fwg-jrfw-ff7p",
+    "dataSource": "https://github.com/advisories/GHSA-6fwg-jrfw-ff7p",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-6fwg-jrfw-ff7p"
+    ],
+    "description": "Traefik docker container using 100% CPU",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.10.6"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-47633",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-47633",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/traefik/traefik/releases/tag/v2.10.6",
+      "https://github.com/traefik/traefik/releases/tag/v3.0.0-beta5",
+      "https://github.com/traefik/traefik/security/advisories/GHSA-6fwg-jrfw-ff7p"
+     ],
+     "description": "Traefik is an open source HTTP reverse proxy and load balancer. The traefik docker container uses 100% CPU when it serves as its own backend, which is an automatically generated route resulting from the Docker integration in the default configuration. This issue has been addressed in versions 2.10.6 and 3.0.0-beta5. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/traefik/traefik/v2",
+       "version": "0.0.0-20240212151404-0c8778639a3c"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.10.6 (unknown)",
+      "vulnerabilityID": "GHSA-6fwg-jrfw-ff7p"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a106ffed931eaa6",
+    "name": "github.com/traefik/traefik/v2",
+    "version": "0.0.0-20240212151404-0c8778639a3c",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4vwx-54mw-vqfw",
+    "dataSource": "https://github.com/advisories/GHSA-4vwx-54mw-vqfw",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-4vwx-54mw-vqfw"
+    ],
+    "description": "Traefik vulnerable to denial of service with Content-length header",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.11.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28869",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28869",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://doc.traefik.io/traefik/routing/entrypoints/#respondingtimeouts",
+      "https://github.com/traefik/traefik/commit/240b83b77351dfd8cadb91c305b84e9d22e0f9c6",
+      "https://github.com/traefik/traefik/releases/tag/v2.11.2",
+      "https://github.com/traefik/traefik/releases/tag/v3.0.0-rc5",
+      "https://github.com/traefik/traefik/security/advisories/GHSA-4vwx-54mw-vqfw"
+     ],
+     "description": "Traefik is an HTTP reverse proxy and load balancer. In affected versions sending a GET request to any Traefik endpoint with the \"Content-length\" request header results in an indefinite hang with the default configuration. This vulnerability can be exploited by attackers to induce a denial of service. This vulnerability has been addressed in version 2.11.2 and 3.0.0-rc5. Users are advised to upgrade. For affected versions, this vulnerability can be mitigated by configuring the readTimeout option.\n",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/traefik/traefik/v2",
+       "version": "0.0.0-20240212151404-0c8778639a3c"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=2.11.1 (unknown)",
+      "vulnerabilityID": "GHSA-4vwx-54mw-vqfw"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a106ffed931eaa6",
+    "name": "github.com/traefik/traefik/v2",
+    "version": "0.0.0-20240212151404-0c8778639a3c",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-m697-4v8f-55qg",
+    "dataSource": "https://github.com/advisories/GHSA-m697-4v8f-55qg",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-m697-4v8f-55qg"
+    ],
+    "description": "Header dropping in traefik",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 4.8,
+       "exploitabilityScore": 2.2,
+       "impactScore": 2.5
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.4.13"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-32813",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-32813",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/traefik/traefik/pull/8319/commits/cbaf86a93014a969b8accf39301932c17d0d73f9",
+      "https://github.com/traefik/traefik/releases/tag/v2.4.13",
+      "https://github.com/traefik/traefik/security/advisories/GHSA-m697-4v8f-55qg"
+     ],
+     "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to version 2.4.13, there exists a potential header vulnerability in Traefik's handling of the Connection header. Active exploitation of this issue is unlikely, as it requires that a removed header would lead to a privilege escalation, however, the Traefik team has addressed this issue to prevent any potential abuse. If one has a chain of Traefik middlewares, and one of them sets a request header, then sending a request with a certain Connection header will cause it to be removed before the request is sent. In this case, the backend does not see the request header. A patch is available in version 2.4.13. There are no known workarounds aside from upgrading.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 8.6,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.2,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 4.8,
+        "exploitabilityScore": 2.2,
+        "impactScore": 2.5
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/traefik/traefik/v2",
+       "version": "0.0.0-20240212151404-0c8778639a3c"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.4.13 (unknown)",
+      "vulnerabilityID": "GHSA-m697-4v8f-55qg"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a106ffed931eaa6",
+    "name": "github.com/traefik/traefik/v2",
+    "version": "0.0.0-20240212151404-0c8778639a3c",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-fvhj-4qfh-q2hm",
+    "dataSource": "https://github.com/advisories/GHSA-fvhj-4qfh-q2hm",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-fvhj-4qfh-q2hm"
+    ],
+    "description": "Traefik incorrectly processes fragment in the URL, leads to Authorization Bypass",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.5
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.10.6"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-47106",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-47106",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://datatracker.ietf.org/doc/html/rfc7230#section-5.3.1",
+      "https://github.com/traefik/traefik/releases/tag/v2.10.6",
+      "https://github.com/traefik/traefik/releases/tag/v3.0.0-beta5",
+      "https://github.com/traefik/traefik/security/advisories/GHSA-fvhj-4qfh-q2hm"
+     ],
+     "description": "Traefik is an open source HTTP reverse proxy and load balancer. When a request is sent to Traefik with a URL fragment, Traefik automatically URL encodes and forwards the fragment to the backend server. This violates RFC 7230 because in the origin-form the URL should only contain the absolute path and the query. When this is combined with another frontend proxy like Nginx, it can be used to bypass frontend proxy URI-based access control restrictions. This vulnerability has been addressed in versions 2.10.6 and 3.0.0-beta5. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.5
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 4.8,
+        "exploitabilityScore": 2.2,
+        "impactScore": 2.5
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/traefik/traefik/v2",
+       "version": "0.0.0-20240212151404-0c8778639a3c"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.10.6 (unknown)",
+      "vulnerabilityID": "GHSA-fvhj-4qfh-q2hm"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a106ffed931eaa6",
+    "name": "github.com/traefik/traefik/v2",
+    "version": "0.0.0-20240212151404-0c8778639a3c",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-8g85-whqh-cr2f",
+    "dataSource": "https://github.com/advisories/GHSA-8g85-whqh-cr2f",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-8g85-whqh-cr2f"
+    ],
+    "description": "Traefik vulnerable to potential DDoS via ACME HTTPChallenge",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.10.6"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-47124",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-47124",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://doc.traefik.io/traefik/https/acme/#dnschallenge",
+      "https://doc.traefik.io/traefik/https/acme/#httpchallenge",
+      "https://doc.traefik.io/traefik/https/acme/#tlschallenge",
+      "https://github.com/traefik/traefik/releases/tag/v2.10.6",
+      "https://github.com/traefik/traefik/releases/tag/v3.0.0-beta5",
+      "https://github.com/traefik/traefik/security/advisories/GHSA-8g85-whqh-cr2f",
+      "ttps://www.cloudflare.com/learning/ddos/ddos-attack-tools/slowloris/"
+     ],
+     "description": "Traefik is an open source HTTP reverse proxy and load balancer. When Traefik is configured to use the `HTTPChallenge` to generate and renew the Let's Encrypt TLS certificates, the delay authorized to solve the challenge (50 seconds) can be exploited by attackers to achieve a `slowloris attack`. This vulnerability has been patch in version 2.10.6 and 3.0.0-beta5. Users are advised to upgrade. Users unable to upgrade should replace the `HTTPChallenge` with the `TLSChallenge` or the `DNSChallenge`.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/traefik/traefik/v2",
+       "version": "0.0.0-20240212151404-0c8778639a3c"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.10.6 (unknown)",
+      "vulnerabilityID": "GHSA-8g85-whqh-cr2f"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a106ffed931eaa6",
+    "name": "github.com/traefik/traefik/v2",
+    "version": "0.0.0-20240212151404-0c8778639a3c",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-7f4j-64p6-5h5v",
+    "dataSource": "https://github.com/advisories/GHSA-7f4j-64p6-5h5v",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-7f4j-64p6-5h5v"
+    ],
+    "description": "Traefik affected by HTTP/2 CONTINUATION flood in net/http",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.11.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/traefik/traefik/v2",
+       "version": "0.0.0-20240212151404-0c8778639a3c"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.11.2 (unknown)",
+      "vulnerabilityID": "GHSA-7f4j-64p6-5h5v"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a106ffed931eaa6",
+    "name": "github.com/traefik/traefik/v2",
+    "version": "0.0.0-20240212151404-0c8778639a3c",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-6qq8-5wq3-86rp",
+    "dataSource": "https://github.com/advisories/GHSA-6qq8-5wq3-86rp",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-6qq8-5wq3-86rp"
+    ],
+    "description": "Traefik vulnerable to Open Redirect via handling of X-Forwarded-Prefix header",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 1.6,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.3.0-rc6"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-15129",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-15129",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/containous/traefik/commit/e63db782c11c7b8bfce30be4c902e7ef8f9f33d2",
+      "https://github.com/containous/traefik/pull/7109",
+      "https://github.com/containous/traefik/releases/tag/v1.7.26",
+      "https://github.com/containous/traefik/releases/tag/v2.2.8",
+      "https://github.com/containous/traefik/releases/tag/v2.3.0-rc3",
+      "https://github.com/containous/traefik/security/advisories/GHSA-6qq8-5wq3-86rp"
+     ],
+     "description": "In Traefik before versions 1.7.26, 2.2.8, and 2.3.0-rc3, there exists a potential open redirect vulnerability in Traefik's handling of the \"X-Forwarded-Prefix\" header. The Traefik API dashboard component doesn't validate that the value of the header \"X-Forwarded-Prefix\" is a site relative path and will redirect to any header provided URI. Successful exploitation of an open redirect can be used to entice victims to disclose sensitive information. Active Exploitation of this issue is unlikely as it would require active header injection, however the Traefik team addressed this issue nonetheless to prevent abuse in e.g. cache poisoning scenarios.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:N",
+       "metrics": {
+        "baseScore": 4,
+        "exploitabilityScore": 4.9,
+        "impactScore": 4.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 4.7,
+        "exploitabilityScore": 1.6,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 1.6,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/traefik/traefik/v2",
+       "version": "0.0.0-20240212151404-0c8778639a3c"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.2.8 (unknown)",
+      "vulnerabilityID": "GHSA-6qq8-5wq3-86rp"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a106ffed931eaa6",
+    "name": "github.com/traefik/traefik/v2",
+    "version": "0.0.0-20240212151404-0c8778639a3c",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-468w-8x39-gj5v",
+    "dataSource": "https://github.com/advisories/GHSA-468w-8x39-gj5v",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-468w-8x39-gj5v"
+    ],
+    "description": "Traefik routes exposed with an empty TLSOption",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.9.6"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-46153",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-46153",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://doc.traefik.io/traefik/v2.9/https/tls/#tls-options",
+      "https://github.com/traefik/traefik/commit/7e3fe48b80083b41e9ff82a474a36484cabc701a",
+      "https://github.com/traefik/traefik/releases/tag/v2.9.6",
+      "https://github.com/traefik/traefik/security/advisories/GHSA-468w-8x39-gj5v"
+     ],
+     "description": "Traefik is an open source HTTP reverse proxy and load balancer. In affected versions there is a potential vulnerability in Traefik managing TLS connections. A router configured with a not well-formatted TLSOption is exposed with an empty TLSOption. For instance, a route secured using an mTLS connection set with a wrong CA file is exposed without verifying the client certificates. Users are advised to upgrade to version 2.9.6. Users unable to upgrade should check their logs to detect the error messages and fix your TLS options.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/traefik/traefik/v2",
+       "version": "0.0.0-20240212151404-0c8778639a3c"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.9.6 (unknown)",
+      "vulnerabilityID": "GHSA-468w-8x39-gj5v"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a106ffed931eaa6",
+    "name": "github.com/traefik/traefik/v2",
+    "version": "0.0.0-20240212151404-0c8778639a3c",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-h2ph-vhm7-g4hp",
+    "dataSource": "https://github.com/advisories/GHSA-h2ph-vhm7-g4hp",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-h2ph-vhm7-g4hp"
+    ],
+    "description": "Traefik may display authorization header in the debug logs",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Low",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.9.6"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-23469",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-23469",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/traefik/traefik/pull/9574",
+      "https://github.com/traefik/traefik/releases/tag/v2.9.6",
+      "https://github.com/traefik/traefik/security/advisories/GHSA-h2ph-vhm7-g4hp"
+     ],
+     "description": "Traefik is an open source HTTP reverse proxy and load balancer. Versions prior to 2.9.6 are subject to a potential vulnerability in Traefik displaying the Authorization header in its debug logs. In certain cases, if the log level is set to DEBUG, credentials provided using the Authorization header are displayed in the debug logs. Attackers must have access to a users logging system in order for credentials to be stolen. This issue has been addressed in version 2.9.6. Users are advised to upgrade. Users unable to upgrade may set the log level to `INFO`, `WARN`, or `ERROR`.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 3.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/traefik/traefik/v2",
+       "version": "0.0.0-20240212151404-0c8778639a3c"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.9.6 (unknown)",
+      "vulnerabilityID": "GHSA-h2ph-vhm7-g4hp"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8a106ffed931eaa6",
+    "name": "github.com/traefik/traefik/v2",
+    "version": "0.0.0-20240212151404-0c8778639a3c",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/traefik/traefik@0.0.0-20240212151404-0c8778639a3c#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4v7x-pqxf-cx7m",
+    "dataSource": "https://github.com/advisories/GHSA-4v7x-pqxf-cx7m",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-4v7x-pqxf-cx7m"
+    ],
+    "description": "net/http, x/net/http2: close connections when receiving too many headers",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.23.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45288",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45288",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://go.dev/cl/576155",
+      "https://go.dev/issue/65051",
+      "https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M",
+      "https://pkg.go.dev/vuln/GO-2024-2687",
+      "https://security.netapp.com/advisory/ntap-20240419-0009/"
+     ],
+     "description": "An attacker may cause an HTTP/2 endpoint to read arbitrary amounts of header data by sending an excessive number of CONTINUATION frames. Maintaining HPACK state requires parsing and processing all HEADERS and CONTINUATION frames on a connection. When a request's headers exceed MaxHeaderBytes, no memory is allocated to store the excess headers, but they are still parsed. This permits an attacker to cause an HTTP/2 endpoint to read arbitrary amounts of header data, all associated with a request which is going to be rejected. These headers can include Huffman-encoded data which is significantly more expensive for the receiver to decode than for an attacker to send. The fix sets a limit on the amount of excess header frames we will process before closing a connection.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "golang.org/x/net",
+       "version": "0.20.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.23.0 (unknown)",
+      "vulnerabilityID": "GHSA-4v7x-pqxf-cx7m"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5b209eb8f5e5651b",
+    "name": "golang.org/x/net",
+    "version": "0.20.0",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/golang.org/x/net@0.20.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-8r3f-844c-mc37",
+    "dataSource": "https://github.com/advisories/GHSA-8r3f-844c-mc37",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-8r3f-844c-mc37"
+    ],
+    "description": "Golang protojson.Unmarshal function infinite loop when unmarshaling certain forms of invalid JSON",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.33.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-24786",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-24786",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://go.dev/cl/569356",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JDMBHAVSDU2FBDZ45U3A2VLSM35OJ2HU/",
+      "https://pkg.go.dev/vuln/GO-2024-2611"
+     ],
+     "description": "The protojson.Unmarshal function can enter an infinite loop when unmarshaling certain forms of invalid JSON. This condition can occur when unmarshaling into a message which contains a google.protobuf.Any value, or when the UnmarshalOptions.DiscardUnknown option is set.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "google.golang.org/protobuf",
+       "version": "1.31.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.33.0 (unknown)",
+      "vulnerabilityID": "GHSA-8r3f-844c-mc37"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2cca0a4cc49d158f",
+    "name": "google.golang.org/protobuf",
+    "version": "1.31.0",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/google.golang.org/protobuf@1.31.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "",
+   "imageID": "",
+   "manifestDigest": "",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-04-20T01:25:41Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:16b261c20c43828088d3530bdb10577ad87b9d33cfbfcaf051c3af61ba7e53ca",
+   "error": null
+  },
+  "timestamp": "2024-04-20T21:53:46.290682+02:00"
+ }
+}

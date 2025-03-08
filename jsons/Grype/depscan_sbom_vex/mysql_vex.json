@@ -1,0 +1,421 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-mq26-g339-26xf",
+    "dataSource": "https://github.com/advisories/GHSA-mq26-g339-26xf",
+    "namespace": "github:language:python",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-mq26-g339-26xf"
+    ],
+    "description": "Command Injection in pip when used with Mercurial",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "23.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-5752",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-5752",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://github.com/pypa/pip/pull/12306",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KFC2SPFG5FLCZBYY2K3T5MFW2D22NG6E/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YBSB3SUPQ3VIFYUMHPO3MEQI4BJAXKCZ/",
+      "https://mail.python.org/archives/list/security-announce@python.org/thread/F4PL35U6X4VVHZ5ILJU3PWUWN7H7LZXL/"
+     ],
+     "description": "When installing a package from a Mercurial VCS URL  (ie \"pip install \nhg+...\") with pip prior to v23.3, the specified Mercurial revision could\n be used to inject arbitrary configuration options to the \"hg clone\" \ncall (ie \"--config\"). Controlling the Mercurial configuration can modify\n how and which repository is installed. This vulnerability does not \naffect users who aren't installing from Mercurial.\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 3.3,
+        "exploitabilityScore": 1.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cna@python.org",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "pip",
+       "version": "20.2.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "<23.3 (python)",
+      "vulnerabilityID": "GHSA-mq26-g339-26xf"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "798772e318d8e7e1",
+    "name": "pip",
+    "version": "20.2.4",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:pypi/pip@20.2.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-5xp3-jfq3-5q8x",
+    "dataSource": "https://github.com/advisories/GHSA-5xp3-jfq3-5q8x",
+    "namespace": "github:language:python",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-5xp3-jfq3-5q8x"
+    ],
+    "description": "Improper Input Validation in pip",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 5.7,
+       "exploitabilityScore": 2.1,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "21.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-3572",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-3572",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=1962856",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html"
+     ],
+     "description": "A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 3.5,
+        "exploitabilityScore": 6.8,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 5.7,
+        "exploitabilityScore": 2.1,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "pip",
+       "version": "20.2.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "<21.1 (python)",
+      "vulnerabilityID": "GHSA-5xp3-jfq3-5q8x"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "798772e318d8e7e1",
+    "name": "pip",
+    "version": "20.2.4",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:pypi/pip@20.2.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-r9hx-vwmv-q579",
+    "dataSource": "https://github.com/advisories/GHSA-r9hx-vwmv-q579",
+    "namespace": "github:language:python",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-r9hx-vwmv-q579"
+    ],
+    "description": "pypa/setuptools vulnerable to Regular Expression Denial of Service (ReDoS)",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "65.5.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-40897",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-40897",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/pypa/setuptools/blob/fe8a98e696241487ba6ac9f91faa38ade939ec5d/setuptools/package_index.py#L200",
+      "https://github.com/pypa/setuptools/commit/43a9c9bfa6aa626ec2a22540bea28d2ca77964be",
+      "https://github.com/pypa/setuptools/compare/v65.5.0...v65.5.1",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ADES3NLOE5QJKBLGNZNI2RGVOSQXA37R/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YNA2BAH2ACBZ4TVJZKFLCR7L23BG5C3H/",
+      "https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/",
+      "https://pyup.io/vulnerabilities/CVE-2022-40897/52495/",
+      "https://security.netapp.com/advisory/ntap-20230214-0001/"
+     ],
+     "description": "Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "setuptools",
+       "version": "50.3.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "<65.5.1 (python)",
+      "vulnerabilityID": "GHSA-r9hx-vwmv-q579"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1ea97f5a17307743",
+    "name": "setuptools",
+    "version": "50.3.2",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:pypi/setuptools@50.3.2",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "mysql",
+   "imageID": "pkg:oci/mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe",
+   "manifestDigest": "latest",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-05-15T01:28:06Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:ae6d37ab4724e50bf25d76152f0f93f5f4f2c063e77806b540ec818920592692",
+   "error": null
+  },
+  "timestamp": "2024-05-15T13:34:03.461734+02:00"
+ }
+}

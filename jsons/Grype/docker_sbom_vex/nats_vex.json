@@ -1,0 +1,936 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-4w5x-x539-ppf5",
+    "dataSource": "https://github.com/advisories/GHSA-4w5x-x539-ppf5",
+    "namespace": "github:language:go",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-4w5x-x539-ppf5"
+    ],
+    "description": "Incorrect handling of credential expiry by /nats-io/nats-server",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.1.9"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-26892",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-26892",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/nats-io/nats-server/commits/master",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VT67XCLIIBYRT762SVFBYFFTQFVSM3SI/",
+      "https://www.openwall.com/lists/oss-security/2020/11/02/2"
+     ],
+     "description": "The JWT library in NATS nats-server before 2.1.9 has Incorrect Access Control because of how expired credentials are handled.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/nats-io/nats-server/v2",
+       "version": "0.0.0-20240111053235-a5298e2a18a5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.1.9 (unknown)",
+      "vulnerabilityID": "GHSA-4w5x-x539-ppf5"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0450590a63b588ca",
+    "name": "github.com/nats-io/nats-server/v2",
+    "version": "0.0.0-20240111053235-a5298e2a18a5",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/nats-io/nats-server@0.0.0-20240111053235-a5298e2a18a5#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-m4jx-6526-vvhm",
+    "dataSource": "https://github.com/advisories/GHSA-m4jx-6526-vvhm",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-m4jx-6526-vvhm"
+    ],
+    "description": "Denial of service in github.com/nats-io/nats-server/server",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-28466",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-28466",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2021/03/16/1",
+      "http://www.openwall.com/lists/oss-security/2021/03/16/2",
+      "https://github.com/nats-io/nats-server/pull/1731",
+      "https://snyk.io/vuln/SNYK-GOLANG-GITHUBCOMNATSIONATSSERVERSERVER-1042967"
+     ],
+     "description": "This affects all versions of package github.com/nats-io/nats-server/server. Untrusted accounts are able to crash the server using configs that represent a service export/import cycles. Disclaimer from the maintainers: Running a NATS service which is exposed to untrusted users presents a heightened risk. Any remote execution flaw or equivalent seriousness, or denial-of-service by unauthenticated users, will lead to prompt releases by the NATS maintainers. Fixes for denial of service issues with no threat of remote execution, when limited to account holders, are likely to just be committed to the main development branch with no special attention. Those who are running such services are encouraged to build regularly from git.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "report@snyk.io",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/nats-io/nats-server/v2",
+       "version": "0.0.0-20240111053235-a5298e2a18a5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.2.0 (unknown)",
+      "vulnerabilityID": "GHSA-m4jx-6526-vvhm"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0450590a63b588ca",
+    "name": "github.com/nats-io/nats-server/v2",
+    "version": "0.0.0-20240111053235-a5298e2a18a5",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/nats-io/nats-server@0.0.0-20240111053235-a5298e2a18a5#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-jp4j-47f9-2vc3",
+    "dataSource": "https://github.com/advisories/GHSA-jp4j-47f9-2vc3",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-jp4j-47f9-2vc3"
+    ],
+    "description": "Integer Overflow or Wraparound in NATS Server",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-13126",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-13126",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/nats-io/nats-server/pull/1053",
+      "https://www.twistlock.com/labs-blog/finding-dos-vulnerability-nats-go-fuzz-cve-2019-13126/"
+     ],
+     "description": "An integer overflow in NATS Server before 2.0.2 allows a remote attacker to crash the server by sending a crafted request. If authentication is enabled, then the remote attacker must have first authenticated.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/nats-io/nats-server/v2",
+       "version": "0.0.0-20240111053235-a5298e2a18a5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.2.0 (unknown)",
+      "vulnerabilityID": "GHSA-jp4j-47f9-2vc3"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0450590a63b588ca",
+    "name": "github.com/nats-io/nats-server/v2",
+    "version": "0.0.0-20240111053235-a5298e2a18a5",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/nats-io/nats-server@0.0.0-20240111053235-a5298e2a18a5#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-j756-f273-xhp4",
+    "dataSource": "https://github.com/advisories/GHSA-j756-f273-xhp4",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-j756-f273-xhp4"
+    ],
+    "description": "github.com/nats-io/nats-server/ Import token permissions checking not enforced",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/nats-io/nats-server/v2",
+       "version": "0.0.0-20240111053235-a5298e2a18a5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.2.0 (unknown)",
+      "vulnerabilityID": "GHSA-j756-f273-xhp4"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0450590a63b588ca",
+    "name": "github.com/nats-io/nats-server/v2",
+    "version": "0.0.0-20240111053235-a5298e2a18a5",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/nats-io/nats-server@0.0.0-20240111053235-a5298e2a18a5#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hmm9-r2m2-qg9w",
+    "dataSource": "https://github.com/advisories/GHSA-hmm9-r2m2-qg9w",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-hmm9-r2m2-qg9w"
+    ],
+    "description": "Nil dereference in NATS JWT causing DoS of nats-server",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.1.9"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/nats-io/nats-server/v2",
+       "version": "0.0.0-20240111053235-a5298e2a18a5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.1.9 (unknown)",
+      "vulnerabilityID": "GHSA-hmm9-r2m2-qg9w"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0450590a63b588ca",
+    "name": "github.com/nats-io/nats-server/v2",
+    "version": "0.0.0-20240111053235-a5298e2a18a5",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/nats-io/nats-server@0.0.0-20240111053235-a5298e2a18a5#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-h2fg-54x9-5qhq",
+    "dataSource": "https://github.com/advisories/GHSA-h2fg-54x9-5qhq",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-h2fg-54x9-5qhq"
+    ],
+    "description": "Nil dereference in NATS JWT, DoS of nats-server",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.1.9"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-26521",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-26521",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2020/11/02/2",
+      "https://github.com/nats-io/nats-server/commits/master",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VT67XCLIIBYRT762SVFBYFFTQFVSM3SI/"
+     ],
+     "description": "The JWT library in NATS nats-server before 2.1.9 allows a denial of service (a nil dereference in Go code).",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/nats-io/nats-server/v2",
+       "version": "0.0.0-20240111053235-a5298e2a18a5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.1.9 (unknown)",
+      "vulnerabilityID": "GHSA-h2fg-54x9-5qhq"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0450590a63b588ca",
+    "name": "github.com/nats-io/nats-server/v2",
+    "version": "0.0.0-20240111053235-a5298e2a18a5",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/nats-io/nats-server@0.0.0-20240111053235-a5298e2a18a5#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-9r5x-fjv3-q6h4",
+    "dataSource": "https://github.com/advisories/GHSA-9r5x-fjv3-q6h4",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-9r5x-fjv3-q6h4"
+    ],
+    "description": "Incorrect Access Control in github.com/nats-io/jwt and github.com/nats-io/nats-server/v2",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-3127",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-3127",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://advisories.nats.io/CVE/CVE-2021-3127.txt"
+     ],
+     "description": "NATS Server 2.x before 2.2.0 and JWT library before 2.0.1 have Incorrect Access Control because Import Token bindings are mishandled.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/nats-io/nats-server/v2",
+       "version": "0.0.0-20240111053235-a5298e2a18a5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.2.0 (unknown)",
+      "vulnerabilityID": "GHSA-9r5x-fjv3-q6h4"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0450590a63b588ca",
+    "name": "github.com/nats-io/nats-server/v2",
+    "version": "0.0.0-20240111053235-a5298e2a18a5",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/nats-io/nats-server@0.0.0-20240111053235-a5298e2a18a5#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-2c64-vj8g-vwrq",
+    "dataSource": "https://github.com/advisories/GHSA-2c64-vj8g-vwrq",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-2c64-vj8g-vwrq"
+    ],
+    "description": "Incorrect handling of credential expiry by /nats-io/nats-server",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.1.9"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/nats-io/nats-server/v2",
+       "version": "0.0.0-20240111053235-a5298e2a18a5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.1.9 (unknown)",
+      "vulnerabilityID": "GHSA-2c64-vj8g-vwrq"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0450590a63b588ca",
+    "name": "github.com/nats-io/nats-server/v2",
+    "version": "0.0.0-20240111053235-a5298e2a18a5",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/nats-io/nats-server@0.0.0-20240111053235-a5298e2a18a5#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-gwj5-3vfq-q992",
+    "dataSource": "https://github.com/advisories/GHSA-gwj5-3vfq-q992",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-gwj5-3vfq-q992"
+    ],
+    "description": "Import loops in account imports, nats-server DoS",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go",
+      "package": {
+       "name": "github.com/nats-io/nats-server/v2",
+       "version": "0.0.0-20240111053235-a5298e2a18a5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.2.0 (unknown)",
+      "vulnerabilityID": "GHSA-gwj5-3vfq-q992"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0450590a63b588ca",
+    "name": "github.com/nats-io/nats-server/v2",
+    "version": "0.0.0-20240111053235-a5298e2a18a5",
+    "type": "go-module",
+    "locations": [],
+    "language": "go",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:golang/github.com/nats-io/nats-server@0.0.0-20240111053235-a5298e2a18a5#v2",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "",
+     "architecture": ""
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "",
+   "imageID": "",
+   "manifestDigest": "",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-04-20T01:25:41Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:16b261c20c43828088d3530bdb10577ad87b9d33cfbfcaf051c3af61ba7e53ca",
+   "error": null
+  },
+  "timestamp": "2024-04-20T21:53:42.472166+02:00"
+ }
+}

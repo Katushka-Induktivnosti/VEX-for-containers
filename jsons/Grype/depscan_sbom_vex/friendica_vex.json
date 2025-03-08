@@ -1,0 +1,3335 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-vxvp-4xwc-jpp6",
+    "dataSource": "https://github.com/advisories/GHSA-vxvp-4xwc-jpp6",
+    "namespace": "github:language:ruby",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-vxvp-4xwc-jpp6"
+    ],
+    "description": "activesupport Cross-site Scripting vulnerability",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.2.22.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2015-3226",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-3226",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://openwall.com/lists/oss-security/2015/06/16/17",
+      "http://www.debian.org/security/2016/dsa-3464",
+      "http://www.securityfocus.com/bid/75231",
+      "http://www.securitytracker.com/id/1033755",
+      "https://groups.google.com/forum/message/raw?msg=rubyonrails-security/7VlB_pck3hU/3QZrGIaQW6cJ"
+     ],
+     "description": "Cross-site scripting (XSS) vulnerability in json/encoding.rb in Active Support in Ruby on Rails 3.x and 4.1.x before 4.1.11 and 4.2.x before 4.2.2 allows remote attackers to inject arbitrary web script or HTML via a crafted Hash that is mishandled during JSON encoding.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "activesupport",
+       "version": "3.2.22"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=3.0.0,<=3.2.22.4 (unknown)",
+      "vulnerabilityID": "GHSA-vxvp-4xwc-jpp6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "db8df874baa4ec11",
+    "name": "activesupport",
+    "version": "3.2.22",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/activesupport@3.2.22",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-pj73-v5mw-pm9j",
+    "dataSource": "https://github.com/advisories/GHSA-pj73-v5mw-pm9j",
+    "namespace": "github:language:ruby",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-pj73-v5mw-pm9j"
+    ],
+    "description": "Possible XSS Security Vulnerability in SafeBuffer#bytesplice",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "6.1.7.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "activesupport",
+       "version": "3.2.22"
+      }
+     },
+     "found": {
+      "versionConstraint": "<6.1.7.3 (unknown)",
+      "vulnerabilityID": "GHSA-pj73-v5mw-pm9j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "db8df874baa4ec11",
+    "name": "activesupport",
+    "version": "3.2.22",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/activesupport@3.2.22",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-j96r-xvjq-r9pg",
+    "dataSource": "https://github.com/advisories/GHSA-j96r-xvjq-r9pg",
+    "namespace": "github:language:ruby",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-j96r-xvjq-r9pg"
+    ],
+    "description": "activesupport vulnerable to Denial of Service via large XML document depth",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "4.1.11"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2015-3227",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-3227",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://lists.opensuse.org/opensuse-updates/2015-07/msg00050.html",
+      "http://openwall.com/lists/oss-security/2015/06/16/16",
+      "http://www.debian.org/security/2016/dsa-3464",
+      "http://www.securityfocus.com/bid/75234",
+      "http://www.securitytracker.com/id/1033755",
+      "https://groups.google.com/forum/message/raw?msg=rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J"
+     ],
+     "description": "The (1) jdom.rb and (2) rexml.rb components in Active Support in Ruby on Rails before 4.1.11 and 4.2.x before 4.2.2, when JDOM or REXML is enabled, allow remote attackers to cause a denial of service (SystemStackError) via a large XML document depth.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "activesupport",
+       "version": "3.2.22"
+      }
+     },
+     "found": {
+      "versionConstraint": "<4.1.11 (unknown)",
+      "vulnerabilityID": "GHSA-j96r-xvjq-r9pg"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "db8df874baa4ec11",
+    "name": "activesupport",
+    "version": "3.2.22",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/activesupport@3.2.22",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-j6gc-792m-qgm2",
+    "dataSource": "https://github.com/advisories/GHSA-j6gc-792m-qgm2",
+    "namespace": "github:language:ruby",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-j6gc-792m-qgm2"
+    ],
+    "description": "ReDoS based DoS vulnerability in Active Support's underscore",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "6.1.7.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-22796",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-22796",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://discuss.rubyonrails.org/t/cve-2023-22796-possible-redos-based-dos-vulnerability-in-active-supports-underscore/82116",
+      "https://security.netapp.com/advisory/ntap-20240202-0009/",
+      "https://www.debian.org/security/2023/dsa-5372"
+     ],
+     "description": "A regular expression based DoS vulnerability in Active Support <6.1.7.1 and <7.0.4.1. A specially crafted string passed to the underscore method can cause the regular expression engine to enter a state of catastrophic backtracking. This can cause the process to use large amounts of CPU and memory, leading to a possible DoS vulnerability.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "activesupport",
+       "version": "3.2.22"
+      }
+     },
+     "found": {
+      "versionConstraint": "<6.1.7.1 (unknown)",
+      "vulnerabilityID": "GHSA-j6gc-792m-qgm2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "db8df874baa4ec11",
+    "name": "activesupport",
+    "version": "3.2.22",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/activesupport@3.2.22",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-mjjq-c88q-qhr6",
+    "dataSource": "https://github.com/advisories/GHSA-mjjq-c88q-qhr6",
+    "namespace": "github:language:javascript",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-mjjq-c88q-qhr6"
+    ],
+    "description": "Cross-Site Scripting in dompurify",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.0.7"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "dompurify",
+       "version": "1.0.11"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.0.7 (unknown)",
+      "vulnerabilityID": "GHSA-mjjq-c88q-qhr6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "56044e48311c3f52",
+    "name": "dompurify",
+    "version": "1.0.11",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:npm/dompurify@1.0.11",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-chqj-j4fh-rw7m",
+    "dataSource": "https://github.com/advisories/GHSA-chqj-j4fh-rw7m",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-chqj-j4fh-rw7m"
+    ],
+    "description": "Cross-Site Scripting in dompurify",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-16728",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-16728",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lists.debian.org/debian-lts-announce/2020/10/msg00029.html",
+      "https://research.securitum.com/dompurify-bypass-using-mxss/"
+     ],
+     "description": "DOMPurify before 2.0.1 allows XSS because of innerHTML mutation XSS (mXSS) for an SVG element or a MATH element, as demonstrated by Chrome and Safari.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "dompurify",
+       "version": "1.0.11"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.0.3 (unknown)",
+      "vulnerabilityID": "GHSA-chqj-j4fh-rw7m"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "56044e48311c3f52",
+    "name": "dompurify",
+    "version": "1.0.11",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:npm/dompurify@1.0.11",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-63q7-h895-m982",
+    "dataSource": "https://github.com/advisories/GHSA-63q7-h895-m982",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-63q7-h895-m982"
+    ],
+    "description": "Cross-site Scripting in dompurify",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0.17"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-26870",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-26870",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/cure53/DOMPurify/commit/02724b8eb048dd219d6725b05c3000936f11d62d",
+      "https://github.com/cure53/DOMPurify/compare/2.0.16...2.0.17",
+      "https://lists.debian.org/debian-lts-announce/2020/10/msg00029.html",
+      "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-26870",
+      "https://research.securitum.com/mutation-xss-via-mathml-mutation-dompurify-2-0-17-bypass/",
+      "https://www.oracle.com//security-alerts/cpujul2021.html"
+     ],
+     "description": "Cure53 DOMPurify before 2.0.17 allows mutation XSS. This occurs because a serialize-parse roundtrip does not necessarily return the original DOM tree, and a namespace can change from HTML to MathML, as demonstrated by nesting of FORM elements.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "dompurify",
+       "version": "1.0.11"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.0.17 (unknown)",
+      "vulnerabilityID": "GHSA-63q7-h895-m982"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "56044e48311c3f52",
+    "name": "dompurify",
+    "version": "1.0.11",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:npm/dompurify@1.0.11",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-2gw2-8q9w-cw8p",
+    "dataSource": "https://github.com/advisories/GHSA-2gw2-8q9w-cw8p",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-2gw2-8q9w-cw8p"
+    ],
+    "description": "Ruby-ffi has a DLL loading issue ",
+    "cvss": [
+     {
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.8,
+       "exploitabilityScore": 1.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.9.24"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-1000201",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000201",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/ffi/ffi/commit/09e0c6076466b4383da7fa4e13f714311109945a",
+      "https://github.com/ffi/ffi/commit/e0fe486df0e117ed67b0282b6ada04b7214ca05c"
+     ],
+     "description": "ruby-ffi version 1.9.23 and earlier has a DLL loading issue which can be hijacked on Windows OS, when a Symbol is used as DLL name instead of a String This vulnerability appears to have been fixed in v1.9.24 and later.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 8.6,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "ffi",
+       "version": "1.9.9"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.9.24 (unknown)",
+      "vulnerabilityID": "GHSA-2gw2-8q9w-cw8p"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "623c6764921c1e1c",
+    "name": "ffi",
+    "version": "1.9.9",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/ffi@1.9.9",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-r53w-g4xm-3gc6",
+    "dataSource": "https://github.com/advisories/GHSA-r53w-g4xm-3gc6",
+    "namespace": "github:language:ruby",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-r53w-g4xm-3gc6"
+    ],
+    "description": "Haml vulnerable to cross-site scripting",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "5.0.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-1002201",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-1002201",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/haml/haml/commit/18576ae6e9bdcb4303fdbe6b3199869d289d67c2",
+      "https://lists.debian.org/debian-lts-announce/2019/11/msg00007.html",
+      "https://lists.debian.org/debian-lts-announce/2021/12/msg00028.html",
+      "https://security.gentoo.org/glsa/202007-27",
+      "https://snyk.io/vuln/SNYK-RUBY-HAML-20362"
+     ],
+     "description": "In haml versions prior to version 5.0.0.beta.2, when using user input to perform tasks on the server, characters like < > \" ' must be escaped properly. In this case, the ' character was missed. An attacker can manipulate the input to introduce additional attributes, potentially executing code.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "haml",
+       "version": "4.0.6"
+      }
+     },
+     "found": {
+      "versionConstraint": "<5.0.0 (unknown)",
+      "vulnerabilityID": "GHSA-r53w-g4xm-3gc6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e87a4ed7ce2899e4",
+    "name": "haml",
+    "version": "4.0.6",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/haml@4.0.6",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-34hf-g744-jw64",
+    "dataSource": "https://github.com/advisories/GHSA-34hf-g744-jw64",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-34hf-g744-jw64"
+    ],
+    "description": "i18n Vulnerable to Denial of Service Attack",
+    "cvss": [
+     {
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.8.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2014-10077",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2014-10077",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/rubysec/ruby-advisory-db/pull/182/files",
+      "https://github.com/svenfuchs/i18n/pull/289",
+      "https://github.com/svenfuchs/i18n/releases/tag/v0.8.0",
+      "https://lists.debian.org/debian-lts-announce/2018/11/msg00021.html"
+     ],
+     "description": "Hash#slice in lib/i18n/core_ext/hash.rb in the i18n gem before 0.8.0 for Ruby allows remote attackers to cause a denial of service (application crash) via a call in a situation where :some_key is present in keep_keys but not present in the hash.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "i18n",
+       "version": "0.6.11"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.8.0 (unknown)",
+      "vulnerabilityID": "GHSA-34hf-g744-jw64"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "2586a33a07cb0c8e",
+    "name": "i18n",
+    "version": "0.6.11",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/i18n@0.6.11",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-rmxg-73gg-4p98",
+    "dataSource": "https://github.com/advisories/GHSA-rmxg-73gg-4p98",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-rmxg-73gg-4p98"
+    ],
+    "description": "Cross-Site Scripting (XSS) in jquery",
+    "cvss": [
+     {
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "3.0.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2015-9251",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://lists.opensuse.org/opensuse-security-announce/2020-03/msg00041.html",
+      "http://packetstormsecurity.com/files/152787/dotCMS-5.1.1-Vulnerable-Dependencies.html",
+      "http://packetstormsecurity.com/files/153237/RetireJS-CORS-Issue-Script-Execution.html",
+      "http://packetstormsecurity.com/files/156743/OctoberCMS-Insecure-Dependencies.html",
+      "http://seclists.org/fulldisclosure/2019/May/10",
+      "http://seclists.org/fulldisclosure/2019/May/11",
+      "http://seclists.org/fulldisclosure/2019/May/13",
+      "http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html",
+      "http://www.securityfocus.com/bid/105658",
+      "https://access.redhat.com/errata/RHSA-2020:0481",
+      "https://access.redhat.com/errata/RHSA-2020:0729",
+      "https://github.com/jquery/jquery/commit/f60729f3903d17917dc351f3ac87794de379b0cc",
+      "https://github.com/jquery/jquery/issues/2432",
+      "https://github.com/jquery/jquery/pull/2588",
+      "https://github.com/jquery/jquery/pull/2588/commits/c254d308a7d3f1eac4d0b42837804cfffcba4bb2",
+      "https://ics-cert.us-cert.gov/advisories/ICSA-18-212-04",
+      "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44601",
+      "https://lists.apache.org/thread.html/10f0f3aefd51444d1198c65f44ffdf2d78ca3359423dbc1c168c9731%40%3Cdev.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/17ff53f7999e74fbe3cc0ceb4e1c3b00b180b7c5afec8e978837bc49%40%3Cuser.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E",
+      "https://lists.apache.org/thread.html/52bafac05ad174000ea465fe275fd3cc7bd5c25535a7631c0bc9bfb2%40%3Cuser.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/54df3aeb4239b64b50b356f0ca6f986e3c4ca5b84c515dce077c7854%40%3Cuser.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442%40%3Cdev.drill.apache.org%3E",
+      "https://lists.apache.org/thread.html/ba79cf1658741e9f146e4c59b50aee56656ea95d841d358d006c18b6%40%3Ccommits.roller.apache.org%3E",
+      "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc%40%3Cissues.drill.apache.org%3E",
+      "https://seclists.org/bugtraq/2019/May/18",
+      "https://security.netapp.com/advisory/ntap-20210108-0004/",
+      "https://snyk.io/vuln/npm:jquery:20150627",
+      "https://sw.aveva.com/hubfs/assets-2018/pdf/security-bulletin/SecurityBulletin_LFSec126.pdf",
+      "https://www.oracle.com/security-alerts/cpuapr2020.html",
+      "https://www.oracle.com/security-alerts/cpujan2020.html",
+      "https://www.oracle.com/security-alerts/cpujul2020.html",
+      "https://www.oracle.com/security-alerts/cpuoct2020.html",
+      "https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html",
+      "https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html",
+      "https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html",
+      "https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html",
+      "https://www.tenable.com/security/tns-2019-08"
+     ],
+     "description": "jQuery before 3.0.0 is vulnerable to Cross-site Scripting (XSS) attacks when a cross-domain Ajax request is performed without the dataType option, causing text/javascript responses to be executed.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "jquery",
+       "version": "2.2.4"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.12.3,<3.0.0 (unknown)",
+      "vulnerabilityID": "GHSA-rmxg-73gg-4p98"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "324becdb03a1c9a0",
+    "name": "jquery",
+    "version": "2.2.4",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/jquery@2.2.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-jpcq-cgw6-v4j6",
+    "dataSource": "https://github.com/advisories/GHSA-jpcq-cgw6-v4j6",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-jpcq-cgw6-v4j6"
+    ],
+    "description": "Potential XSS vulnerability in jQuery",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.9,
+       "exploitabilityScore": 1.6,
+       "impactScore": 4.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "3.5.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-11023",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-11023",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://lists.opensuse.org/opensuse-security-announce/2020-07/msg00067.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2020-07/msg00085.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2020-11/msg00039.html",
+      "http://packetstormsecurity.com/files/162160/jQuery-1.0.3-Cross-Site-Scripting.html",
+      "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released",
+      "https://github.com/jquery/jquery/security/advisories/GHSA-jpcq-cgw6-v4j6",
+      "https://jquery.com/upgrade-guide/3.5/",
+      "https://lists.apache.org/thread.html/r0483ba0072783c2e1bfea613984bfb3c86e73ba8879d780dc1cc7d36%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r0593393ca1e97b1e7e098fe69d414d6bd0a467148e9138d07e86ebbb%40%3Cissues.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/r07ab379471fb15644bf7a92e4a98cbc7df3cf4e736abae0cc7625fe6%40%3Cdev.felix.apache.org%3E",
+      "https://lists.apache.org/thread.html/r094f435595582f6b5b24b66fedf80543aa8b1d57a3688fbcc21f06ec%40%3Cissues.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/r1fed19c860a0d470f2a3eded12795772c8651ff583ef951ddac4918c%40%3Cgitbox.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/r2c85121a47442036c7f8353a3724aa04f8ecdfda1819d311ba4f5330%40%3Cdev.felix.apache.org%3E",
+      "https://lists.apache.org/thread.html/r3702ede0ff83a29ba3eb418f6f11c473d6e3736baba981a8dbd9c9ef%40%3Cdev.felix.apache.org%3E",
+      "https://lists.apache.org/thread.html/r49ce4243b4738dd763caeb27fa8ad6afb426ae3e8c011ff00b8b1f48%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r4aadb98086ca72ed75391f54167522d91489a0d0ae25b12baa8fc7c5%40%3Cissues.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/r4dba67be3239b34861f1b9cfdf9dfb3a90272585dcce374112ed6e16%40%3Cdev.felix.apache.org%3E",
+      "https://lists.apache.org/thread.html/r54565a8f025c7c4f305355fdfd75b68eca442eebdb5f31c2e7d977ae%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r55f5e066cc7301e3630ce90bbbf8d28c82212ae1f2d4871012141494%40%3Cdev.felix.apache.org%3E",
+      "https://lists.apache.org/thread.html/r564585d97bc069137e64f521e68ba490c7c9c5b342df5d73c49a0760%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r6c4df3b33e625a44471009a172dabe6865faec8d8f21cac2303463b1%40%3Cissues.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/r6e97b37963926f6059ecc1e417721608723a807a76af41d4e9dbed49%40%3Cissues.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/r706cfbc098420f7113968cc377247ec3d1439bce42e679c11c609e2d%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r8f70b0f65d6bedf316ecd899371fd89e65333bc988f6326d2956735c%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r9006ad2abf81d02a0ef2126bab5177987e59095b7194a487c4ea247c%40%3Ccommits.felix.apache.org%3E",
+      "https://lists.apache.org/thread.html/r9c5fda81e4bca8daee305b4c03283dddb383ab8428a151d4cb0b3b15%40%3Cissues.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/r9e0bd31b7da9e7403478d22652b8760c946861f8ebd7bd750844898e%40%3Cdev.felix.apache.org%3E",
+      "https://lists.apache.org/thread.html/ra32c7103ded9041c7c1cb8c12c8d125a6b2f3f3270e2937ef8417fac%40%3Cgitbox.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/ra374bb0299b4aa3e04edde01ebc03ed6f90cf614dad40dd428ce8f72%40%3Cgitbox.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/ra3c9219fcb0b289e18e9ec5a5ebeaa5c17d6b79a201667675af6721c%40%3Cgitbox.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/ra406b3adfcffcb5ce8707013bdb7c35e3ffc2776a8a99022f15274c6%40%3Cissues.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/rab82dd040f302018c85bd07d33f5604113573514895ada523c3401d9%40%3Ccommits.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/radcb2aa874a79647789f3563fcbbceaf1045a029ee8806b59812a8ea%40%3Cissues.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/rb25c3bc7418ae75cba07988dafe1b6912f76a9dd7d94757878320d61%40%3Cgitbox.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/rb69b7d8217c1a6a2100247a5d06ce610836b31e3f5d73fc113ded8e7%40%3Cissues.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/rbb448222ba62c430e21e13f940be4cb5cfc373cd3bce56b48c0ffa67%40%3Cdev.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/rd38b4185a797b324c8dd940d9213cf99fcdc2dbf1fc5a63ba7dee8c9%40%3Cissues.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/rda99599896c3667f2cc9e9d34c7b6ef5d2bbed1f4801e1d75a2b0679%40%3Ccommits.nifi.apache.org%3E",
+      "https://lists.apache.org/thread.html/re4ae96fa5c1a2fe71ccbb7b7ac1538bd0cb677be270a2bf6e2f8d108%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/rede9cfaa756e050a3d83045008f84a62802fc68c17f2b4eabeaae5e4%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/ree3bd8ddb23df5fa4e372d11c226830ea3650056b1059f3965b3fce2%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/rf0f8939596081d84be1ae6a91d6248b96a02d8388898c372ac807817%40%3Cdev.felix.apache.org%3E",
+      "https://lists.apache.org/thread.html/rf1ba79e564fe7efc56aef7c986106f1cf67a3427d08e997e088e7a93%40%3Cgitbox.hive.apache.org%3E",
+      "https://lists.apache.org/thread.html/rf661a90a15da8da5922ba6127b3f5f8194d4ebec8855d60a0dd13248%40%3Cdev.hive.apache.org%3E",
+      "https://lists.debian.org/debian-lts-announce/2021/03/msg00033.html",
+      "https://lists.debian.org/debian-lts-announce/2023/08/msg00040.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/AVKYXLWCLZBV2N7M46KYK4LVA5OXWPBY/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QPN2L2XVQGUA2V5HNQJWHK3APSK3VN7K/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SAPQVX3XDNPGFT26QAQ6AJIXZZBZ4CD4/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SFP4UK4EGP4AFH2MWYJ5A5Z4I7XVFQ6B/",
+      "https://security.gentoo.org/glsa/202007-03",
+      "https://security.netapp.com/advisory/ntap-20200511-0006/",
+      "https://www.debian.org/security/2020/dsa-4693",
+      "https://www.drupal.org/sa-core-2020-002",
+      "https://www.oracle.com//security-alerts/cpujul2021.html",
+      "https://www.oracle.com/security-alerts/cpuApr2021.html",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2021.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2020.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://www.oracle.com/security-alerts/cpuoct2020.html",
+      "https://www.oracle.com/security-alerts/cpuoct2021.html",
+      "https://www.tenable.com/security/tns-2021-02",
+      "https://www.tenable.com/security/tns-2021-10"
+     ],
+     "description": "In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.9,
+        "exploitabilityScore": 1.6,
+        "impactScore": 4.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "jquery",
+       "version": "2.2.4"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.0.3,<3.5.0 (unknown)",
+      "vulnerabilityID": "GHSA-jpcq-cgw6-v4j6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "324becdb03a1c9a0",
+    "name": "jquery",
+    "version": "2.2.4",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/jquery@2.2.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-gxr4-xjj5-5px2",
+    "dataSource": "https://github.com/advisories/GHSA-gxr4-xjj5-5px2",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-gxr4-xjj5-5px2"
+    ],
+    "description": "Potential XSS vulnerability in jQuery",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.9,
+       "exploitabilityScore": 1.6,
+       "impactScore": 4.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "3.5.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-11022",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-11022",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://lists.opensuse.org/opensuse-security-announce/2020-07/msg00067.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2020-07/msg00085.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2020-11/msg00039.html",
+      "http://packetstormsecurity.com/files/162159/jQuery-1.2-Cross-Site-Scripting.html",
+      "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/",
+      "https://github.com/jquery/jquery/commit/1d61fd9407e6fbe82fe55cb0b938307aa0791f77",
+      "https://github.com/jquery/jquery/security/advisories/GHSA-gxr4-xjj5-5px2",
+      "https://jquery.com/upgrade-guide/3.5/",
+      "https://lists.apache.org/thread.html/r0483ba0072783c2e1bfea613984bfb3c86e73ba8879d780dc1cc7d36%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r49ce4243b4738dd763caeb27fa8ad6afb426ae3e8c011ff00b8b1f48%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r54565a8f025c7c4f305355fdfd75b68eca442eebdb5f31c2e7d977ae%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r564585d97bc069137e64f521e68ba490c7c9c5b342df5d73c49a0760%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r706cfbc098420f7113968cc377247ec3d1439bce42e679c11c609e2d%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r8f70b0f65d6bedf316ecd899371fd89e65333bc988f6326d2956735c%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/rbb448222ba62c430e21e13f940be4cb5cfc373cd3bce56b48c0ffa67%40%3Cdev.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/rdf44341677cf7eec7e9aa96dcf3f37ed709544863d619cca8c36f133%40%3Ccommits.airflow.apache.org%3E",
+      "https://lists.apache.org/thread.html/re4ae96fa5c1a2fe71ccbb7b7ac1538bd0cb677be270a2bf6e2f8d108%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/rede9cfaa756e050a3d83045008f84a62802fc68c17f2b4eabeaae5e4%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/ree3bd8ddb23df5fa4e372d11c226830ea3650056b1059f3965b3fce2%40%3Cissues.flink.apache.org%3E",
+      "https://lists.debian.org/debian-lts-announce/2021/03/msg00033.html",
+      "https://lists.debian.org/debian-lts-announce/2023/08/msg00040.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/AVKYXLWCLZBV2N7M46KYK4LVA5OXWPBY/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QPN2L2XVQGUA2V5HNQJWHK3APSK3VN7K/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SAPQVX3XDNPGFT26QAQ6AJIXZZBZ4CD4/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SFP4UK4EGP4AFH2MWYJ5A5Z4I7XVFQ6B/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VOE7P7APPRQKD4FGNHBKJPDY6FFCOH3W/",
+      "https://security.gentoo.org/glsa/202007-03",
+      "https://security.netapp.com/advisory/ntap-20200511-0006/",
+      "https://www.debian.org/security/2020/dsa-4693",
+      "https://www.drupal.org/sa-core-2020-002",
+      "https://www.oracle.com//security-alerts/cpujul2021.html",
+      "https://www.oracle.com/security-alerts/cpuApr2021.html",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2021.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2020.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://www.oracle.com/security-alerts/cpuoct2020.html",
+      "https://www.oracle.com/security-alerts/cpuoct2021.html",
+      "https://www.tenable.com/security/tns-2020-10",
+      "https://www.tenable.com/security/tns-2020-11",
+      "https://www.tenable.com/security/tns-2021-02",
+      "https://www.tenable.com/security/tns-2021-10"
+     ],
+     "description": "In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.9,
+        "exploitabilityScore": 1.6,
+        "impactScore": 4.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "jquery",
+       "version": "2.2.4"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.2.0,<3.5.0 (unknown)",
+      "vulnerabilityID": "GHSA-gxr4-xjj5-5px2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "324becdb03a1c9a0",
+    "name": "jquery",
+    "version": "2.2.4",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/jquery@2.2.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-6c3j-c64m-qhgq",
+    "dataSource": "https://github.com/advisories/GHSA-6c3j-c64m-qhgq",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-6c3j-c64m-qhgq"
+    ],
+    "description": "XSS in jQuery as used in Drupal, Backdrop CMS, and other products",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "3.4.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-11358",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00006.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00025.html",
+      "http://packetstormsecurity.com/files/152787/dotCMS-5.1.1-Vulnerable-Dependencies.html",
+      "http://packetstormsecurity.com/files/153237/RetireJS-CORS-Issue-Script-Execution.html",
+      "http://packetstormsecurity.com/files/156743/OctoberCMS-Insecure-Dependencies.html",
+      "http://seclists.org/fulldisclosure/2019/May/10",
+      "http://seclists.org/fulldisclosure/2019/May/11",
+      "http://seclists.org/fulldisclosure/2019/May/13",
+      "http://www.openwall.com/lists/oss-security/2019/06/03/2",
+      "http://www.securityfocus.com/bid/108023",
+      "https://access.redhat.com/errata/RHBA-2019:1570",
+      "https://access.redhat.com/errata/RHSA-2019:1456",
+      "https://access.redhat.com/errata/RHSA-2019:2587",
+      "https://access.redhat.com/errata/RHSA-2019:3023",
+      "https://access.redhat.com/errata/RHSA-2019:3024",
+      "https://backdropcms.org/security/backdrop-sa-core-2019-009",
+      "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+      "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b",
+      "https://github.com/jquery/jquery/pull/4333",
+      "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44601",
+      "https://lists.apache.org/thread.html/08720ef215ee7ab3386c05a1a90a7d1c852bf0706f176a7816bf65fc%40%3Ccommits.airflow.apache.org%3E",
+      "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E",
+      "https://lists.apache.org/thread.html/5928aa293e39d248266472210c50f176cac1535220f2486e6a7fa844%40%3Ccommits.airflow.apache.org%3E",
+      "https://lists.apache.org/thread.html/6097cdbd6f0a337bedd9bb5cc441b2d525ff002a96531de367e4259f%40%3Ccommits.airflow.apache.org%3E",
+      "https://lists.apache.org/thread.html/88fb0362fd40e5b605ea8149f63241537b8b6fb5bfa315391fc5cbb7%40%3Ccommits.airflow.apache.org%3E",
+      "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442%40%3Cdev.drill.apache.org%3E",
+      "https://lists.apache.org/thread.html/b736d0784cf02f5a30fbb4c5902762a15ad6d47e17e2c5a17b7d6205%40%3Ccommits.airflow.apache.org%3E",
+      "https://lists.apache.org/thread.html/ba79cf1658741e9f146e4c59b50aee56656ea95d841d358d006c18b6%40%3Ccommits.roller.apache.org%3E",
+      "https://lists.apache.org/thread.html/bcce5a9c532b386c68dab2f6b3ce8b0cc9b950ec551766e76391caa3%40%3Ccommits.nifi.apache.org%3E",
+      "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc%40%3Cissues.drill.apache.org%3E",
+      "https://lists.apache.org/thread.html/r2041a75d3fc09dec55adfd95d598b38d22715303f65c997c054844c9%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r2baacab6e0acb5a2092eb46ae04fd6c3e8277b4fd79b1ffb7f3254fa%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r38f0d1aa3c923c22977fe7376508f030f22e22c1379fbb155bf29766%40%3Cdev.syncope.apache.org%3E",
+      "https://lists.apache.org/thread.html/r41b5bfe009c845f67d4f68948cc9419ac2d62e287804aafd72892b08%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r7aac081cbddb6baa24b75e74abf0929bf309b176755a53e3ed810355%40%3Cdev.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/r7d64895cc4dff84d0becfc572b20c0e4bf9bfa7b10c6f5f73e783734%40%3Cdev.storm.apache.org%3E",
+      "https://lists.apache.org/thread.html/r7e8ebccb7c022e41295f6fdb7b971209b83702339f872ddd8cf8bf73%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/rac25da84ecdcd36f6de5ad0d255f4e967209bbbebddb285e231da37d%40%3Cissues.flink.apache.org%3E",
+      "https://lists.apache.org/thread.html/rca37935d661f4689cb4119f1b3b224413b22be161b678e6e6ce0c69b%40%3Ccommits.nifi.apache.org%3E",
+      "https://lists.debian.org/debian-lts-announce/2019/05/msg00006.html",
+      "https://lists.debian.org/debian-lts-announce/2019/05/msg00029.html",
+      "https://lists.debian.org/debian-lts-announce/2020/02/msg00024.html",
+      "https://lists.debian.org/debian-lts-announce/2023/08/msg00040.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/4UOAZIFCSZ3ENEFOR5IXX6NFAD3HV7FA/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/5IABSKTYZ5JUGL735UKGXL5YPRYOPUYI/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/KYH3OAGR2RTCHRA5NOKX2TES7SNQMWGO/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QV3PKZC3PQCO3273HAT76PAQZFBEO4KP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/RLXRX23725JL366CNZGJZ7AQQB7LHQ6F/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WZW27UCJ5CYFL4KFFFMYMIBNMIU2ALG5/",
+      "https://seclists.org/bugtraq/2019/Apr/32",
+      "https://seclists.org/bugtraq/2019/Jun/12",
+      "https://seclists.org/bugtraq/2019/May/18",
+      "https://security.netapp.com/advisory/ntap-20190919-0001/",
+      "https://snyk.io/vuln/SNYK-JS-JQUERY-174006",
+      "https://supportportal.juniper.net/s/article/2021-07-Security-Bulletin-Junos-OS-Multiple-J-Web-vulnerabilities-resolved-in-Junos-OS-21-2R1",
+      "https://www.debian.org/security/2019/dsa-4434",
+      "https://www.debian.org/security/2019/dsa-4460",
+      "https://www.drupal.org/sa-core-2019-006",
+      "https://www.oracle.com//security-alerts/cpujul2021.html",
+      "https://www.oracle.com/security-alerts/cpuApr2021.html",
+      "https://www.oracle.com/security-alerts/cpuapr2020.html",
+      "https://www.oracle.com/security-alerts/cpujan2020.html",
+      "https://www.oracle.com/security-alerts/cpujan2021.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2020.html",
+      "https://www.oracle.com/security-alerts/cpuoct2020.html",
+      "https://www.oracle.com/security-alerts/cpuoct2021.html",
+      "https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html",
+      "https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html",
+      "https://www.privacy-wise.com/mitigating-cve-2019-11358-in-old-versions-of-jquery/",
+      "https://www.synology.com/security/advisory/Synology_SA_19_19",
+      "https://www.tenable.com/security/tns-2019-08",
+      "https://www.tenable.com/security/tns-2020-02"
+     ],
+     "description": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "jquery",
+       "version": "2.2.4"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.1.4,<3.4.0 (unknown)",
+      "vulnerabilityID": "GHSA-6c3j-c64m-qhgq"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "324becdb03a1c9a0",
+    "name": "jquery",
+    "version": "2.2.4",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/jquery@2.2.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-257q-pv89-v3xv",
+    "dataSource": "https://github.com/advisories/GHSA-257q-pv89-v3xv",
+    "namespace": "github:language:javascript",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-257q-pv89-v3xv"
+    ],
+    "description": "jQuery Cross Site Scripting vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "3.5.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-23064",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-23064",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/",
+      "https://security.netapp.com/advisory/ntap-20230725-0003/",
+      "https://snyk.io/vuln/SNYK-JS-JQUERY-565129"
+     ],
+     "description": "Cross Site Scripting vulnerability in jQuery 2.2.0 through 3.x before 3.5.0 allows a remote attacker to execute arbitrary code via the <options> element.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "jquery",
+       "version": "2.2.4"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.0.3,<3.5.0 (unknown)",
+      "vulnerabilityID": "GHSA-257q-pv89-v3xv"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "324becdb03a1c9a0",
+    "name": "jquery",
+    "version": "2.2.4",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/jquery@2.2.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-jphg-qwrw-7w9g",
+    "dataSource": "https://github.com/advisories/GHSA-jphg-qwrw-7w9g",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-jphg-qwrw-7w9g"
+    ],
+    "description": "Unsafe object creation in json RubyGem",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.3.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-10663",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-10663",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://lists.opensuse.org/opensuse-security-announce/2020-05/msg00004.html",
+      "http://seclists.org/fulldisclosure/2020/Dec/32",
+      "https://lists.apache.org/thread.html/r37c0e1807da7ff2bdd028bbe296465a6bbb99e2320dbe661d5d8b33b%40%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r3b04f4e99a19613f88ae088aa18cd271231a3c79dfff8f5efa8cda61%40%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5f17bfca1d6e7f4b33ae978725b2fd62a9f1b3111696eafa9add802d%40%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/r8d2e174230f6d26e16c007546e804c343f1f68956f526daaafa4aaae%40%3Cdev.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rb023d54a46da1ac0d8969097f5fecc79636b07d3b80db7b818a5c55c%40%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rb2b981912446a74e14fe6076c4b7c7d8502727ea0718e6a65a9b1be5%40%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rd9b9cc843f5cf5b532bdad9e87a817967efcf52b917e8c43b6df4cc7%40%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/rec8bb4d637b04575da41cfae49118e108e95d43bfac39b7b698ee4db%40%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.apache.org/thread.html/ree3abcd33c06ee95ab59faa1751198a1186d8941ddc2c2562c12966c%40%3Cissues.zookeeper.apache.org%3E",
+      "https://lists.debian.org/debian-lts-announce/2020/04/msg00030.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/7QL6MJD2BO4IRJ5CJFNMCDYMQQFT24BJ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/F4TNVTT66VPRMX5UZYSDGSVRXKKDDDU5/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NK2PBXWMFRUD7U7Q7LHV4KYLYID77RI4/",
+      "https://security.netapp.com/advisory/ntap-20210129-0003/",
+      "https://support.apple.com/kb/HT211931",
+      "https://www.debian.org/security/2020/dsa-4721",
+      "https://www.ruby-lang.org/en/news/2020/03/19/json-dos-cve-2020-10663/"
+     ],
+     "description": "The JSON gem through 2.2.0 for Ruby, as used in Ruby 2.4 through 2.4.9, 2.5 through 2.5.7, and 2.6 through 2.6.5, has an Unsafe Object Creation Vulnerability. This is quite similar to CVE-2013-0269, but does not rely on poor garbage-collection behavior within Ruby. Specifically, use of JSON parsing methods can lead to creation of a malicious object within the interpreter, with adverse effects that are application-dependent.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "json",
+       "version": "1.8.3"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.3.0 (unknown)",
+      "vulnerabilityID": "GHSA-jphg-qwrw-7w9g"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "647da0b0ea9c0f64",
+    "name": "json",
+    "version": "1.8.3",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/json@1.8.3",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-mqm2-cgpr-p4m6",
+    "dataSource": "https://github.com/advisories/GHSA-mqm2-cgpr-p4m6",
+    "namespace": "github:language:ruby",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-mqm2-cgpr-p4m6"
+    ],
+    "description": "Unintended read access in kramdown gem",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.3.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-14001",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-14001",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/gettalong/kramdown",
+      "https://github.com/gettalong/kramdown/commit/1b8fd33c3120bfc6e5164b449e2c2fc9c9306fde",
+      "https://github.com/gettalong/kramdown/compare/REL_2_2_1...REL_2_3_0",
+      "https://kramdown.gettalong.org",
+      "https://kramdown.gettalong.org/news.html",
+      "https://lists.apache.org/thread.html/r96df7899fbb456fe2705882f710a0c8e8614b573fbffd8d12e3f54d2%40%3Cnotifications.fluo.apache.org%3E",
+      "https://lists.debian.org/debian-lts-announce/2020/08/msg00014.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ENMMGKHRQIZ3QKGOMBBBGB6B4LB5I7NQ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/KBLTGBYU7NKOUOHDKVCU4GFZMGA6BP4L/",
+      "https://rubygems.org/gems/kramdown",
+      "https://security.netapp.com/advisory/ntap-20200731-0004/",
+      "https://usn.ubuntu.com/4562-1/",
+      "https://www.debian.org/security/2020/dsa-4743"
+     ],
+     "description": "The kramdown gem before 2.3.0 for Ruby processes the template option inside Kramdown documents by default, which allows unintended read access (such as template=\"/etc/passwd\") or unintended embedded Ruby code execution (such as a string that begins with template=\"string://<%= `). NOTE: kramdown is used in Jekyll, GitLab Pages, GitHub Pages, and Thredded Forum.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "kramdown",
+       "version": "1.7.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.3.0 (unknown)",
+      "vulnerabilityID": "GHSA-mqm2-cgpr-p4m6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "be62af8c3cba9373",
+    "name": "kramdown",
+    "version": "1.7.0",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/kramdown@1.7.0",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v638-q856-grg8",
+    "dataSource": "https://github.com/advisories/GHSA-v638-q856-grg8",
+    "namespace": "github:language:javascript",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-v638-q856-grg8"
+    ],
+    "description": "MathJax Regular expression Denial of Service (ReDoS)",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-39663",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-39663",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/mathjax/MathJax/issues/3074"
+     ],
+     "description": "Mathjax up to v2.7.9 was discovered to contain two Regular expression Denial of Service (ReDoS) vulnerabilities in MathJax.js via the components pattern and markdownPattern. NOTE: the vendor disputes this because the regular expressions are not applied to user input; thus, there is no risk.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "javascript-matcher",
+     "searchedBy": {
+      "language": "javascript",
+      "namespace": "github:language:javascript",
+      "package": {
+       "name": "mathjax",
+       "version": "2.7.5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=2.7.9 (unknown)",
+      "vulnerabilityID": "GHSA-v638-q856-grg8"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9146bc84267f732d",
+    "name": "mathjax",
+    "version": "2.7.5",
+    "type": "npm",
+    "locations": [],
+    "language": "javascript",
+    "licenses": [
+     "Apache-2.0"
+    ],
+    "cpes": [],
+    "purl": "pkg:npm/mathjax@2.7.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-wq4h-7r42-5hrr",
+    "dataSource": "https://github.com/advisories/GHSA-wq4h-7r42-5hrr",
+    "namespace": "github:language:ruby",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-wq4h-7r42-5hrr"
+    ],
+    "description": "Possible shell escape sequence injection vulnerability in Rack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 10,
+       "exploitabilityScore": 3.9,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0.9.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-30123",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-30123",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://discuss.rubyonrails.org/t/cve-2022-30123-possible-shell-escape-sequence-injection-vulnerability-in-rack/80728",
+      "https://security.gentoo.org/glsa/202310-18",
+      "https://security.netapp.com/advisory/ntap-20231208-0011/",
+      "https://www.debian.org/security/2023/dsa-5530"
+     ],
+     "description": "A sequence injection vulnerability exists in Rack <2.0.9.1, <2.1.4.1 and <2.2.3.1 which could allow is a possible shell escape in the Lint and CommonLogger components of Rack.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 10,
+        "exploitabilityScore": 3.9,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rack",
+       "version": "1.6.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=2.0.9.0 (unknown)",
+      "vulnerabilityID": "GHSA-wq4h-7r42-5hrr"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dda943e2f78bcb67",
+    "name": "rack",
+    "version": "1.6.4",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/rack@1.6.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-j6w9-fv6q-3q52",
+    "dataSource": "https://github.com/advisories/GHSA-j6w9-fv6q-3q52",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-j6w9-fv6q-3q52"
+    ],
+    "description": "Rack allows Percent-encoded cookies to overwrite existing prefixed cookie names",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.1.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-8184",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-8184",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://groups.google.com/g/rubyonrails-security/c/OWtmozPH9Ak",
+      "https://hackerone.com/reports/895727",
+      "https://lists.debian.org/debian-lts-announce/2020/07/msg00006.html",
+      "https://lists.debian.org/debian-lts-announce/2023/01/msg00038.html",
+      "https://usn.ubuntu.com/4561-1/"
+     ],
+     "description": "A reliance on cookies without validation/integrity check security vulnerability exists in rack < 2.2.3, rack < 2.1.4 that makes it is possible for an attacker to forge a secure or host-only cookie prefix.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rack",
+       "version": "1.6.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.1.4 (unknown)",
+      "vulnerabilityID": "GHSA-j6w9-fv6q-3q52"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dda943e2f78bcb67",
+    "name": "rack",
+    "version": "1.6.4",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/rack@1.6.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hxqx-xwvh-44m2",
+    "dataSource": "https://github.com/advisories/GHSA-hxqx-xwvh-44m2",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-hxqx-xwvh-44m2"
+    ],
+    "description": "Denial of Service Vulnerability in Rack Multipart Parsing",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0.9.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-30122",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-30122",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://discuss.rubyonrails.org/t/cve-2022-30122-denial-of-service-vulnerability-in-rack-multipart-parsing/80729",
+      "https://security.gentoo.org/glsa/202310-18",
+      "https://security.netapp.com/advisory/ntap-20231208-0012/",
+      "https://www.debian.org/security/2023/dsa-5530"
+     ],
+     "description": "A possible denial of service vulnerability exists in Rack <2.0.9.1, <2.1.4.1 and <2.2.3.1 in the multipart parsing component of Rack.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rack",
+       "version": "1.6.4"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.2,<=2.0.9.0 (unknown)",
+      "vulnerabilityID": "GHSA-hxqx-xwvh-44m2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dda943e2f78bcb67",
+    "name": "rack",
+    "version": "1.6.4",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/rack@1.6.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-65f5-mfpf-vfhj",
+    "dataSource": "https://github.com/advisories/GHSA-65f5-mfpf-vfhj",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-65f5-mfpf-vfhj"
+    ],
+    "description": "Denial of service via header parsing in Rack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0.9.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-44570",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-44570",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://discuss.rubyonrails.org/t/cve-2022-44570-possible-denial-of-service-vulnerability-in-racks-range-header-parsing/82125",
+      "https://security.netapp.com/advisory/ntap-20231208-0010/",
+      "https://www.debian.org/security/2023/dsa-5530"
+     ],
+     "description": "A denial of service vulnerability in the Range header parsing component of Rack >= 1.5.0. A Carefully crafted input can cause the Range header parsing component in Rack to take an unexpected amount of time, possibly resulting in a denial of service attack vector. Any applications that deal with Range requests (such as streaming applications, or applications that serve files) may be impacted.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rack",
+       "version": "1.6.4"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.5.0,<2.0.9.2 (unknown)",
+      "vulnerabilityID": "GHSA-65f5-mfpf-vfhj"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dda943e2f78bcb67",
+    "name": "rack",
+    "version": "1.6.4",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/rack@1.6.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-5f9h-9pjv-v6j7",
+    "dataSource": "https://github.com/advisories/GHSA-5f9h-9pjv-v6j7",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-5f9h-9pjv-v6j7"
+    ],
+    "description": "Directory traversal in Rack::Directory app bundled with Rack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 8.6,
+       "exploitabilityScore": 3.9,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.1.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-8161",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-8161",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://groups.google.com/g/rubyonrails-security/c/IOO1vNZTzPA",
+      "https://hackerone.com/reports/434404",
+      "https://lists.debian.org/debian-lts-announce/2020/07/msg00006.html",
+      "https://lists.debian.org/debian-lts-announce/2023/01/msg00038.html",
+      "https://usn.ubuntu.com/4561-1/"
+     ],
+     "description": "A directory traversal vulnerability exists in rack < 2.2.0 that allows an attacker perform directory traversal vulnerability in the Rack::Directory app that is bundled with Rack which could result in information disclosure.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 8.6,
+        "exploitabilityScore": 3.9,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rack",
+       "version": "1.6.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.1.3 (unknown)",
+      "vulnerabilityID": "GHSA-5f9h-9pjv-v6j7"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dda943e2f78bcb67",
+    "name": "rack",
+    "version": "1.6.4",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/rack@1.6.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-3h57-hmj3-gj3p",
+    "dataSource": "https://github.com/advisories/GHSA-3h57-hmj3-gj3p",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-3h57-hmj3-gj3p"
+    ],
+    "description": "Rack has possible DoS Vulnerability in Multipart MIME parsing",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0.9.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-27530",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-27530",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://discuss.rubyonrails.org/t/cve-2023-27530-possible-dos-vulnerability-in-multipart-mime-parsing/82388",
+      "https://lists.debian.org/debian-lts-announce/2023/04/msg00017.html",
+      "https://security.netapp.com/advisory/ntap-20231208-0015/",
+      "https://www.debian.org/security/2023/dsa-5530"
+     ],
+     "description": "A DoS vulnerability exists in Rack <v3.0.4.2, <v2.2.6.3, <v2.1.4.3 and <v2.0.9.3 within in the Multipart MIME parsing code in which could allow an attacker to craft requests that can be abuse to cause multipart parsing to take longer than expected.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rack",
+       "version": "1.6.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.0.9.3 (unknown)",
+      "vulnerabilityID": "GHSA-3h57-hmj3-gj3p"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dda943e2f78bcb67",
+    "name": "rack",
+    "version": "1.6.4",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/rack@1.6.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hrqr-hxpp-chr3",
+    "dataSource": "https://github.com/advisories/GHSA-hrqr-hxpp-chr3",
+    "namespace": "github:language:ruby",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-hrqr-hxpp-chr3"
+    ],
+    "description": "Possible Information Leak / Session Hijack Vulnerability in Rack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 6.3,
+       "exploitabilityScore": 1.8,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.6.12"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-16782",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-16782",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://lists.opensuse.org/opensuse-security-announce/2020-02/msg00016.html",
+      "http://www.openwall.com/lists/oss-security/2019/12/18/2",
+      "http://www.openwall.com/lists/oss-security/2019/12/18/3",
+      "http://www.openwall.com/lists/oss-security/2019/12/19/3",
+      "http://www.openwall.com/lists/oss-security/2020/04/08/1",
+      "http://www.openwall.com/lists/oss-security/2020/04/09/2",
+      "https://github.com/rack/rack/commit/7fecaee81f59926b6e1913511c90650e76673b38",
+      "https://github.com/rack/rack/security/advisories/GHSA-hrqr-hxpp-chr3",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HZXMWILCICQLA2BYSP6I2CRMUG53YBLX/"
+     ],
+     "description": "There's a possible information leak / session hijack vulnerability in Rack (RubyGem rack). This vulnerability is patched in versions 1.6.12 and 2.0.8. Attackers may be able to find and hijack sessions by using timing attacks targeting the session id. Session ids are usually stored and indexed in a database that uses some kind of scheme for speeding up lookups of that session id. By carefully measuring the amount of time it takes to look up a session, an attacker may be able to find a valid session id and hijack the session. The session id itself may be generated randomly, but the way the session is indexed by the backing store does not use a secure comparison.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 6.3,
+        "exploitabilityScore": 1.8,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rack",
+       "version": "1.6.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.6.12 (unknown)",
+      "vulnerabilityID": "GHSA-hrqr-hxpp-chr3"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dda943e2f78bcb67",
+    "name": "rack",
+    "version": "1.6.4",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/rack@1.6.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-5r2p-j47h-mhpg",
+    "dataSource": "https://github.com/advisories/GHSA-5r2p-j47h-mhpg",
+    "namespace": "github:language:ruby",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-5r2p-j47h-mhpg"
+    ],
+    "description": "Rack vulnerable to Cross-site Scripting",
+    "cvss": [
+     {
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.6.11"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-16471",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-16471",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00032.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2020-02/msg00016.html",
+      "https://groups.google.com/forum/#%21topic/rubyonrails-security/GKsAFT924Ag",
+      "https://lists.debian.org/debian-lts-announce/2018/11/msg00022.html",
+      "https://usn.ubuntu.com/4089-1/"
+     ],
+     "description": "There is a possible XSS vulnerability in Rack before 2.0.6 and 1.6.11. Carefully crafted requests can impact the data returned by the `scheme` method on `Rack::Request`. Applications that expect the scheme to be limited to 'http' or 'https' and do not escape the return value could be vulnerable to an XSS attack. Note that applications using the normal escaping mechanisms provided by Rails may not impacted, but applications that bypass the escaping mechanisms, or do not use them may be vulnerable.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+       "metrics": {
+        "baseScore": 6.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 2.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rack",
+       "version": "1.6.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.6.11 (unknown)",
+      "vulnerabilityID": "GHSA-5r2p-j47h-mhpg"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dda943e2f78bcb67",
+    "name": "rack",
+    "version": "1.6.4",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/rack@1.6.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-22f2-v57c-j9cx",
+    "dataSource": "https://github.com/advisories/GHSA-22f2-v57c-j9cx",
+    "namespace": "github:language:ruby",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-22f2-v57c-j9cx"
+    ],
+    "description": "Rack vulnerable to ReDoS in content type parsing (2nd degree polynomial)",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.8.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-25126",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-25126",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.rubyonrails.org/t/denial-of-service-vulnerability-in-rack-content-type-parsing/84941",
+      "https://github.com/rack/rack/commit/6efb2ceea003c4b195815a614e00438cbd543462",
+      "https://github.com/rack/rack/commit/d9c163a443b8cadf4711d84bd2c58cb9ef89cf49",
+      "https://github.com/rack/rack/security/advisories/GHSA-22f2-v57c-j9cx",
+      "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/rack/CVE-2024-25126.yml",
+      "https://lists.debian.org/debian-lts-announce/2024/04/msg00022.html"
+     ],
+     "description": "Rack is a modular Ruby web server interface. Carefully crafted content type headers can cause Rack’s media type parser to take much longer than expected, leading to a possible denial of service vulnerability (ReDos 2nd degree polynomial). This vulnerability is patched in 3.0.9.1 and 2.2.8.1.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rack",
+       "version": "1.6.4"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=0.4,<2.2.8.1 (unknown)",
+      "vulnerabilityID": "GHSA-22f2-v57c-j9cx"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dda943e2f78bcb67",
+    "name": "rack",
+    "version": "1.6.4",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/rack@1.6.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-xj5v-6v4g-jfw6",
+    "dataSource": "https://github.com/advisories/GHSA-xj5v-6v4g-jfw6",
+    "namespace": "github:language:ruby",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-xj5v-6v4g-jfw6"
+    ],
+    "description": "Rack has possible DoS Vulnerability with Range Header",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.2.8.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26141",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26141",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.rubyonrails.org/t/possible-dos-vulnerability-with-range-header-in-rack/84944",
+      "https://github.com/rack/rack/commit/4849132bef471adb21131980df745f4bb84de2d9",
+      "https://github.com/rack/rack/commit/62457686b26d33a15a254c7768c2076e8e02b48b",
+      "https://github.com/rack/rack/security/advisories/GHSA-xj5v-6v4g-jfw6",
+      "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/rack/CVE-2024-26141.yml",
+      "https://lists.debian.org/debian-lts-announce/2024/04/msg00022.html"
+     ],
+     "description": "Rack is a modular Ruby web server interface. Carefully crafted Range headers can cause a server to respond with an unexpectedly large response. Responding with such large responses could lead to a denial of service issue. Vulnerable applications will use the `Rack::File` middleware or the `Rack::Utils.byte_ranges` methods (this includes Rails applications). The vulnerability is fixed in 3.0.9.1 and 2.2.8.1.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rack",
+       "version": "1.6.4"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.3.0,<2.2.8.1 (unknown)",
+      "vulnerabilityID": "GHSA-xj5v-6v4g-jfw6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dda943e2f78bcb67",
+    "name": "rack",
+    "version": "1.6.4",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/rack@1.6.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-54rr-7fvw-6x8f",
+    "dataSource": "https://github.com/advisories/GHSA-54rr-7fvw-6x8f",
+    "namespace": "github:language:ruby",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-54rr-7fvw-6x8f"
+    ],
+    "description": "Rack Header Parsing leads to Possible Denial of Service Vulnerability",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.0.9.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26146",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26146",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.rubyonrails.org/t/possible-denial-of-service-vulnerability-in-rack-header-parsing/84942",
+      "https://github.com/rack/rack/commit/30b8e39a578b25d4bdcc082c1c52c6f164b59716",
+      "https://github.com/rack/rack/commit/6c5d90bdcec0949f7ba06db62fb740dab394b582",
+      "https://github.com/rack/rack/commit/a227cd793778c7c3a827d32808058571569cda6f",
+      "https://github.com/rack/rack/commit/e4c117749ba24a66f8ec5a08eddf68deeb425ccd",
+      "https://github.com/rack/rack/security/advisories/GHSA-54rr-7fvw-6x8f",
+      "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/rack/CVE-2024-26146.yml",
+      "https://lists.debian.org/debian-lts-announce/2024/04/msg00022.html"
+     ],
+     "description": "Rack is a modular Ruby web server interface. Carefully crafted headers can cause header parsing in Rack to take longer than expected resulting in a possible denial of service issue. Accept and Forwarded headers are impacted. Ruby 3.2 has mitigations for this problem, so Rack applications using Ruby 3.2 or newer are unaffected. This vulnerability is fixed in 2.0.9.4, 2.1.4.4, 2.2.8.1, and 3.0.9.1.\n",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rack",
+       "version": "1.6.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.0.9.4 (unknown)",
+      "vulnerabilityID": "GHSA-54rr-7fvw-6x8f"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dda943e2f78bcb67",
+    "name": "rack",
+    "version": "1.6.4",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/rack@1.6.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-pr3h-jjhj-573x",
+    "dataSource": "https://github.com/advisories/GHSA-pr3h-jjhj-573x",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-pr3h-jjhj-573x"
+    ],
+    "description": "Sprockets path traversal leads to information leak",
+    "cvss": [
+     {
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.12.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-3760",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-3760",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://access.redhat.com/errata/RHSA-2018:2244",
+      "https://access.redhat.com/errata/RHSA-2018:2245",
+      "https://access.redhat.com/errata/RHSA-2018:2561",
+      "https://access.redhat.com/errata/RHSA-2018:2745",
+      "https://github.com/rails/sprockets/commit/c09131cf5b2c479263939c8582e22b98ed616c5fhttps://github.com/rails/sprockets/commit/9c34fa05900b968d74f08ccf40917848a7be9441https://github.com/rails/sprockets/commit/18b8a7f07a50c245e9aee7854ecdbe606bbd8bb5",
+      "https://groups.google.com/d/msg/rubyonrails-security/ft_J--l55fM/7roDfQ50BwAJ",
+      "https://www.debian.org/security/2018/dsa-4242"
+     ],
+     "description": "There is an information leak vulnerability in Sprockets. Versions Affected: 4.0.0.beta7 and lower, 3.7.1 and lower, 2.12.4 and lower. Specially crafted requests can be used to access files that exists on the filesystem that is outside an application's root directory, when the Sprockets server is used in production. All users running an affected release should either upgrade or use one of the work arounds immediately.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "sprockets",
+       "version": "2.12.4"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.12.5 (unknown)",
+      "vulnerabilityID": "GHSA-pr3h-jjhj-573x"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "11e80e704cf2ffce",
+    "name": "sprockets",
+    "version": "2.12.4",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/sprockets@2.12.4",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-34r7-q49f-h37c",
+    "dataSource": "https://github.com/advisories/GHSA-34r7-q49f-h37c",
+    "namespace": "github:language:ruby",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-34r7-q49f-h37c"
+    ],
+    "description": "Incorrect Handling of Non-Boolean Comparisons During Minification in uglify-js",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.7.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2015-8857",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-8857",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2016/04/20/11",
+      "http://www.securityfocus.com/bid/96410",
+      "https://nodesecurity.io/advisories/39"
+     ],
+     "description": "The uglify-js package before 2.4.24 for Node.js does not properly account for non-boolean values when rewriting boolean expressions, which might allow attackers to bypass security mechanisms or possibly have unspecified other impact by leveraging improperly rewritten Javascript.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "uglifier",
+       "version": "2.4.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.7.2 (unknown)",
+      "vulnerabilityID": "GHSA-34r7-q49f-h37c"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a3cbd6b05c56c04f",
+    "name": "uglifier",
+    "version": "2.4.0",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:gem/uglifier@2.4.0",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "friendica",
+   "imageID": "pkg:oci/friendica@sha256:98488e121dc48040fb50c7612f13c617b6e18872bfcb13028b475fe86327d8e0",
+   "manifestDigest": "latest",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-05-15T01:28:06Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:ae6d37ab4724e50bf25d76152f0f93f5f4f2c063e77806b540ec818920592692",
+   "error": null
+  },
+  "timestamp": "2024-05-15T13:34:01.559547+02:00"
+ }
+}

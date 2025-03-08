@@ -1,0 +1,291 @@
+{
+ "spdxVersion": "SPDX-2.3",
+ "dataLicense": "CC0-1.0",
+ "SPDXID": "SPDXRef-DOCUMENT",
+ "name": "nats",
+ "documentNamespace": "https://docker.com/docker-scout/image/nats-57ab982b-b724-49e3-893f-615aa515fb97",
+ "creationInfo": {
+  "creators": [
+   "Organization: Docker, Inc",
+   "Tool: docker-scout-1.6.3"
+  ],
+  "created": "2024-04-20T18:59:01Z"
+ },
+ "packages": [
+  {
+   "name": "github.com/klauspost/compress",
+   "SPDXID": "SPDXRef-Package-b9e62a3e36b61f25aee8ca18cf31859b",
+   "versionInfo": "1.17.4",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/klauspost/compress@1.17.4"
+    }
+   ]
+  },
+  {
+   "name": "github.com/minio/highwayhash",
+   "SPDXID": "SPDXRef-Package-bc1f90f6832485674fd7d8812b4eaeb1",
+   "versionInfo": "1.0.2",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/minio/highwayhash@1.0.2"
+    }
+   ]
+  },
+  {
+   "name": "github.com/nats-io/jwt/v2",
+   "SPDXID": "SPDXRef-Package-31596be3c776f6f94780ab7bdaa0a765",
+   "versionInfo": "2.5.3",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/nats-io/jwt@2.5.3#v2"
+    }
+   ]
+  },
+  {
+   "name": "github.com/nats-io/nats-server/v2",
+   "SPDXID": "SPDXRef-Package-aace99e985b5fbbf95997a89c391dd8b",
+   "versionInfo": "0.0.0-20240111053235-a5298e2a18a5",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/nats-io/nats-server@0.0.0-20240111053235-a5298e2a18a5#v2"
+    }
+   ]
+  },
+  {
+   "name": "github.com/nats-io/nkeys",
+   "SPDXID": "SPDXRef-Package-be5ae4b48248cb4ed5496419a70484de",
+   "versionInfo": "0.4.7",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/nats-io/nkeys@0.4.7"
+    }
+   ]
+  },
+  {
+   "name": "github.com/nats-io/nuid",
+   "SPDXID": "SPDXRef-Package-7c838ee718bcef9530280e88581f746e",
+   "versionInfo": "1.0.1",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/nats-io/nuid@1.0.1"
+    }
+   ]
+  },
+  {
+   "name": "go.uber.org/automaxprocs",
+   "SPDXID": "SPDXRef-Package-2cb44ae9375977214139cf88bc306aa5",
+   "versionInfo": "1.5.3",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/go.uber.org/automaxprocs@1.5.3"
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/crypto",
+   "SPDXID": "SPDXRef-Package-56b9638f115c86f792bdcd781af1b519",
+   "versionInfo": "0.18.0",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/crypto@0.18.0"
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/sys",
+   "SPDXID": "SPDXRef-Package-3accbc9be3ffd8f8b71bbb6e612a14b4",
+   "versionInfo": "0.16.0",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/sys@0.16.0"
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/time",
+   "SPDXID": "SPDXRef-Package-5c2581843b010f89f3b0992892e7a46a",
+   "versionInfo": "0.5.0",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/time@0.5.0"
+    }
+   ]
+  },
+  {
+   "name": "stdlib",
+   "SPDXID": "SPDXRef-Package-9bddb1bc2a7b1c776a203606f1f6ac98",
+   "versionInfo": "1.21.6",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/stdlib@1.21.6"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "fileName": "/nats-server",
+   "SPDXID": "SPDXRef-File-20cf3b6686bd3f1831d350e77248da1a",
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "0000000000000000000000000000000000000000"
+    }
+   ],
+   "licenseConcluded": "NOASSERTION",
+   "copyrightText": "",
+   "comment": "layerID: sha256:9efa2f5a3143c141e1d08ddfee76d2d6ee3da41278ef210edba48bf099dae3f5"
+  }
+ ],
+ "relationships": [
+  {
+   "spdxElementId": "SPDXRef-DOCUMENT",
+   "relatedSpdxElement": "SPDXRef-DOCUMENT",
+   "relationshipType": "DESCRIBES"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-b9e62a3e36b61f25aee8ca18cf31859b",
+   "relatedSpdxElement": "SPDXRef-File-20cf3b6686bd3f1831d350e77248da1a",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-bc1f90f6832485674fd7d8812b4eaeb1",
+   "relatedSpdxElement": "SPDXRef-File-20cf3b6686bd3f1831d350e77248da1a",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-31596be3c776f6f94780ab7bdaa0a765",
+   "relatedSpdxElement": "SPDXRef-File-20cf3b6686bd3f1831d350e77248da1a",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-aace99e985b5fbbf95997a89c391dd8b",
+   "relatedSpdxElement": "SPDXRef-File-20cf3b6686bd3f1831d350e77248da1a",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-be5ae4b48248cb4ed5496419a70484de",
+   "relatedSpdxElement": "SPDXRef-File-20cf3b6686bd3f1831d350e77248da1a",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-7c838ee718bcef9530280e88581f746e",
+   "relatedSpdxElement": "SPDXRef-File-20cf3b6686bd3f1831d350e77248da1a",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-2cb44ae9375977214139cf88bc306aa5",
+   "relatedSpdxElement": "SPDXRef-File-20cf3b6686bd3f1831d350e77248da1a",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-56b9638f115c86f792bdcd781af1b519",
+   "relatedSpdxElement": "SPDXRef-File-20cf3b6686bd3f1831d350e77248da1a",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-3accbc9be3ffd8f8b71bbb6e612a14b4",
+   "relatedSpdxElement": "SPDXRef-File-20cf3b6686bd3f1831d350e77248da1a",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-5c2581843b010f89f3b0992892e7a46a",
+   "relatedSpdxElement": "SPDXRef-File-20cf3b6686bd3f1831d350e77248da1a",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-9bddb1bc2a7b1c776a203606f1f6ac98",
+   "relatedSpdxElement": "SPDXRef-File-20cf3b6686bd3f1831d350e77248da1a",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  }
+ ]
+}

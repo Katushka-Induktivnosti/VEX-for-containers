@@ -1,0 +1,3293 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/grype/sboms/ruby_sbom.json",
+  "ArtifactType": "cyclonedx",
+  "Metadata": {
+    "OS": {
+      "Family": "debian",
+      "Name": "12"
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "jsons/grype/sboms/ruby_sbom.json (debian 12)",
+      "Class": "os-pkgs",
+      "Type": "debian",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2011-3374",
+          "PkgName": "apt",
+          "InstalledVersion": "2.6.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2011-3374",
+          "PkgRef": "pkg:deb/debian/apt@2.6.1?arch=arm64\u0026distro=debian-12\u0026package-id=57615e8da2791997",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "It was found that apt-key in apt, all versions, do not correctly valid ...",
+          "Description": "It was found that apt-key in apt, all versions, do not correctly validate gpg keys with the master keyring, leading to a potential man-in-the-middle attack.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-347"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V2Score": 4.3,
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/cve-2011-3374",
+            "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=642480",
+            "https://people.canonical.com/~ubuntu-security/cve/2011/CVE-2011-3374.html",
+            "https://seclists.org/fulldisclosure/2011/Sep/221",
+            "https://security-tracker.debian.org/tracker/CVE-2011-3374",
+            "https://snyk.io/vuln/SNYK-LINUX-APT-116518",
+            "https://ubuntu.com/security/CVE-2011-3374"
+          ],
+          "PublishedDate": "2019-11-26T00:15:11.03Z",
+          "LastModifiedDate": "2021-02-09T16:08:18.683Z"
+        },
+        {
+          "VulnerabilityID": "TEMP-0841856-B18BAF",
+          "PkgName": "bash",
+          "InstalledVersion": "5.2.15-2+b2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://security-tracker.debian.org/tracker/TEMP-0841856-B18BAF",
+          "PkgRef": "pkg:deb/debian/bash@5.2.15-2+b2?arch=arm64\u0026upstream=bash%405.2.15-2\u0026distro=debian-12\u0026package-id=1b1e18e5dcb1d0a7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "[Privilege escalation possible to other user than root]",
+          "Severity": "LOW"
+        },
+        {
+          "VulnerabilityID": "CVE-2017-13716",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.40-2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-13716",
+          "PkgRef": "pkg:deb/debian/binutils@2.40-2?arch=arm64\u0026distro=debian-12\u0026package-id=dfd149c75544d839",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "binutils: Memory leak with the C++ symbol demangler routine in libiberty",
+          "Description": "The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 7.1,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2017-13716",
+            "https://nvd.nist.gov/vuln/detail/CVE-2017-13716",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=22009",
+            "https://www.cve.org/CVERecord?id=CVE-2017-13716"
+          ],
+          "PublishedDate": "2017-08-28T21:29:00.293Z",
+          "LastModifiedDate": "2019-10-03T00:03:26.223Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-18483",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.40-2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-18483",
+          "PkgRef": "pkg:deb/debian/binutils@2.40-2?arch=arm64\u0026distro=debian-12\u0026package-id=dfd149c75544d839",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "binutils: Integer overflow in cplus-dem.c:get_count() allows for denial of service",
+          "Description": "The get_count function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31, allows remote attackers to cause a denial of service (malloc called with the result of an integer-overflowing calculation) or possibly have unspecified other impact via a crafted string, as demonstrated by c++filt.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 4.3
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-10/msg00072.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00008.html",
+            "http://www.securityfocus.com/bid/105689",
+            "https://access.redhat.com/security/cve/CVE-2018-18483",
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=87602",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-18483",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=23767",
+            "https://ubuntu.com/security/notices/USN-4326-1",
+            "https://ubuntu.com/security/notices/USN-4336-1",
+            "https://ubuntu.com/security/notices/USN-4336-2",
+            "https://usn.ubuntu.com/4326-1/",
+            "https://usn.ubuntu.com/4336-1/",
+            "https://www.cve.org/CVERecord?id=CVE-2018-18483"
+          ],
+          "PublishedDate": "2018-10-18T21:29:02.8Z",
+          "LastModifiedDate": "2019-10-31T01:15:13Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-20673",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.40-2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-20673",
+          "PkgRef": "pkg:deb/debian/binutils@2.40-2?arch=arm64\u0026distro=debian-12\u0026package-id=dfd149c75544d839",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libiberty: Integer overflow in demangle_template() function",
+          "Description": "The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, contains an integer overflow vulnerability (for \"Create an array for saving the template argument values\") that can trigger a heap-based buffer overflow, as demonstrated by nm.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-190",
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.securityfocus.com/bid/106454",
+            "https://access.redhat.com/security/cve/CVE-2018-20673",
+            "https://linux.oracle.com/cve/CVE-2018-20673.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4386.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-20673",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=24039",
+            "https://www.cve.org/CVERecord?id=CVE-2018-20673"
+          ],
+          "PublishedDate": "2019-01-04T18:29:00.21Z",
+          "LastModifiedDate": "2020-08-24T17:37:01.14Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-20712",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.40-2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-20712",
+          "PkgRef": "pkg:deb/debian/binutils@2.40-2?arch=arm64\u0026distro=debian-12\u0026package-id=dfd149c75544d839",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libiberty: heap-based buffer over-read in d_expression_1",
+          "Description": "A heap-based buffer over-read exists in the function d_expression_1 in cp-demangle.c in GNU libiberty, as distributed in GNU Binutils 2.31.1. A crafted input can cause segmentation faults, leading to denial-of-service, as demonstrated by c++filt.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 4.7
+            }
+          },
+          "References": [
+            "http://www.securityfocus.com/bid/106563",
+            "https://access.redhat.com/security/cve/CVE-2018-20712",
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=88629",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-20712",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=24043",
+            "https://support.f5.com/csp/article/K38336243",
+            "https://www.cve.org/CVERecord?id=CVE-2018-20712"
+          ],
+          "PublishedDate": "2019-01-15T00:29:00.257Z",
+          "LastModifiedDate": "2019-10-03T00:03:26.223Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-9996",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.40-2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-9996",
+          "PkgRef": "pkg:deb/debian/binutils@2.40-2?arch=arm64\u0026distro=debian-12\u0026package-id=dfd149c75544d839",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "binutils: Stack-overflow in libiberty/cplus-dem.c causes crash",
+          "Description": "An issue was discovered in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.30. Stack Exhaustion occurs in the C++ demangling functions provided by libiberty, and there are recursive stack frames: demangle_template_value_parm, demangle_integral_value, and demangle_expression.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-674"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://www.securityfocus.com/bid/103733",
+            "https://access.redhat.com/security/cve/CVE-2018-9996",
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=85304",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-9996",
+            "https://www.cve.org/CVERecord?id=CVE-2018-9996"
+          ],
+          "PublishedDate": "2018-04-10T22:29:00.353Z",
+          "LastModifiedDate": "2019-10-03T00:03:26.223Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-32256",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.40-2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-32256",
+          "PkgRef": "pkg:deb/debian/binutils@2.40-2?arch=arm64\u0026distro=debian-12\u0026package-id=dfd149c75544d839",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "binutils: stack-overflow issue in demangle_type in rust-demangle.c.",
+          "Description": "An issue was discovered in GNU libiberty, as distributed in GNU Binutils 2.36. It is a stack-overflow issue in demangle_type in rust-demangle.c.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-32256",
+            "https://bugs.launchpad.net/ubuntu/+source/binutils/+bug/1927070",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-32256",
+            "https://security.netapp.com/advisory/ntap-20230824-0013/",
+            "https://www.cve.org/CVERecord?id=CVE-2021-32256"
+          ],
+          "PublishedDate": "2023-07-18T14:15:11.61Z",
+          "LastModifiedDate": "2023-08-24T19:15:07.723Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-1972",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.40-2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-1972",
+          "PkgRef": "pkg:deb/debian/binutils@2.40-2?arch=arm64\u0026distro=debian-12\u0026package-id=dfd149c75544d839",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "binutils: Illegal memory access when accessing a zer0-lengthverdef table",
+          "Description": "A potential heap based buffer overflow was found in _bfd_elf_slurp_version_tables() in bfd/elf.c. This may lead to loss of availability.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-119"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 2.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-1972",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2185646",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-1972",
+            "https://security.gentoo.org/glsa/202309-15",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=30285",
+            "https://sourceware.org/git/?p=binutils-gdb.git;a=blobdiff;f=bfd/elf.c;h=185028cbd97ae0901c4276c8a4787b12bb75875a;hp=027d01437352555bc4ac0717cb0486c751a7775d;hb=c22d38baefc5a7a1e1f5cdc9dbb556b1f0ec5c57;hpb=f2f9bde5cde7ff34ed0a4c4682a211d402aa1086",
+            "https://ubuntu.com/security/notices/USN-6101-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-1972"
+          ],
+          "PublishedDate": "2023-05-17T22:15:10.827Z",
+          "LastModifiedDate": "2023-09-30T10:15:10.417Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2016-2781",
+          "PkgName": "coreutils",
+          "InstalledVersion": "9.1-1",
+          "Status": "will_not_fix",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-2781",
+          "PkgRef": "pkg:deb/debian/coreutils@9.1-1?arch=arm64\u0026distro=debian-12\u0026package-id=929577aca9d8ae1e",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "coreutils: Non-privileged session can escape to the parent session in chroot",
+          "Description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+              "V2Score": 2.1,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V2Score": 6.2,
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "http://seclists.org/oss-sec/2016/q1/452",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+            "https://access.redhat.com/security/cve/CVE-2016-2781",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+            "https://lore.kernel.org/patchwork/patch/793178/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+            "https://www.cve.org/CVERecord?id=CVE-2016-2781"
+          ],
+          "PublishedDate": "2017-02-07T15:59:00.333Z",
+          "LastModifiedDate": "2023-11-07T02:32:03.347Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2017-18018",
+          "PkgName": "coreutils",
+          "InstalledVersion": "9.1-1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-18018",
+          "PkgRef": "pkg:deb/debian/coreutils@9.1-1?arch=arm64\u0026distro=debian-12\u0026package-id=929577aca9d8ae1e",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "coreutils: race condition vulnerability in chown and chgrp",
+          "Description": "In GNU Coreutils through 8.29, chown-core.c in chown and chgrp does not prevent replacement of a plain file with a symlink during use of the POSIX \"-R -L\" options, which allows local users to modify the ownership of arbitrary files by leveraging a race condition.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-362"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 1.9,
+              "V3Score": 4.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:L",
+              "V3Score": 4.2
+            }
+          },
+          "References": [
+            "http://lists.gnu.org/archive/html/coreutils/2017-12/msg00045.html",
+            "https://access.redhat.com/security/cve/CVE-2017-18018",
+            "https://nvd.nist.gov/vuln/detail/CVE-2017-18018",
+            "https://www.cve.org/CVERecord?id=CVE-2017-18018"
+          ],
+          "PublishedDate": "2018-01-04T04:29:00.19Z",
+          "LastModifiedDate": "2018-01-19T15:46:46.05Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2398",
+          "PkgName": "curl",
+          "InstalledVersion": "7.88.1-10+deb12u5",
+          "Status": "affected",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2398",
+          "PkgRef": "pkg:deb/debian/curl@7.88.1-10+deb12u5?arch=arm64\u0026distro=debian-12\u0026package-id=7e08afec15e54319",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "curl: HTTP/2 push headers memory-leak",
+          "Description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2398",
+            "https://curl.se/docs/CVE-2024-2398.html",
+            "https://curl.se/docs/CVE-2024-2398.json",
+            "https://hackerone.com/reports/2402845",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GMD6UYKCCRCYETWQZUJ65ZRFULT6SHLI/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2398",
+            "https://ubuntu.com/security/notices/USN-6718-1",
+            "https://ubuntu.com/security/notices/USN-6718-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2398"
+          ],
+          "PublishedDate": "2024-03-27T08:15:41.283Z",
+          "LastModifiedDate": "2024-04-19T23:15:10.867Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2004",
+          "PkgName": "curl",
+          "InstalledVersion": "7.88.1-10+deb12u5",
+          "Status": "affected",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2004",
+          "PkgRef": "pkg:deb/debian/curl@7.88.1-10+deb12u5?arch=arm64\u0026distro=debian-12\u0026package-id=7e08afec15e54319",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "curl: Usage of disabled protocol",
+          "Description": "When a protocol selection parameter option disables all protocols without adding any then the default set of protocols would remain in the allowed set due to an error in the logic for removing protocols. The below command would perform a request to curl.se with a plaintext protocol which has been explicitly disabled.      curl --proto -all,-http http://curl.se  The flaw is only present if the set of selected protocols disables the entire set of available protocols, in itself a command with no practical use and therefore unlikely to be encountered in real situations. The curl security team has thus assessed this to be low severity bug.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2004",
+            "https://curl.se/docs/CVE-2024-2004.html",
+            "https://curl.se/docs/CVE-2024-2004.json",
+            "https://hackerone.com/reports/2384833",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GMD6UYKCCRCYETWQZUJ65ZRFULT6SHLI/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2004",
+            "https://ubuntu.com/security/notices/USN-6718-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2004"
+          ],
+          "PublishedDate": "2024-03-27T08:15:41.173Z",
+          "LastModifiedDate": "2024-04-19T23:15:10.81Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2379",
+          "PkgName": "curl",
+          "InstalledVersion": "7.88.1-10+deb12u5",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2379",
+          "PkgRef": "pkg:deb/debian/curl@7.88.1-10+deb12u5?arch=arm64\u0026distro=debian-12\u0026package-id=7e08afec15e54319",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "curl: QUIC certificate check bypass with wolfSSL",
+          "Description": "libcurl skips the certificate verification for a QUIC connection under certain conditions, when built to use wolfSSL. If told to use an unknown/bad cipher or curve, the error path accidentally skips the verification and returns OK, thus ignoring any certificate problems.",
+          "Severity": "LOW",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 5.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2379",
+            "https://curl.se/docs/CVE-2024-2379.html",
+            "https://curl.se/docs/CVE-2024-2379.json",
+            "https://hackerone.com/reports/2410774",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2379",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2379"
+          ],
+          "PublishedDate": "2024-03-27T08:15:41.23Z",
+          "LastModifiedDate": "2024-03-27T12:29:30.307Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-4039",
+          "PkgName": "gcc-12",
+          "InstalledVersion": "12.2.0-14",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-4039",
+          "PkgRef": "pkg:deb/debian/gcc-12@12.2.0-14?arch=arm64\u0026distro=debian-12\u0026package-id=99ce21f5ed45f88d",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "gcc: -fstack-protector fails to guard dynamic stack allocations on ARM64",
+          "Description": "\n\n**DISPUTED**A failure in the -fstack-protector feature in GCC-based toolchains \nthat target AArch64 allows an attacker to exploit an existing buffer \noverflow in dynamically-sized local variables in your application \nwithout this being detected. This stack-protector failure only applies \nto C99-style dynamically-sized local variables or those created using \nalloca(). The stack-protector operates as intended for statically-sized \nlocal variables.\n\nThe default behavior when the stack-protector \ndetects an overflow is to terminate your application, resulting in \ncontrolled loss of availability. An attacker who can exploit a buffer \noverflow without triggering the stack-protector might be able to change \nprogram flow control to cause an uncontrolled loss of availability or to\n go further and affect confidentiality or integrity. NOTE: The GCC project argues that this is a missed hardening bug and not a vulnerability by itself.\n\n\n\n\n\n",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-693"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 4.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-4039",
+            "https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64",
+            "https://gcc.gnu.org/git/?p=gcc.git;a=blob_plain;f=SECURITY.txt",
+            "https://gcc.gnu.org/pipermail/gcc-patches/2023-October/634066.html",
+            "https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf",
+            "https://inbox.sourceware.org/gcc-patches/46cfa37b-56eb-344d-0745-e0d35393392d@gotplt.org",
+            "https://linux.oracle.com/cve/CVE-2023-4039.html",
+            "https://linux.oracle.com/errata/ELSA-2023-28766.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-4039",
+            "https://rtx.meta.security/mitigation/2023/09/12/CVE-2023-4039.html",
+            "https://www.cve.org/CVERecord?id=CVE-2023-4039"
+          ],
+          "PublishedDate": "2023-09-13T09:15:15.69Z",
+          "LastModifiedDate": "2024-02-19T23:15:07.68Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-27943",
+          "PkgName": "gcc-12",
+          "InstalledVersion": "12.2.0-14",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27943",
+          "PkgRef": "pkg:deb/debian/gcc-12@12.2.0-14?arch=arm64\u0026distro=debian-12\u0026package-id=99ce21f5ed45f88d",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows stack exhaustion in demangle_const",
+          "Description": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-674"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-27943",
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=105039",
+            "https://gcc.gnu.org/git/gitweb.cgi?p=gcc.git;h=1a770b01ef415e114164b6151d1e55acdee09371",
+            "https://gcc.gnu.org/git/gitweb.cgi?p=gcc.git;h=9234cdca6ee88badfc00297e72f13dac4e540c79",
+            "https://gcc.gnu.org/git/gitweb.cgi?p=gcc.git;h=fc968115a742d9e4674d9725ce9c2106b91b6ead",
+            "https://gcc.gnu.org/pipermail/gcc-patches/2022-March/592244.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/H424YXGW7OKXS2NCAP35OP6Y4P4AW6VG/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-27943",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=28995",
+            "https://www.cve.org/CVERecord?id=CVE-2022-27943"
+          ],
+          "PublishedDate": "2022-03-26T13:15:07.9Z",
+          "LastModifiedDate": "2023-11-07T03:45:32.64Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-25652",
+          "PkgName": "git",
+          "InstalledVersion": "1:2.39.2-1.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-25652",
+          "PkgRef": "pkg:deb/debian/git@1:2.39.2-1.1?arch=arm64\u0026distro=debian-12\u0026package-id=9f28958725937364",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "git: by feeding specially crafted input to `git apply --reject`, a path outside the working tree can be overwritten with partially controlled contents",
+          "Description": "Git is a revision control system. Prior to versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1, by feeding specially crafted input to `git apply --reject`, a path outside the working tree can be overwritten with partially controlled contents (corresponding to the rejected hunk(s) from the given patch). A fix is available in versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1. As a workaround, avoid using `git apply` with `--reject` when applying patches from an untrusted source. Use `git apply --stat` to inspect a patch before applying; avoid applying one that create a conflict where a link corresponding to the `*.rej` file exists.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-22"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/04/25/2",
+            "https://access.redhat.com/errata/RHSA-2023:3246",
+            "https://access.redhat.com/security/cve/CVE-2023-25652",
+            "https://bugzilla.redhat.com/2168160",
+            "https://bugzilla.redhat.com/2168161",
+            "https://bugzilla.redhat.com/2188333",
+            "https://bugzilla.redhat.com/2188337",
+            "https://bugzilla.redhat.com/2188338",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2168160",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2168161",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2188333",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2188337",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2188338",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22490",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23946",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25652",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25815",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29007",
+            "https://errata.almalinux.org/8/ALSA-2023-3246.html",
+            "https://errata.rockylinux.org/RLSA-2023:3246",
+            "https://github.com/git/git/commit/18e2b1cfc80990719275d7b08e6e50f3e8cbc902",
+            "https://github.com/git/git/commit/668f2d53613ac8fd373926ebe219f2c29112d93e",
+            "https://github.com/git/git/security/advisories/GHSA-2hvf-7c8p-28fx",
+            "https://linux.oracle.com/cve/CVE-2023-25652.html",
+            "https://linux.oracle.com/errata/ELSA-2023-3263.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BSXOGVVBJLYX26IAYX6PJSYQB36BREWH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PI7FZ4NNR5S5J5K6AMVQBH2JFP6NE4L7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RKOXOAZ42HLXHXTW6JZI4L5DAIYDTYCU/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YFZWGQKB6MM5MNF2DLFTD7KS2KWPICKL/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-25652",
+            "https://security.gentoo.org/glsa/202312-15",
+            "https://ubuntu.com/security/notices/USN-6050-1",
+            "https://ubuntu.com/security/notices/USN-6050-2",
+            "https://www.cve.org/CVERecord?id=CVE-2023-25652"
+          ],
+          "PublishedDate": "2023-04-25T20:15:09.933Z",
+          "LastModifiedDate": "2023-12-27T10:15:38.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-29007",
+          "PkgName": "git",
+          "InstalledVersion": "1:2.39.2-1.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-29007",
+          "PkgRef": "pkg:deb/debian/git@1:2.39.2-1.1?arch=arm64\u0026distro=debian-12\u0026package-id=9f28958725937364",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "git: arbitrary configuration injection when renaming or deleting a section from a configuration file",
+          "Description": "Git is a revision control system. Prior to versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1, a specially crafted `.gitmodules` file with submodule URLs that are longer than 1024 characters can used to exploit a bug in `config.c::git_config_copy_or_rename_section_in_file()`. This bug can be used to inject arbitrary configuration into a user's `$GIT_DIR/config` when attempting to remove the configuration section associated with that submodule. When the attacker injects configuration values which specify executables to run (such as `core.pager`, `core.editor`, `core.sshCommand`, etc.) this can lead to a remote code execution. A fix A fix is available in versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1. As a workaround, avoid running `git submodule deinit` on untrusted repositories or without prior inspection of any submodule sections in `$GIT_DIR/config`.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-74"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:3246",
+            "https://access.redhat.com/security/cve/CVE-2023-29007",
+            "https://bugzilla.redhat.com/2168160",
+            "https://bugzilla.redhat.com/2168161",
+            "https://bugzilla.redhat.com/2188333",
+            "https://bugzilla.redhat.com/2188337",
+            "https://bugzilla.redhat.com/2188338",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2168160",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2168161",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2188333",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2188337",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2188338",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22490",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23946",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25652",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25815",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29007",
+            "https://errata.almalinux.org/8/ALSA-2023-3246.html",
+            "https://errata.rockylinux.org/RLSA-2023:3246",
+            "https://github.com/git/git/blob/9ce9dea4e1c2419cca126d29fa7730baa078a11b/Documentation/RelNotes/2.30.9.txt",
+            "https://github.com/git/git/commit/528290f8c61222433a8cf02fb7cfffa8438432b4",
+            "https://github.com/git/git/security/advisories/GHSA-v48j-4xgg-4844",
+            "https://linux.oracle.com/cve/CVE-2023-29007.html",
+            "https://linux.oracle.com/errata/ELSA-2023-3263.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PI7FZ4NNR5S5J5K6AMVQBH2JFP6NE4L7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RKOXOAZ42HLXHXTW6JZI4L5DAIYDTYCU/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YFZWGQKB6MM5MNF2DLFTD7KS2KWPICKL/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-29007",
+            "https://security.gentoo.org/glsa/202312-15",
+            "https://ubuntu.com/security/notices/USN-6050-1",
+            "https://ubuntu.com/security/notices/USN-6050-2",
+            "https://www.cve.org/CVERecord?id=CVE-2023-29007"
+          ],
+          "PublishedDate": "2023-04-25T21:15:10.403Z",
+          "LastModifiedDate": "2024-02-01T15:37:02.59Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-1000021",
+          "PkgName": "git",
+          "InstalledVersion": "1:2.39.2-1.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-1000021",
+          "PkgRef": "pkg:deb/debian/git@1:2.39.2-1.1?arch=arm64\u0026distro=debian-12\u0026package-id=9f28958725937364",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "git: client prints server-sent ANSI escape codes to the terminal, allowing for unverified messages to potentially execute arbitrary commands",
+          "Description": "GIT version 2.15.1 and earlier contains a Input Validation Error vulnerability in Client that can result in problems including messing up terminal configuration to RCE. This attack appear to be exploitable via The user must interact with a malicious git server, (or have their traffic modified in a MITM attack).",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L",
+              "V3Score": 5
+            }
+          },
+          "References": [
+            "http://www.batterystapl.es/2018/01/security-implications-of-ansi-escape.html",
+            "https://access.redhat.com/security/cve/CVE-2018-1000021",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-1000021",
+            "https://public-inbox.org/git/20180205204312.GB104086@aiede.svl.corp.google.com/",
+            "https://www.cve.org/CVERecord?id=CVE-2018-1000021"
+          ],
+          "PublishedDate": "2018-02-09T23:29:00.557Z",
+          "LastModifiedDate": "2018-03-06T19:34:06.18Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-24975",
+          "PkgName": "git",
+          "InstalledVersion": "1:2.39.2-1.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-24975",
+          "PkgRef": "pkg:deb/debian/git@1:2.39.2-1.1?arch=arm64\u0026distro=debian-12\u0026package-id=9f28958725937364",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "git: The --mirror option for git leaks secret for deleted content, aka the \"GitBleed\"",
+          "Description": "The --mirror documentation for Git through 2.35.1 does not mention the availability of deleted content, aka the \"GitBleed\" issue. This could present a security risk if information-disclosure auditing processes rely on a clone operation without the --mirror option.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-668"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 4.3,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-24975",
+            "https://github.com/git/git/blob/2dc94da3744bfbbf145eca587a0f5ff480cc5867/Documentation/git-clone.txt#L185-L191",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-24975",
+            "https://www.cve.org/CVERecord?id=CVE-2022-24975",
+            "https://wwws.nightwatchcybersecurity.com/2022/02/11/gitbleed/"
+          ],
+          "PublishedDate": "2022-02-11T20:15:07.507Z",
+          "LastModifiedDate": "2022-02-22T20:19:06.513Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-25815",
+          "PkgName": "git",
+          "InstalledVersion": "1:2.39.2-1.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-25815",
+          "PkgRef": "pkg:deb/debian/git@1:2.39.2-1.1?arch=arm64\u0026distro=debian-12\u0026package-id=9f28958725937364",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "git: malicious placement of crafted messages when git was compiled with runtime prefix",
+          "Description": "In Git for Windows, the Windows port of Git, no localized messages are shipped with the installer. As a consequence, Git is expected not to localize messages at all, and skips the gettext initialization. However, due to a change in MINGW-packages, the `gettext()` function's implicit initialization no longer uses the runtime prefix but uses the hard-coded path `C:\\mingw64\\share\\locale` to look for localized messages. And since any authenticated user has the permission to create folders in `C:\\` (and since `C:\\mingw64` does not typically exist), it is possible for low-privilege users to place fake messages in that location where `git.exe` will pick them up in version 2.40.1.\n\nThis vulnerability is relatively hard to exploit and requires social engineering. For example, a legitimate message at the end of a clone could be maliciously modified to ask the user to direct their web browser to a malicious website, and the user might think that the message comes from Git and is legitimate. It does require local write access by the attacker, though, which makes this attack vector less likely. Version 2.40.1 contains a patch for this issue. Some workarounds are available. Do not work on a Windows machine with shared accounts, or alternatively create a `C:\\mingw64` folder and leave it empty. Users who have administrative rights may remove the permission to create folders in `C:\\`.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-134",
+            "CWE-22"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:L/A:N",
+              "V3Score": 2.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:L/A:N",
+              "V3Score": 2.2
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/04/25/2",
+            "https://access.redhat.com/errata/RHSA-2023:3246",
+            "https://access.redhat.com/security/cve/CVE-2023-25815",
+            "https://axcheron.github.io/exploit-101-format-strings/#writing-to-the-stack",
+            "https://bugzilla.redhat.com/2168160",
+            "https://bugzilla.redhat.com/2168161",
+            "https://bugzilla.redhat.com/2188333",
+            "https://bugzilla.redhat.com/2188337",
+            "https://bugzilla.redhat.com/2188338",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2168160",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2168161",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2188333",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2188337",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2188338",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22490",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23946",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25652",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25815",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29007",
+            "https://errata.almalinux.org/8/ALSA-2023-3246.html",
+            "https://errata.rockylinux.org/RLSA-2023:3246",
+            "https://github.com/git-for-windows/git/releases/tag/v2.40.1.windows.1",
+            "https://github.com/git-for-windows/git/security/advisories/GHSA-9w66-8mq8-5vm8",
+            "https://github.com/msys2/MINGW-packages/pull/10461",
+            "https://linux.oracle.com/cve/CVE-2023-25815.html",
+            "https://linux.oracle.com/errata/ELSA-2023-3246.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PI7FZ4NNR5S5J5K6AMVQBH2JFP6NE4L7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RKOXOAZ42HLXHXTW6JZI4L5DAIYDTYCU/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YFZWGQKB6MM5MNF2DLFTD7KS2KWPICKL/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-25815",
+            "https://pubs.opengroup.org/onlinepubs/9699919799/functions/printf.html",
+            "https://security.gentoo.org/glsa/202312-15",
+            "https://ubuntu.com/security/notices/USN-6050-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-25815"
+          ],
+          "PublishedDate": "2023-04-25T20:15:09.997Z",
+          "LastModifiedDate": "2023-12-27T10:15:38.557Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3610",
+          "VendorIDs": [
+            "DSA-5628-1"
+          ],
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "FixedVersion": "8:6.9.11.60+dfsg-1.6+deb12u1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3610",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: heap-based buffer overflow in ReadTIFFImage() in coders/tiff.c",
+          "Description": "A heap-based buffer overflow vulnerability was found in ImageMagick in versions prior to 7.0.11-14 in ReadTIFFImage() in coders/tiff.c. This issue is due to an incorrect setting of the pixel array size, which can lead to a crash and segmentation fault.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/05/29/4",
+            "http://www.openwall.com/lists/oss-security/2023/06/05/1",
+            "https://access.redhat.com/security/cve/CVE-2021-3610",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1973689",
+            "https://github.com/ImageMagick/ImageMagick/commit/930ff0d1a9bc42925a7856e9ea53f5fc9f318bf3",
+            "https://marc.info/?l=oss-security\u0026m=168538363229922",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-3610",
+            "https://ubuntu.com/security/notices/USN-6200-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-3610"
+          ],
+          "PublishedDate": "2022-02-24T19:15:09.213Z",
+          "LastModifiedDate": "2023-06-26T18:56:40.173Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-1115",
+          "VendorIDs": [
+            "DSA-5628-1"
+          ],
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "FixedVersion": "8:6.9.11.60+dfsg-1.6+deb12u1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1115",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: heap-buffer-overflow in PushShortPixel of quantum-private.h",
+          "Description": "A heap-buffer-overflow flaw was found in ImageMagick’s PushShortPixel() function of quantum-private.h file. This vulnerability is triggered when an attacker passes a specially crafted TIFF image file to ImageMagick for conversion, potentially leading to a denial of service.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-119"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-1115",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2067022",
+            "https://github.com/ImageMagick/ImageMagick/commit/c8718305f120293d8bf13724f12eed885d830b09",
+            "https://github.com/ImageMagick/ImageMagick/issues/4974",
+            "https://github.com/ImageMagick/ImageMagick6/commit/1f860f52bd8d58737ad883072203391096b30b51",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-1115",
+            "https://www.cve.org/CVERecord?id=CVE-2022-1115"
+          ],
+          "PublishedDate": "2022-08-29T15:15:10.297Z",
+          "LastModifiedDate": "2022-09-06T14:09:41.627Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-3213",
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3213",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: heap buffer overflow while processing a malformed TIFF file",
+          "Description": "A heap buffer overflow issue was found in ImageMagick. When an application processes a malformed TIFF file, it could lead to undefined behavior or a crash causing a denial of service.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-119"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-3213",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2126824",
+            "https://github.com/ImageMagick/ImageMagick/commit/30ccf9a0da1f47161b5935a95be854fe84e6c2a2",
+            "https://github.com/ImageMagick/ImageMagick6/commit/1aea203eb36409ce6903b9e41fe7cb70030e8750",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-3213",
+            "https://www.cve.org/CVERecord?id=CVE-2022-3213"
+          ],
+          "PublishedDate": "2022-09-19T18:15:09.907Z",
+          "LastModifiedDate": "2022-09-21T18:52:37.603Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-1289",
+          "VendorIDs": [
+            "DSA-5628-1"
+          ],
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "FixedVersion": "8:6.9.11.60+dfsg-1.6+deb12u1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-1289",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: Specially crafted SVG leads to segmentation fault and generate trash files in \"/tmp\", possible to leverage DoS",
+          "Description": "A vulnerability was discovered in ImageMagick where a specially created SVG file loads itself and causes a segmentation fault. This flaw allows a remote attacker to pass a specially crafted SVG file that leads to a segmentation fault, generating many trash files in \"/tmp,\" resulting in a denial of service. When ImageMagick crashes, it generates a lot of trash files. These trash files can be large if the SVG file contains many render actions. In a denial of service attack, if a remote attacker uploads an SVG file of size t, ImageMagick generates files of size 103*t. If an attacker uploads a 100M SVG, the server will generate about 10G.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-1289",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2176858",
+            "https://github.com/ImageMagick/ImageMagick/commit/c5b23cbf2119540725e6dc81f4deb25798ead6a4",
+            "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-j96m-mjp6-99xr",
+            "https://lists.debian.org/debian-lts-announce/2024/02/msg00007.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-1289",
+            "https://ubuntu.com/security/notices/USN-6200-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-1289"
+          ],
+          "PublishedDate": "2023-03-23T20:15:14.393Z",
+          "LastModifiedDate": "2024-02-22T11:15:07.98Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-1906",
+          "VendorIDs": [
+            "DSA-5628-1"
+          ],
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "FixedVersion": "8:6.9.11.60+dfsg-1.6+deb12u1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-1906",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: heap-based buffer overflow in ImportMultiSpectralQuantum() in MagickCore/quantum-import.c",
+          "Description": "A heap-based buffer overflow issue was discovered in ImageMagick's ImportMultiSpectralQuantum() function in MagickCore/quantum-import.c. An attacker could pass specially crafted file to convert, triggering an out-of-bounds read error, allowing an application to crash, resulting in a denial of service.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-122"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-1906",
+            "https://blog.agilehunt.com/blogs/security/cve-2023-1906-heap-based-buffer-overflow-in-imagemagick",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2185714",
+            "https://github.com/ImageMagick/ImageMagick/commit/d7a8bdd7bb33cf8e58bc01b4a4f2ea5466f8c6b3",
+            "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-35q2-86c7-9247",
+            "https://github.com/ImageMagick/ImageMagick6/commit/e30c693b37c3b41723f1469d1226a2c814ca443d",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/6655G3GPS42WQM32DJHUCZALI2URQSCO/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-1906",
+            "https://ubuntu.com/security/notices/USN-6200-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-1906"
+          ],
+          "PublishedDate": "2023-04-12T22:15:11.967Z",
+          "LastModifiedDate": "2023-11-07T04:05:19.457Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-34151",
+          "VendorIDs": [
+            "DSA-5628-1"
+          ],
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "FixedVersion": "8:6.9.11.60+dfsg-1.6+deb12u1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-34151",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: Undefined behaviors of casting double to size_t in svg, mvg and other coders",
+          "Description": "A vulnerability was found in ImageMagick. This security flaw ouccers as an undefined behaviors of casting double to size_t in svg, mvg and other coders (recurring bugs of CVE-2022-32546).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-34151",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2210657",
+            "https://github.com/ImageMagick/ImageMagick/issues/6341",
+            "https://lists.debian.org/debian-lts-announce/2024/02/msg00007.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/4UFQJCYJ23HWHNDOVKBHZQ7HCXXL6MM3/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/V2ZUHZXQ2C3JZYKPW4XHCMVVL467MA2V/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-34151",
+            "https://ubuntu.com/security/notices/USN-6200-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-34151"
+          ],
+          "PublishedDate": "2023-05-30T22:15:11Z",
+          "LastModifiedDate": "2024-02-22T11:15:08.5Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-3428",
+          "VendorIDs": [
+            "DSA-5628-1"
+          ],
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "FixedVersion": "8:6.9.11.60+dfsg-1.6+deb12u1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-3428",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: heap-buffer-overflow in coders/tiff.c",
+          "Description": "A heap-based buffer overflow vulnerability was found  in coders/tiff.c in ImageMagick. This issue may allow a local attacker to trick the user into opening a specially crafted file, resulting in an application crash and denial of service.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-122"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.2
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-3428",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2218369",
+            "https://github.com/ImageMagick/ImageMagick/commit/a531d28e31309676ce8168c3b6dbbb5374b78790",
+            "https://github.com/ImageMagick/ImageMagick6/commit/0d00400727170b0540a355a1bc52787bc7bcdea5",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-3428",
+            "https://ubuntu.com/security/notices/USN-6200-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-3428"
+          ],
+          "PublishedDate": "2023-10-04T19:15:10.277Z",
+          "LastModifiedDate": "2023-11-07T04:18:43.517Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5341",
+          "VendorIDs": [
+            "DSA-5628-1"
+          ],
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "FixedVersion": "8:6.9.11.60+dfsg-1.6+deb12u1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5341",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: Heap use-after-free in coders/bmp.c",
+          "Description": "A heap use-after-free flaw was found in coders/bmp.c in ImageMagick.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.2
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-5341",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2241774",
+            "https://github.com/ImageMagick/ImageMagick/commit/aa673b2e4defc7cad5bec16c4fc8324f71e531f1",
+            "https://lists.debian.org/debian-lts-announce/2024/02/msg00007.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LICYTADFJAFPZW3Y2MKNCJIUYODPAG4L/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YAULDP3GG5KI3XITQ5XSMRSILCBZS2VK/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5341",
+            "https://ubuntu.com/security/notices/USN-6621-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-5341"
+          ],
+          "PublishedDate": "2023-11-19T10:15:49.433Z",
+          "LastModifiedDate": "2024-02-22T11:15:08.65Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2005-0406",
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2005-0406",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "A design flaw in image processing software that modifies JPEG images m ...",
+          "Description": "A design flaw in image processing software that modifies JPEG images might not modify the original EXIF thumbnail, which could lead to an information leak of potentially sensitive visual information that had been removed from the main JPEG image.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-212"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 2.1,
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://seclists.org/lists/fulldisclosure/2005/Feb/0343.html",
+            "http://www.redteam-pentesting.de/advisories/rt-sa-2005-008.txt"
+          ],
+          "PublishedDate": "2005-02-14T05:00:00Z",
+          "LastModifiedDate": "2024-02-15T20:19:28.16Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2008-3134",
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2008-3134",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "GraphicsMagick/ImageMagick: multiple crash or DoS issues",
+          "Description": "Multiple unspecified vulnerabilities in GraphicsMagick before 1.2.4 allow remote attackers to cause a denial of service (crash, infinite loop, or memory consumption) via (a) unspecified vectors in the (1) AVI, (2) AVS, (3) DCM, (4) EPT, (5) FITS, (6) MTV, (7) PALM, (8) RLA, and (9) TGA decoder readers; and (b) the GetImageCharacteristics function in magick/image.c, as reachable from a crafted (10) PNG, (11) JPEG, (12) BMP, or (13) TIFF file.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-399"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V2Score": 5
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:N/I:N/A:P",
+              "V2Score": 1.9
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2008-10/msg00004.html",
+            "http://secunia.com/advisories/30879",
+            "http://secunia.com/advisories/32151",
+            "http://sourceforge.net/forum/forum.php?forum_id=841176",
+            "http://sourceforge.net/project/shownotes.php?release_id=610253",
+            "http://www.securityfocus.com/bid/30055",
+            "http://www.securitytracker.com/id?1020413",
+            "http://www.vupen.com/english/advisories/2008/1984/references",
+            "https://access.redhat.com/security/cve/CVE-2008-3134",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/43511",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/43513",
+            "https://nvd.nist.gov/vuln/detail/CVE-2008-3134",
+            "https://www.cve.org/CVERecord?id=CVE-2008-3134"
+          ],
+          "PublishedDate": "2008-07-10T23:41:00Z",
+          "LastModifiedDate": "2017-08-08T01:31:36.433Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2016-8678",
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-8678",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: Heap-buffer overflow in IsPixelMonochrome",
+          "Description": "The IsPixelMonochrome function in MagickCore/pixel-accessor.h in ImageMagick 7.0.3.0 allows remote attackers to cause a denial of service (out-of-bounds read and crash) via a crafted file.  NOTE: the vendor says \"This is a Q64 issue and we do not support Q64.\"",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V2Score": 4.3,
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2016/10/16/2",
+            "http://www.openwall.com/lists/oss-security/2016/12/08/18",
+            "http://www.securityfocus.com/bid/93599",
+            "https://access.redhat.com/security/cve/CVE-2016-8678",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1385694",
+            "https://github.com/ImageMagick/ImageMagick/issues/272",
+            "https://nvd.nist.gov/vuln/detail/CVE-2016-8678",
+            "https://www.cve.org/CVERecord?id=CVE-2016-8678"
+          ],
+          "PublishedDate": "2017-02-15T21:59:00.463Z",
+          "LastModifiedDate": "2017-02-22T19:12:37.503Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2017-11754",
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-11754",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: Memory leak in WritePICONImage function",
+          "Description": "The WritePICONImage function in coders/xpm.c in ImageMagick 7.0.6-4 allows remote attackers to cause a denial of service (memory leak) via a crafted file that is mishandled in an OpenPixelCache call.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-772"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2017-11754",
+            "https://github.com/ImageMagick/ImageMagick/issues/633",
+            "https://nvd.nist.gov/vuln/detail/CVE-2017-11754",
+            "https://www.cve.org/CVERecord?id=CVE-2017-11754"
+          ],
+          "PublishedDate": "2017-07-30T18:29:00.537Z",
+          "LastModifiedDate": "2019-10-03T00:03:26.223Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2017-11755",
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-11755",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: Memory leak in WritePICONImage function via mishandled AcquireSemaphoreInfo call",
+          "Description": "The WritePICONImage function in coders/xpm.c in ImageMagick 7.0.6-4 allows remote attackers to cause a denial of service (memory leak) via a crafted file that is mishandled in an AcquireSemaphoreInfo call.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-772"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2017-11755",
+            "https://github.com/ImageMagick/ImageMagick/issues/634",
+            "https://nvd.nist.gov/vuln/detail/CVE-2017-11755",
+            "https://www.cve.org/CVERecord?id=CVE-2017-11755"
+          ],
+          "PublishedDate": "2017-07-30T18:29:00.567Z",
+          "LastModifiedDate": "2019-10-03T00:03:26.223Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2017-7275",
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-7275",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: Memory allocation failure in AcquireMagickMemory (incomplete fix for  CVE-2016-8866)",
+          "Description": "The ReadPCXImage function in coders/pcx.c in ImageMagick 7.0.4.9 allows remote attackers to cause a denial of service (attempted large memory allocation and application crash) via a crafted file. NOTE: this vulnerability exists because of an incomplete fix for CVE-2016-8862 and CVE-2016-8866.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-119"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://www.securityfocus.com/bid/97166",
+            "https://access.redhat.com/security/cve/CVE-2017-7275",
+            "https://blogs.gentoo.org/ago/2017/03/27/imagemagick-memory-allocation-failure-in-acquiremagickmemory-memory-c-incomplete-fix-for-cve-2016-8862-and-cve-2016-8866/",
+            "https://github.com/ImageMagick/ImageMagick/issues/271",
+            "https://nvd.nist.gov/vuln/detail/CVE-2017-7275",
+            "https://www.cve.org/CVERecord?id=CVE-2017-7275"
+          ],
+          "PublishedDate": "2017-03-27T18:59:00.263Z",
+          "LastModifiedDate": "2017-03-30T01:59:02.237Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-15607",
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-15607",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: CPU Exhaustion via crafted input file",
+          "Description": "In ImageMagick 7.0.8-11 Q16, a tiny input file 0x50 0x36 0x36 0x36 0x36 0x4c 0x36 0x38 0x36 0x36 0x36 0x36 0x36 0x36 0x1f 0x35 0x50 0x00 can result in a hang of several minutes during which CPU and memory resources are consumed until ultimately an attempted large memory allocation fails. Remote attackers could leverage this vulnerability to cause a denial of service via a crafted file.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 7.1,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.securityfocus.com/bid/105137",
+            "https://access.redhat.com/security/cve/CVE-2018-15607",
+            "https://github.com/ImageMagick/ImageMagick/issues/1255",
+            "https://linux.oracle.com/cve/CVE-2018-15607.html",
+            "https://linux.oracle.com/errata/ELSA-2020-1180.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-15607",
+            "https://ubuntu.com/security/notices/USN-4034-1",
+            "https://usn.ubuntu.com/4034-1/",
+            "https://www.cve.org/CVERecord?id=CVE-2018-15607"
+          ],
+          "PublishedDate": "2018-08-21T15:29:00.213Z",
+          "LastModifiedDate": "2019-06-25T15:15:12.073Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-20311",
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20311",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: Division by zero in sRGBTransformImage() in MagickCore/colorspace.c",
+          "Description": "A flaw was found in ImageMagick in versions before 7.0.11, where a division by zero in sRGBTransformImage() in the MagickCore/colorspace.c may trigger undefined behavior via a crafted image file that is submitted by an attacker processed by an application using ImageMagick. The highest threat from this vulnerability is to system availability.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-369"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 7.8,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-20311",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1946739",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-20311",
+            "https://www.cve.org/CVERecord?id=CVE-2021-20311"
+          ],
+          "PublishedDate": "2021-05-11T23:15:08.81Z",
+          "LastModifiedDate": "2021-05-17T19:50:39.977Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-34152",
+          "PkgName": "imagemagick",
+          "InstalledVersion": "8:6.9.11.60+dfsg-1.6",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-34152",
+          "PkgRef": "pkg:deb/debian/imagemagick@8:6.9.11.60+dfsg-1.6?arch=arm64\u0026distro=debian-12\u0026package-id=ac9f293820dc2756",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ImageMagick: RCE (shell command injection) vulnerability in OpenBlob with --enable-pipes configured",
+          "Description": "A vulnerability was found in ImageMagick. This security flaw cause a remote code execution vulnerability in OpenBlob with --enable-pipes configured.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-78",
+            "CWE-20"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H",
+              "V3Score": 9.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-34152",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2210659",
+            "https://github.com/ImageMagick/ImageMagick/issues/6339",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/4UFQJCYJ23HWHNDOVKBHZQ7HCXXL6MM3/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/V2ZUHZXQ2C3JZYKPW4XHCMVVL467MA2V/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-34152",
+            "https://www.cve.org/CVERecord?id=CVE-2023-34152"
+          ],
+          "PublishedDate": "2023-05-30T22:15:11.07Z",
+          "LastModifiedDate": "2023-11-07T04:15:30.727Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2236",
+          "PkgName": "libgcrypt20",
+          "InstalledVersion": "1.10.1-3",
+          "Status": "affected",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2236",
+          "PkgRef": "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=arm64\u0026distro=debian-12\u0026package-id=6b22a736f954c671",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libgcrypt: vulnerable to Marvin Attack",
+          "Description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-208"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2236",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2268268",
+            "https://github.com/tomato42/marvin-toolkit/tree/master/example/libgcrypt",
+            "https://lists.gnupg.org/pipermail/gcrypt-devel/2024-March/005607.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2236",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2236"
+          ],
+          "PublishedDate": "2024-03-06T22:15:57.977Z",
+          "LastModifiedDate": "2024-03-07T13:52:27.11Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-6829",
+          "PkgName": "libgcrypt20",
+          "InstalledVersion": "1.10.1-3",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-6829",
+          "PkgRef": "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=arm64\u0026distro=debian-12\u0026package-id=6b22a736f954c671",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libgcrypt: ElGamal implementation doesn't have semantic security due to incorrectly encoded plaintexts possibly allowing to obtain sensitive information",
+          "Description": "cipher/elgamal.c in Libgcrypt through 1.8.2, when used to encrypt messages directly, improperly encodes plaintexts, which allows attackers to obtain sensitive information by reading ciphertext data (i.e., it does not have semantic security in face of a ciphertext-only attack). The Decisional Diffie-Hellman (DDH) assumption does not hold for Libgcrypt's ElGamal implementation.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2018-6829",
+            "https://github.com/weikengchen/attack-on-libgcrypt-elgamal",
+            "https://github.com/weikengchen/attack-on-libgcrypt-elgamal/wiki",
+            "https://lists.gnupg.org/pipermail/gcrypt-devel/2018-February/004394.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-6829",
+            "https://www.cve.org/CVERecord?id=CVE-2018-6829",
+            "https://www.oracle.com/security-alerts/cpujan2020.html"
+          ],
+          "PublishedDate": "2018-02-07T23:29:01.703Z",
+          "LastModifiedDate": "2020-01-15T20:15:18.557Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-25062",
+          "PkgName": "libxml2",
+          "InstalledVersion": "2.9.14+dfsg-1.3~deb12u1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-25062",
+          "PkgRef": "pkg:deb/debian/libxml2@2.9.14+dfsg-1.3~deb12u1?arch=arm64\u0026distro=debian-12\u0026package-id=f9171c3b0922a094",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libxml2: use-after-free in XMLReader",
+          "Description": "An issue was discovered in libxml2 before 2.11.7 and 2.12.x before 2.12.5. When using the XML Reader interface with DTD validation and XInclude expansion enabled, processing crafted XML documents can lead to an xmlValidatePopElement use-after-free.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-25062",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/604",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/tags",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-25062",
+            "https://ubuntu.com/security/notices/USN-6658-1",
+            "https://ubuntu.com/security/notices/USN-6658-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-25062"
+          ],
+          "PublishedDate": "2024-02-04T16:15:45.12Z",
+          "LastModifiedDate": "2024-02-13T00:40:40.503Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-39615",
+          "PkgName": "libxml2",
+          "InstalledVersion": "2.9.14+dfsg-1.3~deb12u1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-39615",
+          "PkgRef": "pkg:deb/debian/libxml2@2.9.14+dfsg-1.3~deb12u1?arch=arm64\u0026distro=debian-12\u0026package-id=f9171c3b0922a094",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libxml2: crafted xml can cause global buffer overflow",
+          "Description": "Xmlsoft Libxml2 v2.11.0 was discovered to contain an out-of-bounds read via the xmlSAX2StartElement() function at /libxml2/SAX2.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via supplying a crafted XML file. NOTE: the vendor's position is that the product does not support the legacy SAX1 interface with custom callbacks; there is a crash even without crafted input.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-119"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0119",
+            "https://access.redhat.com/security/cve/CVE-2023-39615",
+            "https://bugzilla.redhat.com/2235864",
+            "https://errata.almalinux.org/8/ALSA-2024-0119.html",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/535",
+            "https://linux.oracle.com/cve/CVE-2023-39615.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0119.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-39615",
+            "https://www.cve.org/CVERecord?id=CVE-2023-39615"
+          ],
+          "PublishedDate": "2023-08-29T17:15:12.527Z",
+          "LastModifiedDate": "2024-04-11T01:20:57.89Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-45322",
+          "PkgName": "libxml2",
+          "InstalledVersion": "2.9.14+dfsg-1.3~deb12u1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45322",
+          "PkgRef": "pkg:deb/debian/libxml2@2.9.14+dfsg-1.3~deb12u1?arch=arm64\u0026distro=debian-12\u0026package-id=f9171c3b0922a094",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libxml2: use-after-free in xmlUnlinkNode() in tree.c",
+          "Description": "libxml2 through 2.11.5 has a use-after-free that can only occur after a certain memory allocation fails. This occurs in xmlUnlinkNode in tree.c. NOTE: the vendor's position is \"I don't think these issues are critical enough to warrant a CVE ID ... because an attacker typically can't control when memory allocations fail.\"",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/10/06/5",
+            "https://access.redhat.com/security/cve/CVE-2023-45322",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/344",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/583",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-45322",
+            "https://www.cve.org/CVERecord?id=CVE-2023-45322"
+          ],
+          "PublishedDate": "2023-10-06T22:15:11.66Z",
+          "LastModifiedDate": "2024-04-11T01:21:55.82Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2008-1687",
+          "PkgName": "m4",
+          "InstalledVersion": "1.4.19-3",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2008-1687",
+          "PkgRef": "pkg:deb/debian/m4@1.4.19-3?arch=arm64\u0026distro=debian-12\u0026package-id=5ddbceaaca37720d",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "m4: unquoted output of maketemp and mkstemp",
+          "Description": "The (1) maketemp and (2) mkstemp builtin functions in GNU m4 before 1.4.11 do not quote their output when a file is created, which might allow context-dependent attackers to trigger a macro expansion, leading to unspecified use of an incorrect filename.",
+          "Severity": "LOW",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V2Score": 7.5
+            }
+          },
+          "References": [
+            "http://secunia.com/advisories/29671",
+            "http://secunia.com/advisories/29729",
+            "http://slackware.com/security/viewer.php?l=slackware-security\u0026y=2008\u0026m=slackware-security.510612",
+            "http://www.openwall.com/lists/oss-security/2008/04/07/1",
+            "http://www.openwall.com/lists/oss-security/2008/04/07/12",
+            "http://www.openwall.com/lists/oss-security/2008/04/07/3",
+            "http://www.openwall.com/lists/oss-security/2008/04/07/4",
+            "http://www.securityfocus.com/bid/28688",
+            "http://www.vupen.com/english/advisories/2008/1151/references",
+            "https://access.redhat.com/security/cve/CVE-2008-1687",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/41706",
+            "https://nvd.nist.gov/vuln/detail/CVE-2008-1687",
+            "https://www.cve.org/CVERecord?id=CVE-2008-1687"
+          ],
+          "PublishedDate": "2008-04-09T19:05:00Z",
+          "LastModifiedDate": "2017-08-08T01:30:22.073Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2008-1688",
+          "PkgName": "m4",
+          "InstalledVersion": "1.4.19-3",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2008-1688",
+          "PkgRef": "pkg:deb/debian/m4@1.4.19-3?arch=arm64\u0026distro=debian-12\u0026package-id=5ddbceaaca37720d",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "m4: code execution via -F argument",
+          "Description": "Unspecified vulnerability in GNU m4 before 1.4.11 might allow context-dependent attackers to execute arbitrary code, related to improper handling of filenames specified with the -F option.  NOTE: it is not clear when this issue crosses privilege boundaries.",
+          "Severity": "LOW",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V2Score": 7.5
+            }
+          },
+          "References": [
+            "http://osvdb.org/44272",
+            "http://secunia.com/advisories/29671",
+            "http://secunia.com/advisories/29729",
+            "http://slackware.com/security/viewer.php?l=slackware-security\u0026y=2008\u0026m=slackware-security.510612",
+            "http://www.openwall.com/lists/oss-security/2008/04/07/1",
+            "http://www.openwall.com/lists/oss-security/2008/04/07/3",
+            "http://www.securityfocus.com/bid/28688",
+            "http://www.vupen.com/english/advisories/2008/1151/references",
+            "https://access.redhat.com/security/cve/CVE-2008-1688",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/41704",
+            "https://nvd.nist.gov/vuln/detail/CVE-2008-1688",
+            "https://www.cve.org/CVERecord?id=CVE-2008-1688"
+          ],
+          "PublishedDate": "2008-04-09T19:05:00Z",
+          "LastModifiedDate": "2017-08-08T01:30:22.137Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5678",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.11-1~deb12u2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5678",
+          "PkgRef": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64\u0026distro=debian-12\u0026package-id=b62eb8c930b7adf7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "openssl: Generating excessively long X9.42 DH keys or checking excessively long X9.42 DH keys or parameters may be very slow",
+          "Description": "Issue summary: Generating excessively long X9.42 DH keys or checking\nexcessively long X9.42 DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_generate_key() to\ngenerate an X9.42 DH key may experience long delays.  Likewise, applications\nthat use DH_check_pub_key(), DH_check_pub_key_ex() or EVP_PKEY_public_check()\nto check an X9.42 DH key or X9.42 DH parameters may experience long delays.\nWhere the key or parameters that are being checked have been obtained from\nan untrusted source this may lead to a Denial of Service.\n\nWhile DH_check() performs all the necessary checks (as of CVE-2023-3817),\nDH_check_pub_key() doesn't make any of these checks, and is therefore\nvulnerable for excessively large P and Q parameters.\n\nLikewise, while DH_generate_key() performs a check for an excessively large\nP, it doesn't check for an excessively large Q.\n\nAn application that calls DH_generate_key() or DH_check_pub_key() and\nsupplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nDH_generate_key() and DH_check_pub_key() are also called by a number of\nother OpenSSL functions.  An application calling any of those other\nfunctions may similarly be affected.  The other functions affected by this\nare DH_check_pub_key_ex(), EVP_PKEY_public_check(), and EVP_PKEY_generate().\n\nAlso vulnerable are the OpenSSL pkey command line application when using the\n\"-pubcheck\" option, as well as the OpenSSL genpkey command line application.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n\n",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-754"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:7877",
+            "https://access.redhat.com/security/cve/CVE-2023-5678",
+            "https://bugzilla.redhat.com/2224962",
+            "https://bugzilla.redhat.com/2227852",
+            "https://bugzilla.redhat.com/2248616",
+            "https://errata.almalinux.org/8/ALSA-2023-7877.html",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=34efaef6c103d636ab507a0cc34dca4d3aecc055",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=710fee740904b6290fef0dd5536fbcedbc38ff0c",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=db925ae2e65d0d925adef429afc37f75bd1c2017",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ddeb4b6c6d527e54ce9a99cba785c0f7776e54b6",
+            "https://linux.oracle.com/cve/CVE-2023-5678.html",
+            "https://linux.oracle.com/errata/ELSA-2024-12056.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5678",
+            "https://security.netapp.com/advisory/ntap-20231130-0010/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://ubuntu.com/security/notices/USN-6632-1",
+            "https://ubuntu.com/security/notices/USN-6709-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-5678",
+            "https://www.openssl.org/news/secadv/20231106.txt"
+          ],
+          "PublishedDate": "2023-11-06T16:15:42.67Z",
+          "LastModifiedDate": "2023-11-30T22:15:09.723Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6129",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.11-1~deb12u2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6129",
+          "PkgRef": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64\u0026distro=debian-12\u0026package-id=b62eb8c930b7adf7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "openssl: POLY1305 MAC implementation corrupts vector registers on PowerPC",
+          "Description": "Issue summary: The POLY1305 MAC (message authentication code) implementation\ncontains a bug that might corrupt the internal state of applications running\non PowerPC CPU based platforms if the CPU provides vector instructions.\n\nImpact summary: If an attacker can influence whether the POLY1305 MAC\nalgorithm is used, the application state might be corrupted with various\napplication dependent consequences.\n\nThe POLY1305 MAC (message authentication code) implementation in OpenSSL for\nPowerPC CPUs restores the contents of vector registers in a different order\nthan they are saved. Thus the contents of some of these vector registers\nare corrupted when returning to the caller. The vulnerable code is used only\non newer PowerPC processors supporting the PowerISA 2.07 instructions.\n\nThe consequences of this kind of internal application state corruption can\nbe various - from no consequences, if the calling application does not\ndepend on the contents of non-volatile XMM registers at all, to the worst\nconsequences, where the attacker could get complete control of the application\nprocess. However unless the compiler uses the vector registers for storing\npointers, the most likely consequence, if any, would be an incorrect result\nof some application dependent calculations or a crash leading to a denial of\nservice.\n\nThe POLY1305 MAC algorithm is most frequently used as part of the\nCHACHA20-POLY1305 AEAD (authenticated encryption with associated data)\nalgorithm. The most common usage of this AEAD cipher is with TLS protocol\nversions 1.2 and 1.3. If this cipher is enabled on the server a malicious\nclient can influence whether this AEAD cipher is used. This implies that\nTLS server applications using OpenSSL can be potentially impacted. However\nwe are currently not aware of any concrete application that would be affected\nby this issue therefore we consider this a Low severity security issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6129",
+            "https://github.com/openssl/openssl/commit/050d26383d4e264966fb83428e72d5d48f402d35",
+            "https://github.com/openssl/openssl/commit/5b139f95c9a47a55a0c54100f3837b1eee942b04",
+            "https://github.com/openssl/openssl/commit/f3fc5808fe9ff74042d639839610d03b8fdcc015",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6129",
+            "https://security.netapp.com/advisory/ntap-20240216-0009/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6129",
+            "https://www.openssl.org/news/secadv/20240109.txt",
+            "https://www.openwall.com/lists/oss-security/2024/01/09/1"
+          ],
+          "PublishedDate": "2024-01-09T17:15:12.147Z",
+          "LastModifiedDate": "2024-02-16T13:15:09.91Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6237",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.11-1~deb12u2",
+          "Status": "affected",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6237",
+          "PkgRef": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64\u0026distro=debian-12\u0026package-id=b62eb8c930b7adf7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "openssl: Excessive time spent checking invalid RSA public keys",
+          "Description": "A flaw was found in OpenSSL. When the EVP_PKEY_public_check() function is called in RSA public keys, a computation is done to confirm that the RSA modulus, n, is composite. For valid RSA keys, n is a product of two or more large primes and this computation completes quickly. However, if n is a large prime, this computation takes a long time. An application that calls EVP_PKEY_public_check() and supplies an RSA key obtained from an untrusted source could be vulnerable to a Denial of Service attack.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6237",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6237",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6237",
+            "https://www.openssl.org/news/secadv/20240115.txt",
+            "https://www.openwall.com/lists/oss-security/2024/01/15/2"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2024-0727",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.11-1~deb12u2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-0727",
+          "PkgRef": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64\u0026distro=debian-12\u0026package-id=b62eb8c930b7adf7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "openssl: denial of service via null dereference",
+          "Description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-0727",
+            "https://github.com/alexcrichton/openssl-src-rs/commit/add20f73b6b42be7451af2e1044d4e0e778992b2",
+            "https://github.com/github/advisory-database/pull/3472",
+            "https://github.com/openssl/openssl/commit/09df4395b5071217b76dc7d3d2e630eb8c5a79c2",
+            "https://github.com/openssl/openssl/commit/775acfdbd0c6af9ac855f34969cdab0c0c90844a",
+            "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
+            "https://github.com/openssl/openssl/pull/23362",
+            "https://github.com/pyca/cryptography/commit/3519591d255d4506fbcd0d04037d45271903c64d",
+            "https://github.openssl.org/openssl/extended-releases/commit/03b3941d60c4bce58fab69a0c22377ab439bc0e8",
+            "https://github.openssl.org/openssl/extended-releases/commit/aebaa5883e31122b404e450732dc833dc9dee539",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-0727",
+            "https://security.netapp.com/advisory/ntap-20240208-0006",
+            "https://security.netapp.com/advisory/ntap-20240208-0006/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://ubuntu.com/security/notices/USN-6632-1",
+            "https://ubuntu.com/security/notices/USN-6709-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-0727",
+            "https://www.openssl.org/news/secadv/20240125.txt"
+          ],
+          "PublishedDate": "2024-01-26T09:15:07.637Z",
+          "LastModifiedDate": "2024-02-08T10:15:13.91Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2007-6755",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.11-1~deb12u2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2007-6755",
+          "PkgRef": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64\u0026distro=debian-12\u0026package-id=b62eb8c930b7adf7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "Dual_EC_DRBG: weak pseudo random number generator",
+          "Description": "The NIST SP 800-90A default statement of the Dual Elliptic Curve Deterministic Random Bit Generation (Dual_EC_DRBG) algorithm contains point Q constants with a possible relationship to certain \"skeleton key\" values, which might allow context-dependent attackers to defeat cryptographic protection mechanisms by leveraging knowledge of those values.  NOTE: this is a preliminary CVE for Dual_EC_DRBG; future research may provide additional details about point Q and associated attacks, and could potentially lead to a RECAST or REJECT of this CVE.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V2Score": 5.8
+            },
+            "redhat": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V2Score": 5.8
+            }
+          },
+          "References": [
+            "http://arstechnica.com/security/2013/09/stop-using-nsa-influence-code-in-our-product-rsa-tells-customers/",
+            "http://blog.cryptographyengineering.com/2013/09/rsa-warns-developers-against-its-own.html",
+            "http://blog.cryptographyengineering.com/2013/09/the-many-flaws-of-dualecdrbg.html",
+            "http://rump2007.cr.yp.to/15-shumow.pdf",
+            "http://stream.wsj.com/story/latest-headlines/SS-2-63399/SS-2-332655/",
+            "http://threatpost.com/in-wake-of-latest-crypto-revelations-everything-is-suspect",
+            "http://www.securityfocus.com/bid/63657",
+            "https://access.redhat.com/security/cve/CVE-2007-6755",
+            "https://nvd.nist.gov/vuln/detail/CVE-2007-6755",
+            "https://www.cve.org/CVERecord?id=CVE-2007-6755",
+            "https://www.schneier.com/blog/archives/2007/11/the_strange_sto.html"
+          ],
+          "PublishedDate": "2013-10-11T22:55:33.58Z",
+          "LastModifiedDate": "2022-11-01T14:44:55.093Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2010-0928",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.11-1~deb12u2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2010-0928",
+          "PkgRef": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64\u0026distro=debian-12\u0026package-id=b62eb8c930b7adf7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "openssl: RSA authentication weakness",
+          "Description": "OpenSSL 0.9.8i on the Gaisler Research LEON3 SoC on the Xilinx Virtex-II Pro FPGA uses a Fixed Width Exponentiation (FWE) algorithm for certain signature calculations, and does not verify the signature before providing it to a caller, which makes it easier for physically proximate attackers to determine the private key via a modified supply voltage for the microprocessor, related to a \"fault-based attack.\"",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-310"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:H/Au:N/C:C/I:N/A:N",
+              "V2Score": 4
+            }
+          },
+          "References": [
+            "http://rdist.root.org/2010/03/08/attacking-rsa-exponentiation-with-fault-injection/",
+            "http://www.eecs.umich.edu/~valeria/research/publications/DATE10RSA.pdf",
+            "http://www.networkworld.com/news/2010/030410-rsa-security-attack.html",
+            "http://www.osvdb.org/62808",
+            "http://www.theregister.co.uk/2010/03/04/severe_openssl_vulnerability/",
+            "https://access.redhat.com/security/cve/CVE-2010-0928",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/56750",
+            "https://nvd.nist.gov/vuln/detail/CVE-2010-0928",
+            "https://www.cve.org/CVERecord?id=CVE-2010-0928"
+          ],
+          "PublishedDate": "2010-03-05T19:30:00.797Z",
+          "LastModifiedDate": "2023-11-07T02:05:11.413Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2511",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.11-1~deb12u2",
+          "Status": "fix_deferred",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2511",
+          "PkgRef": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64\u0026distro=debian-12\u0026package-id=b62eb8c930b7adf7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "openssl: Unbounded memory growth with session handling in TLSv1.3",
+          "Description": "Issue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.",
+          "Severity": "LOW",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2511",
+            "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce",
+            "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d",
+            "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08",
+            "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2511",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2511",
+            "https://www.openssl.org/news/secadv/20240408.txt",
+            "https://www.openssl.org/news/vulnerabilities.html"
+          ],
+          "PublishedDate": "2024-04-08T14:15:07.66Z",
+          "LastModifiedDate": "2024-04-08T18:48:40.217Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2010-4651",
+          "PkgName": "patch",
+          "InstalledVersion": "2.7.6-7",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2010-4651",
+          "PkgRef": "pkg:deb/debian/patch@2.7.6-7?arch=arm64\u0026distro=debian-12\u0026package-id=d401b6f0462be82a",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "patch: directory traversal flaw allows for arbitrary file creation",
+          "Description": "Directory traversal vulnerability in util.c in GNU patch 2.6.1 and earlier allows user-assisted remote attackers to create or overwrite arbitrary files via a filename that is specified with a .. (dot dot) or full pathname, a related issue to CVE-2010-1679.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-22"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
+              "V2Score": 5.8
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+              "V2Score": 2.1
+            }
+          },
+          "References": [
+            "http://git.savannah.gnu.org/cgit/patch.git/commit/?id=685a78b6052f4df6eac6d625a545cfb54a6ac0e1",
+            "http://lists.apple.com/archives/security-announce/2011//Jun/msg00000.html",
+            "http://lists.fedoraproject.org/pipermail/package-announce/2011-March/055241.html",
+            "http://lists.fedoraproject.org/pipermail/package-announce/2011-March/055246.html",
+            "http://lists.gnu.org/archive/html/bug-patch/2010-12/msg00000.html",
+            "http://openwall.com/lists/oss-security/2011/01/05/10",
+            "http://openwall.com/lists/oss-security/2011/01/06/19",
+            "http://openwall.com/lists/oss-security/2011/01/06/20",
+            "http://openwall.com/lists/oss-security/2011/01/06/21",
+            "http://secunia.com/advisories/43663",
+            "http://secunia.com/advisories/43677",
+            "http://support.apple.com/kb/HT4723",
+            "http://www.securityfocus.com/bid/46768",
+            "http://www.vupen.com/english/advisories/2011/0600",
+            "https://access.redhat.com/security/cve/CVE-2010-4651",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=667529",
+            "https://nvd.nist.gov/vuln/detail/CVE-2010-4651",
+            "https://ubuntu.com/security/notices/USN-2651-1",
+            "https://www.cve.org/CVERecord?id=CVE-2010-4651"
+          ],
+          "PublishedDate": "2011-03-11T22:55:02.09Z",
+          "LastModifiedDate": "2016-11-28T19:07:24.393Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-6951",
+          "PkgName": "patch",
+          "InstalledVersion": "2.7.6-7",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-6951",
+          "PkgRef": "pkg:deb/debian/patch@2.7.6-7?arch=arm64\u0026distro=debian-12\u0026package-id=d401b6f0462be82a",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "patch: NULL pointer dereference in pch.c:intuit_diff_type() causes a crash",
+          "Description": "An issue was discovered in GNU patch through 2.7.6. There is a segmentation fault, associated with a NULL pointer dereference, leading to a denial of service in the intuit_diff_type function in pch.c, aka a \"mangled rename\" issue.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://www.securityfocus.com/bid/103044",
+            "https://access.redhat.com/security/cve/CVE-2018-6951",
+            "https://git.savannah.gnu.org/cgit/patch.git/commit/?id=f290f48a621867084884bfff87f8093c15195e6a",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-6951",
+            "https://savannah.gnu.org/bugs/index.php?53132",
+            "https://security.gentoo.org/glsa/201904-17",
+            "https://ubuntu.com/security/notices/USN-3624-1",
+            "https://usn.ubuntu.com/3624-1/",
+            "https://www.cve.org/CVERecord?id=CVE-2018-6951"
+          ],
+          "PublishedDate": "2018-02-13T19:29:00.51Z",
+          "LastModifiedDate": "2019-04-17T20:29:01.603Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-6952",
+          "PkgName": "patch",
+          "InstalledVersion": "2.7.6-7",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-6952",
+          "PkgRef": "pkg:deb/debian/patch@2.7.6-7?arch=arm64\u0026distro=debian-12\u0026package-id=d401b6f0462be82a",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "patch: Double free of memory in pch.c:another_hunk() causes a crash",
+          "Description": "A double free exists in the another_hunk function in pch.c in GNU patch through 2.7.6.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-415"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://www.securityfocus.com/bid/103047",
+            "https://access.redhat.com/errata/RHSA-2019:2033",
+            "https://access.redhat.com/security/cve/CVE-2018-6952",
+            "https://linux.oracle.com/cve/CVE-2018-6952.html",
+            "https://linux.oracle.com/errata/ELSA-2019-2033.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-6952",
+            "https://savannah.gnu.org/bugs/index.php?53133",
+            "https://security.gentoo.org/glsa/201904-17",
+            "https://www.cve.org/CVERecord?id=CVE-2018-6952"
+          ],
+          "PublishedDate": "2018-02-13T19:29:00.573Z",
+          "LastModifiedDate": "2019-04-17T20:29:01.727Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-45261",
+          "PkgName": "patch",
+          "InstalledVersion": "2.7.6-7",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-45261",
+          "PkgRef": "pkg:deb/debian/patch@2.7.6-7?arch=arm64\u0026distro=debian-12\u0026package-id=d401b6f0462be82a",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "patch: Invalid Pointer via another_hunk function",
+          "Description": "An Invalid Pointer vulnerability exists in GNU patch 2.7 via the another_hunk function, which causes a Denial of Service.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-763"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-45261",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-45261",
+            "https://savannah.gnu.org/bugs/?61685",
+            "https://www.cve.org/CVERecord?id=CVE-2021-45261"
+          ],
+          "PublishedDate": "2021-12-22T18:15:08.1Z",
+          "LastModifiedDate": "2021-12-28T14:24:34.243Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-31484",
+          "PkgName": "perl",
+          "InstalledVersion": "5.36.0-7+deb12u1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-31484",
+          "PkgRef": "pkg:deb/debian/perl@5.36.0-7+deb12u1?arch=arm64\u0026distro=debian-12\u0026package-id=85cb87dfaa778feb",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "perl: CPAN.pm does not verify TLS certificates when downloading distributions over HTTPS",
+          "Description": "CPAN.pm before 2.35 does not verify TLS certificates when downloading distributions over HTTPS.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/04/29/1",
+            "http://www.openwall.com/lists/oss-security/2023/05/03/3",
+            "http://www.openwall.com/lists/oss-security/2023/05/03/5",
+            "http://www.openwall.com/lists/oss-security/2023/05/07/2",
+            "https://access.redhat.com/errata/RHSA-2023:6539",
+            "https://access.redhat.com/security/cve/CVE-2023-31484",
+            "https://blog.hackeriet.no/perl-http-tiny-insecure-tls-default-affects-cpan-modules/",
+            "https://bugzilla.redhat.com/2218667",
+            "https://errata.almalinux.org/9/ALSA-2023-6539.html",
+            "https://github.com/andk/cpanpm/commit/9c98370287f4e709924aee7c58ef21c85289a7f0 (2.35-TRIAL)",
+            "https://github.com/andk/cpanpm/pull/175",
+            "https://linux.oracle.com/cve/CVE-2023-31484.html",
+            "https://linux.oracle.com/errata/ELSA-2023-6539.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BM6UW55CNFUTNGD5ZRKGUKKKFDJGMFHL/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LEGCEOKFJVBJ2QQ6S2H4NAEWTUERC7SB/",
+            "https://metacpan.org/dist/CPAN/changes",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-31484",
+            "https://ubuntu.com/security/notices/USN-6112-1",
+            "https://ubuntu.com/security/notices/USN-6112-2",
+            "https://www.cve.org/CVERecord?id=CVE-2023-31484",
+            "https://www.openwall.com/lists/oss-security/2023/04/18/14"
+          ],
+          "PublishedDate": "2023-04-29T00:15:09Z",
+          "LastModifiedDate": "2023-11-07T04:14:19.41Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2011-4116",
+          "PkgName": "perl",
+          "InstalledVersion": "5.36.0-7+deb12u1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2011-4116",
+          "PkgRef": "pkg:deb/debian/perl@5.36.0-7+deb12u1?arch=arm64\u0026distro=debian-12\u0026package-id=85cb87dfaa778feb",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "perl: File::Temp insecure temporary file handling",
+          "Description": "_is_safe in the File::Temp module for Perl does not properly handle symlinks.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:N/I:P/A:N",
+              "V2Score": 1.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2011/11/04/2",
+            "http://www.openwall.com/lists/oss-security/2011/11/04/4",
+            "https://access.redhat.com/security/cve/CVE-2011-4116",
+            "https://github.com/Perl-Toolchain-Gang/File-Temp/issues/14",
+            "https://nvd.nist.gov/vuln/detail/CVE-2011-4116",
+            "https://rt.cpan.org/Public/Bug/Display.html?id=69106",
+            "https://seclists.org/oss-sec/2011/q4/238",
+            "https://www.cve.org/CVERecord?id=CVE-2011-4116"
+          ],
+          "PublishedDate": "2020-01-31T18:15:11.343Z",
+          "LastModifiedDate": "2020-02-05T22:10:26.29Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-31486",
+          "PkgName": "perl",
+          "InstalledVersion": "5.36.0-7+deb12u1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-31486",
+          "PkgRef": "pkg:deb/debian/perl@5.36.0-7+deb12u1?arch=arm64\u0026distro=debian-12\u0026package-id=85cb87dfaa778feb",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "http-tiny: insecure TLS cert default",
+          "Description": "HTTP::Tiny before 0.083, a Perl core module since 5.13.9 and available standalone on CPAN, has an insecure default TLS configuration where users must opt in to verify certificates.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/04/29/1",
+            "http://www.openwall.com/lists/oss-security/2023/05/03/3",
+            "http://www.openwall.com/lists/oss-security/2023/05/03/5",
+            "http://www.openwall.com/lists/oss-security/2023/05/07/2",
+            "https://access.redhat.com/errata/RHSA-2023:7174",
+            "https://access.redhat.com/security/cve/CVE-2023-31486",
+            "https://blog.hackeriet.no/perl-http-tiny-insecure-tls-default-affects-cpan-modules/",
+            "https://bugzilla.redhat.com/2228392",
+            "https://errata.almalinux.org/8/ALSA-2023-7174.html",
+            "https://github.com/chansen/p5-http-tiny/pull/153",
+            "https://hackeriet.github.io/cpan-http-tiny-overview/",
+            "https://linux.oracle.com/cve/CVE-2023-31486.html",
+            "https://linux.oracle.com/errata/ELSA-2023-7174.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-31486",
+            "https://www.cve.org/CVERecord?id=CVE-2023-31486",
+            "https://www.openwall.com/lists/oss-security/2023/04/18/14",
+            "https://www.openwall.com/lists/oss-security/2023/05/03/4",
+            "https://www.reddit.com/r/perl/comments/111tadi/psa_httptiny_disabled_ssl_verification_by_default/"
+          ],
+          "PublishedDate": "2023-04-29T00:15:09.083Z",
+          "LastModifiedDate": "2023-06-21T18:19:52.937Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-4016",
+          "PkgName": "procps",
+          "InstalledVersion": "2:4.0.2-3",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-4016",
+          "PkgRef": "pkg:deb/debian/procps@2:4.0.2-3?arch=arm64\u0026distro=debian-12\u0026package-id=f50a7edc82bdad45",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "procps: ps buffer overflow",
+          "Description": "Under some circumstances, this weakness allows a user who has access to run the “ps” utility on a machine, the ability to write almost unlimited amounts of unfiltered data into the process heap.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-122"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:7187",
+            "https://access.redhat.com/security/cve/CVE-2023-4016",
+            "https://bugzilla.redhat.com/2228494",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2228494",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4016",
+            "https://errata.almalinux.org/8/ALSA-2023-7187.html",
+            "https://errata.rockylinux.org/RLSA-2023:7187",
+            "https://gitlab.com/procps-ng/procps",
+            "https://gitlab.com/procps-ng/procps/-/commit/2c933ecba3bb1d3041a5a7a53a7b4078a6003413",
+            "https://gitlab.com/procps-ng/procps/-/issues/297",
+            "https://linux.oracle.com/cve/CVE-2023-4016.html",
+            "https://linux.oracle.com/errata/ELSA-2023-7187.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SUETRRT24OFGPYK6ACPM5VUGHNKH5CQ5/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-4016",
+            "https://ubuntu.com/security/notices/USN-6477-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-4016",
+            "https://www.freelists.org/post/procps/ps-buffer-overflow-CVE-20234016"
+          ],
+          "PublishedDate": "2023-08-02T05:15:09.85Z",
+          "LastModifiedDate": "2023-12-15T18:19:03.787Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-24329",
+          "PkgName": "python3.11",
+          "InstalledVersion": "3.11.2-6",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-24329",
+          "PkgRef": "pkg:deb/debian/python3.11@3.11.2-6?arch=arm64\u0026distro=debian-12\u0026package-id=09edff55d0b4bae9",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "python: urllib.parse url blocklisting bypass",
+          "Description": "An issue in the urllib.parse component of Python before 3.11.4 allows attackers to bypass blocklisting methods by supplying a URL that starts with blank characters.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:3811",
+            "https://access.redhat.com/security/cve/CVE-2023-24329",
+            "https://bugzilla.redhat.com/2173917",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2173917",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-24329",
+            "https://errata.almalinux.org/8/ALSA-2023-3811.html",
+            "https://errata.rockylinux.org/RLSA-2023:3595",
+            "https://github.com/python/cpython/issues/102153",
+            "https://github.com/python/cpython/pull/99421",
+            "https://github.com/python/cpython/pull/99446 (backport for 3.11 branch)",
+            "https://linux.oracle.com/cve/CVE-2023-24329.html",
+            "https://linux.oracle.com/errata/ELSA-2023-3811.html",
+            "https://lists.debian.org/debian-lts-announce/2023/09/msg00022.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/6PEVICI7YNGGMSL3UCMWGE66QFLATH72/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DSL6NSOAXWBJJ67XPLSSC74MNKZF3BBO/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/EM2XLZSTXG44TMFXF4E6VTGKR2MQCW3G/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/F2NY75GFDZ5T6YPN44D3VMFT5SUVTOTG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/GR5US3BYILYJ4SKBV6YBNPRUBAL5P2CN/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/H23OSKC6UG6IWOQAUPW74YUHWRWVXJP7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/JZTLGV2HYFF4AMYJL25VDIGAIHCU7UPA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LWC4WGXER5P6Q75RFGL7QUTPP3N5JR7T/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/MZEHSXSCMA4WWQKXT6QV7AAR6SWNZ2VP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/O5SP4RT3RRS434ZS2HQKQJ3VZW7YPKYR/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/OHHJHJRLEF3TDT2K3676CAUVRDD4CCMR/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PEUN6T22UJFXR7J5F6UUHCXXPKJ2DVHI/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PURM5CFDABEWAIWZFD2MQ7ZJGCPYSQ44/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/Q3J5N24ECS4B6MJDRO6UAYU6GPLYBDCL/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QRQHN7RWJQJHYP6E5EKESOYP5VDSHZG4/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/RA2MBEEES6L46OD64OBSVUUMGKNGMOWW/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/T4IDB5OAR5Y4UK3HLMZBW4WEL2B7YFMJ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/TZH26JGNZ5XYPZ5SAU3NKSBSPRE5OHTG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/U2MZOJYGFCB5PPT6AKMAU72N7QOYWLBP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UONZWLB4QVLQIY5CPDLEUEKH6WX4VQMC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WTOAUJNDWZDRWVSXJ354AYZYKRMT56HU/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-24329",
+            "https://pointernull.com/security/python-url-parse-problem.html",
+            "https://security.netapp.com/advisory/ntap-20230324-0004/",
+            "https://ubuntu.com/security/notices/USN-5888-1",
+            "https://ubuntu.com/security/notices/USN-5960-1",
+            "https://ubuntu.com/security/notices/USN-6139-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-24329",
+            "https://www.kb.cert.org/vuls/id/127587"
+          ],
+          "PublishedDate": "2023-02-17T15:15:12.243Z",
+          "LastModifiedDate": "2023-11-07T04:08:25.79Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-41105",
+          "PkgName": "python3.11",
+          "InstalledVersion": "3.11.2-6",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-41105",
+          "PkgRef": "pkg:deb/debian/python3.11@3.11.2-6?arch=arm64\u0026distro=debian-12\u0026package-id=09edff55d0b4bae9",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "python: file path truncation at \\0 characters",
+          "Description": "An issue was discovered in Python 3.11 through 3.11.4. If a path containing '\\0' bytes is passed to os.path.normpath(), the path will be truncated unexpectedly at the first '\\0' byte. There are plausible cases in which an application would have rejected a filename for security reasons in Python 3.10.x or earlier, but that filename is no longer rejected in Python 3.11.x.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-426"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:7024",
+            "https://access.redhat.com/security/cve/CVE-2023-41105",
+            "https://bugzilla.redhat.com/2235795",
+            "https://bugzilla.redhat.com/263261",
+            "https://errata.almalinux.org/8/ALSA-2023-7024.html",
+            "https://github.com/python/cpython/issues/106242",
+            "https://github.com/python/cpython/pull/107981",
+            "https://github.com/python/cpython/pull/107982",
+            "https://github.com/python/cpython/pull/107983",
+            "https://linux.oracle.com/cve/CVE-2023-41105.html",
+            "https://linux.oracle.com/errata/ELSA-2023-7024.html",
+            "https://mail.python.org/archives/list/security-announce%40python.org/thread/D6CDW3ZZC5D444YGL3VQUY6D4ECMCQLD/",
+            "https://mail.python.org/archives/list/security-announce@python.org/thread/D6CDW3ZZC5D444YGL3VQUY6D4ECMCQLD/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-41105",
+            "https://security.netapp.com/advisory/ntap-20231006-0015/",
+            "https://ubuntu.com/security/notices/USN-6547-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-41105"
+          ],
+          "PublishedDate": "2023-08-23T07:15:08.59Z",
+          "LastModifiedDate": "2023-11-07T04:20:53.35Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6597",
+          "PkgName": "python3.11",
+          "InstalledVersion": "3.11.2-6",
+          "Status": "affected",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6597",
+          "PkgRef": "pkg:deb/debian/python3.11@3.11.2-6?arch=arm64\u0026distro=debian-12\u0026package-id=09edff55d0b4bae9",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "An issue was found in the CPython `tempfile.TemporaryDirectory` class  ...",
+          "Description": "An issue was found in the CPython `tempfile.TemporaryDirectory` class affecting versions 3.12.1, 3.11.7, 3.10.13, 3.9.18, and 3.8.18 and prior.\n\nThe tempfile.TemporaryDirectory class would dereference symlinks during cleanup of permissions-related errors. This means users which can run privileged programs are potentially able to modify permissions of files referenced by symlinks in some circumstances.\n",
+          "Severity": "HIGH",
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 7.8
+            }
+          },
+          "References": [
+            "https://github.com/python/cpython/commit/02a9259c717738dfe6b463c44d7e17f2b6d2cb3a",
+            "https://github.com/python/cpython/commit/5585334d772b253a01a6730e8202ffb1607c3d25",
+            "https://github.com/python/cpython/commit/6ceb8aeda504b079fef7a57b8d81472f15cdd9a5",
+            "https://github.com/python/cpython/commit/81c16cd94ec38d61aa478b9a452436dc3b1b524d",
+            "https://github.com/python/cpython/commit/8eaeefe49d179ca4908d052745e3bb8b6f238f82",
+            "https://github.com/python/cpython/commit/d54e22a669ae6e987199bb5d2c69bb5a46b0083b",
+            "https://github.com/python/cpython/issues/91133",
+            "https://lists.debian.org/debian-lts-announce/2024/03/msg00025.html",
+            "https://mail.python.org/archives/list/security-announce@python.org/thread/Q5C6ATFC67K53XFV4KE45325S7NS62LD/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6597"
+          ],
+          "PublishedDate": "2024-03-19T16:15:08.743Z",
+          "LastModifiedDate": "2024-04-03T15:15:51.783Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-27043",
+          "PkgName": "python3.11",
+          "InstalledVersion": "3.11.2-6",
+          "Status": "fix_deferred",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-27043",
+          "PkgRef": "pkg:deb/debian/python3.11@3.11.2-6?arch=arm64\u0026distro=debian-12\u0026package-id=09edff55d0b4bae9",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "python: Parsing errors in email/_parseaddr.py lead to incorrect value in email address part of tuple",
+          "Description": "The email module of Python through 3.11.3 incorrectly parses e-mail addresses that contain a special character. The wrong portion of an RFC2822 header is identified as the value of the addr-spec. In some applications, an attacker can bypass a protection mechanism in which application access is granted only after verifying receipt of e-mail to a specific domain (e.g., only @company.example.com addresses may be used for signup). This occurs in email/_parseaddr.py in recent versions of Python.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://python.org",
+            "https://access.redhat.com/articles/7051467",
+            "https://access.redhat.com/errata/RHSA-2024:0256",
+            "https://access.redhat.com/security/cve/CVE-2023-27043",
+            "https://bugzilla.redhat.com/2196183",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2196183",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27043",
+            "https://errata.almalinux.org/8/ALSA-2024-0256.html",
+            "https://errata.rockylinux.org/RLSA-2024:0256",
+            "https://github.com/python/cpython/issues/102988",
+            "https://github.com/python/cpython/pull/102990",
+            "https://github.com/python/cpython/pull/105127",
+            "https://linux.oracle.com/cve/CVE-2023-27043.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0466.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/4ZAEFSFZDNBNJPNOUTLG5COISGQDLMGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/75DTHSTNOFFNAWHXKMDXS7EJWC6W2FUC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ARI7VDSNTQVXRQFM6IK5GSSLEIYV4VZH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BQAKLUJMHFGVBRDPEY57BJGNCE5UUPHW/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HXYVPEZUA3465AEFX5JVFVP7KIFZMF3N/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/N6M5I6OQHJABNEYY555HUMMKX3Y4P25Z/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NEUNZSZ3CVSM2QWVYH3N2XGOCDWNYUA3/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ORLXS5YTKN65E2Q2NWKXMFS5FWQHRNZW/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/P2MAICLFDDO3QVNHTZ2OCERZQ34R2PIC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/P2W2BZQIHMCKRI5FNBJERFYMS5PK6TAH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PHVGRKQAGANCSGFI3QMYOCIMS4IFOZA5/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PU6Y2S5CBN5BWCBDAJFTGIBZLK3S2G3J/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QDRDDPDN3VFIYXJIYEABY6USX5EU66AG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/RDDC2VOX7OQC6OHMYTVD4HLFZIV6PYBC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SINP4OVYNB2AGDYI2GS37EMW3H3F7XPZ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SOX7BCN6YL7B3RFPEEXPIU5CMTEHJOKR/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VZXC32CJ7TWDPJO6GY2XIQRO7JZX5FLP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/XWMBD4LNHWEXRI6YVFWJMTJQUL5WOFTS/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YQVY5C5REXWJIORJIL2FIL3ALOEJEF72/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-27043",
+            "https://python-security.readthedocs.io/vuln/email-parseaddr-realname.html",
+            "https://security.netapp.com/advisory/ntap-20230601-0003/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-27043"
+          ],
+          "PublishedDate": "2023-04-19T00:15:07.973Z",
+          "LastModifiedDate": "2024-02-26T16:27:45.78Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-40217",
+          "PkgName": "python3.11",
+          "InstalledVersion": "3.11.2-6",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-40217",
+          "PkgRef": "pkg:deb/debian/python3.11@3.11.2-6?arch=arm64\u0026distro=debian-12\u0026package-id=09edff55d0b4bae9",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "python: TLS handshake bypass",
+          "Description": "An issue was discovered in Python before 3.8.18, 3.9.x before 3.9.18, 3.10.x before 3.10.13, and 3.11.x before 3.11.5. It primarily affects servers (such as HTTP servers) that use TLS client authentication. If a TLS server-side socket is created, receives data into the socket buffer, and then is closed quickly, there is a brief window where the SSLSocket instance will detect the socket as \"not connected\" and won't initiate a handshake, but buffered data will still be readable from the socket buffer. This data will not be authenticated if the server-side TLS peer is expecting client certificate authentication, and is indistinguishable from valid TLS stream data. Data is limited in size to the amount that will fit in the buffer. (The TLS connection cannot directly be used for data exfiltration because the vulnerable code path requires that the connection be closed on initialization of the SSLSocket.)",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N",
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:5998",
+            "https://access.redhat.com/security/cve/CVE-2023-40217",
+            "https://bugzilla.redhat.com/2235789",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2235789",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-40217",
+            "https://errata.almalinux.org/8/ALSA-2023-5998.html",
+            "https://errata.rockylinux.org/RLSA-2023:5997",
+            "https://github.com/python/cpython/commit/0cb0c238d520a8718e313b52cffc356a5a7561bf (main)",
+            "https://github.com/python/cpython/commit/256586ab8776e4526ca594b4866b9a3492e628f1 (3.12)",
+            "https://github.com/python/cpython/commit/264b1dacc67346efa0933d1e63f622676e0ed96b (3.9)",
+            "https://github.com/python/cpython/commit/37d7180cb647f0bed0c1caab0037f3bc82e2af96 (3.10)",
+            "https://github.com/python/cpython/commit/75a875e0df0530b75b1470d797942f90f4a718d3 (3.11)",
+            "https://github.com/python/cpython/issues/108310",
+            "https://github.com/python/cpython/pull/108315",
+            "https://linux.oracle.com/cve/CVE-2023-40217.html",
+            "https://linux.oracle.com/errata/ELSA-2023-6885.html",
+            "https://lists.debian.org/debian-lts-announce/2023/09/msg00022.html",
+            "https://lists.debian.org/debian-lts-announce/2023/10/msg00017.html",
+            "https://mail.python.org/archives/list/security-announce%40python.org/thread/PEPLII27KYHLF4AK3ZQGKYNCRERG4YXY/",
+            "https://mail.python.org/archives/list/security-announce@python.org/thread/PEPLII27KYHLF4AK3ZQGKYNCRERG4YXY/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-40217",
+            "https://security.netapp.com/advisory/ntap-20231006-0014/",
+            "https://ubuntu.com/security/notices/USN-6513-1",
+            "https://ubuntu.com/security/notices/USN-6513-2",
+            "https://www.cve.org/CVERecord?id=CVE-2023-40217",
+            "https://www.python.org/dev/security/"
+          ],
+          "PublishedDate": "2023-08-25T01:15:09.017Z",
+          "LastModifiedDate": "2023-11-07T04:20:09.013Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-0450",
+          "PkgName": "python3.11",
+          "InstalledVersion": "3.11.2-6",
+          "Status": "affected",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-0450",
+          "PkgRef": "pkg:deb/debian/python3.11@3.11.2-6?arch=arm64\u0026distro=debian-12\u0026package-id=09edff55d0b4bae9",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "An issue was found in the CPython `zipfile` module affecting versions  ...",
+          "Description": "An issue was found in the CPython `zipfile` module affecting versions 3.12.1, 3.11.7, 3.10.13, 3.9.18, and 3.8.18 and prior.\n\nThe zipfile module is vulnerable to “quoted-overlap” zip-bombs which exploit the zip format to create a zip-bomb with a high compression ratio. The fixed versions of CPython makes the zipfile module reject zip archives which overlap entries in the archive.\n\n",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.2
+            }
+          },
+          "References": [
+            "https://github.com/python/cpython/commit/30fe5d853b56138dbec62432d370a1f99409fc85",
+            "https://github.com/python/cpython/commit/66363b9a7b9fe7c99eba3a185b74c5fdbf842eba",
+            "https://github.com/python/cpython/commit/a2c59992e9e8d35baba9695eb186ad6c6ff85c51",
+            "https://github.com/python/cpython/commit/a956e510f6336d5ae111ba429a61c3ade30a7549",
+            "https://github.com/python/cpython/commit/d05bac0b74153beb541b88b4fca33bf053990183",
+            "https://github.com/python/cpython/commit/fa181fcf2156f703347b03a3b1966ce47be8ab3b",
+            "https://github.com/python/cpython/issues/109858",
+            "https://lists.debian.org/debian-lts-announce/2024/03/msg00024.html",
+            "https://lists.debian.org/debian-lts-announce/2024/03/msg00025.html",
+            "https://mail.python.org/archives/list/security-announce@python.org/thread/XELNUX2L3IOHBTFU7RQHCY6OUVEWZ2FG/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-0450",
+            "https://www.bamsoftware.com/hacks/zipbomb/"
+          ],
+          "PublishedDate": "2024-03-19T16:15:09.18Z",
+          "LastModifiedDate": "2024-04-03T15:15:51.873Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2005-2541",
+          "PkgName": "tar",
+          "InstalledVersion": "1.34+dfsg-1.2+deb12u1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2005-2541",
+          "PkgRef": "pkg:deb/debian/tar@1.34+dfsg-1.2+deb12u1?arch=arm64\u0026distro=debian-12\u0026package-id=93da74f998f90077",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "tar: does not properly warn the user when extracting setuid or setgid files",
+          "Description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
+          "Severity": "LOW",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V2Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          },
+          "References": [
+            "http://marc.info/?l=bugtraq\u0026m=112327628230258\u0026w=2",
+            "https://access.redhat.com/security/cve/CVE-2005-2541",
+            "https://lists.apache.org/thread.html/rc713534b10f9daeee2e0990239fa407e2118e4aa9e88a7041177497c%40%3Cissues.guacamole.apache.org%3E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2005-2541",
+            "https://www.cve.org/CVERecord?id=CVE-2005-2541"
+          ],
+          "PublishedDate": "2005-08-10T04:00:00Z",
+          "LastModifiedDate": "2023-11-07T01:57:39.453Z"
+        },
+        {
+          "VulnerabilityID": "TEMP-0290435-0B57B5",
+          "PkgName": "tar",
+          "InstalledVersion": "1.34+dfsg-1.2+deb12u1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://security-tracker.debian.org/tracker/TEMP-0290435-0B57B5",
+          "PkgRef": "pkg:deb/debian/tar@1.34+dfsg-1.2+deb12u1?arch=arm64\u0026distro=debian-12\u0026package-id=93da74f998f90077",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "[tar's rmt command may have undesired side effects]",
+          "Severity": "LOW"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-4217",
+          "PkgName": "unzip",
+          "InstalledVersion": "6.0-28",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-4217",
+          "PkgRef": "pkg:deb/debian/unzip@6.0-28?arch=arm64\u0026distro=debian-12\u0026package-id=136f6fb20a7700fa",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "unzip: Null pointer dereference in Unicode strings code",
+          "Description": "A flaw was found in unzip. The vulnerability occurs due to improper handling of Unicode strings, which can lead to a null pointer dereference. This flaw allows an attacker to input a specially crafted zip file, leading to a crash or code execution.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-4217",
+            "https://bugs.launchpad.net/ubuntu/+source/unzip/+bug/1957077",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2044583",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-4217",
+            "https://ubuntu.com/security/notices/USN-5673-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-4217"
+          ],
+          "PublishedDate": "2022-08-24T16:15:10.09Z",
+          "LastModifiedDate": "2022-11-29T15:45:16.2Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28085",
+          "VendorIDs": [
+            "DSA-5650-1"
+          ],
+          "PkgName": "util-linux",
+          "InstalledVersion": "2.38.1-5+b1",
+          "FixedVersion": "2.38.1-5+deb12u1",
+          "Status": "fixed",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28085",
+          "PkgRef": "pkg:deb/debian/util-linux@2.38.1-5+b1?arch=arm64\u0026upstream=util-linux%402.38.1-5\u0026distro=debian-12\u0026package-id=5e0827b418a24fb3",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "util-linux: CVE-2024-28085: wall: escape sequence injection",
+          "Description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28085",
+            "https://github.com/skyler-ferrante/CVE-2024-28085",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+            "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+            "https://ubuntu.com/security/notices/USN-6719-1",
+            "https://ubuntu.com/security/notices/USN-6719-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28085",
+            "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+          ],
+          "PublishedDate": "2024-03-27T19:15:48.367Z",
+          "LastModifiedDate": "2024-04-07T12:15:08.903Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-0563",
+          "PkgName": "util-linux",
+          "InstalledVersion": "2.38.1-5+b1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0563",
+          "PkgRef": "pkg:deb/debian/util-linux@2.38.1-5+b1?arch=arm64\u0026upstream=util-linux%402.38.1-5\u0026distro=debian-12\u0026package-id=5e0827b418a24fb3",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
+          "Description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-209"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 1.9,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-0563",
+            "https://blog.trailofbits.com/2023/02/16/suid-logic-bug-linux-readline/",
+            "https://lore.kernel.org/util-linux/20220214110609.msiwlm457ngoic6w%40ws.net.home/T/#u",
+            "https://lore.kernel.org/util-linux/20220214110609.msiwlm457ngoic6w@ws.net.home/T/#u",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-0563",
+            "https://security.gentoo.org/glsa/202401-08",
+            "https://security.netapp.com/advisory/ntap-20220331-0002/",
+            "https://www.cve.org/CVERecord?id=CVE-2022-0563"
+          ],
+          "PublishedDate": "2022-02-21T19:15:08.393Z",
+          "LastModifiedDate": "2024-01-07T09:15:08.713Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-31879",
+          "PkgName": "wget",
+          "InstalledVersion": "1.21.3-1+b1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-31879",
+          "PkgRef": "pkg:deb/debian/wget@1.21.3-1+b1?arch=arm64\u0026upstream=wget%401.21.3-1\u0026distro=debian-12\u0026package-id=dffc98259afcbc70",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "wget: authorization header disclosure on redirect",
+          "Description": "GNU Wget through 1.21.1 does not omit the Authorization header upon a redirect to a different origin, a related issue to CVE-2018-1000007.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-601"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V2Score": 5.8,
+              "V3Score": 6.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-31879",
+            "https://mail.gnu.org/archive/html/bug-wget/2021-02/msg00002.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-31879",
+            "https://savannah.gnu.org/bugs/?56909",
+            "https://security.netapp.com/advisory/ntap-20210618-0002/",
+            "https://www.cve.org/CVERecord?id=CVE-2021-31879"
+          ],
+          "PublishedDate": "2021-04-29T05:15:08.707Z",
+          "LastModifiedDate": "2022-05-13T20:52:24.793Z"
+        }
+      ]
+    }
+  ]
+}

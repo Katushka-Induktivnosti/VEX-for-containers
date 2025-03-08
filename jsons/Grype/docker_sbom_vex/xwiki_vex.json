@@ -1,0 +1,413 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-jv4x-j47q-6qvp",
+    "dataSource": "https://github.com/advisories/GHSA-jv4x-j47q-6qvp",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-jv4x-j47q-6qvp"
+    ],
+    "description": "htmlcleaner vulnerable to stack exhaustion",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-34624",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-34624",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/amplafi/htmlcleaner/issues/13",
+      "https://lists.debian.org/debian-lts-announce/2023/08/msg00007.html",
+      "https://www.debian.org/security/2023/dsa-5471"
+     ],
+     "description": "An issue was discovered htmlcleaner thru = 2.28 allows attackers to cause a denial of service or other unspecified impacts via crafted object that uses cyclic dependencies.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "net.sourceforge.htmlcleaner/htmlcleaner",
+       "version": "2.24"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=2.28 (unknown)",
+      "vulnerabilityID": "GHSA-jv4x-j47q-6qvp"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "df0c2a20aab543ab",
+    "name": "net.sourceforge.htmlcleaner/htmlcleaner",
+    "version": "2.24",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "http://www.opensource.org/licenses/bsd-license.php"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/net.sourceforge.htmlcleaner/htmlcleaner@2.24",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-jw7r-rxff-gv24",
+    "dataSource": "https://github.com/advisories/GHSA-jw7r-rxff-gv24",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-jw7r-rxff-gv24"
+    ],
+    "description": "Apache James MIME4J improper input validation vulnerability",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.8.10"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-21742",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-21742",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/02/27/5",
+      "https://lists.apache.org/thread/nrqzg93219wdj056pqfszsd33dc54kfy"
+     ],
+     "description": "Improper input validation allows for header injection in MIME4J library when using MIME4J DOM for composing message.\nThis can be exploited by an attacker to add unintended headers to MIME messages.\n",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.apache.james/apache-mime4j-core",
+       "version": "0.8.9"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.8.10 (unknown)",
+      "vulnerabilityID": "GHSA-jw7r-rxff-gv24"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "bd0fe2c5e0149200",
+    "name": "org.apache.james/apache-mime4j-core",
+    "version": "0.8.9",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.apache.james/apache-mime4j-core@0.8.9",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-2363-cqg2-863c",
+    "dataSource": "https://github.com/advisories/GHSA-2363-cqg2-863c",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-2363-cqg2-863c"
+    ],
+    "description": "XML External Entity (XXE) Injection in JDOM",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-33813",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-33813",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://alephsecurity.com/vulns/aleph-2021003",
+      "https://github.com/hunterhacker/jdom/pull/188",
+      "https://github.com/hunterhacker/jdom/releases",
+      "https://lists.apache.org/thread.html/r21c406c7ed88fe340db7dbae75e58355159e6c324037c7d5547bf40b%40%3Cissues.solr.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5674106135bb1a6ef57483f4c63a9c44bca85d0e2a8a05895a8f1d89%40%3Cissues.solr.apache.org%3E",
+      "https://lists.apache.org/thread.html/r6db397ae7281ead825338200d1f62d2827585a70797cc9ac0c4bd23f%40%3Cissues.solr.apache.org%3E",
+      "https://lists.apache.org/thread.html/r845e987b7cd8efe610284958e997b84583f5a98d3394adc09e3482fe%40%3Cissues.solr.apache.org%3E",
+      "https://lists.apache.org/thread.html/r89b3800cfabb1e773e49425e5d4239c28a659839a2eca6af3431482e%40%3Cissues.solr.apache.org%3E",
+      "https://lists.apache.org/thread.html/r9974f64723875052e02787b2a5eda689ac5247c71b827d455e5dc9a6%40%3Cissues.solr.apache.org%3E",
+      "https://lists.apache.org/thread.html/rbc075a4ac85e7a8e47420b7383f16ffa0af3b792b8423584735f369f%40%3Cissues.solr.apache.org%3E",
+      "https://lists.apache.org/thread.html/rfb7a93e40ebeb1e0068cde0bf3834dcab46bb1ef06d6424db48ed9fd%40%3Cdev.tika.apache.org%3E",
+      "https://lists.debian.org/debian-lts-announce/2021/06/msg00026.html",
+      "https://lists.debian.org/debian-lts-announce/2021/07/msg00012.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/AH46QHE5GIMT6BL6C3GDTOYF27JYILXM/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/EWFVYTHGILOQXUA7U3SPOERQXL7OPSZG/",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html"
+     ],
+     "description": "An XXE issue in SAXBuilder in JDOM through 2.0.6 allows attackers to cause a denial of service via a crafted HTTP request.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.jdom/jdom",
+       "version": "1.1.3"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=2.0.6 (unknown)",
+      "vulnerabilityID": "GHSA-2363-cqg2-863c"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ec744bab53f31796",
+    "name": "org.jdom/jdom",
+    "version": "1.1.3",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:maven/org.jdom/jdom@1.1.3",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "",
+   "imageID": "",
+   "manifestDigest": "",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-04-20T01:25:41Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:16b261c20c43828088d3530bdb10577ad87b9d33cfbfcaf051c3af61ba7e53ca",
+   "error": null
+  },
+  "timestamp": "2024-04-20T21:56:53.293425+02:00"
+ }
+}

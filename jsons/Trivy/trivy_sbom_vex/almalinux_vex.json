@@ -1,0 +1,1807 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/trivy/sboms/almalinux_sbom.json",
+  "ArtifactType": "spdx",
+  "Metadata": {
+    "OS": {
+      "Family": "alma",
+      "Name": "9.3"
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "jsons/trivy/sboms/almalinux_sbom.json (alma 9.3)",
+      "Class": "os-pkgs",
+      "Type": "alma",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-46218",
+          "PkgID": "curl-minimal@7.76.1-26.el9_3.2.x86_64",
+          "PkgName": "curl-minimal",
+          "InstalledVersion": "7.76.1-26.el9_3.2",
+          "FixedVersion": "7.76.1-26.el9_3.3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-46218",
+          "PkgRef": "pkg:rpm/alma/curl-minimal@7.76.1-26.el9_3.2?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "curl: information disclosure by exploiting a mixed case flaw",
+          "Description": "This flaw allows a malicious HTTP server to set \"super cookies\" in curl that\nare then passed back to more origins than what is otherwise allowed or\npossible. This allows a site to set cookies that then would get sent to\ndifferent and unrelated sites and domains.\n\nIt could do this by exploiting a mixed case flaw in curl's function that\nverifies a given cookie domain against the Public Suffix List (PSL). For\nexample a cookie could be set with `domain=co.UK` when the URL used a lower\ncase hostname `curl.co.uk`, even though `co.uk` is listed as a PSL domain.\n",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1601",
+            "https://access.redhat.com/security/cve/CVE-2023-46218",
+            "https://bugzilla.redhat.com/2196793",
+            "https://bugzilla.redhat.com/2241938",
+            "https://bugzilla.redhat.com/2252030",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2196793",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2240033",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2241938",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2252030",
+            "https://curl.se/docs/CVE-2023-46218.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28322",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38546",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-46218",
+            "https://errata.almalinux.org/8/ALSA-2024-1601.html",
+            "https://errata.rockylinux.org/RLSA-2024:1601",
+            "https://hackerone.com/reports/2212193",
+            "https://linux.oracle.com/cve/CVE-2023-46218.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1601.html",
+            "https://lists.debian.org/debian-lts-announce/2023/12/msg00015.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3ZX3VW67N4ACRAPMV2QS2LVYGD7H2MVE/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UOGXU25FMMT2X6UUITQ7EZZYMJ42YWWD/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-46218",
+            "https://security.netapp.com/advisory/ntap-20240125-0007/",
+            "https://ubuntu.com/security/notices/USN-6535-1",
+            "https://ubuntu.com/security/notices/USN-6641-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-46218",
+            "https://www.debian.org/security/2023/dsa-5587"
+          ],
+          "PublishedDate": "2023-12-07T01:15:07.16Z",
+          "LastModifiedDate": "2024-01-25T14:15:26.117Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-52425",
+          "PkgID": "expat@2.5.0-1.el9.x86_64",
+          "PkgName": "expat",
+          "InstalledVersion": "2.5.0-1.el9",
+          "FixedVersion": "2.5.0-1.el9_3.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-52425",
+          "PkgRef": "pkg:rpm/alma/expat@2.5.0-1.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "expat: parsing large tokens can trigger a denial of service",
+          "Description": "libexpat through 2.5.0 allows a denial of service (resource consumption) because many full reparsings are required in the case of a large token for which multiple buffer fills are needed.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1615",
+            "https://access.redhat.com/security/cve/CVE-2023-52425",
+            "https://bugzilla.redhat.com/2262877",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2262877",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52425",
+            "https://errata.almalinux.org/8/ALSA-2024-1615.html",
+            "https://errata.rockylinux.org/RLSA-2024:1615",
+            "https://github.com/libexpat/libexpat/pull/789",
+            "https://linux.oracle.com/cve/CVE-2023-52425.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1615.html",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00006.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PNRIHC7DVVRAIWFRGV23Y6UZXFBXSQDB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WNUBSGZFEZOBHJFTAD42SAN4ATW2VEMV/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-52425",
+            "https://ubuntu.com/security/notices/USN-6694-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-52425"
+          ],
+          "PublishedDate": "2024-02-04T20:15:46.063Z",
+          "LastModifiedDate": "2024-04-09T06:15:07.55Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28757",
+          "PkgID": "expat@2.5.0-1.el9.x86_64",
+          "PkgName": "expat",
+          "InstalledVersion": "2.5.0-1.el9",
+          "FixedVersion": "2.5.0-1.el9_3.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28757",
+          "PkgRef": "pkg:rpm/alma/expat@2.5.0-1.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "expat: XML Entity Expansion",
+          "Description": "libexpat through 2.6.1 allows an XML Entity Expansion attack when there is isolated use of external parsers (created via XML_ExternalEntityParserCreate).",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1530",
+            "https://access.redhat.com/security/cve/CVE-2024-28757",
+            "https://bugzilla.redhat.com/2262877",
+            "https://bugzilla.redhat.com/2268766",
+            "https://errata.almalinux.org/9/ALSA-2024-1530.html",
+            "https://github.com/libexpat/libexpat/issues/839",
+            "https://github.com/libexpat/libexpat/pull/842",
+            "https://linux.oracle.com/cve/CVE-2024-28757.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1530.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/FPLC6WDSRDUYS7F7JWAOVOHFNOUQ43DD/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LKJ7V5F6LJCEQJXDBWGT27J7NAP3E3N7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VK2O34GH43NTHBZBN7G5Y6YKJKPUCTBE/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28757",
+            "https://security.netapp.com/advisory/ntap-20240322-0001/",
+            "https://ubuntu.com/security/notices/USN-6694-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28757"
+          ],
+          "PublishedDate": "2024-03-10T05:15:06.57Z",
+          "LastModifiedDate": "2024-03-23T03:15:11.92Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5981",
+          "PkgID": "gnutls@3.7.6-23.el9.x86_64",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.7.6-23.el9",
+          "FixedVersion": "3.7.6-23.el9_3.3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5981",
+          "PkgRef": "pkg:rpm/alma/gnutls@3.7.6-23.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "gnutls: timing side-channel in the RSA-PSK authentication",
+          "Description": "A vulnerability was found that the response times to malformed ciphertexts in RSA-PSK ClientKeyExchange differ from response times of ciphertexts with correct PKCS#1 v1.5 padding.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-203"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/01/19/3",
+            "https://access.redhat.com/errata/RHSA-2024:0155",
+            "https://access.redhat.com/errata/RHSA-2024:0319",
+            "https://access.redhat.com/errata/RHSA-2024:0399",
+            "https://access.redhat.com/errata/RHSA-2024:0451",
+            "https://access.redhat.com/errata/RHSA-2024:0533",
+            "https://access.redhat.com/security/cve/CVE-2023-5981",
+            "https://bugzilla.redhat.com/2248445",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2248445",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5981",
+            "https://errata.almalinux.org/8/ALSA-2024-0155.html",
+            "https://errata.rockylinux.org/RLSA-2024:0155",
+            "https://gnutls.org/security-new.html#GNUTLS-SA-2023-10-23",
+            "https://linux.oracle.com/cve/CVE-2023-5981.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0533.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7ZEIOLORQ7N6WRPFXZSYDL2MC4LP7VFV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GNXKVR5YNUEBNHAHM5GSYKBZX4W2HMN2/",
+            "https://lists.gnupg.org/pipermail/gnutls-help/2023-November/004837.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5981",
+            "https://ubuntu.com/security/notices/USN-6499-1",
+            "https://ubuntu.com/security/notices/USN-6499-2",
+            "https://www.cve.org/CVERecord?id=CVE-2023-5981"
+          ],
+          "PublishedDate": "2023-11-28T12:15:07.04Z",
+          "LastModifiedDate": "2024-02-09T03:15:09.133Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-0553",
+          "PkgID": "gnutls@3.7.6-23.el9.x86_64",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.7.6-23.el9",
+          "FixedVersion": "3.7.6-23.el9_3.3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-0553",
+          "PkgRef": "pkg:rpm/alma/gnutls@3.7.6-23.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "gnutls: incomplete fix for CVE-2023-5981",
+          "Description": "A vulnerability was found in GnuTLS. The response times to malformed ciphertexts in RSA-PSK ClientKeyExchange differ from the response times of ciphertexts with correct PKCS#1 v1.5 padding. This issue may allow a remote attacker to perform a timing side-channel attack in the RSA-PSK key exchange, potentially leading to the leakage of sensitive data. CVE-2024-0553 is designated as an incomplete resolution for CVE-2023-5981.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-203"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/01/19/3",
+            "https://access.redhat.com/errata/RHSA-2024:0533",
+            "https://access.redhat.com/errata/RHSA-2024:0627",
+            "https://access.redhat.com/errata/RHSA-2024:0796",
+            "https://access.redhat.com/errata/RHSA-2024:1082",
+            "https://access.redhat.com/errata/RHSA-2024:1108",
+            "https://access.redhat.com/security/cve/CVE-2024-0553",
+            "https://bugzilla.redhat.com/2258412",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2258412",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0553",
+            "https://errata.almalinux.org/8/ALSA-2024-0627.html",
+            "https://errata.rockylinux.org/RLSA-2024:0627",
+            "https://gitlab.com/gnutls/gnutls/-/issues/1522",
+            "https://gnutls.org/security-new.html#GNUTLS-SA-2024-01-14",
+            "https://linux.oracle.com/cve/CVE-2024-0553.html",
+            "https://linux.oracle.com/errata/ELSA-2024-12135.html",
+            "https://lists.debian.org/debian-lts-announce/2024/02/msg00010.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7ZEIOLORQ7N6WRPFXZSYDL2MC4LP7VFV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GNXKVR5YNUEBNHAHM5GSYKBZX4W2HMN2/",
+            "https://lists.gnupg.org/pipermail/gnutls-help/2024-January/004841.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-0553",
+            "https://security.netapp.com/advisory/ntap-20240202-0011/",
+            "https://ubuntu.com/security/notices/USN-6593-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-0553"
+          ],
+          "PublishedDate": "2024-01-16T12:15:45.557Z",
+          "LastModifiedDate": "2024-03-25T18:15:08.443Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-0567",
+          "PkgID": "gnutls@3.7.6-23.el9.x86_64",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.7.6-23.el9",
+          "FixedVersion": "3.7.6-23.el9_3.3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-0567",
+          "PkgRef": "pkg:rpm/alma/gnutls@3.7.6-23.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "gnutls: rejects certificate chain with distributed trust",
+          "Description": "A vulnerability was found in GnuTLS, where a cockpit (which uses gnuTLS) rejects a certificate chain with distributed trust. This issue occurs when validating a certificate chain with cockpit-certificate-ensure. This flaw allows an unauthenticated, remote client or attacker to initiate a denial of service attack.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-347"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/01/19/3",
+            "https://access.redhat.com/errata/RHSA-2024:0533",
+            "https://access.redhat.com/errata/RHSA-2024:1082",
+            "https://access.redhat.com/security/cve/CVE-2024-0567",
+            "https://bugzilla.redhat.com/2248445",
+            "https://bugzilla.redhat.com/2258412",
+            "https://bugzilla.redhat.com/2258544",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2258544",
+            "https://errata.almalinux.org/9/ALSA-2024-0533.html",
+            "https://gitlab.com/gnutls/gnutls/-/issues/1521",
+            "https://gnutls.org/security-new.html#GNUTLS-SA-2024-01-09",
+            "https://linux.oracle.com/cve/CVE-2024-0567.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0533.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7ZEIOLORQ7N6WRPFXZSYDL2MC4LP7VFV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GNXKVR5YNUEBNHAHM5GSYKBZX4W2HMN2/",
+            "https://lists.gnupg.org/pipermail/gnutls-help/2024-January/004841.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-0567",
+            "https://security.netapp.com/advisory/ntap-20240202-0011/",
+            "https://ubuntu.com/security/notices/USN-6593-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-0567"
+          ],
+          "PublishedDate": "2024-01-16T14:15:48.527Z",
+          "LastModifiedDate": "2024-03-05T11:15:08.783Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28834",
+          "PkgID": "gnutls@3.7.6-23.el9.x86_64",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.7.6-23.el9",
+          "FixedVersion": "3.7.6-23.el9_3.4",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28834",
+          "PkgRef": "pkg:rpm/alma/gnutls@3.7.6-23.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "gnutls: vulnerable to Minerva side-channel information leak",
+          "Description": "A flaw was found in GnuTLS. The Minerva attack is a cryptographic vulnerability that exploits deterministic behavior in systems like GnuTLS, leading to side-channel leaks. In specific scenarios, such as when using the GNUTLS_PRIVKEY_FLAG_REPRODUCIBLE flag, it can result in a noticeable step in nonce size from 513 to 512 bits, exposing a potential timing side-channel.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1784",
+            "https://access.redhat.com/errata/RHSA-2024:1879",
+            "https://access.redhat.com/security/cve/CVE-2024-28834",
+            "https://bugzilla.redhat.com/2269228",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2269228",
+            "https://errata.almalinux.org/8/ALSA-2024-1784.html",
+            "https://linux.oracle.com/cve/CVE-2024-28834.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1879.html",
+            "https://lists.gnupg.org/pipermail/gnutls-help/2024-March/004845.html",
+            "https://minerva.crocs.fi.muni.cz/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28834",
+            "https://people.redhat.com/~hkario/marvin/",
+            "https://ubuntu.com/security/notices/USN-6733-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28834",
+            "https://www.gnutls.org/security-new.html#GNUTLS-SA-2023-12-04"
+          ],
+          "PublishedDate": "2024-03-21T14:15:07.547Z",
+          "LastModifiedDate": "2024-04-18T05:15:48.167Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28835",
+          "PkgID": "gnutls@3.7.6-23.el9.x86_64",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.7.6-23.el9",
+          "FixedVersion": "3.7.6-23.el9_3.4",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28835",
+          "PkgRef": "pkg:rpm/alma/gnutls@3.7.6-23.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "gnutls: potential crash during chain building/verification",
+          "Description": "A flaw has been discovered in GnuTLS where an application crash can be induced when attempting to verify a specially crafted .pem bundle using the \"certtool --verify-chain\" command.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-248"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1879",
+            "https://access.redhat.com/security/cve/CVE-2024-28835",
+            "https://bugzilla.redhat.com/2269084",
+            "https://bugzilla.redhat.com/2269228",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2269084",
+            "https://errata.almalinux.org/9/ALSA-2024-1879.html",
+            "https://linux.oracle.com/cve/CVE-2024-28835.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1879.html",
+            "https://lists.gnupg.org/pipermail/gnutls-help/2024-March/004845.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28835",
+            "https://ubuntu.com/security/notices/USN-6733-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28835",
+            "https://www.gnutls.org/security-new.html#GNUTLS-SA-2024-01-23"
+          ],
+          "PublishedDate": "2024-03-21T06:15:45.113Z",
+          "LastModifiedDate": "2024-04-18T05:15:48.263Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-48624",
+          "PkgID": "less@590-2.el9_2.x86_64",
+          "PkgName": "less",
+          "InstalledVersion": "590-2.el9_2",
+          "FixedVersion": "590-3.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-48624",
+          "PkgRef": "pkg:rpm/alma/less@590-2.el9_2?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "less: missing quoting of shell metacharacters in LESSCLOSE handling",
+          "Description": "close_altfile in filename.c in less before 606 omits shell_quote calls for LESSCLOSE.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1610",
+            "https://access.redhat.com/security/cve/CVE-2022-48624",
+            "https://bugzilla.redhat.com/2265081",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2265081",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48624",
+            "https://errata.almalinux.org/8/ALSA-2024-1610.html",
+            "https://errata.rockylinux.org/RLSA-2024:1610",
+            "https://github.com/gwsw/less/commit/c6ac6de49698be84d264a0c4c0c40bb870b10144",
+            "https://github.com/gwsw/less/compare/v605...v606",
+            "https://greenwoodsoftware.com/less/",
+            "https://linux.oracle.com/cve/CVE-2022-48624.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1692.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-48624",
+            "https://ubuntu.com/security/notices/USN-6664-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-48624"
+          ],
+          "PublishedDate": "2024-02-19T01:15:48.643Z",
+          "LastModifiedDate": "2024-02-20T19:50:53.96Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-46218",
+          "PkgID": "libcurl-minimal@7.76.1-26.el9_3.2.x86_64",
+          "PkgName": "libcurl-minimal",
+          "InstalledVersion": "7.76.1-26.el9_3.2",
+          "FixedVersion": "7.76.1-26.el9_3.3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-46218",
+          "PkgRef": "pkg:rpm/alma/libcurl-minimal@7.76.1-26.el9_3.2?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "curl: information disclosure by exploiting a mixed case flaw",
+          "Description": "This flaw allows a malicious HTTP server to set \"super cookies\" in curl that\nare then passed back to more origins than what is otherwise allowed or\npossible. This allows a site to set cookies that then would get sent to\ndifferent and unrelated sites and domains.\n\nIt could do this by exploiting a mixed case flaw in curl's function that\nverifies a given cookie domain against the Public Suffix List (PSL). For\nexample a cookie could be set with `domain=co.UK` when the URL used a lower\ncase hostname `curl.co.uk`, even though `co.uk` is listed as a PSL domain.\n",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1601",
+            "https://access.redhat.com/security/cve/CVE-2023-46218",
+            "https://bugzilla.redhat.com/2196793",
+            "https://bugzilla.redhat.com/2241938",
+            "https://bugzilla.redhat.com/2252030",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2196793",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2240033",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2241938",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2252030",
+            "https://curl.se/docs/CVE-2023-46218.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28322",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38546",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-46218",
+            "https://errata.almalinux.org/8/ALSA-2024-1601.html",
+            "https://errata.rockylinux.org/RLSA-2024:1601",
+            "https://hackerone.com/reports/2212193",
+            "https://linux.oracle.com/cve/CVE-2023-46218.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1601.html",
+            "https://lists.debian.org/debian-lts-announce/2023/12/msg00015.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3ZX3VW67N4ACRAPMV2QS2LVYGD7H2MVE/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UOGXU25FMMT2X6UUITQ7EZZYMJ42YWWD/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-46218",
+            "https://security.netapp.com/advisory/ntap-20240125-0007/",
+            "https://ubuntu.com/security/notices/USN-6535-1",
+            "https://ubuntu.com/security/notices/USN-6641-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-46218",
+            "https://www.debian.org/security/2023/dsa-5587"
+          ],
+          "PublishedDate": "2023-12-07T01:15:07.16Z",
+          "LastModifiedDate": "2024-01-25T14:15:26.117Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-39615",
+          "PkgID": "libxml2@2.9.13-4.el9.x86_64",
+          "PkgName": "libxml2",
+          "InstalledVersion": "2.9.13-4.el9",
+          "FixedVersion": "2.9.13-5.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-39615",
+          "PkgRef": "pkg:rpm/alma/libxml2@2.9.13-4.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "libxml2: crafted xml can cause global buffer overflow",
+          "Description": "Xmlsoft Libxml2 v2.11.0 was discovered to contain an out-of-bounds read via the xmlSAX2StartElement() function at /libxml2/SAX2.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via supplying a crafted XML file. NOTE: the vendor's position is that the product does not support the legacy SAX1 interface with custom callbacks; there is a crash even without crafted input.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-119"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0119",
+            "https://access.redhat.com/security/cve/CVE-2023-39615",
+            "https://bugzilla.redhat.com/2235864",
+            "https://errata.almalinux.org/8/ALSA-2024-0119.html",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/535",
+            "https://linux.oracle.com/cve/CVE-2023-39615.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0119.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-39615",
+            "https://www.cve.org/CVERecord?id=CVE-2023-39615"
+          ],
+          "PublishedDate": "2023-08-29T17:15:12.527Z",
+          "LastModifiedDate": "2024-04-11T01:20:57.89Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5363",
+          "PkgID": "openssl@3.0.7-24.el9.x86_64",
+          "PkgName": "openssl",
+          "InstalledVersion": "1:3.0.7-24.el9",
+          "FixedVersion": "1:3.0.7-25.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5363",
+          "PkgRef": "pkg:rpm/alma/openssl@3.0.7-24.el9?arch=x86_64\u0026distro=alma-9.3\u0026epoch=1",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "openssl: Incorrect cipher key and IV length processing",
+          "Description": "Issue summary: A bug has been identified in the processing of key and\ninitialisation vector (IV) lengths.  This can lead to potential truncation\nor overruns during the initialisation of some symmetric ciphers.\n\nImpact summary: A truncation in the IV can result in non-uniqueness,\nwhich could result in loss of confidentiality for some cipher modes.\n\nWhen calling EVP_EncryptInit_ex2(), EVP_DecryptInit_ex2() or\nEVP_CipherInit_ex2() the provided OSSL_PARAM array is processed after\nthe key and IV have been established.  Any alterations to the key length,\nvia the \"keylen\" parameter or the IV length, via the \"ivlen\" parameter,\nwithin the OSSL_PARAM array will not take effect as intended, potentially\ncausing truncation or overreading of these values.  The following ciphers\nand cipher modes are impacted: RC2, RC4, RC5, CCM, GCM and OCB.\n\nFor the CCM, GCM and OCB cipher modes, truncation of the IV can result in\nloss of confidentiality.  For example, when following NIST's SP 800-38D\nsection 8.2.1 guidance for constructing a deterministic IV for AES in\nGCM mode, truncation of the counter portion could lead to IV reuse.\n\nBoth truncations and overruns of the key and overruns of the IV will\nproduce incorrect results and could, in some cases, trigger a memory\nexception.  However, these issues are not currently assessed as security\ncritical.\n\nChanging the key and/or IV lengths is not considered to be a common operation\nand the vulnerable API was recently introduced. Furthermore it is likely that\napplication developers will have spotted this problem during testing since\ndecryption would fail unless both peers in the communication were similarly\nvulnerable. For these reasons we expect the probability of an application being\nvulnerable to this to be quite low. However if an application is vulnerable then\nthis issue is considered very serious. For these reasons we have assessed this\nissue as Moderate severity overall.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this because\nthe issue lies outside of the FIPS provider boundary.\n\nOpenSSL 3.1 and 3.0 are vulnerable to this issue.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/10/24/1",
+            "https://access.redhat.com/errata/RHSA-2024:0310",
+            "https://access.redhat.com/security/cve/CVE-2023-5363",
+            "https://bugzilla.redhat.com/2243839",
+            "https://errata.almalinux.org/9/ALSA-2024-0310.html",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=0df40630850fb2740e6be6890bb905d3fc623b2d",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=5f69f5c65e483928c4b28ed16af6e5742929f1ee",
+            "https://linux.oracle.com/cve/CVE-2023-5363.html",
+            "https://linux.oracle.com/errata/ELSA-2024-12093.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5363",
+            "https://security.netapp.com/advisory/ntap-20231027-0010/",
+            "https://security.netapp.com/advisory/ntap-20240201-0003/",
+            "https://security.netapp.com/advisory/ntap-20240201-0004/",
+            "https://ubuntu.com/security/notices/USN-6450-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-5363",
+            "https://www.debian.org/security/2023/dsa-5532",
+            "https://www.openssl.org/news/secadv/20231024.txt"
+          ],
+          "PublishedDate": "2023-10-25T18:17:43.613Z",
+          "LastModifiedDate": "2024-02-01T17:15:08.743Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5363",
+          "PkgID": "openssl-libs@3.0.7-24.el9.x86_64",
+          "PkgName": "openssl-libs",
+          "InstalledVersion": "1:3.0.7-24.el9",
+          "FixedVersion": "1:3.0.7-25.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5363",
+          "PkgRef": "pkg:rpm/alma/openssl-libs@3.0.7-24.el9?arch=x86_64\u0026distro=alma-9.3\u0026epoch=1",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "openssl: Incorrect cipher key and IV length processing",
+          "Description": "Issue summary: A bug has been identified in the processing of key and\ninitialisation vector (IV) lengths.  This can lead to potential truncation\nor overruns during the initialisation of some symmetric ciphers.\n\nImpact summary: A truncation in the IV can result in non-uniqueness,\nwhich could result in loss of confidentiality for some cipher modes.\n\nWhen calling EVP_EncryptInit_ex2(), EVP_DecryptInit_ex2() or\nEVP_CipherInit_ex2() the provided OSSL_PARAM array is processed after\nthe key and IV have been established.  Any alterations to the key length,\nvia the \"keylen\" parameter or the IV length, via the \"ivlen\" parameter,\nwithin the OSSL_PARAM array will not take effect as intended, potentially\ncausing truncation or overreading of these values.  The following ciphers\nand cipher modes are impacted: RC2, RC4, RC5, CCM, GCM and OCB.\n\nFor the CCM, GCM and OCB cipher modes, truncation of the IV can result in\nloss of confidentiality.  For example, when following NIST's SP 800-38D\nsection 8.2.1 guidance for constructing a deterministic IV for AES in\nGCM mode, truncation of the counter portion could lead to IV reuse.\n\nBoth truncations and overruns of the key and overruns of the IV will\nproduce incorrect results and could, in some cases, trigger a memory\nexception.  However, these issues are not currently assessed as security\ncritical.\n\nChanging the key and/or IV lengths is not considered to be a common operation\nand the vulnerable API was recently introduced. Furthermore it is likely that\napplication developers will have spotted this problem during testing since\ndecryption would fail unless both peers in the communication were similarly\nvulnerable. For these reasons we expect the probability of an application being\nvulnerable to this to be quite low. However if an application is vulnerable then\nthis issue is considered very serious. For these reasons we have assessed this\nissue as Moderate severity overall.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this because\nthe issue lies outside of the FIPS provider boundary.\n\nOpenSSL 3.1 and 3.0 are vulnerable to this issue.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/10/24/1",
+            "https://access.redhat.com/errata/RHSA-2024:0310",
+            "https://access.redhat.com/security/cve/CVE-2023-5363",
+            "https://bugzilla.redhat.com/2243839",
+            "https://errata.almalinux.org/9/ALSA-2024-0310.html",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=0df40630850fb2740e6be6890bb905d3fc623b2d",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=5f69f5c65e483928c4b28ed16af6e5742929f1ee",
+            "https://linux.oracle.com/cve/CVE-2023-5363.html",
+            "https://linux.oracle.com/errata/ELSA-2024-12093.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5363",
+            "https://security.netapp.com/advisory/ntap-20231027-0010/",
+            "https://security.netapp.com/advisory/ntap-20240201-0003/",
+            "https://security.netapp.com/advisory/ntap-20240201-0004/",
+            "https://ubuntu.com/security/notices/USN-6450-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-5363",
+            "https://www.debian.org/security/2023/dsa-5532",
+            "https://www.openssl.org/news/secadv/20231024.txt"
+          ],
+          "PublishedDate": "2023-10-25T18:17:43.613Z",
+          "LastModifiedDate": "2024-02-01T17:15:08.743Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-27043",
+          "PkgID": "python3@3.9.18-1.el9_3.x86_64",
+          "PkgName": "python3",
+          "InstalledVersion": "3.9.18-1.el9_3",
+          "FixedVersion": "3.9.18-1.el9_3.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-27043",
+          "PkgRef": "pkg:rpm/alma/python3@3.9.18-1.el9_3?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "python: Parsing errors in email/_parseaddr.py lead to incorrect value in email address part of tuple",
+          "Description": "The email module of Python through 3.11.3 incorrectly parses e-mail addresses that contain a special character. The wrong portion of an RFC2822 header is identified as the value of the addr-spec. In some applications, an attacker can bypass a protection mechanism in which application access is granted only after verifying receipt of e-mail to a specific domain (e.g., only @company.example.com addresses may be used for signup). This occurs in email/_parseaddr.py in recent versions of Python.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://python.org",
+            "https://access.redhat.com/articles/7051467",
+            "https://access.redhat.com/errata/RHSA-2024:0256",
+            "https://access.redhat.com/security/cve/CVE-2023-27043",
+            "https://bugzilla.redhat.com/2196183",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2196183",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27043",
+            "https://errata.almalinux.org/8/ALSA-2024-0256.html",
+            "https://errata.rockylinux.org/RLSA-2024:0256",
+            "https://github.com/python/cpython/issues/102988",
+            "https://github.com/python/cpython/pull/102990",
+            "https://github.com/python/cpython/pull/105127",
+            "https://linux.oracle.com/cve/CVE-2023-27043.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0466.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/4ZAEFSFZDNBNJPNOUTLG5COISGQDLMGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/75DTHSTNOFFNAWHXKMDXS7EJWC6W2FUC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ARI7VDSNTQVXRQFM6IK5GSSLEIYV4VZH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BQAKLUJMHFGVBRDPEY57BJGNCE5UUPHW/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HXYVPEZUA3465AEFX5JVFVP7KIFZMF3N/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/N6M5I6OQHJABNEYY555HUMMKX3Y4P25Z/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NEUNZSZ3CVSM2QWVYH3N2XGOCDWNYUA3/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ORLXS5YTKN65E2Q2NWKXMFS5FWQHRNZW/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/P2MAICLFDDO3QVNHTZ2OCERZQ34R2PIC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/P2W2BZQIHMCKRI5FNBJERFYMS5PK6TAH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PHVGRKQAGANCSGFI3QMYOCIMS4IFOZA5/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PU6Y2S5CBN5BWCBDAJFTGIBZLK3S2G3J/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QDRDDPDN3VFIYXJIYEABY6USX5EU66AG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/RDDC2VOX7OQC6OHMYTVD4HLFZIV6PYBC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SINP4OVYNB2AGDYI2GS37EMW3H3F7XPZ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SOX7BCN6YL7B3RFPEEXPIU5CMTEHJOKR/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VZXC32CJ7TWDPJO6GY2XIQRO7JZX5FLP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/XWMBD4LNHWEXRI6YVFWJMTJQUL5WOFTS/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YQVY5C5REXWJIORJIL2FIL3ALOEJEF72/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-27043",
+            "https://python-security.readthedocs.io/vuln/email-parseaddr-realname.html",
+            "https://security.netapp.com/advisory/ntap-20230601-0003/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-27043"
+          ],
+          "PublishedDate": "2023-04-19T00:15:07.973Z",
+          "LastModifiedDate": "2024-02-26T16:27:45.78Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-27043",
+          "PkgID": "python3-libs@3.9.18-1.el9_3.x86_64",
+          "PkgName": "python3-libs",
+          "InstalledVersion": "3.9.18-1.el9_3",
+          "FixedVersion": "3.9.18-1.el9_3.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-27043",
+          "PkgRef": "pkg:rpm/alma/python3-libs@3.9.18-1.el9_3?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "python: Parsing errors in email/_parseaddr.py lead to incorrect value in email address part of tuple",
+          "Description": "The email module of Python through 3.11.3 incorrectly parses e-mail addresses that contain a special character. The wrong portion of an RFC2822 header is identified as the value of the addr-spec. In some applications, an attacker can bypass a protection mechanism in which application access is granted only after verifying receipt of e-mail to a specific domain (e.g., only @company.example.com addresses may be used for signup). This occurs in email/_parseaddr.py in recent versions of Python.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://python.org",
+            "https://access.redhat.com/articles/7051467",
+            "https://access.redhat.com/errata/RHSA-2024:0256",
+            "https://access.redhat.com/security/cve/CVE-2023-27043",
+            "https://bugzilla.redhat.com/2196183",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2196183",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27043",
+            "https://errata.almalinux.org/8/ALSA-2024-0256.html",
+            "https://errata.rockylinux.org/RLSA-2024:0256",
+            "https://github.com/python/cpython/issues/102988",
+            "https://github.com/python/cpython/pull/102990",
+            "https://github.com/python/cpython/pull/105127",
+            "https://linux.oracle.com/cve/CVE-2023-27043.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0466.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/4ZAEFSFZDNBNJPNOUTLG5COISGQDLMGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/75DTHSTNOFFNAWHXKMDXS7EJWC6W2FUC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ARI7VDSNTQVXRQFM6IK5GSSLEIYV4VZH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BQAKLUJMHFGVBRDPEY57BJGNCE5UUPHW/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HXYVPEZUA3465AEFX5JVFVP7KIFZMF3N/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/N6M5I6OQHJABNEYY555HUMMKX3Y4P25Z/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NEUNZSZ3CVSM2QWVYH3N2XGOCDWNYUA3/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ORLXS5YTKN65E2Q2NWKXMFS5FWQHRNZW/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/P2MAICLFDDO3QVNHTZ2OCERZQ34R2PIC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/P2W2BZQIHMCKRI5FNBJERFYMS5PK6TAH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PHVGRKQAGANCSGFI3QMYOCIMS4IFOZA5/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PU6Y2S5CBN5BWCBDAJFTGIBZLK3S2G3J/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QDRDDPDN3VFIYXJIYEABY6USX5EU66AG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/RDDC2VOX7OQC6OHMYTVD4HLFZIV6PYBC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SINP4OVYNB2AGDYI2GS37EMW3H3F7XPZ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SOX7BCN6YL7B3RFPEEXPIU5CMTEHJOKR/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VZXC32CJ7TWDPJO6GY2XIQRO7JZX5FLP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/XWMBD4LNHWEXRI6YVFWJMTJQUL5WOFTS/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YQVY5C5REXWJIORJIL2FIL3ALOEJEF72/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-27043",
+            "https://python-security.readthedocs.io/vuln/email-parseaddr-realname.html",
+            "https://security.netapp.com/advisory/ntap-20230601-0003/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-27043"
+          ],
+          "PublishedDate": "2023-04-19T00:15:07.973Z",
+          "LastModifiedDate": "2024-02-26T16:27:45.78Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35937",
+          "PkgID": "python3-rpm@4.16.1.3-25.el9.x86_64",
+          "PkgName": "python3-rpm",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35937",
+          "PkgRef": "pkg:rpm/alma/python3-rpm@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: TOCTOU race in checks for unsafe symlinks",
+          "Description": "A race condition vulnerability was found in rpm. A local unprivileged user could use this flaw to bypass the checks that were introduced in response to CVE-2017-7500 and CVE-2017-7501, potentially gaining root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-367",
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35937",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://linux.oracle.com/cve/CVE-2021-35937.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35937",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35937",
+            "https://www.usenix.org/legacy/event/sec05/tech/full_papers/borisov/borisov.pdf"
+          ],
+          "PublishedDate": "2022-08-25T20:15:09.243Z",
+          "LastModifiedDate": "2023-11-07T03:36:39.433Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35938",
+          "PkgID": "python3-rpm@4.16.1.3-25.el9.x86_64",
+          "PkgName": "python3-rpm",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35938",
+          "PkgRef": "pkg:rpm/alma/python3-rpm@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: races with chown/chmod/capabilities calls during installation",
+          "Description": "A symbolic link issue was found in rpm. It occurs when rpm sets the desired permissions and credentials after installing a file. A local unprivileged user could use this flaw to exchange the original file with a symbolic link to a security-critical file and escalate their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35938",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://bugzilla.suse.com/show_bug.cgi?id=1157880",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://github.com/rpm-software-management/rpm/commit/25a435e90844ea98fe5eb7bef22c1aecf3a9c033",
+            "https://github.com/rpm-software-management/rpm/pull/1919",
+            "https://linux.oracle.com/cve/CVE-2021-35938.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35938",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35938"
+          ],
+          "PublishedDate": "2022-08-25T20:15:09.307Z",
+          "LastModifiedDate": "2022-11-29T18:06:15.997Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35939",
+          "PkgID": "python3-rpm@4.16.1.3-25.el9.x86_64",
+          "PkgName": "python3-rpm",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35939",
+          "PkgRef": "pkg:rpm/alma/python3-rpm@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: checks for unsafe symlinks are not performed for intermediary directories",
+          "Description": "It was found that the fix for CVE-2017-7500 and CVE-2017-7501 was incomplete: the check was only implemented for the parent directory of the file to be created. A local unprivileged user who owns another ancestor directory could potentially use this flaw to gain root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35939",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://github.com/rpm-software-management/rpm/commit/96ec957e281220f8e137a2d5eb23b83a6377d556",
+            "https://github.com/rpm-software-management/rpm/pull/1919",
+            "https://linux.oracle.com/cve/CVE-2021-35939.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35939",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35939"
+          ],
+          "PublishedDate": "2022-08-26T16:15:08.683Z",
+          "LastModifiedDate": "2023-02-04T01:16:51.737Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35937",
+          "PkgID": "rpm@4.16.1.3-25.el9.x86_64",
+          "PkgName": "rpm",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35937",
+          "PkgRef": "pkg:rpm/alma/rpm@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: TOCTOU race in checks for unsafe symlinks",
+          "Description": "A race condition vulnerability was found in rpm. A local unprivileged user could use this flaw to bypass the checks that were introduced in response to CVE-2017-7500 and CVE-2017-7501, potentially gaining root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-367",
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35937",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://linux.oracle.com/cve/CVE-2021-35937.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35937",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35937",
+            "https://www.usenix.org/legacy/event/sec05/tech/full_papers/borisov/borisov.pdf"
+          ],
+          "PublishedDate": "2022-08-25T20:15:09.243Z",
+          "LastModifiedDate": "2023-11-07T03:36:39.433Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35938",
+          "PkgID": "rpm@4.16.1.3-25.el9.x86_64",
+          "PkgName": "rpm",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35938",
+          "PkgRef": "pkg:rpm/alma/rpm@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: races with chown/chmod/capabilities calls during installation",
+          "Description": "A symbolic link issue was found in rpm. It occurs when rpm sets the desired permissions and credentials after installing a file. A local unprivileged user could use this flaw to exchange the original file with a symbolic link to a security-critical file and escalate their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35938",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://bugzilla.suse.com/show_bug.cgi?id=1157880",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://github.com/rpm-software-management/rpm/commit/25a435e90844ea98fe5eb7bef22c1aecf3a9c033",
+            "https://github.com/rpm-software-management/rpm/pull/1919",
+            "https://linux.oracle.com/cve/CVE-2021-35938.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35938",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35938"
+          ],
+          "PublishedDate": "2022-08-25T20:15:09.307Z",
+          "LastModifiedDate": "2022-11-29T18:06:15.997Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35939",
+          "PkgID": "rpm@4.16.1.3-25.el9.x86_64",
+          "PkgName": "rpm",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35939",
+          "PkgRef": "pkg:rpm/alma/rpm@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: checks for unsafe symlinks are not performed for intermediary directories",
+          "Description": "It was found that the fix for CVE-2017-7500 and CVE-2017-7501 was incomplete: the check was only implemented for the parent directory of the file to be created. A local unprivileged user who owns another ancestor directory could potentially use this flaw to gain root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35939",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://github.com/rpm-software-management/rpm/commit/96ec957e281220f8e137a2d5eb23b83a6377d556",
+            "https://github.com/rpm-software-management/rpm/pull/1919",
+            "https://linux.oracle.com/cve/CVE-2021-35939.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35939",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35939"
+          ],
+          "PublishedDate": "2022-08-26T16:15:08.683Z",
+          "LastModifiedDate": "2023-02-04T01:16:51.737Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35937",
+          "PkgID": "rpm-build-libs@4.16.1.3-25.el9.x86_64",
+          "PkgName": "rpm-build-libs",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35937",
+          "PkgRef": "pkg:rpm/alma/rpm-build-libs@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: TOCTOU race in checks for unsafe symlinks",
+          "Description": "A race condition vulnerability was found in rpm. A local unprivileged user could use this flaw to bypass the checks that were introduced in response to CVE-2017-7500 and CVE-2017-7501, potentially gaining root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-367",
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35937",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://linux.oracle.com/cve/CVE-2021-35937.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35937",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35937",
+            "https://www.usenix.org/legacy/event/sec05/tech/full_papers/borisov/borisov.pdf"
+          ],
+          "PublishedDate": "2022-08-25T20:15:09.243Z",
+          "LastModifiedDate": "2023-11-07T03:36:39.433Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35938",
+          "PkgID": "rpm-build-libs@4.16.1.3-25.el9.x86_64",
+          "PkgName": "rpm-build-libs",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35938",
+          "PkgRef": "pkg:rpm/alma/rpm-build-libs@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: races with chown/chmod/capabilities calls during installation",
+          "Description": "A symbolic link issue was found in rpm. It occurs when rpm sets the desired permissions and credentials after installing a file. A local unprivileged user could use this flaw to exchange the original file with a symbolic link to a security-critical file and escalate their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35938",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://bugzilla.suse.com/show_bug.cgi?id=1157880",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://github.com/rpm-software-management/rpm/commit/25a435e90844ea98fe5eb7bef22c1aecf3a9c033",
+            "https://github.com/rpm-software-management/rpm/pull/1919",
+            "https://linux.oracle.com/cve/CVE-2021-35938.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35938",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35938"
+          ],
+          "PublishedDate": "2022-08-25T20:15:09.307Z",
+          "LastModifiedDate": "2022-11-29T18:06:15.997Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35939",
+          "PkgID": "rpm-build-libs@4.16.1.3-25.el9.x86_64",
+          "PkgName": "rpm-build-libs",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35939",
+          "PkgRef": "pkg:rpm/alma/rpm-build-libs@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: checks for unsafe symlinks are not performed for intermediary directories",
+          "Description": "It was found that the fix for CVE-2017-7500 and CVE-2017-7501 was incomplete: the check was only implemented for the parent directory of the file to be created. A local unprivileged user who owns another ancestor directory could potentially use this flaw to gain root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35939",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://github.com/rpm-software-management/rpm/commit/96ec957e281220f8e137a2d5eb23b83a6377d556",
+            "https://github.com/rpm-software-management/rpm/pull/1919",
+            "https://linux.oracle.com/cve/CVE-2021-35939.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35939",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35939"
+          ],
+          "PublishedDate": "2022-08-26T16:15:08.683Z",
+          "LastModifiedDate": "2023-02-04T01:16:51.737Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35937",
+          "PkgID": "rpm-libs@4.16.1.3-25.el9.x86_64",
+          "PkgName": "rpm-libs",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35937",
+          "PkgRef": "pkg:rpm/alma/rpm-libs@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: TOCTOU race in checks for unsafe symlinks",
+          "Description": "A race condition vulnerability was found in rpm. A local unprivileged user could use this flaw to bypass the checks that were introduced in response to CVE-2017-7500 and CVE-2017-7501, potentially gaining root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-367",
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35937",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://linux.oracle.com/cve/CVE-2021-35937.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35937",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35937",
+            "https://www.usenix.org/legacy/event/sec05/tech/full_papers/borisov/borisov.pdf"
+          ],
+          "PublishedDate": "2022-08-25T20:15:09.243Z",
+          "LastModifiedDate": "2023-11-07T03:36:39.433Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35938",
+          "PkgID": "rpm-libs@4.16.1.3-25.el9.x86_64",
+          "PkgName": "rpm-libs",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35938",
+          "PkgRef": "pkg:rpm/alma/rpm-libs@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: races with chown/chmod/capabilities calls during installation",
+          "Description": "A symbolic link issue was found in rpm. It occurs when rpm sets the desired permissions and credentials after installing a file. A local unprivileged user could use this flaw to exchange the original file with a symbolic link to a security-critical file and escalate their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35938",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://bugzilla.suse.com/show_bug.cgi?id=1157880",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://github.com/rpm-software-management/rpm/commit/25a435e90844ea98fe5eb7bef22c1aecf3a9c033",
+            "https://github.com/rpm-software-management/rpm/pull/1919",
+            "https://linux.oracle.com/cve/CVE-2021-35938.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35938",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35938"
+          ],
+          "PublishedDate": "2022-08-25T20:15:09.307Z",
+          "LastModifiedDate": "2022-11-29T18:06:15.997Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35939",
+          "PkgID": "rpm-libs@4.16.1.3-25.el9.x86_64",
+          "PkgName": "rpm-libs",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35939",
+          "PkgRef": "pkg:rpm/alma/rpm-libs@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: checks for unsafe symlinks are not performed for intermediary directories",
+          "Description": "It was found that the fix for CVE-2017-7500 and CVE-2017-7501 was incomplete: the check was only implemented for the parent directory of the file to be created. A local unprivileged user who owns another ancestor directory could potentially use this flaw to gain root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35939",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://github.com/rpm-software-management/rpm/commit/96ec957e281220f8e137a2d5eb23b83a6377d556",
+            "https://github.com/rpm-software-management/rpm/pull/1919",
+            "https://linux.oracle.com/cve/CVE-2021-35939.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35939",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35939"
+          ],
+          "PublishedDate": "2022-08-26T16:15:08.683Z",
+          "LastModifiedDate": "2023-02-04T01:16:51.737Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35937",
+          "PkgID": "rpm-sign-libs@4.16.1.3-25.el9.x86_64",
+          "PkgName": "rpm-sign-libs",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35937",
+          "PkgRef": "pkg:rpm/alma/rpm-sign-libs@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: TOCTOU race in checks for unsafe symlinks",
+          "Description": "A race condition vulnerability was found in rpm. A local unprivileged user could use this flaw to bypass the checks that were introduced in response to CVE-2017-7500 and CVE-2017-7501, potentially gaining root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-367",
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35937",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://linux.oracle.com/cve/CVE-2021-35937.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35937",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35937",
+            "https://www.usenix.org/legacy/event/sec05/tech/full_papers/borisov/borisov.pdf"
+          ],
+          "PublishedDate": "2022-08-25T20:15:09.243Z",
+          "LastModifiedDate": "2023-11-07T03:36:39.433Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35938",
+          "PkgID": "rpm-sign-libs@4.16.1.3-25.el9.x86_64",
+          "PkgName": "rpm-sign-libs",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35938",
+          "PkgRef": "pkg:rpm/alma/rpm-sign-libs@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: races with chown/chmod/capabilities calls during installation",
+          "Description": "A symbolic link issue was found in rpm. It occurs when rpm sets the desired permissions and credentials after installing a file. A local unprivileged user could use this flaw to exchange the original file with a symbolic link to a security-critical file and escalate their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35938",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://bugzilla.suse.com/show_bug.cgi?id=1157880",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://github.com/rpm-software-management/rpm/commit/25a435e90844ea98fe5eb7bef22c1aecf3a9c033",
+            "https://github.com/rpm-software-management/rpm/pull/1919",
+            "https://linux.oracle.com/cve/CVE-2021-35938.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35938",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35938"
+          ],
+          "PublishedDate": "2022-08-25T20:15:09.307Z",
+          "LastModifiedDate": "2022-11-29T18:06:15.997Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35939",
+          "PkgID": "rpm-sign-libs@4.16.1.3-25.el9.x86_64",
+          "PkgName": "rpm-sign-libs",
+          "InstalledVersion": "4.16.1.3-25.el9",
+          "FixedVersion": "4.16.1.3-27.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35939",
+          "PkgRef": "pkg:rpm/alma/rpm-sign-libs@4.16.1.3-25.el9?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "rpm: checks for unsafe symlinks are not performed for intermediary directories",
+          "Description": "It was found that the fix for CVE-2017-7500 and CVE-2017-7501 was incomplete: the check was only implemented for the parent directory of the file to be created. A local unprivileged user who owns another ancestor directory could potentially use this flaw to gain root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0647",
+            "https://access.redhat.com/security/cve/CVE-2021-35939",
+            "https://bugzilla.redhat.com/1964114",
+            "https://bugzilla.redhat.com/1964125",
+            "https://bugzilla.redhat.com/1964129",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964114",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964125",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1964129",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35939",
+            "https://errata.almalinux.org/8/ALSA-2024-0647.html",
+            "https://errata.rockylinux.org/RLSA-2024:0647",
+            "https://github.com/rpm-software-management/rpm/commit/96ec957e281220f8e137a2d5eb23b83a6377d556",
+            "https://github.com/rpm-software-management/rpm/pull/1919",
+            "https://linux.oracle.com/cve/CVE-2021-35939.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0647.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-35939",
+            "https://rpm.org/wiki/Releases/4.18.0",
+            "https://security.gentoo.org/glsa/202210-22",
+            "https://www.cve.org/CVERecord?id=CVE-2021-35939"
+          ],
+          "PublishedDate": "2022-08-26T16:15:08.683Z",
+          "LastModifiedDate": "2023-02-04T01:16:51.737Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-7104",
+          "PkgID": "sqlite-libs@3.34.1-6.el9_1.x86_64",
+          "PkgName": "sqlite-libs",
+          "InstalledVersion": "3.34.1-6.el9_1",
+          "FixedVersion": "3.34.1-7.el9_3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "alma",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-7104",
+          "PkgRef": "pkg:rpm/alma/sqlite-libs@3.34.1-6.el9_1?arch=x86_64\u0026distro=alma-9.3",
+          "DataSource": {
+            "ID": "alma",
+            "Name": "AlmaLinux Product Errata",
+            "URL": "https://errata.almalinux.org/"
+          },
+          "Title": "sqlite: heap-buffer-overflow at sessionfuzz",
+          "Description": "A vulnerability was found in SQLite SQLite3 up to 3.43.0 and classified as critical. This issue affects the function sessionReadRecord of the file ext/session/sqlite3session.c of the component make alltest Handler. The manipulation leads to heap-based buffer overflow. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-248999.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-119",
+            "CWE-122"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0253",
+            "https://access.redhat.com/security/cve/CVE-2023-7104",
+            "https://bugzilla.redhat.com/2256194",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2256194",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7104",
+            "https://errata.almalinux.org/8/ALSA-2024-0253.html",
+            "https://errata.rockylinux.org/RLSA-2024:0253",
+            "https://linux.oracle.com/cve/CVE-2023-7104.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0465.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AYONA2XSNFMXLAW4IHLFI5UVV3QRNG5K/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D6C2HN4T2S6GYNTAUXLH45LQZHK7QPHP/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-7104",
+            "https://security.netapp.com/advisory/ntap-20240112-0008/",
+            "https://sqlite.org/forum/forumpost/5bcbf4571c",
+            "https://sqlite.org/src/info/0e4e7a05c4204b47",
+            "https://ubuntu.com/security/notices/USN-6566-1",
+            "https://vuldb.com/?ctiid.248999",
+            "https://vuldb.com/?id.248999",
+            "https://www.cve.org/CVERecord?id=CVE-2023-7104"
+          ],
+          "PublishedDate": "2023-12-29T10:15:13.89Z",
+          "LastModifiedDate": "2024-04-11T01:23:34.91Z"
+        }
+      ]
+    }
+  ]
+}

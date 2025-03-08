@@ -1,0 +1,1658 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/grype/sboms/gazebo_sbom.json",
+  "ArtifactType": "cyclonedx",
+  "Metadata": {
+    "OS": {
+      "Family": "ubuntu",
+      "Name": "20.04"
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "jsons/grype/sboms/gazebo_sbom.json (ubuntu 20.04)",
+      "Class": "os-pkgs",
+      "Type": "ubuntu",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2022-47695",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.34-6ubuntu1.8",
+          "FixedVersion": "2.34-6ubuntu1.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-47695",
+          "PkgRef": "pkg:deb/ubuntu/binutils@2.34-6ubuntu1.8?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=566a1b2e312bed82",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "binutils: uninitialized field in bfd_mach_o_get_synthetic_symtab() in match-o.c",
+          "Description": "An issue was discovered Binutils objdump before 2.39.3 allows attackers to cause a denial of service or other unspecified impacts via function bfd_mach_o_get_synthetic_symtab in match-o.c.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-47695",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-47695",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=29846",
+            "https://ubuntu.com/security/notices/USN-6381-1",
+            "https://ubuntu.com/security/notices/USN-6655-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-47695"
+          ],
+          "PublishedDate": "2023-08-22T19:16:30.743Z",
+          "LastModifiedDate": "2023-08-26T02:14:58.653Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-48063",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.34-6ubuntu1.8",
+          "FixedVersion": "2.34-6ubuntu1.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-48063",
+          "PkgRef": "pkg:deb/ubuntu/binutils@2.34-6ubuntu1.8?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=566a1b2e312bed82",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "binutils: excessive memory consumption in load_separate_debug_files() in dwarf.c",
+          "Description": "GNU Binutils before 2.40 was discovered to contain an excessive memory consumption vulnerability via the function load_separate_debug_files at dwarf2.c. The attacker could supply a crafted ELF file and cause a DNS attack.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-48063",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-48063",
+            "https://security.netapp.com/advisory/ntap-20231006-0008/",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=29924",
+            "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git%3Bh=75393a2d54bcc40053e5262a3de9d70c5ebfbbfd",
+            "https://ubuntu.com/security/notices/USN-6413-1",
+            "https://ubuntu.com/security/notices/USN-6655-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-48063"
+          ],
+          "PublishedDate": "2023-08-22T19:16:30.867Z",
+          "LastModifiedDate": "2023-11-07T03:56:28.04Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-48065",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.34-6ubuntu1.8",
+          "FixedVersion": "2.34-6ubuntu1.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-48065",
+          "PkgRef": "pkg:deb/ubuntu/binutils@2.34-6ubuntu1.8?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=566a1b2e312bed82",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "binutils: memory leak in find_abstract_instance() in dwarf2.c",
+          "Description": "GNU Binutils before 2.40 was discovered to contain a memory leak vulnerability var the function find_abstract_instance in dwarf2.c.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-401"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-48065",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/GLZXZXFX2ZWTDU2QZUSZG36LZZVTKUVG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/KGSKF4GH7425S6XFDQMWTJGD5U47BAZN/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-48065",
+            "https://security.netapp.com/advisory/ntap-20231006-0008/",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=29925",
+            "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git%3Bh=d28fbc7197ba0e021a43f873eff90b05dcdcff6a",
+            "https://ubuntu.com/security/notices/USN-6655-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-48065"
+          ],
+          "PublishedDate": "2023-08-22T19:16:31.013Z",
+          "LastModifiedDate": "2023-11-15T02:36:07.08Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2017-13716",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.34-6ubuntu1.8",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-13716",
+          "PkgRef": "pkg:deb/ubuntu/binutils@2.34-6ubuntu1.8?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=566a1b2e312bed82",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "binutils: Memory leak with the C++ symbol demangler routine in libiberty",
+          "Description": "The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 7.1,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2017-13716",
+            "https://nvd.nist.gov/vuln/detail/CVE-2017-13716",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=22009",
+            "https://www.cve.org/CVERecord?id=CVE-2017-13716"
+          ],
+          "PublishedDate": "2017-08-28T21:29:00.293Z",
+          "LastModifiedDate": "2019-10-03T00:03:26.223Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-20657",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.34-6ubuntu1.8",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-20657",
+          "PkgRef": "pkg:deb/ubuntu/binutils@2.34-6ubuntu1.8?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=566a1b2e312bed82",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "libiberty: Memory leak in demangle_template function resulting in a denial of service",
+          "Description": "The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-772"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://www.securityfocus.com/bid/106444",
+            "https://access.redhat.com/errata/RHSA-2019:3352",
+            "https://access.redhat.com/security/cve/CVE-2018-20657",
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=88539",
+            "https://linux.oracle.com/cve/CVE-2018-20657.html",
+            "https://linux.oracle.com/errata/ELSA-2019-3352.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-20657",
+            "https://support.f5.com/csp/article/K62602089",
+            "https://www.cve.org/CVERecord?id=CVE-2018-20657"
+          ],
+          "PublishedDate": "2019-01-02T14:29:00.313Z",
+          "LastModifiedDate": "2019-11-06T01:15:17.87Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-1010204",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.34-6ubuntu1.8",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1010204",
+          "PkgRef": "pkg:deb/ubuntu/binutils@2.34-6ubuntu1.8?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=566a1b2e312bed82",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service",
+          "Description": "GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-125",
+            "CWE-681"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 4.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2019-1010204",
+            "https://linux.oracle.com/cve/CVE-2019-1010204.html",
+            "https://linux.oracle.com/errata/ELSA-2020-1797.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2019-1010204",
+            "https://security.netapp.com/advisory/ntap-20190822-0001/",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=23765",
+            "https://support.f5.com/csp/article/K05032915?utm_source=f5support\u0026amp%3Butm_medium=RSS",
+            "https://ubuntu.com/security/notices/USN-5349-1",
+            "https://www.cve.org/CVERecord?id=CVE-2019-1010204"
+          ],
+          "PublishedDate": "2019-07-23T14:15:13.373Z",
+          "LastModifiedDate": "2023-11-07T03:02:17.51Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-48064",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.34-6ubuntu1.8",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-48064",
+          "PkgRef": "pkg:deb/ubuntu/binutils@2.34-6ubuntu1.8?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=566a1b2e312bed82",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "binutils: excessive memory consumption in _bfd_dwarf2_find_nearest_line_with_alt() in dwarf2.c",
+          "Description": "GNU Binutils before 2.40 was discovered to contain an excessive memory consumption vulnerability via the function bfd_dwarf2_find_nearest_line_with_alt at dwarf2.c. The attacker could supply a crafted ELF file and cause a DNS attack.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-48064",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/3XKYUAIORNQ32IZUOZFURECZKEXOHX7Z/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/KGSKF4GH7425S6XFDQMWTJGD5U47BAZN/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NSUNHSOWWLLNGHRM5TUBNCJHEYHPDX2M/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-48064",
+            "https://security.netapp.com/advisory/ntap-20231006-0008/",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=29922",
+            "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git%3Bh=8f2c64de86bc3d7556121fe296dd679000283931",
+            "https://www.cve.org/CVERecord?id=CVE-2022-48064"
+          ],
+          "PublishedDate": "2023-08-22T19:16:30.937Z",
+          "LastModifiedDate": "2023-11-07T03:56:28.11Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2016-2781",
+          "PkgName": "coreutils",
+          "InstalledVersion": "8.30-3ubuntu2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-2781",
+          "PkgRef": "pkg:deb/ubuntu/coreutils@8.30-3ubuntu2?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=d5a97f6395da38c2",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "coreutils: Non-privileged session can escape to the parent session in chroot",
+          "Description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+              "V2Score": 2.1,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V2Score": 6.2,
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "http://seclists.org/oss-sec/2016/q1/452",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+            "https://access.redhat.com/security/cve/CVE-2016-2781",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+            "https://lore.kernel.org/patchwork/patch/793178/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+            "https://www.cve.org/CVERecord?id=CVE-2016-2781"
+          ],
+          "PublishedDate": "2017-02-07T15:59:00.333Z",
+          "LastModifiedDate": "2023-11-07T02:32:03.347Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-13844",
+          "PkgName": "gcc-8",
+          "InstalledVersion": "8.4.0-3ubuntu2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-13844",
+          "PkgRef": "pkg:deb/ubuntu/gcc-8@8.4.0-3ubuntu2?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=e2654c8dac0a7d73",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "kernel: ARM straight-line speculation vulnerability",
+          "Description": "Arm Armv8-A core implementations utilizing speculative execution past unconditional changes in control flow may allow unauthorized disclosure of information to an attacker with local user access via a side-channel analysis, aka \"straight-line speculation.\"",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-203"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 2.1,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://lists.llvm.org/pipermail/llvm-dev/2020-June/142109.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-10/msg00039.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-10/msg00040.html",
+            "https://access.redhat.com/security/cve/CVE-2020-13844",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13844",
+            "https://developer.arm.com/support/arm-security-updates/speculative-processor-vulnerability",
+            "https://developer.arm.com/support/arm-security-updates/speculative-processor-vulnerability/downloads/straight-line-speculation",
+            "https://developer.arm.com/support/arm-security-updates/speculative-processor-vulnerability/frequently-asked-questions",
+            "https://gcc.gnu.org/pipermail/gcc-patches/2020-June/547520.html",
+            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=679db70801da9fda91d26caf13bf5b5ccc74e8e8",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-13844",
+            "https://www.cve.org/CVERecord?id=CVE-2020-13844"
+          ],
+          "PublishedDate": "2020-06-08T23:15:10.047Z",
+          "LastModifiedDate": "2022-04-28T19:30:58.157Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-3219",
+          "PkgName": "gnupg2",
+          "InstalledVersion": "2.2.19-3ubuntu2.2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3219",
+          "PkgRef": "pkg:deb/ubuntu/gnupg2@2.2.19-3ubuntu2.2?arch=all\u0026distro=ubuntu-20.04\u0026package-id=5bb282b72e743542",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "gnupg: denial of service issue (resource consumption) using compressed packets",
+          "Description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.2
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-3219",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+            "https://dev.gnupg.org/D556",
+            "https://dev.gnupg.org/T5993",
+            "https://marc.info/?l=oss-security\u0026m=165696590211434\u0026w=4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+            "https://security.netapp.com/advisory/ntap-20230324-0001/",
+            "https://www.cve.org/CVERecord?id=CVE-2022-3219"
+          ],
+          "PublishedDate": "2023-02-23T20:15:12.393Z",
+          "LastModifiedDate": "2023-05-26T16:31:34.07Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2236",
+          "PkgName": "libgcrypt20",
+          "InstalledVersion": "1.8.5-5ubuntu1.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2236",
+          "PkgRef": "pkg:deb/ubuntu/libgcrypt20@1.8.5-5ubuntu1.1?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=cf1d5ea2865ab84b",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "libgcrypt: vulnerable to Marvin Attack",
+          "Description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-208"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2236",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2268268",
+            "https://github.com/tomato42/marvin-toolkit/tree/master/example/libgcrypt",
+            "https://lists.gnupg.org/pipermail/gcrypt-devel/2024-March/005607.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2236",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2236"
+          ],
+          "PublishedDate": "2024-03-06T22:15:57.977Z",
+          "LastModifiedDate": "2024-03-07T13:52:27.11Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-24806",
+          "PkgName": "libuv1",
+          "InstalledVersion": "1.34.2-1ubuntu1.3",
+          "FixedVersion": "1.34.2-1ubuntu1.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-24806",
+          "PkgRef": "pkg:deb/ubuntu/libuv1@1.34.2-1ubuntu1.3?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=43f13fa361efa836",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "libuv: Improper Domain Lookup that potentially leads to SSRF attacks",
+          "Description": "libuv is a multi-platform support library with a focus on asynchronous I/O. The `uv_getaddrinfo` function in `src/unix/getaddrinfo.c` (and its windows counterpart `src/win/getaddrinfo.c`), truncates hostnames to 256 characters before calling `getaddrinfo`. This behavior can be exploited to create addresses like `0x00007f000001`, which are considered valid by `getaddrinfo` and could allow an attacker to craft payloads that resolve to unintended IP addresses, bypassing developer checks. The vulnerability arises due to how the `hostname_ascii` variable (with a length of 256 bytes) is handled in `uv_getaddrinfo` and subsequently in `uv__idna_toascii`. When the hostname exceeds 256 characters, it gets truncated without a terminating null byte. As a result attackers may be able to access internal APIs or for websites (similar to MySpace) that allows users to have `username.example.com` pages. Internal services that crawl or cache these user pages can be exposed to SSRF attacks if a malicious user chooses a long vulnerable username. This issue has been addressed in release version 1.48.0. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-918"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/02/08/2",
+            "http://www.openwall.com/lists/oss-security/2024/02/11/1",
+            "https://access.redhat.com/security/cve/CVE-2024-24806",
+            "https://github.com/libuv/libuv/commit/0f2d7e784a256b54b2385043438848047bc2a629",
+            "https://github.com/libuv/libuv/commit/3530bcc30350d4a6ccf35d2f7b33e23292b9de70",
+            "https://github.com/libuv/libuv/commit/c858a147643de38a09dd4164758ae5b685f2b488",
+            "https://github.com/libuv/libuv/commit/e0327e1d508b8207c9150b6e582f0adf26213c39",
+            "https://github.com/libuv/libuv/security/advisories/GHSA-f74f-cvh7-c6q6",
+            "https://lists.debian.org/debian-lts-announce/2024/03/msg00005.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-24806",
+            "https://ubuntu.com/security/notices/USN-6666-1",
+            "https://www.chainguard.dev/unchained/unpacking-libuvs-cve-2024-24806-software-dark-matter-will-go-under-the-radar-not-in-chainguard-images-tho",
+            "https://www.cve.org/CVERecord?id=CVE-2024-24806"
+          ],
+          "PublishedDate": "2024-02-07T22:15:10.173Z",
+          "LastModifiedDate": "2024-03-05T23:15:07.867Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-25062",
+          "PkgName": "libxml2",
+          "InstalledVersion": "2.9.10+dfsg-5ubuntu0.20.04.6",
+          "FixedVersion": "2.9.10+dfsg-5ubuntu0.20.04.7",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-25062",
+          "PkgRef": "pkg:deb/ubuntu/libxml2@2.9.10+dfsg-5ubuntu0.20.04.6?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=f02fffa3eb5b21bd",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "libxml2: use-after-free in XMLReader",
+          "Description": "An issue was discovered in libxml2 before 2.11.7 and 2.12.x before 2.12.5. When using the XML Reader interface with DTD validation and XInclude expansion enabled, processing crafted XML documents can lead to an xmlValidatePopElement use-after-free.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-25062",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/604",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/tags",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-25062",
+            "https://ubuntu.com/security/notices/USN-6658-1",
+            "https://ubuntu.com/security/notices/USN-6658-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-25062"
+          ],
+          "PublishedDate": "2024-02-04T16:15:45.12Z",
+          "LastModifiedDate": "2024-02-13T00:40:40.503Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5678",
+          "PkgName": "openssl",
+          "InstalledVersion": "1.1.1f-1ubuntu2.20",
+          "FixedVersion": "1.1.1f-1ubuntu2.21",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5678",
+          "PkgRef": "pkg:deb/ubuntu/openssl@1.1.1f-1ubuntu2.20?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=2644f107d997550f",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "openssl: Generating excessively long X9.42 DH keys or checking excessively long X9.42 DH keys or parameters may be very slow",
+          "Description": "Issue summary: Generating excessively long X9.42 DH keys or checking\nexcessively long X9.42 DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_generate_key() to\ngenerate an X9.42 DH key may experience long delays.  Likewise, applications\nthat use DH_check_pub_key(), DH_check_pub_key_ex() or EVP_PKEY_public_check()\nto check an X9.42 DH key or X9.42 DH parameters may experience long delays.\nWhere the key or parameters that are being checked have been obtained from\nan untrusted source this may lead to a Denial of Service.\n\nWhile DH_check() performs all the necessary checks (as of CVE-2023-3817),\nDH_check_pub_key() doesn't make any of these checks, and is therefore\nvulnerable for excessively large P and Q parameters.\n\nLikewise, while DH_generate_key() performs a check for an excessively large\nP, it doesn't check for an excessively large Q.\n\nAn application that calls DH_generate_key() or DH_check_pub_key() and\nsupplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nDH_generate_key() and DH_check_pub_key() are also called by a number of\nother OpenSSL functions.  An application calling any of those other\nfunctions may similarly be affected.  The other functions affected by this\nare DH_check_pub_key_ex(), EVP_PKEY_public_check(), and EVP_PKEY_generate().\n\nAlso vulnerable are the OpenSSL pkey command line application when using the\n\"-pubcheck\" option, as well as the OpenSSL genpkey command line application.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n\n",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-754"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:7877",
+            "https://access.redhat.com/security/cve/CVE-2023-5678",
+            "https://bugzilla.redhat.com/2224962",
+            "https://bugzilla.redhat.com/2227852",
+            "https://bugzilla.redhat.com/2248616",
+            "https://errata.almalinux.org/8/ALSA-2023-7877.html",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=34efaef6c103d636ab507a0cc34dca4d3aecc055",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=710fee740904b6290fef0dd5536fbcedbc38ff0c",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=db925ae2e65d0d925adef429afc37f75bd1c2017",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ddeb4b6c6d527e54ce9a99cba785c0f7776e54b6",
+            "https://linux.oracle.com/cve/CVE-2023-5678.html",
+            "https://linux.oracle.com/errata/ELSA-2024-12056.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5678",
+            "https://security.netapp.com/advisory/ntap-20231130-0010/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://ubuntu.com/security/notices/USN-6632-1",
+            "https://ubuntu.com/security/notices/USN-6709-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-5678",
+            "https://www.openssl.org/news/secadv/20231106.txt"
+          ],
+          "PublishedDate": "2023-11-06T16:15:42.67Z",
+          "LastModifiedDate": "2023-11-30T22:15:09.723Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-0727",
+          "PkgName": "openssl",
+          "InstalledVersion": "1.1.1f-1ubuntu2.20",
+          "FixedVersion": "1.1.1f-1ubuntu2.21",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-0727",
+          "PkgRef": "pkg:deb/ubuntu/openssl@1.1.1f-1ubuntu2.20?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=2644f107d997550f",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "openssl: denial of service via null dereference",
+          "Description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "LOW",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-0727",
+            "https://github.com/alexcrichton/openssl-src-rs/commit/add20f73b6b42be7451af2e1044d4e0e778992b2",
+            "https://github.com/github/advisory-database/pull/3472",
+            "https://github.com/openssl/openssl/commit/09df4395b5071217b76dc7d3d2e630eb8c5a79c2",
+            "https://github.com/openssl/openssl/commit/775acfdbd0c6af9ac855f34969cdab0c0c90844a",
+            "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
+            "https://github.com/openssl/openssl/pull/23362",
+            "https://github.com/pyca/cryptography/commit/3519591d255d4506fbcd0d04037d45271903c64d",
+            "https://github.openssl.org/openssl/extended-releases/commit/03b3941d60c4bce58fab69a0c22377ab439bc0e8",
+            "https://github.openssl.org/openssl/extended-releases/commit/aebaa5883e31122b404e450732dc833dc9dee539",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-0727",
+            "https://security.netapp.com/advisory/ntap-20240208-0006",
+            "https://security.netapp.com/advisory/ntap-20240208-0006/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://ubuntu.com/security/notices/USN-6632-1",
+            "https://ubuntu.com/security/notices/USN-6709-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-0727",
+            "https://www.openssl.org/news/secadv/20240125.txt"
+          ],
+          "PublishedDate": "2024-01-26T09:15:07.637Z",
+          "LastModifiedDate": "2024-02-08T10:15:13.91Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-27043",
+          "PkgName": "python3.8",
+          "InstalledVersion": "3.8.10-0ubuntu1~20.04.9",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-27043",
+          "PkgRef": "pkg:deb/ubuntu/python3.8@3.8.10-0ubuntu1~20.04.9?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=9d009d57a7a19581",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "python: Parsing errors in email/_parseaddr.py lead to incorrect value in email address part of tuple",
+          "Description": "The email module of Python through 3.11.3 incorrectly parses e-mail addresses that contain a special character. The wrong portion of an RFC2822 header is identified as the value of the addr-spec. In some applications, an attacker can bypass a protection mechanism in which application access is granted only after verifying receipt of e-mail to a specific domain (e.g., only @company.example.com addresses may be used for signup). This occurs in email/_parseaddr.py in recent versions of Python.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://python.org",
+            "https://access.redhat.com/articles/7051467",
+            "https://access.redhat.com/errata/RHSA-2024:0256",
+            "https://access.redhat.com/security/cve/CVE-2023-27043",
+            "https://bugzilla.redhat.com/2196183",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2196183",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27043",
+            "https://errata.almalinux.org/8/ALSA-2024-0256.html",
+            "https://errata.rockylinux.org/RLSA-2024:0256",
+            "https://github.com/python/cpython/issues/102988",
+            "https://github.com/python/cpython/pull/102990",
+            "https://github.com/python/cpython/pull/105127",
+            "https://linux.oracle.com/cve/CVE-2023-27043.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0466.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/4ZAEFSFZDNBNJPNOUTLG5COISGQDLMGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/75DTHSTNOFFNAWHXKMDXS7EJWC6W2FUC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ARI7VDSNTQVXRQFM6IK5GSSLEIYV4VZH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BQAKLUJMHFGVBRDPEY57BJGNCE5UUPHW/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HXYVPEZUA3465AEFX5JVFVP7KIFZMF3N/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/N6M5I6OQHJABNEYY555HUMMKX3Y4P25Z/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NEUNZSZ3CVSM2QWVYH3N2XGOCDWNYUA3/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ORLXS5YTKN65E2Q2NWKXMFS5FWQHRNZW/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/P2MAICLFDDO3QVNHTZ2OCERZQ34R2PIC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/P2W2BZQIHMCKRI5FNBJERFYMS5PK6TAH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PHVGRKQAGANCSGFI3QMYOCIMS4IFOZA5/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PU6Y2S5CBN5BWCBDAJFTGIBZLK3S2G3J/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QDRDDPDN3VFIYXJIYEABY6USX5EU66AG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/RDDC2VOX7OQC6OHMYTVD4HLFZIV6PYBC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SINP4OVYNB2AGDYI2GS37EMW3H3F7XPZ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SOX7BCN6YL7B3RFPEEXPIU5CMTEHJOKR/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VZXC32CJ7TWDPJO6GY2XIQRO7JZX5FLP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/XWMBD4LNHWEXRI6YVFWJMTJQUL5WOFTS/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YQVY5C5REXWJIORJIL2FIL3ALOEJEF72/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-27043",
+            "https://python-security.readthedocs.io/vuln/email-parseaddr-realname.html",
+            "https://security.netapp.com/advisory/ntap-20230601-0003/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-27043"
+          ],
+          "PublishedDate": "2023-04-19T00:15:07.973Z",
+          "LastModifiedDate": "2024-02-26T16:27:45.78Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28085",
+          "PkgName": "util-linux",
+          "InstalledVersion": "2.34-0.1ubuntu9.4",
+          "FixedVersion": "2.34-0.1ubuntu9.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28085",
+          "PkgRef": "pkg:deb/ubuntu/util-linux@2.34-0.1ubuntu9.4?arch=amd64\u0026distro=ubuntu-20.04\u0026package-id=5f64056f2bb376a2",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "util-linux: CVE-2024-28085: wall: escape sequence injection",
+          "Description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28085",
+            "https://github.com/skyler-ferrante/CVE-2024-28085",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+            "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+            "https://ubuntu.com/security/notices/USN-6719-1",
+            "https://ubuntu.com/security/notices/USN-6719-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28085",
+            "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+          ],
+          "PublishedDate": "2024-03-27T19:15:48.367Z",
+          "LastModifiedDate": "2024-04-07T12:15:08.903Z"
+        }
+      ]
+    },
+    {
+      "Target": "Ruby",
+      "Class": "lang-pkgs",
+      "Type": "gemspec",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2020-36327",
+          "PkgName": "bundler",
+          "InstalledVersion": "2.1.2",
+          "FixedVersion": "= 2.2.10, \u003e= 2.2.18",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ruby-advisory-db",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-36327",
+          "PkgRef": "pkg:gem/bundler@2.1.2?package-id=f899abd794674b99",
+          "DataSource": {
+            "ID": "ruby-advisory-db",
+            "Name": "Ruby Advisory Database",
+            "URL": "https://github.com/rubysec/ruby-advisory-db"
+          },
+          "Title": "rubygem-bundler: Dependencies of gems with explicit source may be installed from a different source",
+          "Description": "Bundler 1.16.0 through 2.2.9 and 2.2.11 through 2.2.16 sometimes chooses a dependency source based on the highest gem version number, which means that a rogue gem found at a public source may be chosen, even if the intended choice was a private gem that is a dependency of another private gem that is explicitly depended on by the application. NOTE: it is not correct to use CVE-2021-24105 for every \"Dependency Confusion\" issue in every product.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 9.3,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/articles/6206172",
+            "https://access.redhat.com/security/cve/CVE-2020-36327",
+            "https://bundler.io/blog/2021/02/15/a-more-secure-bundler-we-fixed-our-source-priorities.html",
+            "https://errata.almalinux.org/8/ALSA-2022-0545.html",
+            "https://github.com/rubygems/rubygems",
+            "https://github.com/rubygems/rubygems/blob/master/bundler/CHANGELOG.md#2218-may-25-2021",
+            "https://github.com/rubygems/rubygems/commit/078bf682ac40017b309b5fc69f283ff640e7c129",
+            "https://github.com/rubygems/rubygems/issues/3982",
+            "https://github.com/rubygems/rubygems/pull/4609",
+            "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/bundler/CVE-2020-36327.yml",
+            "https://linux.oracle.com/cve/CVE-2020-36327.html",
+            "https://linux.oracle.com/errata/ELSA-2022-0545.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/MWXHK5UUHVSHF7HTHMX6JY3WXDVNIHSL/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MWXHK5UUHVSHF7HTHMX6JY3WXDVNIHSL",
+            "https://mensfeld.pl/2021/02/rubygems-dependency-confusion-attack-side-of-things",
+            "https://mensfeld.pl/2021/02/rubygems-dependency-confusion-attack-side-of-things/",
+            "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-24105",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-36327",
+            "https://www.cve.org/CVERecord?id=CVE-2020-36327",
+            "https://www.zofrex.com/blog/2021/04/29/bundler-still-vulnerable-dependency-confusion-cve-2020-36327",
+            "https://www.zofrex.com/blog/2021/04/29/bundler-still-vulnerable-dependency-confusion-cve-2020-36327/"
+          ],
+          "PublishedDate": "2021-04-29T03:15:08.71Z",
+          "LastModifiedDate": "2023-11-07T03:22:14.687Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-43809",
+          "PkgName": "bundler",
+          "InstalledVersion": "2.1.2",
+          "FixedVersion": "\u003e= 2.2.33",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ruby-advisory-db",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-43809",
+          "PkgRef": "pkg:gem/bundler@2.1.2?package-id=f899abd794674b99",
+          "DataSource": {
+            "ID": "ruby-advisory-db",
+            "Name": "Ruby Advisory Database",
+            "URL": "https://github.com/rubysec/ruby-advisory-db"
+          },
+          "Title": "rubygem-bundler: unexpected code execution in Gemfiles",
+          "Description": "`Bundler` is a package for managing application dependencies in Ruby. In `bundler` versions before 2.2.33, when working with untrusted and apparently harmless `Gemfile`'s, it is not expected that they lead to execution of external code, unless that's explicit in the ruby code inside the `Gemfile` itself. However, if the `Gemfile` includes `gem` entries that use the `git` option with invalid, but seemingly harmless, values with a leading dash, this can be false. To handle dependencies that come from a Git repository instead of a registry, Bundler uses various commands, such as `git clone`. These commands are being constructed using user input (e.g. the repository URL). When building the commands, Bundler versions before 2.2.33 correctly avoid Command Injection vulnerabilities by passing an array of arguments instead of a command string. However, there is the possibility that a user input starts with a dash (`-`) and is therefore treated as an optional argument instead of a positional one. This can lead to Code Execution because some of the commands have options that can be leveraged to run arbitrary executables. Since this value comes from the `Gemfile` file, it can contain any character, including a leading dash.\n\nTo exploit this vulnerability, an attacker has to craft a directory containing a `Gemfile` file that declares a dependency that is located in a Git repository. This dependency has to have a Git URL in the form of `-u./payload`. This URL will be used to construct a Git clone command but will be interpreted as the upload-pack argument. Then this directory needs to be shared with the victim, who then needs to run a command that evaluates the Gemfile, such as `bundle lock`, inside.\n\nThis vulnerability can lead to Arbitrary Code Execution, which could potentially lead to the takeover of the system. However, the exploitability is very low, because it requires a lot of user interaction. Bundler 2.2.33 has patched this problem by inserting `--` as an argument before any positional arguments to those Git commands that were affected by this issue. Regardless of whether users can upgrade or not, they should review any untrustred `Gemfile`'s before running any `bundler` commands that may read them, since they can contain arbitrary ruby code.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-88"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 9.3,
+              "V3Score": 7.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-43809",
+            "https://cwe.mitre.org/data/definitions/88.html",
+            "https://github.com/rubygems/rubygems",
+            "https://github.com/rubygems/rubygems/commit/0fad1ccfe9dd7a3c5b82c1496df3c2b4842870d3",
+            "https://github.com/rubygems/rubygems/commit/a4f2f8ac17e6ce81c689527a8b6f14381060d95f",
+            "https://github.com/rubygems/rubygems/pull/5142",
+            "https://github.com/rubygems/rubygems/security/advisories/GHSA-fj7f-vq84-fh43",
+            "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/bundler/CVE-2021-43809.yml",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-43809",
+            "https://www.cve.org/CVERecord?id=CVE-2021-43809",
+            "https://www.sonarsource.com/blog/securing-developer-tools-package-managers",
+            "https://www.sonarsource.com/blog/securing-developer-tools-package-managers/"
+          ],
+          "PublishedDate": "2021-12-08T19:15:10.067Z",
+          "LastModifiedDate": "2023-11-16T03:04:51.22Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-33621",
+          "PkgName": "cgi",
+          "InstalledVersion": "0.1.0",
+          "FixedVersion": "~\u003e 0.1.0.2, ~\u003e 0.2.2, \u003e= 0.3.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ruby-advisory-db",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-33621",
+          "PkgRef": "pkg:gem/cgi@0.1.0?package-id=942e6deac8f337ca",
+          "DataSource": {
+            "ID": "ruby-advisory-db",
+            "Name": "Ruby Advisory Database",
+            "URL": "https://github.com/rubysec/ruby-advisory-db"
+          },
+          "Title": "ruby/cgi-gem: HTTP response splitting in CGI",
+          "Description": "The cgi gem before 0.1.0.2, 0.2.x before 0.2.2, and 0.3.x before 0.3.5 for Ruby allows HTTP response splitting. This is relevant to applications that use untrusted user input either to generate an HTTP response or to create a CGI::Cookie object.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-74"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1431",
+            "https://access.redhat.com/security/cve/CVE-2021-33621",
+            "https://bugzilla.redhat.com/2149706",
+            "https://bugzilla.redhat.com/2184059",
+            "https://bugzilla.redhat.com/2184061",
+            "https://bugzilla.redhat.com/2218614",
+            "https://errata.almalinux.org/8/ALSA-2024-1431.html",
+            "https://github.com/ruby/cgi/commit/64c5045c0a6b84fdb938a8465a0890e5f7162708",
+            "https://github.com/ruby/cgi/commit/b46d41c36380e04f6388970b5ef05c687f4d1819",
+            "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/cgi/CVE-2021-33621.yml",
+            "https://hackerone.com/reports/1204695",
+            "https://linux.oracle.com/cve/CVE-2021-33621.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1576.html",
+            "https://lists.debian.org/debian-lts-announce/2023/06/msg00012.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DQR7LWED6VAPD5ATYOBZIGJQPCUBRJBX",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DQR7LWED6VAPD5ATYOBZIGJQPCUBRJBX/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/THVTYHHEOVLQFCFHWURZYO7PVUPBHRZD",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/THVTYHHEOVLQFCFHWURZYO7PVUPBHRZD/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YACE6ORF2QBXXBK2V2CM36D7TZMEJVAS",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YACE6ORF2QBXXBK2V2CM36D7TZMEJVAS/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DQR7LWED6VAPD5ATYOBZIGJQPCUBRJBX",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/THVTYHHEOVLQFCFHWURZYO7PVUPBHRZD",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YACE6ORF2QBXXBK2V2CM36D7TZMEJVAS",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-33621",
+            "https://security.gentoo.org/glsa/202401-27",
+            "https://security.netapp.com/advisory/ntap-20221228-0004",
+            "https://security.netapp.com/advisory/ntap-20221228-0004/",
+            "https://ubuntu.com/security/notices/USN-5806-1",
+            "https://ubuntu.com/security/notices/USN-5806-2",
+            "https://ubuntu.com/security/notices/USN-5806-3",
+            "https://ubuntu.com/security/notices/USN-6181-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-33621",
+            "https://www.ruby-lang.org/en/news/2022/11/22/http-response-splitting-in-cgi-cve-2021-33621",
+            "https://www.ruby-lang.org/en/news/2022/11/22/http-response-splitting-in-cgi-cve-2021-33621/"
+          ],
+          "PublishedDate": "2022-11-18T23:15:18.987Z",
+          "LastModifiedDate": "2024-01-24T05:15:10.787Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-41816",
+          "PkgName": "cgi",
+          "InstalledVersion": "0.1.0",
+          "FixedVersion": "~\u003e 0.1.0.1, ~\u003e 0.1.1, ~\u003e 0.2.1, \u003e= 0.3.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ruby-advisory-db",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-41816",
+          "PkgRef": "pkg:gem/cgi@0.1.0?package-id=942e6deac8f337ca",
+          "DataSource": {
+            "ID": "ruby-advisory-db",
+            "Name": "Ruby Advisory Database",
+            "URL": "https://github.com/rubysec/ruby-advisory-db"
+          },
+          "Title": "ruby: buffer overflow in CGI.escape_html",
+          "Description": "CGI.escape_html in Ruby before 2.7.5 and 3.x before 3.0.3 has an integer overflow and resultant buffer overflow via a long string on platforms (such as Windows) where size_t and long have different numbers of bytes. This also affects the CGI gem before 0.3.1 for Ruby.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-41816",
+            "https://github.com/ruby/cgi",
+            "https://github.com/ruby/cgi/commit/959ccf0b6a672bcc64aeaa60c6e1f9e728f1e87f",
+            "https://github.com/ruby/cgi/commit/ad079c1cb5f58eba1ffac46da79995fcf94a3a6e",
+            "https://github.com/ruby/cgi/commit/c6a37a671b556eb06140ea89cc465136b24207a6",
+            "https://github.com/ruby/cgi/commit/c728632c1c09d46cfd4ecbff9caaa3651dd1002a",
+            "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/cgi/CVE-2021-41816.yml",
+            "https://groups.google.com/g/ruby-security-ann/c/4MQ568ZG47c",
+            "https://hackerone.com/reports/1328463",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-41816",
+            "https://security-tracker.debian.org/tracker/CVE-2021-41816",
+            "https://security.gentoo.org/glsa/202401-27",
+            "https://security.netapp.com/advisory/ntap-20220303-0006",
+            "https://security.netapp.com/advisory/ntap-20220303-0006/",
+            "https://ubuntu.com/security/notices/USN-5235-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-41816",
+            "https://www.ruby-lang.org/en/news/2021/11/24/buffer-overrun-in-cgi-escape_html-cve-2021-41816",
+            "https://www.ruby-lang.org/en/news/2021/11/24/buffer-overrun-in-cgi-escape_html-cve-2021-41816/"
+          ],
+          "PublishedDate": "2022-02-06T21:15:07.887Z",
+          "LastModifiedDate": "2024-01-24T05:15:11.28Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-41819",
+          "PkgName": "cgi",
+          "InstalledVersion": "0.1.0",
+          "FixedVersion": "~\u003e 0.1.0.1, ~\u003e 0.1.1, ~\u003e 0.2.1, \u003e= 0.3.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ruby-advisory-db",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-41819",
+          "PkgRef": "pkg:gem/cgi@0.1.0?package-id=942e6deac8f337ca",
+          "DataSource": {
+            "ID": "ruby-advisory-db",
+            "Name": "Ruby Advisory Database",
+            "URL": "https://github.com/rubysec/ruby-advisory-db"
+          },
+          "Title": "ruby: Cookie prefix spoofing in CGI::Cookie.parse",
+          "Description": "CGI::Cookie.parse in Ruby through 2.6.8 mishandles security prefixes in cookie names. This also affects the CGI gem through 0.3.0 for Ruby.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-565"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2022:6450",
+            "https://access.redhat.com/security/cve/CVE-2021-41819",
+            "https://bugzilla.redhat.com/2025104",
+            "https://bugzilla.redhat.com/2026757",
+            "https://bugzilla.redhat.com/2075685",
+            "https://bugzilla.redhat.com/2075687",
+            "https://errata.almalinux.org/8/ALSA-2022-6450.html",
+            "https://github.com/ruby/cgi",
+            "https://github.com/ruby/cgi/commit/052eb3a828b0f99bca39cfd800f6c2b91307dbd5",
+            "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/cgi/CVE-2021-41819.yml",
+            "https://hackerone.com/reports/910552",
+            "https://linux.oracle.com/cve/CVE-2021-41819.html",
+            "https://linux.oracle.com/errata/ELSA-2022-6450.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-41819",
+            "https://security.gentoo.org/glsa/202401-27",
+            "https://security.netapp.com/advisory/ntap-20220121-0003",
+            "https://security.netapp.com/advisory/ntap-20220121-0003/",
+            "https://ubuntu.com/security/notices/USN-5235-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-41819",
+            "https://www.ruby-lang.org/en/news/2021/11/24/cookie-prefix-spoofing-in-cgi-cookie-parse-cve-2021-41819",
+            "https://www.ruby-lang.org/en/news/2021/11/24/cookie-prefix-spoofing-in-cgi-cookie-parse-cve-2021-41819/"
+          ],
+          "PublishedDate": "2022-01-01T06:15:07.293Z",
+          "LastModifiedDate": "2024-01-24T05:15:11.853Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-41817",
+          "PkgName": "date",
+          "InstalledVersion": "3.0.0",
+          "FixedVersion": "~\u003e 2.0.1, ~\u003e 3.0.2, ~\u003e 3.1.2, \u003e= 3.2.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ruby-advisory-db",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-41817",
+          "PkgRef": "pkg:gem/date@3.0.0?package-id=efdcb7ae2e31e1eb",
+          "DataSource": {
+            "ID": "ruby-advisory-db",
+            "Name": "Ruby Advisory Database",
+            "URL": "https://github.com/rubysec/ruby-advisory-db"
+          },
+          "Title": "ruby: Regular expression denial of service vulnerability of Date parsing methods",
+          "Description": "Date.parse in the date gem through 3.2.0 for Ruby allows ReDoS (regular expression Denial of Service) via a long string. The fixed versions are 3.2.1, 3.1.2, 3.0.2, and 2.0.1.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-1333"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2022:6450",
+            "https://access.redhat.com/security/cve/CVE-2021-41817",
+            "https://bugzilla.redhat.com/2025104",
+            "https://bugzilla.redhat.com/2026757",
+            "https://bugzilla.redhat.com/2075685",
+            "https://bugzilla.redhat.com/2075687",
+            "https://errata.almalinux.org/8/ALSA-2022-6450.html",
+            "https://github.com/ruby/date",
+            "https://github.com/ruby/date/commit/376c65942bd1d81803f14d37351737df60ec4664 (v3.2.2 - followups to mimic prev behaviour)",
+            "https://github.com/ruby/date/commit/3959accef8da5c128f8a8e2fd54e932a4fb253b0",
+            "https://github.com/ruby/date/commit/3959accef8da5c128f8a8e2fd54e932a4fb253b0 (Fix)",
+            "https://github.com/ruby/date/commit/8f2d7a0c7e52cea8333824bd527822e5449ed83d (v3.2.2 - followups to mimic prev behaviour)",
+            "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/date/CVE-2021-41817.yml",
+            "https://hackerone.com/reports/1254844",
+            "https://linux.oracle.com/cve/CVE-2021-41817.html",
+            "https://linux.oracle.com/errata/ELSA-2022-6450.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-41817",
+            "https://security.gentoo.org/glsa/202401-27",
+            "https://ubuntu.com/security/notices/USN-5235-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-41817",
+            "https://www.ruby-lang.org/en/news/2021/11/15/date-parsing-method-regexp-dos-cve-2021-41817",
+            "https://www.ruby-lang.org/en/news/2021/11/15/date-parsing-method-regexp-dos-cve-2021-41817/"
+          ],
+          "PublishedDate": "2022-01-01T05:15:08.197Z",
+          "LastModifiedDate": "2024-01-24T05:15:11.52Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-31799",
+          "PkgName": "rdoc",
+          "InstalledVersion": "6.2.1",
+          "FixedVersion": "~\u003e 6.1.2.1, ~\u003e 6.2.1.1, \u003e= 6.3.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ruby-advisory-db",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-31799",
+          "PkgRef": "pkg:gem/rdoc@6.2.1?package-id=57105590d8792be6",
+          "DataSource": {
+            "ID": "ruby-advisory-db",
+            "Name": "Ruby Advisory Database",
+            "URL": "https://github.com/rubysec/ruby-advisory-db"
+          },
+          "Title": "rubygem-rdoc: Command injection vulnerability in RDoc",
+          "Description": "In RDoc 3.11 through 6.x before 6.3.1, as distributed with Ruby through 3.0.1, it is possible to execute arbitrary code via | and tags in a filename.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-78"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            },
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 4.4,
+              "V3Score": 7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2022:0672",
+            "https://access.redhat.com/security/cve/CVE-2021-31799",
+            "https://bugzilla.redhat.com/1980126",
+            "https://bugzilla.redhat.com/1980128",
+            "https://bugzilla.redhat.com/1980132",
+            "https://errata.almalinux.org/8/ALSA-2022-0672.html",
+            "https://github.com/ruby/rdoc",
+            "https://github.com/ruby/rdoc/commit/a7f5d6ab88632b3b482fe10611382ff73d14eed7",
+            "https://github.com/ruby/ruby/commit/483f303d02e768b69e476e0b9be4ab2f26389522 (2.7)",
+            "https://github.com/ruby/ruby/commit/b1c73f239fe9af97de837331849f55d67c27561e (master)",
+            "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/rdoc/CVE-2021-31799.yml",
+            "https://linux.oracle.com/cve/CVE-2021-31799.html",
+            "https://linux.oracle.com/errata/ELSA-2022-0672.html",
+            "https://lists.debian.org/debian-lts-announce/2021/10/msg00009.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-31799",
+            "https://security-tracker.debian.org/tracker/CVE-2021-31799",
+            "https://security.gentoo.org/glsa/202401-05",
+            "https://security.netapp.com/advisory/ntap-20210902-0004",
+            "https://security.netapp.com/advisory/ntap-20210902-0004/",
+            "https://ubuntu.com/security/notices/USN-5020-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-31799",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.ruby-lang.org/en/news/2021/05/02/os-command-injection-in-rdoc",
+            "https://www.ruby-lang.org/en/news/2021/05/02/os-command-injection-in-rdoc/"
+          ],
+          "PublishedDate": "2021-07-30T14:15:16.62Z",
+          "LastModifiedDate": "2024-01-05T14:15:46.04Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-27281",
+          "PkgName": "rdoc",
+          "InstalledVersion": "6.2.1",
+          "FixedVersion": "~\u003e 6.3.4, \u003e= 6.3.4.1, ~\u003e 6.4.1, \u003e= 6.4.1.1, \u003e=  6.5.1.1",
+          "Status": "fixed",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-27281",
+          "PkgRef": "pkg:gem/rdoc@6.2.1?package-id=57105590d8792be6",
+          "DataSource": {
+            "ID": "ruby-advisory-db",
+            "Name": "Ruby Advisory Database",
+            "URL": "https://github.com/rubysec/ruby-advisory-db"
+          },
+          "Title": "ruby: RCE vulnerability with .rdoc_options in RDoc",
+          "Description": "A flaw was found in Rubygem RDoc. When parsing .rdoc_options used for configuration in RDoc as a YAML file there are no restrictions on the classes that can be restored. This issue may lead to object injection, resulting in remote code execution.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L",
+              "V3Score": 4.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-27281",
+            "https://github.com/ruby/rdoc",
+            "https://github.com/ruby/rdoc/commit/1254b0066f312ddbf7fae7a195e66ce5b3bc6656",
+            "https://github.com/ruby/rdoc/commit/32ff6ba0bebd8ea26f569da5fd23be2937f6a644",
+            "https://github.com/ruby/rdoc/commit/48617985e9fbc2825219d55f04e3e0e98d2923be",
+            "https://github.com/ruby/rdoc/commit/811f125a4a0cc968e3eb18e16ea6c1a3b49a11bf",
+            "https://github.com/ruby/rdoc/commit/a5de13bf0f0c26f8e764e82b5bf4bf8bffc7198e",
+            "https://github.com/ruby/rdoc/commit/d22ba930f1f611dda531dba04cd3d2531bb3f8a5",
+            "https://github.com/ruby/rdoc/commit/da7a0c7553ef7250ca665a3fecdc01dbaacbb43d",
+            "https://github.com/ruby/rdoc/commit/e4a0e71e6f1032f8b4e5e58b4ef60d702c22ce17",
+            "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/rdoc/CVE-2024-27281.yml",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-27281",
+            "https://www.cve.org/CVERecord?id=CVE-2024-27281",
+            "https://www.ruby-lang.org/en/news/2024/03/21/rce-rdoc-cve-2024-27281",
+            "https://www.ruby-lang.org/en/news/2024/03/21/rce-rdoc-cve-2024-27281/"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-28965",
+          "PkgName": "rexml",
+          "InstalledVersion": "3.2.3",
+          "FixedVersion": "~\u003e 3.1.9.1, ~\u003e 3.2.3.1, \u003e= 3.2.5",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ruby-advisory-db",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-28965",
+          "PkgRef": "pkg:gem/rexml@3.2.3?package-id=64aacccdfacd1c32",
+          "DataSource": {
+            "ID": "ruby-advisory-db",
+            "Name": "Ruby Advisory Database",
+            "URL": "https://github.com/rubysec/ruby-advisory-db"
+          },
+          "Title": "ruby: XML round-trip vulnerability in REXML",
+          "Description": "The REXML gem before 3.2.5 in Ruby before 2.6.7, 2.7.x before 2.7.3, and 3.x before 3.0.1 does not properly address XML round-trip issues. An incorrect document can be produced after parsing and serializing.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-28965",
+            "https://errata.almalinux.org/8/ALSA-2021-2588.html",
+            "https://github.com/ruby/rexml",
+            "https://github.com/ruby/rexml/commit/2fe62e29094d95921d7e19abbd2e26b23d78dc5b",
+            "https://github.com/ruby/rexml/commit/3c137eb119550874b2b3e27d12b733ca67033377",
+            "https://github.com/ruby/rexml/commit/6a250d2cd1194c2be72becbdd9c3e770aa16e752",
+            "https://github.com/ruby/rexml/commit/9b311e59ae05749e082eb6bbefa1cb620d1a786e",
+            "https://github.com/ruby/rexml/commit/a659c63e37414506dfb0d4655e031bb7a2e73fc8",
+            "https://github.com/ruby/rexml/commit/f7bab8937513b1403cea5aff874cbf32fd5e8551",
+            "https://github.com/ruby/rexml/commit/f9d88e4948b4a43294c25dc0edb16815bd9d8618",
+            "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/rexml/CVE-2021-28965.yml",
+            "https://hackerone.com/reports/1104077",
+            "https://linux.oracle.com/cve/CVE-2021-28965.html",
+            "https://linux.oracle.com/errata/ELSA-2021-2588.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WTVFTLFVCSUE5CXHINJEUCKSHU4SWDMT/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WTVFTLFVCSUE5CXHINJEUCKSHU4SWDMT",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-28965",
+            "https://rubygems.org/gems/rexml",
+            "https://security.netapp.com/advisory/ntap-20210528-0003",
+            "https://security.netapp.com/advisory/ntap-20210528-0003/",
+            "https://ubuntu.com/security/notices/USN-4922-1",
+            "https://ubuntu.com/security/notices/USN-4922-2",
+            "https://www.cve.org/CVERecord?id=CVE-2021-28965",
+            "https://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965",
+            "https://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965/"
+          ],
+          "PublishedDate": "2021-04-21T07:15:07.677Z",
+          "LastModifiedDate": "2023-11-07T03:32:25.16Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-27280",
+          "PkgName": "stringio",
+          "InstalledVersion": "0.1.0",
+          "FixedVersion": "\u003e= 3.0.1.1",
+          "Status": "fixed",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-27280",
+          "PkgRef": "pkg:gem/stringio@0.1.0?package-id=ed34c9c6ad88ec75",
+          "DataSource": {
+            "ID": "ruby-advisory-db",
+            "Name": "Ruby Advisory Database",
+            "URL": "https://github.com/rubysec/ruby-advisory-db"
+          },
+          "Title": "ruby: Buffer overread vulnerability in StringIO",
+          "Description": "A buffer overread flaw was found in rubygem StringIO. The ungetbyte and ungetc methods on a StringIO object can read past the end of a string, and a subsequent call to StringIO.gets may return the memory value.",
+          "Severity": "LOW",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 3.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-27280",
+            "https://github.com/ruby/stringio",
+            "https://github.com/ruby/stringio/commit/0e596524097706263d10900ca180898e4a8f5233",
+            "https://github.com/ruby/stringio/commit/c58c5f54f1eab99665ea6a161d29ff6a7490afc8",
+            "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/stringio/CVE-2024-27280.yml",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-27280",
+            "https://www.cve.org/CVERecord?id=CVE-2024-27280",
+            "https://www.ruby-lang.org/en/news/2024/03/21/buffer-overread-cve-2024-27280",
+            "https://www.ruby-lang.org/en/news/2024/03/21/buffer-overread-cve-2024-27280/"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2023-28755",
+          "PkgName": "uri",
+          "InstalledVersion": "0.10.0",
+          "FixedVersion": "~\u003e 0.10.0.1, ~\u003e 0.10.2, ~\u003e 0.11.1, \u003e= 0.12.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ruby-advisory-db",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-28755",
+          "PkgRef": "pkg:gem/uri@0.10.0?package-id=e5f8a32f2f1ef7d7",
+          "DataSource": {
+            "ID": "ruby-advisory-db",
+            "Name": "Ruby Advisory Database",
+            "URL": "https://github.com/rubysec/ruby-advisory-db"
+          },
+          "Title": "ruby: ReDoS vulnerability in URI",
+          "Description": "A ReDoS issue was discovered in the URI component through 0.12.0 in Ruby through 3.2.1. The URI parser mishandles invalid URLs that have specific characters. It causes an increase in execution time for parsing strings to URI objects. The fixed versions are 0.12.1, 0.11.1, 0.10.2 and 0.10.0.1.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-1333"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1431",
+            "https://access.redhat.com/security/cve/CVE-2023-28755",
+            "https://bugzilla.redhat.com/2149706",
+            "https://bugzilla.redhat.com/2184059",
+            "https://bugzilla.redhat.com/2184061",
+            "https://bugzilla.redhat.com/2218614",
+            "https://errata.almalinux.org/8/ALSA-2024-1431.html",
+            "https://github.com/advisories/GHSA-hv5j-3h9f-99c2",
+            "https://github.com/ruby/ruby/commit/8ce4ab146498879b65e22f1be951b25eebb79300",
+            "https://github.com/ruby/uri",
+            "https://github.com/ruby/uri/releases",
+            "https://github.com/ruby/uri/releases/",
+            "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/uri/CVE-2023-28755.yml",
+            "https://linux.oracle.com/cve/CVE-2023-28755.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1576.html",
+            "https://lists.debian.org/debian-lts-announce/2023/04/msg00033.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/FFZANOQA4RYX7XCB42OO3P24DQKWHEKA",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/FFZANOQA4RYX7XCB42OO3P24DQKWHEKA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/G76GZG3RAGYF4P75YY7J7TGYAU7Z5E2T",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/G76GZG3RAGYF4P75YY7J7TGYAU7Z5E2T/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WMIOPLBAAM3FEQNAXA2L7BDKOGSVUT5Z",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WMIOPLBAAM3FEQNAXA2L7BDKOGSVUT5Z/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FFZANOQA4RYX7XCB42OO3P24DQKWHEKA",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G76GZG3RAGYF4P75YY7J7TGYAU7Z5E2T",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WMIOPLBAAM3FEQNAXA2L7BDKOGSVUT5Z",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-28755",
+            "https://security.gentoo.org/glsa/202401-27",
+            "https://security.netapp.com/advisory/ntap-20230526-0003",
+            "https://security.netapp.com/advisory/ntap-20230526-0003/",
+            "https://ubuntu.com/security/notices/USN-6055-1",
+            "https://ubuntu.com/security/notices/USN-6055-2",
+            "https://ubuntu.com/security/notices/USN-6087-1",
+            "https://ubuntu.com/security/notices/USN-6181-1",
+            "https://ubuntu.com/security/notices/USN-6219-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-28755",
+            "https://www.ruby-lang.org/en/downloads/releases",
+            "https://www.ruby-lang.org/en/downloads/releases/",
+            "https://www.ruby-lang.org/en/news/2022/12/25/ruby-3-2-0-released",
+            "https://www.ruby-lang.org/en/news/2022/12/25/ruby-3-2-0-released/",
+            "https://www.ruby-lang.org/en/news/2023/03/28/redos-in-uri-cve-2023-28755",
+            "https://www.ruby-lang.org/en/news/2023/03/28/redos-in-uri-cve-2023-28755/"
+          ],
+          "PublishedDate": "2023-03-31T04:15:09.037Z",
+          "LastModifiedDate": "2024-01-24T05:15:12.9Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-36617",
+          "PkgName": "uri",
+          "InstalledVersion": "0.10.0",
+          "FixedVersion": "~\u003e 0.10.0.3, ~\u003e 0.10.3, ~\u003e 0.11.2, \u003e= 0.12.2",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ruby-advisory-db",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-36617",
+          "PkgRef": "pkg:gem/uri@0.10.0?package-id=e5f8a32f2f1ef7d7",
+          "DataSource": {
+            "ID": "ruby-advisory-db",
+            "Name": "Ruby Advisory Database",
+            "URL": "https://github.com/rubysec/ruby-advisory-db"
+          },
+          "Title": "rubygem-uri: ReDoS vulnerability - upstream's incomplete fix for CVE-2023-28755",
+          "Description": "A ReDoS issue was discovered in the URI component before 0.12.2 for Ruby. The URI parser mishandles invalid URLs that have specific characters. There is an increase in execution time for parsing strings to URI objects with rfc2396_parser.rb and rfc3986_parser.rb. NOTE: this issue exists becuse of an incomplete fix for CVE-2023-28755. Version 0.10.3 is also a fixed version.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-1333"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:1431",
+            "https://access.redhat.com/security/cve/CVE-2023-36617",
+            "https://bugzilla.redhat.com/2149706",
+            "https://bugzilla.redhat.com/2184059",
+            "https://bugzilla.redhat.com/2184061",
+            "https://bugzilla.redhat.com/2218614",
+            "https://errata.almalinux.org/8/ALSA-2024-1431.html",
+            "https://github.com/advisories/GHSA-hww2-5g85-429m",
+            "https://github.com/ruby/ruby/pull/7995/commits/e6503b9b8b25dc5d6507ff68062127038b082a23",
+            "https://github.com/ruby/ruby/pull/7995/files",
+            "https://github.com/ruby/uri",
+            "https://github.com/ruby/uri/commit/05b1e7d026b886e65a60ee35625229da9ec220bb",
+            "https://github.com/ruby/uri/commit/38bf797c488bcb4a37fb322bfa84977981863ec6",
+            "https://github.com/ruby/uri/commit/3cd938df20db26c9439e9f681aadfb9bbeb6d1c0",
+            "https://github.com/ruby/uri/commit/4d02315181d8a485496f1bb107a6ab51d6f3a35f",
+            "https://github.com/ruby/uri/commit/70794abc162bb15bb934713b5669713d6700d35c",
+            "https://github.com/ruby/uri/commit/7e33934c91b7f8f3ea7b7a4258b468e19f636bc3",
+            "https://github.com/ruby/uri/commit/9a8e0cc03da964054c2a4ea26b59c53c3bae4921",
+            "https://github.com/ruby/uri/commit/ba36c8a3ecad8c16dd3e60a6da9abd768206c8fa",
+            "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/uri/CVE-2023-36617.yml",
+            "https://linux.oracle.com/cve/CVE-2023-36617.html",
+            "https://linux.oracle.com/errata/ELSA-2024-1576.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-36617",
+            "https://rubygems.org/gems/uri/versions/0.10.0.3",
+            "https://rubygems.org/gems/uri/versions/0.10.3",
+            "https://rubygems.org/gems/uri/versions/0.11.2",
+            "https://rubygems.org/gems/uri/versions/0.12.2",
+            "https://security.netapp.com/advisory/ntap-20230725-0002",
+            "https://security.netapp.com/advisory/ntap-20230725-0002/",
+            "https://ubuntu.com/security/notices/USN-6219-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-36617",
+            "https://www.ruby-lang.org/en/news/2023/06/29/redos-in-uri-CVE-2023-36617",
+            "https://www.ruby-lang.org/en/news/2023/06/29/redos-in-uri-CVE-2023-36617/"
+          ],
+          "PublishedDate": "2023-06-29T13:15:09.583Z",
+          "LastModifiedDate": "2023-07-25T15:15:13.497Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-25613",
+          "PkgName": "webrick",
+          "InstalledVersion": "1.6.0",
+          "FixedVersion": "\u003e= 1.6.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ruby-advisory-db",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-25613",
+          "PkgRef": "pkg:gem/webrick@1.6.0?package-id=1cc2a7160436894d",
+          "DataSource": {
+            "ID": "ruby-advisory-db",
+            "Name": "Ruby Advisory Database",
+            "URL": "https://github.com/rubysec/ruby-advisory-db"
+          },
+          "Title": "ruby: Potential HTTP request smuggling in WEBrick",
+          "Description": "An issue was discovered in Ruby through 2.5.8, 2.6.x through 2.6.6, and 2.7.x through 2.7.1. WEBrick, a simple HTTP server bundled with Ruby, had not checked the transfer-encoding header value rigorously. An attacker may potentially exploit this issue to bypass a reverse proxy (which also has a poor header check), which may lead to an HTTP Request Smuggling attack.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-25613",
+            "https://errata.almalinux.org/8/ALSA-2021-2588.html",
+            "https://github.com/ruby/webrick",
+            "https://github.com/ruby/webrick/commit/076ac636bf48b7a492887ce4de7041de23e6c00d",
+            "https://github.com/ruby/webrick/commit/8946bb38b4d87549f0d99ed73c62c41933f97cc7",
+            "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/webrick/CVE-2020-25613.yml",
+            "https://hackerone.com/reports/965267",
+            "https://linux.oracle.com/cve/CVE-2020-25613.html",
+            "https://linux.oracle.com/errata/ELSA-2021-2588.html",
+            "https://lists.debian.org/debian-lts-announce/2023/04/msg00033.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PFP3E7KXXT3H3KA6CBZPUOGA5VPFARRJ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YTZURYROG3FFED3TYCQOBV66BS4K6WOV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PFP3E7KXXT3H3KA6CBZPUOGA5VPFARRJ",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YTZURYROG3FFED3TYCQOBV66BS4K6WOV",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-25613",
+            "https://security.gentoo.org/glsa/202401-27",
+            "https://security.netapp.com/advisory/ntap-20210115-0008",
+            "https://security.netapp.com/advisory/ntap-20210115-0008/",
+            "https://ubuntu.com/security/notices/USN-4882-1",
+            "https://www.cve.org/CVERecord?id=CVE-2020-25613",
+            "https://www.ruby-lang.org/en/news/2020/09/29/http-request-smuggling-cve-2020-25613",
+            "https://www.ruby-lang.org/en/news/2020/09/29/http-request-smuggling-cve-2020-25613/"
+          ],
+          "PublishedDate": "2020-10-06T13:15:13.823Z",
+          "LastModifiedDate": "2024-01-24T05:15:08.827Z"
+        }
+      ]
+    }
+  ]
+}

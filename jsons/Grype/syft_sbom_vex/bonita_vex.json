@@ -1,0 +1,6394 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42366",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42366",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15874"
+    ],
+    "description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_token function at awk.c:1159.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42366",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0227710e02376087",
+    "name": "busybox",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.36.1-r5?arch=aarch64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42365",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42365",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15871"
+    ],
+    "description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42365",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0227710e02376087",
+    "name": "busybox",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.36.1-r5?arch=aarch64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42364",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42364",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15868"
+    ],
+    "description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42364",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0227710e02376087",
+    "name": "busybox",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.36.1-r5?arch=aarch64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42363",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42363",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15865"
+    ],
+    "description": "A use-after-free vulnerability was discovered in xasprintf function in xfuncs_printf.c:344 in BusyBox v.1.36.1.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42363",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0227710e02376087",
+    "name": "busybox",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox@1.36.1-r5?arch=aarch64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42366",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42366",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15874"
+    ],
+    "description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_token function at awk.c:1159.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42366",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0f0ad7dedad78ba4",
+    "name": "busybox-binsh",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox-binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox-binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r5?arch=aarch64&upstream=busybox&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42365",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42365",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15871"
+    ],
+    "description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42365",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0f0ad7dedad78ba4",
+    "name": "busybox-binsh",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox-binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox-binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r5?arch=aarch64&upstream=busybox&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42364",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42364",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15868"
+    ],
+    "description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42364",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0f0ad7dedad78ba4",
+    "name": "busybox-binsh",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox-binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox-binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r5?arch=aarch64&upstream=busybox&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42363",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42363",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15865"
+    ],
+    "description": "A use-after-free vulnerability was discovered in xasprintf function in xfuncs_printf.c:344 in BusyBox v.1.36.1.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42363",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0f0ad7dedad78ba4",
+    "name": "busybox-binsh",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox-binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox-binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox_binsh:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox-binsh:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:busybox:busybox_binsh:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r5?arch=aarch64&upstream=busybox&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-0853",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-0853",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://curl.se/docs/CVE-2024-0853.html",
+     "https://curl.se/docs/CVE-2024-0853.json",
+     "https://hackerone.com/reports/2298922",
+     "https://security.netapp.com/advisory/ntap-20240307-0004/"
+    ],
+    "description": "curl inadvertently kept the SSL session ID for connections in its cache even when the verify status (*OCSP stapling*) test failed. A subsequent transfer to\nthe same hostname could then succeed if the session ID cache was still fresh, which then skipped the verify status check.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:haxx:curl:8.5.0-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "curl",
+       "version": "8.5.0-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2024-0853",
+      "versionConstraint": "= 8.5.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:haxx:curl:8.5.0:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "21d121e7add8c8e8",
+    "name": "curl",
+    "version": "8.5.0-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "curl"
+    ],
+    "cpes": [
+     "cpe:2.3:a:curl:curl:8.5.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:haxx:curl:8.5.0-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/curl@8.5.0-r0?arch=aarch64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "curl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-2466",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-2466",
+    "namespace": "nvd:cpe",
+    "severity": "Unknown",
+    "urls": [
+     "https://curl.se/docs/CVE-2024-2466.html",
+     "https://curl.se/docs/CVE-2024-2466.json",
+     "https://hackerone.com/reports/2416725"
+    ],
+    "description": "libcurl did not check the server certificate of TLS connections done to a host specified as an IP address, when built to use mbedTLS.  libcurl would wrongly avoid using the set hostname function when the specified hostname was given as an IP address, therefore completely skipping the certificate check. This affects all uses of TLS protocols (HTTPS, FTPS, IMAPS, POPS3, SMTPS, etc).",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:haxx:curl:8.5.0-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "curl",
+       "version": "8.5.0-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2024-2466",
+      "versionConstraint": ">= 8.5.0, < 8.7.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:haxx:curl:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "21d121e7add8c8e8",
+    "name": "curl",
+    "version": "8.5.0-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "curl"
+    ],
+    "cpes": [
+     "cpe:2.3:a:curl:curl:8.5.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:haxx:curl:8.5.0-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/curl@8.5.0-r0?arch=aarch64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "curl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-2398",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-2398",
+    "namespace": "nvd:cpe",
+    "severity": "Unknown",
+    "urls": [
+     "https://curl.se/docs/CVE-2024-2398.html",
+     "https://curl.se/docs/CVE-2024-2398.json",
+     "https://hackerone.com/reports/2402845",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GMD6UYKCCRCYETWQZUJ65ZRFULT6SHLI/"
+    ],
+    "description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:haxx:curl:8.5.0-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "curl",
+       "version": "8.5.0-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2024-2398",
+      "versionConstraint": ">= 7.44.0, < 8.7.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:haxx:curl:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "21d121e7add8c8e8",
+    "name": "curl",
+    "version": "8.5.0-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "curl"
+    ],
+    "cpes": [
+     "cpe:2.3:a:curl:curl:8.5.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:haxx:curl:8.5.0-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/curl@8.5.0-r0?arch=aarch64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "curl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-2004",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-2004",
+    "namespace": "nvd:cpe",
+    "severity": "Unknown",
+    "urls": [
+     "https://curl.se/docs/CVE-2024-2004.html",
+     "https://curl.se/docs/CVE-2024-2004.json",
+     "https://hackerone.com/reports/2384833",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GMD6UYKCCRCYETWQZUJ65ZRFULT6SHLI/"
+    ],
+    "description": "When a protocol selection parameter option disables all protocols without adding any then the default set of protocols would remain in the allowed set due to an error in the logic for removing protocols. The below command would perform a request to curl.se with a plaintext protocol which has been explicitly disabled.      curl --proto -all,-http http://curl.se  The flaw is only present if the set of selected protocols disables the entire set of available protocols, in itself a command with no practical use and therefore unlikely to be encountered in real situations. The curl security team has thus assessed this to be low severity bug.",
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:haxx:curl:8.5.0-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "curl",
+       "version": "8.5.0-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2024-2004",
+      "versionConstraint": ">= 7.85.0, < 8.7.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:haxx:curl:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "21d121e7add8c8e8",
+    "name": "curl",
+    "version": "8.5.0-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "curl"
+    ],
+    "cpes": [
+     "cpe:2.3:a:curl:curl:8.5.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:haxx:curl:8.5.0-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/curl@8.5.0-r0?arch=aarch64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "curl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-48161",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2023-48161",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "High",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2023-48161"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "5.2.2-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-48161",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-48161",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/tacetool/TACE#cve-2023-48161",
+      "https://sourceforge.net/p/giflib/bugs/167/"
+     ],
+     "description": "Buffer Overflow vulnerability in GifLib Project GifLib v.5.2.1 allows a local attacker to obtain sensitive information via the DumpSCreen2RGB function in gif2rgb.c",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.1,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "giflib",
+       "version": "5.2.1-r4"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 5.2.2-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-48161"
+     }
+    },
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "giflib",
+       "version": "5.2.1-r4"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 5.2.2-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-48161"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "574cc9a036adc2da",
+    "name": "giflib",
+    "version": "5.2.1-r4",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:giflib:giflib:5.2.1-r4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/giflib@5.2.1-r4?arch=aarch64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "giflib"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-40633",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2021-40633",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "High",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2021-40633"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "5.2.2-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-40633",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-40633",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://sourceforge.net/p/giflib/bugs/157/"
+     ],
+     "description": "A memory leak (out-of-memory) in gif2rgb in util/gif2rgb.c in giflib 5.1.4 allows remote attackers trigger an out of memory exception or denial of service via a gif format file.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 5.1,
+        "exploitabilityScore": 4.9,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "giflib",
+       "version": "5.2.1-r4"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 5.2.2-r0 (apk)",
+      "vulnerabilityID": "CVE-2021-40633"
+     }
+    },
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "giflib",
+       "version": "5.2.1-r4"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 5.2.2-r0 (apk)",
+      "vulnerabilityID": "CVE-2021-40633"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "574cc9a036adc2da",
+    "name": "giflib",
+    "version": "5.2.1-r4",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:giflib:giflib:5.2.1-r4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/giflib@5.2.1-r4?arch=aarch64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "giflib"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-39742",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2023-39742",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2023-39742"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "5.2.2-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-39742",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-39742",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://gist.github.com/huanglei3/ec9090096aa92445cf0a8baa8e929084",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/O4RLSFGPBPR3FMIUJCWPGVIYIU35YGQX/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/OPNBOB65TEA4ZEPLVENI26BY4LEX7TEF/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/T5WO6WL2TCGO6T4VKGACDIVSZI74WJAU/",
+      "https://sourceforge.net/p/giflib/bugs/166/"
+     ],
+     "description": "giflib v5.2.1 was discovered to contain a segmentation fault via the component getarg.c.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "giflib",
+       "version": "5.2.1-r4"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 5.2.2-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-39742"
+     }
+    },
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "giflib",
+       "version": "5.2.1-r4"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 5.2.2-r0 (apk)",
+      "vulnerabilityID": "CVE-2023-39742"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "574cc9a036adc2da",
+    "name": "giflib",
+    "version": "5.2.1-r4",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:giflib:giflib:5.2.1-r4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/giflib@5.2.1-r4?arch=aarch64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "giflib"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3219",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+    "namespace": "nvd:cpe",
+    "severity": "Low",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2022-3219",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+     "https://dev.gnupg.org/D556",
+     "https://dev.gnupg.org/T5993",
+     "https://marc.info/?l=oss-security&m=165696590211434&w=4",
+     "https://security.netapp.com/advisory/ntap-20230324-0001/"
+    ],
+    "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 3.3,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:2.4.4-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "gnupg",
+       "version": "2.4.4-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-3219",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1034dcee93095329",
+    "name": "gnupg",
+    "version": "2.4.4-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gnupg:gnupg:2.4.4-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/gnupg@2.4.4-r0?arch=aarch64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "gnupg"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3219",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+    "namespace": "nvd:cpe",
+    "severity": "Low",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2022-3219",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+     "https://dev.gnupg.org/D556",
+     "https://dev.gnupg.org/T5993",
+     "https://marc.info/?l=oss-security&m=165696590211434&w=4",
+     "https://security.netapp.com/advisory/ntap-20230324-0001/"
+    ],
+    "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 3.3,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:2.4.4-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "gnupg",
+       "version": "2.4.4-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-3219",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c242c0724f222378",
+    "name": "gnupg-dirmngr",
+    "version": "2.4.4-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gnupg-dirmngr:gnupg-dirmngr:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg-dirmngr:gnupg_dirmngr:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg_dirmngr:gnupg-dirmngr:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg_dirmngr:gnupg_dirmngr:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg:gnupg-dirmngr:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg:gnupg_dirmngr:2.4.4-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/gnupg-dirmngr@2.4.4-r0?arch=aarch64&upstream=gnupg&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "gnupg"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3219",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+    "namespace": "nvd:cpe",
+    "severity": "Low",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2022-3219",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+     "https://dev.gnupg.org/D556",
+     "https://dev.gnupg.org/T5993",
+     "https://marc.info/?l=oss-security&m=165696590211434&w=4",
+     "https://security.netapp.com/advisory/ntap-20230324-0001/"
+    ],
+    "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 3.3,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:2.4.4-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "gnupg",
+       "version": "2.4.4-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-3219",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c08362bf6016fe0c",
+    "name": "gnupg-gpgconf",
+    "version": "2.4.4-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gnupg-gpgconf:gnupg-gpgconf:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg-gpgconf:gnupg_gpgconf:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg_gpgconf:gnupg-gpgconf:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg_gpgconf:gnupg_gpgconf:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg:gnupg-gpgconf:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg:gnupg_gpgconf:2.4.4-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/gnupg-gpgconf@2.4.4-r0?arch=aarch64&upstream=gnupg&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "gnupg"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3219",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+    "namespace": "nvd:cpe",
+    "severity": "Low",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2022-3219",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+     "https://dev.gnupg.org/D556",
+     "https://dev.gnupg.org/T5993",
+     "https://marc.info/?l=oss-security&m=165696590211434&w=4",
+     "https://security.netapp.com/advisory/ntap-20230324-0001/"
+    ],
+    "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 3.3,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:2.4.4-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "gnupg",
+       "version": "2.4.4-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-3219",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "820d12caa16ff552",
+    "name": "gnupg-keyboxd",
+    "version": "2.4.4-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gnupg-keyboxd:gnupg-keyboxd:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg-keyboxd:gnupg_keyboxd:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg_keyboxd:gnupg-keyboxd:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg_keyboxd:gnupg_keyboxd:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg:gnupg-keyboxd:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg:gnupg_keyboxd:2.4.4-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/gnupg-keyboxd@2.4.4-r0?arch=aarch64&upstream=gnupg&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "gnupg"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3219",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+    "namespace": "nvd:cpe",
+    "severity": "Low",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2022-3219",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+     "https://dev.gnupg.org/D556",
+     "https://dev.gnupg.org/T5993",
+     "https://marc.info/?l=oss-security&m=165696590211434&w=4",
+     "https://security.netapp.com/advisory/ntap-20230324-0001/"
+    ],
+    "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 3.3,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:2.4.4-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "gnupg",
+       "version": "2.4.4-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-3219",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e0469047eec96f03",
+    "name": "gnupg-utils",
+    "version": "2.4.4-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gnupg-utils:gnupg-utils:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg-utils:gnupg_utils:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg_utils:gnupg-utils:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg_utils:gnupg_utils:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg:gnupg-utils:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg:gnupg_utils:2.4.4-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/gnupg-utils@2.4.4-r0?arch=aarch64&upstream=gnupg&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "gnupg"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3219",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+    "namespace": "nvd:cpe",
+    "severity": "Low",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2022-3219",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+     "https://dev.gnupg.org/D556",
+     "https://dev.gnupg.org/T5993",
+     "https://marc.info/?l=oss-security&m=165696590211434&w=4",
+     "https://security.netapp.com/advisory/ntap-20230324-0001/"
+    ],
+    "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 3.3,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:2.4.4-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "gnupg",
+       "version": "2.4.4-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-3219",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dd0a085fdbd33dff",
+    "name": "gnupg-wks-client",
+    "version": "2.4.4-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gnupg-wks-client:gnupg-wks-client:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg-wks-client:gnupg_wks_client:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg_wks_client:gnupg-wks-client:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg_wks_client:gnupg_wks_client:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg-wks:gnupg-wks-client:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg-wks:gnupg_wks_client:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg_wks:gnupg-wks-client:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg_wks:gnupg_wks_client:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg:gnupg-wks-client:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnupg:gnupg_wks_client:2.4.4-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/gnupg-wks-client@2.4.4-r0?arch=aarch64&upstream=gnupg&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "gnupg"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-28835",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2024-28835",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2024-28835"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.8.4-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28835",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28835",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://access.redhat.com/errata/RHSA-2024:1879",
+      "https://access.redhat.com/security/cve/CVE-2024-28835",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2269084",
+      "https://lists.gnupg.org/pipermail/gnutls-help/2024-March/004845.html"
+     ],
+     "description": "A flaw has been discovered in GnuTLS where an application crash can be induced when attempting to verify a specially crafted .pem bundle using the \"certtool --verify-chain\" command.",
+     "cvss": [
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 1.3,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "gnutls",
+       "version": "3.8.3-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.8.4-r0 (apk)",
+      "vulnerabilityID": "CVE-2024-28835"
+     }
+    },
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "gnutls",
+       "version": "3.8.3-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.8.4-r0 (apk)",
+      "vulnerabilityID": "CVE-2024-28835"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "69b36cb283cb7495",
+    "name": "gnutls",
+    "version": "3.8.3-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "LGPL-2.1-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gnutls:gnutls:3.8.3-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/gnutls@3.8.3-r0?arch=aarch64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "gnutls"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-28834",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2024-28834",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "Medium",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2024-28834"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.8.4-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-28834",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28834",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://access.redhat.com/errata/RHSA-2024:1784",
+      "https://access.redhat.com/errata/RHSA-2024:1879",
+      "https://access.redhat.com/security/cve/CVE-2024-28834",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2269228",
+      "https://lists.gnupg.org/pipermail/gnutls-help/2024-March/004845.html",
+      "https://minerva.crocs.fi.muni.cz/",
+      "https://people.redhat.com/~hkario/marvin/"
+     ],
+     "description": "A flaw was found in GnuTLS. The Minerva attack is a cryptographic vulnerability that exploits deterministic behavior in systems like GnuTLS, leading to side-channel leaks. In specific scenarios, such as when using the GNUTLS_PRIVKEY_FLAG_REPRODUCIBLE flag, it can result in a noticeable step in nonce size from 513 to 512 bits, exposing a potential timing side-channel.",
+     "cvss": [
+      {
+       "source": "secalert@redhat.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 1.6,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "gnutls",
+       "version": "3.8.3-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.8.4-r0 (apk)",
+      "vulnerabilityID": "CVE-2024-28834"
+     }
+    },
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "gnutls",
+       "version": "3.8.3-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.8.4-r0 (apk)",
+      "vulnerabilityID": "CVE-2024-28834"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "69b36cb283cb7495",
+    "name": "gnutls",
+    "version": "3.8.3-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "LGPL-2.1-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gnutls:gnutls:3.8.3-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/gnutls@3.8.3-r0?arch=aarch64&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "gnutls"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3219",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+    "namespace": "nvd:cpe",
+    "severity": "Low",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2022-3219",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+     "https://dev.gnupg.org/D556",
+     "https://dev.gnupg.org/T5993",
+     "https://marc.info/?l=oss-security&m=165696590211434&w=4",
+     "https://security.netapp.com/advisory/ntap-20230324-0001/"
+    ],
+    "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 3.3,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:2.4.4-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "gnupg",
+       "version": "2.4.4-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-3219",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "31c95698b908a0e4",
+    "name": "gpg",
+    "version": "2.4.4-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gpg:gpg:2.4.4-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/gpg@2.4.4-r0?arch=aarch64&upstream=gnupg&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "gnupg"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3219",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+    "namespace": "nvd:cpe",
+    "severity": "Low",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2022-3219",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+     "https://dev.gnupg.org/D556",
+     "https://dev.gnupg.org/T5993",
+     "https://marc.info/?l=oss-security&m=165696590211434&w=4",
+     "https://security.netapp.com/advisory/ntap-20230324-0001/"
+    ],
+    "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 3.3,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:2.4.4-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "gnupg",
+       "version": "2.4.4-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-3219",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5c3efc126cbe7e35",
+    "name": "gpg-agent",
+    "version": "2.4.4-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gpg-agent:gpg-agent:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gpg-agent:gpg_agent:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gpg_agent:gpg-agent:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gpg_agent:gpg_agent:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gpg:gpg-agent:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gpg:gpg_agent:2.4.4-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/gpg-agent@2.4.4-r0?arch=aarch64&upstream=gnupg&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "gnupg"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3219",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+    "namespace": "nvd:cpe",
+    "severity": "Low",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2022-3219",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+     "https://dev.gnupg.org/D556",
+     "https://dev.gnupg.org/T5993",
+     "https://marc.info/?l=oss-security&m=165696590211434&w=4",
+     "https://security.netapp.com/advisory/ntap-20230324-0001/"
+    ],
+    "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 3.3,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:2.4.4-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "gnupg",
+       "version": "2.4.4-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-3219",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "efff3b3ceca8b0ea",
+    "name": "gpg-wks-server",
+    "version": "2.4.4-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gpg-wks-server:gpg-wks-server:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gpg-wks-server:gpg_wks_server:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gpg_wks_server:gpg-wks-server:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gpg_wks_server:gpg_wks_server:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gpg-wks:gpg-wks-server:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gpg-wks:gpg_wks_server:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gpg_wks:gpg-wks-server:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gpg_wks:gpg_wks_server:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gpg:gpg-wks-server:2.4.4-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gpg:gpg_wks_server:2.4.4-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/gpg-wks-server@2.4.4-r0?arch=aarch64&upstream=gnupg&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "gnupg"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3219",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+    "namespace": "nvd:cpe",
+    "severity": "Low",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2022-3219",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+     "https://dev.gnupg.org/D556",
+     "https://dev.gnupg.org/T5993",
+     "https://marc.info/?l=oss-security&m=165696590211434&w=4",
+     "https://security.netapp.com/advisory/ntap-20230324-0001/"
+    ],
+    "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 3.3,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:2.4.4-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "gnupg",
+       "version": "2.4.4-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-3219",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f27b16599cd9c5f9",
+    "name": "gpgsm",
+    "version": "2.4.4-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gpgsm:gpgsm:2.4.4-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/gpgsm@2.4.4-r0?arch=aarch64&upstream=gnupg&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "gnupg"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3219",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+    "namespace": "nvd:cpe",
+    "severity": "Low",
+    "urls": [
+     "https://access.redhat.com/security/cve/CVE-2022-3219",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+     "https://dev.gnupg.org/D556",
+     "https://dev.gnupg.org/T5993",
+     "https://marc.info/?l=oss-security&m=165696590211434&w=4",
+     "https://security.netapp.com/advisory/ntap-20230324-0001/"
+    ],
+    "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 3.3,
+       "exploitabilityScore": 1.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:2.4.4-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "gnupg",
+       "version": "2.4.4-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2022-3219",
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:gnupg:gnupg:-:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "306670c773217137",
+    "name": "gpgv",
+    "version": "2.4.4-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gpgv:gpgv:2.4.4-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/gpgv@2.4.4-r0?arch=aarch64&upstream=gnupg&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "gnupg"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-h376-j262-vhq6",
+    "dataSource": "https://github.com/advisories/GHSA-h376-j262-vhq6",
+    "namespace": "github:language:java",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-h376-j262-vhq6"
+    ],
+    "description": "RCE in H2 Console",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0.206"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-42392",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-42392",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/h2database/h2database/security/advisories/GHSA-h376-j262-vhq6",
+      "https://jfrog.com/blog/the-jndi-strikes-back-unauthenticated-rce-in-h2-database-console/",
+      "https://lists.debian.org/debian-lts-announce/2022/02/msg00017.html",
+      "https://security.netapp.com/advisory/ntap-20220119-0001/",
+      "https://www.debian.org/security/2022/dsa-5076",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.secpod.com/blog/log4shell-critical-remote-code-execution-vulnerability-in-h2database-console/"
+     ],
+     "description": "The org.h2.util.JdbcUtils.getConnection method of the H2 database takes as parameters the class name of the driver and URL of the database. An attacker may pass a JNDI driver name and a URL leading to a LDAP or RMI servers, causing remote code execution. This can be exploited through various attack vectors, most notably through the H2 Console which leads to unauthenticated remote code execution.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+       "metrics": {
+        "baseScore": 10,
+        "exploitabilityScore": 10,
+        "impactScore": 10
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "h2",
+       "version": "1.4.199"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.1.100,<2.0.206 (unknown)",
+      "vulnerabilityID": "GHSA-h376-j262-vhq6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6e0f610a9dbcbc5d",
+    "name": "h2",
+    "version": "1.4.199",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/setup/lib/h2-1.4.199.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.h2database.com/html/license.html"
+    ],
+    "cpes": [
+     "cpe:2.3:a:DbDriverActivator:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:h2:1.4.199:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.h2database/h2@1.4.199",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/setup/lib/h2-1.4.199.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "7bf08152984ed8859740ae3f97fae6c72771ae45"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-h376-j262-vhq6",
+    "dataSource": "https://github.com/advisories/GHSA-h376-j262-vhq6",
+    "namespace": "github:language:java",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-h376-j262-vhq6"
+    ],
+    "description": "RCE in H2 Console",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0.206"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-42392",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-42392",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/h2database/h2database/security/advisories/GHSA-h376-j262-vhq6",
+      "https://jfrog.com/blog/the-jndi-strikes-back-unauthenticated-rce-in-h2-database-console/",
+      "https://lists.debian.org/debian-lts-announce/2022/02/msg00017.html",
+      "https://security.netapp.com/advisory/ntap-20220119-0001/",
+      "https://www.debian.org/security/2022/dsa-5076",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.secpod.com/blog/log4shell-critical-remote-code-execution-vulnerability-in-h2database-console/"
+     ],
+     "description": "The org.h2.util.JdbcUtils.getConnection method of the H2 database takes as parameters the class name of the driver and URL of the database. An attacker may pass a JNDI driver name and a URL leading to a LDAP or RMI servers, causing remote code execution. This can be exploited through various attack vectors, most notably through the H2 Console which leads to unauthenticated remote code execution.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+       "metrics": {
+        "baseScore": 10,
+        "exploitabilityScore": 10,
+        "impactScore": 10
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "h2",
+       "version": "1.4.199"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.1.100,<2.0.206 (unknown)",
+      "vulnerabilityID": "GHSA-h376-j262-vhq6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d276ed9347def3c3",
+    "name": "h2",
+    "version": "1.4.199",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/server/lib/bonita/h2-1.4.199.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.h2database.com/html/license.html"
+    ],
+    "cpes": [
+     "cpe:2.3:a:DbDriverActivator:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:h2:1.4.199:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.h2database/h2@1.4.199",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/server/lib/bonita/h2-1.4.199.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "7bf08152984ed8859740ae3f97fae6c72771ae45"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-45hx-wfhj-473x",
+    "dataSource": "https://github.com/advisories/GHSA-45hx-wfhj-473x",
+    "namespace": "github:language:java",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-45hx-wfhj-473x"
+    ],
+    "description": "Arbitrary code execution in H2 Console",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.1.210"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-23221",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-23221",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://packetstormsecurity.com/files/165676/H2-Database-Console-Remote-Code-Execution.html",
+      "http://seclists.org/fulldisclosure/2022/Jan/39",
+      "https://github.com/h2database/h2database/releases/tag/version-2.1.210",
+      "https://github.com/h2database/h2database/security/advisories",
+      "https://lists.debian.org/debian-lts-announce/2022/02/msg00017.html",
+      "https://security.netapp.com/advisory/ntap-20230818-0011/",
+      "https://twitter.com/d0nkey_man/status/1483824727936450564",
+      "https://www.debian.org/security/2022/dsa-5076",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html"
+     ],
+     "description": "H2 Console before 2.1.210 allows remote attackers to execute arbitrary code via a jdbc:h2:mem JDBC URL containing the IGNORE_UNKNOWN_SETTINGS=TRUE;FORBID_CREATION=FALSE;INIT=RUNSCRIPT substring, a different vulnerability than CVE-2021-42392.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+       "metrics": {
+        "baseScore": 10,
+        "exploitabilityScore": 10,
+        "impactScore": 10
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "h2",
+       "version": "1.4.199"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.1.210 (unknown)",
+      "vulnerabilityID": "GHSA-45hx-wfhj-473x"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d276ed9347def3c3",
+    "name": "h2",
+    "version": "1.4.199",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/server/lib/bonita/h2-1.4.199.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.h2database.com/html/license.html"
+    ],
+    "cpes": [
+     "cpe:2.3:a:DbDriverActivator:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:h2:1.4.199:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.h2database/h2@1.4.199",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/server/lib/bonita/h2-1.4.199.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "7bf08152984ed8859740ae3f97fae6c72771ae45"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-45hx-wfhj-473x",
+    "dataSource": "https://github.com/advisories/GHSA-45hx-wfhj-473x",
+    "namespace": "github:language:java",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-45hx-wfhj-473x"
+    ],
+    "description": "Arbitrary code execution in H2 Console",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.1.210"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-23221",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-23221",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://packetstormsecurity.com/files/165676/H2-Database-Console-Remote-Code-Execution.html",
+      "http://seclists.org/fulldisclosure/2022/Jan/39",
+      "https://github.com/h2database/h2database/releases/tag/version-2.1.210",
+      "https://github.com/h2database/h2database/security/advisories",
+      "https://lists.debian.org/debian-lts-announce/2022/02/msg00017.html",
+      "https://security.netapp.com/advisory/ntap-20230818-0011/",
+      "https://twitter.com/d0nkey_man/status/1483824727936450564",
+      "https://www.debian.org/security/2022/dsa-5076",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html"
+     ],
+     "description": "H2 Console before 2.1.210 allows remote attackers to execute arbitrary code via a jdbc:h2:mem JDBC URL containing the IGNORE_UNKNOWN_SETTINGS=TRUE;FORBID_CREATION=FALSE;INIT=RUNSCRIPT substring, a different vulnerability than CVE-2021-42392.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+       "metrics": {
+        "baseScore": 10,
+        "exploitabilityScore": 10,
+        "impactScore": 10
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "h2",
+       "version": "1.4.199"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.1.210 (unknown)",
+      "vulnerabilityID": "GHSA-45hx-wfhj-473x"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6e0f610a9dbcbc5d",
+    "name": "h2",
+    "version": "1.4.199",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/setup/lib/h2-1.4.199.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.h2database.com/html/license.html"
+    ],
+    "cpes": [
+     "cpe:2.3:a:DbDriverActivator:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:h2:1.4.199:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.h2database/h2@1.4.199",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/setup/lib/h2-1.4.199.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "7bf08152984ed8859740ae3f97fae6c72771ae45"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-7rpj-hg47-cx62",
+    "dataSource": "https://github.com/advisories/GHSA-7rpj-hg47-cx62",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-7rpj-hg47-cx62"
+    ],
+    "description": "Improper Restriction of XML External Entity Reference in com.h2database:h2.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+      "metrics": {
+       "baseScore": 8.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0.202"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-23463",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-23463",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/h2database/h2database/commit/d83285fd2e48fb075780ee95badee6f5a15ea7f8%23diff-008c2e4462609982199cd83e7cf6f1d6b41296b516783f6752c44b9f15dc7bc3",
+      "https://github.com/h2database/h2database/issues/3195",
+      "https://github.com/h2database/h2database/pull/3199",
+      "https://security.netapp.com/advisory/ntap-20230818-0010/",
+      "https://snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-1769238",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html"
+     ],
+     "description": "The package com.h2database:h2 from 1.4.198 and before 2.0.202 are vulnerable to XML External Entity (XXE) Injection via the org.h2.jdbc.JdbcSQLXML class object, when it receives parsed string data from org.h2.jdbc.JdbcResultSet.getSQLXML() method. If it executes the getSource() method when the parameter is DOMSource.class it will trigger the vulnerability.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+       "metrics": {
+        "baseScore": 6.4,
+        "exploitabilityScore": 10,
+        "impactScore": 4.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 9.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "report@snyk.io",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "h2",
+       "version": "1.4.199"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.4.198,<2.0.202 (unknown)",
+      "vulnerabilityID": "GHSA-7rpj-hg47-cx62"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6e0f610a9dbcbc5d",
+    "name": "h2",
+    "version": "1.4.199",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/setup/lib/h2-1.4.199.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.h2database.com/html/license.html"
+    ],
+    "cpes": [
+     "cpe:2.3:a:DbDriverActivator:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:h2:1.4.199:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.h2database/h2@1.4.199",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/setup/lib/h2-1.4.199.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "7bf08152984ed8859740ae3f97fae6c72771ae45"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-7rpj-hg47-cx62",
+    "dataSource": "https://github.com/advisories/GHSA-7rpj-hg47-cx62",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-7rpj-hg47-cx62"
+    ],
+    "description": "Improper Restriction of XML External Entity Reference in com.h2database:h2.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+      "metrics": {
+       "baseScore": 8.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0.202"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-23463",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-23463",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/h2database/h2database/commit/d83285fd2e48fb075780ee95badee6f5a15ea7f8%23diff-008c2e4462609982199cd83e7cf6f1d6b41296b516783f6752c44b9f15dc7bc3",
+      "https://github.com/h2database/h2database/issues/3195",
+      "https://github.com/h2database/h2database/pull/3199",
+      "https://security.netapp.com/advisory/ntap-20230818-0010/",
+      "https://snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-1769238",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html"
+     ],
+     "description": "The package com.h2database:h2 from 1.4.198 and before 2.0.202 are vulnerable to XML External Entity (XXE) Injection via the org.h2.jdbc.JdbcSQLXML class object, when it receives parsed string data from org.h2.jdbc.JdbcResultSet.getSQLXML() method. If it executes the getSource() method when the parameter is DOMSource.class it will trigger the vulnerability.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+       "metrics": {
+        "baseScore": 6.4,
+        "exploitabilityScore": 10,
+        "impactScore": 4.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 9.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "report@snyk.io",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "h2",
+       "version": "1.4.199"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.4.198,<2.0.202 (unknown)",
+      "vulnerabilityID": "GHSA-7rpj-hg47-cx62"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d276ed9347def3c3",
+    "name": "h2",
+    "version": "1.4.199",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/server/lib/bonita/h2-1.4.199.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.h2database.com/html/license.html"
+    ],
+    "cpes": [
+     "cpe:2.3:a:DbDriverActivator:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:h2:1.4.199:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.h2database/h2@1.4.199",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/server/lib/bonita/h2-1.4.199.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "7bf08152984ed8859740ae3f97fae6c72771ae45"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-22wj-vf5f-wrvj",
+    "dataSource": "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-22wj-vf5f-wrvj"
+    ],
+    "description": "Password exposure in H2 Database ",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.8,
+       "exploitabilityScore": 1.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.220"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-45868",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-45868",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
+      "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347",
+      "https://github.com/h2database/h2database/issues/3686",
+      "https://github.com/h2database/h2database/pull/3833",
+      "https://github.com/h2database/h2database/releases/tag/version-2.2.220",
+      "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243"
+     ],
+     "description": "The web-based admin console in H2 Database Engine before 2.2.220 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states \"This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that.\" Nonetheless, the issue was fixed in 2.2.220.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve@mitre.org",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.4,
+        "exploitabilityScore": 2.5,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "h2",
+       "version": "1.4.199"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.2.220 (unknown)",
+      "vulnerabilityID": "GHSA-22wj-vf5f-wrvj"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d276ed9347def3c3",
+    "name": "h2",
+    "version": "1.4.199",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/server/lib/bonita/h2-1.4.199.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.h2database.com/html/license.html"
+    ],
+    "cpes": [
+     "cpe:2.3:a:DbDriverActivator:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:h2:1.4.199:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.h2database/h2@1.4.199",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/server/lib/bonita/h2-1.4.199.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "7bf08152984ed8859740ae3f97fae6c72771ae45"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-22wj-vf5f-wrvj",
+    "dataSource": "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-22wj-vf5f-wrvj"
+    ],
+    "description": "Password exposure in H2 Database ",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.8,
+       "exploitabilityScore": 1.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.220"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-45868",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-45868",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
+      "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347",
+      "https://github.com/h2database/h2database/issues/3686",
+      "https://github.com/h2database/h2database/pull/3833",
+      "https://github.com/h2database/h2database/releases/tag/version-2.2.220",
+      "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243"
+     ],
+     "description": "The web-based admin console in H2 Database Engine before 2.2.220 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states \"This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that.\" Nonetheless, the issue was fixed in 2.2.220.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve@mitre.org",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.4,
+        "exploitabilityScore": 2.5,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "h2",
+       "version": "1.4.199"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.2.220 (unknown)",
+      "vulnerabilityID": "GHSA-22wj-vf5f-wrvj"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6e0f610a9dbcbc5d",
+    "name": "h2",
+    "version": "1.4.199",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/setup/lib/h2-1.4.199.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.h2database.com/html/license.html"
+    ],
+    "cpes": [
+     "cpe:2.3:a:DbDriverActivator:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:DbDriverActivator:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:DbDriverActivator:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2database:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:util:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:util:h2:1.4.199:*:*:*:*:*:*:*",
+     "cpe:2.3:a:h2:h2:1.4.199:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.h2database/h2@1.4.199",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/setup/lib/h2-1.4.199.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "7bf08152984ed8859740ae3f97fae6c72771ae45"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hmr7-m48g-48f6",
+    "dataSource": "https://github.com/advisories/GHSA-hmr7-m48g-48f6",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-hmr7-m48g-48f6"
+    ],
+    "description": "Jetty accepts \"+\" prefixed value in Content-Length",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "9.4.52"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-40167",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-40167",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/eclipse/jetty.project/security/advisories/GHSA-hmr7-m48g-48f6",
+      "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+      "https://www.debian.org/security/2023/dsa-5507",
+      "https://www.rfc-editor.org/rfc/rfc9110#section-8.6"
+     ],
+     "description": "Jetty is a Java based web server and servlet engine. Prior to versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1, Jetty accepts the `+` character proceeding the content-length value in a HTTP/1 header field.  This is more permissive than allowed by the RFC and other servers routinely reject such requests with 400 responses.  There is no known exploit scenario, but it is conceivable that request smuggling could result if jetty is used in combination with a server that does not close the connection after sending such a 400 response. Versions 9.4.52, 10.0.16, 11.0.16, and 12.0.1 contain a patch for this issue. There is no workaround as there is no known exploit scenario.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "jetty-http",
+       "version": "9.4.48.v20220622"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=9.0.0,<=9.4.51 (unknown)",
+      "vulnerabilityID": "GHSA-hmr7-m48g-48f6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5be8a9962e3b4401",
+    "name": "jetty-http",
+    "version": "9.4.48.v20220622",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/ehcache-2.10.10.12.7.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:jetty-http:jetty-http:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:jetty_http:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty-http:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty_http:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-http:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_http:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-http:jetty:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-http:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_http:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_http:jetty:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.48.v20220622:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-http@9.4.48.v20220622",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/ehcache-2.10.10.12.7.jar:org.eclipse.jetty:jetty-http",
+     "pomArtifactID": "jetty-http",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-qw69-rqj8-6qw8",
+    "dataSource": "https://github.com/advisories/GHSA-qw69-rqj8-6qw8",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-qw69-rqj8-6qw8"
+    ],
+    "description": "OutOfMemoryError for large multipart without filename in Eclipse Jetty",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "9.4.51.v20230217"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-26048",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/eclipse/jetty.project/issues/9076",
+      "https://github.com/eclipse/jetty.project/pull/9344",
+      "https://github.com/eclipse/jetty.project/pull/9345",
+      "https://github.com/eclipse/jetty.project/security/advisories/GHSA-qw69-rqj8-6qw8",
+      "https://github.com/jakartaee/servlet/blob/6.0.0/spec/src/main/asciidoc/servlet-spec-body.adoc#32-file-upload",
+      "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+      "https://security.netapp.com/advisory/ntap-20230526-0001/",
+      "https://www.debian.org/security/2023/dsa-5507"
+     ],
+     "description": "Jetty is a java based web server and servlet engine. In affected versions servlets with multipart support (e.g. annotated with `@MultipartConfig`) that call `HttpServletRequest.getParameter()` or `HttpServletRequest.getParts()` may cause `OutOfMemoryError` when the client sends a multipart request with a part that has a name but no filename and very large content. This happens even with the default settings of `fileSizeThreshold=0` which should stream the whole part content to disk. An attacker client may send a large multipart request and cause the server to throw `OutOfMemoryError`. However, the server may be able to recover after the `OutOfMemoryError` and continue its service -- although it may take some time. This issue has been patched in versions 9.4.51, 10.0.14, and 11.0.14. Users are advised to upgrade. Users unable to upgrade may set the multipart parameter `maxRequestSize` which must be set to a non-negative value, so the whole multipart content is limited (although still read into memory).",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "jetty-server",
+       "version": "9.4.48.v20220622"
+      }
+     },
+     "found": {
+      "versionConstraint": "<9.4.51.v20230217 (unknown)",
+      "vulnerabilityID": "GHSA-qw69-rqj8-6qw8"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6fba4d0fba1e5842",
+    "name": "jetty-server",
+    "version": "9.4.48.v20220622",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/ehcache-2.10.10.12.7.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:jetty-server:jetty-server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:jetty_server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty-server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty_server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:jetty:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.48.v20220622:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-server@9.4.48.v20220622",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/ehcache-2.10.10.12.7.jar:org.eclipse.jetty:jetty-server",
+     "pomArtifactID": "jetty-server",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-p26g-97m4-6q7c",
+    "dataSource": "https://github.com/advisories/GHSA-p26g-97m4-6q7c",
+    "namespace": "github:language:java",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-p26g-97m4-6q7c"
+    ],
+    "description": "Eclipse Jetty's cookie parsing of quoted values can exfiltrate values from other cookies",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 2.4,
+       "exploitabilityScore": 0.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Low",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "9.4.51.v20230217"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-26049",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/eclipse/jetty.project/pull/9339",
+      "https://github.com/eclipse/jetty.project/pull/9352",
+      "https://github.com/eclipse/jetty.project/security/advisories/GHSA-p26g-97m4-6q7c",
+      "https://lists.debian.org/debian-lts-announce/2023/09/msg00039.html",
+      "https://security.netapp.com/advisory/ntap-20230526-0001/",
+      "https://www.debian.org/security/2023/dsa-5507",
+      "https://www.rfc-editor.org/rfc/rfc2965",
+      "https://www.rfc-editor.org/rfc/rfc6265"
+     ],
+     "description": "Jetty is a java based web server and servlet engine. Nonstandard cookie parsing in Jetty may allow an attacker to smuggle cookies within other cookies, or otherwise perform unintended behavior by tampering with the cookie parsing mechanism. If Jetty sees a cookie VALUE that starts with `\"` (double quote), it will continue to read the cookie string until it sees a closing quote -- even if a semicolon is encountered. So, a cookie header such as: `DISPLAY_LANGUAGE=\"b; JSESSIONID=1337; c=d\"` will be parsed as one cookie, with the name DISPLAY_LANGUAGE and a value of b; JSESSIONID=1337; c=d instead of 3 separate cookies. This has security implications because if, say, JSESSIONID is an HttpOnly cookie, and the DISPLAY_LANGUAGE cookie value is rendered on the page, an attacker can smuggle the JSESSIONID cookie into the DISPLAY_LANGUAGE cookie and thereby exfiltrate it. This is significant when an intermediary is enacting some policy based on cookies, so a smuggled cookie can bypass that policy yet still be seen by the Jetty server or its logging system. This issue has been addressed in versions 9.4.51, 10.0.14, 11.0.14, and 12.0.0.beta0 and users are advised to upgrade. There are no known workarounds for this issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 2.4,
+        "exploitabilityScore": 0.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "jetty-server",
+       "version": "9.4.48.v20220622"
+      }
+     },
+     "found": {
+      "versionConstraint": "<9.4.51.v20230217 (unknown)",
+      "vulnerabilityID": "GHSA-p26g-97m4-6q7c"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6fba4d0fba1e5842",
+    "name": "jetty-server",
+    "version": "9.4.48.v20220622",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/ehcache-2.10.10.12.7.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:jetty-server:jetty-server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:jetty_server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty-server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty_server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty-server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty_server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty-server:jetty:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty-server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty_server:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty_server:jetty:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:eclipse:jetty:9.4.48.v20220622:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jetty:jetty:9.4.48.v20220622:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-server@9.4.48.v20220622",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/ehcache-2.10.10.12.7.jar:org.eclipse.jetty:jetty-server",
+     "pomArtifactID": "jetty-server",
+     "pomGroupID": "org.eclipse.jetty",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-2511",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2024-2511",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "Unknown",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2024-2511"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.1.4-r6"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-2511",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-2511",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce",
+      "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d",
+      "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08",
+      "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640",
+      "https://www.openssl.org/news/secadv/20240408.txt"
+     ],
+     "description": "Issue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "openssl",
+       "version": "3.1.4-r5"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.1.4-r6 (apk)",
+      "vulnerabilityID": "CVE-2024-2511"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "5bc98d008700f97f",
+    "name": "libcrypto3",
+    "version": "3.1.4-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto3:libcrypto3:3.1.4-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto3:libcrypto:3.1.4-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto3:3.1.4-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcrypto:libcrypto:3.1.4-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libcrypto3@3.1.4-r5?arch=aarch64&upstream=openssl&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-2511",
+    "dataSource": "https://www.cve.org/CVERecord?id=CVE-2024-2511",
+    "namespace": "alpine:distro:alpine:3.18",
+    "severity": "Unknown",
+    "urls": [
+     "https://www.cve.org/CVERecord?id=CVE-2024-2511"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.1.4-r6"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-2511",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-2511",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce",
+      "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d",
+      "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08",
+      "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640",
+      "https://www.openssl.org/news/secadv/20240408.txt"
+     ],
+     "description": "Issue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.18.6"
+      },
+      "namespace": "alpine:distro:alpine:3.18",
+      "package": {
+       "name": "openssl",
+       "version": "3.1.4-r5"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.1.4-r6 (apk)",
+      "vulnerabilityID": "CVE-2024-2511"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "c97decfc33c89aec",
+    "name": "libssl3",
+    "version": "3.1.4-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl3:libssl3:3.1.4-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl3:libssl:3.1.4-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl3:3.1.4-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libssl:libssl:3.1.4-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/libssl3@3.1.4-r5?arch=aarch64&upstream=openssl&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vmq6-5m68-f53m",
+    "dataSource": "https://github.com/advisories/GHSA-vmq6-5m68-f53m",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-vmq6-5m68-f53m"
+    ],
+    "description": "logback serialization vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.1,
+       "exploitabilityScore": 2.5,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.2.13"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-6378",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-6378",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://logback.qos.ch/news.html#1.3.12"
+     ],
+     "description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.11 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "vulnerability@ncsc.ch",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.1,
+        "exploitabilityScore": 2.5,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "logback-classic",
+       "version": "1.2.12"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.2.13 (unknown)",
+      "vulnerabilityID": "GHSA-vmq6-5m68-f53m"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "e723c040eb9d0843",
+    "name": "logback-classic",
+    "version": "1.2.12",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/setup/lib/logback-classic-1.2.12.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.eclipse.org/legal/epl-v10.html, http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+    ],
+    "cpes": [
+     "cpe:2.3:a:logback-classic:logback-classic:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback-classic:logback_classic:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback_classic:logback-classic:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback_classic:logback_classic:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback:logback-classic:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback:logback_classic:1.2.12:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/ch.qos.logback/logback-classic@1.2.12",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/setup/lib/logback-classic-1.2.12.jar",
+     "pomArtifactID": "logback-classic",
+     "pomGroupID": "ch.qos.logback",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "d4dee19148dccb177a0736eb2027bd195341da78"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vmq6-5m68-f53m",
+    "dataSource": "https://github.com/advisories/GHSA-vmq6-5m68-f53m",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-vmq6-5m68-f53m"
+    ],
+    "description": "logback serialization vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.1,
+       "exploitabilityScore": 2.5,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.2.13"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-6378",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-6378",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://logback.qos.ch/news.html#1.3.12"
+     ],
+     "description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.11 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "vulnerability@ncsc.ch",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.1,
+        "exploitabilityScore": 2.5,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "logback-core",
+       "version": "1.2.12"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.2.13 (unknown)",
+      "vulnerabilityID": "GHSA-vmq6-5m68-f53m"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "4ea6b6c12acbc030",
+    "name": "logback-core",
+    "version": "1.2.12",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/setup/lib/logback-core-1.2.12.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.eclipse.org/legal/epl-v10.html, http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+    ],
+    "cpes": [
+     "cpe:2.3:a:logback-core:logback-core:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback-core:logback_core:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback_core:logback-core:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback_core:logback_core:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback:logback-core:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback:logback_core:1.2.12:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/ch.qos.logback/logback-core@1.2.12",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/setup/lib/logback-core-1.2.12.jar",
+     "pomArtifactID": "logback-core",
+     "pomGroupID": "ch.qos.logback",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "1d8e51a698b138065d73baefb4f94531faa323cb"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-gm62-rw4g-vrc4",
+    "dataSource": "https://github.com/advisories/GHSA-gm62-rw4g-vrc4",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-gm62-rw4g-vrc4"
+    ],
+    "description": "Logback is vulnerable to an attacker mounting a Denial-Of-Service attack by sending poisoned data",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.1,
+       "exploitabilityScore": 2.5,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.2.13"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-6481",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-6481",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://logback.qos.ch/news.html#1.3.12",
+      "https://logback.qos.ch/news.html#1.3.14"
+     ],
+     "description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.13, 1.3.13 and 1.2.12 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "vulnerability@ncsc.ch",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.1,
+        "exploitabilityScore": 2.5,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "logback-core",
+       "version": "1.2.12"
+      }
+     },
+     "found": {
+      "versionConstraint": "=1.2.12 (unknown)",
+      "vulnerabilityID": "GHSA-gm62-rw4g-vrc4"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "4ea6b6c12acbc030",
+    "name": "logback-core",
+    "version": "1.2.12",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/setup/lib/logback-core-1.2.12.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.eclipse.org/legal/epl-v10.html, http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+    ],
+    "cpes": [
+     "cpe:2.3:a:logback-core:logback-core:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback-core:logback_core:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback_core:logback-core:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback_core:logback_core:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback:logback-core:1.2.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:logback:logback_core:1.2.12:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/ch.qos.logback/logback-core@1.2.12",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/setup/lib/logback-core-1.2.12.jar",
+     "pomArtifactID": "logback-core",
+     "pomGroupID": "ch.qos.logback",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "1d8e51a698b138065d73baefb4f94531faa323cb"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-28182",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-28182",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/nghttp2/nghttp2/commit/00201ecd8f982da3b67d4f6868af72a1b03b14e0",
+     "https://github.com/nghttp2/nghttp2/commit/d71a4668c6bead55805d18810d633fbb98315af9",
+     "https://github.com/nghttp2/nghttp2/security/advisories/GHSA-x6x3-gv8h-m57q",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AGOME6ZXJG7664IPQNVE3DL67E3YP3HY/"
+    ],
+    "description": "nghttp2 is an implementation of the Hypertext Transfer Protocol version 2 in C. The nghttp2 library prior to version 1.61.0 keeps reading the unbounded number of HTTP/2 CONTINUATION frames even after a stream is reset to keep HPACK context in sync.  This causes excessive CPU usage to decode HPACK stream. nghttp2 v1.61.0 mitigates this vulnerability by limiting the number of CONTINUATION frames it accepts per stream. There is no workaround for this vulnerability.",
+    "cvss": [
+     {
+      "source": "security-advisories@github.com",
+      "type": "Secondary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:nghttp2:nghttp2:1.57.0-r0:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "nghttp2",
+       "version": "1.57.0-r0"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2024-28182",
+      "versionConstraint": "< 1.61.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:nghttp2:nghttp2:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "b415446d776bd234",
+    "name": "nghttp2-libs",
+    "version": "1.57.0-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:nghttp2-libs:nghttp2-libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-libs:nghttp2_libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_libs:nghttp2-libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_libs:nghttp2_libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-libs:nghttp2-libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-libs:nghttp2_libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-libs:nghttp-libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2-libs:nghttp_libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_libs:nghttp-libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2_libs:nghttp_libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_libs:nghttp2-libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_libs:nghttp2_libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-libs:nghttp-libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp-libs:nghttp_libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_libs:nghttp-libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp_libs:nghttp_libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp2-libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp2_libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp-libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp2:nghttp_libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp2-libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp2_libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp-libs:1.57.0-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:nghttp:nghttp_libs:1.57.0-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/nghttp2-libs@1.57.0-r0?arch=aarch64&upstream=nghttp2&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "nghttp2"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-24rp-q3w6-vc56",
+    "dataSource": "https://github.com/advisories/GHSA-24rp-q3w6-vc56",
+    "namespace": "github:language:java",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-24rp-q3w6-vc56"
+    ],
+    "description": "org.postgresql:postgresql vulnerable to SQL Injection via line comment generation",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 10,
+       "exploitabilityScore": 3.9,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "42.4.4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-1597",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-1597",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-24rp-q3w6-vc56",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TZQTSMESZD2RJ5XBPSXH3TIQVUW5DIUU/",
+      "https://security.netapp.com/advisory/ntap-20240419-0008/",
+      "https://www.enterprisedb.com/docs/jdbc_connector/latest/01_jdbc_rel_notes/",
+      "https://www.enterprisedb.com/docs/security/assessments/cve-2024-1597/"
+     ],
+     "description": "pgjdbc, the PostgreSQL JDBC Driver, allows attacker to inject SQL if using PreferQueryMode=SIMPLE. Note this is not the default. In the default mode there is no vulnerability. A placeholder for a numeric value must be immediately preceded by a minus. There must be a second placeholder for a string value after the first placeholder; both must be on the same line. By constructing a matching string payload, the attacker can inject SQL to alter the query,bypassing the protections that parameterized queries bring against SQL Injection attacks. Versions before 42.7.2, 42.6.1, 42.5.5, 42.4.4, 42.3.9, and 42.2.28 are affected.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "f86ef6dc-4d3a-42ad-8f28-e6d5547a5007",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 10,
+        "exploitabilityScore": 3.9,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "postgresql",
+       "version": "42.4.3"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=42.4.0,<42.4.4 (unknown)",
+      "vulnerabilityID": "GHSA-24rp-q3w6-vc56"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "9f583557ffbb5ea4",
+    "name": "postgresql",
+    "version": "42.4.3",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/setup/lib/postgresql-42.4.3.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:postgresql-global-development-group:PGBundleActivator:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:postgresql_global_development_group:PGBundleActivator:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:postgresql-global-development-group:postgresql:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:postgresql_global_development_group:postgresql:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:postgresql-global-development-group:jdbc:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:postgresql-global-development-group:osgi:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:postgresql_global_development_group:jdbc:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:postgresql_global_development_group:osgi:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:oracle-corporation:PGBundleActivator:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:oracle_corporation:PGBundleActivator:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:PGBundleActivator:PGBundleActivator:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:oracle-corporation:postgresql:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:oracle_corporation:postgresql:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:PGBundleActivator:postgresql:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:postgresql:PGBundleActivator:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:oracle-corporation:jdbc:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:oracle-corporation:osgi:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:oracle_corporation:jdbc:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:oracle_corporation:osgi:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:PGBundleActivator:jdbc:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:PGBundleActivator:osgi:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:PGBundleActivator:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:osgi:PGBundleActivator:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:postgresql:postgresql:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:postgresql:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:osgi:postgresql:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:postgresql:jdbc:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:postgresql:osgi:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:jdbc:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:jdbc:osgi:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:osgi:jdbc:42.4.3:*:*:*:*:*:*:*",
+     "cpe:2.3:a:osgi:osgi:42.4.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.postgresql/postgresql@42.4.3",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/setup/lib/postgresql-42.4.3.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "94866dd0f9ea533c61b29261673ac0616e3a6517"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-mjmj-j48q-9wg2",
+    "dataSource": "https://github.com/advisories/GHSA-mjmj-j48q-9wg2",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-mjmj-j48q-9wg2"
+    ],
+    "description": "SnakeYaml Constructor Deserialization Remote Code Execution",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+      "metrics": {
+       "baseScore": 8.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.5
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-1471",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1471",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://packetstormsecurity.com/files/175095/PyTorch-Model-Server-Registration-Deserialization-Remote-Code-Execution.html",
+      "http://www.openwall.com/lists/oss-security/2023/11/19/1",
+      "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64581479",
+      "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2",
+      "https://github.com/mbechler/marshalsec",
+      "https://groups.google.com/g/kubernetes-security-announce/c/mwrakFaEdnc",
+      "https://security.netapp.com/advisory/ntap-20230818-0015/",
+      "https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true"
+     ],
+     "description": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization. We recommend upgrading to version 2.0 and beyond.\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve-coordination@google.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+       "metrics": {
+        "baseScore": 8.3,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.5
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "snakeyaml",
+       "version": "1.32"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=1.33 (unknown)",
+      "vulnerabilityID": "GHSA-mjmj-j48q-9wg2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "864b2a4538f7a423",
+    "name": "snakeyaml",
+    "version": "1.32",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/snakeyaml-1.32.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:snakeyaml:snakeyaml:1.32:*:*:*:*:*:*:*",
+     "cpe:2.3:a:yaml:snakeyaml:1.32:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.yaml/snakeyaml@1.32",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/snakeyaml-1.32.jar",
+     "pomArtifactID": "snakeyaml",
+     "pomGroupID": "org.yaml",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "e80612549feb5c9191c498de628c1aa80693cf0b"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-mjmj-j48q-9wg2",
+    "dataSource": "https://github.com/advisories/GHSA-mjmj-j48q-9wg2",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-mjmj-j48q-9wg2"
+    ],
+    "description": "SnakeYaml Constructor Deserialization Remote Code Execution",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+      "metrics": {
+       "baseScore": 8.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.5
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-1471",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-1471",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://packetstormsecurity.com/files/175095/PyTorch-Model-Server-Registration-Deserialization-Remote-Code-Execution.html",
+      "http://www.openwall.com/lists/oss-security/2023/11/19/1",
+      "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64581479",
+      "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2",
+      "https://github.com/mbechler/marshalsec",
+      "https://groups.google.com/g/kubernetes-security-announce/c/mwrakFaEdnc",
+      "https://security.netapp.com/advisory/ntap-20230818-0015/",
+      "https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true"
+     ],
+     "description": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization. We recommend upgrading to version 2.0 and beyond.\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "cve-coordination@google.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+       "metrics": {
+        "baseScore": 8.3,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.5
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "snakeyaml",
+       "version": "1.32"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=1.33 (unknown)",
+      "vulnerabilityID": "GHSA-mjmj-j48q-9wg2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "b90b475af6ea194c",
+    "name": "snakeyaml",
+    "version": "1.32",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/setup/lib/snakeyaml-1.32.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [
+     "cpe:2.3:a:snakeyaml:snakeyaml:1.32:*:*:*:*:*:*:*",
+     "cpe:2.3:a:yaml:snakeyaml:1.32:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.yaml/snakeyaml@1.32",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/setup/lib/snakeyaml-1.32.jar",
+     "pomArtifactID": "snakeyaml",
+     "pomGroupID": "org.yaml",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "e80612549feb5c9191c498de628c1aa80693cf0b"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-jjfh-589g-3hjx",
+    "dataSource": "https://github.com/advisories/GHSA-jjfh-589g-3hjx",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-jjfh-589g-3hjx"
+    ],
+    "description": "Spring Boot denial of service vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.7.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-34055",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-34055",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://security.netapp.com/advisory/ntap-20231221-0010/",
+      "https://spring.io/security/cve-2023-34055"
+     ],
+     "description": "In Spring Boot versions 2.7.0 - 2.7.17, 3.0.0-3.0.12 and 3.1.0-3.1.5, it is possible for a user to provide specially crafted HTTP requests that may cause a denial-of-service (DoS) condition.\n\nSpecifically, an application is vulnerable when all of the following are true:\n\n  *  the application uses Spring MVC or Spring WebFlux\n  *  org.springframework.boot:spring-boot-actuator is on the classpath\n\n\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@vmware.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "spring-boot",
+       "version": "2.7.12"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.7.18 (unknown)",
+      "vulnerabilityID": "GHSA-jjfh-589g-3hjx"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "43593d34dda16b3a",
+    "name": "spring-boot",
+    "version": "2.7.12",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/spring-boot-2.7.12.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:springframework:spring-boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:springframework:spring_boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring-boot:spring-boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring-boot:spring_boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring_boot:spring-boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring_boot:spring_boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:springframework:boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring:spring-boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring:spring_boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:boot:spring-boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:boot:spring_boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring-boot:boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring_boot:boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring:boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:boot:boot:2.7.12:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.12",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/spring-boot-2.7.12.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "888c3545dc3c6ca791753c7ad621a2d03f222732"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-jjfh-589g-3hjx",
+    "dataSource": "https://github.com/advisories/GHSA-jjfh-589g-3hjx",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-jjfh-589g-3hjx"
+    ],
+    "description": "Spring Boot denial of service vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.7.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-34055",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-34055",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://security.netapp.com/advisory/ntap-20231221-0010/",
+      "https://spring.io/security/cve-2023-34055"
+     ],
+     "description": "In Spring Boot versions 2.7.0 - 2.7.17, 3.0.0-3.0.12 and 3.1.0-3.1.5, it is possible for a user to provide specially crafted HTTP requests that may cause a denial-of-service (DoS) condition.\n\nSpecifically, an application is vulnerable when all of the following are true:\n\n  *  the application uses Spring MVC or Spring WebFlux\n  *  org.springframework.boot:spring-boot-actuator is on the classpath\n\n\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@vmware.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "spring-boot",
+       "version": "2.7.12"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.7.18 (unknown)",
+      "vulnerabilityID": "GHSA-jjfh-589g-3hjx"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "4b17a48e3c63b241",
+    "name": "spring-boot",
+    "version": "2.7.12",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/setup/lib/spring-boot-2.7.12.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:springframework:spring-boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:springframework:spring_boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring-boot:spring-boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring-boot:spring_boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring_boot:spring-boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring_boot:spring_boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:springframework:boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring:spring-boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring:spring_boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:boot:spring-boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:boot:spring_boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring-boot:boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring_boot:boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring:boot:2.7.12:*:*:*:*:*:*:*",
+     "cpe:2.3:a:boot:boot:2.7.12:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.12",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/setup/lib/spring-boot-2.7.12.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "888c3545dc3c6ca791753c7ad621a2d03f222732"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4wrc-f8pq-fpqp",
+    "dataSource": "https://github.com/advisories/GHSA-4wrc-f8pq-fpqp",
+    "namespace": "github:language:java",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-4wrc-f8pq-fpqp"
+    ],
+    "description": "Pivotal Spring Framework contains unsafe Java deserialization methods",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "6.0.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-1000027",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-1000027",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-1000027",
+      "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-579669626",
+      "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-582313417",
+      "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-744519525",
+      "https://raw.githubusercontent.com/distributedweaknessfiling/cvelist/master/2016/1000xxx/CVE-2016-1000027.json",
+      "https://security-tracker.debian.org/tracker/CVE-2016-1000027",
+      "https://security.netapp.com/advisory/ntap-20230420-0009/",
+      "https://spring.io/blog/2022/05/11/spring-framework-5-3-20-and-5-2-22-available-now",
+      "https://www.tenable.com/security/research/tra-2016-20"
+     ],
+     "description": "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "spring-web",
+       "version": "5.3.27"
+      }
+     },
+     "found": {
+      "versionConstraint": "<6.0.0 (unknown)",
+      "vulnerabilityID": "GHSA-4wrc-f8pq-fpqp"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f07fbd2acd4200fd",
+    "name": "spring-web",
+    "version": "5.3.27",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/spring-web-5.3.27.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:springframework:spring-web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:springframework:spring_web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring-web:spring-web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring-web:spring_web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring_web:spring-web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring_web:spring_web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring:spring-web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring:spring_web:5.3.27:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.springframework/spring-web@5.3.27",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/spring-web-5.3.27.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a51c45a8602052a2a90f7e645a47ba8df1547795"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hgjh-9rj2-g67j",
+    "dataSource": "https://github.com/advisories/GHSA-hgjh-9rj2-g67j",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-hgjh-9rj2-g67j"
+    ],
+    "description": "Spring Framework URL Parsing with Host Validation Vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 8.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "5.3.33"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-22259",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-22259",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://spring.io/security/cve-2024-22259"
+     ],
+     "description": "Applications that use UriComponentsBuilder in Spring Framework to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.\n\nThis is the same as  CVE-2024-22243 https://spring.io/security/cve-2024-22243 , but with different input.\n\n",
+     "cvss": [
+      {
+       "source": "security@vmware.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "spring-web",
+       "version": "5.3.27"
+      }
+     },
+     "found": {
+      "versionConstraint": "<5.3.33 (unknown)",
+      "vulnerabilityID": "GHSA-hgjh-9rj2-g67j"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f07fbd2acd4200fd",
+    "name": "spring-web",
+    "version": "5.3.27",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/spring-web-5.3.27.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:springframework:spring-web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:springframework:spring_web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring-web:spring-web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring-web:spring_web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring_web:spring-web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring_web:spring_web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring:spring-web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring:spring_web:5.3.27:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.springframework/spring-web@5.3.27",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/spring-web-5.3.27.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a51c45a8602052a2a90f7e645a47ba8df1547795"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-ccgv-vj62-xf9h",
+    "dataSource": "https://github.com/advisories/GHSA-ccgv-vj62-xf9h",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-ccgv-vj62-xf9h"
+    ],
+    "description": "Spring Web vulnerable to Open Redirect or Server Side Request Forgery",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 8.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "5.3.32"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-22243",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-22243",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://spring.io/security/cve-2024-22243"
+     ],
+     "description": "Applications that use UriComponentsBuilder to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.\n",
+     "cvss": [
+      {
+       "source": "security@vmware.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "spring-web",
+       "version": "5.3.27"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=5.3.0,<5.3.32 (unknown)",
+      "vulnerabilityID": "GHSA-ccgv-vj62-xf9h"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "f07fbd2acd4200fd",
+    "name": "spring-web",
+    "version": "5.3.27",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/spring-web-5.3.27.jar",
+      "layerID": "sha256:2a71a632e1b1473600691165442f057d4566bc4de65af4fe94c875158e79fbd8"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:springframework:spring-web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:springframework:spring_web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring-web:spring-web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring-web:spring_web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring_web:spring-web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring_web:spring_web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring:spring-web:5.3.27:*:*:*:*:*:*:*",
+     "cpe:2.3:a:spring:spring_web:5.3.27:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.springframework/spring-web@5.3.27",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "/opt/bonita/server/webapps/bonita/WEB-INF/lib/spring-web-5.3.27.jar",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": [
+      {
+       "algorithm": "sha1",
+       "value": "a51c45a8602052a2a90f7e645a47ba8df1547795"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42366",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42366",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15874"
+    ],
+    "description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_token function at awk.c:1159.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42366",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6353bae8418c5b58",
+    "name": "ssl_client",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ssl-client:ssl-client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl-client:ssl_client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl-client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl_client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl-client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl_client:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/ssl_client@1.36.1-r5?arch=aarch64&upstream=busybox&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42365",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42365",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15871"
+    ],
+    "description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42365",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6353bae8418c5b58",
+    "name": "ssl_client",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ssl-client:ssl-client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl-client:ssl_client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl-client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl_client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl-client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl_client:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/ssl_client@1.36.1-r5?arch=aarch64&upstream=busybox&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42364",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42364",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15868"
+    ],
+    "description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42364",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6353bae8418c5b58",
+    "name": "ssl_client",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ssl-client:ssl-client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl-client:ssl_client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl-client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl_client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl-client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl_client:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/ssl_client@1.36.1-r5?arch=aarch64&upstream=busybox&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-42363",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-42363",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://bugs.busybox.net/show_bug.cgi?id=15865"
+    ],
+    "description": "A use-after-free vulnerability was discovered in xasprintf function in xfuncs_printf.c:344 in BusyBox v.1.36.1.",
+    "cvss": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1-r5:*:*:*:*:*:*:*"
+      ],
+      "Package": {
+       "name": "busybox",
+       "version": "1.36.1-r5"
+      }
+     },
+     "found": {
+      "vulnerabilityID": "CVE-2023-42363",
+      "versionConstraint": "= 1.36.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.36.1:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6353bae8418c5b58",
+    "name": "ssl_client",
+    "version": "1.36.1-r5",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:0d3bec8ffa51e93645eb077aab2b4c7ed31cb8ba1b75258b7972e709807e0eec"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:ssl-client:ssl-client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl-client:ssl_client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl-client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl_client:ssl_client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl-client:1.36.1-r5:*:*:*:*:*:*:*",
+     "cpe:2.3:a:ssl:ssl_client:1.36.1-r5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:apk/alpine/ssl_client@1.36.1-r5?arch=aarch64&upstream=busybox&distro=alpine-3.18.6",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ],
+    "metadataType": "ApkMetadata",
+    "metadata": {
+     "files": []
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "bonita",
+   "imageID": "9d57f7cb6066c9d9",
+   "manifestDigest": "sha256:1aba9b587f55ec44ff98744d632cf4ceed0b93e49c24d97b7a6d3205c3b5bf28",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.18.6",
+  "idLike": [
+   "alpine"
+  ]
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-04-20T01:25:41Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:16b261c20c43828088d3530bdb10577ad87b9d33cfbfcaf051c3af61ba7e53ca",
+   "error": null
+  },
+  "timestamp": "2024-04-20T22:58:16.564976+02:00"
+ }
+}

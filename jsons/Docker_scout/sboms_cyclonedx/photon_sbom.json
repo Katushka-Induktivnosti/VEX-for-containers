@@ -1,0 +1,5656 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 11,
+  "metadata": {
+    "tools": [
+      {
+        "name": "docker-scout",
+        "version": "1.16.1"
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg-oci-photon-sha256-d3278678e95edd899c2481f398d40e0bc9c4932a0d87d0928fa638f23e6abe1c-repository-url-docker.io-tag-latest",
+      "type": "container",
+      "name": "photon",
+      "version": "latest",
+      "purl": "pkg:oci/photon@sha256:d3278678e95edd899c2481f398d40e0bc9c4932a0d87d0928fa638f23e6abe1c?repository_url=docker.io\u0026tag=latest"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "package-pkg-rpm-photon-libcap-2.66-4.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "libcap",
+      "version": "2.66-4.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/libcap@2.66-4.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man8-captree.8.gz",
+          "type": "file",
+          "name": "/usr/share/man/man8/captree.8.gz"
+        },
+        {
+          "bom-ref": "File---usr-sbin-getcap",
+          "type": "file",
+          "name": "/usr/sbin/getcap"
+        },
+        {
+          "bom-ref": "File---usr-sbin-capsh",
+          "type": "file",
+          "name": "/usr/sbin/capsh"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man8-getpcaps.8.gz",
+          "type": "file",
+          "name": "/usr/share/man/man8/getpcaps.8.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-capsh.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/capsh.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-lib-libcap.so.2.66",
+          "type": "file",
+          "name": "/usr/lib/libcap.so.2.66"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man8-getcap.8.gz",
+          "type": "file",
+          "name": "/usr/share/man/man8/getcap.8.gz"
+        },
+        {
+          "bom-ref": "File---usr-sbin-setcap",
+          "type": "file",
+          "name": "/usr/sbin/setcap"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man8-setcap.8.gz",
+          "type": "file",
+          "name": "/usr/share/man/man8/setcap.8.gz"
+        },
+        {
+          "bom-ref": "File---usr-lib-libpsx.so.2.66",
+          "type": "file",
+          "name": "/usr/lib/libpsx.so.2.66"
+        },
+        {
+          "bom-ref": "File---usr-sbin-getpcaps",
+          "type": "file",
+          "name": "/usr/sbin/getpcaps"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-libxcrypt-4.4.36-3.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "libxcrypt",
+      "version": "4.4.36-3.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/libxcrypt@4.4.36-3.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libcrypt.so.1.1.0",
+          "type": "file",
+          "name": "/usr/lib/libcrypt.so.1.1.0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-tdnf-cli-libs-3.5.10-1.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "tdnf-cli-libs",
+      "version": "3.5.10-1.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/tdnf-cli-libs@3.5.10-1.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libtdnfcli.so.3.5.10",
+          "type": "file",
+          "name": "/usr/lib/libtdnfcli.so.3.5.10"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-bzip2-1.0.8-7.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "bzip2",
+      "version": "1.0.8-7.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "OFL-1.1"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later WITH PS-or-PDF-font-exception-20170817"
+          }
+        },
+        {
+          "license": {
+            "id": "bzip2-1.0.6"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/bzip2@1.0.8-7.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libbz2.so.1.0.8",
+          "type": "file",
+          "name": "/usr/lib/libbz2.so.1.0.8"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-e2fsprogs-libs-1.46.5-5.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "e2fsprogs-libs",
+      "version": "1.46.5-5.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-4.3TAHOE"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "NTP"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Libtool-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "Latex2e-translated-notice"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Autoconf-exception-generic"
+          }
+        },
+        {
+          "license": {
+            "id": "0BSD"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Texinfo-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later WITH Autoconf-exception-macro"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-4-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFAP"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND-export-US-modify"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Libtool-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "NTP-0"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLRWD"
+          }
+        },
+        {
+          "license": {
+            "id": "Kazlib"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/e2fsprogs-libs@1.46.5-5.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libss.so.2.0",
+          "type": "file",
+          "name": "/usr/lib/libss.so.2.0"
+        },
+        {
+          "bom-ref": "File---usr-lib-libcom_err.so.2.1",
+          "type": "file",
+          "name": "/usr/lib/libcom_err.so.2.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-sqlite-libs-3.43.2-3.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "sqlite-libs",
+      "version": "3.43.2-3.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Autoconf-exception-generic"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "id": "X11"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLRWD"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Libtool-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "blessing"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Libtool-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFAP"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/sqlite-libs@3.43.2-3.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libsqlite3.so.0.8.6",
+          "type": "file",
+          "name": "/usr/lib/libsqlite3.so.0.8.6"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-xz-5.4.0-3.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "xz",
+      "version": "5.4.0-3.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "FSFAP"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLRWD"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Autoconf-exception-generic"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "X11"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Libtool-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/xz@5.4.0-3.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-liblzma.so.5.4.0",
+          "type": "file",
+          "name": "/usr/lib/liblzma.so.5.4.0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-zstd-1.5.5-4.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "zstd",
+      "version": "1.5.5-4.ph5",
+      "purl": "pkg:rpm/photon/zstd@1.5.5-4.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libzstd.so.1.5.5",
+          "type": "file",
+          "name": "/usr/lib/libzstd.so.1.5.5"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-ncurses-6.4-4.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "ncurses",
+      "version": "6.4-4.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND-Markus-Kuhn"
+          }
+        },
+        {
+          "license": {
+            "id": "X11"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-4-Clause-UC"
+          }
+        },
+        {
+          "license": {
+            "id": "X11-distribute-modifications-variant"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/ncurses@6.4-4.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libncursesw.so.6.4",
+          "type": "file",
+          "name": "/usr/lib/libncursesw.so.6.4"
+        },
+        {
+          "bom-ref": "File---usr-share-tabset-vt100",
+          "type": "file",
+          "name": "/usr/share/tabset/vt100"
+        },
+        {
+          "bom-ref": "File---usr-share-terminfo-l-linux",
+          "type": "file",
+          "name": "/usr/share/terminfo/l/linux"
+        },
+        {
+          "bom-ref": "File---usr-lib-libmenuw.so.6.4",
+          "type": "file",
+          "name": "/usr/lib/libmenuw.so.6.4"
+        },
+        {
+          "bom-ref": "File---usr-share-tabset-stdcrt",
+          "type": "file",
+          "name": "/usr/share/tabset/stdcrt"
+        },
+        {
+          "bom-ref": "File---usr-lib-libpanelw.so.6.4",
+          "type": "file",
+          "name": "/usr/lib/libpanelw.so.6.4"
+        },
+        {
+          "bom-ref": "File---usr-lib-libformw.so.6.4",
+          "type": "file",
+          "name": "/usr/lib/libformw.so.6.4"
+        },
+        {
+          "bom-ref": "File---usr-share-tabset-std",
+          "type": "file",
+          "name": "/usr/share/tabset/std"
+        },
+        {
+          "bom-ref": "File---usr-lib-libtinfo.so.6.4",
+          "type": "file",
+          "name": "/usr/lib/libtinfo.so.6.4"
+        },
+        {
+          "bom-ref": "File---usr-share-tabset-vt300",
+          "type": "file",
+          "name": "/usr/share/tabset/vt300"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-photon-release-5.0-5.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "photon-release",
+      "version": "5.0-5.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/photon-release@5.0-5.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---etc-issue.net",
+          "type": "file",
+          "name": "/etc/issue.net"
+        },
+        {
+          "bom-ref": "File---etc-issue",
+          "type": "file",
+          "name": "/etc/issue"
+        },
+        {
+          "bom-ref": "File---etc-photon-release",
+          "type": "file",
+          "name": "/etc/photon-release"
+        },
+        {
+          "bom-ref": "File---etc-lsb-release",
+          "type": "file",
+          "name": "/etc/lsb-release"
+        },
+        {
+          "bom-ref": "File---usr-bin-lsb_release",
+          "type": "file",
+          "name": "/usr/bin/lsb_release"
+        },
+        {
+          "bom-ref": "File---usr-lib-os-release",
+          "type": "file",
+          "name": "/usr/lib/os-release"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-lua-libs-5.4.6-3.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "lua-libs",
+      "version": "5.4.6-3.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/lua-libs@5.4.6-3.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-liblua.so.5.4.6",
+          "type": "file",
+          "name": "/usr/lib/liblua.so.5.4.6"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-nspr-4.33-3.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "nspr",
+      "version": "4.33-3.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "NTP"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "dtoa"
+          }
+        },
+        {
+          "license": {
+            "id": "Beerware"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/nspr@4.33-3.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnspr4.so",
+          "type": "file",
+          "name": "/usr/lib/libnspr4.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-libplds4.so",
+          "type": "file",
+          "name": "/usr/lib/libplds4.so"
+        },
+        {
+          "bom-ref": "File---usr-bin-nspr-config",
+          "type": "file",
+          "name": "/usr/bin/nspr-config"
+        },
+        {
+          "bom-ref": "File---usr-lib-libplc4.so",
+          "type": "file",
+          "name": "/usr/lib/libplc4.so"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-zlib-1.2.13-4.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "zlib",
+      "version": "1.2.13-4.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        },
+        {
+          "license": {
+            "id": "LPD-document"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "BSL-1.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH GNAT-exception"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/zlib@1.2.13-4.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libz.so.1.2.13",
+          "type": "file",
+          "name": "/usr/lib/libz.so.1.2.13"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-sqlite-3.43.2-3.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "sqlite",
+      "version": "3.43.2-3.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "FSFAP"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Autoconf-exception-generic"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLRWD"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Libtool-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Libtool-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "X11"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "id": "blessing"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/sqlite@3.43.2-3.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libsqlite3.so.0.8.6",
+          "type": "file",
+          "name": "/usr/lib/libsqlite3.so.0.8.6"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-e2fsprogs-1.46.5-5.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "e2fsprogs",
+      "version": "1.46.5-5.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later WITH Autoconf-exception-macro"
+          }
+        },
+        {
+          "license": {
+            "id": "NTP"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND-export-US-modify"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-4-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "Latex2e-translated-notice"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "id": "NTP-0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-4.3TAHOE"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFAP"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLRWD"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Texinfo-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Libtool-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "0BSD"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "Kazlib"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Libtool-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Autoconf-exception-generic"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/e2fsprogs@1.46.5-5.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libss.so.2.0",
+          "type": "file",
+          "name": "/usr/lib/libss.so.2.0"
+        },
+        {
+          "bom-ref": "File---usr-lib-libcom_err.so.2.1",
+          "type": "file",
+          "name": "/usr/lib/libcom_err.so.2.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-elfutils-0.189-5.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "elfutils",
+      "version": "0.189-5.ph5",
+      "purl": "pkg:rpm/photon/elfutils@0.189-5.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libelf-0.189.so",
+          "type": "file",
+          "name": "/usr/lib/libelf-0.189.so"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-gpg-pubkey-66fd4949-4803fe57-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "gpg-pubkey",
+      "version": "66fd4949-4803fe57",
+      "purl": "pkg:rpm/photon/gpg-pubkey@66fd4949-4803fe57?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-nss-libs-3.78-11.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "nss-libs",
+      "version": "3.78-11.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/nss-libs@3.78-11.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libsoftokn3.so",
+          "type": "file",
+          "name": "/usr/lib/libsoftokn3.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnss3.so",
+          "type": "file",
+          "name": "/usr/lib/libnss3.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnssutil3.so",
+          "type": "file",
+          "name": "/usr/lib/libnssutil3.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-libfreeblpriv3.chk",
+          "type": "file",
+          "name": "/usr/lib/libfreeblpriv3.chk"
+        },
+        {
+          "bom-ref": "File---usr-lib-libsoftokn3.chk",
+          "type": "file",
+          "name": "/usr/lib/libsoftokn3.chk"
+        },
+        {
+          "bom-ref": "File---usr-lib-libfreeblpriv3.so",
+          "type": "file",
+          "name": "/usr/lib/libfreeblpriv3.so"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-glibc-libs-2.36-16.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "glibc-libs",
+      "version": "2.36-16.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT-CMU"
+          }
+        },
+        {
+          "license": {
+            "id": "GFDL-1.3-only"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/glibc-libs@2.36-16.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-librt.so.1",
+          "type": "file",
+          "name": "/usr/lib/librt.so.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-libmemusage.so",
+          "type": "file",
+          "name": "/usr/lib/libmemusage.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-libBrokenLocale.so.1",
+          "type": "file",
+          "name": "/usr/lib/libBrokenLocale.so.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-libresolv.so.2",
+          "type": "file",
+          "name": "/usr/lib/libresolv.so.2"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnss_hesiod.so.2",
+          "type": "file",
+          "name": "/usr/lib/libnss_hesiod.so.2"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnss_dns.so.2",
+          "type": "file",
+          "name": "/usr/lib/libnss_dns.so.2"
+        },
+        {
+          "bom-ref": "File---usr-lib-libanl.so.1",
+          "type": "file",
+          "name": "/usr/lib/libanl.so.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnsl.so.1",
+          "type": "file",
+          "name": "/usr/lib/libnsl.so.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-libutil.so.1",
+          "type": "file",
+          "name": "/usr/lib/libutil.so.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnss_files.so.2",
+          "type": "file",
+          "name": "/usr/lib/libnss_files.so.2"
+        },
+        {
+          "bom-ref": "File---usr-lib-libdl.so.2",
+          "type": "file",
+          "name": "/usr/lib/libdl.so.2"
+        },
+        {
+          "bom-ref": "File---usr-lib-libm.so.6",
+          "type": "file",
+          "name": "/usr/lib/libm.so.6"
+        },
+        {
+          "bom-ref": "File---usr-lib-libc.so",
+          "type": "file",
+          "name": "/usr/lib/libc.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-ld-linux-aarch64.so.1",
+          "type": "file",
+          "name": "/usr/lib/ld-linux-aarch64.so.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnss_compat.so.2",
+          "type": "file",
+          "name": "/usr/lib/libnss_compat.so.2"
+        },
+        {
+          "bom-ref": "File---usr-lib-libc_malloc_debug.so.0",
+          "type": "file",
+          "name": "/usr/lib/libc_malloc_debug.so.0"
+        },
+        {
+          "bom-ref": "File---usr-lib-libpthread.so.0",
+          "type": "file",
+          "name": "/usr/lib/libpthread.so.0"
+        },
+        {
+          "bom-ref": "File---usr-lib-libthread_db.so.1",
+          "type": "file",
+          "name": "/usr/lib/libthread_db.so.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnss_db.so.2",
+          "type": "file",
+          "name": "/usr/lib/libnss_db.so.2"
+        },
+        {
+          "bom-ref": "File---usr-lib-libc.so.6",
+          "type": "file",
+          "name": "/usr/lib/libc.so.6"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-openssl-3.0.15-7.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "openssl",
+      "version": "3.0.15-7.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-1.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Artistic-1.0"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/openssl@3.0.15-7.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---etc-ssl-distro.cnf",
+          "type": "file",
+          "name": "/etc/ssl/distro.cnf"
+        },
+        {
+          "bom-ref": "File---usr-lib-ossl-modules-jitterentropy.so",
+          "type": "file",
+          "name": "/usr/lib/ossl-modules/jitterentropy.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-afalg.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/afalg.so"
+        },
+        {
+          "bom-ref": "File---etc-ssl-ct_log_list.cnf.dist",
+          "type": "file",
+          "name": "/etc/ssl/ct_log_list.cnf.dist"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-capi.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/capi.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-padlock.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/padlock.so"
+        },
+        {
+          "bom-ref": "File---etc-ssl-openssl.cnf",
+          "type": "file",
+          "name": "/etc/ssl/openssl.cnf"
+        },
+        {
+          "bom-ref": "File---etc-ssl-provider_default.cnf",
+          "type": "file",
+          "name": "/etc/ssl/provider_default.cnf"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-loader_attic.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/loader_attic.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-libssl.so.3",
+          "type": "file",
+          "name": "/usr/lib/libssl.so.3"
+        },
+        {
+          "bom-ref": "File---etc-ssl-user.cnf",
+          "type": "file",
+          "name": "/etc/ssl/user.cnf"
+        },
+        {
+          "bom-ref": "File---etc-ssl-ct_log_list.cnf",
+          "type": "file",
+          "name": "/etc/ssl/ct_log_list.cnf"
+        },
+        {
+          "bom-ref": "File---usr-lib-ossl-modules-legacy.so",
+          "type": "file",
+          "name": "/usr/lib/ossl-modules/legacy.so"
+        },
+        {
+          "bom-ref": "File---etc-ssl-openssl.cnf.dist",
+          "type": "file",
+          "name": "/etc/ssl/openssl.cnf.dist"
+        },
+        {
+          "bom-ref": "File---usr-lib-libcrypto.so.3",
+          "type": "file",
+          "name": "/usr/lib/libcrypto.so.3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-openssl-libs-3.0.15-7.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "openssl-libs",
+      "version": "3.0.15-7.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "Artistic-1.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-1.1"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/openssl-libs@3.0.15-7.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---etc-ssl-ct_log_list.cnf.dist",
+          "type": "file",
+          "name": "/etc/ssl/ct_log_list.cnf.dist"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-padlock.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/padlock.so"
+        },
+        {
+          "bom-ref": "File---etc-ssl-provider_default.cnf",
+          "type": "file",
+          "name": "/etc/ssl/provider_default.cnf"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-loader_attic.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/loader_attic.so"
+        },
+        {
+          "bom-ref": "File---etc-ssl-user.cnf",
+          "type": "file",
+          "name": "/etc/ssl/user.cnf"
+        },
+        {
+          "bom-ref": "File---etc-ssl-distro.cnf",
+          "type": "file",
+          "name": "/etc/ssl/distro.cnf"
+        },
+        {
+          "bom-ref": "File---etc-ssl-ct_log_list.cnf",
+          "type": "file",
+          "name": "/etc/ssl/ct_log_list.cnf"
+        },
+        {
+          "bom-ref": "File---etc-ssl-openssl.cnf.dist",
+          "type": "file",
+          "name": "/etc/ssl/openssl.cnf.dist"
+        },
+        {
+          "bom-ref": "File---etc-ssl-openssl.cnf",
+          "type": "file",
+          "name": "/etc/ssl/openssl.cnf"
+        },
+        {
+          "bom-ref": "File---usr-lib-libcrypto.so.3",
+          "type": "file",
+          "name": "/usr/lib/libcrypto.so.3"
+        },
+        {
+          "bom-ref": "File---usr-lib-ossl-modules-jitterentropy.so",
+          "type": "file",
+          "name": "/usr/lib/ossl-modules/jitterentropy.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-libssl.so.3",
+          "type": "file",
+          "name": "/usr/lib/libssl.so.3"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-afalg.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/afalg.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-ossl-modules-legacy.so",
+          "type": "file",
+          "name": "/usr/lib/ossl-modules/legacy.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-engines-3-capi.so",
+          "type": "file",
+          "name": "/usr/lib/engines-3/capi.so"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-curl-8.7.1-7.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "curl",
+      "version": "8.7.1-7.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Libtool-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLRWD"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "curl"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "id": "X11"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Autoconf-exception-generic"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-4-Clause-UC"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/curl@8.7.1-7.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-curl-config.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/curl-config.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-bin-curl",
+          "type": "file",
+          "name": "/usr/bin/curl"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-curl.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/curl.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-bin-curl-config",
+          "type": "file",
+          "name": "/usr/bin/curl-config"
+        },
+        {
+          "bom-ref": "File---usr-lib-libcurl.so.4.8.0",
+          "type": "file",
+          "name": "/usr/lib/libcurl.so.4.8.0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-ca-certificates-pki-20230315-6.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "ca-certificates-pki",
+      "version": "20230315-6.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/ca-certificates-pki@20230315-6.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---etc-pki-tls-certs-ca-bundle.crt",
+          "type": "file",
+          "name": "/etc/pki/tls/certs/ca-bundle.crt"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-filesystem-1.1-7.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "filesystem",
+      "version": "1.1-7.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/filesystem@1.1-7.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---etc-modprobe.d-usb.conf",
+          "type": "file",
+          "name": "/etc/modprobe.d/usb.conf"
+        },
+        {
+          "bom-ref": "File---etc-group",
+          "type": "file",
+          "name": "/etc/group"
+        },
+        {
+          "bom-ref": "File---etc-sysconfig-clock",
+          "type": "file",
+          "name": "/etc/sysconfig/clock"
+        },
+        {
+          "bom-ref": "File---etc-sysconfig-console",
+          "type": "file",
+          "name": "/etc/sysconfig/console"
+        },
+        {
+          "bom-ref": "File---etc-passwd",
+          "type": "file",
+          "name": "/etc/passwd"
+        },
+        {
+          "bom-ref": "File---etc-hosts",
+          "type": "file",
+          "name": "/etc/hosts"
+        },
+        {
+          "bom-ref": "File---etc-profile",
+          "type": "file",
+          "name": "/etc/profile"
+        },
+        {
+          "bom-ref": "File---etc-inputrc",
+          "type": "file",
+          "name": "/etc/inputrc"
+        },
+        {
+          "bom-ref": "File---etc-profile.d-proxy.sh",
+          "type": "file",
+          "name": "/etc/profile.d/proxy.sh"
+        },
+        {
+          "bom-ref": "File---etc-fstab",
+          "type": "file",
+          "name": "/etc/fstab"
+        },
+        {
+          "bom-ref": "File---etc-sysconfig-proxy",
+          "type": "file",
+          "name": "/etc/sysconfig/proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-bzip2-libs-1.0.8-7.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "bzip2-libs",
+      "version": "1.0.8-7.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "OFL-1.1"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later WITH PS-or-PDF-font-exception-20170817"
+          }
+        },
+        {
+          "license": {
+            "id": "bzip2-1.0.6"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/bzip2-libs@1.0.8-7.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libbz2.so.1.0.8",
+          "type": "file",
+          "name": "/usr/lib/libbz2.so.1.0.8"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-readline-8.2-4.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "readline",
+      "version": "8.2-4.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "OFL-1.1"
+          }
+        },
+        {
+          "license": {
+            "id": "GFDL-1.3-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND-Markus-Kuhn"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Latex2e-translated-notice"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GFDL-1.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "NTP"
+          }
+        },
+        {
+          "license": {
+            "id": "Latex2e"
+          }
+        },
+        {
+          "license": {
+            "id": "(GPL-3.0-or-later WITH Autoconf-exception-generic-3.0)"
+          }
+        },
+        {
+          "license": {
+            "id": "CC-BY-SA-4.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GFDL-1.3-only"
+          }
+        },
+        {
+          "license": {
+            "id": "(GPL-3.0-or-later WITH Texinfo-exception)"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/readline@8.2-4.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libhistory.so.8.2",
+          "type": "file",
+          "name": "/usr/lib/libhistory.so.8.2"
+        },
+        {
+          "bom-ref": "File---usr-lib-libreadline.so.8.2",
+          "type": "file",
+          "name": "/usr/lib/libreadline.so.8.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-nss-3.78-11.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "nss",
+      "version": "3.78-11.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/nss@3.78-11.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libfreeblpriv3.chk",
+          "type": "file",
+          "name": "/usr/lib/libfreeblpriv3.chk"
+        },
+        {
+          "bom-ref": "File---usr-lib-libsoftokn3.chk",
+          "type": "file",
+          "name": "/usr/lib/libsoftokn3.chk"
+        },
+        {
+          "bom-ref": "File---usr-lib-libfreeblpriv3.so",
+          "type": "file",
+          "name": "/usr/lib/libfreeblpriv3.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-libsoftokn3.so",
+          "type": "file",
+          "name": "/usr/lib/libsoftokn3.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnss3.so",
+          "type": "file",
+          "name": "/usr/lib/libnss3.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnssutil3.so",
+          "type": "file",
+          "name": "/usr/lib/libnssutil3.so"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-rpm-4.18.2-5.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "rpm",
+      "version": "4.18.2-5.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/rpm@4.18.2-5.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---etc-rpm-macros",
+          "type": "file",
+          "name": "/etc/rpm/macros"
+        },
+        {
+          "bom-ref": "File---usr-lib-rpm-rpmrc",
+          "type": "file",
+          "name": "/usr/lib/rpm/rpmrc"
+        },
+        {
+          "bom-ref": "File---usr-bin-rpmdb",
+          "type": "file",
+          "name": "/usr/bin/rpmdb"
+        },
+        {
+          "bom-ref": "File---usr-lib-rpm-rpmdb_load",
+          "type": "file",
+          "name": "/usr/lib/rpm/rpmdb_load"
+        },
+        {
+          "bom-ref": "File---usr-lib-rpm-rpmdb_dump",
+          "type": "file",
+          "name": "/usr/lib/rpm/rpmdb_dump"
+        },
+        {
+          "bom-ref": "File---usr-lib-rpm-macros",
+          "type": "file",
+          "name": "/usr/lib/rpm/macros"
+        },
+        {
+          "bom-ref": "File---usr-lib-librpm.so.9.4.1",
+          "type": "file",
+          "name": "/usr/lib/librpm.so.9.4.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-librpmio.so.9.4.1",
+          "type": "file",
+          "name": "/usr/lib/librpmio.so.9.4.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-photon-repos-5.0-5.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "photon-repos",
+      "version": "5.0-5.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/photon-repos@5.0-5.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---etc-yum.repos.d-photon-updates.repo",
+          "type": "file",
+          "name": "/etc/yum.repos.d/photon-updates.repo"
+        },
+        {
+          "bom-ref": "File---etc-pki-rpm-gpg-VMWARE-RPM-GPG-KEY-4096",
+          "type": "file",
+          "name": "/etc/pki/rpm-gpg/VMWARE-RPM-GPG-KEY-4096"
+        },
+        {
+          "bom-ref": "File---etc-yum.repos.d-photon-debuginfo.repo",
+          "type": "file",
+          "name": "/etc/yum.repos.d/photon-debuginfo.repo"
+        },
+        {
+          "bom-ref": "File---etc-yum.repos.d-photon-extras.repo",
+          "type": "file",
+          "name": "/etc/yum.repos.d/photon-extras.repo"
+        },
+        {
+          "bom-ref": "File---etc-yum.repos.d-photon.repo",
+          "type": "file",
+          "name": "/etc/yum.repos.d/photon.repo"
+        },
+        {
+          "bom-ref": "File---etc-pki-rpm-gpg-VMWARE-RPM-GPG-KEY",
+          "type": "file",
+          "name": "/etc/pki/rpm-gpg/VMWARE-RPM-GPG-KEY"
+        },
+        {
+          "bom-ref": "File---etc-yum.repos.d-photon-release.repo",
+          "type": "file",
+          "name": "/etc/yum.repos.d/photon-release.repo"
+        },
+        {
+          "bom-ref": "File---etc-yum.repos.d-photon-iso.repo",
+          "type": "file",
+          "name": "/etc/yum.repos.d/photon-iso.repo"
+        },
+        {
+          "bom-ref": "File---etc-yum.repos.d-photon-srpms.repo",
+          "type": "file",
+          "name": "/etc/yum.repos.d/photon-srpms.repo"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-toybox-0.8.9-6.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "toybox",
+      "version": "0.8.9-6.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "0BSD"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Bison-exception-1.24"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/toybox@0.8.9-6.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-bin-toybox-toys",
+          "type": "file",
+          "name": "/usr/bin/toybox-toys"
+        },
+        {
+          "bom-ref": "File---usr-bin-toybox",
+          "type": "file",
+          "name": "/usr/bin/toybox"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-lua-5.4.6-3.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "lua",
+      "version": "5.4.6-3.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/lua@5.4.6-3.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-liblua.so.5.4.6",
+          "type": "file",
+          "name": "/usr/lib/liblua.so.5.4.6"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-rpm-libs-4.18.2-5.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "rpm-libs",
+      "version": "4.18.2-5.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/rpm-libs@4.18.2-5.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-bin-rpmdb",
+          "type": "file",
+          "name": "/usr/bin/rpmdb"
+        },
+        {
+          "bom-ref": "File---usr-lib-rpm-rpmdb_load",
+          "type": "file",
+          "name": "/usr/lib/rpm/rpmdb_load"
+        },
+        {
+          "bom-ref": "File---usr-lib-rpm-rpmdb_dump",
+          "type": "file",
+          "name": "/usr/lib/rpm/rpmdb_dump"
+        },
+        {
+          "bom-ref": "File---usr-lib-rpm-macros",
+          "type": "file",
+          "name": "/usr/lib/rpm/macros"
+        },
+        {
+          "bom-ref": "File---usr-lib-librpm.so.9.4.1",
+          "type": "file",
+          "name": "/usr/lib/librpm.so.9.4.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-librpmio.so.9.4.1",
+          "type": "file",
+          "name": "/usr/lib/librpmio.so.9.4.1"
+        },
+        {
+          "bom-ref": "File---etc-rpm-macros",
+          "type": "file",
+          "name": "/etc/rpm/macros"
+        },
+        {
+          "bom-ref": "File---usr-lib-rpm-rpmrc",
+          "type": "file",
+          "name": "/usr/lib/rpm/rpmrc"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-libgcc-12.2.0-5.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "libgcc",
+      "version": "12.2.0-5.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "NCSA"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH GNAT-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH GCC-exception-3.1"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later WITH Autoconf-exception-generic"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLRWD"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "IJG"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH GCC-exception-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GFDL-1.3-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/libgcc@12.2.0-5.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libgcc_s.so.1",
+          "type": "file",
+          "name": "/usr/lib/libgcc_s.so.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-curl-libs-8.7.1-7.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "curl-libs",
+      "version": "8.7.1-7.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Libtool-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "X11"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLRWD"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "curl"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Autoconf-exception-generic"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-4-Clause-UC"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/curl-libs@8.7.1-7.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libcurl.so.4.8.0",
+          "type": "file",
+          "name": "/usr/lib/libcurl.so.4.8.0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-popt-1.16-7.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "popt",
+      "version": "1.16-7.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "id": "X11"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLRWD"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Autoconf-exception-generic"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Libtool-exception"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/popt@1.16-7.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libpopt.so.0.0.0",
+          "type": "file",
+          "name": "/usr/lib/libpopt.so.0.0.0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-gpg-pubkey-8a6a826d-596882ca-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "gpg-pubkey",
+      "version": "8a6a826d-596882ca",
+      "purl": "pkg:rpm/photon/gpg-pubkey@8a6a826d-596882ca?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-glibc-2.36-16.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "glibc",
+      "version": "2.36-16.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT-CMU"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GFDL-1.3-only"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/glibc@2.36-16.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-iso14651_t1",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/iso14651_t1"
+        },
+        {
+          "bom-ref": "File---usr-sbin-locale-gen.sh",
+          "type": "file",
+          "name": "/usr/sbin/locale-gen.sh"
+        },
+        {
+          "bom-ref": "File---usr-lib-libdl.so.2",
+          "type": "file",
+          "name": "/usr/lib/libdl.so.2"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-translit_neutral",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/translit_neutral"
+        },
+        {
+          "bom-ref": "File---usr-bin-gencat",
+          "type": "file",
+          "name": "/usr/bin/gencat"
+        },
+        {
+          "bom-ref": "File---usr-bin-ldd",
+          "type": "file",
+          "name": "/usr/bin/ldd"
+        },
+        {
+          "bom-ref": "File---usr-lib-ld-linux-aarch64.so.1",
+          "type": "file",
+          "name": "/usr/lib/ld-linux-aarch64.so.1"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-en_GB",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/en_GB"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnss_compat.so.2",
+          "type": "file",
+          "name": "/usr/lib/libnss_compat.so.2"
+        },
+        {
+          "bom-ref": "File---usr-lib-locale-en_US.UTF-8-LC_TIME",
+          "type": "file",
+          "name": "/usr/lib/locale/en_US.UTF-8/LC_TIME"
+        },
+        {
+          "bom-ref": "File---usr-libexec-getconf-POSIX_V7_LP64_OFF64",
+          "type": "file",
+          "name": "/usr/libexec/getconf/POSIX_V7_LP64_OFF64"
+        },
+        {
+          "bom-ref": "File---usr-lib-locale-en_US.UTF-8-LC_COLLATE",
+          "type": "file",
+          "name": "/usr/lib/locale/en_US.UTF-8/LC_COLLATE"
+        },
+        {
+          "bom-ref": "File---etc-locale-gen.conf",
+          "type": "file",
+          "name": "/etc/locale-gen.conf"
+        },
+        {
+          "bom-ref": "File---usr-lib-libBrokenLocale.so.1",
+          "type": "file",
+          "name": "/usr/lib/libBrokenLocale.so.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnss_hesiod.so.2",
+          "type": "file",
+          "name": "/usr/lib/libnss_hesiod.so.2"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-en_US",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/en_US"
+        },
+        {
+          "bom-ref": "File---usr-bin-getconf",
+          "type": "file",
+          "name": "/usr/bin/getconf"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-charmaps-ISO-8859-1.gz",
+          "type": "file",
+          "name": "/usr/share/i18n/charmaps/ISO-8859-1.gz"
+        },
+        {
+          "bom-ref": "File---usr-bin-getent",
+          "type": "file",
+          "name": "/usr/bin/getent"
+        },
+        {
+          "bom-ref": "File---usr-lib-libutil.so.1",
+          "type": "file",
+          "name": "/usr/lib/libutil.so.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnss_db.so.2",
+          "type": "file",
+          "name": "/usr/lib/libnss_db.so.2"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-translit_font",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/translit_font"
+        },
+        {
+          "bom-ref": "File---usr-share-locale-locale.alias",
+          "type": "file",
+          "name": "/usr/share/locale/locale.alias"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-translit_cjk_variants",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/translit_cjk_variants"
+        },
+        {
+          "bom-ref": "File---usr-lib-libresolv.so.2",
+          "type": "file",
+          "name": "/usr/lib/libresolv.so.2"
+        },
+        {
+          "bom-ref": "File---usr-bin-zdump",
+          "type": "file",
+          "name": "/usr/bin/zdump"
+        },
+        {
+          "bom-ref": "File---usr-lib-locale-en_US.UTF-8-LC_NAME",
+          "type": "file",
+          "name": "/usr/lib/locale/en_US.UTF-8/LC_NAME"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnss_files.so.2",
+          "type": "file",
+          "name": "/usr/lib/libnss_files.so.2"
+        },
+        {
+          "bom-ref": "File---usr-lib-libc.so.6",
+          "type": "file",
+          "name": "/usr/lib/libc.so.6"
+        },
+        {
+          "bom-ref": "File---usr-lib-libmemusage.so",
+          "type": "file",
+          "name": "/usr/lib/libmemusage.so"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-translit_wide",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/translit_wide"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-translit_fraction",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/translit_fraction"
+        },
+        {
+          "bom-ref": "File---usr-lib-locale-en_US.UTF-8-LC_MESSAGES-SYS_LC_MESSAGES",
+          "type": "file",
+          "name": "/usr/lib/locale/en_US.UTF-8/LC_MESSAGES/SYS_LC_MESSAGES"
+        },
+        {
+          "bom-ref": "File---etc-ld.so.cache",
+          "type": "file",
+          "name": "/etc/ld.so.cache"
+        },
+        {
+          "bom-ref": "File---usr-lib-locale-en_US.UTF-8-LC_PAPER",
+          "type": "file",
+          "name": "/usr/lib/locale/en_US.UTF-8/LC_PAPER"
+        },
+        {
+          "bom-ref": "File---etc-rpc",
+          "type": "file",
+          "name": "/etc/rpc"
+        },
+        {
+          "bom-ref": "File---usr-bin-localedef",
+          "type": "file",
+          "name": "/usr/bin/localedef"
+        },
+        {
+          "bom-ref": "File---usr-lib-locale-en_US.UTF-8-LC_IDENTIFICATION",
+          "type": "file",
+          "name": "/usr/lib/locale/en_US.UTF-8/LC_IDENTIFICATION"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-translit_small",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/translit_small"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnsl.so.1",
+          "type": "file",
+          "name": "/usr/lib/libnsl.so.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-libnss_dns.so.2",
+          "type": "file",
+          "name": "/usr/lib/libnss_dns.so.2"
+        },
+        {
+          "bom-ref": "File---etc-nsswitch.conf",
+          "type": "file",
+          "name": "/etc/nsswitch.conf"
+        },
+        {
+          "bom-ref": "File---usr-lib-locale-en_US.UTF-8-LC_ADDRESS",
+          "type": "file",
+          "name": "/usr/lib/locale/en_US.UTF-8/LC_ADDRESS"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-translit_combining",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/translit_combining"
+        },
+        {
+          "bom-ref": "File---usr-lib-locale-en_US.UTF-8-LC_MONETARY",
+          "type": "file",
+          "name": "/usr/lib/locale/en_US.UTF-8/LC_MONETARY"
+        },
+        {
+          "bom-ref": "File---usr-bin-makedb",
+          "type": "file",
+          "name": "/usr/bin/makedb"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-translit_circle",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/translit_circle"
+        },
+        {
+          "bom-ref": "File---usr-lib-libpthread.so.0",
+          "type": "file",
+          "name": "/usr/lib/libpthread.so.0"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-translit_narrow",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/translit_narrow"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-iso14651_t1_common",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/iso14651_t1_common"
+        },
+        {
+          "bom-ref": "File---usr-lib-libc.so",
+          "type": "file",
+          "name": "/usr/lib/libc.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-libc_malloc_debug.so.0",
+          "type": "file",
+          "name": "/usr/lib/libc_malloc_debug.so.0"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-i18n_ctype",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/i18n_ctype"
+        },
+        {
+          "bom-ref": "File---usr-libexec-getconf-POSIX_V6_LP64_OFF64",
+          "type": "file",
+          "name": "/usr/libexec/getconf/POSIX_V6_LP64_OFF64"
+        },
+        {
+          "bom-ref": "File---usr-lib-locale-en_US.UTF-8-LC_TELEPHONE",
+          "type": "file",
+          "name": "/usr/lib/locale/en_US.UTF-8/LC_TELEPHONE"
+        },
+        {
+          "bom-ref": "File---usr-lib-libm.so.6",
+          "type": "file",
+          "name": "/usr/lib/libm.so.6"
+        },
+        {
+          "bom-ref": "File---etc-ld.so.conf",
+          "type": "file",
+          "name": "/etc/ld.so.conf"
+        },
+        {
+          "bom-ref": "File---usr-bin-tzselect",
+          "type": "file",
+          "name": "/usr/bin/tzselect"
+        },
+        {
+          "bom-ref": "File---usr-lib-libanl.so.1",
+          "type": "file",
+          "name": "/usr/lib/libanl.so.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-librt.so.1",
+          "type": "file",
+          "name": "/usr/lib/librt.so.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-libthread_db.so.1",
+          "type": "file",
+          "name": "/usr/lib/libthread_db.so.1"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-charmaps-UTF-8.gz",
+          "type": "file",
+          "name": "/usr/share/i18n/charmaps/UTF-8.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-i18n",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/i18n"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-translit_hangul",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/translit_hangul"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-translit_cjk_compat",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/translit_cjk_compat"
+        },
+        {
+          "bom-ref": "File---usr-bin-locale",
+          "type": "file",
+          "name": "/usr/bin/locale"
+        },
+        {
+          "bom-ref": "File---usr-sbin-ldconfig",
+          "type": "file",
+          "name": "/usr/sbin/ldconfig"
+        },
+        {
+          "bom-ref": "File---usr-libexec-getconf-XBS5_LP64_OFF64",
+          "type": "file",
+          "name": "/usr/libexec/getconf/XBS5_LP64_OFF64"
+        },
+        {
+          "bom-ref": "File---usr-lib-locale-en_US.UTF-8-LC_CTYPE",
+          "type": "file",
+          "name": "/usr/lib/locale/en_US.UTF-8/LC_CTYPE"
+        },
+        {
+          "bom-ref": "File---usr-lib-locale-en_US.UTF-8-LC_NUMERIC",
+          "type": "file",
+          "name": "/usr/lib/locale/en_US.UTF-8/LC_NUMERIC"
+        },
+        {
+          "bom-ref": "File---usr-lib-locale-en_US.UTF-8-LC_MEASUREMENT",
+          "type": "file",
+          "name": "/usr/lib/locale/en_US.UTF-8/LC_MEASUREMENT"
+        },
+        {
+          "bom-ref": "File---usr-share-i18n-locales-translit_compat",
+          "type": "file",
+          "name": "/usr/share/i18n/locales/translit_compat"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-xz-libs-5.4.0-3.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "xz-libs",
+      "version": "5.4.0-3.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "X11"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFAP"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Autoconf-exception-generic"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Libtool-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLRWD"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/xz-libs@5.4.0-3.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-liblzma.so.5.4.0",
+          "type": "file",
+          "name": "/usr/lib/liblzma.so.5.4.0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-krb5-1.20.2-6.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "krb5",
+      "version": "1.20.2-6.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-4.3TAHOE"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-4-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-4-Clause-UC"
+          }
+        },
+        {
+          "license": {
+            "id": "(GPL-3.0-or-later WITH Autoconf-exception-2.0)"
+          }
+        },
+        {
+          "license": {
+            "id": "(GPL-3.0-or-later WITH Bison-exception-2.2)"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND"
+          }
+        },
+        {
+          "license": {
+            "id": "CMU-Mach-nodoc"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "NTP"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND-export2-US"
+          }
+        },
+        {
+          "license": {
+            "id": "(GPL-2.0-or-later WITH Autoconf-exception-generic)"
+          }
+        },
+        {
+          "license": {
+            "id": "RSA-MD"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause-flex"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND-export-US-acknowledgement"
+          }
+        },
+        {
+          "license": {
+            "id": "Brian-Gladman-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "CC-BY-SA-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "OLDAP-2.8"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/krb5@1.20.2-6.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-krb5-config.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/krb5-config.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-kdestroy.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/kdestroy.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-lib-libgssrpc.so.4.2",
+          "type": "file",
+          "name": "/usr/lib/libgssrpc.so.4.2"
+        },
+        {
+          "bom-ref": "File---usr-sbin-kprop",
+          "type": "file",
+          "name": "/usr/sbin/kprop"
+        },
+        {
+          "bom-ref": "File---usr-bin-ktutil",
+          "type": "file",
+          "name": "/usr/bin/ktutil"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man8-kdb5_ldap_util.8.gz",
+          "type": "file",
+          "name": "/usr/share/man/man8/kdb5_ldap_util.8.gz"
+        },
+        {
+          "bom-ref": "File---usr-lib-libgssapi_krb5.so.2.2",
+          "type": "file",
+          "name": "/usr/lib/libgssapi_krb5.so.2.2"
+        },
+        {
+          "bom-ref": "File---usr-bin-krb5-config",
+          "type": "file",
+          "name": "/usr/bin/krb5-config"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man5-krb5.conf.5.gz",
+          "type": "file",
+          "name": "/usr/share/man/man5/krb5.conf.5.gz"
+        },
+        {
+          "bom-ref": "File---usr-bin-sim_client",
+          "type": "file",
+          "name": "/usr/bin/sim_client"
+        },
+        {
+          "bom-ref": "File---usr-sbin-uuserver",
+          "type": "file",
+          "name": "/usr/sbin/uuserver"
+        },
+        {
+          "bom-ref": "File---usr-bin-kvno",
+          "type": "file",
+          "name": "/usr/bin/kvno"
+        },
+        {
+          "bom-ref": "File---usr-sbin-kdb5_util",
+          "type": "file",
+          "name": "/usr/sbin/kdb5_util"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man8-sserver.8.gz",
+          "type": "file",
+          "name": "/usr/share/man/man8/sserver.8.gz"
+        },
+        {
+          "bom-ref": "File---usr-sbin-kproplog",
+          "type": "file",
+          "name": "/usr/sbin/kproplog"
+        },
+        {
+          "bom-ref": "File---usr-lib-libkadm5srv_mit.so.12.0",
+          "type": "file",
+          "name": "/usr/lib/libkadm5srv_mit.so.12.0"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man5-kadm5.acl.5.gz",
+          "type": "file",
+          "name": "/usr/share/man/man5/kadm5.acl.5.gz"
+        },
+        {
+          "bom-ref": "File---usr-sbin-sserver",
+          "type": "file",
+          "name": "/usr/sbin/sserver"
+        },
+        {
+          "bom-ref": "File---usr-bin-klist",
+          "type": "file",
+          "name": "/usr/bin/klist"
+        },
+        {
+          "bom-ref": "File---usr-bin-k5srvutil",
+          "type": "file",
+          "name": "/usr/bin/k5srvutil"
+        },
+        {
+          "bom-ref": "File---usr-lib-libk5crypto.so.3.1",
+          "type": "file",
+          "name": "/usr/lib/libk5crypto.so.3.1"
+        },
+        {
+          "bom-ref": "File---usr-lib-libkrb5support.so.0.1",
+          "type": "file",
+          "name": "/usr/lib/libkrb5support.so.0.1"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man8-krb5kdc.8.gz",
+          "type": "file",
+          "name": "/usr/share/man/man8/krb5kdc.8.gz"
+        },
+        {
+          "bom-ref": "File---usr-bin-uuclient",
+          "type": "file",
+          "name": "/usr/bin/uuclient"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-klist.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/klist.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-sbin-sim_server",
+          "type": "file",
+          "name": "/usr/sbin/sim_server"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man8-kadmind.8.gz",
+          "type": "file",
+          "name": "/usr/share/man/man8/kadmind.8.gz"
+        },
+        {
+          "bom-ref": "File---usr-bin-kdestroy",
+          "type": "file",
+          "name": "/usr/bin/kdestroy"
+        },
+        {
+          "bom-ref": "File---usr-bin-ksu",
+          "type": "file",
+          "name": "/usr/bin/ksu"
+        },
+        {
+          "bom-ref": "File---usr-sbin-gss-server",
+          "type": "file",
+          "name": "/usr/sbin/gss-server"
+        },
+        {
+          "bom-ref": "File---usr-lib-krb5-plugins-preauth-spake.so",
+          "type": "file",
+          "name": "/usr/lib/krb5/plugins/preauth/spake.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-libkadm5clnt_mit.so.12.0",
+          "type": "file",
+          "name": "/usr/lib/libkadm5clnt_mit.so.12.0"
+        },
+        {
+          "bom-ref": "File---usr-bin-gss-client",
+          "type": "file",
+          "name": "/usr/bin/gss-client"
+        },
+        {
+          "bom-ref": "File---usr-bin-sclient",
+          "type": "file",
+          "name": "/usr/bin/sclient"
+        },
+        {
+          "bom-ref": "File---usr-sbin-krb5-send-pr",
+          "type": "file",
+          "name": "/usr/sbin/krb5-send-pr"
+        },
+        {
+          "bom-ref": "File---usr-bin-kinit",
+          "type": "file",
+          "name": "/usr/bin/kinit"
+        },
+        {
+          "bom-ref": "File---usr-sbin-krb5kdc",
+          "type": "file",
+          "name": "/usr/sbin/krb5kdc"
+        },
+        {
+          "bom-ref": "File---usr-lib-libkdb5.so.10.0",
+          "type": "file",
+          "name": "/usr/lib/libkdb5.so.10.0"
+        },
+        {
+          "bom-ref": "File---usr-lib-krb5-plugins-kdb-db2.so",
+          "type": "file",
+          "name": "/usr/lib/krb5/plugins/kdb/db2.so"
+        },
+        {
+          "bom-ref": "File---usr-lib-krb5-plugins-preauth-pkinit.so",
+          "type": "file",
+          "name": "/usr/lib/krb5/plugins/preauth/pkinit.so"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man5-k5login.5.gz",
+          "type": "file",
+          "name": "/usr/share/man/man5/k5login.5.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-k5srvutil.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/k5srvutil.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man8-kadmin.local.8.gz",
+          "type": "file",
+          "name": "/usr/share/man/man8/kadmin.local.8.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man8-kproplog.8.gz",
+          "type": "file",
+          "name": "/usr/share/man/man8/kproplog.8.gz"
+        },
+        {
+          "bom-ref": "File---usr-sbin-kadmin.local",
+          "type": "file",
+          "name": "/usr/sbin/kadmin.local"
+        },
+        {
+          "bom-ref": "File---usr-lib-krb5-plugins-preauth-otp.so",
+          "type": "file",
+          "name": "/usr/lib/krb5/plugins/preauth/otp.so"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-kadmin.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/kadmin.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-ksu.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/ksu.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man8-kpropd.8.gz",
+          "type": "file",
+          "name": "/usr/share/man/man8/kpropd.8.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man7-kerberos.7.gz",
+          "type": "file",
+          "name": "/usr/share/man/man7/kerberos.7.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man5-k5identity.5.gz",
+          "type": "file",
+          "name": "/usr/share/man/man5/k5identity.5.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man8-kprop.8.gz",
+          "type": "file",
+          "name": "/usr/share/man/man8/kprop.8.gz"
+        },
+        {
+          "bom-ref": "File---usr-bin-kswitch",
+          "type": "file",
+          "name": "/usr/bin/kswitch"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man8-kdb5_util.8.gz",
+          "type": "file",
+          "name": "/usr/share/man/man8/kdb5_util.8.gz"
+        },
+        {
+          "bom-ref": "File---usr-lib-libkrad.so.0.0",
+          "type": "file",
+          "name": "/usr/lib/libkrad.so.0.0"
+        },
+        {
+          "bom-ref": "File---usr-lib-libverto.so.0.0",
+          "type": "file",
+          "name": "/usr/lib/libverto.so.0.0"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-sclient.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/sclient.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man5-kdc.conf.5.gz",
+          "type": "file",
+          "name": "/usr/share/man/man5/kdc.conf.5.gz"
+        },
+        {
+          "bom-ref": "File---usr-sbin-kadmind",
+          "type": "file",
+          "name": "/usr/sbin/kadmind"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man5-.k5login.5.gz",
+          "type": "file",
+          "name": "/usr/share/man/man5/.k5login.5.gz"
+        },
+        {
+          "bom-ref": "File---usr-lib-libkrb5.so.3.3",
+          "type": "file",
+          "name": "/usr/lib/libkrb5.so.3.3"
+        },
+        {
+          "bom-ref": "File---usr-bin-kadmin",
+          "type": "file",
+          "name": "/usr/bin/kadmin"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-kvno.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/kvno.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-kpasswd.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/kpasswd.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-ktutil.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/ktutil.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man5-.k5identity.5.gz",
+          "type": "file",
+          "name": "/usr/share/man/man5/.k5identity.5.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-kinit.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/kinit.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-lib-krb5-plugins-tls-k5tls.so",
+          "type": "file",
+          "name": "/usr/lib/krb5/plugins/tls/k5tls.so"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-kswitch.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/kswitch.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-lib-krb5-plugins-preauth-test.so",
+          "type": "file",
+          "name": "/usr/lib/krb5/plugins/preauth/test.so"
+        },
+        {
+          "bom-ref": "File---usr-sbin-kpropd",
+          "type": "file",
+          "name": "/usr/sbin/kpropd"
+        },
+        {
+          "bom-ref": "File---usr-bin-kpasswd",
+          "type": "file",
+          "name": "/usr/bin/kpasswd"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-expat-2.6.0-6.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "expat",
+      "version": "2.6.0-6.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-macro"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLRWD"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Autoconf-exception-generic"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Libtool-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFAP"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "GFDL-1.1-only"
+          }
+        },
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        },
+        {
+          "license": {
+            "id": "X11"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/expat@2.6.0-6.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libexpat.so.1.9.0",
+          "type": "file",
+          "name": "/usr/lib/libexpat.so.1.9.0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-elfutils-libelf-0.189-5.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "elfutils-libelf",
+      "version": "0.189-5.ph5",
+      "purl": "pkg:rpm/photon/elfutils-libelf@0.189-5.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libelf-0.189.so",
+          "type": "file",
+          "name": "/usr/lib/libelf-0.189.so"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-tdnf-3.5.10-1.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "tdnf",
+      "version": "3.5.10-1.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/tdnf@3.5.10-1.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-systemd-system-tdnf-cache-updateinfo.service",
+          "type": "file",
+          "name": "/usr/lib/systemd/system/tdnf-cache-updateinfo.service"
+        },
+        {
+          "bom-ref": "File---etc-motdgen.d-02-tdnf-updateinfo.sh",
+          "type": "file",
+          "name": "/etc/motdgen.d/02-tdnf-updateinfo.sh"
+        },
+        {
+          "bom-ref": "File---usr-bin-tdnf-config",
+          "type": "file",
+          "name": "/usr/bin/tdnf-config"
+        },
+        {
+          "bom-ref": "File---etc-tdnf-protected.d-tdnf.conf",
+          "type": "file",
+          "name": "/etc/tdnf/protected.d/tdnf.conf"
+        },
+        {
+          "bom-ref": "File---usr-bin-tdnf-cache-updateinfo",
+          "type": "file",
+          "name": "/usr/bin/tdnf-cache-updateinfo"
+        },
+        {
+          "bom-ref": "File---usr-bin-tdnf",
+          "type": "file",
+          "name": "/usr/bin/tdnf"
+        },
+        {
+          "bom-ref": "File---usr-share-bash-completion-completions-tdnf",
+          "type": "file",
+          "name": "/usr/share/bash-completion/completions/tdnf"
+        },
+        {
+          "bom-ref": "File---usr-lib-tdnf-tdnf-history-util",
+          "type": "file",
+          "name": "/usr/lib/tdnf/tdnf-history-util"
+        },
+        {
+          "bom-ref": "File---usr-lib-systemd-system-tdnf-cache-updateinfo.timer",
+          "type": "file",
+          "name": "/usr/lib/systemd/system/tdnf-cache-updateinfo.timer"
+        },
+        {
+          "bom-ref": "File---etc-tdnf-tdnf.conf",
+          "type": "file",
+          "name": "/etc/tdnf/tdnf.conf"
+        },
+        {
+          "bom-ref": "File---usr-lib-libtdnf.so.3.5.10",
+          "type": "file",
+          "name": "/usr/lib/libtdnf.so.3.5.10"
+        },
+        {
+          "bom-ref": "File---usr-lib-libtdnfcli.so.3.5.10",
+          "type": "file",
+          "name": "/usr/lib/libtdnfcli.so.3.5.10"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-libssh2-1.11.0-4.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "libssh2",
+      "version": "1.11.0-4.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "(GPL-2.0-or-later WITH Autoconf-exception-generic)"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "id": "(GPL-1.0-or-later WITH Autoconf-exception-generic)"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLRWD"
+          }
+        },
+        {
+          "license": {
+            "id": "(GPL-3.0-or-later WITH Autoconf-exception-generic-3.0)"
+          }
+        },
+        {
+          "license": {
+            "id": "X11"
+          }
+        },
+        {
+          "license": {
+            "id": "(GPL-2.0-or-later WITH Libtool-exception)"
+          }
+        },
+        {
+          "license": {
+            "id": "SSH-short"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/libssh2@1.11.0-4.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libssh2.so.1.0.1",
+          "type": "file",
+          "name": "/usr/lib/libssh2.so.1.0.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-ca-certificates-20230315-6.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "ca-certificates",
+      "version": "20230315-6.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/ca-certificates@20230315-6.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-dc4d6a89.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/dc4d6a89.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-8d86cdd1.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/8d86cdd1.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-e8de2f56.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/e8de2f56.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-442adcac.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/442adcac.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-d7e8dc79.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/d7e8dc79.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-6d41d539.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/6d41d539.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-349f2832.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/349f2832.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-ef954a4e.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/ef954a4e.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-c28a8a30.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/c28a8a30.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-2ae6433e.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/2ae6433e.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-406c9bb1.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/406c9bb1.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-02265526.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/02265526.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-7d0b38bd.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/7d0b38bd.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-0f5dc4f3.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/0f5dc4f3.pem"
+        },
+        {
+          "bom-ref": "File---etc-pki-tls-certs-ca-bundle.crt",
+          "type": "file",
+          "name": "/etc/pki/tls/certs/ca-bundle.crt"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-6b99d060.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/6b99d060.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-14bc7599.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/14bc7599.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-244b5494.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/244b5494.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-2b349938.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/2b349938.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-e18bfb83.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/e18bfb83.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-5f15c80c.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/5f15c80c.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-76faf6c0.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/76faf6c0.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-b1b8a7f3.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/b1b8a7f3.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-653b494a.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/653b494a.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-fc5a8f99.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/fc5a8f99.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-68dd7389.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/68dd7389.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-18856ac4.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/18856ac4.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-0b1b94ef.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/0b1b94ef.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-d4dae3dd.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/d4dae3dd.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-a94d09e5.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/a94d09e5.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-ee64a828.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/ee64a828.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-cc450945.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/cc450945.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-6410666e.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/6410666e.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-128805a3.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/128805a3.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-e73d606e.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/e73d606e.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-bf53fb88.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/bf53fb88.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-b727005e.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/b727005e.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-aee5f10d.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/aee5f10d.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-b0e59380.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/b0e59380.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-ce5e74ef.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/ce5e74ef.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-5a4d6896.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/5a4d6896.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-cb59f961.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/cb59f961.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-8d89cda1.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/8d89cda1.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-9c8dfbd4.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/9c8dfbd4.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-062cdee6.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/062cdee6.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-a3418fda.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/a3418fda.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-9d04f354.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/9d04f354.pem"
+        },
+        {
+          "bom-ref": "File---usr-bin-make-cert.sh",
+          "type": "file",
+          "name": "/usr/bin/make-cert.sh"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-f0c70a8d.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/f0c70a8d.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-749e9e03.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/749e9e03.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-e36a6752.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/e36a6752.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-3bde41ac.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/3bde41ac.pem"
+        },
+        {
+          "bom-ref": "File---usr-bin-make-cert.pl",
+          "type": "file",
+          "name": "/usr/bin/make-cert.pl"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-f39fc864.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/f39fc864.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-3513523f.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/3513523f.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-1001acf7.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/1001acf7.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-5e98733a.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/5e98733a.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-a8dee976.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/a8dee976.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-7f3d5d1d.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/7f3d5d1d.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-7719f463.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/7719f463.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-f387163d.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/f387163d.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-0f6fa695.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/0f6fa695.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-0c4c9b6c.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/0c4c9b6c.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-8cb5ee0f.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/8cb5ee0f.pem"
+        },
+        {
+          "bom-ref": "File---usr-bin-make-ca.sh",
+          "type": "file",
+          "name": "/usr/bin/make-ca.sh"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-5443e9e3.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/5443e9e3.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-ad088e1d.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/ad088e1d.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-b66938e9.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/b66938e9.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-dc45b0bd.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/dc45b0bd.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-8867006a.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/8867006a.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-75d1b2ed.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/75d1b2ed.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-0bf05006.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/0bf05006.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-5f618aec.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/5f618aec.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-4f316efb.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/4f316efb.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-7aaf71c0.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/7aaf71c0.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-40547a79.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/40547a79.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-2923b3f9.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/2923b3f9.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-064e0aa9.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/064e0aa9.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-fe8a2cd8.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/fe8a2cd8.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-eed8c118.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/eed8c118.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-b204d74a.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/b204d74a.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-480720ec.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/480720ec.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-b1159c4c.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/b1159c4c.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-cbf06781.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/cbf06781.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-48bec511.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/48bec511.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-4bfab552.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/4bfab552.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-f90208f7.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/f90208f7.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-4304c5e5.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/4304c5e5.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-1e09d511.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/1e09d511.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-4042bcee.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/4042bcee.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-c47d9980.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/c47d9980.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-e113c810.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/e113c810.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-54657681.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/54657681.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-988a38cb.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/988a38cb.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-6fa5da56.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/6fa5da56.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-de6d66f3.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/de6d66f3.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-dd8e9d41.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/dd8e9d41.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-26312675.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/26312675.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-cd8c0d63.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/cd8c0d63.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-930ac5d2.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/930ac5d2.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-40193066.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/40193066.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-09789157.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/09789157.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-0a775a30.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/0a775a30.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-e2799e36.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/e2799e36.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-ff34af3f.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/ff34af3f.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-626dceaf.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/626dceaf.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-3e44d2f7.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/3e44d2f7.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-ee1365c0.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/ee1365c0.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-5cd81ad7.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/5cd81ad7.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-106f3e4d.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/106f3e4d.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-c089bbbd.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/c089bbbd.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-f51bb24c.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/f51bb24c.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-5ad8a5d6.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/5ad8a5d6.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-8160b96c.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/8160b96c.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-cd58d51e.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/cd58d51e.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-57bcb2da.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/57bcb2da.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-b7a5b843.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/b7a5b843.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-06dc52d5.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/06dc52d5.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-1320b215.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/1320b215.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-1d3472b9.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/1d3472b9.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-116bf586.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/116bf586.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-5d3033c5.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/5d3033c5.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-0b7c536a.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/0b7c536a.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-c01eb047.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/c01eb047.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-32888f65.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/32888f65.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-f30dd6ad.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/f30dd6ad.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-e868b802.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/e868b802.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-1636090b.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/1636090b.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-93bc0acc.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/93bc0acc.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-4b718d9b.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/4b718d9b.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-773e07ad.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/773e07ad.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-706f604c.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/706f604c.pem"
+        },
+        {
+          "bom-ref": "File---usr-bin-remove-expired-certs.sh",
+          "type": "file",
+          "name": "/usr/bin/remove-expired-certs.sh"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-ca6e4ad9.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/ca6e4ad9.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-1e08bfd1.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/1e08bfd1.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-d6325660.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/d6325660.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-f081611a.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/f081611a.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-2e4eed3c.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/2e4eed3c.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-ba89ed3b.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/ba89ed3b.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-c01cdfa2.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/c01cdfa2.pem"
+        },
+        {
+          "bom-ref": "File---etc-ssl-certs-607986c7.pem",
+          "type": "file",
+          "name": "/etc/ssl/certs/607986c7.pem"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-gcc-12.2.0-5.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "gcc",
+      "version": "12.2.0-5.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH GNAT-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later WITH Autoconf-exception-generic"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GFDL-1.3-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH GCC-exception-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLRWD"
+          }
+        },
+        {
+          "license": {
+            "id": "IJG"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH GCC-exception-3.1"
+          }
+        },
+        {
+          "license": {
+            "id": "NCSA"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/gcc@12.2.0-5.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libgcc_s.so.1",
+          "type": "file",
+          "name": "/usr/lib/libgcc_s.so.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-bash-5.2-7.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "bash",
+      "version": "5.2-7.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GFDL-1.3-only"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFAP"
+          }
+        },
+        {
+          "license": {
+            "id": "GFDL-1.3-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "CC-BY-SA-4.0"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-4-Clause-UC"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GFDL-1.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "OFL-1.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Latex2e"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "NTP"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Texinfo-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Bison-exception-2.2"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/bash@5.2-7.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-printenv",
+          "type": "file",
+          "name": "/usr/lib/bash/printenv"
+        },
+        {
+          "bom-ref": "File---etc-bash_completion.d-000_bash_completion_compat.bash",
+          "type": "file",
+          "name": "/etc/bash_completion.d/000_bash_completion_compat.bash"
+        },
+        {
+          "bom-ref": "File---etc-bash.bashrc",
+          "type": "file",
+          "name": "/etc/bash.bashrc"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-csv",
+          "type": "file",
+          "name": "/usr/lib/bash/csv"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-dirname",
+          "type": "file",
+          "name": "/usr/lib/bash/dirname"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-strftime",
+          "type": "file",
+          "name": "/usr/lib/bash/strftime"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-mktemp",
+          "type": "file",
+          "name": "/usr/lib/bash/mktemp"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-realpath",
+          "type": "file",
+          "name": "/usr/lib/bash/realpath"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-pathchk",
+          "type": "file",
+          "name": "/usr/lib/bash/pathchk"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-getconf",
+          "type": "file",
+          "name": "/usr/lib/bash/getconf"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-tee",
+          "type": "file",
+          "name": "/usr/lib/bash/tee"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-print",
+          "type": "file",
+          "name": "/usr/lib/bash/print"
+        },
+        {
+          "bom-ref": "File---etc-profile.d-bash_completion.sh",
+          "type": "file",
+          "name": "/etc/profile.d/bash_completion.sh"
+        },
+        {
+          "bom-ref": "File---etc-profile.d-dircolors.sh",
+          "type": "file",
+          "name": "/etc/profile.d/dircolors.sh"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-Makefile.sample",
+          "type": "file",
+          "name": "/usr/lib/bash/Makefile.sample"
+        },
+        {
+          "bom-ref": "File---etc-profile.d-readline.sh",
+          "type": "file",
+          "name": "/etc/profile.d/readline.sh"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-head",
+          "type": "file",
+          "name": "/usr/lib/bash/head"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-loadables.h",
+          "type": "file",
+          "name": "/usr/lib/bash/loadables.h"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-basename",
+          "type": "file",
+          "name": "/usr/lib/bash/basename"
+        },
+        {
+          "bom-ref": "File---usr-share-bash-completion-bash_completion",
+          "type": "file",
+          "name": "/usr/share/bash-completion/bash_completion"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-truefalse",
+          "type": "file",
+          "name": "/usr/lib/bash/truefalse"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-cut",
+          "type": "file",
+          "name": "/usr/lib/bash/cut"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-seq",
+          "type": "file",
+          "name": "/usr/lib/bash/seq"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-sleep",
+          "type": "file",
+          "name": "/usr/lib/bash/sleep"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-id",
+          "type": "file",
+          "name": "/usr/lib/bash/id"
+        },
+        {
+          "bom-ref": "File---etc-dircolors",
+          "type": "file",
+          "name": "/etc/dircolors"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-accept",
+          "type": "file",
+          "name": "/usr/lib/bash/accept"
+        },
+        {
+          "bom-ref": "File---usr-bin-bashbug",
+          "type": "file",
+          "name": "/usr/bin/bashbug"
+        },
+        {
+          "bom-ref": "File---etc-skel-.bashrc",
+          "type": "file",
+          "name": "/etc/skel/.bashrc"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-finfo",
+          "type": "file",
+          "name": "/usr/lib/bash/finfo"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-dsv",
+          "type": "file",
+          "name": "/usr/lib/bash/dsv"
+        },
+        {
+          "bom-ref": "File---etc-skel-.bash_logout",
+          "type": "file",
+          "name": "/etc/skel/.bash_logout"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-setpgid",
+          "type": "file",
+          "name": "/usr/lib/bash/setpgid"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-uname",
+          "type": "file",
+          "name": "/usr/lib/bash/uname"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-mkfifo",
+          "type": "file",
+          "name": "/usr/lib/bash/mkfifo"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-push",
+          "type": "file",
+          "name": "/usr/lib/bash/push"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-tty",
+          "type": "file",
+          "name": "/usr/lib/bash/tty"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-stat",
+          "type": "file",
+          "name": "/usr/lib/bash/stat"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-mkdir",
+          "type": "file",
+          "name": "/usr/lib/bash/mkdir"
+        },
+        {
+          "bom-ref": "File---usr-bin-bash",
+          "type": "file",
+          "name": "/usr/bin/bash"
+        },
+        {
+          "bom-ref": "File---etc-skel-.bash_profile",
+          "type": "file",
+          "name": "/etc/skel/.bash_profile"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-unlink",
+          "type": "file",
+          "name": "/usr/lib/bash/unlink"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-whoami",
+          "type": "file",
+          "name": "/usr/lib/bash/whoami"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-sync",
+          "type": "file",
+          "name": "/usr/lib/bash/sync"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-rmdir",
+          "type": "file",
+          "name": "/usr/lib/bash/rmdir"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-mypid",
+          "type": "file",
+          "name": "/usr/lib/bash/mypid"
+        },
+        {
+          "bom-ref": "File---etc-profile.d-extrapaths.sh",
+          "type": "file",
+          "name": "/etc/profile.d/extrapaths.sh"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-rm",
+          "type": "file",
+          "name": "/usr/lib/bash/rm"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-fdflags",
+          "type": "file",
+          "name": "/usr/lib/bash/fdflags"
+        },
+        {
+          "bom-ref": "File---etc-profile.d-i18n.sh",
+          "type": "file",
+          "name": "/etc/profile.d/i18n.sh"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-ln",
+          "type": "file",
+          "name": "/usr/lib/bash/ln"
+        },
+        {
+          "bom-ref": "File---usr-lib-bash-logname",
+          "type": "file",
+          "name": "/usr/lib/bash/logname"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-ncurses-libs-6.4-4.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "ncurses-libs",
+      "version": "6.4-4.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-4-Clause-UC"
+          }
+        },
+        {
+          "license": {
+            "id": "X11-distribute-modifications-variant"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "X11"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND-Markus-Kuhn"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/ncurses-libs@6.4-4.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libtinfo.so.6.4",
+          "type": "file",
+          "name": "/usr/lib/libtinfo.so.6.4"
+        },
+        {
+          "bom-ref": "File---usr-lib-libpanelw.so.6.4",
+          "type": "file",
+          "name": "/usr/lib/libpanelw.so.6.4"
+        },
+        {
+          "bom-ref": "File---usr-lib-libformw.so.6.4",
+          "type": "file",
+          "name": "/usr/lib/libformw.so.6.4"
+        },
+        {
+          "bom-ref": "File---usr-share-tabset-std",
+          "type": "file",
+          "name": "/usr/share/tabset/std"
+        },
+        {
+          "bom-ref": "File---usr-share-tabset-vt300",
+          "type": "file",
+          "name": "/usr/share/tabset/vt300"
+        },
+        {
+          "bom-ref": "File---usr-lib-libmenuw.so.6.4",
+          "type": "file",
+          "name": "/usr/lib/libmenuw.so.6.4"
+        },
+        {
+          "bom-ref": "File---usr-share-tabset-stdcrt",
+          "type": "file",
+          "name": "/usr/share/tabset/stdcrt"
+        },
+        {
+          "bom-ref": "File---usr-lib-libncursesw.so.6.4",
+          "type": "file",
+          "name": "/usr/lib/libncursesw.so.6.4"
+        },
+        {
+          "bom-ref": "File---usr-share-tabset-vt100",
+          "type": "file",
+          "name": "/usr/share/tabset/vt100"
+        },
+        {
+          "bom-ref": "File---usr-share-terminfo-l-linux",
+          "type": "file",
+          "name": "/usr/share/terminfo/l/linux"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-zstd-libs-1.5.5-4.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "zstd-libs",
+      "version": "1.5.5-4.ph5",
+      "purl": "pkg:rpm/photon/zstd-libs@1.5.5-4.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libzstd.so.1.5.5",
+          "type": "file",
+          "name": "/usr/lib/libzstd.so.1.5.5"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-expat-libs-2.6.0-6.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "expat-libs",
+      "version": "2.6.0-6.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GFDL-1.1-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Libtool-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFUL"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFAP"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later WITH Autoconf-exception-generic"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLRWD"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later WITH Autoconf-exception-macro"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "id": "X11"
+          }
+        },
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/expat-libs@2.6.0-6.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-lib-libexpat.so.1.9.0",
+          "type": "file",
+          "name": "/usr/lib/libexpat.so.1.9.0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "package-pkg-rpm-photon-libsolv-0.7.22-6.ph5-os-name-photon-os-version-5",
+      "type": "application",
+      "supplier": {
+        "name": "NOASSERTION"
+      },
+      "name": "libsolv",
+      "version": "0.7.22-6.ph5",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/photon/libsolv@0.7.22-6.ph5?os_name=photon\u0026os_version=5",
+      "components": [
+        {
+          "bom-ref": "File---usr-lib-sysimage-rpm-rpmdb.sqlite",
+          "type": "file",
+          "name": "/usr/lib/sysimage/rpm/rpmdb.sqlite"
+        },
+        {
+          "bom-ref": "File---usr-bin-repo2solv",
+          "type": "file",
+          "name": "/usr/bin/repo2solv"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-deltainfoxml2solv.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/deltainfoxml2solv.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-repo2solv.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/repo2solv.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-bin-updateinfoxml2solv",
+          "type": "file",
+          "name": "/usr/bin/updateinfoxml2solv"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-mergesolv.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/mergesolv.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-bin-rpmdb2solv",
+          "type": "file",
+          "name": "/usr/bin/rpmdb2solv"
+        },
+        {
+          "bom-ref": "File---usr-bin-deltainfoxml2solv",
+          "type": "file",
+          "name": "/usr/bin/deltainfoxml2solv"
+        },
+        {
+          "bom-ref": "File---usr-bin-rpmmd2solv",
+          "type": "file",
+          "name": "/usr/bin/rpmmd2solv"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-rpms2solv.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/rpms2solv.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-solv.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/solv.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-updateinfoxml2solv.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/updateinfoxml2solv.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-rpmdb2solv.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/rpmdb2solv.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-rpmmd2solv.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/rpmmd2solv.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-lib-libsolvext.so.1",
+          "type": "file",
+          "name": "/usr/lib/libsolvext.so.1"
+        },
+        {
+          "bom-ref": "File---usr-bin-dumpsolv",
+          "type": "file",
+          "name": "/usr/bin/dumpsolv"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-repomdxml2solv.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/repomdxml2solv.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-bin-testsolv",
+          "type": "file",
+          "name": "/usr/bin/testsolv"
+        },
+        {
+          "bom-ref": "File---usr-bin-installcheck",
+          "type": "file",
+          "name": "/usr/bin/installcheck"
+        },
+        {
+          "bom-ref": "File---usr-lib-libsolv.so.1",
+          "type": "file",
+          "name": "/usr/lib/libsolv.so.1"
+        },
+        {
+          "bom-ref": "File---usr-bin-rpms2solv",
+          "type": "file",
+          "name": "/usr/bin/rpms2solv"
+        },
+        {
+          "bom-ref": "File---usr-bin-repomdxml2solv",
+          "type": "file",
+          "name": "/usr/bin/repomdxml2solv"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-installcheck.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/installcheck.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-bin-mergesolv",
+          "type": "file",
+          "name": "/usr/bin/mergesolv"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-dumpsolv.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/dumpsolv.1.gz"
+        },
+        {
+          "bom-ref": "File---usr-share-man-man1-testsolv.1.gz",
+          "type": "file",
+          "name": "/usr/share/man/man1/testsolv.1.gz"
+        }
+      ]
+    }
+  ]
+}

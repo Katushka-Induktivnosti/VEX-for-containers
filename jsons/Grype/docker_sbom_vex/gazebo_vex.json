@@ -1,0 +1,1342 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-fp4w-jxhp-m23p",
+    "dataSource": "https://github.com/advisories/GHSA-fp4w-jxhp-m23p",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-fp4w-jxhp-m23p"
+    ],
+    "description": "Dependency Confusion in Bundler",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.8,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.10"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-36327",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-36327",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://bundler.io/blog/2021/02/15/a-more-secure-bundler-we-fixed-our-source-priorities.html",
+      "https://github.com/rubygems/rubygems/issues/3982",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/MWXHK5UUHVSHF7HTHMX6JY3WXDVNIHSL/",
+      "https://mensfeld.pl/2021/02/rubygems-dependency-confusion-attack-side-of-things/",
+      "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-24105",
+      "https://www.zofrex.com/blog/2021/04/29/bundler-still-vulnerable-dependency-confusion-cve-2020-36327/"
+     ],
+     "description": "Bundler 1.16.0 through 2.2.9 and 2.2.11 through 2.2.16 sometimes chooses a dependency source based on the highest gem version number, which means that a rogue gem found at a public source may be chosen, even if the intended choice was a private gem that is a dependency of another private gem that is explicitly depended on by the application. NOTE: it is not correct to use CVE-2021-24105 for every \"Dependency Confusion\" issue in every product.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+       "metrics": {
+        "baseScore": 9.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 10
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "bundler",
+       "version": "2.1.2"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.16.0,<2.2.10 (unknown)",
+      "vulnerabilityID": "GHSA-fp4w-jxhp-m23p"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "bc00b5b441f3361e",
+    "name": "bundler",
+    "version": "2.1.2",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:gem/bundler@2.1.2",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-fj7f-vq84-fh43",
+    "dataSource": "https://github.com/advisories/GHSA-fj7f-vq84-fh43",
+    "namespace": "github:language:ruby",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-fj7f-vq84-fh43"
+    ],
+    "description": "Local Code Execution through Argument Injection via dash leading git url parameter in Gemfile.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 6.7,
+       "exploitabilityScore": 0.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.2.33"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-43809",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-43809",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/rubygems/rubygems/commit/0fad1ccfe9dd7a3c5b82c1496df3c2b4842870d3",
+      "https://github.com/rubygems/rubygems/commit/a4f2f8ac17e6ce81c689527a8b6f14381060d95f",
+      "https://github.com/rubygems/rubygems/pull/5142",
+      "https://github.com/rubygems/rubygems/security/advisories/GHSA-fj7f-vq84-fh43",
+      "https://www.sonarsource.com/blog/securing-developer-tools-package-managers/"
+     ],
+     "description": "`Bundler` is a package for managing application dependencies in Ruby. In `bundler` versions before 2.2.33, when working with untrusted and apparently harmless `Gemfile`'s, it is not expected that they lead to execution of external code, unless that's explicit in the ruby code inside the `Gemfile` itself. However, if the `Gemfile` includes `gem` entries that use the `git` option with invalid, but seemingly harmless, values with a leading dash, this can be false. To handle dependencies that come from a Git repository instead of a registry, Bundler uses various commands, such as `git clone`. These commands are being constructed using user input (e.g. the repository URL). When building the commands, Bundler versions before 2.2.33 correctly avoid Command Injection vulnerabilities by passing an array of arguments instead of a command string. However, there is the possibility that a user input starts with a dash (`-`) and is therefore treated as an optional argument instead of a positional one. This can lead to Code Execution because some of the commands have options that can be leveraged to run arbitrary executables. Since this value comes from the `Gemfile` file, it can contain any character, including a leading dash.\n\nTo exploit this vulnerability, an attacker has to craft a directory containing a `Gemfile` file that declares a dependency that is located in a Git repository. This dependency has to have a Git URL in the form of `-u./payload`. This URL will be used to construct a Git clone command but will be interpreted as the upload-pack argument. Then this directory needs to be shared with the victim, who then needs to run a command that evaluates the Gemfile, such as `bundle lock`, inside.\n\nThis vulnerability can lead to Arbitrary Code Execution, which could potentially lead to the takeover of the system. However, the exploitability is very low, because it requires a lot of user interaction. Bundler 2.2.33 has patched this problem by inserting `--` as an argument before any positional arguments to those Git commands that were affected by this issue. Regardless of whether users can upgrade or not, they should review any untrustred `Gemfile`'s before running any `bundler` commands that may read them, since they can contain arbitrary ruby code.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+       "metrics": {
+        "baseScore": 9.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 10
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.3,
+        "exploitabilityScore": 1.3,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 6.7,
+        "exploitabilityScore": 0.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "bundler",
+       "version": "2.1.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.2.33 (unknown)",
+      "vulnerabilityID": "GHSA-fj7f-vq84-fh43"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "bc00b5b441f3361e",
+    "name": "bundler",
+    "version": "2.1.2",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:gem/bundler@2.1.2",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-5cqm-crxm-6qpv",
+    "dataSource": "https://github.com/advisories/GHSA-5cqm-crxm-6qpv",
+    "namespace": "github:language:ruby",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-5cqm-crxm-6qpv"
+    ],
+    "description": "Buffer overrun in CGI.escape_html",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.1.0.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-41816",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-41816",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://hackerone.com/reports/1328463",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF/",
+      "https://security-tracker.debian.org/tracker/CVE-2021-41816",
+      "https://security.gentoo.org/glsa/202401-27",
+      "https://security.netapp.com/advisory/ntap-20220303-0006/",
+      "https://www.ruby-lang.org/en/news/2021/11/24/buffer-overrun-in-cgi-escape_html-cve-2021-41816/"
+     ],
+     "description": "CGI.escape_html in Ruby before 2.7.5 and 3.x before 3.0.3 has an integer overflow and resultant buffer overflow via a long string on platforms (such as Windows) where size_t and long have different numbers of bytes. This also affects the CGI gem before 0.3.1 for Ruby.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "cgi",
+       "version": "0.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.1.0.1 (unknown)",
+      "vulnerabilityID": "GHSA-5cqm-crxm-6qpv"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8e752c95fdf03d3e",
+    "name": "cgi",
+    "version": "0.1.0",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:gem/cgi@0.1.0",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vc47-6rqg-c7f5",
+    "dataSource": "https://github.com/advisories/GHSA-vc47-6rqg-c7f5",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-vc47-6rqg-c7f5"
+    ],
+    "description": "HTTP response splitting in CGI",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.8,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.1.0.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-33621",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-33621",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://lists.debian.org/debian-lts-announce/2023/06/msg00012.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DQR7LWED6VAPD5ATYOBZIGJQPCUBRJBX/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/THVTYHHEOVLQFCFHWURZYO7PVUPBHRZD/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YACE6ORF2QBXXBK2V2CM36D7TZMEJVAS/",
+      "https://security.gentoo.org/glsa/202401-27",
+      "https://security.netapp.com/advisory/ntap-20221228-0004/",
+      "https://www.ruby-lang.org/en/news/2022/11/22/http-response-splitting-in-cgi-cve-2021-33621/"
+     ],
+     "description": "The cgi gem before 0.1.0.2, 0.2.x before 0.2.2, and 0.3.x before 0.3.5 for Ruby allows HTTP response splitting. This is relevant to applications that use untrusted user input either to generate an HTTP response or to create a CGI::Cookie object.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "cgi",
+       "version": "0.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.1.0.2 (unknown)",
+      "vulnerabilityID": "GHSA-vc47-6rqg-c7f5"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8e752c95fdf03d3e",
+    "name": "cgi",
+    "version": "0.1.0",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:gem/cgi@0.1.0",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4vf4-qmvg-mh7h",
+    "dataSource": "https://github.com/advisories/GHSA-4vf4-qmvg-mh7h",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-4vf4-qmvg-mh7h"
+    ],
+    "description": "Cookie Prefix Spoofing in CGI::Cookie.parse",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.1.0.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-41819",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-41819",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://hackerone.com/reports/910552",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF/",
+      "https://security.gentoo.org/glsa/202401-27",
+      "https://security.netapp.com/advisory/ntap-20220121-0003/",
+      "https://www.ruby-lang.org/en/news/2021/11/24/cookie-prefix-spoofing-in-cgi-cookie-parse-cve-2021-41819/"
+     ],
+     "description": "CGI::Cookie.parse in Ruby through 2.6.8 mishandles security prefixes in cookie names. This also affects the CGI gem through 0.3.0 for Ruby.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "cgi",
+       "version": "0.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.1.0.1 (unknown)",
+      "vulnerabilityID": "GHSA-4vf4-qmvg-mh7h"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "8e752c95fdf03d3e",
+    "name": "cgi",
+    "version": "0.1.0",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:gem/cgi@0.1.0",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-qg54-694p-wgpp",
+    "dataSource": "https://github.com/advisories/GHSA-qg54-694p-wgpp",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-qg54-694p-wgpp"
+    ],
+    "description": "Regular expression denial of service vulnerability (ReDoS) in date",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "3.0.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-41817",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-41817",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://hackerone.com/reports/1254844",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF/",
+      "https://security.gentoo.org/glsa/202401-27",
+      "https://www.ruby-lang.org/en/news/2021/11/15/date-parsing-method-regexp-dos-cve-2021-41817/"
+     ],
+     "description": "Date.parse in the date gem through 3.2.0 for Ruby allows ReDoS (regular expression Denial of Service) via a long string. The fixed versions are 3.2.1, 3.1.2, 3.0.2, and 2.0.1.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "date",
+       "version": "3.0.0"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=3.0.0,<3.0.2 (unknown)",
+      "vulnerabilityID": "GHSA-qg54-694p-wgpp"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ae5269af49191e2f",
+    "name": "date",
+    "version": "3.0.0",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:gem/date@3.0.0",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-ggxm-pgc9-g7fp",
+    "dataSource": "https://github.com/advisories/GHSA-ggxm-pgc9-g7fp",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-ggxm-pgc9-g7fp"
+    ],
+    "description": "Arbitrary Code Execution in Rdoc",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7,
+       "exploitabilityScore": 1,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "6.2.1.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-31799",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-31799",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://lists.debian.org/debian-lts-announce/2021/10/msg00009.html",
+      "https://security-tracker.debian.org/tracker/CVE-2021-31799",
+      "https://security.gentoo.org/glsa/202401-05",
+      "https://security.netapp.com/advisory/ntap-20210902-0004/",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.ruby-lang.org/en/news/2021/05/02/os-command-injection-in-rdoc/"
+     ],
+     "description": "In RDoc 3.11 through 6.x before 6.3.1, as distributed with Ruby through 3.0.1, it is possible to execute arbitrary code via | and tags in a filename.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 4.4,
+        "exploitabilityScore": 3.4,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7,
+        "exploitabilityScore": 1,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rdoc",
+       "version": "6.2.1"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=6.2.0,<6.2.1.1 (unknown)",
+      "vulnerabilityID": "GHSA-ggxm-pgc9-g7fp"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "3f6bbaee6dfa03e4",
+    "name": "rdoc",
+    "version": "6.2.1",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [
+     "Ruby"
+    ],
+    "cpes": [],
+    "purl": "pkg:gem/rdoc@6.2.1",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-8cr8-4vfw-mr7h",
+    "dataSource": "https://github.com/advisories/GHSA-8cr8-4vfw-mr7h",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-8cr8-4vfw-mr7h"
+    ],
+    "description": "REXML round-trip instability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "3.2.5"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-28965",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-28965",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WTVFTLFVCSUE5CXHINJEUCKSHU4SWDMT/",
+      "https://security.netapp.com/advisory/ntap-20210528-0003/",
+      "https://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965/"
+     ],
+     "description": "The REXML gem before 3.2.5 in Ruby before 2.6.7, 2.7.x before 2.7.3, and 3.x before 3.0.1 does not properly address XML round-trip issues. An incorrect document can be produced after parsing and serializing.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "rexml",
+       "version": "3.2.3"
+      }
+     },
+     "found": {
+      "versionConstraint": "<3.2.5 (unknown)",
+      "vulnerabilityID": "GHSA-8cr8-4vfw-mr7h"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "4f2e38421ec6043f",
+    "name": "rexml",
+    "version": "3.2.3",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:gem/rexml@3.2.3",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v5h6-c2hv-hv3r",
+    "dataSource": "https://github.com/advisories/GHSA-v5h6-c2hv-hv3r",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-v5h6-c2hv-hv3r"
+    ],
+    "description": "StringIO buffer overread vulnerability",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.0.1.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "stringio",
+       "version": "0.1.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<3.0.1.1 (unknown)",
+      "vulnerabilityID": "GHSA-v5h6-c2hv-hv3r"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "042daf7a86e4ef7c",
+    "name": "stringio",
+    "version": "0.1.0",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:gem/stringio@0.1.0",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hv5j-3h9f-99c2",
+    "dataSource": "https://github.com/advisories/GHSA-hv5j-3h9f-99c2",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-hv5j-3h9f-99c2"
+    ],
+    "description": "Ruby URI component ReDoS issue",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.10.0.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-28755",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-28755",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/ruby/uri/releases/",
+      "https://lists.debian.org/debian-lts-announce/2023/04/msg00033.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/FFZANOQA4RYX7XCB42OO3P24DQKWHEKA/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/G76GZG3RAGYF4P75YY7J7TGYAU7Z5E2T/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WMIOPLBAAM3FEQNAXA2L7BDKOGSVUT5Z/",
+      "https://security.gentoo.org/glsa/202401-27",
+      "https://security.netapp.com/advisory/ntap-20230526-0003/",
+      "https://www.ruby-lang.org/en/downloads/releases/",
+      "https://www.ruby-lang.org/en/news/2022/12/25/ruby-3-2-0-released/",
+      "https://www.ruby-lang.org/en/news/2023/03/28/redos-in-uri-cve-2023-28755/"
+     ],
+     "description": "A ReDoS issue was discovered in the URI component through 0.12.0 in Ruby through 3.2.1. The URI parser mishandles invalid URLs that have specific characters. It causes an increase in execution time for parsing strings to URI objects. The fixed versions are 0.12.1, 0.11.1, 0.10.2 and 0.10.0.1.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "uri",
+       "version": "0.10.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.10.0.1 (unknown)",
+      "vulnerabilityID": "GHSA-hv5j-3h9f-99c2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "955f14897bfe3cd7",
+    "name": "uri",
+    "version": "0.10.0",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:gem/uri@0.10.0",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hww2-5g85-429m",
+    "dataSource": "https://github.com/advisories/GHSA-hww2-5g85-429m",
+    "namespace": "github:language:ruby",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-hww2-5g85-429m"
+    ],
+    "description": "URI gem has ReDoS vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0.10.0.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-36617",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-36617",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://security.netapp.com/advisory/ntap-20230725-0002/",
+      "https://www.ruby-lang.org/en/news/2023/06/29/redos-in-uri-CVE-2023-36617/"
+     ],
+     "description": "A ReDoS issue was discovered in the URI component before 0.12.2 for Ruby. The URI parser mishandles invalid URLs that have specific characters. There is an increase in execution time for parsing strings to URI objects with rfc2396_parser.rb and rfc3986_parser.rb. NOTE: this issue exists becuse of an incomplete fix for CVE-2023-28755. Version 0.10.3 is also a fixed version.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "uri",
+       "version": "0.10.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<0.10.0.3 (unknown)",
+      "vulnerabilityID": "GHSA-hww2-5g85-429m"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "955f14897bfe3cd7",
+    "name": "uri",
+    "version": "0.10.0",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:gem/uri@0.10.0",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-gwfg-cqmg-cf8f",
+    "dataSource": "https://github.com/advisories/GHSA-gwfg-cqmg-cf8f",
+    "namespace": "github:language:ruby",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-gwfg-cqmg-cf8f"
+    ],
+    "description": "WEBRick vulnerable to HTTP Request/Response Smuggling",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.6.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-25613",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-25613",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/ruby/webrick/commit/8946bb38b4d87549f0d99ed73c62c41933f97cc7",
+      "https://hackerone.com/reports/965267",
+      "https://lists.debian.org/debian-lts-announce/2023/04/msg00033.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PFP3E7KXXT3H3KA6CBZPUOGA5VPFARRJ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YTZURYROG3FFED3TYCQOBV66BS4K6WOV/",
+      "https://security.gentoo.org/glsa/202401-27",
+      "https://security.netapp.com/advisory/ntap-20210115-0008/",
+      "https://www.ruby-lang.org/en/news/2020/09/29/http-request-smuggling-cve-2020-25613/"
+     ],
+     "description": "An issue was discovered in Ruby through 2.5.8, 2.6.x through 2.6.6, and 2.7.x through 2.7.1. WEBrick, a simple HTTP server bundled with Ruby, had not checked the transfer-encoding header value rigorously. An attacker may potentially exploit this issue to bypass a reverse proxy (which also has a poor header check), which may lead to an HTTP Request Smuggling attack.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "ruby-gem-matcher",
+     "searchedBy": {
+      "language": "ruby",
+      "namespace": "github:language:ruby",
+      "package": {
+       "name": "webrick",
+       "version": "1.6.0"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.6.1 (unknown)",
+      "vulnerabilityID": "GHSA-gwfg-cqmg-cf8f"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ca31662d57ad6da9",
+    "name": "webrick",
+    "version": "1.6.0",
+    "type": "gem",
+    "locations": [],
+    "language": "ruby",
+    "licenses": [
+     "BSD-2-Clause"
+    ],
+    "cpes": [],
+    "purl": "pkg:gem/webrick@1.6.0",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "",
+   "imageID": "",
+   "manifestDigest": "",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-04-20T01:25:41Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:16b261c20c43828088d3530bdb10577ad87b9d33cfbfcaf051c3af61ba7e53ca",
+   "error": null
+  },
+  "timestamp": "2024-04-20T21:50:51.001475+02:00"
+ }
+}

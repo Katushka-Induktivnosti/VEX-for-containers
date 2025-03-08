@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.r1 {font-style: italic}
+.r2 {color: #800080; text-decoration-color: #800080; font-weight: bold}
+.r3 {color: #7c8082; text-decoration-color: #7c8082; font-style: italic}
+.r4 {color: #00875f; text-decoration-color: #00875f}
+.r6 {color: #ff753d; text-decoration-color: #ff753d; font-weight: bold}
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+</style>
+</head>
+<body>
+    <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">
+<span class="r1">                                                   Dependency Scan Results (BOM)                                                   </span>
+╔══════════════════════════════════════════════════════════╤══════════════════════╤══════════════════════════╤════════════╤═══════╗
+║<span class="r2"> Dependency Tree                                          </span>│<span class="r2"> Insights             </span>│<span class="r2"> Fix Version              </span>│<span class="r2"> Severity   </span>│<span class="r2"> Score </span>║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 26-7.8.0-bp154.2.4.1     │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">krb5@1.20.2-6.ph5 ⬅ CVE-2022-42898              </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.37-12                  │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2023-4911                   </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │                          │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2019-1010022                </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.37-15                  │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2023-6246                   </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.37-19                  │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2024-33602                  </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │                          │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2019-1010024                </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │                          │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">krb5@1.20.2-6.ph5 ⬅ CVE-2018-5709               </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 26-7.8.0-bp154.2.4.1     │ HIGH       │   7.5 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">krb5@1.20.2-6.ph5 ⬅ CVE-2022-44640              </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">nss-libs@3.78-11.ph5                                    </span> │ <span class="r4">📓 Local install</span>     │ 4.35.0                   │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r6">nspr@4.33-3.ph5 ⬅ CVE-2023-6135                     </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">nss-libs@3.78-11.ph5                                    </span> │ <span class="r4">📓 Local install</span>     │ 4.35.0                   │ HIGH       │   7.5 ║
+║ <span class="r5">└── </span><span class="r6">nspr@4.33-3.ph5 ⬅ CVE-2023-7104                     </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.38-r11                 │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2023-6780                   </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.38-r11                 │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ GHSA-jjr8-97p7-vmmg             </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.38-r2                  │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2023-4527                   </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.38-r2                  │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ GHSA-hmf7-f8gf-8f4p             </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.38-r3                  │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2023-5156                   </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.38-r3                  │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ GHSA-m7p3-g2hx-xfc3             </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.38-r5                  │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ GHSA-m77w-6vjw-wh2f             </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.39-r2                  │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2024-2961                   </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.39-r2                  │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ GHSA-22q4-f5r6-3xqw             </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 1.2.13-r1                │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">zlib@1.2.13-4.ph5 ⬅ CVE-2018-25032              </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 1.2.13-r1                │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">zlib@1.2.13-4.ph5 ⬅ GHSA-jc36-42cf-vqwj         </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 1.2.13-r1                │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">zlib@1.2.13-4.ph5 ⬅ CVE-2022-37434              </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 1.2.13-r1                │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">zlib@1.2.13-4.ph5 ⬅ GHSA-cfmr-vrgj-vqwv         </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 1.3-r1                   │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">zlib@1.2.13-4.ph5 ⬅ CVE-2023-45853              </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 1.3-r1                   │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">zlib@1.2.13-4.ph5 ⬅ GHSA-mq29-j5xf-cjwr         </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.37-19                  │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2024-33599                  </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │                          │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">krb5@1.20.2-6.ph5 ⬅ CVE-2024-26458              </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.37-19                  │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2024-33600                  </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">nss-libs@3.78-11.ph5                                    </span> │ <span class="r4">📓 Local install</span>     │ 4.35.0                   │ HIGH       │   7.5 ║
+║ <span class="r5">└── </span><span class="r6">nspr@4.33-3.ph5 ⬅ CVE-2023-0767                     </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 26-7.8.0-bp154.2.4.1     │ HIGH       │   7.5 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">krb5@1.20.2-6.ph5 ⬅ CVE-2021-3671               </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 26-7.8.0-bp154.2.4.1     │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">krb5@1.20.2-6.ph5 ⬅ CVE-2022-3437               </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">nss-libs@3.78-11.ph5                                    </span> │ <span class="r4">📓 Local install</span>     │ 4.34.0                   │ HIGH       │   7.5 ║
+║ <span class="r5">└── </span><span class="r6">nspr@4.33-3.ph5 ⬅ ALSA-2023:1368                    </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │                          │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2018-20796                  </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 7.2d-8.1                 │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2016-9427                   </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.36-r1                  │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2022-39046                  </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.36-r1                  │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ GHSA-f6rj-qrpf-jc34             </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.37-r1                  │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2023-25139                  </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.37-r1                  │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ GHSA-2g67-jw5m-244m             </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.38-r11                 │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ GHSA-p6rw-gvvh-q8v4             </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.38-r11                 │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2023-6779                   </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.38-r11                 │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ GHSA-p5vr-h433-qhqr             </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">glibc@2.36-16.ph5                                       </span> │ <span class="r4">📓 Local install</span>     │ 3.2                      │ HIGH       │   7.5 ║
+║ <span class="r5">└── </span><span class="r6">filesystem@1.1-7.ph5 ⬅ ALAS2-2019-1175              </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.37-19                  │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2024-33601                  </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 26-7.8.0-bp154.2.4.1     │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">krb5@1.20.2-6.ph5 ⬅ CVE-2019-14870              </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │                          │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">krb5@1.20.2-6.ph5 ⬅ CVE-2024-26462              </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 7.1                      │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2012-2673                   </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">glibc@2.36-16.ph5                                       </span> │ <span class="r4">📓 Local install</span>     │ 3.2                      │ HIGH       │   7.5 ║
+║ <span class="r5">└── </span><span class="r6">filesystem@1.1-7.ph5 ⬅ ALAS2-2019-1190              </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 26-7.8.0-bp154.2.4.1     │ HIGH       │   7.5 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">krb5@1.20.2-6.ph5 ⬅ CVE-2021-44758              </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │                          │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2019-9192                   </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">nss-libs@3.78-11.ph5                                    </span> │ <span class="r4">📓 Local install</span>     │ 4.35.0                   │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r6">nspr@4.33-3.ph5 ⬅ CVE-2023-5388                     </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 26-7.8.0-bp154.2.4.1     │ HIGH       │   7.5 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">krb5@1.20.2-6.ph5 ⬅ CVE-2022-41916              </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │                          │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2019-1010025                </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │                          │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r3">curl-libs@8.7.1-7.ph5                               </span> │                      │                          │            │       ║
+║ <span class="r5">    └── </span><span class="r6">krb5@1.20.2-6.ph5 ⬅ CVE-2024-26461              </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │ 2.37-10                  │ MEDIUM     │   5.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2023-4806                   </span> │                      │                          │            │       ║
+╟──────────────────────────────────────────────────────────┼──────────────────────┼──────────────────────────┼────────────┼───────╢
+║ <span class="r3">curl@8.7.1-7.ph5                                        </span> │ <span class="r4">📓 Local install</span>     │                          │ LOW        │   2.0 ║
+║ <span class="r5">└── </span><span class="r6">glibc@2.36-16.ph5 ⬅ CVE-2019-1010023                </span> │                      │                          │            │       ║
+╚══════════════════════════════════════════════════════════╧══════════════════════╧══════════════════════════╧════════════╧═══════╝
+╭────────────── Recommendation ───────────────╮
+│ ✅ No package requires immediate attention. │
+╰─────────────────────────────────────────────╯
+</code></pre>
+</body>
+</html>

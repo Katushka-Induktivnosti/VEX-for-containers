@@ -1,0 +1,109 @@
+{
+  "results": [
+    {
+      "source": {
+        "path": "/Users/katushka/Documents/vex_json/jsons/grype/sboms/erlang_sbom.json",
+        "type": "sbom"
+      },
+      "packages": [
+        {
+          "package": {
+            "name": "imagemagick",
+            "version": "8:6.9.11.60+dfsg-1.6",
+            "ecosystem": "Debian"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-22T19:16:57Z",
+              "published": "2024-02-22T00:00:00Z",
+              "schema_version": "1.6.0",
+              "id": "DSA-5628-1",
+              "related": [
+                "CVE-2021-3610",
+                "CVE-2022-1115",
+                "CVE-2023-1289",
+                "CVE-2023-1906",
+                "CVE-2023-34151",
+                "CVE-2023-3428",
+                "CVE-2023-5341"
+              ],
+              "summary": "imagemagick - security update",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Debian:11",
+                    "name": "imagemagick",
+                    "purl": "pkg:deb/debian/imagemagick?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "8:6.9.11.60+dfsg-1.3+deb11u3"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "8:6.9.11.60+dfsg-1.3",
+                    "8:6.9.11.60+dfsg-1.3+deb11u1",
+                    "8:6.9.11.60+dfsg-1.3+deb11u2"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/debian-osv/dsa-osv/DSA-5628-1.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Debian:12",
+                    "name": "imagemagick",
+                    "purl": "pkg:deb/debian/imagemagick?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "8:6.9.11.60+dfsg-1.6+deb12u1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "8:6.9.11.60+dfsg-1.6"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/debian-osv/dsa-osv/DSA-5628-1.json"
+                  }
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "DSA-5628-1"
+              ],
+              "aliases": [
+                "DSA-5628-1"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "experimental_config": {
+    "licenses": {
+      "summary": false,
+      "allowlist": null
+    }
+  }
+}

@@ -1,0 +1,1463 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/grype/sboms/telegraf_sbom.json",
+  "ArtifactType": "cyclonedx",
+  "Metadata": {
+    "OS": {
+      "Family": "debian",
+      "Name": "12"
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "jsons/grype/sboms/telegraf_sbom.json (debian 12)",
+      "Class": "os-pkgs",
+      "Type": "debian",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2011-3374",
+          "PkgName": "apt",
+          "InstalledVersion": "2.6.1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2011-3374",
+          "PkgRef": "pkg:deb/debian/apt@2.6.1?arch=arm64\u0026distro=debian-12\u0026package-id=57615e8da2791997",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "It was found that apt-key in apt, all versions, do not correctly valid ...",
+          "Description": "It was found that apt-key in apt, all versions, do not correctly validate gpg keys with the master keyring, leading to a potential man-in-the-middle attack.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-347"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V2Score": 4.3,
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/cve-2011-3374",
+            "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=642480",
+            "https://people.canonical.com/~ubuntu-security/cve/2011/CVE-2011-3374.html",
+            "https://seclists.org/fulldisclosure/2011/Sep/221",
+            "https://security-tracker.debian.org/tracker/CVE-2011-3374",
+            "https://snyk.io/vuln/SNYK-LINUX-APT-116518",
+            "https://ubuntu.com/security/CVE-2011-3374"
+          ],
+          "PublishedDate": "2019-11-26T00:15:11.03Z",
+          "LastModifiedDate": "2021-02-09T16:08:18.683Z"
+        },
+        {
+          "VulnerabilityID": "TEMP-0841856-B18BAF",
+          "PkgName": "bash",
+          "InstalledVersion": "5.2.15-2+b2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://security-tracker.debian.org/tracker/TEMP-0841856-B18BAF",
+          "PkgRef": "pkg:deb/debian/bash@5.2.15-2+b2?arch=arm64\u0026upstream=bash%405.2.15-2\u0026distro=debian-12\u0026package-id=1b1e18e5dcb1d0a7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "[Privilege escalation possible to other user than root]",
+          "Severity": "LOW"
+        },
+        {
+          "VulnerabilityID": "CVE-2016-2781",
+          "PkgName": "coreutils",
+          "InstalledVersion": "9.1-1",
+          "Status": "will_not_fix",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-2781",
+          "PkgRef": "pkg:deb/debian/coreutils@9.1-1?arch=arm64\u0026distro=debian-12\u0026package-id=929577aca9d8ae1e",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "coreutils: Non-privileged session can escape to the parent session in chroot",
+          "Description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+              "V2Score": 2.1,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V2Score": 6.2,
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "http://seclists.org/oss-sec/2016/q1/452",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+            "https://access.redhat.com/security/cve/CVE-2016-2781",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+            "https://lore.kernel.org/patchwork/patch/793178/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+            "https://www.cve.org/CVERecord?id=CVE-2016-2781"
+          ],
+          "PublishedDate": "2017-02-07T15:59:00.333Z",
+          "LastModifiedDate": "2023-11-07T02:32:03.347Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2017-18018",
+          "PkgName": "coreutils",
+          "InstalledVersion": "9.1-1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-18018",
+          "PkgRef": "pkg:deb/debian/coreutils@9.1-1?arch=arm64\u0026distro=debian-12\u0026package-id=929577aca9d8ae1e",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "coreutils: race condition vulnerability in chown and chgrp",
+          "Description": "In GNU Coreutils through 8.29, chown-core.c in chown and chgrp does not prevent replacement of a plain file with a symlink during use of the POSIX \"-R -L\" options, which allows local users to modify the ownership of arbitrary files by leveraging a race condition.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-362"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 1.9,
+              "V3Score": 4.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:L",
+              "V3Score": 4.2
+            }
+          },
+          "References": [
+            "http://lists.gnu.org/archive/html/coreutils/2017-12/msg00045.html",
+            "https://access.redhat.com/security/cve/CVE-2017-18018",
+            "https://nvd.nist.gov/vuln/detail/CVE-2017-18018",
+            "https://www.cve.org/CVERecord?id=CVE-2017-18018"
+          ],
+          "PublishedDate": "2018-01-04T04:29:00.19Z",
+          "LastModifiedDate": "2018-01-19T15:46:46.05Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2398",
+          "PkgName": "curl",
+          "InstalledVersion": "7.88.1-10+deb12u5",
+          "Status": "affected",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2398",
+          "PkgRef": "pkg:deb/debian/curl@7.88.1-10+deb12u5?arch=arm64\u0026distro=debian-12\u0026package-id=7e08afec15e54319",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "curl: HTTP/2 push headers memory-leak",
+          "Description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2398",
+            "https://curl.se/docs/CVE-2024-2398.html",
+            "https://curl.se/docs/CVE-2024-2398.json",
+            "https://hackerone.com/reports/2402845",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GMD6UYKCCRCYETWQZUJ65ZRFULT6SHLI/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2398",
+            "https://ubuntu.com/security/notices/USN-6718-1",
+            "https://ubuntu.com/security/notices/USN-6718-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2398"
+          ],
+          "PublishedDate": "2024-03-27T08:15:41.283Z",
+          "LastModifiedDate": "2024-04-19T23:15:10.867Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2004",
+          "PkgName": "curl",
+          "InstalledVersion": "7.88.1-10+deb12u5",
+          "Status": "affected",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2004",
+          "PkgRef": "pkg:deb/debian/curl@7.88.1-10+deb12u5?arch=arm64\u0026distro=debian-12\u0026package-id=7e08afec15e54319",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "curl: Usage of disabled protocol",
+          "Description": "When a protocol selection parameter option disables all protocols without adding any then the default set of protocols would remain in the allowed set due to an error in the logic for removing protocols. The below command would perform a request to curl.se with a plaintext protocol which has been explicitly disabled.      curl --proto -all,-http http://curl.se  The flaw is only present if the set of selected protocols disables the entire set of available protocols, in itself a command with no practical use and therefore unlikely to be encountered in real situations. The curl security team has thus assessed this to be low severity bug.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2004",
+            "https://curl.se/docs/CVE-2024-2004.html",
+            "https://curl.se/docs/CVE-2024-2004.json",
+            "https://hackerone.com/reports/2384833",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GMD6UYKCCRCYETWQZUJ65ZRFULT6SHLI/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2004",
+            "https://ubuntu.com/security/notices/USN-6718-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2004"
+          ],
+          "PublishedDate": "2024-03-27T08:15:41.173Z",
+          "LastModifiedDate": "2024-04-19T23:15:10.81Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2379",
+          "PkgName": "curl",
+          "InstalledVersion": "7.88.1-10+deb12u5",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2379",
+          "PkgRef": "pkg:deb/debian/curl@7.88.1-10+deb12u5?arch=arm64\u0026distro=debian-12\u0026package-id=7e08afec15e54319",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "curl: QUIC certificate check bypass with wolfSSL",
+          "Description": "libcurl skips the certificate verification for a QUIC connection under certain conditions, when built to use wolfSSL. If told to use an unknown/bad cipher or curve, the error path accidentally skips the verification and returns OK, thus ignoring any certificate problems.",
+          "Severity": "LOW",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 5.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2379",
+            "https://curl.se/docs/CVE-2024-2379.html",
+            "https://curl.se/docs/CVE-2024-2379.json",
+            "https://hackerone.com/reports/2410774",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2379",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2379"
+          ],
+          "PublishedDate": "2024-03-27T08:15:41.23Z",
+          "LastModifiedDate": "2024-03-27T12:29:30.307Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2236",
+          "PkgName": "libgcrypt20",
+          "InstalledVersion": "1.10.1-3",
+          "Status": "affected",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2236",
+          "PkgRef": "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=arm64\u0026distro=debian-12\u0026package-id=6b22a736f954c671",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libgcrypt: vulnerable to Marvin Attack",
+          "Description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-208"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2236",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2268268",
+            "https://github.com/tomato42/marvin-toolkit/tree/master/example/libgcrypt",
+            "https://lists.gnupg.org/pipermail/gcrypt-devel/2024-March/005607.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2236",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2236"
+          ],
+          "PublishedDate": "2024-03-06T22:15:57.977Z",
+          "LastModifiedDate": "2024-03-07T13:52:27.11Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-6829",
+          "PkgName": "libgcrypt20",
+          "InstalledVersion": "1.10.1-3",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-6829",
+          "PkgRef": "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=arm64\u0026distro=debian-12\u0026package-id=6b22a736f954c671",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libgcrypt: ElGamal implementation doesn't have semantic security due to incorrectly encoded plaintexts possibly allowing to obtain sensitive information",
+          "Description": "cipher/elgamal.c in Libgcrypt through 1.8.2, when used to encrypt messages directly, improperly encodes plaintexts, which allows attackers to obtain sensitive information by reading ciphertext data (i.e., it does not have semantic security in face of a ciphertext-only attack). The Decisional Diffie-Hellman (DDH) assumption does not hold for Libgcrypt's ElGamal implementation.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2018-6829",
+            "https://github.com/weikengchen/attack-on-libgcrypt-elgamal",
+            "https://github.com/weikengchen/attack-on-libgcrypt-elgamal/wiki",
+            "https://lists.gnupg.org/pipermail/gcrypt-devel/2018-February/004394.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-6829",
+            "https://www.cve.org/CVERecord?id=CVE-2018-6829",
+            "https://www.oracle.com/security-alerts/cpujan2020.html"
+          ],
+          "PublishedDate": "2018-02-07T23:29:01.703Z",
+          "LastModifiedDate": "2020-01-15T20:15:18.557Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5678",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.11-1~deb12u2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5678",
+          "PkgRef": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64\u0026distro=debian-12\u0026package-id=b62eb8c930b7adf7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "openssl: Generating excessively long X9.42 DH keys or checking excessively long X9.42 DH keys or parameters may be very slow",
+          "Description": "Issue summary: Generating excessively long X9.42 DH keys or checking\nexcessively long X9.42 DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_generate_key() to\ngenerate an X9.42 DH key may experience long delays.  Likewise, applications\nthat use DH_check_pub_key(), DH_check_pub_key_ex() or EVP_PKEY_public_check()\nto check an X9.42 DH key or X9.42 DH parameters may experience long delays.\nWhere the key or parameters that are being checked have been obtained from\nan untrusted source this may lead to a Denial of Service.\n\nWhile DH_check() performs all the necessary checks (as of CVE-2023-3817),\nDH_check_pub_key() doesn't make any of these checks, and is therefore\nvulnerable for excessively large P and Q parameters.\n\nLikewise, while DH_generate_key() performs a check for an excessively large\nP, it doesn't check for an excessively large Q.\n\nAn application that calls DH_generate_key() or DH_check_pub_key() and\nsupplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nDH_generate_key() and DH_check_pub_key() are also called by a number of\nother OpenSSL functions.  An application calling any of those other\nfunctions may similarly be affected.  The other functions affected by this\nare DH_check_pub_key_ex(), EVP_PKEY_public_check(), and EVP_PKEY_generate().\n\nAlso vulnerable are the OpenSSL pkey command line application when using the\n\"-pubcheck\" option, as well as the OpenSSL genpkey command line application.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n\n",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-754"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:7877",
+            "https://access.redhat.com/security/cve/CVE-2023-5678",
+            "https://bugzilla.redhat.com/2224962",
+            "https://bugzilla.redhat.com/2227852",
+            "https://bugzilla.redhat.com/2248616",
+            "https://errata.almalinux.org/8/ALSA-2023-7877.html",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=34efaef6c103d636ab507a0cc34dca4d3aecc055",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=710fee740904b6290fef0dd5536fbcedbc38ff0c",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=db925ae2e65d0d925adef429afc37f75bd1c2017",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ddeb4b6c6d527e54ce9a99cba785c0f7776e54b6",
+            "https://linux.oracle.com/cve/CVE-2023-5678.html",
+            "https://linux.oracle.com/errata/ELSA-2024-12056.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5678",
+            "https://security.netapp.com/advisory/ntap-20231130-0010/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://ubuntu.com/security/notices/USN-6632-1",
+            "https://ubuntu.com/security/notices/USN-6709-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-5678",
+            "https://www.openssl.org/news/secadv/20231106.txt"
+          ],
+          "PublishedDate": "2023-11-06T16:15:42.67Z",
+          "LastModifiedDate": "2023-11-30T22:15:09.723Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6129",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.11-1~deb12u2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6129",
+          "PkgRef": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64\u0026distro=debian-12\u0026package-id=b62eb8c930b7adf7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "openssl: POLY1305 MAC implementation corrupts vector registers on PowerPC",
+          "Description": "Issue summary: The POLY1305 MAC (message authentication code) implementation\ncontains a bug that might corrupt the internal state of applications running\non PowerPC CPU based platforms if the CPU provides vector instructions.\n\nImpact summary: If an attacker can influence whether the POLY1305 MAC\nalgorithm is used, the application state might be corrupted with various\napplication dependent consequences.\n\nThe POLY1305 MAC (message authentication code) implementation in OpenSSL for\nPowerPC CPUs restores the contents of vector registers in a different order\nthan they are saved. Thus the contents of some of these vector registers\nare corrupted when returning to the caller. The vulnerable code is used only\non newer PowerPC processors supporting the PowerISA 2.07 instructions.\n\nThe consequences of this kind of internal application state corruption can\nbe various - from no consequences, if the calling application does not\ndepend on the contents of non-volatile XMM registers at all, to the worst\nconsequences, where the attacker could get complete control of the application\nprocess. However unless the compiler uses the vector registers for storing\npointers, the most likely consequence, if any, would be an incorrect result\nof some application dependent calculations or a crash leading to a denial of\nservice.\n\nThe POLY1305 MAC algorithm is most frequently used as part of the\nCHACHA20-POLY1305 AEAD (authenticated encryption with associated data)\nalgorithm. The most common usage of this AEAD cipher is with TLS protocol\nversions 1.2 and 1.3. If this cipher is enabled on the server a malicious\nclient can influence whether this AEAD cipher is used. This implies that\nTLS server applications using OpenSSL can be potentially impacted. However\nwe are currently not aware of any concrete application that would be affected\nby this issue therefore we consider this a Low severity security issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6129",
+            "https://github.com/openssl/openssl/commit/050d26383d4e264966fb83428e72d5d48f402d35",
+            "https://github.com/openssl/openssl/commit/5b139f95c9a47a55a0c54100f3837b1eee942b04",
+            "https://github.com/openssl/openssl/commit/f3fc5808fe9ff74042d639839610d03b8fdcc015",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6129",
+            "https://security.netapp.com/advisory/ntap-20240216-0009/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6129",
+            "https://www.openssl.org/news/secadv/20240109.txt",
+            "https://www.openwall.com/lists/oss-security/2024/01/09/1"
+          ],
+          "PublishedDate": "2024-01-09T17:15:12.147Z",
+          "LastModifiedDate": "2024-02-16T13:15:09.91Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6237",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.11-1~deb12u2",
+          "Status": "affected",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6237",
+          "PkgRef": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64\u0026distro=debian-12\u0026package-id=b62eb8c930b7adf7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "openssl: Excessive time spent checking invalid RSA public keys",
+          "Description": "A flaw was found in OpenSSL. When the EVP_PKEY_public_check() function is called in RSA public keys, a computation is done to confirm that the RSA modulus, n, is composite. For valid RSA keys, n is a product of two or more large primes and this computation completes quickly. However, if n is a large prime, this computation takes a long time. An application that calls EVP_PKEY_public_check() and supplies an RSA key obtained from an untrusted source could be vulnerable to a Denial of Service attack.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6237",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6237",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6237",
+            "https://www.openssl.org/news/secadv/20240115.txt",
+            "https://www.openwall.com/lists/oss-security/2024/01/15/2"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2024-0727",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.11-1~deb12u2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-0727",
+          "PkgRef": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64\u0026distro=debian-12\u0026package-id=b62eb8c930b7adf7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "openssl: denial of service via null dereference",
+          "Description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-0727",
+            "https://github.com/alexcrichton/openssl-src-rs/commit/add20f73b6b42be7451af2e1044d4e0e778992b2",
+            "https://github.com/github/advisory-database/pull/3472",
+            "https://github.com/openssl/openssl/commit/09df4395b5071217b76dc7d3d2e630eb8c5a79c2",
+            "https://github.com/openssl/openssl/commit/775acfdbd0c6af9ac855f34969cdab0c0c90844a",
+            "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
+            "https://github.com/openssl/openssl/pull/23362",
+            "https://github.com/pyca/cryptography/commit/3519591d255d4506fbcd0d04037d45271903c64d",
+            "https://github.openssl.org/openssl/extended-releases/commit/03b3941d60c4bce58fab69a0c22377ab439bc0e8",
+            "https://github.openssl.org/openssl/extended-releases/commit/aebaa5883e31122b404e450732dc833dc9dee539",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-0727",
+            "https://security.netapp.com/advisory/ntap-20240208-0006",
+            "https://security.netapp.com/advisory/ntap-20240208-0006/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://ubuntu.com/security/notices/USN-6632-1",
+            "https://ubuntu.com/security/notices/USN-6709-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-0727",
+            "https://www.openssl.org/news/secadv/20240125.txt"
+          ],
+          "PublishedDate": "2024-01-26T09:15:07.637Z",
+          "LastModifiedDate": "2024-02-08T10:15:13.91Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2007-6755",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.11-1~deb12u2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2007-6755",
+          "PkgRef": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64\u0026distro=debian-12\u0026package-id=b62eb8c930b7adf7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "Dual_EC_DRBG: weak pseudo random number generator",
+          "Description": "The NIST SP 800-90A default statement of the Dual Elliptic Curve Deterministic Random Bit Generation (Dual_EC_DRBG) algorithm contains point Q constants with a possible relationship to certain \"skeleton key\" values, which might allow context-dependent attackers to defeat cryptographic protection mechanisms by leveraging knowledge of those values.  NOTE: this is a preliminary CVE for Dual_EC_DRBG; future research may provide additional details about point Q and associated attacks, and could potentially lead to a RECAST or REJECT of this CVE.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V2Score": 5.8
+            },
+            "redhat": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V2Score": 5.8
+            }
+          },
+          "References": [
+            "http://arstechnica.com/security/2013/09/stop-using-nsa-influence-code-in-our-product-rsa-tells-customers/",
+            "http://blog.cryptographyengineering.com/2013/09/rsa-warns-developers-against-its-own.html",
+            "http://blog.cryptographyengineering.com/2013/09/the-many-flaws-of-dualecdrbg.html",
+            "http://rump2007.cr.yp.to/15-shumow.pdf",
+            "http://stream.wsj.com/story/latest-headlines/SS-2-63399/SS-2-332655/",
+            "http://threatpost.com/in-wake-of-latest-crypto-revelations-everything-is-suspect",
+            "http://www.securityfocus.com/bid/63657",
+            "https://access.redhat.com/security/cve/CVE-2007-6755",
+            "https://nvd.nist.gov/vuln/detail/CVE-2007-6755",
+            "https://www.cve.org/CVERecord?id=CVE-2007-6755",
+            "https://www.schneier.com/blog/archives/2007/11/the_strange_sto.html"
+          ],
+          "PublishedDate": "2013-10-11T22:55:33.58Z",
+          "LastModifiedDate": "2022-11-01T14:44:55.093Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2010-0928",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.11-1~deb12u2",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2010-0928",
+          "PkgRef": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64\u0026distro=debian-12\u0026package-id=b62eb8c930b7adf7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "openssl: RSA authentication weakness",
+          "Description": "OpenSSL 0.9.8i on the Gaisler Research LEON3 SoC on the Xilinx Virtex-II Pro FPGA uses a Fixed Width Exponentiation (FWE) algorithm for certain signature calculations, and does not verify the signature before providing it to a caller, which makes it easier for physically proximate attackers to determine the private key via a modified supply voltage for the microprocessor, related to a \"fault-based attack.\"",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-310"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:H/Au:N/C:C/I:N/A:N",
+              "V2Score": 4
+            }
+          },
+          "References": [
+            "http://rdist.root.org/2010/03/08/attacking-rsa-exponentiation-with-fault-injection/",
+            "http://www.eecs.umich.edu/~valeria/research/publications/DATE10RSA.pdf",
+            "http://www.networkworld.com/news/2010/030410-rsa-security-attack.html",
+            "http://www.osvdb.org/62808",
+            "http://www.theregister.co.uk/2010/03/04/severe_openssl_vulnerability/",
+            "https://access.redhat.com/security/cve/CVE-2010-0928",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/56750",
+            "https://nvd.nist.gov/vuln/detail/CVE-2010-0928",
+            "https://www.cve.org/CVERecord?id=CVE-2010-0928"
+          ],
+          "PublishedDate": "2010-03-05T19:30:00.797Z",
+          "LastModifiedDate": "2023-11-07T02:05:11.413Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-2511",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.11-1~deb12u2",
+          "Status": "fix_deferred",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-2511",
+          "PkgRef": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=arm64\u0026distro=debian-12\u0026package-id=b62eb8c930b7adf7",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "openssl: Unbounded memory growth with session handling in TLSv1.3",
+          "Description": "Issue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.",
+          "Severity": "LOW",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-2511",
+            "https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce",
+            "https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d",
+            "https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08",
+            "https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-2511",
+            "https://www.cve.org/CVERecord?id=CVE-2024-2511",
+            "https://www.openssl.org/news/secadv/20240408.txt",
+            "https://www.openssl.org/news/vulnerabilities.html"
+          ],
+          "PublishedDate": "2024-04-08T14:15:07.66Z",
+          "LastModifiedDate": "2024-04-08T18:48:40.217Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-31484",
+          "PkgName": "perl",
+          "InstalledVersion": "5.36.0-7+deb12u1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-31484",
+          "PkgRef": "pkg:deb/debian/perl@5.36.0-7+deb12u1?arch=arm64\u0026distro=debian-12\u0026package-id=85cb87dfaa778feb",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "perl: CPAN.pm does not verify TLS certificates when downloading distributions over HTTPS",
+          "Description": "CPAN.pm before 2.35 does not verify TLS certificates when downloading distributions over HTTPS.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/04/29/1",
+            "http://www.openwall.com/lists/oss-security/2023/05/03/3",
+            "http://www.openwall.com/lists/oss-security/2023/05/03/5",
+            "http://www.openwall.com/lists/oss-security/2023/05/07/2",
+            "https://access.redhat.com/errata/RHSA-2023:6539",
+            "https://access.redhat.com/security/cve/CVE-2023-31484",
+            "https://blog.hackeriet.no/perl-http-tiny-insecure-tls-default-affects-cpan-modules/",
+            "https://bugzilla.redhat.com/2218667",
+            "https://errata.almalinux.org/9/ALSA-2023-6539.html",
+            "https://github.com/andk/cpanpm/commit/9c98370287f4e709924aee7c58ef21c85289a7f0 (2.35-TRIAL)",
+            "https://github.com/andk/cpanpm/pull/175",
+            "https://linux.oracle.com/cve/CVE-2023-31484.html",
+            "https://linux.oracle.com/errata/ELSA-2023-6539.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BM6UW55CNFUTNGD5ZRKGUKKKFDJGMFHL/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LEGCEOKFJVBJ2QQ6S2H4NAEWTUERC7SB/",
+            "https://metacpan.org/dist/CPAN/changes",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-31484",
+            "https://ubuntu.com/security/notices/USN-6112-1",
+            "https://ubuntu.com/security/notices/USN-6112-2",
+            "https://www.cve.org/CVERecord?id=CVE-2023-31484",
+            "https://www.openwall.com/lists/oss-security/2023/04/18/14"
+          ],
+          "PublishedDate": "2023-04-29T00:15:09Z",
+          "LastModifiedDate": "2023-11-07T04:14:19.41Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2011-4116",
+          "PkgName": "perl",
+          "InstalledVersion": "5.36.0-7+deb12u1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2011-4116",
+          "PkgRef": "pkg:deb/debian/perl@5.36.0-7+deb12u1?arch=arm64\u0026distro=debian-12\u0026package-id=85cb87dfaa778feb",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "perl: File::Temp insecure temporary file handling",
+          "Description": "_is_safe in the File::Temp module for Perl does not properly handle symlinks.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-59"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:N/I:P/A:N",
+              "V2Score": 1.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2011/11/04/2",
+            "http://www.openwall.com/lists/oss-security/2011/11/04/4",
+            "https://access.redhat.com/security/cve/CVE-2011-4116",
+            "https://github.com/Perl-Toolchain-Gang/File-Temp/issues/14",
+            "https://nvd.nist.gov/vuln/detail/CVE-2011-4116",
+            "https://rt.cpan.org/Public/Bug/Display.html?id=69106",
+            "https://seclists.org/oss-sec/2011/q4/238",
+            "https://www.cve.org/CVERecord?id=CVE-2011-4116"
+          ],
+          "PublishedDate": "2020-01-31T18:15:11.343Z",
+          "LastModifiedDate": "2020-02-05T22:10:26.29Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-31486",
+          "PkgName": "perl",
+          "InstalledVersion": "5.36.0-7+deb12u1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-31486",
+          "PkgRef": "pkg:deb/debian/perl@5.36.0-7+deb12u1?arch=arm64\u0026distro=debian-12\u0026package-id=85cb87dfaa778feb",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "http-tiny: insecure TLS cert default",
+          "Description": "HTTP::Tiny before 0.083, a Perl core module since 5.13.9 and available standalone on CPAN, has an insecure default TLS configuration where users must opt in to verify certificates.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/04/29/1",
+            "http://www.openwall.com/lists/oss-security/2023/05/03/3",
+            "http://www.openwall.com/lists/oss-security/2023/05/03/5",
+            "http://www.openwall.com/lists/oss-security/2023/05/07/2",
+            "https://access.redhat.com/errata/RHSA-2023:7174",
+            "https://access.redhat.com/security/cve/CVE-2023-31486",
+            "https://blog.hackeriet.no/perl-http-tiny-insecure-tls-default-affects-cpan-modules/",
+            "https://bugzilla.redhat.com/2228392",
+            "https://errata.almalinux.org/8/ALSA-2023-7174.html",
+            "https://github.com/chansen/p5-http-tiny/pull/153",
+            "https://hackeriet.github.io/cpan-http-tiny-overview/",
+            "https://linux.oracle.com/cve/CVE-2023-31486.html",
+            "https://linux.oracle.com/errata/ELSA-2023-7174.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-31486",
+            "https://www.cve.org/CVERecord?id=CVE-2023-31486",
+            "https://www.openwall.com/lists/oss-security/2023/04/18/14",
+            "https://www.openwall.com/lists/oss-security/2023/05/03/4",
+            "https://www.reddit.com/r/perl/comments/111tadi/psa_httptiny_disabled_ssl_verification_by_default/"
+          ],
+          "PublishedDate": "2023-04-29T00:15:09.083Z",
+          "LastModifiedDate": "2023-06-21T18:19:52.937Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-4016",
+          "PkgName": "procps",
+          "InstalledVersion": "2:4.0.2-3",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-4016",
+          "PkgRef": "pkg:deb/debian/procps@2:4.0.2-3?arch=arm64\u0026distro=debian-12\u0026package-id=f50a7edc82bdad45",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "procps: ps buffer overflow",
+          "Description": "Under some circumstances, this weakness allows a user who has access to run the “ps” utility on a machine, the ability to write almost unlimited amounts of unfiltered data into the process heap.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-122"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:7187",
+            "https://access.redhat.com/security/cve/CVE-2023-4016",
+            "https://bugzilla.redhat.com/2228494",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2228494",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4016",
+            "https://errata.almalinux.org/8/ALSA-2023-7187.html",
+            "https://errata.rockylinux.org/RLSA-2023:7187",
+            "https://gitlab.com/procps-ng/procps",
+            "https://gitlab.com/procps-ng/procps/-/commit/2c933ecba3bb1d3041a5a7a53a7b4078a6003413",
+            "https://gitlab.com/procps-ng/procps/-/issues/297",
+            "https://linux.oracle.com/cve/CVE-2023-4016.html",
+            "https://linux.oracle.com/errata/ELSA-2023-7187.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SUETRRT24OFGPYK6ACPM5VUGHNKH5CQ5/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-4016",
+            "https://ubuntu.com/security/notices/USN-6477-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-4016",
+            "https://www.freelists.org/post/procps/ps-buffer-overflow-CVE-20234016"
+          ],
+          "PublishedDate": "2023-08-02T05:15:09.85Z",
+          "LastModifiedDate": "2023-12-15T18:19:03.787Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2005-2541",
+          "PkgName": "tar",
+          "InstalledVersion": "1.34+dfsg-1.2+deb12u1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2005-2541",
+          "PkgRef": "pkg:deb/debian/tar@1.34+dfsg-1.2+deb12u1?arch=arm64\u0026distro=debian-12\u0026package-id=93da74f998f90077",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "tar: does not properly warn the user when extracting setuid or setgid files",
+          "Description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
+          "Severity": "LOW",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V2Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          },
+          "References": [
+            "http://marc.info/?l=bugtraq\u0026m=112327628230258\u0026w=2",
+            "https://access.redhat.com/security/cve/CVE-2005-2541",
+            "https://lists.apache.org/thread.html/rc713534b10f9daeee2e0990239fa407e2118e4aa9e88a7041177497c%40%3Cissues.guacamole.apache.org%3E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2005-2541",
+            "https://www.cve.org/CVERecord?id=CVE-2005-2541"
+          ],
+          "PublishedDate": "2005-08-10T04:00:00Z",
+          "LastModifiedDate": "2023-11-07T01:57:39.453Z"
+        },
+        {
+          "VulnerabilityID": "TEMP-0290435-0B57B5",
+          "PkgName": "tar",
+          "InstalledVersion": "1.34+dfsg-1.2+deb12u1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://security-tracker.debian.org/tracker/TEMP-0290435-0B57B5",
+          "PkgRef": "pkg:deb/debian/tar@1.34+dfsg-1.2+deb12u1?arch=arm64\u0026distro=debian-12\u0026package-id=93da74f998f90077",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "[tar's rmt command may have undesired side effects]",
+          "Severity": "LOW"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-28085",
+          "VendorIDs": [
+            "DSA-5650-1"
+          ],
+          "PkgName": "util-linux",
+          "InstalledVersion": "2.38.1-5+b1",
+          "FixedVersion": "2.38.1-5+deb12u1",
+          "Status": "fixed",
+          "Layer": {},
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28085",
+          "PkgRef": "pkg:deb/debian/util-linux@2.38.1-5+b1?arch=arm64\u0026upstream=util-linux%402.38.1-5\u0026distro=debian-12\u0026package-id=5e0827b418a24fb3",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "util-linux: CVE-2024-28085: wall: escape sequence injection",
+          "Description": "wall in util-linux through 2.40, often installed with setgid tty permissions, allows escape sequences to be sent to other users' terminals through argv. (Specifically, escape sequences received from stdin are blocked, but escape sequences received from argv are not blocked.) There may be plausible scenarios where this leads to account takeover.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28085",
+            "https://github.com/skyler-ferrante/CVE-2024-28085",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-xv2h-c6ww-mrjq",
+            "https://lists.debian.org/debian-lts-announce/2024/04/msg00005.html",
+            "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28085",
+            "https://people.rit.edu/sjf5462/6831711781/wall_2_27_2024.txt",
+            "https://ubuntu.com/security/notices/USN-6719-1",
+            "https://ubuntu.com/security/notices/USN-6719-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28085",
+            "https://www.openwall.com/lists/oss-security/2024/03/27/5"
+          ],
+          "PublishedDate": "2024-03-27T19:15:48.367Z",
+          "LastModifiedDate": "2024-04-07T12:15:08.903Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-0563",
+          "PkgName": "util-linux",
+          "InstalledVersion": "2.38.1-5+b1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0563",
+          "PkgRef": "pkg:deb/debian/util-linux@2.38.1-5+b1?arch=arm64\u0026upstream=util-linux%402.38.1-5\u0026distro=debian-12\u0026package-id=5e0827b418a24fb3",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
+          "Description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-209"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 1.9,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-0563",
+            "https://blog.trailofbits.com/2023/02/16/suid-logic-bug-linux-readline/",
+            "https://lore.kernel.org/util-linux/20220214110609.msiwlm457ngoic6w%40ws.net.home/T/#u",
+            "https://lore.kernel.org/util-linux/20220214110609.msiwlm457ngoic6w@ws.net.home/T/#u",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-0563",
+            "https://security.gentoo.org/glsa/202401-08",
+            "https://security.netapp.com/advisory/ntap-20220331-0002/",
+            "https://www.cve.org/CVERecord?id=CVE-2022-0563"
+          ],
+          "PublishedDate": "2022-02-21T19:15:08.393Z",
+          "LastModifiedDate": "2024-01-07T09:15:08.713Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-31879",
+          "PkgName": "wget",
+          "InstalledVersion": "1.21.3-1+b1",
+          "Status": "affected",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-31879",
+          "PkgRef": "pkg:deb/debian/wget@1.21.3-1+b1?arch=arm64\u0026upstream=wget%401.21.3-1\u0026distro=debian-12\u0026package-id=dffc98259afcbc70",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "wget: authorization header disclosure on redirect",
+          "Description": "GNU Wget through 1.21.1 does not omit the Authorization header upon a redirect to a different origin, a related issue to CVE-2018-1000007.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-601"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V2Score": 5.8,
+              "V3Score": 6.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-31879",
+            "https://mail.gnu.org/archive/html/bug-wget/2021-02/msg00002.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-31879",
+            "https://savannah.gnu.org/bugs/?56909",
+            "https://security.netapp.com/advisory/ntap-20210618-0002/",
+            "https://www.cve.org/CVERecord?id=CVE-2021-31879"
+          ],
+          "PublishedDate": "2021-04-29T05:15:08.707Z",
+          "LastModifiedDate": "2022-05-13T20:52:24.793Z"
+        }
+      ]
+    },
+    {
+      "Target": "",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-28110",
+          "PkgName": "github.com/cloudevents/sdk-go/v2",
+          "InstalledVersion": "v2.15.0",
+          "FixedVersion": "2.15.2",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-28110",
+          "PkgRef": "pkg:golang/github.com/cloudevents/sdk-go/v2@v2.15.0?package-id=ebcc9321bbfdc1d0",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "cloudevents/sdk-go: usage of WithRoundTripper to create a Client leaks credentials",
+          "Description": "Go SDK for CloudEvents is the official CloudEvents SDK to integrate applications with CloudEvents. Prior to version 2.15.2, using cloudevents.WithRoundTripper to create a cloudevents.Client with an authenticated http.RoundTripper causes the go-sdk to leak credentials to arbitrary endpoints. When the transport is populated with an authenticated transport, then http.DefaultClient is modified with the authenticated transport and will start to send Authorization tokens to any endpoint it is used to contact. Version 2.15.2 patches this issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-522"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-28110",
+            "https://github.com/cloudevents/sdk-go",
+            "https://github.com/cloudevents/sdk-go/blob/67e389964131d55d65cd14b4eb32d57a47312695/v2/protocol/http/protocol.go#L104-L110",
+            "https://github.com/cloudevents/sdk-go/commit/de2f28370b0d2a0f64f92c0c6139fa4b8a7c3851",
+            "https://github.com/cloudevents/sdk-go/security/advisories/GHSA-5pf6-2qwx-pxm2",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-28110",
+            "https://www.cve.org/CVERecord?id=CVE-2024-28110"
+          ],
+          "PublishedDate": "2024-03-06T22:15:57.55Z",
+          "LastModifiedDate": "2024-03-07T13:52:27.11Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-24557",
+          "PkgName": "github.com/docker/docker",
+          "InstalledVersion": "v25.0.0+incompatible",
+          "FixedVersion": "25.0.2, 24.0.9",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-24557",
+          "PkgRef": "pkg:golang/github.com/docker/docker@v25.0.0+incompatible?package-id=0a3d3918b9889be0",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "moby: classic builder cache poisoning",
+          "Description": "Moby is an open-source project created by Docker to enable software containerization. The classic builder cache system is prone to cache poisoning if the image is built FROM scratch. Also, changes to some instructions (most important being HEALTHCHECK and ONBUILD) would not cause a cache miss. An attacker with the knowledge of the Dockerfile someone is using could poison their cache by making them pull a specially crafted image that would be considered as a valid cache candidate for some build steps. 23.0+ users are only affected if they explicitly opted out of Buildkit (DOCKER_BUILDKIT=0 environment variable) or are using the /build API endpoint. All users on versions older than 23.0 could be impacted. Image build API endpoint (/build) and ImageBuild function from github.com/docker/docker/client is also affected as it the uses classic builder by default. Patches are included in 24.0.9 and 25.0.2 releases.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-346",
+            "CWE-345"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:L/I:H/A:L",
+              "V3Score": 6.9
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:L/I:H/A:L",
+              "V3Score": 6.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-24557",
+            "https://github.com/moby/moby",
+            "https://github.com/moby/moby/commit/3e230cfdcc989dc524882f6579f9e0dac77400ae",
+            "https://github.com/moby/moby/commit/fca702de7f71362c8d103073c7e4a1d0a467fadd",
+            "https://github.com/moby/moby/commit/fce6e0ca9bc000888de3daa157af14fa41fcd0ff",
+            "https://github.com/moby/moby/security/advisories/GHSA-xw73-rw38-6vjc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-24557",
+            "https://www.cve.org/CVERecord?id=CVE-2024-24557"
+          ],
+          "PublishedDate": "2024-02-01T17:15:10.953Z",
+          "LastModifiedDate": "2024-02-09T20:21:32.97Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-29018",
+          "PkgName": "github.com/docker/docker",
+          "InstalledVersion": "v25.0.0+incompatible",
+          "FixedVersion": "26.0.0-rc3, 25.0.5, 23.0.11",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-29018",
+          "PkgRef": "pkg:golang/github.com/docker/docker@v25.0.0+incompatible?package-id=0a3d3918b9889be0",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "moby: external DNS requests from 'internal' networks could lead to data exfiltration",
+          "Description": "Moby is an open source container framework that is a key component of Docker Engine, Docker Desktop, and other distributions of container tooling or runtimes. Moby's networking implementation allows for many networks, each with their own IP address range and gateway, to be defined. This feature is frequently referred to as custom networks, as each network can have a different driver, set of parameters and thus behaviors. When creating a network, the `--internal` flag is used to designate a network as _internal_. The `internal` attribute in a docker-compose.yml file may also be used to mark a network _internal_, and other API clients may specify the `internal` parameter as well.\n\nWhen containers with networking are created, they are assigned unique network interfaces and IP addresses. The host serves as a router for non-internal networks, with a gateway IP that provides SNAT/DNAT to/from container IPs.\n\nContainers on an internal network may communicate between each other, but are precluded from communicating with any networks the host has access to (LAN or WAN) as no default route is configured, and firewall rules are set up to drop all outgoing traffic. Communication with the gateway IP address (and thus appropriately configured host services) is possible, and the host may communicate with any container IP directly.\n\nIn addition to configuring the Linux kernel's various networking features to enable container networking, `dockerd` directly provides some services to container networks. Principal among these is serving as a resolver, enabling service discovery, and resolution of names from an upstream resolver.\n\nWhen a DNS request for a name that does not correspond to a container is received, the request is forwarded to the configured upstream resolver. This request is made from the container's network namespace: the level of access and routing of traffic is the same as if the request was made by the container itself.\n\nAs a consequence of this design, containers solely attached to an internal network will be unable to resolve names using the upstream resolver, as the container itself is unable to communicate with that nameserver. Only the names of containers also attached to the internal network are able to be resolved.\n\nMany systems run a local forwarding DNS resolver. As the host and any containers have separate loopback devices, a consequence of the design described above is that containers are unable to resolve names from the host's configured resolver, as they cannot reach these addresses on the host loopback device. To bridge this gap, and to allow containers to properly resolve names even when a local forwarding resolver is used on a loopback address, `dockerd` detects this scenario and instead forward DNS requests from the host namework namespace. The loopback resolver then forwards the requests to its configured upstream resolvers, as expected.\n\nBecause `dockerd` forwards DNS requests to the host loopback device, bypassing the container network namespace's normal routing semantics entirely, internal networks can unexpectedly forward DNS requests to an external nameserver. By registering a domain for which they control the authoritative nameservers, an attacker could arrange for a compromised container to exfiltrate data by encoding it in DNS queries that will eventually be answered by their nameservers.\n\nDocker Desktop is not affected, as Docker Desktop always runs an internal resolver on a RFC 1918 address.\n\nMoby releases 26.0.0, 25.0.4, and 23.0.11 are patched to prevent forwarding any DNS requests from internal networks. As a workaround, run containers intended to be solely attached to internal networks with a custom upstream address, which will force all upstream DNS queries to be resolved from the container's network namespace.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-669"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-29018",
+            "https://github.com/moby/moby",
+            "https://github.com/moby/moby/pull/46609",
+            "https://github.com/moby/moby/security/advisories/GHSA-mq39-4gv4-mvpx",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-29018",
+            "https://www.cve.org/CVERecord?id=CVE-2024-29018"
+          ],
+          "PublishedDate": "2024-03-20T21:15:31.113Z",
+          "LastModifiedDate": "2024-03-21T12:58:51.093Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-27304",
+          "PkgName": "github.com/jackc/pgproto3/v2",
+          "InstalledVersion": "v2.3.2",
+          "FixedVersion": "2.3.3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-27304",
+          "PkgRef": "pkg:golang/github.com/jackc/pgproto3/v2@v2.3.2?package-id=b0adf0b5529f65d2",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "pgx: SQL Injection via Protocol Message Size Overflow",
+          "Description": "pgx is a PostgreSQL driver and toolkit for Go. SQL injection can occur if an attacker can cause a single query or bind message to exceed 4 GB in size. An integer overflow in the calculated message size can cause the one large message to be sent as multiple messages under the attacker's control. The problem is resolved in v4.18.2 and v5.5.4. As a workaround, reject user input large enough to cause a single query or bind message to exceed 4 GB in size.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190",
+            "CWE-89"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-27304",
+            "https://github.com/jackc/pgproto3/commit/945c2126f6db8f3bea7eeebe307c01fe92bca007",
+            "https://github.com/jackc/pgproto3/security/advisories/GHSA-7jwh-3vrq-q3m8",
+            "https://github.com/jackc/pgx",
+            "https://github.com/jackc/pgx/commit/adbb38f298c76e283ffc7c7a3f571036fea47fd4",
+            "https://github.com/jackc/pgx/commit/c543134753a0c5d22881c12404025724cb05ffd8",
+            "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df",
+            "https://github.com/jackc/pgx/security/advisories/GHSA-mrww-27vc-gghv",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-27304",
+            "https://www.cve.org/CVERecord?id=CVE-2024-27304"
+          ],
+          "PublishedDate": "2024-03-06T19:15:08.767Z",
+          "LastModifiedDate": "2024-03-06T21:42:48.053Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-7jwh-3vrq-q3m8",
+          "PkgName": "github.com/jackc/pgproto3/v2",
+          "InstalledVersion": "v2.3.2",
+          "FixedVersion": "2.3.3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-7jwh-3vrq-q3m8",
+          "PkgRef": "pkg:golang/github.com/jackc/pgproto3/v2@v2.3.2?package-id=b0adf0b5529f65d2",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "pgproto3 SQL Injection via Protocol Message Size Overflow",
+          "Description": "### Impact\n\nSQL injection can occur if an attacker can cause a single query or bind message to exceed 4 GB in size. An integer overflow in the calculated message size can cause the one large message to be sent as multiple messages under the attacker's control.\n\n### Patches\n\nThe problem is resolved in v2.3.3\n\n### Workarounds\n\nReject user input large enough to cause a single query or bind message to exceed 4 GB in size.\n",
+          "Severity": "MEDIUM",
+          "References": [
+            "https://github.com/jackc/pgproto3",
+            "https://github.com/jackc/pgproto3/commit/945c2126f6db8f3bea7eeebe307c01fe92bca007",
+            "https://github.com/jackc/pgproto3/security/advisories/GHSA-7jwh-3vrq-q3m8",
+            "https://github.com/jackc/pgx/commit/adbb38f298c76e283ffc7c7a3f571036fea47fd4",
+            "https://github.com/jackc/pgx/commit/c543134753a0c5d22881c12404025724cb05ffd8",
+            "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df",
+            "https://github.com/jackc/pgx/security/advisories/GHSA-mrww-27vc-gghv",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-27304"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2024-27289",
+          "PkgName": "github.com/jackc/pgx/v4",
+          "InstalledVersion": "v4.18.1",
+          "FixedVersion": "4.18.2",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-27289",
+          "PkgRef": "pkg:golang/github.com/jackc/pgx/v4@v4.18.1?package-id=3525d792dcab04d5",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "pgx: SQL Injection via Line Comment Creation",
+          "Description": "pgx is a PostgreSQL driver and toolkit for Go. Prior to version 4.18.2, SQL injection can occur when all of the following conditions are met: the non-default simple protocol is used; a placeholder for a numeric value must be immediately preceded by a minus; there must be a second placeholder for a string value after the first placeholder; both must be on the same line; and both parameter values must be user-controlled. The problem is resolved in v4.18.2. As a workaround, do not use the simple protocol or do not place a minus directly before a placeholder.\n",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-89"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-27289",
+            "https://github.com/jackc/pgx",
+            "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df",
+            "https://github.com/jackc/pgx/security/advisories/GHSA-m7wr-2xf7-cm9p",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-27289",
+            "https://www.cve.org/CVERecord?id=CVE-2024-27289"
+          ],
+          "PublishedDate": "2024-03-06T19:15:08.14Z",
+          "LastModifiedDate": "2024-03-06T21:42:48.053Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-27304",
+          "PkgName": "github.com/jackc/pgx/v4",
+          "InstalledVersion": "v4.18.1",
+          "FixedVersion": "4.18.2",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-27304",
+          "PkgRef": "pkg:golang/github.com/jackc/pgx/v4@v4.18.1?package-id=3525d792dcab04d5",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "pgx: SQL Injection via Protocol Message Size Overflow",
+          "Description": "pgx is a PostgreSQL driver and toolkit for Go. SQL injection can occur if an attacker can cause a single query or bind message to exceed 4 GB in size. An integer overflow in the calculated message size can cause the one large message to be sent as multiple messages under the attacker's control. The problem is resolved in v4.18.2 and v5.5.4. As a workaround, reject user input large enough to cause a single query or bind message to exceed 4 GB in size.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190",
+            "CWE-89"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-27304",
+            "https://github.com/jackc/pgproto3/commit/945c2126f6db8f3bea7eeebe307c01fe92bca007",
+            "https://github.com/jackc/pgproto3/security/advisories/GHSA-7jwh-3vrq-q3m8",
+            "https://github.com/jackc/pgx",
+            "https://github.com/jackc/pgx/commit/adbb38f298c76e283ffc7c7a3f571036fea47fd4",
+            "https://github.com/jackc/pgx/commit/c543134753a0c5d22881c12404025724cb05ffd8",
+            "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df",
+            "https://github.com/jackc/pgx/security/advisories/GHSA-mrww-27vc-gghv",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-27304",
+            "https://www.cve.org/CVERecord?id=CVE-2024-27304"
+          ],
+          "PublishedDate": "2024-03-06T19:15:08.767Z",
+          "LastModifiedDate": "2024-03-06T21:42:48.053Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-7jwh-3vrq-q3m8",
+          "PkgName": "github.com/jackc/pgx/v4",
+          "InstalledVersion": "v4.18.1",
+          "FixedVersion": "4.18.2",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-7jwh-3vrq-q3m8",
+          "PkgRef": "pkg:golang/github.com/jackc/pgx/v4@v4.18.1?package-id=3525d792dcab04d5",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "pgproto3 SQL Injection via Protocol Message Size Overflow",
+          "Description": "### Impact\n\nSQL injection can occur if an attacker can cause a single query or bind message to exceed 4 GB in size. An integer overflow in the calculated message size can cause the one large message to be sent as multiple messages under the attacker's control.\n\n### Patches\n\nThe problem is resolved in v2.3.3\n\n### Workarounds\n\nReject user input large enough to cause a single query or bind message to exceed 4 GB in size.\n",
+          "Severity": "MEDIUM",
+          "References": [
+            "https://github.com/jackc/pgproto3",
+            "https://github.com/jackc/pgproto3/commit/945c2126f6db8f3bea7eeebe307c01fe92bca007",
+            "https://github.com/jackc/pgproto3/security/advisories/GHSA-7jwh-3vrq-q3m8",
+            "https://github.com/jackc/pgx/commit/adbb38f298c76e283ffc7c7a3f571036fea47fd4",
+            "https://github.com/jackc/pgx/commit/c543134753a0c5d22881c12404025724cb05ffd8",
+            "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df",
+            "https://github.com/jackc/pgx/security/advisories/GHSA-mrww-27vc-gghv",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-27304"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2023-45288",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "v0.21.0",
+          "FixedVersion": "0.23.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45288",
+          "PkgRef": "pkg:golang/golang.org/x/net@v0.21.0?package-id=6bda95404bb1038a",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "golang: net/http, x/net/http2: unlimited number of CONTINUATION frames causes DoS",
+          "Description": "An attacker may cause an HTTP/2 endpoint to read arbitrary amounts of header data by sending an excessive number of CONTINUATION frames. Maintaining HPACK state requires parsing and processing all HEADERS and CONTINUATION frames on a connection. When a request's headers exceed MaxHeaderBytes, no memory is allocated to store the excess headers, but they are still parsed. This permits an attacker to cause an HTTP/2 endpoint to read arbitrary amounts of header data, all associated with a request which is going to be rejected. These headers can include Huffman-encoded data which is significantly more expensive for the receiver to decode than for an attacker to send. The fix sets a limit on the amount of excess header frames we will process before closing a connection.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-45288",
+            "https://go.dev/cl/576155",
+            "https://go.dev/issue/65051",
+            "https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M",
+            "https://nowotarski.info/http2-continuation-flood-technical-details",
+            "https://nowotarski.info/http2-continuation-flood/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-45288",
+            "https://pkg.go.dev/vuln/GO-2024-2687",
+            "https://security.netapp.com/advisory/ntap-20240419-0009",
+            "https://security.netapp.com/advisory/ntap-20240419-0009/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-45288",
+            "https://www.kb.cert.org/vuls/id/421644"
+          ],
+          "PublishedDate": "2024-04-04T21:15:16.113Z",
+          "LastModifiedDate": "2024-04-19T07:15:08.747Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-24786",
+          "PkgName": "google.golang.org/protobuf",
+          "InstalledVersion": "v1.32.0",
+          "FixedVersion": "1.33.0",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-24786",
+          "PkgRef": "pkg:golang/google.golang.org/protobuf@v1.32.0?package-id=f8acd0ae6b3cb7f2",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "golang-protobuf: encoding/protojson, internal/encoding/json: infinite loop in protojson.Unmarshal when unmarshaling certain forms of invalid JSON",
+          "Description": "The protojson.Unmarshal function can enter an infinite loop when unmarshaling certain forms of invalid JSON. This condition can occur when unmarshaling into a message which contains a google.protobuf.Any value, or when the UnmarshalOptions.DiscardUnknown option is set.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-24786",
+            "https://github.com/protocolbuffers/protobuf-go",
+            "https://github.com/protocolbuffers/protobuf-go/commit/f01a588e5810b90996452eec4a28f22a0afae023",
+            "https://github.com/protocolbuffers/protobuf-go/releases/tag/v1.33.0",
+            "https://go.dev/cl/569356",
+            "https://groups.google.com/g/golang-announce/c/ArQ6CDgtEjY/",
+            "https://linux.oracle.com/cve/CVE-2024-24786.html",
+            "https://linux.oracle.com/errata/ELSA-2024-12329.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JDMBHAVSDU2FBDZ45U3A2VLSM35OJ2HU",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JDMBHAVSDU2FBDZ45U3A2VLSM35OJ2HU/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-24786",
+            "https://pkg.go.dev/vuln/GO-2024-2611",
+            "https://www.cve.org/CVERecord?id=CVE-2024-24786"
+          ],
+          "PublishedDate": "2024-03-05T23:15:07.82Z",
+          "LastModifiedDate": "2024-03-24T03:15:09.093Z"
+        }
+      ]
+    }
+  ]
+}

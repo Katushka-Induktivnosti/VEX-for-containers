@@ -1,0 +1,102 @@
+{
+  "results": [
+    {
+      "source": {
+        "path": "/Users/katushka/Documents/vex_json/jsons/DepScan/sboms/neo4j_sbom.json",
+        "type": "sbom"
+      },
+      "packages": [
+        {
+          "package": {
+            "name": "util-linux",
+            "version": "2.36.1-8+deb11u1",
+            "ecosystem": "Debian"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-31T12:15:33Z",
+              "published": "2024-03-31T00:00:00Z",
+              "schema_version": "1.6.0",
+              "id": "DSA-5650-1",
+              "related": [
+                "CVE-2024-28085"
+              ],
+              "summary": "util-linux - security update",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Debian:11",
+                    "name": "util-linux",
+                    "purl": "pkg:deb/debian/util-linux?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.36.1-8+deb11u2"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "2.36.1-8",
+                    "2.36.1-8+deb11u1"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/debian-osv/dsa-osv/DSA-5650-1.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Debian:12",
+                    "name": "util-linux",
+                    "purl": "pkg:deb/debian/util-linux?arch=source"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.38.1-5+deb12u1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "2.38.1-5"
+                  ],
+                  "database_specific": {
+                    "source": "https://storage.googleapis.com/debian-osv/dsa-osv/DSA-5650-1.json"
+                  }
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "DSA-5650-1"
+              ],
+              "aliases": [
+                "DSA-5650-1"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "experimental_config": {
+    "licenses": {
+      "summary": false,
+      "allowlist": null
+    }
+  }
+}

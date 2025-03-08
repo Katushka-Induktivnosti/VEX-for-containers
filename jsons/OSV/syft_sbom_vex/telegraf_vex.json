@@ -1,0 +1,3641 @@
+{
+  "results": [
+    {
+      "source": {
+        "path": "/Users/katushka/Documents/vex_json/jsons/grype/sboms/telegraf_sbom.json",
+        "type": "sbom"
+      },
+      "packages": [
+        {
+          "package": {
+            "name": "github.com/cloudevents/sdk-go/v2",
+            "version": "v2.15.0",
+            "ecosystem": "Go"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-12T15:22:22Z",
+              "published": "2024-03-06T20:11:59Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-5pf6-2qwx-pxm2",
+              "aliases": [
+                "CVE-2024-28110",
+                "GO-2024-2618"
+              ],
+              "summary": "Go SDK for CloudEvents's use of WithRoundTripper to create a Client leaks credentials",
+              "details": "### Impact\n_What kind of vulnerability is it? Who is impacted?_\nUsing cloudevents.WithRoundTripper to create a cloudevents.Client with an authenticated http.RoundTripper causes the go-sdk to leak credentials to arbitrary endpoints.\n\nThe relevant code is [here](https://github.com/cloudevents/sdk-go/blob/67e389964131d55d65cd14b4eb32d57a47312695/v2/protocol/http/protocol.go#L104-L110) (also inline, emphasis added):\n\n\u003cpre\u003eif p.Client == nil {\n  p.Client = **http.DefaultClient**\n}\n\nif p.roundTripper != nil {\n  p.Client.**Transport = p.roundTripper**\n}\n\u003c/pre\u003e\n\nWhen the transport is populated with an authenticated transport such as:\n- [oauth2.Transport](https://pkg.go.dev/golang.org/x/oauth2#Transport)\n- [idtoken.NewClient(...).Transport](https://pkg.go.dev/google.golang.org/api/idtoken#NewClient)\n\n... then http.DefaultClient is modified with the authenticated transport and will start to send Authorization tokens to\n**any endpoint** it is used to contact!\n\nFound and patched by: @tcnghia and @mattmoor\n\n### Patches\nv.2.15.2\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/cloudevents/sdk-go/v2",
+                    "purl": "pkg:golang/github.com/cloudevents/sdk-go/v2"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.15.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 2.15.1",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-5pf6-2qwx-pxm2/GHSA-5pf6-2qwx-pxm2.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/cloudevents/sdk-go/security/advisories/GHSA-5pf6-2qwx-pxm2"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/cloudevents/sdk-go/commit/de2f28370b0d2a0f64f92c0c6139fa4b8a7c3851"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/cloudevents/sdk-go"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/cloudevents/sdk-go/blob/67e389964131d55d65cd14b4eb32d57a47312695/v2/protocol/http/protocol.go#L104-L110"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-06T20:11:59Z",
+                "nvd_published_at": "2024-03-06T22:15:57Z",
+                "severity": "MODERATE"
+              }
+            },
+            {
+              "modified": "2024-03-11T20:41:26Z",
+              "published": "2024-03-11T20:10:15Z",
+              "schema_version": "1.6.0",
+              "id": "GO-2024-2618",
+              "aliases": [
+                "CVE-2024-28110",
+                "GHSA-5pf6-2qwx-pxm2"
+              ],
+              "summary": "Authentication token leak in github.com/cloudevents/sdk-go/v2",
+              "details": "Using cloudevents.WithRoundTripper to create a cloudevents.Client with an authenticated http.RoundTripper causes the go-sdk to leak credentials to arbitrary endpoints. When the transport is populated with an authenticated transport, http.DefaultClient is modified with the authenticated transport and will start to send Authorization tokens to any endpoint it is used to contact.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/cloudevents/sdk-go/v2",
+                    "purl": "pkg:golang/github.com/cloudevents/sdk-go/v2"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.15.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2618.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "github.com/cloudevents/sdk-go/v2/protocol/http",
+                        "symbols": [
+                          "New"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://github.com/cloudevents/sdk-go/security/advisories/GHSA-5pf6-2qwx-pxm2"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://github.com/cloudevents/sdk-go/commit/de2f28370b0d2a0f64f92c0c6139fa4b8a7c3851"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/cloudevents/sdk-go/blob/67e389964131d55d65cd14b4eb32d57a47312695/v2/protocol/http/protocol.go#L104-L110"
+                }
+              ],
+              "credits": [
+                {
+                  "name": "mattmoor"
+                },
+                {
+                  "name": "tcnghia"
+                }
+              ],
+              "database_specific": {
+                "url": "https://pkg.go.dev/vuln/GO-2024-2618"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-5pf6-2qwx-pxm2",
+                "GO-2024-2618"
+              ],
+              "aliases": [
+                "CVE-2024-28110",
+                "GHSA-5pf6-2qwx-pxm2",
+                "GO-2024-2618"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "github.com/docker/docker",
+            "version": "v25.0.0+incompatible",
+            "ecosystem": "Go"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-20T17:07:42Z",
+              "published": "2024-02-01T20:51:19Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-xw73-rw38-6vjc",
+              "aliases": [
+                "CVE-2024-24557"
+              ],
+              "summary": "Classic builder cache poisoning",
+              "details": "The classic builder cache system is prone to cache poisoning if the image is built `FROM scratch`.\nAlso, changes to some instructions (most important being `HEALTHCHECK` and `ONBUILD`) would not cause a cache miss.\n\n\nAn attacker with the knowledge of the Dockerfile someone is using could poison their cache by making them pull a specially crafted image that would be considered as a valid cache candidate for some build steps.\n\nFor example, an attacker could create an image that is considered as a valid cache candidate for:\n```\nFROM scratch\nMAINTAINER Pawel\n```\n\nwhen in fact the malicious image used as a cache would be an image built from a different Dockerfile.\n\nIn the second case, the attacker could for example substitute a different `HEALTCHECK` command.\n\n\n### Impact\n\n23.0+ users are only affected if they explicitly opted out of Buildkit (`DOCKER_BUILDKIT=0` environment variable) or are using the `/build` API endpoint (which uses the classic builder by default).\n\nAll users on versions older than 23.0 could be impacted. An example could be a CI with a shared cache, or just a regular Docker user pulling a malicious image due to misspelling/typosquatting.\n\nImage build API endpoint (`/build`) and `ImageBuild` function from `github.com/docker/docker/client` is also affected as it the uses classic builder by default. \n\n\n### Patches\n\nPatches are included in Moby releases:\n\n- v25.0.2\n- v24.0.9\n\n### Workarounds\n\n- Use `--no-cache` or use Buildkit if possible (`DOCKER_BUILDKIT=1`, it's default on 23.0+ assuming that the buildx plugin is installed).\n- Use `Version = types.BuilderBuildKit` or `NoCache = true` in `ImageBuildOptions` for `ImageBuild` call.\n\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/docker/docker",
+                    "purl": "pkg:golang/github.com/docker/docker"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "25.0.0"
+                        },
+                        {
+                          "fixed": "25.0.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-xw73-rw38-6vjc/GHSA-xw73-rw38-6vjc.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/docker/docker",
+                    "purl": "pkg:golang/github.com/docker/docker"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "24.0.9"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-xw73-rw38-6vjc/GHSA-xw73-rw38-6vjc.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:L/I:H/A:L"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/moby/moby/security/advisories/GHSA-xw73-rw38-6vjc"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-24557"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/moby/moby/commit/3e230cfdcc989dc524882f6579f9e0dac77400ae"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/moby/moby/commit/fca702de7f71362c8d103073c7e4a1d0a467fadd"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/moby/moby/commit/fce6e0ca9bc000888de3daa157af14fa41fcd0ff"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/moby/moby"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-345",
+                  "CWE-346"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-02-01T20:51:19Z",
+                "nvd_published_at": "2024-02-01T17:15:10Z",
+                "severity": "MODERATE"
+              }
+            },
+            {
+              "modified": "2024-03-22T21:56:37Z",
+              "published": "2024-03-20T17:59:52Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-mq39-4gv4-mvpx",
+              "aliases": [
+                "CVE-2024-29018",
+                "GO-2024-2659"
+              ],
+              "summary": "Moby's external DNS requests from 'internal' networks could lead to data exfiltration",
+              "details": "Moby is an open source container framework originally developed by Docker Inc. as Docker. It is a key component of Docker Engine, Docker Desktop, and other distributions of container tooling or runtimes. As a batteries-included container runtime, Moby comes with a built-in networking implementation that enables communication between containers, and between containers and external resources.\n\nMoby's networking implementation allows for creating and using many networks, each with their own subnet and gateway. This feature is frequently referred to as custom networks, as each network can have a different driver, set of parameters, and thus behaviors. When creating a network, the `--internal` flag is used to designate a network as _internal_. The `internal` attribute in a docker-compose.yml file may also be used to mark a network _internal_, and other API clients may specify the `internal` parameter as well.\n\nWhen containers with networking are created, they are assigned unique network interfaces and IP addresses (typically from a non-routable [RFC 1918](https://datatracker.ietf.org/doc/html/rfc1918) subnet). The root network namespace (hereafter referred to as the 'host') serves as a router for non-internal networks, with a gateway IP that provides SNAT/DNAT to/from container IPs.\n\nContainers on an _internal_ network may communicate between each other, but are precluded from communicating with any networks the host has access to (LAN or WAN) as no default route is configured, and firewall rules are set up to drop all outgoing traffic. Communication with the gateway IP address (and thus appropriately configured host services) is possible, and the host may communicate with any container IP directly.\n\nIn addition to configuring the Linux kernel's various networking features to enable container networking, `dockerd` directly provides some services to container networks. Principal among these is serving as a resolver, enabling service discovery (looking up other containers on the network by name), and resolution of names from an upstream resolver.\n\nWhen a DNS request for a name that does not correspond to a container is received, the request is forwarded to the configured upstream resolver (by default, the host's configured resolver). This request is made from the container network namespace: the level of access and routing of traffic is the same as if the request was made by the container itself.\n\nAs a consequence of this design, containers solely attached to _internal_ network(s) will be unable to resolve names using the upstream resolver, as the container itself is unable to communicate with that nameserver. Only the names of containers also attached to the internal network are able to be resolved.\n\nMany systems will run a local forwarding DNS resolver, typically present on a loopback address (`127.0.0.0/8`), such as systemd-resolved or dnsmasq. Common loopback address examples include `127.0.0.1` or `127.0.0.53`. As the host and any containers have separate loopback devices, a consequence of the design described above is that containers are unable to resolve names from the host's configured resolver, as they cannot reach these addresses on the host loopback device.\n\nTo bridge this gap, and to allow containers to properly resolve names even when a local forwarding resolver is used on a loopback address, `dockerd` will detect this scenario and instead forward DNS requests from the host/root network namespace. The loopback resolver will then forward the requests to its configured upstream resolvers, as expected.\n\n## Impact\n\nBecause `dockerd` will forward DNS requests to the host loopback device, bypassing the container network namespace's normal routing semantics entirely, _internal_ networks can unexpectedly forward DNS requests to an external nameserver.\n\nBy registering a domain for which they control the authoritative nameservers, an attacker could arrange for a compromised container to exfiltrate data by encoding it in DNS queries that will eventually be answered by their nameservers. For example, if the domain `evil.example` was registered, the authoritative nameserver(s) for that domain could (eventually and indirectly) receive a request for `this-is-a-secret.evil.example`.\n\nDocker Desktop is not affected, as Docker Desktop always runs an internal resolver on a RFC 1918 address.\n\n## Patches\n\nMoby releases 26.0.0-rc3, 25.0.5 (released) and 23.0.11 (to be released) are patched to prevent forwarding DNS requests from internal networks.\n\n## Workarounds\n\n-   Run containers intended to be solely attached to _internal_ networks with a custom upstream address (`--dns` argument to `docker run`, or API equivalent), which will force all upstream DNS queries to be resolved from the container network namespace.\n\n## Background\n\n- yair zak originally reported this issue to the Docker security team.\n-  PR \u003chttps://github.com/moby/moby/pull/46609\u003e was opened in public to fix this issue, as it was not originally considered to have a security implication.\n- [The official documentation](https://docs.docker.com/network/drivers/ipvlan/#:~:text=If%20the%20parent,the%20network%20completely) claims that \"the `--internal` flag that will completely isolate containers on a network from any communications external to that network,\" which necessitated this advisory and CVE.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/docker/docker",
+                    "purl": "pkg:golang/github.com/docker/docker"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "26.0.0-rc1"
+                        },
+                        {
+                          "fixed": "26.0.0-rc3"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mq39-4gv4-mvpx/GHSA-mq39-4gv4-mvpx.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/docker/docker",
+                    "purl": "pkg:golang/github.com/docker/docker"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "25.0.0"
+                        },
+                        {
+                          "fixed": "25.0.5"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mq39-4gv4-mvpx/GHSA-mq39-4gv4-mvpx.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/docker/docker",
+                    "purl": "pkg:golang/github.com/docker/docker"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "23.0.11"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mq39-4gv4-mvpx/GHSA-mq39-4gv4-mvpx.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/moby/moby/security/advisories/GHSA-mq39-4gv4-mvpx"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/moby/moby/pull/46609"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/moby/moby"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-669"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-20T17:59:52Z",
+                "nvd_published_at": null,
+                "severity": "MODERATE"
+              }
+            },
+            {
+              "modified": "2024-03-22T21:56:37Z",
+              "published": "2024-03-22T18:49:03Z",
+              "schema_version": "1.6.0",
+              "id": "GO-2024-2659",
+              "aliases": [
+                "CVE-2024-29018",
+                "GHSA-mq39-4gv4-mvpx"
+              ],
+              "summary": "Data exfiltration from internal networks in github.com/docker/docker",
+              "details": "dockerd forwards DNS requests to the host loopback device, bypassing the container network namespace's normal routing semantics, networks marked as 'internal' can unexpectedly forward DNS requests to an external nameserver. By registering a domain for which they control the authoritative nameservers, an attacker could arrange for a compromised container to exfiltrate data by encoding it in DNS queries that will eventually be answered by their nameservers.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/docker/docker",
+                    "purl": "pkg:golang/github.com/docker/docker"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "25.0.0+incompatible"
+                        },
+                        {
+                          "fixed": "25.0.5+incompatible"
+                        },
+                        {
+                          "introduced": "26.0.0-rc1+incompatible"
+                        },
+                        {
+                          "fixed": "26.0.0-rc3+incompatible"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2659.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://github.com/moby/moby/security/advisories/GHSA-mq39-4gv4-mvpx"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/moby/moby/pull/46609"
+                }
+              ],
+              "credits": [
+                {
+                  "name": "@robmry"
+                },
+                {
+                  "name": "@akerouanton"
+                },
+                {
+                  "name": "@neersighted"
+                },
+                {
+                  "name": "@gabriellavengeo"
+                }
+              ],
+              "database_specific": {
+                "url": "https://pkg.go.dev/vuln/GO-2024-2659"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-xw73-rw38-6vjc"
+              ],
+              "aliases": [
+                "CVE-2024-24557",
+                "GHSA-xw73-rw38-6vjc"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-mq39-4gv4-mvpx",
+                "GO-2024-2659"
+              ],
+              "aliases": [
+                "CVE-2024-29018",
+                "GHSA-mq39-4gv4-mvpx",
+                "GO-2024-2659"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "github.com/jackc/pgproto3/v2",
+            "version": "v2.3.2",
+            "ecosystem": "Go"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-14T21:46:07Z",
+              "published": "2024-03-04T20:45:25Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-7jwh-3vrq-q3m8",
+              "aliases": [
+                "CVE-2024-27304",
+                "GHSA-mrww-27vc-gghv",
+                "GO-2024-2606"
+              ],
+              "summary": "pgproto3 SQL Injection via Protocol Message Size Overflow",
+              "details": "### Impact\n\nSQL injection can occur if an attacker can cause a single query or bind message to exceed 4 GB in size. An integer overflow in the calculated message size can cause the one large message to be sent as multiple messages under the attacker's control.\n\n### Patches\n\nThe problem is resolved in v2.3.3\n\n### Workarounds\n\nReject user input large enough to cause a single query or bind message to exceed 4 GB in size.\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgproto3",
+                    "purl": "pkg:golang/github.com/jackc/pgproto3"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.3.3"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-7jwh-3vrq-q3m8/GHSA-7jwh-3vrq-q3m8.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgproto3/v2",
+                    "purl": "pkg:golang/github.com/jackc/pgproto3/v2"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.3.3"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-7jwh-3vrq-q3m8/GHSA-7jwh-3vrq-q3m8.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx/v4",
+                    "purl": "pkg:golang/github.com/jackc/pgx/v4"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.18.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-7jwh-3vrq-q3m8/GHSA-7jwh-3vrq-q3m8.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx/v5",
+                    "purl": "pkg:golang/github.com/jackc/pgx/v5"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.0.0"
+                        },
+                        {
+                          "fixed": "5.5.4"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-7jwh-3vrq-q3m8/GHSA-7jwh-3vrq-q3m8.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgproto3/security/advisories/GHSA-7jwh-3vrq-q3m8"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/security/advisories/GHSA-mrww-27vc-gghv"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27304"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgproto3/commit/945c2126f6db8f3bea7eeebe307c01fe92bca007"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/commit/adbb38f298c76e283ffc7c7a3f571036fea47fd4"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/commit/c543134753a0c5d22881c12404025724cb05ffd8"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/jackc/pgproto3"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-190",
+                  "CWE-89"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-04T20:45:25Z",
+                "nvd_published_at": null,
+                "severity": "MODERATE"
+              }
+            },
+            {
+              "modified": "2024-03-14T21:45:18Z",
+              "published": "2024-03-04T20:43:24Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-mrww-27vc-gghv",
+              "aliases": [
+                "CVE-2024-27304",
+                "GHSA-7jwh-3vrq-q3m8",
+                "GO-2024-2606"
+              ],
+              "summary": "pgx SQL Injection via Protocol Message Size Overflow",
+              "details": "### Impact\n\nSQL injection can occur if an attacker can cause a single query or bind message to exceed 4 GB in size. An integer overflow in the calculated message size can cause the one large message to be sent as multiple messages under the attacker's control.\n\n### Patches\n\nThe problem is resolved in v4.18.2 and v5.5.4.\n\n### Workarounds\n\nReject user input large enough to cause a single query or bind message to exceed 4 GB in size.\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx",
+                    "purl": "pkg:golang/github.com/jackc/pgx"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.18.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mrww-27vc-gghv/GHSA-mrww-27vc-gghv.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx",
+                    "purl": "pkg:golang/github.com/jackc/pgx"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.0.0"
+                        },
+                        {
+                          "fixed": "5.5.4"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mrww-27vc-gghv/GHSA-mrww-27vc-gghv.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgproto3",
+                    "purl": "pkg:golang/github.com/jackc/pgproto3"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.3.3"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mrww-27vc-gghv/GHSA-mrww-27vc-gghv.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgproto3/v2",
+                    "purl": "pkg:golang/github.com/jackc/pgproto3/v2"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.3.3"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mrww-27vc-gghv/GHSA-mrww-27vc-gghv.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx/v4",
+                    "purl": "pkg:golang/github.com/jackc/pgx/v4"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.18.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mrww-27vc-gghv/GHSA-mrww-27vc-gghv.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx/v5",
+                    "purl": "pkg:golang/github.com/jackc/pgx/v5"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.0.0"
+                        },
+                        {
+                          "fixed": "5.5.4"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mrww-27vc-gghv/GHSA-mrww-27vc-gghv.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgproto3/security/advisories/GHSA-7jwh-3vrq-q3m8"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/security/advisories/GHSA-mrww-27vc-gghv"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgproto3/commit/945c2126f6db8f3bea7eeebe307c01fe92bca007"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/commit/adbb38f298c76e283ffc7c7a3f571036fea47fd4"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/commit/c543134753a0c5d22881c12404025724cb05ffd8"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/jackc/pgx"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-190",
+                  "CWE-89"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-04T20:43:24Z",
+                "nvd_published_at": "2024-03-06T19:15:08Z",
+                "severity": "MODERATE"
+              }
+            },
+            {
+              "modified": "2024-03-14T17:43:37Z",
+              "published": "2024-03-14T17:12:43Z",
+              "schema_version": "1.6.0",
+              "id": "GO-2024-2606",
+              "aliases": [
+                "CVE-2024-27304",
+                "GHSA-7jwh-3vrq-q3m8",
+                "GHSA-mrww-27vc-gghv"
+              ],
+              "summary": "SQL injection in github.com/jackc/pgproto3 and github.com/jackc/pgx",
+              "details": "An integer overflow in the calculated message size of a query or bind message could allow a single large message to be sent as multiple messages under the attacker's control. This could lead to SQL injection if an attacker can cause a single query or bind message to exceed 4 GB in size.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgproto3/v2",
+                    "purl": "pkg:golang/github.com/jackc/pgproto3/v2"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.3.3"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2606.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "github.com/jackc/pgproto3/v2",
+                        "symbols": [
+                          "AuthenticationCleartextPassword.Encode",
+                          "AuthenticationGSS.Encode",
+                          "AuthenticationGSSContinue.Encode",
+                          "AuthenticationMD5Password.Encode",
+                          "AuthenticationOk.Encode",
+                          "AuthenticationSASL.Encode",
+                          "AuthenticationSASLContinue.Encode",
+                          "AuthenticationSASLFinal.Encode",
+                          "Backend.Send",
+                          "BackendKeyData.Encode",
+                          "Bind.Encode",
+                          "BindComplete.Encode",
+                          "CancelRequest.Encode",
+                          "Close.Encode",
+                          "CloseComplete.Encode",
+                          "CommandComplete.Encode",
+                          "CopyBothResponse.Encode",
+                          "CopyData.Encode",
+                          "CopyDone.Encode",
+                          "CopyFail.Encode",
+                          "CopyInResponse.Encode",
+                          "CopyOutResponse.Encode",
+                          "DataRow.Encode",
+                          "Describe.Encode",
+                          "EmptyQueryResponse.Encode",
+                          "ErrorResponse.Encode",
+                          "ErrorResponse.marshalBinary",
+                          "Execute.Encode",
+                          "Flush.Encode",
+                          "Frontend.Send",
+                          "FunctionCall.Encode",
+                          "FunctionCallResponse.Encode",
+                          "GSSEncRequest.Encode",
+                          "GSSResponse.Encode",
+                          "NoData.Encode",
+                          "NoticeResponse.Encode",
+                          "NotificationResponse.Encode",
+                          "ParameterDescription.Encode",
+                          "ParameterStatus.Encode",
+                          "Parse.Encode",
+                          "ParseComplete.Encode",
+                          "PasswordMessage.Encode",
+                          "PortalSuspended.Encode",
+                          "Query.Encode",
+                          "ReadyForQuery.Encode",
+                          "RowDescription.Encode",
+                          "SASLInitialResponse.Encode",
+                          "SASLResponse.Encode",
+                          "SSLRequest.Encode",
+                          "StartupMessage.Encode",
+                          "Sync.Encode",
+                          "Terminate.Encode"
+                        ]
+                      },
+                      {
+                        "path": "github.com/jackc/pgproto3/v2/example/pgfortune",
+                        "symbols": [
+                          "PgFortuneBackend.Run",
+                          "PgFortuneBackend.handleStartup",
+                          "main"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx/v4",
+                    "purl": "pkg:golang/github.com/jackc/pgx/v4"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.18.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2606.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "github.com/jackc/pgx/v4/internal/sanitize",
+                        "symbols": [
+                          "Query.Sanitize",
+                          "SanitizeSQL"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx/v5",
+                    "purl": "pkg:golang/github.com/jackc/pgx/v5"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.0.0"
+                        },
+                        {
+                          "fixed": "5.5.4"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2606.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "github.com/jackc/pgx/v5/internal/sanitize",
+                        "symbols": [
+                          "Query.Sanitize",
+                          "SanitizeSQL"
+                        ]
+                      },
+                      {
+                        "path": "github.com/jackc/pgx/v5/pgproto3",
+                        "symbols": [
+                          "AuthenticationCleartextPassword.Encode",
+                          "AuthenticationGSS.Encode",
+                          "AuthenticationGSSContinue.Encode",
+                          "AuthenticationMD5Password.Encode",
+                          "AuthenticationOk.Encode",
+                          "AuthenticationSASL.Encode",
+                          "AuthenticationSASLContinue.Encode",
+                          "AuthenticationSASLFinal.Encode",
+                          "Backend.Flush",
+                          "Backend.Send",
+                          "BackendKeyData.Encode",
+                          "Bind.Encode",
+                          "BindComplete.Encode",
+                          "CancelRequest.Encode",
+                          "Close.Encode",
+                          "CloseComplete.Encode",
+                          "CommandComplete.Encode",
+                          "CopyBothResponse.Encode",
+                          "CopyData.Encode",
+                          "CopyDone.Encode",
+                          "CopyFail.Encode",
+                          "CopyInResponse.Encode",
+                          "CopyOutResponse.Encode",
+                          "DataRow.Encode",
+                          "Describe.Encode",
+                          "EmptyQueryResponse.Encode",
+                          "ErrorResponse.Encode",
+                          "ErrorResponse.marshalBinary",
+                          "Execute.Encode",
+                          "Flush.Encode",
+                          "Frontend.Flush",
+                          "Frontend.Send",
+                          "Frontend.SendBind",
+                          "Frontend.SendClose",
+                          "Frontend.SendDescribe",
+                          "Frontend.SendExecute",
+                          "Frontend.SendParse",
+                          "Frontend.SendQuery",
+                          "Frontend.SendSync",
+                          "Frontend.SendUnbufferedEncodedCopyData",
+                          "FunctionCall.Encode",
+                          "FunctionCallResponse.Encode",
+                          "GSSEncRequest.Encode",
+                          "GSSResponse.Encode",
+                          "NoData.Encode",
+                          "NoticeResponse.Encode",
+                          "NotificationResponse.Encode",
+                          "ParameterDescription.Encode",
+                          "ParameterStatus.Encode",
+                          "Parse.Encode",
+                          "ParseComplete.Encode",
+                          "PasswordMessage.Encode",
+                          "PortalSuspended.Encode",
+                          "Query.Encode",
+                          "ReadyForQuery.Encode",
+                          "RowDescription.Encode",
+                          "SASLInitialResponse.Encode",
+                          "SASLResponse.Encode",
+                          "SSLRequest.Encode",
+                          "StartupMessage.Encode",
+                          "Sync.Encode",
+                          "Terminate.Encode"
+                        ]
+                      },
+                      {
+                        "path": "github.com/jackc/pgx/v5/pgconn",
+                        "symbols": [
+                          "Batch.ExecParams",
+                          "Batch.ExecPrepared",
+                          "Connect",
+                          "ConnectConfig",
+                          "ConnectWithOptions",
+                          "MultiResultReader.Close",
+                          "MultiResultReader.NextResult",
+                          "MultiResultReader.ReadAll",
+                          "PgConn.CheckConn",
+                          "PgConn.Close",
+                          "PgConn.CopyFrom",
+                          "PgConn.CopyTo",
+                          "PgConn.Deallocate",
+                          "PgConn.Exec",
+                          "PgConn.ExecBatch",
+                          "PgConn.ExecParams",
+                          "PgConn.ExecPrepared",
+                          "PgConn.Ping",
+                          "PgConn.Prepare",
+                          "PgConn.ReceiveMessage",
+                          "PgConn.SyncConn",
+                          "PgConn.WaitForNotification",
+                          "Pipeline.Close",
+                          "Pipeline.Flush",
+                          "Pipeline.GetResults",
+                          "Pipeline.SendDeallocate",
+                          "Pipeline.SendPrepare",
+                          "Pipeline.SendQueryParams",
+                          "Pipeline.SendQueryPrepared",
+                          "Pipeline.Sync",
+                          "ResultReader.Close",
+                          "ResultReader.NextRow",
+                          "ResultReader.Read",
+                          "ValidateConnectTargetSessionAttrsPreferStandby",
+                          "ValidateConnectTargetSessionAttrsPrimary",
+                          "ValidateConnectTargetSessionAttrsReadOnly",
+                          "ValidateConnectTargetSessionAttrsReadWrite",
+                          "ValidateConnectTargetSessionAttrsStandby"
+                        ]
+                      },
+                      {
+                        "path": "github.com/jackc/pgx/v5/pgproto3/example/pgfortune",
+                        "symbols": [
+                          "PgFortuneBackend.Run",
+                          "PgFortuneBackend.handleStartup",
+                          "main"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://github.com/jackc/pgx/security/advisories/GHSA-mrww-27vc-gghv"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://github.com/jackc/pgproto3/commit/945c2126f6db8f3bea7eeebe307c01fe92bca007"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://github.com/jackc/pgx/commit/adbb38f298c76e283ffc7c7a3f571036fea47fd4"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://github.com/jackc/pgx/commit/c543134753a0c5d22881c12404025724cb05ffd8"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df"
+                }
+              ],
+              "credits": [
+                {
+                  "name": "paul-gerste-sonarsource"
+                }
+              ],
+              "database_specific": {
+                "url": "https://pkg.go.dev/vuln/GO-2024-2606"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-7jwh-3vrq-q3m8",
+                "GHSA-mrww-27vc-gghv",
+                "GO-2024-2606"
+              ],
+              "aliases": [
+                "CVE-2024-27304",
+                "GHSA-7jwh-3vrq-q3m8",
+                "GHSA-mrww-27vc-gghv",
+                "GO-2024-2606"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "github.com/jackc/pgx/v4",
+            "version": "v4.18.1",
+            "ecosystem": "Go"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-14T21:46:07Z",
+              "published": "2024-03-04T20:45:25Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-7jwh-3vrq-q3m8",
+              "aliases": [
+                "CVE-2024-27304",
+                "GHSA-mrww-27vc-gghv",
+                "GO-2024-2606"
+              ],
+              "summary": "pgproto3 SQL Injection via Protocol Message Size Overflow",
+              "details": "### Impact\n\nSQL injection can occur if an attacker can cause a single query or bind message to exceed 4 GB in size. An integer overflow in the calculated message size can cause the one large message to be sent as multiple messages under the attacker's control.\n\n### Patches\n\nThe problem is resolved in v2.3.3\n\n### Workarounds\n\nReject user input large enough to cause a single query or bind message to exceed 4 GB in size.\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgproto3",
+                    "purl": "pkg:golang/github.com/jackc/pgproto3"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.3.3"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-7jwh-3vrq-q3m8/GHSA-7jwh-3vrq-q3m8.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgproto3/v2",
+                    "purl": "pkg:golang/github.com/jackc/pgproto3/v2"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.3.3"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-7jwh-3vrq-q3m8/GHSA-7jwh-3vrq-q3m8.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx/v4",
+                    "purl": "pkg:golang/github.com/jackc/pgx/v4"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.18.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-7jwh-3vrq-q3m8/GHSA-7jwh-3vrq-q3m8.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx/v5",
+                    "purl": "pkg:golang/github.com/jackc/pgx/v5"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.0.0"
+                        },
+                        {
+                          "fixed": "5.5.4"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-7jwh-3vrq-q3m8/GHSA-7jwh-3vrq-q3m8.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgproto3/security/advisories/GHSA-7jwh-3vrq-q3m8"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/security/advisories/GHSA-mrww-27vc-gghv"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27304"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgproto3/commit/945c2126f6db8f3bea7eeebe307c01fe92bca007"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/commit/adbb38f298c76e283ffc7c7a3f571036fea47fd4"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/commit/c543134753a0c5d22881c12404025724cb05ffd8"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/jackc/pgproto3"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-190",
+                  "CWE-89"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-04T20:45:25Z",
+                "nvd_published_at": null,
+                "severity": "MODERATE"
+              }
+            },
+            {
+              "modified": "2024-03-12T15:15:00Z",
+              "published": "2024-03-04T20:13:11Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-m7wr-2xf7-cm9p",
+              "aliases": [
+                "CVE-2024-27289",
+                "GO-2024-2605"
+              ],
+              "summary": "pgx SQL Injection via Line Comment Creation",
+              "details": "### Impact\n\nSQL injection can occur when all of the following conditions are met:\n\n1. The non-default simple protocol is used.\n2. A placeholder for a numeric value must be immediately preceded by a minus.\n3. There must be a second placeholder for a string value after the first placeholder; both\nmust be on the same line.\n4. Both parameter values must be user-controlled.\n\ne.g. \n\nSimple mode must be enabled:\n\n```go\n// connection string includes \"prefer_simple_protocol=true\"\n// or\n// directly enabled in code\nconfig.ConnConfig.PreferSimpleProtocol = true\n```\n\nParameterized query:\n\n```sql\nSELECT * FROM example WHERE result=-$1 OR name=$2;\n```\n\nParameter values:\n\n`$1` =\u003e `-42`\n`$2` =\u003e `\"foo\\n 1 AND 1=0 UNION SELECT * FROM secrets; --\"`\n\nResulting query after preparation:\n\n```sql\nSELECT * FROM example WHERE result=--42 OR name= 'foo\n1 AND 1=0 UNION SELECT * FROM secrets; --';\n```\n\n### Patches\n\nThe problem is resolved in v4.18.2.\n\n### Workarounds\n\nDo not use the simple protocol or do not place a minus directly before a placeholder.\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx",
+                    "purl": "pkg:golang/github.com/jackc/pgx"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.18.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-m7wr-2xf7-cm9p/GHSA-m7wr-2xf7-cm9p.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx/v4",
+                    "purl": "pkg:golang/github.com/jackc/pgx/v4"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.18.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-m7wr-2xf7-cm9p/GHSA-m7wr-2xf7-cm9p.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/security/advisories/GHSA-m7wr-2xf7-cm9p"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/jackc/pgx"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-89"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-04T20:13:11Z",
+                "nvd_published_at": "2024-03-06T19:15:08Z",
+                "severity": "MODERATE"
+              }
+            },
+            {
+              "modified": "2024-03-14T21:45:18Z",
+              "published": "2024-03-04T20:43:24Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-mrww-27vc-gghv",
+              "aliases": [
+                "CVE-2024-27304",
+                "GHSA-7jwh-3vrq-q3m8",
+                "GO-2024-2606"
+              ],
+              "summary": "pgx SQL Injection via Protocol Message Size Overflow",
+              "details": "### Impact\n\nSQL injection can occur if an attacker can cause a single query or bind message to exceed 4 GB in size. An integer overflow in the calculated message size can cause the one large message to be sent as multiple messages under the attacker's control.\n\n### Patches\n\nThe problem is resolved in v4.18.2 and v5.5.4.\n\n### Workarounds\n\nReject user input large enough to cause a single query or bind message to exceed 4 GB in size.\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx",
+                    "purl": "pkg:golang/github.com/jackc/pgx"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.18.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mrww-27vc-gghv/GHSA-mrww-27vc-gghv.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx",
+                    "purl": "pkg:golang/github.com/jackc/pgx"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.0.0"
+                        },
+                        {
+                          "fixed": "5.5.4"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mrww-27vc-gghv/GHSA-mrww-27vc-gghv.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgproto3",
+                    "purl": "pkg:golang/github.com/jackc/pgproto3"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.3.3"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mrww-27vc-gghv/GHSA-mrww-27vc-gghv.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgproto3/v2",
+                    "purl": "pkg:golang/github.com/jackc/pgproto3/v2"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.3.3"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mrww-27vc-gghv/GHSA-mrww-27vc-gghv.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx/v4",
+                    "purl": "pkg:golang/github.com/jackc/pgx/v4"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.18.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mrww-27vc-gghv/GHSA-mrww-27vc-gghv.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx/v5",
+                    "purl": "pkg:golang/github.com/jackc/pgx/v5"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.0.0"
+                        },
+                        {
+                          "fixed": "5.5.4"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-mrww-27vc-gghv/GHSA-mrww-27vc-gghv.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgproto3/security/advisories/GHSA-7jwh-3vrq-q3m8"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/security/advisories/GHSA-mrww-27vc-gghv"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgproto3/commit/945c2126f6db8f3bea7eeebe307c01fe92bca007"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/commit/adbb38f298c76e283ffc7c7a3f571036fea47fd4"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/commit/c543134753a0c5d22881c12404025724cb05ffd8"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/jackc/pgx"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-190",
+                  "CWE-89"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-04T20:43:24Z",
+                "nvd_published_at": "2024-03-06T19:15:08Z",
+                "severity": "MODERATE"
+              }
+            },
+            {
+              "modified": "2024-03-11T20:41:26Z",
+              "published": "2024-03-11T20:08:05Z",
+              "schema_version": "1.6.0",
+              "id": "GO-2024-2605",
+              "aliases": [
+                "CVE-2024-27289",
+                "GHSA-m7wr-2xf7-cm9p"
+              ],
+              "summary": "SQL injection in github.com/jackc/pgx/v4",
+              "details": "SQL injection is possible when the database uses the non-default simple protocol, a minus sign directly precedes a numeric placeholder followed by a string placeholder on the same line, and both parameter values are user-controlled.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx/v4",
+                    "purl": "pkg:golang/github.com/jackc/pgx/v4"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.18.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2605.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "github.com/jackc/pgx/v4/internal/sanitize",
+                        "symbols": [
+                          "Query.Sanitize",
+                          "SanitizeSQL"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://github.com/jackc/pgx/security/advisories/GHSA-m7wr-2xf7-cm9p"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df"
+                }
+              ],
+              "credits": [
+                {
+                  "name": "paul-gerste-sonarsource"
+                }
+              ],
+              "database_specific": {
+                "url": "https://pkg.go.dev/vuln/GO-2024-2605"
+              }
+            },
+            {
+              "modified": "2024-03-14T17:43:37Z",
+              "published": "2024-03-14T17:12:43Z",
+              "schema_version": "1.6.0",
+              "id": "GO-2024-2606",
+              "aliases": [
+                "CVE-2024-27304",
+                "GHSA-7jwh-3vrq-q3m8",
+                "GHSA-mrww-27vc-gghv"
+              ],
+              "summary": "SQL injection in github.com/jackc/pgproto3 and github.com/jackc/pgx",
+              "details": "An integer overflow in the calculated message size of a query or bind message could allow a single large message to be sent as multiple messages under the attacker's control. This could lead to SQL injection if an attacker can cause a single query or bind message to exceed 4 GB in size.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgproto3/v2",
+                    "purl": "pkg:golang/github.com/jackc/pgproto3/v2"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.3.3"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2606.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "github.com/jackc/pgproto3/v2",
+                        "symbols": [
+                          "AuthenticationCleartextPassword.Encode",
+                          "AuthenticationGSS.Encode",
+                          "AuthenticationGSSContinue.Encode",
+                          "AuthenticationMD5Password.Encode",
+                          "AuthenticationOk.Encode",
+                          "AuthenticationSASL.Encode",
+                          "AuthenticationSASLContinue.Encode",
+                          "AuthenticationSASLFinal.Encode",
+                          "Backend.Send",
+                          "BackendKeyData.Encode",
+                          "Bind.Encode",
+                          "BindComplete.Encode",
+                          "CancelRequest.Encode",
+                          "Close.Encode",
+                          "CloseComplete.Encode",
+                          "CommandComplete.Encode",
+                          "CopyBothResponse.Encode",
+                          "CopyData.Encode",
+                          "CopyDone.Encode",
+                          "CopyFail.Encode",
+                          "CopyInResponse.Encode",
+                          "CopyOutResponse.Encode",
+                          "DataRow.Encode",
+                          "Describe.Encode",
+                          "EmptyQueryResponse.Encode",
+                          "ErrorResponse.Encode",
+                          "ErrorResponse.marshalBinary",
+                          "Execute.Encode",
+                          "Flush.Encode",
+                          "Frontend.Send",
+                          "FunctionCall.Encode",
+                          "FunctionCallResponse.Encode",
+                          "GSSEncRequest.Encode",
+                          "GSSResponse.Encode",
+                          "NoData.Encode",
+                          "NoticeResponse.Encode",
+                          "NotificationResponse.Encode",
+                          "ParameterDescription.Encode",
+                          "ParameterStatus.Encode",
+                          "Parse.Encode",
+                          "ParseComplete.Encode",
+                          "PasswordMessage.Encode",
+                          "PortalSuspended.Encode",
+                          "Query.Encode",
+                          "ReadyForQuery.Encode",
+                          "RowDescription.Encode",
+                          "SASLInitialResponse.Encode",
+                          "SASLResponse.Encode",
+                          "SSLRequest.Encode",
+                          "StartupMessage.Encode",
+                          "Sync.Encode",
+                          "Terminate.Encode"
+                        ]
+                      },
+                      {
+                        "path": "github.com/jackc/pgproto3/v2/example/pgfortune",
+                        "symbols": [
+                          "PgFortuneBackend.Run",
+                          "PgFortuneBackend.handleStartup",
+                          "main"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx/v4",
+                    "purl": "pkg:golang/github.com/jackc/pgx/v4"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.18.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2606.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "github.com/jackc/pgx/v4/internal/sanitize",
+                        "symbols": [
+                          "Query.Sanitize",
+                          "SanitizeSQL"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "github.com/jackc/pgx/v5",
+                    "purl": "pkg:golang/github.com/jackc/pgx/v5"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.0.0"
+                        },
+                        {
+                          "fixed": "5.5.4"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2606.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "github.com/jackc/pgx/v5/internal/sanitize",
+                        "symbols": [
+                          "Query.Sanitize",
+                          "SanitizeSQL"
+                        ]
+                      },
+                      {
+                        "path": "github.com/jackc/pgx/v5/pgproto3",
+                        "symbols": [
+                          "AuthenticationCleartextPassword.Encode",
+                          "AuthenticationGSS.Encode",
+                          "AuthenticationGSSContinue.Encode",
+                          "AuthenticationMD5Password.Encode",
+                          "AuthenticationOk.Encode",
+                          "AuthenticationSASL.Encode",
+                          "AuthenticationSASLContinue.Encode",
+                          "AuthenticationSASLFinal.Encode",
+                          "Backend.Flush",
+                          "Backend.Send",
+                          "BackendKeyData.Encode",
+                          "Bind.Encode",
+                          "BindComplete.Encode",
+                          "CancelRequest.Encode",
+                          "Close.Encode",
+                          "CloseComplete.Encode",
+                          "CommandComplete.Encode",
+                          "CopyBothResponse.Encode",
+                          "CopyData.Encode",
+                          "CopyDone.Encode",
+                          "CopyFail.Encode",
+                          "CopyInResponse.Encode",
+                          "CopyOutResponse.Encode",
+                          "DataRow.Encode",
+                          "Describe.Encode",
+                          "EmptyQueryResponse.Encode",
+                          "ErrorResponse.Encode",
+                          "ErrorResponse.marshalBinary",
+                          "Execute.Encode",
+                          "Flush.Encode",
+                          "Frontend.Flush",
+                          "Frontend.Send",
+                          "Frontend.SendBind",
+                          "Frontend.SendClose",
+                          "Frontend.SendDescribe",
+                          "Frontend.SendExecute",
+                          "Frontend.SendParse",
+                          "Frontend.SendQuery",
+                          "Frontend.SendSync",
+                          "Frontend.SendUnbufferedEncodedCopyData",
+                          "FunctionCall.Encode",
+                          "FunctionCallResponse.Encode",
+                          "GSSEncRequest.Encode",
+                          "GSSResponse.Encode",
+                          "NoData.Encode",
+                          "NoticeResponse.Encode",
+                          "NotificationResponse.Encode",
+                          "ParameterDescription.Encode",
+                          "ParameterStatus.Encode",
+                          "Parse.Encode",
+                          "ParseComplete.Encode",
+                          "PasswordMessage.Encode",
+                          "PortalSuspended.Encode",
+                          "Query.Encode",
+                          "ReadyForQuery.Encode",
+                          "RowDescription.Encode",
+                          "SASLInitialResponse.Encode",
+                          "SASLResponse.Encode",
+                          "SSLRequest.Encode",
+                          "StartupMessage.Encode",
+                          "Sync.Encode",
+                          "Terminate.Encode"
+                        ]
+                      },
+                      {
+                        "path": "github.com/jackc/pgx/v5/pgconn",
+                        "symbols": [
+                          "Batch.ExecParams",
+                          "Batch.ExecPrepared",
+                          "Connect",
+                          "ConnectConfig",
+                          "ConnectWithOptions",
+                          "MultiResultReader.Close",
+                          "MultiResultReader.NextResult",
+                          "MultiResultReader.ReadAll",
+                          "PgConn.CheckConn",
+                          "PgConn.Close",
+                          "PgConn.CopyFrom",
+                          "PgConn.CopyTo",
+                          "PgConn.Deallocate",
+                          "PgConn.Exec",
+                          "PgConn.ExecBatch",
+                          "PgConn.ExecParams",
+                          "PgConn.ExecPrepared",
+                          "PgConn.Ping",
+                          "PgConn.Prepare",
+                          "PgConn.ReceiveMessage",
+                          "PgConn.SyncConn",
+                          "PgConn.WaitForNotification",
+                          "Pipeline.Close",
+                          "Pipeline.Flush",
+                          "Pipeline.GetResults",
+                          "Pipeline.SendDeallocate",
+                          "Pipeline.SendPrepare",
+                          "Pipeline.SendQueryParams",
+                          "Pipeline.SendQueryPrepared",
+                          "Pipeline.Sync",
+                          "ResultReader.Close",
+                          "ResultReader.NextRow",
+                          "ResultReader.Read",
+                          "ValidateConnectTargetSessionAttrsPreferStandby",
+                          "ValidateConnectTargetSessionAttrsPrimary",
+                          "ValidateConnectTargetSessionAttrsReadOnly",
+                          "ValidateConnectTargetSessionAttrsReadWrite",
+                          "ValidateConnectTargetSessionAttrsStandby"
+                        ]
+                      },
+                      {
+                        "path": "github.com/jackc/pgx/v5/pgproto3/example/pgfortune",
+                        "symbols": [
+                          "PgFortuneBackend.Run",
+                          "PgFortuneBackend.handleStartup",
+                          "main"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://github.com/jackc/pgx/security/advisories/GHSA-mrww-27vc-gghv"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://github.com/jackc/pgproto3/commit/945c2126f6db8f3bea7eeebe307c01fe92bca007"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://github.com/jackc/pgx/commit/adbb38f298c76e283ffc7c7a3f571036fea47fd4"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://github.com/jackc/pgx/commit/c543134753a0c5d22881c12404025724cb05ffd8"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df"
+                }
+              ],
+              "credits": [
+                {
+                  "name": "paul-gerste-sonarsource"
+                }
+              ],
+              "database_specific": {
+                "url": "https://pkg.go.dev/vuln/GO-2024-2606"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-7jwh-3vrq-q3m8",
+                "GHSA-mrww-27vc-gghv",
+                "GO-2024-2606"
+              ],
+              "aliases": [
+                "CVE-2024-27304",
+                "GHSA-7jwh-3vrq-q3m8",
+                "GHSA-mrww-27vc-gghv",
+                "GO-2024-2606"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-m7wr-2xf7-cm9p",
+                "GO-2024-2605"
+              ],
+              "aliases": [
+                "CVE-2024-27289",
+                "GHSA-m7wr-2xf7-cm9p",
+                "GO-2024-2605"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "golang.org/x/net",
+            "version": "v0.21.0",
+            "ecosystem": "Go"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-04-19T09:30:47Z",
+              "published": "2024-04-04T21:30:32Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-4v7x-pqxf-cx7m",
+              "aliases": [
+                "BIT-golang-2023-45288",
+                "CVE-2023-45288",
+                "GO-2024-2687"
+              ],
+              "summary": "net/http, x/net/http2: close connections when receiving too many headers",
+              "details": "An attacker may cause an HTTP/2 endpoint to read arbitrary amounts of header data by sending an excessive number of CONTINUATION frames. Maintaining HPACK state requires parsing and processing all HEADERS and CONTINUATION frames on a connection. When a request's headers exceed MaxHeaderBytes, no memory is allocated to store the excess headers, but they are still parsed. This permits an attacker to cause an HTTP/2 endpoint to read arbitrary amounts of header data, all associated with a request which is going to be rejected. These headers can include Huffman-encoded data which is significantly more expensive for the receiver to decode than for an attacker to send. The fix sets a limit on the amount of excess header frames we will process before closing a connection.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "net/http",
+                    "purl": "pkg:golang/net/http"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.21.9"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/04/GHSA-4v7x-pqxf-cx7m/GHSA-4v7x-pqxf-cx7m.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "golang.org/x/net/http2",
+                    "purl": "pkg:golang/golang.org/x/net/http2"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "0.23.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/04/GHSA-4v7x-pqxf-cx7m/GHSA-4v7x-pqxf-cx7m.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "net/http",
+                    "purl": "pkg:golang/net/http"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "1.22.0-0"
+                        },
+                        {
+                          "fixed": "1.22.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/04/GHSA-4v7x-pqxf-cx7m/GHSA-4v7x-pqxf-cx7m.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "golang.org/x/net",
+                    "purl": "pkg:golang/golang.org/x/net"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "0.23.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/04/GHSA-4v7x-pqxf-cx7m/GHSA-4v7x-pqxf-cx7m.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-45288"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://go.dev/cl/576155"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://go.dev/issue/65051"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://nowotarski.info/http2-continuation-flood-technical-details"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://pkg.go.dev/vuln/GO-2024-2687"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20240419-0009"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-400"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-04-04T23:02:57Z",
+                "nvd_published_at": "2024-04-04T21:15:16Z",
+                "severity": "MODERATE"
+              }
+            },
+            {
+              "modified": "2024-04-16T21:40:19Z",
+              "published": "2024-04-03T21:12:01Z",
+              "schema_version": "1.6.0",
+              "id": "GO-2024-2687",
+              "aliases": [
+                "BIT-golang-2023-45288",
+                "CVE-2023-45288",
+                "GHSA-4v7x-pqxf-cx7m"
+              ],
+              "summary": "HTTP/2 CONTINUATION flood in net/http",
+              "details": "An attacker may cause an HTTP/2 endpoint to read arbitrary amounts of header data by sending an excessive number of CONTINUATION frames.\n\nMaintaining HPACK state requires parsing and processing all HEADERS and CONTINUATION frames on a connection. When a request's headers exceed MaxHeaderBytes, no memory is allocated to store the excess headers, but they are still parsed.\n\nThis permits an attacker to cause an HTTP/2 endpoint to read arbitrary amounts of header data, all associated with a request which is going to be rejected. These headers can include Huffman-encoded data which is significantly more expensive for the receiver to decode than for an attacker to send.\n\nThe fix sets a limit on the amount of excess header frames we will process before closing a connection.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "stdlib",
+                    "purl": "pkg:golang/stdlib"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.21.9"
+                        },
+                        {
+                          "introduced": "1.22.0-0"
+                        },
+                        {
+                          "fixed": "1.22.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2687.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "net/http",
+                        "symbols": [
+                          "CanonicalHeaderKey",
+                          "Client.CloseIdleConnections",
+                          "Client.Do",
+                          "Client.Get",
+                          "Client.Head",
+                          "Client.Post",
+                          "Client.PostForm",
+                          "Cookie.String",
+                          "Cookie.Valid",
+                          "Dir.Open",
+                          "Error",
+                          "Get",
+                          "HandlerFunc.ServeHTTP",
+                          "Head",
+                          "Header.Add",
+                          "Header.Del",
+                          "Header.Get",
+                          "Header.Set",
+                          "Header.Values",
+                          "Header.Write",
+                          "Header.WriteSubset",
+                          "ListenAndServe",
+                          "ListenAndServeTLS",
+                          "NewRequest",
+                          "NewRequestWithContext",
+                          "NotFound",
+                          "ParseTime",
+                          "Post",
+                          "PostForm",
+                          "ProxyFromEnvironment",
+                          "ReadRequest",
+                          "ReadResponse",
+                          "Redirect",
+                          "Request.AddCookie",
+                          "Request.BasicAuth",
+                          "Request.FormFile",
+                          "Request.FormValue",
+                          "Request.MultipartReader",
+                          "Request.ParseForm",
+                          "Request.ParseMultipartForm",
+                          "Request.PostFormValue",
+                          "Request.Referer",
+                          "Request.SetBasicAuth",
+                          "Request.UserAgent",
+                          "Request.Write",
+                          "Request.WriteProxy",
+                          "Response.Cookies",
+                          "Response.Location",
+                          "Response.Write",
+                          "ResponseController.EnableFullDuplex",
+                          "ResponseController.Flush",
+                          "ResponseController.Hijack",
+                          "ResponseController.SetReadDeadline",
+                          "ResponseController.SetWriteDeadline",
+                          "Serve",
+                          "ServeContent",
+                          "ServeFile",
+                          "ServeMux.ServeHTTP",
+                          "ServeTLS",
+                          "Server.Close",
+                          "Server.ListenAndServe",
+                          "Server.ListenAndServeTLS",
+                          "Server.Serve",
+                          "Server.ServeTLS",
+                          "Server.SetKeepAlivesEnabled",
+                          "Server.Shutdown",
+                          "SetCookie",
+                          "Transport.CancelRequest",
+                          "Transport.Clone",
+                          "Transport.CloseIdleConnections",
+                          "Transport.RoundTrip",
+                          "body.Close",
+                          "body.Read",
+                          "bodyEOFSignal.Close",
+                          "bodyEOFSignal.Read",
+                          "bodyLocked.Read",
+                          "bufioFlushWriter.Write",
+                          "cancelTimerBody.Close",
+                          "cancelTimerBody.Read",
+                          "checkConnErrorWriter.Write",
+                          "chunkWriter.Write",
+                          "connReader.Read",
+                          "connectMethodKey.String",
+                          "expectContinueReader.Close",
+                          "expectContinueReader.Read",
+                          "extraHeader.Write",
+                          "fileHandler.ServeHTTP",
+                          "fileTransport.RoundTrip",
+                          "globalOptionsHandler.ServeHTTP",
+                          "gzipReader.Close",
+                          "gzipReader.Read",
+                          "http2ClientConn.Close",
+                          "http2ClientConn.Ping",
+                          "http2ClientConn.RoundTrip",
+                          "http2ClientConn.Shutdown",
+                          "http2ConnectionError.Error",
+                          "http2ErrCode.String",
+                          "http2FrameHeader.String",
+                          "http2FrameType.String",
+                          "http2FrameWriteRequest.String",
+                          "http2Framer.ReadFrame",
+                          "http2Framer.WriteContinuation",
+                          "http2Framer.WriteData",
+                          "http2Framer.WriteDataPadded",
+                          "http2Framer.WriteGoAway",
+                          "http2Framer.WriteHeaders",
+                          "http2Framer.WritePing",
+                          "http2Framer.WritePriority",
+                          "http2Framer.WritePushPromise",
+                          "http2Framer.WriteRSTStream",
+                          "http2Framer.WriteRawFrame",
+                          "http2Framer.WriteSettings",
+                          "http2Framer.WriteSettingsAck",
+                          "http2Framer.WriteWindowUpdate",
+                          "http2Framer.readMetaFrame",
+                          "http2GoAwayError.Error",
+                          "http2Server.ServeConn",
+                          "http2Setting.String",
+                          "http2SettingID.String",
+                          "http2SettingsFrame.ForeachSetting",
+                          "http2StreamError.Error",
+                          "http2Transport.CloseIdleConnections",
+                          "http2Transport.NewClientConn",
+                          "http2Transport.RoundTrip",
+                          "http2Transport.RoundTripOpt",
+                          "http2bufferedWriter.Flush",
+                          "http2bufferedWriter.Write",
+                          "http2chunkWriter.Write",
+                          "http2clientConnPool.GetClientConn",
+                          "http2connError.Error",
+                          "http2dataBuffer.Read",
+                          "http2duplicatePseudoHeaderError.Error",
+                          "http2gzipReader.Close",
+                          "http2gzipReader.Read",
+                          "http2headerFieldNameError.Error",
+                          "http2headerFieldValueError.Error",
+                          "http2noDialClientConnPool.GetClientConn",
+                          "http2noDialH2RoundTripper.RoundTrip",
+                          "http2pipe.Read",
+                          "http2priorityWriteScheduler.CloseStream",
+                          "http2priorityWriteScheduler.OpenStream",
+                          "http2pseudoHeaderError.Error",
+                          "http2requestBody.Close",
+                          "http2requestBody.Read",
+                          "http2responseWriter.Flush",
+                          "http2responseWriter.FlushError",
+                          "http2responseWriter.Push",
+                          "http2responseWriter.SetReadDeadline",
+                          "http2responseWriter.SetWriteDeadline",
+                          "http2responseWriter.Write",
+                          "http2responseWriter.WriteHeader",
+                          "http2responseWriter.WriteString",
+                          "http2roundRobinWriteScheduler.OpenStream",
+                          "http2serverConn.CloseConn",
+                          "http2serverConn.Flush",
+                          "http2stickyErrWriter.Write",
+                          "http2transportResponseBody.Close",
+                          "http2transportResponseBody.Read",
+                          "http2writeData.String",
+                          "initALPNRequest.ServeHTTP",
+                          "loggingConn.Close",
+                          "loggingConn.Read",
+                          "loggingConn.Write",
+                          "maxBytesReader.Close",
+                          "maxBytesReader.Read",
+                          "onceCloseListener.Close",
+                          "persistConn.Read",
+                          "persistConnWriter.ReadFrom",
+                          "persistConnWriter.Write",
+                          "populateResponse.Write",
+                          "populateResponse.WriteHeader",
+                          "readTrackingBody.Close",
+                          "readTrackingBody.Read",
+                          "readWriteCloserBody.Read",
+                          "redirectHandler.ServeHTTP",
+                          "response.Flush",
+                          "response.FlushError",
+                          "response.Hijack",
+                          "response.ReadFrom",
+                          "response.Write",
+                          "response.WriteHeader",
+                          "response.WriteString",
+                          "serverHandler.ServeHTTP",
+                          "socksDialer.DialWithConn",
+                          "socksUsernamePassword.Authenticate",
+                          "stringWriter.WriteString",
+                          "timeoutHandler.ServeHTTP",
+                          "timeoutWriter.Write",
+                          "timeoutWriter.WriteHeader",
+                          "transportReadFromServerError.Error"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "golang.org/x/net",
+                    "purl": "pkg:golang/golang.org/x/net"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "0.23.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2687.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "golang.org/x/net/http2",
+                        "symbols": [
+                          "ClientConn.Close",
+                          "ClientConn.Ping",
+                          "ClientConn.RoundTrip",
+                          "ClientConn.Shutdown",
+                          "ConfigureServer",
+                          "ConfigureTransport",
+                          "ConfigureTransports",
+                          "ConnectionError.Error",
+                          "ErrCode.String",
+                          "FrameHeader.String",
+                          "FrameType.String",
+                          "FrameWriteRequest.String",
+                          "Framer.ReadFrame",
+                          "Framer.WriteContinuation",
+                          "Framer.WriteData",
+                          "Framer.WriteDataPadded",
+                          "Framer.WriteGoAway",
+                          "Framer.WriteHeaders",
+                          "Framer.WritePing",
+                          "Framer.WritePriority",
+                          "Framer.WritePushPromise",
+                          "Framer.WriteRSTStream",
+                          "Framer.WriteRawFrame",
+                          "Framer.WriteSettings",
+                          "Framer.WriteSettingsAck",
+                          "Framer.WriteWindowUpdate",
+                          "Framer.readMetaFrame",
+                          "GoAwayError.Error",
+                          "ReadFrameHeader",
+                          "Server.ServeConn",
+                          "Setting.String",
+                          "SettingID.String",
+                          "SettingsFrame.ForeachSetting",
+                          "StreamError.Error",
+                          "Transport.CloseIdleConnections",
+                          "Transport.NewClientConn",
+                          "Transport.RoundTrip",
+                          "Transport.RoundTripOpt",
+                          "bufferedWriter.Flush",
+                          "bufferedWriter.Write",
+                          "chunkWriter.Write",
+                          "clientConnPool.GetClientConn",
+                          "connError.Error",
+                          "dataBuffer.Read",
+                          "duplicatePseudoHeaderError.Error",
+                          "gzipReader.Close",
+                          "gzipReader.Read",
+                          "headerFieldNameError.Error",
+                          "headerFieldValueError.Error",
+                          "noDialClientConnPool.GetClientConn",
+                          "noDialH2RoundTripper.RoundTrip",
+                          "pipe.Read",
+                          "priorityWriteScheduler.CloseStream",
+                          "priorityWriteScheduler.OpenStream",
+                          "pseudoHeaderError.Error",
+                          "requestBody.Close",
+                          "requestBody.Read",
+                          "responseWriter.Flush",
+                          "responseWriter.FlushError",
+                          "responseWriter.Push",
+                          "responseWriter.SetReadDeadline",
+                          "responseWriter.SetWriteDeadline",
+                          "responseWriter.Write",
+                          "responseWriter.WriteHeader",
+                          "responseWriter.WriteString",
+                          "roundRobinWriteScheduler.OpenStream",
+                          "serverConn.CloseConn",
+                          "serverConn.Flush",
+                          "stickyErrWriter.Write",
+                          "transportResponseBody.Close",
+                          "transportResponseBody.Read",
+                          "writeData.String"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "REPORT",
+                  "url": "https://go.dev/issue/65051"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://go.dev/cl/576155"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M"
+                }
+              ],
+              "credits": [
+                {
+                  "name": "Bartek Nowotarski (https://nowotarski.info/)"
+                }
+              ],
+              "database_specific": {
+                "url": "https://pkg.go.dev/vuln/GO-2024-2687"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-4v7x-pqxf-cx7m",
+                "GO-2024-2687"
+              ],
+              "aliases": [
+                "BIT-golang-2023-45288",
+                "CVE-2023-45288",
+                "GHSA-4v7x-pqxf-cx7m",
+                "GO-2024-2687"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "google.golang.org/protobuf",
+            "version": "v1.32.0",
+            "ecosystem": "Go"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-24T03:30:44Z",
+              "published": "2024-03-06T00:31:27Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-8r3f-844c-mc37",
+              "aliases": [
+                "CVE-2024-24786",
+                "GO-2024-2611"
+              ],
+              "summary": "Golang protojson.Unmarshal function infinite loop when unmarshaling certain forms of invalid JSON",
+              "details": "The protojson.Unmarshal function can enter an infinite loop when unmarshaling certain forms of invalid JSON. This condition can occur when unmarshaling into a message which contains a google.protobuf.Any value, or when the UnmarshalOptions.DiscardUnknown option is set.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "google.golang.org/protobuf",
+                    "purl": "pkg:golang/google.golang.org/protobuf"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.33.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-8r3f-844c-mc37/GHSA-8r3f-844c-mc37.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "google.golang.org/protobuf/encoding/protojson",
+                    "purl": "pkg:golang/google.golang.org/protobuf/encoding/protojson"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.33.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-8r3f-844c-mc37/GHSA-8r3f-844c-mc37.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "google.golang.org/protobuf/internal/encoding/json",
+                    "purl": "pkg:golang/google.golang.org/protobuf/internal/encoding/json"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.33.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-8r3f-844c-mc37/GHSA-8r3f-844c-mc37.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-24786"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/protocolbuffers/protobuf-go/commit/f01a588e5810b90996452eec4a28f22a0afae023"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/protocolbuffers/protobuf-go"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/protocolbuffers/protobuf-go/releases/tag/v1.33.0"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://go.dev/cl/569356"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JDMBHAVSDU2FBDZ45U3A2VLSM35OJ2HU"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://pkg.go.dev/vuln/GO-2024-2611"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-835"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-13T21:01:28Z",
+                "nvd_published_at": "2024-03-05T23:15:07Z",
+                "severity": "MODERATE"
+              }
+            },
+            {
+              "modified": "2024-04-05T15:41:42Z",
+              "published": "2024-03-05T20:24:05Z",
+              "schema_version": "1.6.0",
+              "id": "GO-2024-2611",
+              "aliases": [
+                "CVE-2024-24786",
+                "GHSA-8r3f-844c-mc37"
+              ],
+              "summary": "Infinite loop in JSON unmarshaling in google.golang.org/protobuf",
+              "details": "The protojson.Unmarshal function can enter an infinite loop when unmarshaling certain forms of invalid JSON. This condition can occur when unmarshaling into a message which contains a google.protobuf.Any value, or when the UnmarshalOptions.DiscardUnknown option is set.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "google.golang.org/protobuf",
+                    "purl": "pkg:golang/google.golang.org/protobuf"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.33.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2611.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "google.golang.org/protobuf/encoding/protojson",
+                        "symbols": [
+                          "Unmarshal",
+                          "UnmarshalOptions.Unmarshal",
+                          "UnmarshalOptions.unmarshal"
+                        ]
+                      },
+                      {
+                        "path": "google.golang.org/protobuf/internal/encoding/json",
+                        "symbols": [
+                          "Decoder.Peek",
+                          "Decoder.Read"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "FIX",
+                  "url": "https://go.dev/cl/569356"
+                }
+              ],
+              "database_specific": {
+                "url": "https://pkg.go.dev/vuln/GO-2024-2611"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-8r3f-844c-mc37",
+                "GO-2024-2611"
+              ],
+              "aliases": [
+                "CVE-2024-24786",
+                "GHSA-8r3f-844c-mc37",
+                "GO-2024-2611"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "stdlib",
+            "version": "1.22.0",
+            "ecosystem": "Go"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-12T09:11:42Z",
+              "published": "2024-03-05T22:14:58Z",
+              "schema_version": "1.6.0",
+              "id": "GO-2024-2598",
+              "aliases": [
+                "BIT-golang-2024-24783",
+                "CVE-2024-24783"
+              ],
+              "summary": "Verify panics on certificates with an unknown public key algorithm in crypto/x509",
+              "details": "Verifying a certificate chain which contains a certificate with an unknown public key algorithm will cause Certificate.Verify to panic.\n\nThis affects all crypto/tls clients, and servers that set Config.ClientAuth to VerifyClientCertIfGiven or RequireAndVerifyClientCert. The default behavior is for TLS servers to not verify client certificates.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "stdlib",
+                    "purl": "pkg:golang/stdlib"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.21.8"
+                        },
+                        {
+                          "introduced": "1.22.0-0"
+                        },
+                        {
+                          "fixed": "1.22.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2598.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "crypto/x509",
+                        "symbols": [
+                          "Certificate.Verify",
+                          "Certificate.buildChains"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "REPORT",
+                  "url": "https://go.dev/issue/65390"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://go.dev/cl/569339"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://groups.google.com/g/golang-announce/c/5pwGVUPoMbg"
+                }
+              ],
+              "credits": [
+                {
+                  "name": "John Howard (Google)"
+                }
+              ],
+              "database_specific": {
+                "url": "https://pkg.go.dev/vuln/GO-2024-2598"
+              }
+            },
+            {
+              "modified": "2024-03-12T09:11:36Z",
+              "published": "2024-03-05T22:15:00Z",
+              "schema_version": "1.6.0",
+              "id": "GO-2024-2599",
+              "aliases": [
+                "BIT-golang-2023-45290",
+                "CVE-2023-45290"
+              ],
+              "summary": "Memory exhaustion in multipart form parsing in net/textproto and net/http",
+              "details": "When parsing a multipart form (either explicitly with Request.ParseMultipartForm or implicitly with Request.FormValue, Request.PostFormValue, or Request.FormFile), limits on the total size of the parsed form were not applied to the memory consumed while reading a single form line. This permits a maliciously crafted input containing very long lines to cause allocation of arbitrarily large amounts of memory, potentially leading to memory exhaustion.\n\nWith fix, the ParseMultipartForm function now correctly limits the maximum size of form lines.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "stdlib",
+                    "purl": "pkg:golang/stdlib"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.21.8"
+                        },
+                        {
+                          "introduced": "1.22.0-0"
+                        },
+                        {
+                          "fixed": "1.22.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2599.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "net/textproto",
+                        "symbols": [
+                          "Reader.ReadCodeLine",
+                          "Reader.ReadContinuedLine",
+                          "Reader.ReadContinuedLineBytes",
+                          "Reader.ReadDotLines",
+                          "Reader.ReadLine",
+                          "Reader.ReadLineBytes",
+                          "Reader.ReadMIMEHeader",
+                          "Reader.ReadResponse",
+                          "Reader.readContinuedLineSlice",
+                          "Reader.readLineSlice"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "REPORT",
+                  "url": "https://go.dev/issue/65383"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://go.dev/cl/569341"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://groups.google.com/g/golang-announce/c/5pwGVUPoMbg"
+                }
+              ],
+              "credits": [
+                {
+                  "name": "Bartek Nowotarski"
+                }
+              ],
+              "database_specific": {
+                "url": "https://pkg.go.dev/vuln/GO-2024-2599"
+              }
+            },
+            {
+              "modified": "2024-03-12T09:11:35Z",
+              "published": "2024-03-05T22:15:02Z",
+              "schema_version": "1.6.0",
+              "id": "GO-2024-2600",
+              "aliases": [
+                "BIT-golang-2023-45289",
+                "CVE-2023-45289"
+              ],
+              "summary": "Incorrect forwarding of sensitive headers and cookies on HTTP redirect in net/http",
+              "details": "When following an HTTP redirect to a domain which is not a subdomain match or exact match of the initial domain, an http.Client does not forward sensitive headers such as \"Authorization\" or \"Cookie\". For example, a redirect from foo.com to www.foo.com will forward the Authorization header, but a redirect to bar.com will not.\n\nA maliciously crafted HTTP redirect could cause sensitive headers to be unexpectedly forwarded.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "stdlib",
+                    "purl": "pkg:golang/stdlib"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.21.8"
+                        },
+                        {
+                          "introduced": "1.22.0-0"
+                        },
+                        {
+                          "fixed": "1.22.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2600.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "net/http",
+                        "symbols": [
+                          "Client.Do",
+                          "Client.Get",
+                          "Client.Head",
+                          "Client.Post",
+                          "Client.PostForm",
+                          "Get",
+                          "Head",
+                          "Post",
+                          "PostForm",
+                          "isDomainOrSubdomain"
+                        ]
+                      },
+                      {
+                        "path": "net/http/cookiejar",
+                        "symbols": [
+                          "Jar.Cookies",
+                          "Jar.SetCookies",
+                          "isIP"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "REPORT",
+                  "url": "https://go.dev/issue/65065"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://go.dev/cl/569340"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://groups.google.com/g/golang-announce/c/5pwGVUPoMbg"
+                }
+              ],
+              "credits": [
+                {
+                  "name": "Juho Nurminen of Mattermost"
+                }
+              ],
+              "database_specific": {
+                "url": "https://pkg.go.dev/vuln/GO-2024-2600"
+              }
+            },
+            {
+              "modified": "2024-03-12T09:11:42Z",
+              "published": "2024-03-05T22:15:04Z",
+              "schema_version": "1.6.0",
+              "id": "GO-2024-2609",
+              "aliases": [
+                "BIT-golang-2024-24784",
+                "CVE-2024-24784"
+              ],
+              "summary": "Comments in display names are incorrectly handled in net/mail",
+              "details": "The ParseAddressList function incorrectly handles comments (text within parentheses) within display names. Since this is a misalignment with conforming address parsers, it can result in different trust decisions being made by programs using different parsers.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "stdlib",
+                    "purl": "pkg:golang/stdlib"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.21.8"
+                        },
+                        {
+                          "introduced": "1.22.0-0"
+                        },
+                        {
+                          "fixed": "1.22.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2609.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "net/mail",
+                        "symbols": [
+                          "Address.String",
+                          "AddressParser.Parse",
+                          "AddressParser.ParseList",
+                          "Header.AddressList",
+                          "ParseAddress",
+                          "ParseAddressList",
+                          "addrParser.consumeGroupList",
+                          "addrParser.consumePhrase",
+                          "isAtext"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "REPORT",
+                  "url": "https://go.dev/issue/65083"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://go.dev/cl/555596"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://groups.google.com/g/golang-announce/c/5pwGVUPoMbg"
+                }
+              ],
+              "credits": [
+                {
+                  "name": "Juho Nurminen of Mattermost"
+                },
+                {
+                  "name": "Slonser (https://github.com/Slonser)"
+                }
+              ],
+              "database_specific": {
+                "url": "https://pkg.go.dev/vuln/GO-2024-2609"
+              }
+            },
+            {
+              "modified": "2024-03-12T09:11:35Z",
+              "published": "2024-03-05T22:15:40Z",
+              "schema_version": "1.6.0",
+              "id": "GO-2024-2610",
+              "aliases": [
+                "BIT-golang-2024-24785",
+                "CVE-2024-24785"
+              ],
+              "summary": "Errors returned from JSON marshaling may break template escaping in html/template",
+              "details": "If errors returned from MarshalJSON methods contain user controlled data, they may be used to break the contextual auto-escaping behavior of the html/template package, allowing for subsequent actions to inject unexpected content into templates.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "stdlib",
+                    "purl": "pkg:golang/stdlib"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.21.8"
+                        },
+                        {
+                          "introduced": "1.22.0-0"
+                        },
+                        {
+                          "fixed": "1.22.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2610.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "html/template",
+                        "symbols": [
+                          "Template.Execute",
+                          "Template.ExecuteTemplate",
+                          "escaper.commit",
+                          "jsValEscaper"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "REPORT",
+                  "url": "https://go.dev/issue/65697"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://go.dev/cl/564196"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://groups.google.com/g/golang-announce/c/5pwGVUPoMbg"
+                }
+              ],
+              "credits": [
+                {
+                  "name": "RyotaK (https://ryotak.net)"
+                }
+              ],
+              "database_specific": {
+                "url": "https://pkg.go.dev/vuln/GO-2024-2610"
+              }
+            },
+            {
+              "modified": "2024-04-16T21:40:19Z",
+              "published": "2024-04-03T21:12:01Z",
+              "schema_version": "1.6.0",
+              "id": "GO-2024-2687",
+              "aliases": [
+                "BIT-golang-2023-45288",
+                "CVE-2023-45288",
+                "GHSA-4v7x-pqxf-cx7m"
+              ],
+              "summary": "HTTP/2 CONTINUATION flood in net/http",
+              "details": "An attacker may cause an HTTP/2 endpoint to read arbitrary amounts of header data by sending an excessive number of CONTINUATION frames.\n\nMaintaining HPACK state requires parsing and processing all HEADERS and CONTINUATION frames on a connection. When a request's headers exceed MaxHeaderBytes, no memory is allocated to store the excess headers, but they are still parsed.\n\nThis permits an attacker to cause an HTTP/2 endpoint to read arbitrary amounts of header data, all associated with a request which is going to be rejected. These headers can include Huffman-encoded data which is significantly more expensive for the receiver to decode than for an attacker to send.\n\nThe fix sets a limit on the amount of excess header frames we will process before closing a connection.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "stdlib",
+                    "purl": "pkg:golang/stdlib"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.21.9"
+                        },
+                        {
+                          "introduced": "1.22.0-0"
+                        },
+                        {
+                          "fixed": "1.22.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2687.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "net/http",
+                        "symbols": [
+                          "CanonicalHeaderKey",
+                          "Client.CloseIdleConnections",
+                          "Client.Do",
+                          "Client.Get",
+                          "Client.Head",
+                          "Client.Post",
+                          "Client.PostForm",
+                          "Cookie.String",
+                          "Cookie.Valid",
+                          "Dir.Open",
+                          "Error",
+                          "Get",
+                          "HandlerFunc.ServeHTTP",
+                          "Head",
+                          "Header.Add",
+                          "Header.Del",
+                          "Header.Get",
+                          "Header.Set",
+                          "Header.Values",
+                          "Header.Write",
+                          "Header.WriteSubset",
+                          "ListenAndServe",
+                          "ListenAndServeTLS",
+                          "NewRequest",
+                          "NewRequestWithContext",
+                          "NotFound",
+                          "ParseTime",
+                          "Post",
+                          "PostForm",
+                          "ProxyFromEnvironment",
+                          "ReadRequest",
+                          "ReadResponse",
+                          "Redirect",
+                          "Request.AddCookie",
+                          "Request.BasicAuth",
+                          "Request.FormFile",
+                          "Request.FormValue",
+                          "Request.MultipartReader",
+                          "Request.ParseForm",
+                          "Request.ParseMultipartForm",
+                          "Request.PostFormValue",
+                          "Request.Referer",
+                          "Request.SetBasicAuth",
+                          "Request.UserAgent",
+                          "Request.Write",
+                          "Request.WriteProxy",
+                          "Response.Cookies",
+                          "Response.Location",
+                          "Response.Write",
+                          "ResponseController.EnableFullDuplex",
+                          "ResponseController.Flush",
+                          "ResponseController.Hijack",
+                          "ResponseController.SetReadDeadline",
+                          "ResponseController.SetWriteDeadline",
+                          "Serve",
+                          "ServeContent",
+                          "ServeFile",
+                          "ServeMux.ServeHTTP",
+                          "ServeTLS",
+                          "Server.Close",
+                          "Server.ListenAndServe",
+                          "Server.ListenAndServeTLS",
+                          "Server.Serve",
+                          "Server.ServeTLS",
+                          "Server.SetKeepAlivesEnabled",
+                          "Server.Shutdown",
+                          "SetCookie",
+                          "Transport.CancelRequest",
+                          "Transport.Clone",
+                          "Transport.CloseIdleConnections",
+                          "Transport.RoundTrip",
+                          "body.Close",
+                          "body.Read",
+                          "bodyEOFSignal.Close",
+                          "bodyEOFSignal.Read",
+                          "bodyLocked.Read",
+                          "bufioFlushWriter.Write",
+                          "cancelTimerBody.Close",
+                          "cancelTimerBody.Read",
+                          "checkConnErrorWriter.Write",
+                          "chunkWriter.Write",
+                          "connReader.Read",
+                          "connectMethodKey.String",
+                          "expectContinueReader.Close",
+                          "expectContinueReader.Read",
+                          "extraHeader.Write",
+                          "fileHandler.ServeHTTP",
+                          "fileTransport.RoundTrip",
+                          "globalOptionsHandler.ServeHTTP",
+                          "gzipReader.Close",
+                          "gzipReader.Read",
+                          "http2ClientConn.Close",
+                          "http2ClientConn.Ping",
+                          "http2ClientConn.RoundTrip",
+                          "http2ClientConn.Shutdown",
+                          "http2ConnectionError.Error",
+                          "http2ErrCode.String",
+                          "http2FrameHeader.String",
+                          "http2FrameType.String",
+                          "http2FrameWriteRequest.String",
+                          "http2Framer.ReadFrame",
+                          "http2Framer.WriteContinuation",
+                          "http2Framer.WriteData",
+                          "http2Framer.WriteDataPadded",
+                          "http2Framer.WriteGoAway",
+                          "http2Framer.WriteHeaders",
+                          "http2Framer.WritePing",
+                          "http2Framer.WritePriority",
+                          "http2Framer.WritePushPromise",
+                          "http2Framer.WriteRSTStream",
+                          "http2Framer.WriteRawFrame",
+                          "http2Framer.WriteSettings",
+                          "http2Framer.WriteSettingsAck",
+                          "http2Framer.WriteWindowUpdate",
+                          "http2Framer.readMetaFrame",
+                          "http2GoAwayError.Error",
+                          "http2Server.ServeConn",
+                          "http2Setting.String",
+                          "http2SettingID.String",
+                          "http2SettingsFrame.ForeachSetting",
+                          "http2StreamError.Error",
+                          "http2Transport.CloseIdleConnections",
+                          "http2Transport.NewClientConn",
+                          "http2Transport.RoundTrip",
+                          "http2Transport.RoundTripOpt",
+                          "http2bufferedWriter.Flush",
+                          "http2bufferedWriter.Write",
+                          "http2chunkWriter.Write",
+                          "http2clientConnPool.GetClientConn",
+                          "http2connError.Error",
+                          "http2dataBuffer.Read",
+                          "http2duplicatePseudoHeaderError.Error",
+                          "http2gzipReader.Close",
+                          "http2gzipReader.Read",
+                          "http2headerFieldNameError.Error",
+                          "http2headerFieldValueError.Error",
+                          "http2noDialClientConnPool.GetClientConn",
+                          "http2noDialH2RoundTripper.RoundTrip",
+                          "http2pipe.Read",
+                          "http2priorityWriteScheduler.CloseStream",
+                          "http2priorityWriteScheduler.OpenStream",
+                          "http2pseudoHeaderError.Error",
+                          "http2requestBody.Close",
+                          "http2requestBody.Read",
+                          "http2responseWriter.Flush",
+                          "http2responseWriter.FlushError",
+                          "http2responseWriter.Push",
+                          "http2responseWriter.SetReadDeadline",
+                          "http2responseWriter.SetWriteDeadline",
+                          "http2responseWriter.Write",
+                          "http2responseWriter.WriteHeader",
+                          "http2responseWriter.WriteString",
+                          "http2roundRobinWriteScheduler.OpenStream",
+                          "http2serverConn.CloseConn",
+                          "http2serverConn.Flush",
+                          "http2stickyErrWriter.Write",
+                          "http2transportResponseBody.Close",
+                          "http2transportResponseBody.Read",
+                          "http2writeData.String",
+                          "initALPNRequest.ServeHTTP",
+                          "loggingConn.Close",
+                          "loggingConn.Read",
+                          "loggingConn.Write",
+                          "maxBytesReader.Close",
+                          "maxBytesReader.Read",
+                          "onceCloseListener.Close",
+                          "persistConn.Read",
+                          "persistConnWriter.ReadFrom",
+                          "persistConnWriter.Write",
+                          "populateResponse.Write",
+                          "populateResponse.WriteHeader",
+                          "readTrackingBody.Close",
+                          "readTrackingBody.Read",
+                          "readWriteCloserBody.Read",
+                          "redirectHandler.ServeHTTP",
+                          "response.Flush",
+                          "response.FlushError",
+                          "response.Hijack",
+                          "response.ReadFrom",
+                          "response.Write",
+                          "response.WriteHeader",
+                          "response.WriteString",
+                          "serverHandler.ServeHTTP",
+                          "socksDialer.DialWithConn",
+                          "socksUsernamePassword.Authenticate",
+                          "stringWriter.WriteString",
+                          "timeoutHandler.ServeHTTP",
+                          "timeoutWriter.Write",
+                          "timeoutWriter.WriteHeader",
+                          "transportReadFromServerError.Error"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Go",
+                    "name": "golang.org/x/net",
+                    "purl": "pkg:golang/golang.org/x/net"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "0.23.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://vuln.go.dev/ID/GO-2024-2687.json"
+                  },
+                  "ecosystem_specific": {
+                    "imports": [
+                      {
+                        "path": "golang.org/x/net/http2",
+                        "symbols": [
+                          "ClientConn.Close",
+                          "ClientConn.Ping",
+                          "ClientConn.RoundTrip",
+                          "ClientConn.Shutdown",
+                          "ConfigureServer",
+                          "ConfigureTransport",
+                          "ConfigureTransports",
+                          "ConnectionError.Error",
+                          "ErrCode.String",
+                          "FrameHeader.String",
+                          "FrameType.String",
+                          "FrameWriteRequest.String",
+                          "Framer.ReadFrame",
+                          "Framer.WriteContinuation",
+                          "Framer.WriteData",
+                          "Framer.WriteDataPadded",
+                          "Framer.WriteGoAway",
+                          "Framer.WriteHeaders",
+                          "Framer.WritePing",
+                          "Framer.WritePriority",
+                          "Framer.WritePushPromise",
+                          "Framer.WriteRSTStream",
+                          "Framer.WriteRawFrame",
+                          "Framer.WriteSettings",
+                          "Framer.WriteSettingsAck",
+                          "Framer.WriteWindowUpdate",
+                          "Framer.readMetaFrame",
+                          "GoAwayError.Error",
+                          "ReadFrameHeader",
+                          "Server.ServeConn",
+                          "Setting.String",
+                          "SettingID.String",
+                          "SettingsFrame.ForeachSetting",
+                          "StreamError.Error",
+                          "Transport.CloseIdleConnections",
+                          "Transport.NewClientConn",
+                          "Transport.RoundTrip",
+                          "Transport.RoundTripOpt",
+                          "bufferedWriter.Flush",
+                          "bufferedWriter.Write",
+                          "chunkWriter.Write",
+                          "clientConnPool.GetClientConn",
+                          "connError.Error",
+                          "dataBuffer.Read",
+                          "duplicatePseudoHeaderError.Error",
+                          "gzipReader.Close",
+                          "gzipReader.Read",
+                          "headerFieldNameError.Error",
+                          "headerFieldValueError.Error",
+                          "noDialClientConnPool.GetClientConn",
+                          "noDialH2RoundTripper.RoundTrip",
+                          "pipe.Read",
+                          "priorityWriteScheduler.CloseStream",
+                          "priorityWriteScheduler.OpenStream",
+                          "pseudoHeaderError.Error",
+                          "requestBody.Close",
+                          "requestBody.Read",
+                          "responseWriter.Flush",
+                          "responseWriter.FlushError",
+                          "responseWriter.Push",
+                          "responseWriter.SetReadDeadline",
+                          "responseWriter.SetWriteDeadline",
+                          "responseWriter.Write",
+                          "responseWriter.WriteHeader",
+                          "responseWriter.WriteString",
+                          "roundRobinWriteScheduler.OpenStream",
+                          "serverConn.CloseConn",
+                          "serverConn.Flush",
+                          "stickyErrWriter.Write",
+                          "transportResponseBody.Close",
+                          "transportResponseBody.Read",
+                          "writeData.String"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "REPORT",
+                  "url": "https://go.dev/issue/65051"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://go.dev/cl/576155"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M"
+                }
+              ],
+              "credits": [
+                {
+                  "name": "Bartek Nowotarski (https://nowotarski.info/)"
+                }
+              ],
+              "database_specific": {
+                "url": "https://pkg.go.dev/vuln/GO-2024-2687"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GO-2024-2598"
+              ],
+              "aliases": [
+                "BIT-golang-2024-24783",
+                "CVE-2024-24783",
+                "GO-2024-2598"
+              ]
+            },
+            {
+              "ids": [
+                "GO-2024-2599"
+              ],
+              "aliases": [
+                "BIT-golang-2023-45290",
+                "CVE-2023-45290",
+                "GO-2024-2599"
+              ]
+            },
+            {
+              "ids": [
+                "GO-2024-2600"
+              ],
+              "aliases": [
+                "BIT-golang-2023-45289",
+                "CVE-2023-45289",
+                "GO-2024-2600"
+              ]
+            },
+            {
+              "ids": [
+                "GO-2024-2609"
+              ],
+              "aliases": [
+                "BIT-golang-2024-24784",
+                "CVE-2024-24784",
+                "GO-2024-2609"
+              ]
+            },
+            {
+              "ids": [
+                "GO-2024-2610"
+              ],
+              "aliases": [
+                "BIT-golang-2024-24785",
+                "CVE-2024-24785",
+                "GO-2024-2610"
+              ]
+            },
+            {
+              "ids": [
+                "GO-2024-2687"
+              ],
+              "aliases": [
+                "BIT-golang-2023-45288",
+                "CVE-2023-45288",
+                "GHSA-4v7x-pqxf-cx7m",
+                "GO-2024-2687"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "experimental_config": {
+    "licenses": {
+      "summary": false,
+      "allowlist": null
+    }
+  }
+}

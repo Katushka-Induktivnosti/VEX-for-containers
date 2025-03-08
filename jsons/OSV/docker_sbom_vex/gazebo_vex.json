@@ -1,0 +1,2365 @@
+{
+  "results": [
+    {
+      "source": {
+        "path": "/Users/katushka/Documents/vex_json/jsons/docker_scout/sboms/gazebo_sbom.json",
+        "type": "sbom"
+      },
+      "packages": [
+        {
+          "package": {
+            "name": "bundler",
+            "version": "2.1.2",
+            "ecosystem": "RubyGems"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-19T05:17:25Z",
+              "published": "2021-12-08T19:51:36Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-fj7f-vq84-fh43",
+              "aliases": [
+                "CVE-2021-43809"
+              ],
+              "summary": "Local Code Execution through Argument Injection via dash leading git url parameter in Gemfile.",
+              "details": "In `bundler` versions before 2.2.33, when working with untrusted and apparently harmless `Gemfile`'s, it is not expected that they lead to execution of external code, unless that's explicit in the ruby code inside the `Gemfile` itself. However, if the `Gemfile` includes `gem` entries that use the `git` option with invalid, but seemingly harmless, values with a leading dash, this can be false.\n\nTo handle dependencies that come from a Git repository instead of a registry, Bundler uses various commands, such as `git clone`. These commands are being constructed using user input (e.g. the repository URL). When building the\ncommands, Bundler versions before 2.2.33 correctly avoid Command Injection vulnerabilities by passing an array of arguments instead of a command string. However, there is the possibility that a user input starts with a dash (`-`) and is therefore treated as an optional argument instead of a positional one. This can lead to Code Execution because some of the commands have options that can be leveraged to run arbitrary executables.\n\nSince this value comes from the `Gemfile` file, it can contain any character, including a leading dash.\n\n### Exploitation\n\nTo exploit this vulnerability, an attacker has to craft a directory containing a `Gemfile` file that declares a dependency that is located in a Git repository. This dependency has to have a Git URL in the form of `-u./payload`. This URL\nwill be used to construct a Git clone command but will be interpreted as the [upload-pack](https://git-scm.com/docs/git-clone#Documentation/git-clone.txt--ultupload-packgt) argument. Then this directory needs to be shared with the victim, who then needs to run a command that evaluates the Gemfile, such as `bundle lock`, inside.\n\n### Impact\n\nThis vulnerability can lead to Arbitrary Code Execution, which could potentially lead to the takeover of the system. However, as explained above, the exploitability is very low, because it requires a lot of user interaction. It still could put developers at risk when dealing with untrusted files in a way they think is safe, because the exploit still works when the victim tries to make sure nothing can happen, e.g. by manually reviewing the `Gemfile` (although they would need the weird URL with a leading dash to not raise any flags).\n\nThis kind of attack vector [has been used in the past](https://www.cnbc.com/2021/01/26/north-korean-hackers-targeting-security-researchers-on-twitter.html) to target security researchers by sending them projects to collaborate on.\n\n### Patches\n\nBundler 2.2.33 has patched this problem by inserting `--` as an argument before any positional arguments to those Git commands that were affected by this issue.\n\n### Workarounds\n\nRegardless of whether users can upgrade or not, they should review any untrustred `Gemfile`'s before running any `bundler` commands that may read them, since they can contain arbitrary ruby code.\n\n### References\n\nhttps://cwe.mitre.org/data/definitions/88.html",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "bundler",
+                    "purl": "pkg:gem/bundler"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.2.33"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.3.0",
+                    "0.3.1",
+                    "0.4.0",
+                    "0.4.1",
+                    "0.5.0",
+                    "0.6.0",
+                    "0.7.0",
+                    "0.7.1",
+                    "0.7.2",
+                    "0.7.3.pre",
+                    "0.7.3.pre2",
+                    "0.8.0",
+                    "0.8.1",
+                    "0.9.0",
+                    "0.9.0.pre1",
+                    "0.9.0.pre2",
+                    "0.9.0.pre3",
+                    "0.9.0.pre4",
+                    "0.9.0.pre5",
+                    "0.9.1",
+                    "0.9.1.pre1",
+                    "0.9.10",
+                    "0.9.11",
+                    "0.9.12",
+                    "0.9.13",
+                    "0.9.14",
+                    "0.9.15",
+                    "0.9.16",
+                    "0.9.17",
+                    "0.9.18",
+                    "0.9.19",
+                    "0.9.2",
+                    "0.9.20",
+                    "0.9.21",
+                    "0.9.22",
+                    "0.9.23",
+                    "0.9.24",
+                    "0.9.25",
+                    "0.9.26",
+                    "0.9.3",
+                    "0.9.4",
+                    "0.9.5",
+                    "0.9.6",
+                    "0.9.7",
+                    "0.9.8",
+                    "0.9.9",
+                    "1.0.0",
+                    "1.0.0.beta.1",
+                    "1.0.0.beta.10",
+                    "1.0.0.beta.2",
+                    "1.0.0.beta.3",
+                    "1.0.0.beta.4",
+                    "1.0.0.beta.5",
+                    "1.0.0.beta.8",
+                    "1.0.0.beta.9",
+                    "1.0.0.rc.1",
+                    "1.0.0.rc.2",
+                    "1.0.0.rc.3",
+                    "1.0.0.rc.5",
+                    "1.0.0.rc.6",
+                    "1.0.10",
+                    "1.0.11",
+                    "1.0.12",
+                    "1.0.13",
+                    "1.0.14",
+                    "1.0.15",
+                    "1.0.17",
+                    "1.0.18",
+                    "1.0.19.rc",
+                    "1.0.2",
+                    "1.0.20",
+                    "1.0.20.rc",
+                    "1.0.21",
+                    "1.0.21.rc",
+                    "1.0.22",
+                    "1.0.3",
+                    "1.0.5",
+                    "1.0.7",
+                    "1.0.9",
+                    "1.1.0",
+                    "1.1.1",
+                    "1.1.2",
+                    "1.1.3",
+                    "1.1.4",
+                    "1.1.5",
+                    "1.1.pre",
+                    "1.1.pre.1",
+                    "1.1.pre.10",
+                    "1.1.pre.2",
+                    "1.1.pre.3",
+                    "1.1.pre.4",
+                    "1.1.pre.5",
+                    "1.1.pre.7",
+                    "1.1.pre.8",
+                    "1.1.pre.9",
+                    "1.1.rc",
+                    "1.1.rc.2",
+                    "1.1.rc.3",
+                    "1.1.rc.5",
+                    "1.1.rc.6",
+                    "1.1.rc.7",
+                    "1.1.rc.8",
+                    "1.10.0",
+                    "1.10.0.pre",
+                    "1.10.0.pre.1",
+                    "1.10.0.pre.2",
+                    "1.10.0.rc",
+                    "1.10.1",
+                    "1.10.2",
+                    "1.10.3",
+                    "1.10.4",
+                    "1.10.5",
+                    "1.10.6",
+                    "1.11.0",
+                    "1.11.0.pre.1",
+                    "1.11.0.pre.2",
+                    "1.11.1",
+                    "1.11.2",
+                    "1.12.0",
+                    "1.12.0.pre.1",
+                    "1.12.0.pre.2",
+                    "1.12.0.rc",
+                    "1.12.0.rc.2",
+                    "1.12.0.rc.3",
+                    "1.12.0.rc.4",
+                    "1.12.1",
+                    "1.12.2",
+                    "1.12.3",
+                    "1.12.4",
+                    "1.12.5",
+                    "1.12.6",
+                    "1.13.0",
+                    "1.13.0.pre.1",
+                    "1.13.0.rc.1",
+                    "1.13.0.rc.2",
+                    "1.13.1",
+                    "1.13.2",
+                    "1.13.3",
+                    "1.13.4",
+                    "1.13.5",
+                    "1.13.6",
+                    "1.13.7",
+                    "1.14.0",
+                    "1.14.0.pre.1",
+                    "1.14.0.pre.2",
+                    "1.14.1",
+                    "1.14.2",
+                    "1.14.3",
+                    "1.14.4",
+                    "1.14.5",
+                    "1.14.6",
+                    "1.15.0",
+                    "1.15.0.pre.1",
+                    "1.15.0.pre.2",
+                    "1.15.0.pre.3",
+                    "1.15.0.pre.4",
+                    "1.15.1",
+                    "1.15.2",
+                    "1.15.3",
+                    "1.15.4",
+                    "1.16.0",
+                    "1.16.0.pre.1",
+                    "1.16.0.pre.2",
+                    "1.16.0.pre.3",
+                    "1.16.1",
+                    "1.16.2",
+                    "1.16.3",
+                    "1.16.4",
+                    "1.16.5",
+                    "1.16.6",
+                    "1.17.0",
+                    "1.17.0.pre.1",
+                    "1.17.0.pre.2",
+                    "1.17.1",
+                    "1.17.2",
+                    "1.17.3",
+                    "1.2.0",
+                    "1.2.0.pre",
+                    "1.2.0.pre.1",
+                    "1.2.0.rc",
+                    "1.2.0.rc.2",
+                    "1.2.1",
+                    "1.2.2",
+                    "1.2.3",
+                    "1.2.4",
+                    "1.2.5",
+                    "1.3.0",
+                    "1.3.0.pre",
+                    "1.3.0.pre.2",
+                    "1.3.0.pre.3",
+                    "1.3.0.pre.4",
+                    "1.3.0.pre.5",
+                    "1.3.0.pre.6",
+                    "1.3.0.pre.7",
+                    "1.3.0.pre.8",
+                    "1.3.1",
+                    "1.3.2",
+                    "1.3.3",
+                    "1.3.4",
+                    "1.3.5",
+                    "1.3.6",
+                    "1.4.0.pre.1",
+                    "1.4.0.pre.2",
+                    "1.4.0.rc.1",
+                    "1.5.0",
+                    "1.5.0.rc.1",
+                    "1.5.0.rc.2",
+                    "1.5.1",
+                    "1.5.2",
+                    "1.5.3",
+                    "1.6.0",
+                    "1.6.0.pre.1",
+                    "1.6.0.pre.2",
+                    "1.6.0.rc",
+                    "1.6.0.rc2",
+                    "1.6.1",
+                    "1.6.2",
+                    "1.6.3",
+                    "1.6.4",
+                    "1.6.5",
+                    "1.6.6",
+                    "1.6.7",
+                    "1.6.8",
+                    "1.6.9",
+                    "1.7.0",
+                    "1.7.1",
+                    "1.7.1.pre",
+                    "1.7.1.pre.2",
+                    "1.7.1.pre.3",
+                    "1.7.10",
+                    "1.7.11",
+                    "1.7.12",
+                    "1.7.13",
+                    "1.7.14",
+                    "1.7.15",
+                    "1.7.2",
+                    "1.7.3",
+                    "1.7.4",
+                    "1.7.5",
+                    "1.7.6",
+                    "1.7.7",
+                    "1.7.8",
+                    "1.7.9",
+                    "1.8.0",
+                    "1.8.0.pre",
+                    "1.8.1",
+                    "1.8.2",
+                    "1.8.3",
+                    "1.8.4",
+                    "1.8.5",
+                    "1.8.6",
+                    "1.8.7",
+                    "1.8.8",
+                    "1.8.9",
+                    "1.9.0",
+                    "1.9.0.pre",
+                    "1.9.0.pre.1",
+                    "1.9.0.rc",
+                    "1.9.1",
+                    "1.9.10",
+                    "1.9.2",
+                    "1.9.3",
+                    "1.9.4",
+                    "1.9.5",
+                    "1.9.6",
+                    "1.9.7",
+                    "1.9.8",
+                    "1.9.9",
+                    "2.0.0",
+                    "2.0.0.pre.1",
+                    "2.0.0.pre.2",
+                    "2.0.0.pre.3",
+                    "2.0.1",
+                    "2.0.2",
+                    "2.1.0",
+                    "2.1.0.pre.1",
+                    "2.1.0.pre.2",
+                    "2.1.0.pre.3",
+                    "2.1.1",
+                    "2.1.2",
+                    "2.1.3",
+                    "2.1.4",
+                    "2.2.0",
+                    "2.2.0.rc.1",
+                    "2.2.0.rc.2",
+                    "2.2.1",
+                    "2.2.10",
+                    "2.2.11",
+                    "2.2.12",
+                    "2.2.13",
+                    "2.2.14",
+                    "2.2.15",
+                    "2.2.16",
+                    "2.2.17",
+                    "2.2.18",
+                    "2.2.19",
+                    "2.2.2",
+                    "2.2.20",
+                    "2.2.21",
+                    "2.2.22",
+                    "2.2.23",
+                    "2.2.24",
+                    "2.2.25",
+                    "2.2.26",
+                    "2.2.27",
+                    "2.2.28",
+                    "2.2.29",
+                    "2.2.3",
+                    "2.2.30",
+                    "2.2.31",
+                    "2.2.32",
+                    "2.2.4",
+                    "2.2.5",
+                    "2.2.6",
+                    "2.2.7",
+                    "2.2.8",
+                    "2.2.9"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/12/GHSA-fj7f-vq84-fh43/GHSA-fj7f-vq84-fh43.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubygems/rubygems/security/advisories/GHSA-fj7f-vq84-fh43"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-43809"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubygems/rubygems/pull/5142"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubygems/rubygems/commit/0fad1ccfe9dd7a3c5b82c1496df3c2b4842870d3"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubygems/rubygems/commit/a4f2f8ac17e6ce81c689527a8b6f14381060d95f"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/rubygems/rubygems"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/bundler/CVE-2021-43809.yml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.sonarsource.com/blog/securing-developer-tools-package-managers"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-88"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2021-12-08T19:33:42Z",
+                "nvd_published_at": "2021-12-08T19:15:00Z",
+                "severity": "MODERATE"
+              }
+            },
+            {
+              "modified": "2024-02-20T05:37:30Z",
+              "published": "2021-05-24T18:12:33Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-fp4w-jxhp-m23p",
+              "aliases": [
+                "CVE-2020-36327"
+              ],
+              "summary": "Dependency Confusion in Bundler",
+              "details": "Bundler 1.16.0 through 2.2.9 and 2.2.11 through 2.2.17 sometimes chooses a dependency source based on the highest gem version number, which means that a rogue gem found at a public source may be chosen, even if the intended choice was a private gem that is a dependency of another private gem that is explicitly depended on by the application.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "bundler",
+                    "purl": "pkg:gem/bundler"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "1.16.0"
+                        },
+                        {
+                          "fixed": "2.2.10"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "1.16.0",
+                    "1.16.1",
+                    "1.16.2",
+                    "1.16.3",
+                    "1.16.4",
+                    "1.16.5",
+                    "1.16.6",
+                    "1.17.0",
+                    "1.17.0.pre.1",
+                    "1.17.0.pre.2",
+                    "1.17.1",
+                    "1.17.2",
+                    "1.17.3",
+                    "2.0.0",
+                    "2.0.0.pre.1",
+                    "2.0.0.pre.2",
+                    "2.0.0.pre.3",
+                    "2.0.1",
+                    "2.0.2",
+                    "2.1.0",
+                    "2.1.0.pre.1",
+                    "2.1.0.pre.2",
+                    "2.1.0.pre.3",
+                    "2.1.1",
+                    "2.1.2",
+                    "2.1.3",
+                    "2.1.4",
+                    "2.2.0",
+                    "2.2.0.rc.1",
+                    "2.2.0.rc.2",
+                    "2.2.1",
+                    "2.2.2",
+                    "2.2.3",
+                    "2.2.4",
+                    "2.2.5",
+                    "2.2.6",
+                    "2.2.7",
+                    "2.2.8",
+                    "2.2.9"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/05/GHSA-fp4w-jxhp-m23p/GHSA-fp4w-jxhp-m23p.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "bundler",
+                    "purl": "pkg:gem/bundler"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "2.2.11"
+                        },
+                        {
+                          "fixed": "2.2.18"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "2.2.11",
+                    "2.2.12",
+                    "2.2.13",
+                    "2.2.14",
+                    "2.2.15",
+                    "2.2.16",
+                    "2.2.17"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/05/GHSA-fp4w-jxhp-m23p/GHSA-fp4w-jxhp-m23p.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-36327"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubygems/rubygems/issues/3982"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubygems/rubygems/pull/4609"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubygems/rubygems/commit/078bf682ac40017b309b5fc69f283ff640e7c129"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://bundler.io/blog/2021/02/15/a-more-secure-bundler-we-fixed-our-source-priorities.html"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/rubygems/rubygems"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubygems/rubygems/blob/master/bundler/CHANGELOG.md#2218-may-25-2021"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/bundler/CVE-2020-36327.yml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MWXHK5UUHVSHF7HTHMX6JY3WXDVNIHSL"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://mensfeld.pl/2021/02/rubygems-dependency-confusion-attack-side-of-things"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-24105"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.zofrex.com/blog/2021/04/29/bundler-still-vulnerable-dependency-confusion-cve-2020-36327"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [],
+                "github_reviewed": true,
+                "github_reviewed_at": "2021-05-20T21:48:14Z",
+                "nvd_published_at": "2021-04-29T03:15:00Z",
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-fj7f-vq84-fh43"
+              ],
+              "aliases": [
+                "CVE-2021-43809",
+                "GHSA-fj7f-vq84-fh43"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-fp4w-jxhp-m23p"
+              ],
+              "aliases": [
+                "CVE-2020-36327",
+                "GHSA-fp4w-jxhp-m23p"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "cgi",
+            "version": "0.1.0",
+            "ecosystem": "RubyGems"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-21T05:19:34Z",
+              "published": "2022-01-21T23:22:17Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-4vf4-qmvg-mh7h",
+              "aliases": [
+                "BIT-ruby-2021-41819",
+                "CVE-2021-41819"
+              ],
+              "summary": "Cookie Prefix Spoofing in CGI::Cookie.parse",
+              "details": "CGI::Cookie.parse in Ruby through 2.6.8 mishandles security prefixes in cookie names. This also affects the CGI gem prior to versions 0.3.1, 0.2.1, 0.1.1, and 0.1.0.1 for Ruby.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "cgi",
+                    "purl": "pkg:gem/cgi"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0.3.0"
+                        },
+                        {
+                          "fixed": "0.3.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.3.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/01/GHSA-4vf4-qmvg-mh7h/GHSA-4vf4-qmvg-mh7h.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "cgi",
+                    "purl": "pkg:gem/cgi"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0.2.0"
+                        },
+                        {
+                          "fixed": "0.2.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.2.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/01/GHSA-4vf4-qmvg-mh7h/GHSA-4vf4-qmvg-mh7h.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "cgi",
+                    "purl": "pkg:gem/cgi"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "0.1.0.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.1.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/01/GHSA-4vf4-qmvg-mh7h/GHSA-4vf4-qmvg-mh7h.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41819"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://hackerone.com/reports/910552"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/ruby/cgi"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/cgi/CVE-2021-41819.yml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.gentoo.org/glsa/202401-27"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20220121-0003"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.ruby-lang.org/en/news/2021/11/24/cookie-prefix-spoofing-in-cgi-cookie-parse-cve-2021-41819"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-565"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2022-01-13T18:53:26Z",
+                "nvd_published_at": "2022-01-01T06:15:00Z",
+                "severity": "HIGH"
+              }
+            },
+            {
+              "modified": "2024-03-10T05:18:37Z",
+              "published": "2021-12-14T21:36:20Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-5cqm-crxm-6qpv",
+              "aliases": [
+                "CVE-2021-41816"
+              ],
+              "summary": "Buffer overrun in CGI.escape_html",
+              "details": "A buffer overrun vulnerability was discovered in CGI.escape_html. This can lead to a buffer overflow when a user passes a very large string (\u003e 700 MB) to CGI.escape_html on a platform where long type takes 4 bytes, typically, Windows.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "cgi",
+                    "purl": "pkg:gem/cgi"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0.3.0"
+                        },
+                        {
+                          "fixed": "0.3.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.3.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/12/GHSA-5cqm-crxm-6qpv/GHSA-5cqm-crxm-6qpv.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "cgi",
+                    "purl": "pkg:gem/cgi"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0.2.0"
+                        },
+                        {
+                          "fixed": "0.2.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.2.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/12/GHSA-5cqm-crxm-6qpv/GHSA-5cqm-crxm-6qpv.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "cgi",
+                    "purl": "pkg:gem/cgi"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "0.1.0.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.1.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/12/GHSA-5cqm-crxm-6qpv/GHSA-5cqm-crxm-6qpv.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41816"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/cgi/commit/959ccf0b6a672bcc64aeaa60c6e1f9e728f1e87f"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/cgi/commit/ad079c1cb5f58eba1ffac46da79995fcf94a3a6e"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/cgi/commit/c6a37a671b556eb06140ea89cc465136b24207a6"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/cgi/commit/c728632c1c09d46cfd4ecbff9caaa3651dd1002a"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://hackerone.com/reports/1328463"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.ruby-lang.org/en/news/2021/11/24/buffer-overrun-in-cgi-escape_html-cve-2021-41816"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20220303-0006"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.gentoo.org/glsa/202401-27"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security-tracker.debian.org/tracker/CVE-2021-41816"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://groups.google.com/g/ruby-security-ann/c/4MQ568ZG47c"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/cgi/CVE-2021-41816.yml"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/ruby/cgi"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-190"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2021-12-14T21:34:08Z",
+                "nvd_published_at": "2022-02-06T21:15:00Z",
+                "severity": "CRITICAL"
+              }
+            },
+            {
+              "modified": "2024-02-21T05:40:46Z",
+              "published": "2022-11-19T00:30:55Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-vc47-6rqg-c7f5",
+              "aliases": [
+                "BIT-ruby-2021-33621",
+                "CVE-2021-33621"
+              ],
+              "summary": "HTTP response splitting in CGI",
+              "details": "Ruby gem cgi.rb prior to versions 0.3.5, 0.2.2 and 0.1.0.2 allow HTTP header injection. If a CGI application using the CGI library inserts untrusted input into the HTTP response header, an attacker can exploit it to insert a newline character to split a header, and inject malicious content to deceive clients. This issue has been patched in versions 0.3.5, 0.2.2 and 0.1.0.2.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "cgi",
+                    "purl": "pkg:gem/cgi"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0.3.0"
+                        },
+                        {
+                          "fixed": "0.3.5"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.3.0",
+                    "0.3.1",
+                    "0.3.2",
+                    "0.3.3",
+                    "0.3.4"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/11/GHSA-vc47-6rqg-c7f5/GHSA-vc47-6rqg-c7f5.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "cgi",
+                    "purl": "pkg:gem/cgi"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0.2.0"
+                        },
+                        {
+                          "fixed": "0.2.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.2.0",
+                    "0.2.1"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/11/GHSA-vc47-6rqg-c7f5/GHSA-vc47-6rqg-c7f5.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "cgi",
+                    "purl": "pkg:gem/cgi"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "0.1.0.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.1.0",
+                    "0.1.0.1"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/11/GHSA-vc47-6rqg-c7f5/GHSA-vc47-6rqg-c7f5.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-33621"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://hackerone.com/reports/1204695"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/cgi/CVE-2021-33621.yml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.debian.org/debian-lts-announce/2023/06/msg00012.html"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DQR7LWED6VAPD5ATYOBZIGJQPCUBRJBX"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/THVTYHHEOVLQFCFHWURZYO7PVUPBHRZD"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YACE6ORF2QBXXBK2V2CM36D7TZMEJVAS"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DQR7LWED6VAPD5ATYOBZIGJQPCUBRJBX"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/THVTYHHEOVLQFCFHWURZYO7PVUPBHRZD"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YACE6ORF2QBXXBK2V2CM36D7TZMEJVAS"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.gentoo.org/glsa/202401-27"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20221228-0004"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.ruby-lang.org/en/news/2022/11/22/http-response-splitting-in-cgi-cve-2021-33621"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-436",
+                  "CWE-74"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2022-11-24T01:59:37Z",
+                "nvd_published_at": "2022-11-18T23:15:00Z",
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-4vf4-qmvg-mh7h"
+              ],
+              "aliases": [
+                "BIT-ruby-2021-41819",
+                "CVE-2021-41819",
+                "GHSA-4vf4-qmvg-mh7h"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-5cqm-crxm-6qpv"
+              ],
+              "aliases": [
+                "CVE-2021-41816",
+                "GHSA-5cqm-crxm-6qpv"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-vc47-6rqg-c7f5"
+              ],
+              "aliases": [
+                "BIT-ruby-2021-33621",
+                "CVE-2021-33621",
+                "GHSA-vc47-6rqg-c7f5"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "date",
+            "version": "3.0.0",
+            "ecosystem": "RubyGems"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-21T05:31:58Z",
+              "published": "2021-11-16T00:32:30Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-qg54-694p-wgpp",
+              "aliases": [
+                "BIT-ruby-2021-41817",
+                "CVE-2021-41817"
+              ],
+              "summary": "Regular expression denial of service vulnerability (ReDoS) in date",
+              "details": "Date’s parsing methods including Date.parse are using Regexps internally, some of which are vulnerable against regular expression denial of service. Applications and libraries that apply such methods to untrusted input may be affected.\n\nThe fix limits the input length up to 128 bytes by default instead of changing the regexps. This is because Date gem uses many Regexps and it is possible that there are still undiscovered vulnerable Regexps. For compatibility, it is allowed to remove the limitation by explicitly passing limit keywords as nil like Date.parse(str, limit: nil), but note that it may take a long time to parse.\n\nPlease update the date gem to version 3.2.1, 3.1.2, 3.0.2, and 2.0.1, or later. You can use gem update date to update it. If you are using bundler, please add gem \"date\", \"\u003e= 3.2.1\" to your Gemfile. If you import `date` from the standard library rather than as a gem you should update your Ruby install to `3.0.3`, `2.7.5`, `2.6.9` or later.\n\nUsers unable to upgrade may consider using `Date.strptime` instead with a predefined date format\n```ruby\nDate.strptime('2001-02-20', '%Y-%m-%d')\n```",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "date",
+                    "purl": "pkg:gem/date"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "3.2.0"
+                        },
+                        {
+                          "fixed": "3.2.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "3.2.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/11/GHSA-qg54-694p-wgpp/GHSA-qg54-694p-wgpp.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "date",
+                    "purl": "pkg:gem/date"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "3.1.0"
+                        },
+                        {
+                          "fixed": "3.1.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "3.1.0",
+                    "3.1.1"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/11/GHSA-qg54-694p-wgpp/GHSA-qg54-694p-wgpp.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "date",
+                    "purl": "pkg:gem/date"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "3.0.0"
+                        },
+                        {
+                          "fixed": "3.0.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "3.0.0",
+                    "3.0.1"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/11/GHSA-qg54-694p-wgpp/GHSA-qg54-694p-wgpp.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "date",
+                    "purl": "pkg:gem/date"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.0.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.0.1",
+                    "1.0.0",
+                    "2.0.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/11/GHSA-qg54-694p-wgpp/GHSA-qg54-694p-wgpp.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41817"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/date/commit/3959accef8da5c128f8a8e2fd54e932a4fb253b0"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://hackerone.com/reports/1254844"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/ruby/date"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/date/CVE-2021-41817.yml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IUXQCH6FRKANCVZO2Q7D2SQX33FP3KWN"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UTOJGS5IEFDK3UOO7IY4OTTFGHGLSWZF"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.gentoo.org/glsa/202401-27"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.ruby-lang.org/en/news/2021/11/15/date-parsing-method-regexp-dos-cve-2021-41817"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-1333"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2021-11-16T00:15:43Z",
+                "nvd_published_at": "2022-01-01T05:15:00Z",
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-qg54-694p-wgpp"
+              ],
+              "aliases": [
+                "BIT-ruby-2021-41817",
+                "CVE-2021-41817",
+                "GHSA-qg54-694p-wgpp"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "rdoc",
+            "version": "6.2.1",
+            "ecosystem": "RubyGems"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-20T05:22:15Z",
+              "published": "2021-09-01T18:53:15Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-ggxm-pgc9-g7fp",
+              "aliases": [
+                "CVE-2021-31799"
+              ],
+              "summary": "Arbitrary Code Execution in Rdoc",
+              "details": "In RDoc 3.11 through 6.x before 6.3.1, as distributed with Ruby through 3.0.1, it is possible to execute arbitrary code via | and tags in a filename.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "rdoc",
+                    "purl": "pkg:gem/rdoc"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "3.11"
+                        },
+                        {
+                          "fixed": "6.1.2.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "3.11",
+                    "3.12",
+                    "3.12.1",
+                    "3.12.2",
+                    "4.0.0",
+                    "4.0.0.preview2",
+                    "4.0.0.preview2.1",
+                    "4.0.0.rc.2",
+                    "4.0.0.rc.2.1",
+                    "4.0.1",
+                    "4.1.0",
+                    "4.1.0.preview.3",
+                    "4.1.1",
+                    "4.1.2",
+                    "4.2.0",
+                    "4.2.1",
+                    "4.2.2",
+                    "4.3.0",
+                    "5.0.0",
+                    "5.0.0.beta1",
+                    "5.0.0.beta2",
+                    "5.0.1",
+                    "5.1.0",
+                    "6.0.0",
+                    "6.0.0.beta1",
+                    "6.0.0.beta2",
+                    "6.0.0.beta3",
+                    "6.0.0.beta4",
+                    "6.0.1",
+                    "6.0.1.1",
+                    "6.0.2",
+                    "6.0.3",
+                    "6.0.4",
+                    "6.1.0",
+                    "6.1.0.beta1",
+                    "6.1.0.beta2",
+                    "6.1.0.beta3",
+                    "6.1.1",
+                    "6.1.2"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/09/GHSA-ggxm-pgc9-g7fp/GHSA-ggxm-pgc9-g7fp.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "rdoc",
+                    "purl": "pkg:gem/rdoc"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "6.2.0"
+                        },
+                        {
+                          "fixed": "6.2.1.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "6.2.0",
+                    "6.2.1"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/09/GHSA-ggxm-pgc9-g7fp/GHSA-ggxm-pgc9-g7fp.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "rdoc",
+                    "purl": "pkg:gem/rdoc"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "6.3.0"
+                        },
+                        {
+                          "fixed": "6.3.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "6.3.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/09/GHSA-ggxm-pgc9-g7fp/GHSA-ggxm-pgc9-g7fp.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-31799"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rdoc/commit/a7f5d6ab88632b3b482fe10611382ff73d14eed7"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/ruby/rdoc"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/rdoc/CVE-2021-31799.yml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.debian.org/debian-lts-announce/2021/10/msg00009.html"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security-tracker.debian.org/tracker/CVE-2021-31799"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.gentoo.org/glsa/202401-05"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20210902-0004"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.ruby-lang.org/en/news/2021/05/02/os-command-injection-in-rdoc"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-74",
+                  "CWE-77",
+                  "CWE-78"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2021-08-02T18:08:41Z",
+                "nvd_published_at": "2021-07-30T14:15:00Z",
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-ggxm-pgc9-g7fp"
+              ],
+              "aliases": [
+                "CVE-2021-31799",
+                "GHSA-ggxm-pgc9-g7fp"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "rexml",
+            "version": "3.2.3",
+            "ecosystem": "RubyGems"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-19T05:33:11Z",
+              "published": "2021-04-30T17:30:37Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-8cr8-4vfw-mr7h",
+              "aliases": [
+                "BIT-ruby-2021-28965",
+                "CVE-2021-28965"
+              ],
+              "summary": "REXML round-trip instability",
+              "details": "The REXML gem before 3.2.5 in Ruby before 2.6.7, 2.7.x before 2.7.3, and 3.x before 3.0.1 does not properly address XML round-trip issues. An incorrect document can be produced after parsing and serializing. ",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "rexml",
+                    "purl": "pkg:gem/rexml"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.2.5"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "3.1.7.3",
+                    "3.1.8",
+                    "3.1.9",
+                    "3.1.9.1",
+                    "3.2.0",
+                    "3.2.1",
+                    "3.2.2",
+                    "3.2.3",
+                    "3.2.4"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/04/GHSA-8cr8-4vfw-mr7h/GHSA-8cr8-4vfw-mr7h.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-28965"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rexml/commit/2fe62e29094d95921d7e19abbd2e26b23d78dc5b"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rexml/commit/3c137eb119550874b2b3e27d12b733ca67033377"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rexml/commit/6a250d2cd1194c2be72becbdd9c3e770aa16e752"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rexml/commit/9b311e59ae05749e082eb6bbefa1cb620d1a786e"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rexml/commit/a659c63e37414506dfb0d4655e031bb7a2e73fc8"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rexml/commit/f7bab8937513b1403cea5aff874cbf32fd5e8551"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/rexml/commit/f9d88e4948b4a43294c25dc0edb16815bd9d8618"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://hackerone.com/reports/1104077"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/ruby/rexml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/rexml/CVE-2021-28965.yml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WTVFTLFVCSUE5CXHINJEUCKSHU4SWDMT"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://rubygems.org/gems/rexml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20210528-0003"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-115",
+                  "CWE-611"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2021-04-22T16:31:39Z",
+                "nvd_published_at": "2021-04-21T07:15:00Z",
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-8cr8-4vfw-mr7h"
+              ],
+              "aliases": [
+                "BIT-ruby-2021-28965",
+                "CVE-2021-28965",
+                "GHSA-8cr8-4vfw-mr7h"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "stringio",
+            "version": "0.1.0",
+            "ecosystem": "RubyGems"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-25T19:58:32Z",
+              "published": "2024-03-25T19:36:52Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-v5h6-c2hv-hv3r",
+              "aliases": [
+                "CVE-2024-27280"
+              ],
+              "summary": "StringIO buffer overread vulnerability",
+              "details": "An issue was discovered in StringIO 3.0.1, as distributed in Ruby 3.0.x through 3.0.6 and 3.1.x through 3.1.4.\n\nThe `ungetbyte` and `ungetc` methods on a StringIO can read past the end of a string, and a subsequent call to `StringIO.gets` may return the memory value.\n\nThis vulnerability is not affected StringIO 3.0.3 and later, and Ruby 3.2.x and later.\n\nWe recommend to update the StringIO gem to version 3.0.3 or later. In order to ensure compatibility with bundled version in older Ruby series, you may update as follows instead:\n\n* For Ruby 3.0 users: Update to `stringio` 3.0.1.1\n* For Ruby 3.1 users: Update to `stringio` 3.1.0.2\n\nYou can use `gem update stringio` to update it. If you are using bundler, please add `gem \"stringio\", \"\u003e= 3.0.1.2\"` to your `Gemfile`.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "stringio",
+                    "purl": "pkg:gem/stringio"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.0.1.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.0.1",
+                    "0.0.2",
+                    "0.1.0",
+                    "0.1.3",
+                    "0.1.4",
+                    "3.0.0",
+                    "3.0.1"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/03/GHSA-v5h6-c2hv-hv3r/GHSA-v5h6-c2hv-hv3r.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/stringio/commit/0e596524097706263d10900ca180898e4a8f5233"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/stringio/commit/c58c5f54f1eab99665ea6a161d29ff6a7490afc8"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/ruby/stringio"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/stringio/CVE-2024-27280.yml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.ruby-lang.org/en/news/2024/03/21/buffer-overread-cve-2024-27280"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-126"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-03-25T19:36:52Z",
+                "nvd_published_at": null,
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-v5h6-c2hv-hv3r"
+              ],
+              "aliases": [
+                "CVE-2024-27280",
+                "GHSA-v5h6-c2hv-hv3r"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "uri",
+            "version": "0.10.0",
+            "ecosystem": "RubyGems"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-21T05:25:45Z",
+              "published": "2023-03-31T06:30:15Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-hv5j-3h9f-99c2",
+              "aliases": [
+                "CVE-2023-28755"
+              ],
+              "summary": "Ruby URI component ReDoS issue",
+              "details": "A ReDoS issue was discovered in the URI component through 0.12.0 in Ruby through 3.2.1. The URI parser mishandles invalid URLs that have specific characters. It causes an increase in execution time for parsing strings to URI objects. The fixed versions are 0.12.1, 0.11.1, 0.10.2 and 0.10.0.1.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "uri",
+                    "purl": "pkg:gem/uri"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0.12.0"
+                        },
+                        {
+                          "fixed": "0.12.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.12.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/03/GHSA-hv5j-3h9f-99c2/GHSA-hv5j-3h9f-99c2.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "uri",
+                    "purl": "pkg:gem/uri"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0.11.0"
+                        },
+                        {
+                          "fixed": "0.11.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.11.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/03/GHSA-hv5j-3h9f-99c2/GHSA-hv5j-3h9f-99c2.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "uri",
+                    "purl": "pkg:gem/uri"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0.10.1"
+                        },
+                        {
+                          "fixed": "0.10.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.10.1"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/03/GHSA-hv5j-3h9f-99c2/GHSA-hv5j-3h9f-99c2.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "uri",
+                    "purl": "pkg:gem/uri"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "0.10.0.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.10.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/03/GHSA-hv5j-3h9f-99c2/GHSA-hv5j-3h9f-99c2.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-28755"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/ruby/uri"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/uri/releases"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/uri/CVE-2023-28755.yml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.debian.org/debian-lts-announce/2023/04/msg00033.html"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/FFZANOQA4RYX7XCB42OO3P24DQKWHEKA"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/G76GZG3RAGYF4P75YY7J7TGYAU7Z5E2T"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WMIOPLBAAM3FEQNAXA2L7BDKOGSVUT5Z"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FFZANOQA4RYX7XCB42OO3P24DQKWHEKA"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G76GZG3RAGYF4P75YY7J7TGYAU7Z5E2T"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WMIOPLBAAM3FEQNAXA2L7BDKOGSVUT5Z"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.gentoo.org/glsa/202401-27"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20230526-0003"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.ruby-lang.org/en/downloads/releases"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.ruby-lang.org/en/news/2022/12/25/ruby-3-2-0-released"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.ruby-lang.org/en/news/2023/03/28/redos-in-uri-cve-2023-28755"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-1333"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2023-03-31T22:43:59Z",
+                "nvd_published_at": "2023-03-31T04:15:00Z",
+                "severity": "HIGH"
+              }
+            },
+            {
+              "modified": "2024-03-14T22:31:34Z",
+              "published": "2023-06-29T15:30:34Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-hww2-5g85-429m",
+              "aliases": [
+                "CVE-2023-36617"
+              ],
+              "summary": "URI gem has ReDoS vulnerability",
+              "details": "A ReDoS issue was discovered in the URI component before 0.12.2 for Ruby. The URI parser mishandles invalid URLs that have specific characters. There is an increase in execution time for parsing strings to URI objects with `rfc2396_parser.rb` and `rfc3986_parser.rb`.\n\nNOTE: this issue exists becuse of an incomplete fix for CVE-2023-28755. Version 0.10.3 is also a fixed version.\n\n[The Ruby advisory recommends](https://www.ruby-lang.org/en/news/2023/06/29/redos-in-uri-CVE-2023-36617/) updating the uri gem to 0.12.2. In order to ensure compatibility with the bundled version in older Ruby series, you may update as follows instead:\n- For Ruby 3.0: Update to uri 0.10.3\n- For Ruby 3.1 and 3.2: Update to uri 0.12.2.\n\nYou can use gem update uri to update it. If you are using bundler, please add gem `uri`, `\u003e= 0.12.2` (or other version mentioned above) to your Gemfile.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "uri",
+                    "purl": "pkg:gem/uri"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0.10.1"
+                        },
+                        {
+                          "fixed": "0.10.3"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.10.1",
+                    "0.10.2"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/06/GHSA-hww2-5g85-429m/GHSA-hww2-5g85-429m.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "uri",
+                    "purl": "pkg:gem/uri"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0.12.0"
+                        },
+                        {
+                          "fixed": "0.12.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.12.0",
+                    "0.12.1"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/06/GHSA-hww2-5g85-429m/GHSA-hww2-5g85-429m.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "uri",
+                    "purl": "pkg:gem/uri"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0.11.0"
+                        },
+                        {
+                          "fixed": "0.11.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.11.0",
+                    "0.11.1"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/06/GHSA-hww2-5g85-429m/GHSA-hww2-5g85-429m.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "uri",
+                    "purl": "pkg:gem/uri"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "0.10.0.3"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "0.10.0",
+                    "0.10.0.1",
+                    "0.10.0.2"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/06/GHSA-hww2-5g85-429m/GHSA-hww2-5g85-429m.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-36617"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/uri/commit/05b1e7d026b886e65a60ee35625229da9ec220bb"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/uri/commit/38bf797c488bcb4a37fb322bfa84977981863ec6"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/uri/commit/3cd938df20db26c9439e9f681aadfb9bbeb6d1c0"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/uri/commit/4d02315181d8a485496f1bb107a6ab51d6f3a35f"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/uri/commit/70794abc162bb15bb934713b5669713d6700d35c"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/uri/commit/7e33934c91b7f8f3ea7b7a4258b468e19f636bc3"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/uri/commit/9a8e0cc03da964054c2a4ea26b59c53c3bae4921"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/uri/commit/ba36c8a3ecad8c16dd3e60a6da9abd768206c8fa"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/ruby/uri"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/uri/CVE-2023-36617.yml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20230725-0002"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.ruby-lang.org/en/news/2023/06/29/redos-in-uri-CVE-2023-36617"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-1333"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2023-07-14T21:52:02Z",
+                "nvd_published_at": "2023-06-29T13:15:09Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-hv5j-3h9f-99c2"
+              ],
+              "aliases": [
+                "CVE-2023-28755",
+                "GHSA-hv5j-3h9f-99c2"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-hww2-5g85-429m"
+              ],
+              "aliases": [
+                "CVE-2023-36617",
+                "GHSA-hww2-5g85-429m"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "webrick",
+            "version": "1.6.0",
+            "ecosystem": "RubyGems"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-02-22T05:37:31Z",
+              "published": "2022-05-24T17:30:10Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-gwfg-cqmg-cf8f",
+              "aliases": [
+                "BIT-ruby-2020-25613",
+                "CVE-2020-25613"
+              ],
+              "summary": "WEBRick vulnerable to HTTP Request/Response Smuggling",
+              "details": "An issue was discovered in Ruby through 2.5.8, 2.6.x through 2.6.6, and 2.7.x through 2.7.1. WEBrick, a simple HTTP server bundled with Ruby, had not checked the transfer-encoding header value rigorously. An attacker may potentially exploit this issue to bypass a reverse proxy (which also has a poor header check), which may lead to an HTTP Request Smuggling attack.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "RubyGems",
+                    "name": "webrick",
+                    "purl": "pkg:gem/webrick"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.6.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "1.3.1",
+                    "1.4.0",
+                    "1.4.0.beta1",
+                    "1.4.1",
+                    "1.4.2",
+                    "1.4.3",
+                    "1.4.4",
+                    "1.5.0",
+                    "1.5.1",
+                    "1.6.0"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-gwfg-cqmg-cf8f/GHSA-gwfg-cqmg-cf8f.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-25613"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/webrick/commit/076ac636bf48b7a492887ce4de7041de23e6c00d"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/ruby/webrick/commit/8946bb38b4d87549f0d99ed73c62c41933f97cc7"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://hackerone.com/reports/965267"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/ruby/webrick"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/webrick/CVE-2020-25613.yml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.debian.org/debian-lts-announce/2023/04/msg00033.html"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PFP3E7KXXT3H3KA6CBZPUOGA5VPFARRJ"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YTZURYROG3FFED3TYCQOBV66BS4K6WOV"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20210115-0008"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.ruby-lang.org/en/news/2020/09/29/http-request-smuggling-cve-2020-25613"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-444"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2023-03-08T19:59:16Z",
+                "nvd_published_at": "2020-10-06T13:15:00Z",
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-gwfg-cqmg-cf8f"
+              ],
+              "aliases": [
+                "BIT-ruby-2020-25613",
+                "CVE-2020-25613",
+                "GHSA-gwfg-cqmg-cf8f"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "experimental_config": {
+    "licenses": {
+      "summary": false,
+      "allowlist": null
+    }
+  }
+}

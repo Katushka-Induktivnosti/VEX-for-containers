@@ -1,0 +1,1288 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-xqr8-7jwr-rhp7",
+    "dataSource": "https://github.com/advisories/GHSA-xqr8-7jwr-rhp7",
+    "namespace": "github:language:python",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-xqr8-7jwr-rhp7"
+    ],
+    "description": "Removal of e-Tugra root certificate",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2023.7.22"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-37920",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-37920",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/certifi/python-certifi/commit/8fb96ed81f71e7097ed11bc4d9b19afd7ea5c909",
+      "https://github.com/certifi/python-certifi/security/advisories/GHSA-xqr8-7jwr-rhp7",
+      "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/C-HrP1SEq1A",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5EX6NG7WUFNUKGFHLM35KHHU3GAKXRTG/"
+     ],
+     "description": "Certifi is a curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. Certifi prior to version 2023.07.22 recognizes \"e-Tugra\" root certificates. e-Tugra's root certificates were subject to an investigation prompted by reporting of security issues in their systems. Certifi 2023.07.22 removes root certificates from \"e-Tugra\" from the root store.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "certifi",
+       "version": "2020.6.20"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=2015.4.28,<2023.7.22 (python)",
+      "vulnerabilityID": "GHSA-xqr8-7jwr-rhp7"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dd55b74a066559c6",
+    "name": "certifi",
+    "version": "2020.6.20",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [
+     "MPL-2.0"
+    ],
+    "cpes": [],
+    "purl": "pkg:pypi/certifi@2020.6.20",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-43fp-rhv2-5gv8",
+    "dataSource": "https://github.com/advisories/GHSA-43fp-rhv2-5gv8",
+    "namespace": "github:language:python",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-43fp-rhv2-5gv8"
+    ],
+    "description": "Certifi removing TrustCor root certificate",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 2.3,
+       "impactScore": 4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2022.12.07"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-23491",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-23491",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/certifi/python-certifi/security/advisories/GHSA-43fp-rhv2-5gv8",
+      "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/oxX69KFvsm4/m/yLohoVqtCgAJ"
+     ],
+     "description": "Certifi is a curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. Certifi 2022.12.07 removes root certificates from \"TrustCor\" from the root store. These are in the process of being removed from Mozilla's trust store. TrustCor's root certificates are being removed pursuant to an investigation prompted by media reporting that TrustCor's ownership also operated a business that produced spyware. Conclusions of Mozilla's investigation can be found in the linked google group discussion.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.8,
+        "exploitabilityScore": 2.3,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "certifi",
+       "version": "2020.6.20"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=2017.11.05,<2022.12.07 (python)",
+      "vulnerabilityID": "GHSA-43fp-rhv2-5gv8"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "dd55b74a066559c6",
+    "name": "certifi",
+    "version": "2020.6.20",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [
+     "MPL-2.0"
+    ],
+    "cpes": [],
+    "purl": "pkg:pypi/certifi@2020.6.20",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-c33w-24p9-8m24",
+    "dataSource": "https://github.com/advisories/GHSA-c33w-24p9-8m24",
+    "namespace": "github:language:python",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-c33w-24p9-8m24"
+    ],
+    "description": "configobj ReDoS exploitable by developer using values in a server-side configuration file",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "metrics": {
+       "baseScore": 3.7,
+       "exploitabilityScore": 2.2,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Low",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-26112",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-26112",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/DiffSK/configobj/issues/232",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6BO4RLMYEJODCNUE3DJIIUUFVTPAG6VN/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NZHY7B33EFY4LESP2NI4APQUPRROTAZK/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PYU4IHVLOTYMFPH7KDOJGKZQR4GKWPFK/",
+      "https://security.snyk.io/vuln/SNYK-PYTHON-CONFIGOBJ-3252494"
+     ],
+     "description": "All versions of the package configobj are vulnerable to Regular Expression Denial of Service (ReDoS) via the validate function, using (.+?)\\((.*)\\).\r\r**Note:** This is only exploitable in the case of a developer, putting the offending value in a server side configuration file.\r\r",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "report@snyk.io",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 3.7,
+        "exploitabilityScore": 2.2,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "configobj",
+       "version": "5.0.6"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=5.0.8 (python)",
+      "vulnerabilityID": "GHSA-c33w-24p9-8m24"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "ad7b68561ad7b2fe",
+    "name": "configobj",
+    "version": "5.0.6",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [
+     "UNKNOWN"
+    ],
+    "cpes": [],
+    "purl": "pkg:pypi/configobj@5.0.6",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4g9r-vxhx-9pgx",
+    "dataSource": "https://github.com/advisories/GHSA-4g9r-vxhx-9pgx",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-4g9r-vxhx-9pgx"
+    ],
+    "description": "Apache Commons Compress: Denial of service caused by an infinite loop for a corrupted DUMP file",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.1,
+       "exploitabilityScore": 1.4,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.26.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-25710",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-25710",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/02/19/1",
+      "https://lists.apache.org/thread/cz8qkcwphy4cx8gltn932ln51cbtq6kf",
+      "https://security.netapp.com/advisory/ntap-20240307-0010/"
+     ],
+     "description": "Loop with Unreachable Exit Condition ('Infinite Loop') vulnerability in Apache Commons Compress.This issue affects Apache Commons Compress: from 1.3 through 1.25.0.\n\nUsers are recommended to upgrade to version 1.26.0 which fixes the issue.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@apache.org",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 1.4,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.apache.commons/commons-compress",
+       "version": "1.21"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.3,<1.26.0 (unknown)",
+      "vulnerabilityID": "GHSA-4g9r-vxhx-9pgx"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "594ddcc7a9157c4d",
+    "name": "org.apache.commons/commons-compress",
+    "version": "1.21",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.apache.commons/commons-compress@1.21",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4265-ccf5-phj5",
+    "dataSource": "https://github.com/advisories/GHSA-4265-ccf5-phj5",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-4265-ccf5-phj5"
+    ],
+    "description": "Apache Commons Compress: OutOfMemoryError unpacking broken Pack200 file",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.26.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-26308",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26308",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2024/02/19/2",
+      "https://lists.apache.org/thread/ch5yo2d21p7vlqrhll9b17otbyq4npfg",
+      "https://security.netapp.com/advisory/ntap-20240307-0009/"
+     ],
+     "description": "Allocation of Resources Without Limits or Throttling vulnerability in Apache Commons Compress.This issue affects Apache Commons Compress: from 1.21 before 1.26.\n\nUsers are recommended to upgrade to version 1.26, which fixes the issue.\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.apache.commons/commons-compress",
+       "version": "1.21"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.21,<1.26.0 (unknown)",
+      "vulnerabilityID": "GHSA-4265-ccf5-phj5"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "594ddcc7a9157c4d",
+    "name": "org.apache.commons/commons-compress",
+    "version": "1.21",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/org.apache.commons/commons-compress@1.21",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-wjxj-5m7g-mg7q",
+    "dataSource": "https://github.com/advisories/GHSA-wjxj-5m7g-mg7q",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-wjxj-5m7g-mg7q"
+    ],
+    "description": "Bouncy Castle Denial of Service (DoS)",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-33202",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-33202",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bouncycastle.org",
+      "https://github.com/bcgit/bc-java/wiki/CVE-2023-33202",
+      "https://security.netapp.com/advisory/ntap-20240125-0001/"
+     ],
+     "description": "Bouncy Castle for Java before 1.73 contains a potential Denial of Service (DoS) issue within the Bouncy Castle org.bouncycastle.openssl.PEMParser class. This class parses OpenSSL PEM encoded streams containing X.509 certificates, PKCS8 encoded keys, and PKCS7 objects. Parsing a file that has crafted ASN.1 data through the PEMParser causes an OutOfMemoryError, which can enable a denial of service attack. (For users of the FIPS Java API: BC-FJA 1.0.2.3 and earlier are affected; BC-FJA 1.0.2.4 is fixed.)",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.bouncycastle/bcprov-jdk15on",
+       "version": "1.68"
+      }
+     },
+     "found": {
+      "versionConstraint": "<=1.70 (unknown)",
+      "vulnerabilityID": "GHSA-wjxj-5m7g-mg7q"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6553ae7e57dfd531",
+    "name": "org.bouncycastle/bcprov-jdk15on",
+    "version": "1.68",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:maven/org.bouncycastle/bcprov-jdk15on@1.68",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hr8g-6v94-x4m9",
+    "dataSource": "https://github.com/advisories/GHSA-hr8g-6v94-x4m9",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-hr8g-6v94-x4m9"
+    ],
+    "description": "Bouncy Castle For Java LDAP injection vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-33201",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-33201",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://bouncycastle.org",
+      "https://github.com/bcgit/bc-java/commit/e8c409a8389c815ea3fda5e8b94c92fdfe583bcc",
+      "https://github.com/bcgit/bc-java/wiki/CVE-2023-33201",
+      "https://lists.debian.org/debian-lts-announce/2023/08/msg00000.html",
+      "https://security.netapp.com/advisory/ntap-20230824-0008/"
+     ],
+     "description": "Bouncy Castle For Java before 1.74 is affected by an LDAP injection vulnerability. The vulnerability only affects applications that use an LDAP CertStore from Bouncy Castle to validate X.509 certificates. During the certificate validation process, Bouncy Castle inserts the certificate's Subject Name into an LDAP search filter without any escaping, which leads to an LDAP injection vulnerability.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.bouncycastle/bcprov-jdk15on",
+       "version": "1.68"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=1.49,<=1.70 (unknown)",
+      "vulnerabilityID": "GHSA-hr8g-6v94-x4m9"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "6553ae7e57dfd531",
+    "name": "org.bouncycastle/bcprov-jdk15on",
+    "version": "1.68",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:maven/org.bouncycastle/bcprov-jdk15on@1.68",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-3p86-9955-h393",
+    "dataSource": "https://github.com/advisories/GHSA-3p86-9955-h393",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-3p86-9955-h393"
+    ],
+    "description": "Arbitrary File Overwrite in Eclipse JGit ",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.8,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "5.13.3.202401111512-r"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4759",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4759",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=9072103f3b3cf64dd12ad2949836ab98f62dabf1",
+      "https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/11",
+      "https://projects.eclipse.org/projects/technology.jgit/releases/6.6.1"
+     ],
+     "description": "Arbitrary File Overwrite in Eclipse JGit <= 6.6.0\n\nIn Eclipse JGit, all versions <= 6.6.0.202305301015-r, a symbolic link present in a specially crafted git repository can be used to write a file to locations outside the working tree when this repository is cloned with JGit to a case-insensitive filesystem, or when a checkout from a clone of such a repository is performed on a case-insensitive filesystem.\n\nThis can happen on checkout (DirCacheCheckout), merge (ResolveMerger via its WorkingTreeUpdater), pull (PullCommand using merge), and when applying a patch (PatchApplier). This can be exploited for remote code execution (RCE), for instance if the file written outside the working tree is a git filter that gets executed on a subsequent git command.\n\nThe issue occurs only on case-insensitive filesystems, like the default filesystems on Windows and macOS. The user performing the clone or checkout must have the rights to create symbolic links for the problem to occur, and symbolic links must be enabled in the git configuration.\n\nSetting git configuration option core.symlinks = false before checking out avoids the problem.\n\nThe issue was fixed in Eclipse JGit version 6.6.1.202309021850-r and 6.7.0.202309050840-r, available via  Maven Central https://repo1.maven.org/maven2/org/eclipse/jgit/  and  repo.eclipse.org https://repo.eclipse.org/content/repositories/jgit-releases/ . A backport is available in 5.13.3 starting from  5.13.3.202401111512-r.\n\n\nThe JGit maintainers would like to thank RyotaK for finding and reporting this issue.\n\n\n\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "emo@eclipse.org",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "org.eclipse.jgit/org.eclipse.jgit",
+       "version": "5.7.0.202003110725-r"
+      }
+     },
+     "found": {
+      "versionConstraint": "<5.13.3.202401111512-r (unknown)",
+      "vulnerabilityID": "GHSA-3p86-9955-h393"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "b8787c392f998869",
+    "name": "org.eclipse.jgit/org.eclipse.jgit",
+    "version": "5.7.0.202003110725-r",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [],
+    "cpes": [],
+    "purl": "pkg:maven/org.eclipse.jgit/org.eclipse.jgit@5.7.0.202003110725-r",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-264p-99wq-f4j6",
+    "dataSource": "https://github.com/advisories/GHSA-264p-99wq-f4j6",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-264p-99wq-f4j6"
+    ],
+    "description": "Ion Java StackOverflow vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-21634",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-21634",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/amazon-ion/ion-java/security/advisories/GHSA-264p-99wq-f4j6"
+     ],
+     "description": "Amazon Ion is a Java implementation of the Ion data notation. Prior to version 1.10.5, a potential denial-of-service issue exists in `ion-java` for applications that use `ion-java` to deserialize Ion text encoded data, or deserialize Ion text or binary encoded data into the `IonValue` model and then invoke certain `IonValue` methods on that in-memory representation. An actor could craft Ion data that, when loaded by the affected application and/or processed using the `IonValue` model, results in a `StackOverflowError` originating from the `ion-java` library. The patch is included in `ion-java` 1.10.5. As a workaround, do not load data which originated from an untrusted source or that could have been tampered with.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "software.amazon.ion/ion-java",
+       "version": "1.0.2"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.10.5 (unknown)",
+      "vulnerabilityID": "GHSA-264p-99wq-f4j6"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "07f7bec80be7e657",
+    "name": "software.amazon.ion/ion-java",
+    "version": "1.0.2",
+    "type": "java-archive",
+    "locations": [],
+    "language": "java",
+    "licenses": [
+     "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    ],
+    "cpes": [],
+    "purl": "pkg:maven/software.amazon.ion/ion-java@1.0.2",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "",
+     "pomGroupID": "",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v845-jxx5-vc9f",
+    "dataSource": "https://github.com/advisories/GHSA-v845-jxx5-vc9f",
+    "namespace": "github:language:python",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v845-jxx5-vc9f"
+    ],
+    "description": "`Cookie` HTTP header isn't stripped on cross-origin redirects",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 0.7,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.26.17"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-43804",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-43804",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/urllib3/urllib3/commit/01220354d389cd05474713f8c982d05c9b17aafb",
+      "https://github.com/urllib3/urllib3/commit/644124ecd0b6e417c527191f866daa05a5a2056d",
+      "https://github.com/urllib3/urllib3/security/advisories/GHSA-v845-jxx5-vc9f",
+      "https://lists.debian.org/debian-lts-announce/2023/10/msg00012.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5F5CUBAN5XMEBVBZPHFITBLMJV5FIJJ5/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I3PR7C6RJ6JUBQKIJ644DMIJSUP36VDY/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NDAGZXYJ7H2G3SB47M453VQVNAWKAEJJ/"
+     ],
+     "description": "urllib3 is a user-friendly HTTP client library for Python. urllib3 doesn't treat the `Cookie` HTTP header special or provide any helpers for managing cookies over HTTP, that is the responsibility of the user. However, it is possible for a user to specify a `Cookie` header and unknowingly leak information via HTTP redirects to a different origin if that user doesn't disable redirects explicitly. This issue has been patched in urllib3 version 1.26.17 or 2.0.5.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:N",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 0.7,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "urllib3",
+       "version": "1.26.5"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.26.17 (python)",
+      "vulnerabilityID": "GHSA-v845-jxx5-vc9f"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "66f56bdc0c84c79d",
+    "name": "urllib3",
+    "version": "1.26.5",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:pypi/urllib3@1.26.5",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-g4mx-q9vg-27p4",
+    "dataSource": "https://github.com/advisories/GHSA-g4mx-q9vg-27p4",
+    "namespace": "github:language:python",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-g4mx-q9vg-27p4"
+    ],
+    "description": "urllib3's request body not stripped after redirect from 303 status changes request method to GET",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:A/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 4.2,
+       "exploitabilityScore": 0.5,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.26.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-45803",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-45803",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/urllib3/urllib3/commit/4e98d57809dacab1cbe625fddeec1a290c478ea9",
+      "https://github.com/urllib3/urllib3/security/advisories/GHSA-g4mx-q9vg-27p4",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4R2Y5XK3WALSR3FNAGN7JBYV2B343ZKB/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5F5CUBAN5XMEBVBZPHFITBLMJV5FIJJ5/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PPDPLM6UUMN55ESPQWJFLLIZY4ZKCNRX/",
+      "https://www.rfc-editor.org/rfc/rfc9110.html#name-get"
+     ],
+     "description": "urllib3 is a user-friendly HTTP client library for Python. urllib3 previously wouldn't remove the HTTP request body when an HTTP redirect response using status 301, 302, or 303 after the request had its method changed from one that could accept a request body (like `POST`) to `GET` as is required by HTTP RFCs. Although this behavior is not specified in the section for redirects, it can be inferred by piecing together information from different sections and we have observed the behavior in other major HTTP client implementations like curl and web browsers. Because the vulnerability requires a previously trusted service to become compromised in order to have an impact on confidentiality we believe the exploitability of this vulnerability is low. Additionally, many users aren't putting sensitive data in HTTP request bodies, if this is the case then this vulnerability isn't exploitable. Both of the following conditions must be true to be affected by this vulnerability: 1. Using urllib3 and submitting sensitive information in the HTTP request body (such as form data or JSON) and 2. The origin service is compromised and starts redirecting using 301, 302, or 303 to a malicious peer or the redirected-to service becomes compromised. This issue has been addressed in versions 1.26.18 and 2.0.7 and users are advised to update to resolve this issue. Users unable to update should disable redirects for services that aren't expecting to respond with redirects with `redirects=False` and disable automatic redirects with `redirects=False` and handle 301, 302, and 303 redirects manually by stripping the HTTP request body.\n",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:A/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 4.2,
+        "exploitabilityScore": 0.5,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:A/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 4.2,
+        "exploitabilityScore": 0.5,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "python-matcher",
+     "searchedBy": {
+      "language": "python",
+      "namespace": "github:language:python",
+      "package": {
+       "name": "urllib3",
+       "version": "1.26.5"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=0,<1.26.18 (python)",
+      "vulnerabilityID": "GHSA-g4mx-q9vg-27p4"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "66f56bdc0c84c79d",
+    "name": "urllib3",
+    "version": "1.26.5",
+    "type": "python",
+    "locations": [],
+    "language": "python",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [],
+    "purl": "pkg:pypi/urllib3@1.26.5",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "",
+   "imageID": "",
+   "manifestDigest": "",
+   "mediaType": "",
+   "tags": [],
+   "imageSize": 0,
+   "layers": null,
+   "manifest": null,
+   "config": null,
+   "repoDigests": [],
+   "architecture": "",
+   "os": ""
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.74.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/katushka/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": []
+  },
+  "db": {
+   "built": "2024-04-20T01:25:41Z",
+   "schemaVersion": 5,
+   "location": "/Users/katushka/Library/Caches/grype/db/5",
+   "checksum": "sha256:16b261c20c43828088d3530bdb10577ad87b9d33cfbfcaf051c3af61ba7e53ca",
+   "error": null
+  },
+  "timestamp": "2024-04-20T21:50:26.103862+02:00"
+ }
+}

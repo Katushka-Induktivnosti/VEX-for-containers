@@ -1,0 +1,180 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "jsons/docker_scout/sboms/joomla_sbom.json",
+  "ArtifactType": "spdx",
+  "Metadata": {
+    "OS": {
+      "Family": "none",
+      "Name": ""
+    },
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "",
+      "Class": "lang-pkgs",
+      "Type": "composer",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-29530",
+          "PkgName": "laminas/laminas-diactoros",
+          "InstalledVersion": "2.4.1",
+          "FixedVersion": "2.18.1, 2.19.1, 2.20.1, 2.21.1, 2.22.1, 2.23.1, 2.24.2, 2.25.2",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-29530",
+          "PkgRef": "pkg:composer/laminas/laminas-diactoros@2.4.1",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Composer",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Acomposer"
+          },
+          "Title": "HTTP Multiline Header Termination",
+          "Description": "Laminas Diactoros provides PSR HTTP Message implementations. In versions 2.18.0 and prior, 2.19.0, 2.20.0, 2.21.0, 2.22.0, 2.23.0, 2.24.0, and 2.25.0, users who create HTTP requests or responses using laminas/laminas-diactoros, when providing a newline at the start or end of a header key or value, can cause an invalid message. This can lead to denial of service vectors or application errors. The problem has been patched in following versions 2.18.1, 2.19.1, 2.20.1, 2.21.1, 2.22.1, 2.23.1, 2.24.1, and 2.25.1. As a workaround, validate HTTP header keys and/or values, and if using user-supplied values, filter them to strip off leading or trailing newline characters before calling `withHeader()`.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://github.com/advisories/GHSA-wxmh-65f7-jcvw",
+            "https://github.com/laminas/laminas-diactoros",
+            "https://github.com/laminas/laminas-diactoros/commit/7e721a60a09c5119c98694c2d23fc031094e1f1c",
+            "https://github.com/laminas/laminas-diactoros/security/advisories/GHSA-xv3h-4844-9h36",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BPW54QK7ISDALPLP2CKODU4ZIVRYS336",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BPW54QK7ISDALPLP2CKODU4ZIVRYS336/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-29530"
+          ],
+          "PublishedDate": "2023-04-24T20:15:08.823Z",
+          "LastModifiedDate": "2023-05-05T13:58:10.663Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-31109",
+          "PkgName": "laminas/laminas-diactoros",
+          "InstalledVersion": "2.4.1",
+          "FixedVersion": "2.11.1",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-31109",
+          "PkgRef": "pkg:composer/laminas/laminas-diactoros@2.4.1",
+          "DataSource": {
+            "ID": "php-security-advisories",
+            "Name": "PHP Security Advisories Database",
+            "URL": "https://github.com/FriendsOfPHP/security-advisories"
+          },
+          "Title": "Diactoros before 2.11.1 vulnerable to HTTP Host Header Attack.",
+          "Description": "laminas-diactoros is a PHP package containing implementations of the PSR-7 HTTP message interfaces and PSR-17 HTTP message factory interfaces. Applications that use Diactoros, and are either not behind a proxy, or can be accessed via untrusted proxies, can potentially have the host, protocol, and/or port of a `Laminas\\Diactoros\\Uri` instance associated with the incoming server request modified to reflect values from `X-Forwarded-*` headers. Such changes can potentially lead to XSS attacks (if a fully-qualified URL is used in links) and/or URL poisoning. Since the `X-Forwarded-*` headers do have valid use cases, particularly in clustered environments using a load balancer, the library offers mitigation measures only in the v2 releases, as doing otherwise would break these use cases immediately. Users of v2 releases from 2.11.1 can provide an additional argument to `Laminas\\Diactoros\\ServerRequestFactory::fromGlobals()` in the form of a `Laminas\\Diactoros\\RequestFilter\\RequestFilterInterface` instance, including the shipped `Laminas\\Diactoros\\RequestFilter\\NoOpRequestFilter` implementation which ignores the `X-Forwarded-*` headers. Starting in version 3.0, the library will reverse behavior to use the `NoOpRequestFilter` by default, and require users to opt-in to `X-Forwarded-*` header usage via a configured `Laminas\\Diactoros\\RequestFilter\\LegacyXForwardedHeaderFilter` instance. Users are advised to upgrade to version 2.11.1 or later to resolve this issue. Users unable to upgrade may configure web servers to reject `X-Forwarded-*` headers at the web server level.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444",
+            "CWE-79"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/laminas/laminas-diactoros/CVE-2022-31109.yaml",
+            "https://github.com/advisories/GHSA-8274-h5jp-97vr",
+            "https://github.com/laminas/laminas-diactoros",
+            "https://github.com/laminas/laminas-diactoros/commit/25b11d422c2e5dad868f68619888763b30f91e2d",
+            "https://github.com/laminas/laminas-diactoros/releases/tag/2.11.1",
+            "https://github.com/laminas/laminas-diactoros/security/advisories/GHSA-8274-h5jp-97vr",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-31109",
+            "https://portswigger.net/web-security/host-header"
+          ],
+          "PublishedDate": "2022-08-01T17:15:08.333Z",
+          "LastModifiedDate": "2022-08-06T02:41:27.107Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-27354",
+          "PkgName": "phpseclib/phpseclib",
+          "InstalledVersion": "3.0.34",
+          "FixedVersion": "1.0.23, 2.0.47, 3.0.36",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-27354",
+          "PkgRef": "pkg:composer/phpseclib/phpseclib@3.0.34",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Composer",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Acomposer"
+          },
+          "Title": "An issue was discovered in phpseclib 1.x before 1.0.23, 2.x before 2.0 ...",
+          "Description": "An issue was discovered in phpseclib 1.x before 1.0.23, 2.x before 2.0.47, and 3.x before 3.0.36. An attacker can construct a malformed certificate containing an extremely large prime to cause a denial of service (CPU consumption for an isPrime primality check). NOTE: this issue was introduced when attempting to fix CVE-2023-27560.",
+          "Severity": "HIGH",
+          "References": [
+            "https://gist.github.com/katzj/ee72f3c2a00590812b2ea3c0c8890e0b",
+            "https://github.com/phpseclib/phpseclib",
+            "https://github.com/phpseclib/phpseclib/blob/master/phpseclib/Math/PrimeField.php#L49",
+            "https://github.com/phpseclib/phpseclib/commit/2870c8fab3f132d2ed40a66c97a36fe5ab625698",
+            "https://github.com/phpseclib/phpseclib/commit/ad5dbdf2129f5e0fb644637770b7f33de8ca8575",
+            "https://github.com/phpseclib/phpseclib/commit/c55b75199ec8d12cec6eadf6da99da4a3712fe56",
+            "https://lists.debian.org/debian-lts-announce/2024/03/msg00002.html",
+            "https://lists.debian.org/debian-lts-announce/2024/03/msg00003.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-27354"
+          ],
+          "PublishedDate": "2024-03-01T23:15:08.5Z",
+          "LastModifiedDate": "2024-03-21T02:52:19.927Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-27355",
+          "PkgName": "phpseclib/phpseclib",
+          "InstalledVersion": "3.0.34",
+          "FixedVersion": "1.0.23, 3.0.36, 2.0.47",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-27355",
+          "PkgRef": "pkg:composer/phpseclib/phpseclib@3.0.34",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Composer",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Acomposer"
+          },
+          "Title": "An issue was discovered in phpseclib 1.x before 1.0.23, 2.x before 2.0 ...",
+          "Description": "An issue was discovered in phpseclib 1.x before 1.0.23, 2.x before 2.0.47, and 3.x before 3.0.36. When processing the ASN.1 object identifier of a certificate, a sub identifier may be provided that leads to a denial of service (CPU consumption for decodeOID).",
+          "Severity": "HIGH",
+          "References": [
+            "https://gist.github.com/katzj/ee72f3c2a00590812b2ea3c0c8890e0b",
+            "https://github.com/phpseclib/phpseclib",
+            "https://github.com/phpseclib/phpseclib/blob/978d081fe50ff92879c50ff143c62a143edb0117/phpseclib/File/ASN1.php#L1129",
+            "https://github.com/phpseclib/phpseclib/commit/e32531001b4d62c66c3d824ccef54ffad835eb59",
+            "https://lists.debian.org/debian-lts-announce/2024/03/msg00002.html",
+            "https://lists.debian.org/debian-lts-announce/2024/03/msg00003.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-27355"
+          ],
+          "PublishedDate": "2024-03-01T23:15:08.553Z",
+          "LastModifiedDate": "2024-03-21T02:52:19.97Z"
+        }
+      ]
+    }
+  ]
+}

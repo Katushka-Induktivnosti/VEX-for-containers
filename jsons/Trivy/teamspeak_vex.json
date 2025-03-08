@@ -1,0 +1,469 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "teamspeak",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.18.5"
+    },
+    "ImageID": "sha256:f5c7700b23e75e3d88f8bd4c7ce0e359bfa253f88cb9742632c00b156451b0a3",
+    "DiffIDs": [
+      "sha256:9fe9a137fd002363ac64f5af66146702432b638a83ee0c5b620c40a9e433e813",
+      "sha256:8539746208d60a0c6b86014a9a83b662d6410d3947985a56fe048b23ba347346",
+      "sha256:b1b4a3dc4f881b1ceae6256544baf1f384be11472e8fe718fe4c4414f8b43418",
+      "sha256:083c7d6661db5b572d04ec1b4e90dc209d27e9ffc31044de3eaebd86cc64319a",
+      "sha256:06e6b90f22190e4804c04cc8abcbdae0ae38bc0b90c5f532d51fdf1c73d37b46"
+    ],
+    "RepoTags": [
+      "teamspeak:latest"
+    ],
+    "RepoDigests": [
+      "teamspeak@sha256:69e067c72d8485d5de05aa493c583b69b0f6e020f86fcd58d31dbe468d2b1c1e"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "14e86fdff197a62090f8e845c7a9dbb14df724b5c9179bcb94e44eb23fcc8828",
+      "created": "2023-12-01T07:21:43.692436826Z",
+      "docker_version": "20.10.23",
+      "history": [
+        {
+          "created": "2023-11-30T23:22:52Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / "
+        },
+        {
+          "created": "2023-11-30T23:22:52Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T07:21:38Z",
+          "created_by": "/bin/sh -c apk add --no-cache ca-certificates libstdc++ su-exec libpq"
+        },
+        {
+          "created": "2023-12-01T07:21:39Z",
+          "created_by": "/bin/sh -c set -eux;     addgroup -g 9987 ts3server;     adduser -u 9987 -Hh /var/ts3server -G ts3server -s /sbin/nologin -D ts3server;     install -d -o ts3server -g ts3server -m 775 /var/ts3server /var/run/ts3server /opt/ts3server"
+        },
+        {
+          "created": "2023-12-01T07:21:39Z",
+          "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ts3server",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T07:21:39Z",
+          "created_by": "/bin/sh -c #(nop)  ARG TEAMSPEAK_CHECKSUM=359aac972679cfd98d62af51ddaf80e674cab166e13c6a835e81759097f9ba2e",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T07:21:39Z",
+          "created_by": "/bin/sh -c #(nop)  ARG TEAMSPEAK_URL=https://files.teamspeak-services.com/releases/server/3.13.7/teamspeak3-server_linux_alpine-3.13.7.tar.bz2",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T07:21:43Z",
+          "created_by": "|2 TEAMSPEAK_CHECKSUM=359aac972679cfd98d62af51ddaf80e674cab166e13c6a835e81759097f9ba2e TEAMSPEAK_URL=https://files.teamspeak-services.com/releases/server/3.13.7/teamspeak3-server_linux_alpine-3.13.7.tar.bz2 /bin/sh -c set -eux;     apk add --no-cache --virtual .fetch-deps tar;     wget \"${TEAMSPEAK_URL}\" -O server.tar.bz2;     echo \"${TEAMSPEAK_CHECKSUM} *server.tar.bz2\" | sha256sum -c -;     mkdir -p /opt/ts3server;     tar -xf server.tar.bz2 --strip-components=1 -C /opt/ts3server;     rm server.tar.bz2;     apk del .fetch-deps;     mv /opt/ts3server/*.so /opt/ts3server/redist/* /usr/local/lib;     ldconfig /usr/local/lib"
+        },
+        {
+          "created": "2023-12-01T07:21:43Z",
+          "created_by": "/bin/sh -c #(nop)  VOLUME [/var/ts3server/]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T07:21:43Z",
+          "created_by": "/bin/sh -c #(nop) WORKDIR /var/ts3server/",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T07:21:43Z",
+          "created_by": "/bin/sh -c #(nop)  EXPOSE 10011 30033 9987/udp",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T07:21:43Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:d9f653f53e40ea33be02ca61f8194eb1a4147066050f721a3172007f06bb834c in /opt/ts3server "
+        },
+        {
+          "created": "2023-12-01T07:21:43Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"entrypoint.sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-12-01T07:21:43Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"ts3server\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:9fe9a137fd002363ac64f5af66146702432b638a83ee0c5b620c40a9e433e813",
+          "sha256:8539746208d60a0c6b86014a9a83b662d6410d3947985a56fe048b23ba347346",
+          "sha256:b1b4a3dc4f881b1ceae6256544baf1f384be11472e8fe718fe4c4414f8b43418",
+          "sha256:083c7d6661db5b572d04ec1b4e90dc209d27e9ffc31044de3eaebd86cc64319a",
+          "sha256:06e6b90f22190e4804c04cc8abcbdae0ae38bc0b90c5f532d51fdf1c73d37b46"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "ts3server"
+        ],
+        "Entrypoint": [
+          "entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ts3server"
+        ],
+        "Image": "sha256:fef05e3e6f835e34e63c36b4ad9591f803956be0e8e43cd40ec80b2fdc3849ad",
+        "Volumes": {
+          "/var/ts3server/": {}
+        },
+        "WorkingDir": "/var/ts3server/"
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "teamspeak (alpine 3.18.5)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-6129",
+          "PkgID": "libcrypto3@3.1.4-r1",
+          "PkgName": "libcrypto3",
+          "InstalledVersion": "3.1.4-r1",
+          "FixedVersion": "3.1.4-r3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:9fe9a137fd002363ac64f5af66146702432b638a83ee0c5b620c40a9e433e813"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6129",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: POLY1305 MAC implementation corrupts vector registers on PowerPC",
+          "Description": "Issue summary: The POLY1305 MAC (message authentication code) implementation\ncontains a bug that might corrupt the internal state of applications running\non PowerPC CPU based platforms if the CPU provides vector instructions.\n\nImpact summary: If an attacker can influence whether the POLY1305 MAC\nalgorithm is used, the application state might be corrupted with various\napplication dependent consequences.\n\nThe POLY1305 MAC (message authentication code) implementation in OpenSSL for\nPowerPC CPUs restores the contents of vector registers in a different order\nthan they are saved. Thus the contents of some of these vector registers\nare corrupted when returning to the caller. The vulnerable code is used only\non newer PowerPC processors supporting the PowerISA 2.07 instructions.\n\nThe consequences of this kind of internal application state corruption can\nbe various - from no consequences, if the calling application does not\ndepend on the contents of non-volatile XMM registers at all, to the worst\nconsequences, where the attacker could get complete control of the application\nprocess. However unless the compiler uses the vector registers for storing\npointers, the most likely consequence, if any, would be an incorrect result\nof some application dependent calculations or a crash leading to a denial of\nservice.\n\nThe POLY1305 MAC algorithm is most frequently used as part of the\nCHACHA20-POLY1305 AEAD (authenticated encryption with associated data)\nalgorithm. The most common usage of this AEAD cipher is with TLS protocol\nversions 1.2 and 1.3. If this cipher is enabled on the server a malicious\nclient can influence whether this AEAD cipher is used. This implies that\nTLS server applications using OpenSSL can be potentially impacted. However\nwe are currently not aware of any concrete application that would be affected\nby this issue therefore we consider this a Low severity security issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6129",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6129",
+            "https://github.com/openssl/openssl/commit/050d26383d4e264966fb83428e72d5d48f402d35",
+            "https://github.com/openssl/openssl/commit/5b139f95c9a47a55a0c54100f3837b1eee942b04",
+            "https://github.com/openssl/openssl/commit/f3fc5808fe9ff74042d639839610d03b8fdcc015",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6129",
+            "https://security.netapp.com/advisory/ntap-20240216-0009/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6129",
+            "https://www.openssl.org/news/secadv/20240109.txt",
+            "https://www.openwall.com/lists/oss-security/2024/01/09/1"
+          ],
+          "PublishedDate": "2024-01-09T17:15:12.147Z",
+          "LastModifiedDate": "2024-02-16T13:15:09.91Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6237",
+          "PkgID": "libcrypto3@3.1.4-r1",
+          "PkgName": "libcrypto3",
+          "InstalledVersion": "3.1.4-r1",
+          "FixedVersion": "3.1.4-r4",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:9fe9a137fd002363ac64f5af66146702432b638a83ee0c5b620c40a9e433e813"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6237",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: Excessive time spent checking invalid RSA public keys",
+          "Description": "A flaw was found in OpenSSL. When the EVP_PKEY_public_check() function is called in RSA public keys, a computation is done to confirm that the RSA modulus, n, is composite. For valid RSA keys, n is a product of two or more large primes and this computation completes quickly. However, if n is a large prime, this computation takes a long time. An application that calls EVP_PKEY_public_check() and supplies an RSA key obtained from an untrusted source could be vulnerable to a Denial of Service attack.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6237",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6237",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6237",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6237",
+            "https://www.openssl.org/news/secadv/20240115.txt",
+            "https://www.openwall.com/lists/oss-security/2024/01/15/2"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2024-0727",
+          "PkgID": "libcrypto3@3.1.4-r1",
+          "PkgName": "libcrypto3",
+          "InstalledVersion": "3.1.4-r1",
+          "FixedVersion": "3.1.4-r5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:9fe9a137fd002363ac64f5af66146702432b638a83ee0c5b620c40a9e433e813"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-0727",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: denial of service via null dereference",
+          "Description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-0727",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0727",
+            "https://github.com/alexcrichton/openssl-src-rs/commit/add20f73b6b42be7451af2e1044d4e0e778992b2",
+            "https://github.com/github/advisory-database/pull/3472",
+            "https://github.com/openssl/openssl/commit/09df4395b5071217b76dc7d3d2e630eb8c5a79c2",
+            "https://github.com/openssl/openssl/commit/775acfdbd0c6af9ac855f34969cdab0c0c90844a",
+            "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
+            "https://github.com/openssl/openssl/pull/23362",
+            "https://github.com/pyca/cryptography/commit/3519591d255d4506fbcd0d04037d45271903c64d",
+            "https://github.openssl.org/openssl/extended-releases/commit/03b3941d60c4bce58fab69a0c22377ab439bc0e8",
+            "https://github.openssl.org/openssl/extended-releases/commit/aebaa5883e31122b404e450732dc833dc9dee539",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-0727",
+            "https://security.netapp.com/advisory/ntap-20240208-0006",
+            "https://security.netapp.com/advisory/ntap-20240208-0006/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://ubuntu.com/security/notices/USN-6632-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-0727",
+            "https://www.openssl.org/news/secadv/20240125.txt"
+          ],
+          "PublishedDate": "2024-01-26T09:15:07.637Z",
+          "LastModifiedDate": "2024-02-08T10:15:13.91Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-0985",
+          "PkgID": "libpq@15.5-r0",
+          "PkgName": "libpq",
+          "InstalledVersion": "15.5-r0",
+          "FixedVersion": "15.6-r0",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:8539746208d60a0c6b86014a9a83b662d6410d3947985a56fe048b23ba347346"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-0985",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "postgresql: non-owner 'REFRESH MATERIALIZED VIEW CONCURRENTLY' executes arbitrary SQL",
+          "Description": "Late privilege drop in REFRESH MATERIALIZED VIEW CONCURRENTLY in PostgreSQL allows an object creator to execute arbitrary SQL functions as the command issuer. The command intends to run SQL functions as the owner of the materialized view, enabling safe refresh of untrusted materialized views. The victim is a superuser or member of one of the attacker's roles. The attack requires luring the victim into running REFRESH MATERIALIZED VIEW CONCURRENTLY on the attacker's materialized view. As part of exploiting this vulnerability, the attacker creates functions that use CREATE RULE to convert the internally-built temporary table to a view. Versions before PostgreSQL 15.6, 14.11, 13.14, and 12.18 are affected. The only known exploit does not work in PostgreSQL 16 and later. For defense in depth, PostgreSQL 16.2 adds the protections that older branches are using to fix their vulnerability.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-271"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0951",
+            "https://access.redhat.com/security/cve/CVE-2024-0985",
+            "https://bugzilla.redhat.com/2263384",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0985",
+            "https://errata.almalinux.org/9/ALSA-2024-0951.html",
+            "https://linux.oracle.com/cve/CVE-2024-0985.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0975.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-0985",
+            "https://ubuntu.com/security/notices/USN-6656-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-0985",
+            "https://www.postgresql.org/support/security/CVE-2024-0985/"
+          ],
+          "PublishedDate": "2024-02-08T13:15:08.927Z",
+          "LastModifiedDate": "2024-02-15T15:23:49.287Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6129",
+          "PkgID": "libssl3@3.1.4-r1",
+          "PkgName": "libssl3",
+          "InstalledVersion": "3.1.4-r1",
+          "FixedVersion": "3.1.4-r3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:9fe9a137fd002363ac64f5af66146702432b638a83ee0c5b620c40a9e433e813"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6129",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: POLY1305 MAC implementation corrupts vector registers on PowerPC",
+          "Description": "Issue summary: The POLY1305 MAC (message authentication code) implementation\ncontains a bug that might corrupt the internal state of applications running\non PowerPC CPU based platforms if the CPU provides vector instructions.\n\nImpact summary: If an attacker can influence whether the POLY1305 MAC\nalgorithm is used, the application state might be corrupted with various\napplication dependent consequences.\n\nThe POLY1305 MAC (message authentication code) implementation in OpenSSL for\nPowerPC CPUs restores the contents of vector registers in a different order\nthan they are saved. Thus the contents of some of these vector registers\nare corrupted when returning to the caller. The vulnerable code is used only\non newer PowerPC processors supporting the PowerISA 2.07 instructions.\n\nThe consequences of this kind of internal application state corruption can\nbe various - from no consequences, if the calling application does not\ndepend on the contents of non-volatile XMM registers at all, to the worst\nconsequences, where the attacker could get complete control of the application\nprocess. However unless the compiler uses the vector registers for storing\npointers, the most likely consequence, if any, would be an incorrect result\nof some application dependent calculations or a crash leading to a denial of\nservice.\n\nThe POLY1305 MAC algorithm is most frequently used as part of the\nCHACHA20-POLY1305 AEAD (authenticated encryption with associated data)\nalgorithm. The most common usage of this AEAD cipher is with TLS protocol\nversions 1.2 and 1.3. If this cipher is enabled on the server a malicious\nclient can influence whether this AEAD cipher is used. This implies that\nTLS server applications using OpenSSL can be potentially impacted. However\nwe are currently not aware of any concrete application that would be affected\nby this issue therefore we consider this a Low severity security issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6129",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6129",
+            "https://github.com/openssl/openssl/commit/050d26383d4e264966fb83428e72d5d48f402d35",
+            "https://github.com/openssl/openssl/commit/5b139f95c9a47a55a0c54100f3837b1eee942b04",
+            "https://github.com/openssl/openssl/commit/f3fc5808fe9ff74042d639839610d03b8fdcc015",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6129",
+            "https://security.netapp.com/advisory/ntap-20240216-0009/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6129",
+            "https://www.openssl.org/news/secadv/20240109.txt",
+            "https://www.openwall.com/lists/oss-security/2024/01/09/1"
+          ],
+          "PublishedDate": "2024-01-09T17:15:12.147Z",
+          "LastModifiedDate": "2024-02-16T13:15:09.91Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-6237",
+          "PkgID": "libssl3@3.1.4-r1",
+          "PkgName": "libssl3",
+          "InstalledVersion": "3.1.4-r1",
+          "FixedVersion": "3.1.4-r4",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:9fe9a137fd002363ac64f5af66146702432b638a83ee0c5b620c40a9e433e813"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6237",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: Excessive time spent checking invalid RSA public keys",
+          "Description": "A flaw was found in OpenSSL. When the EVP_PKEY_public_check() function is called in RSA public keys, a computation is done to confirm that the RSA modulus, n, is composite. For valid RSA keys, n is a product of two or more large primes and this computation completes quickly. However, if n is a large prime, this computation takes a long time. An application that calls EVP_PKEY_public_check() and supplies an RSA key obtained from an untrusted source could be vulnerable to a Denial of Service attack.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6237",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6237",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6237",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6237",
+            "https://www.openssl.org/news/secadv/20240115.txt",
+            "https://www.openwall.com/lists/oss-security/2024/01/15/2"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2024-0727",
+          "PkgID": "libssl3@3.1.4-r1",
+          "PkgName": "libssl3",
+          "InstalledVersion": "3.1.4-r1",
+          "FixedVersion": "3.1.4-r5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:9fe9a137fd002363ac64f5af66146702432b638a83ee0c5b620c40a9e433e813"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-0727",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: denial of service via null dereference",
+          "Description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-0727",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0727",
+            "https://github.com/alexcrichton/openssl-src-rs/commit/add20f73b6b42be7451af2e1044d4e0e778992b2",
+            "https://github.com/github/advisory-database/pull/3472",
+            "https://github.com/openssl/openssl/commit/09df4395b5071217b76dc7d3d2e630eb8c5a79c2",
+            "https://github.com/openssl/openssl/commit/775acfdbd0c6af9ac855f34969cdab0c0c90844a",
+            "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
+            "https://github.com/openssl/openssl/pull/23362",
+            "https://github.com/pyca/cryptography/commit/3519591d255d4506fbcd0d04037d45271903c64d",
+            "https://github.openssl.org/openssl/extended-releases/commit/03b3941d60c4bce58fab69a0c22377ab439bc0e8",
+            "https://github.openssl.org/openssl/extended-releases/commit/aebaa5883e31122b404e450732dc833dc9dee539",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-0727",
+            "https://security.netapp.com/advisory/ntap-20240208-0006",
+            "https://security.netapp.com/advisory/ntap-20240208-0006/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://ubuntu.com/security/notices/USN-6632-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-0727",
+            "https://www.openssl.org/news/secadv/20240125.txt"
+          ],
+          "PublishedDate": "2024-01-26T09:15:07.637Z",
+          "LastModifiedDate": "2024-02-08T10:15:13.91Z"
+        }
+      ]
+    }
+  ]
+}
