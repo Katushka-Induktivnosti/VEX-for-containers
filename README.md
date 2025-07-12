@@ -56,4 +56,5 @@ These read parser outputs to generate visualizations, statistical comparisons, a
 
 ## Covariances
 - Computes the Jaccard index between vulnerability sets via `covariances/jaccard_index.py`.
+- Computes the modified Jaccard (Tversky indices) between vulnerability sets via `covariances/modified_jaccard.py`
 
