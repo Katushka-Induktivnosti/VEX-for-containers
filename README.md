@@ -7,7 +7,8 @@ Study setup for VEX-tools evaluation and end-to-end pipeline to generate, parse,
 - [Repository Structure](#repository-structure)  
 - [Scripts](#scripts)  
 - [JSON Parsers](#json-parsers)  
-- [Data Analysis Notebooks](#data-analysis-notebooks)  
+- [Data Analysis Notebooks](#data-analysis-notebooks)
+- [Covariances based on Jaccadr and Tversky indecies] (#covariances)
 
 
 ## Scripts
@@ -52,4 +53,7 @@ A suite of Jupyter notebooks for exploratory and comparative analyses:
 - `data_analytics_vexy.ipynb`  
 
 These read parser outputs to generate visualizations, statistical comparisons, and SBOM consistency checks.
+
+## Covariances
+- Computes the Jaccard index between vulnerability sets via `covariances/jaccard_index.py`.
 
