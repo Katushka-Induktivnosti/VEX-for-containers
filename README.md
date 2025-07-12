@@ -8,7 +8,7 @@ Study setup for VEX-tools evaluation and end-to-end pipeline to generate, parse,
 - [Scripts](#scripts)  
 - [JSON Parsers](#json-parsers)  
 - [Data Analysis Notebooks](#data-analysis-notebooks)
-- [Covariances based on Jaccadr and Tversky indecies] (#covariances)
+- [Covariances based on Jaccadr and Tversky indecies](#Covariances)
 
 
 ## Scripts
