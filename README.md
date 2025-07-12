@@ -1,4 +1,4 @@
-#VEX-for-containers
+## VEX-for-containers
 
 Study setup for VEX-tools evaluation and end-to-end pipeline to generate, parse, and analyze SBOMs and VEX data for container images using multiple scanners.
 
